@@ -252,7 +252,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"PHarmor\data\helmets\customhelmet_holland_co.paa",
-			"PHarmor\data\helmets\customvisor_collins_co.paa"
+			"PHarmor\data\helmets\customvisor_raider_co.paa"
 		};
 	};
 	class Holland_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
@@ -483,7 +483,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"PHarmor\data\helmets\customhelmet_wrecker_co.paa",
-			"PHarmor\data\helmets\customvisor_base_co.paa"
+			"PHarmor\data\helmets\customvisor_wrecker_co.paa"
 		};
 	};
 	class Wrecker_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
@@ -499,6 +499,39 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"PHarmor\data\helmets\customhelmet_wrecker_co.paa",
+			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
+		};
+	};
+	class Riot_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	{
+		dlc = "PHarmor";
+		scope = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Riot)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_riot_co.paa",
+			"PHarmor\data\helmets\customvisor_riot_co.paa"
+		};
+	};
+	class Riot_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	{
+		dlc = "PHarmor";
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Riot)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_riot_co.paa",
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
