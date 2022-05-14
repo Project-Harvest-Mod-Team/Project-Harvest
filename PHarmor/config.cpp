@@ -252,7 +252,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"PHarmor\data\helmets\customhelmet_holland_co.paa",
-			"PHarmor\data\helmets\customvisor_raider_co.paa"
+			"PHarmor\data\helmets\customvisor_holland_co.paa"
 		};
 	};
 	class Holland_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
