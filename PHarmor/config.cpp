@@ -859,28 +859,6 @@ class CfgWeapons
 			"PHarmor\data\helmets\razgrizvisor_base_co.paa"
 		};
 	};
-	/*class Carter_Pilot_Helmet : OPTRE_FC_VX19_Helmet
-	{
-		dlc = "PHarmor";
-		scope = 2;
-		author = "Project Harvest Mod Team";
-		displayName = "VX19 Pilot Helmet (Carter)";
-		hiddenSelections[] =
-		{
-			"camo",
-			"camo2"
-		};
-		optreHUDStyle = "ODST_1";
-		hiddenSelectionsTextures[] =
-		{
-			"PHarmor\data\helmets\customhelmet_carter_co.paa",
-			"PHarmor\data\helmets\customvisor_carter_co.paa"
-		};
-		class ItemInfo : ItemInfo
-		{
-			optreHUDStyle = "ODST_1";
-		};
-	};*/
 	class Bitter_Pilot_Helmet : OPTRE_FC_VX19_Helmet
 	{
 		dlc = "PHarmor";
