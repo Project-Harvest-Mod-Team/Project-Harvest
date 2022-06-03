@@ -10,16 +10,7 @@ class CfgPatches
 		weapons[] = {};
 	};
 };
-class cfgFactionClasses
-{
-	class Gladius_Faction
-	{
-		displayName = "Gladius Company";
-		priority = 3;
-		side = 1;
-		icon = "";
-	};
-};
+
 class UniformSlotInfo 
 { 
     slotType = 0; 
@@ -34,7 +25,8 @@ class CfgVehicles
 		displayName = "Soldner's Bayonet";
 		scope = 2;
 		scopeCurator = 2;
-		faction = "Gladius_Faction";
+		editorCategory = "PHRP_EdCat_Gladius";
+		editorSubCategory = "PHRP_EdSubCat_Custom_Air";
 		side = 1;
 		hiddenSelections[] = {"Camo1","Camo2","number_01","number_02","number_03"};
 		hiddenSelectionsTextures[] = 
@@ -53,7 +45,8 @@ class CfgVehicles
 		displayName = "Katelo's Bayonet";
 		scope = 2;
 		scopeCurator = 2;
-		faction = "Gladius_Faction";
+		editorCategory = "PHRP_EdCat_Gladius";
+		editorSubCategory = "PHRP_EdSubCat_Custom_Air";
 		side = 1;
 		hiddenSelections[] = {"Camo1","Camo2","number_01","number_02","number_03"};
 		hiddenSelectionsTextures[] = 
