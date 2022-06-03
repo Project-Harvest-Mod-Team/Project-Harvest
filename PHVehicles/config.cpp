@@ -5,7 +5,7 @@ class CfgPatches
 	class PHVehicles
 	{
 		author = "PHRP Mod Team";
-		units[] = {"Soldner_Bayonet"};
+		units[] = {"Soldner_Bayonet","Katelo_Bayonet"};
 		requiredAddons[] = {"OPTRE_Core","OPTRE_Vehicles"};
 		weapons[] = {};
 	};
