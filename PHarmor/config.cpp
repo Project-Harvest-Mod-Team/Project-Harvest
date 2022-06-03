@@ -304,7 +304,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_raider_co.paa"
 		};
 	};
-	class Soldner_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	/*class Soldner_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -336,7 +336,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customhelmet_soldner_co.paa",
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
-	};
+	};*/
 	class Owessel_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
@@ -675,7 +675,7 @@ class CfgWeapons
 		dlc = "PHarmor";
 		scope = 2;
 		author = "Project Harvest Mod Team";
-		displayName = "CH252D Helmet - Atlas";
+		displayName = "CH252D Helmet (Atlas)";
 		hiddenSelections[] =
 		{
 			"camo",
@@ -687,11 +687,11 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_base_co.paa"
 		};
 	};
-	class Alpha_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class Atlas_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
-		displayName = "CH252D Helmet - Atlas";
+		displayName = "CH252D Helmet (Atlas)";
 		hiddenSelections[] =
 		{
 			"camo",
@@ -708,7 +708,7 @@ class CfgWeapons
 		dlc = "PHarmor";
 		scope = 2;
 		author = "Project Harvest Mod Team";
-		displayName = "CH252D Helmet - Stratos";
+		displayName = "CH252D Helmet (Stratos)";
 		hiddenSelections[] =
 		{
 			"camo",
@@ -724,7 +724,7 @@ class CfgWeapons
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
-		displayName = "CH252D Helmet - Stratos";
+		displayName = "CH252D Helmet (Stratos)";
 		hiddenSelections[] =
 		{
 			"camo",
@@ -3139,7 +3139,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Soldner_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	/*class Soldner_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -3275,7 +3275,7 @@ class CfgWeapons
 				"PHarmor\data\armor\customarmor_soldner_co.paa"
 			};
 		};
-	};
+	};*/
 	class Owessel_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
@@ -4239,7 +4239,7 @@ class CfgWeapons
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
-		displayName = "M52D Body Armor - Atlas";
+		displayName = "M52D Body Armor (Atlas)";
 		hiddenSelections[] =
 		{
 			"camo",
@@ -4376,7 +4376,7 @@ class CfgWeapons
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
-		displayName = "M52D Body Armor - Statos";
+		displayName = "M52D Body Armor (Stratos)";
 		hiddenSelections[] =
 		{
 			"camo",
