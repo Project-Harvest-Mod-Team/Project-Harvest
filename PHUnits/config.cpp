@@ -39,7 +39,7 @@ class CfgVehicles
 		side = 1;
 		editorCategory = "Gladius_Company";
 		displayName = "Atlas Rifleman";
-		uniformClass = "VES_BDU_MulticamBlack";
+		uniformClass = "Hades_BDU_Urban_Evolved";
 		backpack = "OPTRE_ILCS_Rucksack_Black";
 		icon = "iconMan";
 		class EventHandlers: EventHandlers
