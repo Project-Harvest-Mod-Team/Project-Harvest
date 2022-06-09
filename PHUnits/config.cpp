@@ -31,14 +31,14 @@ class CfgVehicles
 	class PHRP_Soldier_Base: B_Soldier_base_F
 	{
 		class EventHandlers;
-	};
-	class Atlas_Rifleman: PHRP_Soldier_Base
-	{
 		scope = 2;
 		scopeCurator = 2;
 		side = 1;
 		editorCategory = "PHRP_EdCat_Gladius";
 		editorSubCategory = "PHRP_EdSubCat_ODSTs";
+	};
+	class Atlas_Rifleman: PHRP_Soldier_Base
+	{
 		displayName = "Atlas Rifleman";
 		uniformClass = "Hades_BDU_Urban_Evolved";
 		backpack = "OPTRE_ILCS_Rucksack_Black";
@@ -87,11 +87,6 @@ class CfgVehicles
 	};
 	class Stratos_Rifleman: PHRP_Soldier_Base
 	{
-		scope = 2;
-		scopeCurator = 2;
-		side = 1;
-		editorCategory = "PHRP_EdCat_Gladius";
-		editorSubCategory = "PHRP_EdSubCat_ODSTs";
 		displayName = "Stratos Rifleman";
 		uniformClass = "Hades_BDU_Urban_Evolved";
 		backpack = "OPTRE_ILCS_Rucksack_Black";
