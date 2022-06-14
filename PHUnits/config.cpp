@@ -7,7 +7,7 @@ class CfgPatches
 		author = "PHRP Mod Team";
 		name = "Project Harvest Units";
 		url = "https://discord.gg/vSnh2zBTCu";
-		units[] = {""};
+		units[] = {"Atlas_Rifleman","Atlas_BR55","Atlas_Marksman","Atlas_Autorifleman","Atlas_Radio_Operator","Atlas_Medic","Stratos_Rifleman","Stratos_BR55","Stratos_Marksman","Stratos_Autorifleman","Stratos_Radio_Operator","Stratos_Medic"};
 		weapons[] = {};
 		magazines[] = {};
 		ammo[] = {};

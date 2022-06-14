@@ -64,7 +64,7 @@ class CfgWeapons
 	class OPTRE_UNSC_Army_Uniform_WDL;
 	class OPTRE_UNSC_M52D_Armor_Medic;
 	class OPTRE_UNSC_CH252D_Helmet;
-	class OPTRE_UNSC_VX16_Helmet_MaskV;
+	class OPTRE_UNSC_VX16_Helmet;
 	class VES_CH252_MAR_Crew;
 	class OPTRE_UNSC_Recon_Helmet;
 	class OPTRE_UNSC_Recon_Helmet_dp;
@@ -700,6 +700,39 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
+	class Soldner_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	{
+		dlc = "PHarmor";
+		scope = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Soldner)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_soldner_co.paa",
+			"PHarmor\data\helmets\customvisor_soldner_co.paa"
+		};
+	};
+	class Soldner_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	{
+		dlc = "PHarmor";
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Soldner)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_soldner_co.paa",
+			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
+		};
+	};
 
 	//Recon Helmets
 
@@ -870,7 +903,28 @@ class CfgWeapons
 	};
 
 
-	//VX19 Helmets
+	//VX16 Helmets
+
+	class Katelo_Helmet : OPTRE_UNSC_VX16_Helmet
+	{
+		dlc = "PHarmor";
+		scope = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "VX-16 (King)";
+		optreVarietys[] = {"","V"};
+		optreHUDStyle = "ODST_1";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2",
+			"attach_visor_down",
+			"attach_face_mask"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_katelo_co.paa"
+		};
+	};
 
 	//M52D armor
 
@@ -4434,6 +4488,143 @@ class CfgWeapons
 				"PHarmor\data\armor\legs_base_co.paa",
 				"PHarmor\data\army\data\ghillie_woodland_co.paa",
 				"PHarmor\data\armor\customarmor_Carter_CO.paa"
+			};
+		};
+	};
+	class Soldner_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	{
+		dlc = "PHarmor";
+		author = "Project Harvest Mod Team";
+		displayName = "M52D Body Armor (Soldner)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			//"A_Base",
+			"A_Ghillie",
+			//"A_ChestArmor", 
+			//"A_KneesLeft", 
+			//"A_KneesRight", 
+			"A_KneesMarLeft", 
+			"A_KneesMarRight", 
+			//"A_ODST", 
+			//"A_ShinArmorLeft", 
+			//"A_ShinArmorRight", 
+			//"A_TacPad", 
+			//"A_ThighArmorLeft", 
+			//"A_ThighArmorRight", 
+			//"AS_BaseLeft", 
+			//"AS_BaseRight", 
+			"AS_LargeLeft", 
+			"AS_LargeRight", 
+			"AS_MediumLeft", 
+			"AS_MediumRight", 
+			"AS_ODSTCQBLeft", 
+			//"AS_ODSTCQBRight", 
+			//"AS_ODSTLeft", 
+			"AS_ODSTRight", 
+			"AS_ODSTSniperLeft", 
+			"AS_ODSTSniperRight", 
+			"AS_SmallLeft",  
+			"AS_SmallRight", 
+			//"AP_Canteen", 
+			"AP_GL", 
+			"AP_Knife", 
+			"AP_MGThigh", 
+			"AP_AR", 
+			"AP_BR", 
+			"AP_Pack", 
+			"AP_Pistol", 
+			"AP_Rounds", 
+			"AP_SG", 
+			"AP_SMG", 
+			"AP_Sniper", 
+			"AP_Thigh", 
+			//"AP_Frag", 
+			"AP_Smoke", 
+			//"APO_AR", 
+			"APO_BR", 
+			//"APO_Knife", 
+			"APO_SMG", 
+			"APO_Sniper", 
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\Army\data\vest_odst_co.paa",
+			"PHarmor\data\army\data\armor_odst_co.paa",
+			"PHarmor\data\armor\customlegs_soldner_co.paa",
+			"PHarmor\data\army\data\ghillie_woodland_co.paa",
+			"PHarmor\data\armor\customarmor_soldner_CO.paa"
+		};
+		class ItemInfo :ItemInfo
+		{
+			hiddenSelections[] =
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				"A_Ghillie",
+				//"A_ChestArmor", 
+				//"A_KneesLeft", 
+				//"A_KneesRight", 
+				"A_KneesMarLeft", 
+				"A_KneesMarRight", 
+				//"A_ODST", 
+				//"A_ShinArmorLeft", 
+				//"A_ShinArmorRight", 
+				//"A_TacPad", 
+				//"A_ThighArmorLeft", 
+				//"A_ThighArmorRight", 
+				//"AS_BaseLeft", 
+				//"AS_BaseRight", 
+				"AS_LargeLeft", 
+				"AS_LargeRight", 
+				"AS_MediumLeft", 
+				"AS_MediumRight", 
+				"AS_ODSTCQBLeft", 
+				//"AS_ODSTCQBRight", 
+				//"AS_ODSTLeft", 
+				"AS_ODSTRight", 
+				"AS_ODSTSniperLeft", 
+				"AS_ODSTSniperRight", 
+				"AS_SmallLeft",  
+				"AS_SmallRight", 
+				//"AP_Canteen", 
+				"AP_GL", 
+				"AP_Knife", 
+				"AP_MGThigh", 
+				"AP_AR", 
+				"AP_BR", 
+				"AP_Pack", 
+				"AP_Pistol", 
+				"AP_Rounds", 
+				"AP_SG", 
+				"AP_SMG", 
+				"AP_Sniper", 
+				"AP_Thigh", 
+				//"AP_Frag", 
+				"AP_Smoke", 
+				//"APO_AR", 
+				"APO_BR", 
+				//"APO_Knife", 
+				"APO_SMG", 
+				"APO_Sniper", 
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[] =
+			{
+				"PHarmor\data\Army\data\vest_odst_co.paa",
+				"PHarmor\data\army\data\armor_odst_co.paa",
+				"PHarmor\data\armor\customlegs_soldner_co.paa",
+				"PHarmor\data\army\data\ghillie_woodland_co.paa",
+				"PHarmor\data\armor\customarmor_soldner_CO.paa"
 			};
 		};
 	};
