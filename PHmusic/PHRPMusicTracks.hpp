@@ -96,41 +96,6 @@ class Halo3ODSTLightOfAidan
 	duration=148;
 	musicClass = "PHRPMusic";
 };
-class ShatteredEmpire
-{
-	name = "Orchestral - Shattered Empire";
-	sound[] = {"PHmusic\data\Tracks\ShatteredEmpire.ogg",db+0,1};
-	duration=220;
-	musicClass = "PHRPMusic";
-};
-class ControlledChaos
-{
-	name = "Orchestral - Controlled Chaos";
-	sound[] = {"PHmusic\data\Tracks\ControlledChaos.ogg",db+0,1};
-	duration=239;
-	musicClass = "PHRPMusic";
-};
-class NoMercy
-{
-	name = "Orchestral - No Mercy";
-	sound[] = {"PHmusic\data\Tracks\NoMercy.ogg",db+0,1};
-	duration=355;
-	musicClass = "PHRPMusic";
-};
-class ValorisDead
-{
-	name = "Orchestral - Valor is Dead";
-	sound[] = {"PHmusic\data\Tracks\ValorisDead.ogg",db+0,1};
-	duration=306;
-	musicClass = "PHRPMusic";
-};
-class BornALegend
-{
-	name = "Orchestral - Born A Legend";
-	sound[] = {"PHmusic\data\Tracks\BornALegend.ogg",db+0,1};
-	duration=213;
-	musicClass = "PHRPMusic";
-};
 class Payday2TheGauntlet
 {
 	name = "Payday 2 - The Gauntlet";
@@ -157,13 +122,6 @@ class BuzzardsArrive
 	name = "Mad Max - Buzzards Arrive";
 	sound[] = {"PHmusic\data\Tracks\BuzzardsArrive.ogg",db+0,1};
 	duration=86;
-	musicClass = "PHRPMusic";
-};
-class JourneysBeginning
-{
-	name = "The Outer Worlds - Journeys Beginning";
-	sound[] = {"PHmusic\data\Tracks\JourneysBeginning.ogg",db+0,1};
-	duration=91;
 	musicClass = "PHRPMusic";
 };
 class BitterNews
@@ -248,5 +206,12 @@ class MedalOfHonorEuropeanAssault
 	name = "Medal of Honor - European Assault";
 	sound[] = {"PHmusic\data\Tracks\MedalOfHonorEuropeanAssault.ogg",db+0,1};
 	duration=187;
+	musicClass = "PHRPMusic";
+}
+class SpecOpsTheLineMusicNoValues
+{
+	name = "Spec Ops The Line - No Values";
+	sound[] = {"PHmusic\data\Tracks\SpecOpsTheLineMusicNoValues.ogg",db+0,1};
+	duration=317;
 	musicClass = "PHRPMusic";
 }

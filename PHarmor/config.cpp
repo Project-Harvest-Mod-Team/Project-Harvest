@@ -725,7 +725,8 @@ class CfgWeapons
 		hiddenSelections[] =
 		{
 			"camo",
-			"camo2"
+			"camo2",
+			"H_Collar"
 		};
 		hiddenSelectionsTextures[] =
 		{
