@@ -3461,7 +3461,7 @@ class CfgWeapons
 		{
 			"PHarmor\data\Army\data\vest_odst_co.paa",
 			"PHarmor\data\army\data\armor_odst_co.paa",
-			"PHarmor\data\armor\customlegs_soldner_co.paa",
+			"PHarmor\data\armor\customlegs_burtovski_co.paa",
 			"PHarmor\data\army\data\ghillie_woodland_co.paa",
 			"PHarmor\data\armor\customarmor_burtovski_co.paa"
 		};
@@ -3527,7 +3527,7 @@ class CfgWeapons
 			{
 				"PHarmor\data\Army\data\vest_odst_co.paa",
 				"PHarmor\data\army\data\armor_odst_co.paa",
-				"PHarmor\data\armor\customlegs_soldner_co.paa",
+				"PHarmor\data\armor\customlegs_burtovski_co.paa",
 				"PHarmor\data\army\data\ghillie_woodland_co.paa",
 				"PHarmor\data\armor\customarmor_burtovski_co.paa"
 			};
