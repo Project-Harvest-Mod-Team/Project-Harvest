@@ -651,7 +651,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_soldner_co.paa"
 		};
 	};
-	class Dare_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class Soldner_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -697,6 +697,39 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"PHarmor\data\helmets\customhelmet_dare_co.paa",
+			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
+		};
+	};
+		class Chopper_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	{
+		dlc = "PHarmor";
+		scope = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Dare)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_chopper_co.paa",
+			"PHarmor\data\helmets\customvisor_base_co.paa"
+		};
+	};
+	class Chopper_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	{
+		dlc = "PHarmor";
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Chopper)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_chopper_co.paa",
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
