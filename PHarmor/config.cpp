@@ -614,8 +614,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"PHarmor\data\helmets\customhelmet_Carter_co.paa",
-			"PHarmor\data\helmets\customvisor_Carter_co.paa"
+			"PHarmor\data\helmets\customhelmet_carter_co.paa",
+			"PHarmor\data\helmets\customvisor_carter_co.paa"
 		};
 	};
 	class Carter_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
@@ -630,7 +630,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] =
 		{
-			"PHarmor\data\helmets\customhelmet_Carter_co.paa",
+			"PHarmor\data\helmets\customhelmet_carter_co.paa",
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
@@ -651,7 +651,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_soldner_co.paa"
 		};
 	};
-	class Dare_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class Soldner_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
