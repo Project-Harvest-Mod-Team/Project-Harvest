@@ -68,6 +68,8 @@ class CfgWeapons
 	class VES_CH252_MAR_Crew;
 	class OPTRE_UNSC_Recon_Helmet;
 	class OPTRE_UNSC_Recon_Helmet_dp;
+	class OPTRE_UNSC_Commando_Helmet;
+	class OPTRE_UNSC_Commando_Helmet_dp;
 	//class OPTRE_UNSC_M52A_Armor_Base;
 	//class OPTRE_UNSC_CH252_Helmet_WDL;
 
@@ -769,39 +771,6 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Moon_ODST_Helmet : OPTRE_UNSC_Recon_Helmet
-	{
-		dlc = "PHarmor";
-		scope = 2;
-		author = "Project Harvest Mod Team";
-		displayName = "Recon Helmet (Moon)";
-		hiddenSelections[] =
-		{
-			"camo",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"PHarmor\data\helmets\customrecon_moon_co.paa",
-			"PHarmor\data\helmets\customvisor_moon_co.paa"
-		};
-	};
-	class Moon_ODST_Helmet_dp : OPTRE_UNSC_Recon_Helmet_dp
-	{
-		dlc = "PHarmor";
-		author = "Project Harvest Mod Team";
-		displayName = "Recon Helmet (Moon)";
-		hiddenSelections[] =
-		{
-			"camo",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"PHarmor\data\helmets\customrecon_moon_co.paa",
-			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
-		};
-	};
 	class Vale_ODST_Helmet : OPTRE_UNSC_Recon_Helmet
 	{
 		dlc = "PHarmor";
@@ -865,6 +834,37 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"PHarmor\data\helmets\customrecon_vanderclutch_co.paa",
+			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
+		};
+	};
+	class Moon_Commando_Helmet : OPTRE_UNSC_Commando_Helmet
+	{
+		dlc = "PHarmor";
+		displayName = "Mark V/K Helmet (Moon)";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"PHarmor\data\helmets\customhelmet_moon_co.paa",
+			"PHarmor\data\helmets\customvisor_moon_co.paa"
+		};
+	};
+	class Moon_Commando_Helmet_dp : OPTRE_UNSC_Commando_Helmet_dp
+	{
+		dlc = "PHarmor";
+		author = "Project Harvest Mod Team";
+		displayName = "Mark V/K Helmet (Moon)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_Moon_co.paa",
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
