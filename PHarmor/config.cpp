@@ -705,7 +705,7 @@ class CfgWeapons
 		dlc = "PHarmor";
 		scope = 2;
 		author = "Project Harvest Mod Team";
-		displayName = "CH252D Helmet (Dare)";
+		displayName = "CH252D Helmet (Chopper)";
 		hiddenSelections[] =
 		{
 			"camo",
@@ -733,7 +733,39 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-
+	class Mischa_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	{
+		dlc = "PHarmor";
+		scope = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Mischa)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_mischa_co.paa",
+			"PHarmor\data\helmets\customvisor_base_co.paa"
+		};
+	};
+	class Mischa_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	{
+		dlc = "PHarmor";
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Mischa)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_mischa_co.paa",
+			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
+		};
+	};
 	//Recon Helmets
 
 	class Kaz_ODST_Helmet : OPTRE_UNSC_Recon_Helmet
