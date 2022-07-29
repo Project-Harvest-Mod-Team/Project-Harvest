@@ -38,10 +38,6 @@ class CfgEditorSubcategories
 	{
 		displayName = "ODSTs";
 	};
-	class PHRP_EdSubCat_Custom_Air
-	{
-		displayName = "Aircraft";
-	};
 };
 class cfgFactionClasses
 {
