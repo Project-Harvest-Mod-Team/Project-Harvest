@@ -75,7 +75,7 @@ class CfgWeapons
 
 	//CH252D Helmets
 
-	class Alpha_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Alpha_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -92,7 +92,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_base_co.paa"
 		};
 	};
-	class Alpha_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Alpha_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -108,7 +108,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Bravo_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Bravo_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -125,7 +125,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_base_co.paa"
 		};
 	};
-	class Bravo_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Bravo_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -141,7 +141,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Charlie_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Charlie_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -158,7 +158,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_base_co.paa"
 		};
 	};
-	class Charlie_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Charlie_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -174,40 +174,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	/*class Tepfer_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
-	{
-		dlc = "PHarmor";
-		scope = 2;
-		author = "Project Harvest Mod Team";
-		displayName = "CH252D Helmet (Tepfer)";
-		hiddenSelections[] =
-		{
-			"camo",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"PHarmor\data\helmets\customhelmet_tepfer_co.paa",
-			"PHarmor\data\helmets\customvisor_base_co.paa"
-		};
-	};
-	class Tepfer_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
-	{
-		dlc = "PHarmor";
-		author = "Project Harvest Mod Team";
-		displayName = "CH252D Helmet (Tepfer)";
-		hiddenSelections[] =
-		{
-			"camo",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"PHarmor\data\helmets\customhelmet_tepfer_co.paa",
-			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
-		};
-	};*/
-	class Collins_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Collins_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -224,7 +191,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_collins_co.paa"
 		};
 	};
-	class Collins_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Collins_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -240,7 +207,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Holland_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Holland_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -257,7 +224,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_holland_co.paa"
 		};
 	};
-	class Holland_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Holland_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -273,7 +240,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Raider_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Raider_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -290,7 +257,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_raider_co.paa"
 		};
 	};
-	class Raider_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Raider_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -306,7 +273,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_raider_co.paa"
 		};
 	};
-	class Owessel_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Owessel_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -323,7 +290,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_owessel_co.paa"
 		};
 	};
-	class Owessel_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Owessel_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -339,7 +306,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Burtovski_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Burtovski_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -356,7 +323,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_base_co.paa"
 		};
 	};
-	class Burtovski_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Burtovski_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -372,7 +339,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Pjetrovic_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Pjetrovic_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -389,7 +356,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_pjetrovic_co.paa"
 		};
 	};
-	class Pjetrovic_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Pjetrovic_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -405,7 +372,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Riot_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Riot_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -422,7 +389,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_riot_co.paa"
 		};
 	};
-	class Riot_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Riot_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -438,7 +405,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Wrecker_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Wrecker_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -455,7 +422,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_wrecker_co.paa"
 		};
 	};
-	class Wrecker_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Wrecker_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -471,40 +438,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	/*class Ansley_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
-	{
-		dlc = "PHarmor";
-		scope = 2;
-		author = "Project Harvest Mod Team";
-		displayName = "CH252D Helmet (Ansley)";
-		hiddenSelections[] =
-		{
-			"camo",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"PHarmor\data\helmets\customhelmet_ansley_co.paa",
-			"PHarmor\data\helmets\customvisor_ansley_co.paa"
-		};
-	};
-	class Ansley_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
-	{
-		dlc = "PHarmor";
-		author = "Project Harvest Mod Team";
-		displayName = "CH252D Helmet (Ansley)";
-		hiddenSelections[] =
-		{
-			"camo",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] =
-		{
-			"PHarmor\data\helmets\customhelmet_ansley_co.paa",
-			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
-		};
-	};*/
-	class Dusk_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Dusk_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -521,7 +455,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_dusk_co.paa"
 		};
 	};
-	class Dusk_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Dusk_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -537,7 +471,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Atlas_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Atlas_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 1;
@@ -555,7 +489,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_base_co.paa"
 		};
 	};
-	class Atlas_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Atlas_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -571,7 +505,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Stratos_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Stratos_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 1;
@@ -589,7 +523,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_base_co.paa"
 		};
 	};
-	class Stratos_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Stratos_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -605,7 +539,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Carter_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Carter_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -622,7 +556,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_carter_co.paa"
 		};
 	};
-	class Carter_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Carter_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -638,7 +572,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Soldner_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Soldner_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -655,7 +589,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_soldner_co.paa"
 		};
 	};
-	class Soldner_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Soldner_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -671,7 +605,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Chopper_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Chopper_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -688,7 +622,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_base_co.paa"
 		};
 	};
-	class Chopper_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Chopper_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -704,7 +638,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Mischa_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Mischa_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -721,7 +655,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_base_co.paa"
 		};
 	};
-	class Mischa_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Mischa_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -737,9 +671,141 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
+	class PHRP_Angel_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	{
+		dlc = "PHarmor";
+		scope = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Angel)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_angel_co.paa",
+			"PHarmor\data\helmets\customvisor_base_co.paa"
+		};
+	};
+	class PHRP_Angel_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	{
+		dlc = "PHarmor";
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Angel)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_angel_co.paa",
+			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
+		};
+	};
+	class PHRP_Wolf_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	{
+		dlc = "PHarmor";
+		scope = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Wolf)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_wolf_co.paa",
+			"PHarmor\data\helmets\customvisor_wolf_co.paa"
+		};
+	};
+	class PHRP_Wolf_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	{
+		dlc = "PHarmor";
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Wolf)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_wolf_co.paa",
+			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
+		};
+	};
+	/*class PHRP_Ansley_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	{
+		dlc = "PHarmor";
+		scope = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Ansley)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_ansley_co.paa",
+			"PHarmor\data\helmets\customvisor_ansley_co.paa"
+		};
+	};
+	class PHRP_Ansley_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	{
+		dlc = "PHarmor";
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Ansley)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_ansley_co.paa",
+			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
+		};
+	};
+	class PHRP_Tepfer_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
+	{
+		dlc = "PHarmor";
+		scope = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Tepfer)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_tepfer_co.paa",
+			"PHarmor\data\helmets\customvisor_base_co.paa"
+		};
+	};
+	class PHRP_Tepfer_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	{
+		dlc = "PHarmor";
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Tepfer)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\helmets\customhelmet_tepfer_co.paa",
+			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
+		};
+	};*/
 	//Recon Helmets
 
-	class Kaz_ODST_Helmet : OPTRE_UNSC_Recon_Helmet
+	class PHRP_Kaz_Recon_Helmet : OPTRE_UNSC_Recon_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -756,7 +822,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_kaz_co.paa"
 		};
 	};
-	class Kaz_ODST_Helmet_dp : OPTRE_UNSC_Recon_Helmet_dp
+	class PHRP_Kaz_Recon_Helmet_dp : OPTRE_UNSC_Recon_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -772,7 +838,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Vale_ODST_Helmet : OPTRE_UNSC_Recon_Helmet
+	class PHRP_Vale_Recon_Helmet : OPTRE_UNSC_Recon_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -789,7 +855,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_vale_co.paa"
 		};
 	};
-	class Vale_ODST_Helmet_dp : OPTRE_UNSC_Recon_Helmet_dp
+	class PHRP_Vale_Recon_Helmet_dp : OPTRE_UNSC_Recon_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -805,7 +871,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class Vanderclutch_ODST_Helmet : OPTRE_UNSC_Recon_Helmet
+	class PHRP_Vanderclutch_Recon_Helmet : OPTRE_UNSC_Recon_Helmet
 	{
 		dlc = "PHarmor";
 		scope = 2;
@@ -822,7 +888,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_vanderclutch_co.paa"
 		};
 	};
-	class Vanderclutch_ODST_Helmet_dp : OPTRE_UNSC_Recon_Helmet_dp
+	class PHRP_Vanderclutch_Recon_Helmet_dp : OPTRE_UNSC_Recon_Helmet_dp
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -841,7 +907,7 @@ class CfgWeapons
 
 	//Commando Helmet
 
-	class Moon_Commando_Helmet : OPTRE_UNSC_Commando_Helmet
+	class PHRP_Moon_Commando_Helmet : OPTRE_UNSC_Commando_Helmet
 	{
 		dlc = "PHarmor";
 		displayName = "Mark V/K Helmet (Moon)";
@@ -856,7 +922,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_moon_co.paa"
 		};
 	};
-	class Moon_Commando_Helmet_dp : OPTRE_UNSC_Commando_Helmet_dp
+	class PHRP_Moon_Commando_Helmet_dp : OPTRE_UNSC_Commando_Helmet_dp
 	{
 		dlc = "PHarmor";
 		scope = 1;
@@ -877,7 +943,7 @@ class CfgWeapons
 
 	//M52D armor
 
-	class Alpha_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Alpha_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -1014,7 +1080,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Alpha_Medic_M52D_Armor : OPTRE_UNSC_M52D_Armor_Medic
+	class PHRP_Alpha_Medic_Armor : OPTRE_UNSC_M52D_Armor_Medic
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -1151,7 +1217,7 @@ class CfgWeapons
 			};
 		};	
 	};
-	class Bravo_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Bravo_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -1288,7 +1354,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Bravo_Medic_M52D_Armor : OPTRE_UNSC_M52D_Armor_Medic
+	class PHRP_Bravo_Medic_Armor : OPTRE_UNSC_M52D_Armor_Medic
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -1425,7 +1491,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Charlie_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Charlie_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -1562,7 +1628,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Charlie_Medic_M52D_Armor : OPTRE_UNSC_M52D_Armor_Medic
+	class PHRP_Charlie_Medic_Armor : OPTRE_UNSC_M52D_Armor_Medic
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -1699,7 +1765,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Moon_ODST_Armor : OPTRE_UNSC_M52D_Armor
+	class PHRP_Moon_Armor : OPTRE_UNSC_M52D_Armor
 	{
 		dlc = "PHarmor";
 		sscope = 2;
@@ -1837,7 +1903,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Collins_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Medic
+	class PHRP_Collins_Armor : OPTRE_UNSC_M52D_Armor
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -1974,7 +2040,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Kaz_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Sniper
+	class PHRP_Kaz_Armor : OPTRE_UNSC_M52D_Armor
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -2111,7 +2177,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Vale_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Sniper
+	class PHRP_Vale_Armor : OPTRE_UNSC_M52D_Armor
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -2248,7 +2314,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Vanderclutch_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Sniper
+	class PHRP_Vanderclutch_Armor : OPTRE_UNSC_M52D_Armor
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -2385,7 +2451,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Holland_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Holland_Armor : OPTRE_UNSC_M52D_Armor
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -2522,7 +2588,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Raider_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Raider_Armor : OPTRE_UNSC_M52D_Armor
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -2659,7 +2725,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Owessel_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Owessel_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -2796,7 +2862,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Burtovski_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Burtovski_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -2933,7 +2999,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Pjetrovic_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Pjetrovic_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -3070,7 +3136,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Wrecker_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Wrecker_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -3207,7 +3273,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Dusk_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Dusk_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -3344,7 +3410,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Atlas_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Atlas_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		scope = 1;
@@ -3483,7 +3549,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Stratos_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Stratos_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		scope = 1;
@@ -3622,7 +3688,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Carter_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Carter_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -3759,7 +3825,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Soldner_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Soldner_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -3896,7 +3962,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Riot_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Riot_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -4033,7 +4099,144 @@ class CfgWeapons
 			};
 		};
 	};
-	/*class Ansley_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Angel_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
+	{
+		dlc = "PHarmor";
+		author = "Project Harvest Mod Team";
+		displayName = "M52D Body Armor (Angel)";
+		hiddenSelections[] =
+		{
+			"camo",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			//"A_Base",
+			"A_Ghillie",
+			//"A_ChestArmor", 
+			//"A_KneesLeft", 
+			//"A_KneesRight", 
+			"A_KneesMarLeft", 
+			"A_KneesMarRight", 
+			//"A_ODST", 
+			//"A_ShinArmorLeft", 
+			//"A_ShinArmorRight", 
+			"A_TacPad", 
+			//"A_ThighArmorLeft", 
+			//"A_ThighArmorRight", 
+			//"AS_BaseLeft", 
+			//"AS_BaseRight", 
+			"AS_LargeLeft", 
+			"AS_LargeRight", 
+			"AS_MediumLeft", 
+			"AS_MediumRight", 
+			"AS_ODSTCQBLeft", 
+			"AS_ODSTCQBRight", 
+			"AS_ODSTLeft", 
+			"AS_ODSTRight", 
+			"AS_ODSTSniperLeft", 
+			"AS_ODSTSniperRight", 
+			"AS_SmallLeft",  
+			"AS_SmallRight", 
+			"AP_Canteen", 
+			//"AP_GL", 
+			"AP_Knife", 
+			//"AP_MGThigh", 
+			"AP_AR", 
+			"AP_BR", 
+			"AP_Pack", 
+			"AP_Pistol", 
+			"AP_Rounds", 
+			"AP_SG", 
+			"AP_SMG", 
+			"AP_Sniper", 
+			"AP_Thigh", 
+			"AP_Frag", 
+			"AP_Smoke", 
+			//"APO_AR", 
+			"APO_BR", 
+			"APO_Knife", 
+			//"APO_SMG", 
+			"APO_Sniper", 
+			"CustomKit_Scorch"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"PHarmor\data\Army\data\vest_odst_co.paa",
+			"PHarmor\data\army\data\armor_odst_co.paa",
+			"PHarmor\data\armor\legs_base_co.paa",
+			"PHarmor\data\army\data\ghillie_woodland_co.paa",
+			"PHarmor\data\armor\customarmor_angel_CO.paa"
+		};
+		class ItemInfo :ItemInfo
+		{
+			hiddenSelections[] =
+			{
+				"camo",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				//"A_Base",
+				"A_Ghillie",
+				//"A_ChestArmor", 
+				//"A_KneesLeft", 
+				//"A_KneesRight", 
+				"A_KneesMarLeft", 
+				"A_KneesMarRight", 
+				//"A_ODST", 
+				//"A_ShinArmorLeft", 
+				//"A_ShinArmorRight", 
+				"A_TacPad", 
+				//"A_ThighArmorLeft", 
+				//"A_ThighArmorRight", 
+				//"AS_BaseLeft", 
+				//"AS_BaseRight", 
+				"AS_LargeLeft", 
+				"AS_LargeRight", 
+				"AS_MediumLeft", 
+				"AS_MediumRight", 
+				"AS_ODSTCQBLeft", 
+				"AS_ODSTCQBRight", 
+				"AS_ODSTLeft", 
+				"AS_ODSTRight", 
+				"AS_ODSTSniperLeft", 
+				"AS_ODSTSniperRight", 
+				"AS_SmallLeft",  
+				"AS_SmallRight", 
+				"AP_Canteen", 
+				//"AP_GL", 
+				"AP_Knife", 
+				//"AP_MGThigh", 
+				"AP_AR", 
+				"AP_BR", 
+				"AP_Pack", 
+				"AP_Pistol", 
+				"AP_Rounds", 
+				"AP_SG", 
+				"AP_SMG", 
+				"AP_Sniper", 
+				"AP_Thigh", 
+				"AP_Frag", 
+				"AP_Smoke", 
+				//"APO_AR", 
+				"APO_BR", 
+				"APO_Knife", 
+				//"APO_SMG", 
+				"APO_Sniper", 
+				"CustomKit_Scorch"
+			};
+			hiddenSelectionsTextures[] =
+			{
+				"PHarmor\data\Army\data\vest_odst_co.paa",
+				"PHarmor\data\army\data\armor_odst_co.paa",
+				"PHarmor\data\armor\legs_base_co.paa",
+				"PHarmor\data\army\data\ghillie_woodland_co.paa",
+				"PHarmor\data\armor\customarmor_angel_CO.paa"
+			};
+		};
+	};
+	/*class PHRP_Ansley_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
@@ -4170,7 +4373,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class Tepfer_Armor_Rifleman : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Tepfer_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
