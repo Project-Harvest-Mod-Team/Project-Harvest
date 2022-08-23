@@ -68,53 +68,11 @@ class Battlefield3ThunderRun
 	duration=172;
 	musicClass = "PHRPMusic";
 };
-class HotlineMiami2Bloodline
-{
-	name = "Hotline Miami 2 - Bloodline";
-	sound[] = {"PHmusic\data\Tracks\HotlineMiami2Bloodline.ogg",db+0,1};
-	duration=192;
-	musicClass = "PHRPMusic";
-};
-class HotlineMiami2Remorse
-{
-	name = "Hotline Miami 2 - Remorse";
-	sound[] = {"PHmusic\data\Tracks\HotlineMiami2Remorse.ogg",db+0,1};
-	duration=197;
-	musicClass = "PHRPMusic";
-};
-class LeCastleVaniaOperationBlackLight
-{
-	name = "Le Castle Vania - Operation Black Light";
-	sound[] = {"PHmusic\data\Tracks\LeCastleVaniaOperationBlackLight.ogg",db+0,1};
-	duration=197;
-	musicClass = "PHRPMusic";
-};
 class Halo3ODSTLightOfAidan
 {
 	name = "Halo 3 ODST - Light Of Aidan";
 	sound[] = {"PHmusic\data\Tracks\Halo3ODSTLightOfAidan.ogg",db+0,1};
 	duration=148;
-	musicClass = "PHRPMusic";
-};
-class Payday2TheGauntlet
-{
-	name = "Payday 2 - The Gauntlet";
-	sound[] = {"PHmusic\data\Tracks\Payday2TheGauntlet.ogg",db+0,1};
-	duration=155;
-	musicClass = "PHRPMusic";
-};
-class Payday2BulletRain
-{
-	name = "Payday 2 - Bullet Rain";
-	sound[] = {"PHmusic\data\Tracks\Payday2BulletRain.ogg",db+0,1};
-	duration=313;
-	musicClass = "PHRPMusic";
-};
-class Payday2ArmedToTheTeeth
-{
-	name = "Payday 2 - Armed To The Teeth";
-	sound[] = {"PHmusic\data\Tracks\Payday2ArmedToTheTeeth.ogg",db+0,1};
-	duration=203;
 	musicClass = "PHRPMusic";
 };
 class BuzzardsArrive
@@ -207,11 +165,25 @@ class MedalOfHonorEuropeanAssault
 	sound[] = {"PHmusic\data\Tracks\MedalOfHonorEuropeanAssault.ogg",db+0,1};
 	duration=187;
 	musicClass = "PHRPMusic";
-}
+};
 class SpecOpsTheLineMusicNoValues
 {
 	name = "Spec Ops The Line - No Values";
 	sound[] = {"PHmusic\data\Tracks\SpecOpsTheLineMusicNoValues.ogg",db+0,1};
 	duration=317;
 	musicClass = "PHRPMusic";
-}
+};
+class PlayingwiththeBoys
+{
+	name = "Spec Ops The Line - No Values";
+	sound[] = {"PHmusic\data\Tracks\PlayingwiththeBoys.ogg",db+0,1};
+	duration=372;
+	musicClass = "PHRPMusic";
+};
+class IAintWorried
+{
+	name = "Spec Ops The Line - No Values";
+	sound[] = {"PHmusic\data\Tracks\IAintWorried.ogg",db+0,1};
+	duration=269;
+	musicClass = "PHRPMusic";
+};
