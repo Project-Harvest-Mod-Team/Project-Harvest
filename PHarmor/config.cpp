@@ -1006,7 +1006,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class PHRP_Moon_Wrecker_Helmet : OPTRE_UNSC_Commando_Helmet
+	class PHRP_Wrecker_Commando_Helmet : OPTRE_UNSC_Commando_Helmet
 	{
 		dlc = "PHarmor";
 		displayName = "Mark V/K Helmet (Wrecker)";
@@ -1021,7 +1021,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_moon_co.paa"
 		};
 	};
-	class PHRP_Moon_Wrecker_Helmet_dp : OPTRE_UNSC_Commando_Helmet_dp
+	class PHRP_Wrecker_Commando_Helmet_dp : OPTRE_UNSC_Commando_Helmet_dp
 	{
 		dlc = "PHarmor";
 		scope = 1;
@@ -1039,7 +1039,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\ODST_Helmet_Visor_ca.paa"
 		};
 	};
-	class PHRP_Moon_Raider_Helmet : OPTRE_UNSC_Commando_Helmet
+	class PHRP_Raider_Commando_Helmet : OPTRE_UNSC_Commando_Helmet
 	{
 		dlc = "PHarmor";
 		displayName = "Mark V/K Helmet (Raider)";
@@ -1054,7 +1054,7 @@ class CfgWeapons
 			"PHarmor\data\helmets\customvisor_moon_co.paa"
 		};
 	};
-	class PHRP_Moon_Raider_Helmet_dp : OPTRE_UNSC_Commando_Helmet_dp
+	class PHRP_Raider_Commando_Helmet_dp : OPTRE_UNSC_Commando_Helmet_dp
 	{
 		dlc = "PHarmor";
 		scope = 1;
