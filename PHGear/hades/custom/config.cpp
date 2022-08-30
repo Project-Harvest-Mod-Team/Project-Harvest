@@ -93,11 +93,11 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat","","LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"};
 		hiddenSelectionsTextures[] =
 		{
-			"PHarmor\data\Army\data\vest_odst_co.paa",
-			"PHarmor\data\army\data\armor_odst_co.paa",
-			"PHarmor\data\armor\customlegs_moon_co.paa",
-			"PHarmor\data\army\data\ghillie_woodland_co.paa",
-			"PHarmor\data\armor\customarmor_moon_co.paa"
+			"PHGear\data\Army\data\vest_odst_co.paa",
+			"PHGear\data\army\data\armor_odst_co.paa",
+			"PHGear\data\armor\customlegs_moon_co.paa",
+			"PHGear\data\army\data\ghillie_woodland_co.paa",
+			"PHGear\data\armor\customarmor_moon_co.paa"
 		};
 		class ItemInfo :ItemInfo
 		{
@@ -227,11 +227,11 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat","","LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"};
 		hiddenSelectionsTextures[] =
 		{
-			"PHarmor\data\Army\data\vest_odst_co.paa",
-			"PHarmor\data\army\data\armor_odst_co.paa",
-			"PHarmor\data\armor\legs_base_co.paa",
-			"PHarmor\data\army\data\ghillie_woodland_co.paa",
-			"PHarmor\data\armor\customarmor_kaz_co.paa"
+			"PHGear\data\Army\data\vest_odst_co.paa",
+			"PHGear\data\army\data\armor_odst_co.paa",
+			"PHGear\data\armor\legs_base_co.paa",
+			"PHGear\data\army\data\ghillie_woodland_co.paa",
+			"PHGear\data\armor\customarmor_kaz_co.paa"
 		};
 		class ItemInfo :ItemInfo
 		{
@@ -361,11 +361,11 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat","","LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"};
 		hiddenSelectionsTextures[] =
 		{
-			"PHarmor\data\Army\data\vest_odst_co.paa",
-			"PHarmor\data\army\data\armor_odst_co.paa",
-			"PHarmor\data\armor\legs_base_co.paa",
-			"PHarmor\data\army\data\ghillie_woodland_co.paa",
-			"PHarmor\data\armor\customarmor_vanderclutch_co.paa"
+			"PHGear\data\Army\data\vest_odst_co.paa",
+			"PHGear\data\army\data\armor_odst_co.paa",
+			"PHGear\data\armor\legs_base_co.paa",
+			"PHGear\data\army\data\ghillie_woodland_co.paa",
+			"PHGear\data\armor\customarmor_vanderclutch_co.paa"
 		};
 		class ItemInfo :ItemInfo
 		{
