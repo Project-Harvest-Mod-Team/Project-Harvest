@@ -3579,11 +3579,11 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Dusk_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
+	class PHRP_Richter_Armor : OPTRE_UNSC_M52D_Armor_Rifleman
 	{
 		dlc = "PHarmor";
 		author = "Project Harvest Mod Team";
-		displayName = "M52D Body Armor (Dusk)";
+		displayName = "M52D Body Armor (Richter)";
 		hiddenSelections[] =
 		{
 			"camo",
