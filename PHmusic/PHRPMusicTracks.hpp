@@ -166,23 +166,16 @@ class MedalOfHonorEuropeanAssault
 	duration=187;
 	musicClass = "PHRPMusic";
 };
-class SpecOpsTheLineMusicNoValues
-{
-	name = "Spec Ops The Line - No Values";
-	sound[] = {"PHmusic\data\Tracks\SpecOpsTheLineMusicNoValues.ogg",db+0,1};
-	duration=317;
-	musicClass = "PHRPMusic";
-};
 class PlayingwiththeBoys
 {
-	name = "Spec Ops The Line - No Values";
+	name = "Kenny Loggins - Playing With The Boys";
 	sound[] = {"PHmusic\data\Tracks\PlayingwiththeBoys.ogg",db+0,1};
 	duration=372;
 	musicClass = "PHRPMusic";
 };
 class IAintWorried
 {
-	name = "Spec Ops The Line - No Values";
+	name = "One Republic - I Ain't Worried";
 	sound[] = {"PHmusic\data\Tracks\IAintWorried.ogg",db+0,1};
 	duration=269;
 	musicClass = "PHRPMusic";
