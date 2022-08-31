@@ -24,25 +24,24 @@ class XtdGearModels
 	class CamoBase;
 	class CfgWeapons
 	{
-		class PHRP_Hades_vests
+		class PHRP_command_vests
 		{
-			label = "Hades Vests";
+			label = "Command Vests";
 			author = "Project Harvest Mod Team";
 			options[] = {"role"};
 			class role
 			{
 				alwaysSelectable = 1;
-				label = "Hades Armors";
-				values[] = {"kaz","vanderclutch"};
-				
-				class kaz
+				label = "Command Armors";
+				values[] = {"moon","burtovski"};
+				class moon
 				{
-					label = "Kaz";
+					label = "Moon";
 					image = "";
 				};
-				class vanderclutch
+				class burtovski
 				{
-					label = "Vanderclutch";
+					label = "Burtovski";
 					image = "";
 				};
 			};
@@ -53,15 +52,16 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_Kaz_Armor
+		class PHRP_Moon_Armor
 		{
-			model = "PHRP_Hades_vests";
-			role = "kaz";
+			model = "PHRP_command_vests";
+			role = "moon";
 		};
-		class PHRP_Vanderclutch_Armor
+		class PHRP_Burtovski_Armor
 		{
-			model = "PHRP_Hades_vests";
-			role = "vanderclutch";
+			model = "PHRP_command_vests";
+			role = "burtovski";
 		};
+		
 	};
 };

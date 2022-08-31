@@ -21,23 +21,25 @@ class CfgPatches //class desc.
 };
 class CfgWeapons
 {
-    class OPTRE_UNSC_Recon_Helmet_dp;
-	class PHRP_Kaz_Recon_Helmet_dp : OPTRE_UNSC_Recon_Helmet_dp
+    class OPTRE_UNSC_CH252D_Helmet_dp;
+	class OPTRE_UNSC_Commando_Helmet_dp;
+	class PHRP_Moon_Commando_Helmet_dp : OPTRE_UNSC_Commando_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
 		author = "Project Harvest Mod Team";
-		displayName = "Recon Helmet (Kaz)";
+		displayName = "Mark V/K Helmet (Moon)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_kaz_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_Moon_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
-	class PHRP_Vanderclutch_Recon_Helmet_dp : OPTRE_UNSC_Recon_Helmet_dp
+	class PHRP_Burtovski_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
 		author = "Project Harvest Mod Team";
-		displayName = "Recon Helmet (Vanderclutch)";
+		displayName = "CH252D Helmet (Burtovski)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_vanderclutch_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 };
