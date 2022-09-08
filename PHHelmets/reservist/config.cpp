@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","collins","angel","ansley","tepfer","vale"};
+				values[] = {"recruit","collins","angel","ansley","tepfer"};
 				class recruit
 				{
 					label = "Recruit";
@@ -53,10 +53,6 @@ class XtdGearModels
 				class tepfer
 				{
 					label = "Tepfer";
-				};
-				class vale
-				{
-					label = "Vale";
 				};
 			};
 		};
@@ -91,17 +87,11 @@ class XtdGearInfos
 			role = "tepfer";
 			model = "reservist_helmets";
 		};
-		class PHRP_Vale_Recon_Helmet
-		{
-			role = "vale";
-			model = "reservist_helmets";
-		};
 	};
 };
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
-	class OPTRE_UNSC_Recon_Helmet;
 	class PHRP_Recruit_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -156,15 +146,5 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tepfer_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
-	class PHRP_Vale_Recon_Helmet : OPTRE_UNSC_Recon_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Project Harvest Mod Team";
-		displayName = "Recon Helmet (Vale)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_vale_co.paa","PHHelmets\data\helmets\customvisor_vale_co.paa"};
 	};
 };

@@ -33,14 +33,10 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","wrecker","wolf","richter","chopper"};
+				values[] = {"default","wolf","richter","chopper"};
 				class default
 				{
 					label = "Default";
-				};
-				class wrecker
-				{
-					label = "Wrecker";
 				};
 				class wolf
 				{
@@ -67,11 +63,6 @@ class XtdGearInfos
 			role = "default";
 			model = "bravo_helmets";
 		};
-		class PHRP_Wrecker_Commando_Helmet
-		{
-			role = "wrecker";
-			model = "bravo_helmets";
-		};
 		class PHRP_Wolf_ODST_Helmet
 		{
 			role = "wolf";
@@ -92,7 +83,6 @@ class XtdGearInfos
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
-	class OPTRE_UNSC_Commando_Helmet;
 	class PHRP_Bravo_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -103,16 +93,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_bravobase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
-	class PHRP_Wrecker_Commando_Helmet : OPTRE_UNSC_Commando_Helmet
-	{
-		dlc = "PHHelmets";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "Mark V/K Helmet (Wrecker)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wrecker_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
 	};
 	class PHRP_Wolf_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{

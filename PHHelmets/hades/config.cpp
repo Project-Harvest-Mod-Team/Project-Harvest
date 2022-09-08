@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"kaz","vanderclutch"};
+				values[] = {"kaz","vanderclutch","vale"};
 				class kaz
 				{
 					label = "Kaz";
@@ -41,6 +41,10 @@ class XtdGearModels
 				class vanderclutch
 				{
 					label = "Vanderclutch";
+				};
+				class vale
+				{
+					label = "Vale";
 				};
 			};
 		};
@@ -58,6 +62,11 @@ class XtdGearInfos
 		class PHRP_Vanderclutch_Recon_Helmet
 		{
 			role = "vanderclutch";
+			model = "hades_helmets";
+		};
+		class PHRP_Vale_Recon_Helmet
+		{
+			role = "vale";
 			model = "hades_helmets";
 		};
 	};
@@ -84,5 +93,15 @@ class CfgWeapons
 		displayName = "Recon Helmet (Vanderclutch)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_vanderclutch_co.paa","PHHelmets\data\helmets\customvisor_vanderclutch_co.paa"};
+	};
+	class PHRP_Vale_Recon_Helmet : OPTRE_UNSC_Recon_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "Recon Helmet (Vale)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_vale_co.paa","PHHelmets\data\helmets\customvisor_vale_co.paa"};
 	};
 };

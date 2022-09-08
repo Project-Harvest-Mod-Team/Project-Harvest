@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Bravo Armors";
-				values[] = {"default","corpsman","wrecker","richter","Cassidy"};
+				values[] = {"default","corpsman","richter"};
 				class default
 				{
 					label = "Default";
@@ -45,19 +45,9 @@ class XtdGearModels
 					label = "Corpsman";
 					image = "";
 				};
-				class wrecker
-				{
-					label = "Wrecker";
-					image = "";
-				};
 				class richter
 				{
 					label = "Richter";
-					image = "";
-				};
-				class cassidy
-				{
-					label = "Cassidy";
 					image = "";
 				};
 			};
@@ -78,20 +68,10 @@ class XtdGearInfos
 			model = "PHRP_Bravo_vests";
 			role = "corpsman";
 		};
-		class PHRP_Wrecker_Armor
-		{
-			model = "PHRP_Bravo_vests";
-			role = "wrecker";
-		};
 		class PHRP_Richter_Armor
 		{
 			model = "PHRP_Bravo_vests";
 			role = "richter";
-		};
-		class PHRP_Cassidy_Armor
-		{
-			model = "PHRP_Bravo_vests";
-			role = "cassidy";
 		};
 	};
 };

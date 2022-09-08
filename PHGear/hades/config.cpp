@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Hades Armors";
-				values[] = {"kaz","vanderclutch"};
+				values[] = {"kaz","vanderclutch","vale"};
 				
 				class kaz
 				{
@@ -43,6 +43,11 @@ class XtdGearModels
 				class vanderclutch
 				{
 					label = "Vanderclutch";
+					image = "";
+				};
+				class vale
+				{
+					label = "Vale";
 					image = "";
 				};
 			};
@@ -62,6 +67,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Hades_vests";
 			role = "vanderclutch";
+		};
+		class PHRP_Vale_Armor
+		{
+			model = "PHRP_Hades_vests";
+			role = "vale";
 		};
 	};
 };

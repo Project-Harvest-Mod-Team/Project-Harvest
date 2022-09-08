@@ -40,4 +40,13 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_vanderclutch_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
+	class PHRP_Vale_Recon_Helmet_dp : OPTRE_UNSC_Recon_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "Project Harvest Mod Team";
+		displayName = "Recon Helmet (Vale)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_vale_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
 };

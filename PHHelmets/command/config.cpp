@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"moon","burtovski"};
+				values[] = {"moon","burtovski","cassidy"};
 				class moon
 				{
 					label = "Moon";
@@ -41,6 +41,10 @@ class XtdGearModels
 				class burtovski
 				{
 					label = "Burtovski";
+				};
+				class cassidy
+				{
+					label = "Cassidy";
 				};
 			};
 		};
@@ -58,6 +62,11 @@ class XtdGearInfos
 		class PHRP_Burtovski_ODST_Helmet
 		{
 			role = "burtovski";
+			model = "command_helmets";
+		};
+		class PHRP_Cassidy_ODST_Helmet
+		{
+			role = "cassidy";
 			model = "command_helmets";
 		};
 	};
@@ -85,5 +94,16 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
+	};
+	class PHRP_Cassidy_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Cassidy)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_cassidy_co.paa","PHHelmets\data\helmets\customvisor_cassidy_co.paa"};
 	};
 };

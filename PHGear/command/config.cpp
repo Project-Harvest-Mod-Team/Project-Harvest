@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Command Armors";
-				values[] = {"moon","burtovski"};
+				values[] = {"moon","burtovski","cassidy"};
 				class moon
 				{
 					label = "Moon";
@@ -42,6 +42,11 @@ class XtdGearModels
 				class burtovski
 				{
 					label = "Burtovski";
+					image = "";
+				};
+				class cassidy
+				{
+					label = "Cassidy";
 					image = "";
 				};
 			};
@@ -62,6 +67,10 @@ class XtdGearInfos
 			model = "PHRP_command_vests";
 			role = "burtovski";
 		};
-		
+		class PHRP_Cassidy_Armor
+		{
+			model = "PHRP_command_vests";
+			role = "cassidy";
+		};
 	};
 };
