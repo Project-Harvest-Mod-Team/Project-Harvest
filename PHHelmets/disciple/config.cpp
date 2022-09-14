@@ -83,7 +83,7 @@ class XtdGearInfos
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
-	class OPTRE_UNSC_Commando_Helmet;
+	class PHRP_Base_Commando_Helmet;
 	class PHRP_Soldner_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -95,7 +95,7 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_soldner_co.paa","PHHelmets\data\helmets\customvisor_soldner_co.paa"};
 	};
-	class PHRP_Wrecker_Commando_Helmet : OPTRE_UNSC_Commando_Helmet
+	class PHRP_Wrecker_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
 		dlc = "PHHelmets";
 		scope = 2;

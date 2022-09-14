@@ -15,8 +15,7 @@ class CfgPatches //class desc.
 		requiredVersion = 0.1; //artefact of arma, no clue what it is but has to stay 0.1
 		requiredAddons[] =
 		{
-			"A3_Characters_F",
-			"OPTRE_Core"
+			
 		};
 	};
 };

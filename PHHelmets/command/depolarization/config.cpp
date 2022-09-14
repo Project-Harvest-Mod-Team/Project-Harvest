@@ -22,8 +22,8 @@ class CfgPatches //class desc.
 class CfgWeapons
 {
     class OPTRE_UNSC_CH252D_Helmet_dp;
-	class OPTRE_UNSC_Commando_Helmet_dp;
-	class PHRP_Moon_Commando_Helmet_dp : OPTRE_UNSC_Commando_Helmet_dp
+	class PHRP_Base_Commando_Helmet_dp;
+	class PHRP_Moon_Commando_Helmet_dp : PHRP_Base_Commando_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;

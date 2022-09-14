@@ -73,8 +73,8 @@ class XtdGearInfos
 };
 class CfgWeapons
 {
-	class OPTRE_UNSC_Recon_Helmet;
-	class PHRP_Kaz_Recon_Helmet : OPTRE_UNSC_Recon_Helmet
+	class PHRP_Base_Recon_Helmet;
+	class PHRP_Kaz_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -84,7 +84,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_kaz_co.paa","PHHelmets\data\helmets\customvisor_kaz_co.paa"};
 	};
-	class PHRP_Vanderclutch_Recon_Helmet : OPTRE_UNSC_Recon_Helmet
+	class PHRP_Vanderclutch_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -94,7 +94,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_vanderclutch_co.paa","PHHelmets\data\helmets\customvisor_vanderclutch_co.paa"};
 	};
-	class PHRP_Vale_Recon_Helmet : OPTRE_UNSC_Recon_Helmet
+	class PHRP_Vale_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;

@@ -74,8 +74,8 @@ class XtdGearInfos
 class CfgWeapons
 {
 	class PHRP_Base_ODST_Helmet;
-	class OPTRE_UNSC_Commando_Helmet;
-	class PHRP_Moon_Commando_Helmet : OPTRE_UNSC_Commando_Helmet
+	class PHRP_Base_Commando_Helmet;
+	class PHRP_Moon_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
