@@ -122,6 +122,7 @@ class CfgWeapons
 	class OPTRE_UNSC_Recon_Helmet;
 	class PHRP_Base_Recon_Helmet : OPTRE_UNSC_Recon_Helmet
 	{
+		class ItemInfo;
 		dlc = "Project Harvest Armory";
         author = "Project Harvest Mod Team";
 		scope = 1;
@@ -162,6 +163,7 @@ class CfgWeapons
 	class OPTRE_UNSC_Recon_Helmet_dp;
 	class PHRP_Base_Recon_Helmet_dp : OPTRE_UNSC_Recon_Helmet_dp
 	{
+		class ItemInfo;
 		dlc = "Project Harvest Armory";
         author = "Project Harvest Mod Team";
 		scope = 1;
@@ -202,6 +204,7 @@ class CfgWeapons
 	class OPTRE_UNSC_Commando_Helmet;
 	class PHRP_Base_Commando_Helmet : OPTRE_UNSC_Commando_Helmet
 	{
+		class ItemInfo;
 		dlc = "Project Harvest Armory";
         author = "Project Harvest Mod Team";
 		scope = 1;
@@ -241,6 +244,7 @@ class CfgWeapons
 	class OPTRE_UNSC_Commando_Helmet_dp;
 	class PHRP_Base_Commando_Helmet_dp : OPTRE_UNSC_Commando_Helmet_dp
 	{
+		class ItemInfo;
 		dlc = "Project Harvest Armory";
         author = "Project Harvest Mod Team";
 		scope = 1;
