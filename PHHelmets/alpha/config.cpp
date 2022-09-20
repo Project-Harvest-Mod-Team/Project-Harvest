@@ -33,14 +33,10 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","raider","holland","riot","mischa","owessel","kaker"};
+				values[] = {"default","holland","riot","mischa","owessel","kaker","wilson"};
 				class default
 				{
 					label = "Default";
-				};
-				class raider
-				{
-					label = "Raider";
 				};
 				class holland
 				{
@@ -62,6 +58,10 @@ class XtdGearModels
 				{
 					label = "Kaker";
 				};
+				class wilson
+				{
+					label = "Wilson";
+				};
 			};
 		};
 	};
@@ -73,11 +73,6 @@ class XtdGearInfos
 		class PHRP_Alpha_ODST_Helmet
 		{
 			role = "default";
-			model = "alpha_helmets";
-		};
-		class PHRP_Raider_Commando_Helmet
-		{
-			role = "raider";
 			model = "alpha_helmets";
 		};
 		class PHRP_Holland_ODST_Helmet
@@ -100,9 +95,14 @@ class XtdGearInfos
 			role = "owessel";
 			model = "alpha_helmets";
 		};
-		class PHRP_Kaker_ODST_Helmet
+		class PHRP_Kaker_HRPilot_Helmet
 		{
 			role = "kaker";
+			model = "alpha_helmets";
+		};
+		class PHRP_Wilson_ODST_Helmet
+		{
+			role = "wilson";
 			model = "alpha_helmets";
 		};
 	};
@@ -110,7 +110,8 @@ class XtdGearInfos
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
-	class PHRP_Base_Commando_Helmet;
+	class PHRP_Base_HRPilot_Helmet;
+	class PHRP_Base_Operator_Helmet;
 	class PHRP_Alpha_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -121,16 +122,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_alphabase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
-	class PHRP_Raider_Commando_Helmet : PHRP_Base_Commando_Helmet
-	{
-		dlc = "Project Harvest Armory";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "Mark V/K Helmet (Raider)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_raider_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
 	};
 	class PHRP_Holland_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
@@ -176,7 +167,7 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
 	};
-	class PHRP_Kaker_ODST_Helmet : PHRP_Base_ODST_Helmet
+	class PHRP_Kaker_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -184,7 +175,17 @@ class CfgWeapons
 		author = "Project Harvest Mod Team";
 		displayName = "CH252D Helmet (Kaker)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
-	};	
+	};
+	class PHRP_Wilson_ODST_Helmet : PHRP_Base_Operator_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Wilson)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wilson_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
+	};
 };

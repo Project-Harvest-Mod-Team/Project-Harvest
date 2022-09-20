@@ -29,4 +29,8 @@ class CfgMusicClasses
 	{
 		displayName = "Project Harvest Music Pack";
 	};
+	class PHRPClip
+	{
+		displayName = "PHRP - Short Audio Clips";
+	};
 };

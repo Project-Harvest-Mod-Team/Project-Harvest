@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","raider","holland","riot","owessel","kaker"};
+				values[] = {"default","corpsman","holland","riot","owessel","kaker","wilson"};
 				class default
 				{
 					label = "Default";
@@ -45,11 +45,7 @@ class XtdGearModels
 					label = "Corpsman";
 					image = "";
 				};
-				class raider
-				{
-					label = "Raider";
-					image = "";
-				};
+				
 				class holland
 				{
 					label = "Holland";
@@ -68,6 +64,11 @@ class XtdGearModels
 				class kaker
 				{
 					label = "Kaker";
+					image = "";
+				};
+				class wilson
+				{
+					label = "Wilson";
 					image = "";
 				};
 			};
@@ -93,11 +94,6 @@ class XtdGearInfos
 			model = "PHRP_Alpha_vests";
 			role = "holland";
 		};
-		class PHRP_Raider_Armor
-		{
-			model = "PHRP_Alpha_vests";
-			role = "raider";
-		};
 		class PHRP_Owessel_Armor
 		{
 			model = "PHRP_Alpha_vests";
@@ -112,6 +108,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Alpha_vests";
 			role = "kaker";
+		};
+		class PHRP_Wilson_Armor
+		{
+			model = "PHRP_Alpha_vests";
+			role = "wilson";
 		};
 	};
 };

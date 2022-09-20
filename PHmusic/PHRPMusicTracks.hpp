@@ -180,3 +180,31 @@ class IAintWorried
 	duration=269;
 	musicClass = "PHRPMusic";
 };
+class PHRPslayer
+{
+	name = "Slayer";
+	sound[] = {"PHmusic\data\Tracks\Slayer.ogg",db+0,1};
+	duration=3;
+	musicClass = "PHRPClip";
+};
+class PHRPGameOver
+{
+	name = "Game Over";
+	sound[] = {"PHmusic\data\Tracks\GameOver.ogg",db+0,1};
+	duration=3;
+	musicClass = "PHRPClip";
+};
+class PHRPFiveMinutesRemaining
+{
+	name = "Five Minutes Remaining";
+	sound[] = {"PHmusic\data\Tracks\FiveMinutesRemaining.ogg",db+0,1};
+	duration=3;
+	musicClass = "PHRPClip";
+};
+class PHRPSocialCreditDeducted
+{
+	name = "Social Credit Deducted";
+	sound[] = {"PHmusic\data\Tracks\SocialCreditDeducted.ogg",db+0,1};
+	duration=5;
+	musicClass = "PHRPClip";
+};

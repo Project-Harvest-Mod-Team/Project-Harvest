@@ -52,19 +52,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 25;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 25;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 25;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -99,19 +99,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 25;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 25;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 25;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -258,6 +258,166 @@ class CfgWeapons
 		{
 			mass = 30;
 			uniformModel = "OPTRE_UNSC_Units\Army\commando_helmet";
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 25;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 25;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 25;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
+	class OPTRE_UNSC_HRPilot_Helmet;
+	class PHRP_Base_HRPilot_Helmet : OPTRE_UNSC_HRPilot_Helmet
+	{
+		class ItemInfo;
+		dlc = "Project Harvest Armory";
+        author = "Project Harvest Mod Team";
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		weaponPoolAvailable = 1;
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "Hellbringer Helmet - Base";
+		class ItemInfo: ItemInfo
+		{
+			mass = 30;
+			uniformModel = "\OPTRE_UNSC_Units\Army\HRPilot_Helmet.p3d";
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 25;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 25;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 25;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
+	class OPTRE_UNSC_HRPilot_Helmet_dp;
+	class PHRP_Base_HRPilot_Helmet__dp : OPTRE_UNSC_HRPilot_Helmet_dp
+	{
+		class ItemInfo;
+		dlc = "Project Harvest Armory";
+        author = "Project Harvest Mod Team";
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		weaponPoolAvailable = 1;
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "Hellbringer Helmet - Base";
+		class ItemInfo: ItemInfo
+		{
+			mass = 30;
+			uniformModel = "\OPTRE_UNSC_Units\Army\HRPilot_Helmet.p3d";
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 25;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 25;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 25;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
+	class OPTRE_UNSC_Operator_Helmet;
+	class PHRP_Base_Operator_Helmet : OPTRE_UNSC_Operator_Helmet
+	{
+		class ItemInfo;
+		dlc = "Project Harvest Armory";
+        author = "Project Harvest Mod Team";
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		weaponPoolAvailable = 1;
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "AT Helmet - Base";
+		class ItemInfo: ItemInfo
+		{
+			mass = 30;
+			uniformModel = "\OPTRE_UNSC_Units\Army\Operator_Helmet.p3d";
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 25;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 25;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 25;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
+	class OPTRE_UNSC_Operator_Helmet_dp;
+	class PHRP_Base_Operator_Helmet__dp : OPTRE_UNSC_Operator_Helmet_dp
+	{
+		class ItemInfo;
+		dlc = "Project Harvest Armory";
+        author = "Project Harvest Mod Team";
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		weaponPoolAvailable = 1;
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "AT Helmet - Base";
+		class ItemInfo: ItemInfo
+		{
+			mass = 30;
+			uniformModel = "\OPTRE_UNSC_Units\Army\Operator_Helmet.p3d";
 			class HitpointsProtectionInfo
 			{
 				class Face

@@ -33,10 +33,15 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Reserve Armors";
-				values[] = {"recruit","tepfer","collins","angel","ansley"};
+				values[] = {"recruit","raider","tepfer","collins","angel","ansley"};
 				class recruit
 				{
 					label = "Recruit";
+					image = "";
+				};
+				class raider
+				{
+					label = "Raider";
 					image = "";
 				};
 				class tepfer
@@ -71,6 +76,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Reserve_vests";
 			role = "recruit";
+		};
+		class PHRP_Raider_Armor
+		{
+			model = "PHRP_Reserve_vests";
+			role = "raider";
 		};
 		class PHRP_Collins_Armor
 		{
