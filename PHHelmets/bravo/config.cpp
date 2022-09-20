@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","wolf","richter","chopper"};
+				values[] = {"default","wolf","richter","chopper","tinoco"};
 				class default
 				{
 					label = "Default";
@@ -49,6 +49,10 @@ class XtdGearModels
 				class chopper
 				{
 					label = "Chopper";
+				};
+				class tinoco
+				{
+					label = "Tinoco";
 				};
 			};
 		};
@@ -76,6 +80,11 @@ class XtdGearInfos
 		class PHRP_Chopper_ODST_Helmet
 		{
 			role = "chopper";
+			model = "bravo_helmets";
+		};
+		class PHRP_Tinoco_ODST_Helmet
+		{
+			role = "tinoco";
 			model = "bravo_helmets";
 		};
 	};
@@ -126,5 +135,16 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
+	};
+	class PHRP_Tinoco_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "CH252D Helmet (Tinoco)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tinoco_co.paa","PHHelmets\data\helmets\customvisor_tinoco_co.paa"};
 	};
 };

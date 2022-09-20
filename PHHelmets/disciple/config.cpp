@@ -73,7 +73,7 @@ class XtdGearInfos
 			role = "pjetrovic";
 			model = "disciple_helmets";
 		};
-		class PHRP_Carter_ODST_Helmet
+		class PHRP_Carter_Commando_Helmet
 		{
 			role = "carter";
 			model = "disciple_helmets";
