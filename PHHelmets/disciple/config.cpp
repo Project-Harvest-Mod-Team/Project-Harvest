@@ -89,7 +89,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Project Harvest Mod Team";
+		author = "Luna";
 		displayName = "CH252D Helmet (Soldner)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -101,30 +101,31 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
+		author = "MrMicrobe";
 		displayName = "Mark V/K Helmet (Wrecker)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wrecker_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wrecker_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
 	};
 	class PHRP_Pjetrovic_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Project Harvest Mod Team";
+		author = "Luna";
 		displayName = "CH252D Helmet (Pjetrovic)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_pjetrovic_co.paa","PHHelmets\data\helmets\customvisor_pjetrovic_co.paa"};
 	};
-	class PHRP_Carter_ODST_Helmet : PHRP_Base_ODST_Helmet
+	class PHRP_Carter_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
+		dlc = "PHHelmets";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Project Harvest Mod Team";
-		displayName = "CH252D Helmet (Carter)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_carter_co.paa","PHHelmets\data\helmets\customvisor_carter_co.paa"};
+		author = "MrMicrobe";
+		displayName = "Mark V/K Helmet (Carter)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_carter_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
 	};
 };

@@ -165,6 +165,6 @@ class CfgWeapons
 		scopeArsenal = 2;
 		displayName = "Mark V/K Helmet (Raider)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_raider_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_raider_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
 	};
 };

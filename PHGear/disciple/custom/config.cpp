@@ -28,7 +28,7 @@ class CfgWeapons
 	};
 	class PHRP_Soldner_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "Luna";
 		displayName = "M52D Body Armor (Soldner)";
 		scope = 2;
 		scopeCurator = 2;
@@ -162,7 +162,7 @@ class CfgWeapons
 	};
 	class PHRP_Wrecker_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "MrMicrobe";
 		displayName = "M52D Body Armor (Wrecker)";
 		scope = 2;
 		scopeCurator = 2;

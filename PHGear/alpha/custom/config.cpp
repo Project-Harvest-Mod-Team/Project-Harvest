@@ -28,7 +28,7 @@ class CfgWeapons
 	};
 	class PHRP_Alpha_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "MrMicrobe";
 		displayName = "M52D Body Armor - Alpha";
 		scope = 2;
 		scopeCurator = 2;
@@ -162,7 +162,7 @@ class CfgWeapons
 	};
 	class PHRP_Alpha_Medic_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "MrMicrobe";
 		displayName = "M52D Body Armor - Alpha Medic";
 		scope = 2;
 		scopeCurator = 2;
@@ -296,7 +296,7 @@ class CfgWeapons
 	};
 	class PHRP_Holland_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "MrMicrobe";
 		displayName = "M52D Body Armor (Holland)";
 		scope = 2;
 		scopeCurator = 2;
@@ -430,7 +430,7 @@ class CfgWeapons
 	};
 	class PHRP_Owessel_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "Vale";
 		displayName = "M52D Body Armor (Owessel)";
 		scope = 2;
 		scopeCurator = 2;
@@ -564,7 +564,7 @@ class CfgWeapons
 	};
 	class PHRP_Riot_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "MrMicrobe";
 		displayName = "M52D Body Armor (Riot)";
 		scope = 2;
 		scopeCurator = 2;
@@ -698,7 +698,7 @@ class CfgWeapons
 	};
 	class PHRP_Kaker_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "Jimbo";
 		displayName = "M52D Body Armor (Kaker)";
 		scope = 2;
 		scopeCurator = 2;
@@ -829,9 +829,10 @@ class CfgWeapons
 				"CustomKit_Scorch"
 			};
 		};
-	};class PHRP_Wilson_Armor : PHRP_Base_Armor
+	};
+	class PHRP_Wilson_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "MrMicrobe";
 		displayName = "M52D Body Armor (wilson)";
 		scope = 2;
 		scopeCurator = 2;

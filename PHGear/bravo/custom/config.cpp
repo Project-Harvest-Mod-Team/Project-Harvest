@@ -28,7 +28,7 @@ class CfgWeapons
 	};
 	class PHRP_Bravo_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "MrMicrobe";
 		displayName = "M52D Body Armor - Bravo";
 		scope = 2;
 		scopeCurator = 2;
@@ -162,7 +162,7 @@ class CfgWeapons
 	};
 	class PHRP_Bravo_Medic_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "MrMicrobe";
 		displayName = "M52D Body Armor - Bravo Medic";
 		scope = 2;
 		scopeCurator = 2;
@@ -296,7 +296,7 @@ class CfgWeapons
 	};
 	class PHRP_Richter_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "Enreth";
 		displayName = "M52D Body Armor (Richter)";
 		scope = 2;
 		scopeCurator = 2;

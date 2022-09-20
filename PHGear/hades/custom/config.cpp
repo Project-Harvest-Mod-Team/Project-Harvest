@@ -28,7 +28,7 @@ class CfgWeapons
 	};
 	class PHRP_Kaz_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "Luna";
 		displayName = "M52D Body Armor (Kaz)";
 		scope = 2;
 		scopeCurator = 2;
@@ -162,7 +162,7 @@ class CfgWeapons
 	};
 	class PHRP_Vanderclutch_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "MrMicrobe";
 		displayName = "M52D Body Armor (Vanderclutch)";
 		scope = 2;
 		scopeCurator = 2;
@@ -296,7 +296,7 @@ class CfgWeapons
 	};
 	class PHRP_Vale_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "Vale";
 		displayName = "M52D Body Armor (Vale)";
 		scope = 2;
 		scopeCurator = 2;
