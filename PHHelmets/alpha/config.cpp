@@ -100,7 +100,7 @@ class XtdGearInfos
 			role = "kaker";
 			model = "alpha_helmets";
 		};
-		class PHRP_Wilson_ODST_Helmet
+		class PHRP_Wilson_Operator_Helmet
 		{
 			role = "wilson";
 			model = "alpha_helmets";
@@ -177,7 +177,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
 	};
-	class PHRP_Wilson_ODST_Helmet : PHRP_Base_Operator_Helmet
+	class PHRP_Wilson_Operator_Helmet : PHRP_Base_Operator_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -185,7 +185,6 @@ class CfgWeapons
 		author = "Project Harvest Mod Team";
 		displayName = "CH252D Helmet (Wilson)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wilson_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
 	};
 };

@@ -83,14 +83,13 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
 	};
-	class PHRP_Wilson_ODST_Helmet_dp : PHRP_Base_Operator_Helmet__dp
+	class PHRP_Wilson_Operator_Helmet_dp : PHRP_Base_Operator_Helmet__dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
 		author = "Project Harvest Mod Team";
 		displayName = "CH252D Helmet (Owessel)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wilson_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
 	};
 };
