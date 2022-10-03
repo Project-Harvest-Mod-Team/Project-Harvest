@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","collins","angel","ansley","tepfer","raider","carter"};
+				values[] = {"recruit","collins","angel","ansley","tepfer","raider","carter","wrecker"};
 				class recruit
 				{
 					label = "Recruit";
@@ -61,6 +61,10 @@ class XtdGearModels
 				class carter
 				{
 					label = "Carter";
+				};
+				class wrecker
+				{
+					label = "Wrecker";
 				};
 			};
 		};
@@ -103,6 +107,11 @@ class XtdGearInfos
 		class PHRP_Carter_Commando_Helmet
 		{
 			role = "carter";
+			model = "reservist_helmets";
+		};
+		class PHRP_Wrecker_Commando_Helmet
+		{
+			role = "wrecker";
 			model = "reservist_helmets";
 		};
 	};
@@ -186,5 +195,16 @@ class CfgWeapons
 		displayName = "Mark V/K Helmet (Carter)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_carter_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
+	};
+	class PHRP_Wrecker_Commando_Helmet : PHRP_Base_Commando_Helmet
+	{
+		dlc = "PHHelmets";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Mark V/K Helmet (Wrecker)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wrecker_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
 	};
 };

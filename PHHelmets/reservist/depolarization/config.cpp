@@ -92,4 +92,14 @@ class CfgWeapons
         hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_carter_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
 	};
+	class PHRP_Wrecker_Commando_Helmet_dp : PHRP_Base_Commando_Helmet_dp
+	{
+		
+		scope = 1;
+		scopeArsenal = 1;
+		author = "Project Harvest Mod Team";
+		displayName = "Mark V/K Helmet (Wrecker)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wrecker_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
 };
