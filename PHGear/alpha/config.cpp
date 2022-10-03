@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","holland","riot","owessel","kaker","wilson"};
+				values[] = {"default","corpsman","holland","riot","kaker","wilson"};
 				class default
 				{
 					label = "Default";
@@ -54,11 +54,6 @@ class XtdGearModels
 				class riot
 				{
 					label = "Riot";
-					image = "";
-				};
-				class owessel
-				{
-					label = "Owessel";
 					image = "";
 				};
 				class kaker

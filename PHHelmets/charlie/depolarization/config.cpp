@@ -30,6 +30,16 @@ class CfgWeapons
 		displayName = "CH252D Helmet - Charlie";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_cassidy_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_charliebase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
+	class PHRP_Morgenstern_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Morgenstern)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morgenstern_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 };

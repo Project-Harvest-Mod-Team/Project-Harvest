@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","wrecker","pjetrovic","carter"};
+				values[] = {"soldner","wrecker","pjetrovic"};
 				class soldner
 				{
 					label = "Soldner";
@@ -45,10 +45,6 @@ class XtdGearModels
 				class pjetrovic
 				{
 					label = "Pjetrovic";
-				};
-				class carter
-				{
-					label = "Carter";
 				};
 			};
 		};
@@ -71,11 +67,6 @@ class XtdGearInfos
 		class PHRP_Pjetrovic_ODST_Helmet
 		{
 			role = "pjetrovic";
-			model = "disciple_helmets";
-		};
-		class PHRP_Carter_Commando_Helmet
-		{
-			role = "carter";
 			model = "disciple_helmets";
 		};
 	};
@@ -116,16 +107,5 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_pjetrovic_co.paa","PHHelmets\data\helmets\customvisor_pjetrovic_co.paa"};
-	};
-	class PHRP_Carter_Commando_Helmet : PHRP_Base_Commando_Helmet
-	{
-		dlc = "PHHelmets";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Mark V/K Helmet (Carter)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_carter_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
 	};
 };

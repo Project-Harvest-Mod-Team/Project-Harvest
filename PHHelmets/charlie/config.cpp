@@ -33,10 +33,18 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default"};
+				values[] = {"default","morgenstern","owessel"};
 				class default
 				{
 					label = "Default";
+				};
+				class morgenstern
+				{
+					label = "Morgenstern";
+				}
+				class owessel
+				{
+					label = "Owessel";
 				};
 			};
 		};
@@ -51,11 +59,22 @@ class XtdGearInfos
 			role = "default";
 			model = "charlie_helmets";
 		};
+		class PHRP_Morgenstern_Helmet
+		{
+			role = "morgenstern";
+			model = "charlie_helmets";
+		};
+		class PHRP_Owessel_HRPilot_Helmet
+		{
+			role = "owessel";
+			model = "charlie_helmets";
+		};
 	};
 };
 class CfgWeapons
 {
 	class PHRP_Base_ODST_Helmet;
+	class PHRP_Base_HRPilot_Helmet;
 	class PHRP_Charlie_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -66,5 +85,26 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_charliebase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
+	};
+	class PHRP_Morgenstern_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VibingVampire";
+		displayName = "CH252D Helmet (Morgenstern)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morgenstern_co.paa","PHHelmets\data\helmets\customvisor_morgenstern_co.paa"};
+	};
+	class PHRP_Owessel_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "CH252D Helmet (Owessel)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
 	};
 };

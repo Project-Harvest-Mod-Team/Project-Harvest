@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Disciple Armors";
-				values[] = {"Soldner","wrecker","Pjetrovic","Carter"};
+				values[] = {"Soldner","wrecker","Pjetrovic"};
 				class soldner
 				{
 					label = "Soldner";
@@ -47,11 +47,6 @@ class XtdGearModels
 				class pjetrovic
 				{
 					label = "Pjetrovic";
-					image = "";
-				};
-				class carter
-				{
-					label = "Carter";
 					image = "";
 				};
 			};
@@ -76,11 +71,6 @@ class XtdGearInfos
 		{
 			model = "PHRP_Disciple_vests";
 			role = "Pjetrovic";
-		};
-		class PHRP_Carter_Armor
-		{
-			model = "PHRP_Disciple_vests";
-			role = "Carter";
 		};
 	};
 };

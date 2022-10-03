@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","collins","angel","ansley","tepfer","raider"};
+				values[] = {"recruit","collins","angel","ansley","tepfer","raider","carter"};
 				class recruit
 				{
 					label = "Recruit";
@@ -57,6 +57,10 @@ class XtdGearModels
 				class raider
 				{
 					label = "Raider";
+				};
+				class carter
+				{
+					label = "Carter";
 				};
 			};
 		};
@@ -94,6 +98,11 @@ class XtdGearInfos
 		class PHRP_Raider_Commando_Helmet
 		{
 			role = "raider";
+			model = "reservist_helmets";
+		};
+		class PHRP_Carter_Commando_Helmet
+		{
+			role = "carter";
 			model = "reservist_helmets";
 		};
 	};
@@ -166,5 +175,16 @@ class CfgWeapons
 		displayName = "Mark V/K Helmet (Raider)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_raider_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
+	};
+	class PHRP_Carter_Commando_Helmet : PHRP_Base_Commando_Helmet
+	{
+		dlc = "PHHelmets";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Mark V/K Helmet (Carter)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_carter_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
 	};
 };

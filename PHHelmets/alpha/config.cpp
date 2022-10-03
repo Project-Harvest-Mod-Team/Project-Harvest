@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","holland","riot","mischa","owessel","kaker","wilson"};
+				values[] = {"default","holland","riot","mischa","kaker","wilson"};
 				class default
 				{
 					label = "Default";
@@ -49,10 +49,6 @@ class XtdGearModels
 				class mischa
 				{
 					label = "Mischa";
-				};
-				class owessel
-				{
-					label = "Owessel";
 				};
 				class kaker
 				{
@@ -88,11 +84,6 @@ class XtdGearInfos
 		class PHRP_Mischa_ODST_Helmet
 		{
 			role = "mischa";
-			model = "alpha_helmets";
-		};
-		class PHRP_Owessel_ODST_Helmet
-		{
-			role = "owessel";
 			model = "alpha_helmets";
 		};
 		class PHRP_Kaker_HRPilot_Helmet
@@ -155,17 +146,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_mischa_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
-	class PHRP_Owessel_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Vale";
-		displayName = "CH252D Helmet (Owessel)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
 	};
 	class PHRP_Kaker_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
 	{
