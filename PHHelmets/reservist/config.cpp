@@ -33,10 +33,14 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","collins","angel","ansley","tepfer","raider","carter","wrecker"};
+				values[] = {"recruit","reserve","collins","angel","ansley","tepfer","raider","carter","wrecker"};
 				class recruit
 				{
 					label = "Recruit";
+				};
+				class reserve
+				{
+					label = "Reserve";
 				};
 				class collins
 				{
@@ -77,6 +81,11 @@ class XtdGearInfos
 		class PHRP_Recruit_ODST_Helmet
 		{
 			role = "recruit";
+			model = "reservist_helmets";
+		};
+		class PHRP_Reserve_ODST_Helmet
+		{
+			role = "reserve";
 			model = "reservist_helmets";
 		};
 		class PHRP_Collins_ODST_Helmet
@@ -130,6 +139,17 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_gladius_co.paa","PHHelmets\data\helmets\customvisor_gladius_co.paa"};
+	};
+	class PHRP_Reserve_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet - Reserve";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_gladiusred_co.paa","PHHelmets\data\helmets\customvisor_gladiusred_co.paa"};
 	};
 	class PHRP_Collins_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
