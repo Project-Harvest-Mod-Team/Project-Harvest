@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Bravo Armors";
-				values[] = {"default","corpsman","richter","tinoco","chopper"};
+				values[] = {"default","corpsman","wolf","richter","tinoco","chopper"};
 				class default
 				{
 					label = "Default";
@@ -43,6 +43,11 @@ class XtdGearModels
 				class corpsman
 				{
 					label = "Corpsman";
+					image = "";
+				};
+				class wolf
+				{
+					label = "Wolf";
 					image = "";
 				};
 				class richter
@@ -77,6 +82,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Bravo_vests";
 			role = "corpsman";
+		};
+		class PHRP_Wolf_Armor
+		{
+			model = "PHRP_Bravo_vests";
+			role = "wolf";
 		};
 		class PHRP_Richter_Armor
 		{

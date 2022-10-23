@@ -83,15 +83,6 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tepfer_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
-	class PHRP_Raider_Commando_Helmet_dp : PHRP_Base_Commando_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "Project Harvest Mod Team";
-		displayName = "Mark V/K Helmet (Raider)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_raider_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
-	};
     class PHRP_Carter_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;

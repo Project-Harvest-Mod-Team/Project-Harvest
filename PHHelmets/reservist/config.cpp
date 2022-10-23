@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","angel","ansley","tepfer","raider","carter","wrecker"};
+				values[] = {"recruit","reserve","collins","angel","ansley","tepfer","carter","wrecker"};
 				class recruit
 				{
 					label = "Recruit";
@@ -57,10 +57,6 @@ class XtdGearModels
 				class tepfer
 				{
 					label = "Tepfer";
-				};
-				class raider
-				{
-					label = "Raider";
 				};
 				class carter
 				{
@@ -106,11 +102,6 @@ class XtdGearInfos
 		class PHRP_Tepfer_ODST_Helmet
 		{
 			role = "tepfer";
-			model = "reservist_helmets";
-		};
-		class PHRP_Raider_Commando_Helmet
-		{
-			role = "raider";
 			model = "reservist_helmets";
 		};
 		class PHRP_Carter_Commando_Helmet
@@ -194,16 +185,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tepfer_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
-	class PHRP_Raider_Commando_Helmet : PHRP_Base_Commando_Helmet
-	{
-		dlc = "Project Harvest Armory";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "Mark V/K Helmet (Raider)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_raider_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
 	};
 	class PHRP_Carter_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{

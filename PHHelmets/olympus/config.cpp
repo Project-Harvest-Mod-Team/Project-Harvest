@@ -1,0 +1,130 @@
+class CfgPatches //class desc.
+{
+	class Gladius_UNSC_ODST
+	{
+		author = "Project Harvest Mod Team"; //name of author
+		units[] = //attached units (leave blank)
+		{
+			
+		};
+		weapons[] = //attached weapons (leave blank)
+		{
+			
+		};
+		requiredVersion = 0.1; //artefact of arma, no clue what it is but has to stay 0.1
+		requiredAddons[] =
+		{
+			"A3_Characters_F",
+			"OPTRE_Core"
+		};
+	};
+};
+class XtdGearModels
+{
+	class CamoBase;
+	class CfgWeapons
+	{
+		class olympus_helmets
+		{
+			label = "olympus Helmets";
+			author = "Project Harvest Mod Team";
+			options[] = {"Role"};
+			class role
+			{
+				alwaysSelectable = 1;
+				label = "Role";
+				values[] = {"soldner","pjetrovic","carsten","raider"};
+				class soldner
+				{
+					label = "Soldner";
+				};
+				class pjetrovic
+				{
+					label = "Pjetrovic";
+				};
+				class carsten
+				{
+					label = "Carsten";
+				};
+				class raider
+				{
+					label = "Raider";
+				};
+			};
+		};
+	};
+};
+class XtdGearInfos
+{
+	class CfgWeapons
+	{
+		class PHRP_Soldner_ODST_Helmet
+		{
+			role = "soldner";
+			model = "olympus_helmets";
+		};
+		class PHRP_Pjetrovic_ODST_Helmet
+		{
+			role = "pjetrovic";
+			model = "olympus_helmets";
+		};
+		class PHRP_Carsten_ODST_Helmet
+		{
+			role = "carsten";
+			model = "olympus_helmets";
+		};
+		class PHRP_Raider_Commando_Helmet
+		{
+			role = "raider";
+			model = "olympus_helmets";
+		};
+	};
+};
+class CfgWeapons
+{
+    class PHRP_Base_ODST_Helmet;
+	class PHRP_Base_Commando_Helmet;
+	class PHRP_Soldner_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Luna & Soldner";
+		displayName = "CH252D Helmet (Soldner)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_soldner_co.paa","PHHelmets\data\helmets\customvisor_soldner_co.paa"};
+	};
+	class PHRP_Pjetrovic_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Luna";
+		displayName = "CH252D Helmet (Pjetrovic)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_pjetrovic_co.paa","PHHelmets\data\helmets\customvisor_pjetrovic_co.paa"};
+	};
+	class PHRP_Carsten_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Luna";
+		displayName = "CH252D Helmet (Carsten)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_carsten_co.paa","PHHelmets\data\helmets\customvisor_carsten_co.paa"};
+	};
+	class PHRP_Raider_Commando_Helmet : PHRP_Base_Commando_Helmet
+	{
+		dlc = "Project Harvest Armory";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "Mark V/K Helmet (Raider)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_raider_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
+	};
+};
