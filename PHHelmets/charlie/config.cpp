@@ -33,10 +33,14 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","morgenstern","owessel"};
+				values[] = {"default","chopper","morgenstern","owessel"};
 				class default
 				{
 					label = "Default";
+				};
+				class chopper
+				{
+					label = "Chopper";
 				};
 				class morgenstern
 				{
@@ -57,6 +61,11 @@ class XtdGearInfos
 		class PHRP_Charlie_ODST_Helmet
 		{
 			role = "default";
+			model = "charlie_helmets";
+		};
+		class PHRP_Chopper_ODST_Helmet
+		{
+			role = "chopper";
 			model = "charlie_helmets";
 		};
 		class PHRP_Morgenstern_Helmet
@@ -85,6 +94,17 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_charliebase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
+	};	
+	class PHRP_Chopper_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "CH252D Helmet (Chopper)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 	class PHRP_Morgenstern_Helmet : PHRP_Base_ODST_Helmet
 	{

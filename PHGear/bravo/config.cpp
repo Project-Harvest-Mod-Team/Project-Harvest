@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Bravo Armors";
-				values[] = {"default","corpsman","wolf","richter","tinoco","chopper"};
+				values[] = {"default","corpsman","wolf","richter","tinoco","stone"};
 				class default
 				{
 					label = "Default";
@@ -60,9 +60,9 @@ class XtdGearModels
 					label = "Tinoco";
 					image = "";
 				};
-				class chopper
+				class stone
 				{
-					label = "Chopper";
+					label = "Stone";
 					image = "";
 				};
 			};
@@ -98,10 +98,10 @@ class XtdGearInfos
 			model = "PHRP_Bravo_vests";
 			role = "tinoco";
 		};
-		class PHRP_chopper_Armor
+		class PHRP_Stone_Armor
 		{
 			model = "PHRP_Bravo_vests";
-			role = "chopper";
+			role = "stone";
 		};
 	};
 };

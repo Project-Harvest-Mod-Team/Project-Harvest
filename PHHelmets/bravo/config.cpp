@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","wolf","richter","chopper","tinoco"};
+				values[] = {"default","wolf","richter","tinoco","stone"};
 				class default
 				{
 					label = "Default";
@@ -46,13 +46,13 @@ class XtdGearModels
 				{
 					label = "Richter";
 				};
-				class chopper
-				{
-					label = "Chopper";
-				};
 				class tinoco
 				{
 					label = "Tinoco";
+				};
+				class stone
+				{
+					label = "Stone";
 				};
 			};
 		};
@@ -77,14 +77,14 @@ class XtdGearInfos
 			role = "richter";
 			model = "bravo_helmets";
 		};
-		class PHRP_Chopper_ODST_Helmet
-		{
-			role = "chopper";
-			model = "bravo_helmets";
-		};
 		class PHRP_Tinoco_ODST_Helmet
 		{
 			role = "tinoco";
+			model = "bravo_helmets";
+		};
+		class PHRP_Stone_ODST_Helmet
+		{
+			role = "stone";
 			model = "bravo_helmets";
 		};
 	};
@@ -125,17 +125,6 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_dusk_co.paa","PHHelmets\data\helmets\customvisor_dusk_co.paa"};
 	};
-	class PHRP_Chopper_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "CH252D Helmet (Chopper)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
 	class PHRP_Tinoco_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -146,5 +135,16 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tinoco_co.paa","PHHelmets\data\helmets\customvisor_tinoco_co.paa"};
+	};
+	class PHRP_Stone_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "CH252D Helmet (Stone)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\customvisor_stone_co.paa"};
 	};
 };

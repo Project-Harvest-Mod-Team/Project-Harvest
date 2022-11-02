@@ -696,10 +696,10 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Chopper_Armor : PHRP_Base_Armor
+	class PHRP_Stone_Armor : PHRP_Base_Armor
 	{
 		author = "MrMicrobe";
-		displayName = "M52D Body Armor (chopper)";
+		displayName = "M52D Body Armor (Stone)";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -721,7 +721,7 @@ class CfgWeapons
 			//"A_ODST", 
 			//"A_ShinArmorLeft", 
 			//"A_ShinArmorRight", 
-			//"A_TacPad", 
+			"A_TacPad", 
 			//"A_ThighArmorLeft", 
 			//"A_ThighArmorRight", 
 			//"AS_BaseLeft", 
@@ -745,15 +745,15 @@ class CfgWeapons
 			"AP_AR", 
 			"AP_BR", 
 			"AP_Pack", 
-			"AP_Pistol", 
+			//"AP_Pistol", 
 			"AP_Rounds", 
 			"AP_SG", 
 			"AP_SMG", 
 			"AP_Sniper", 
-			//"AP_Thigh", 
+			"AP_Thigh", 
 			//"AP_Frag", 
-			"AP_Smoke", 
-			//"APO_AR", 
+			//"AP_Smoke", 
+			"APO_AR", 
 			"APO_BR", 
 			"APO_Knife", 
 			"APO_SMG", 
@@ -765,9 +765,9 @@ class CfgWeapons
 		{
 			"PHGear\data\Army\data\vest_odst_co.paa",
 			"PHGear\data\army\data\armor_odst_co.paa",
-			"PHGear\data\armor\customlegs_chopper_co.paa",
+			"PHGear\data\armor\customlegs_stone_co.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
-			"PHGear\data\armor\customarmor_chopper_co.paa"
+			"PHGear\data\armor\customarmor_stone_co.paa"
 		};
 		class ItemInfo :ItemInfo
 		{
@@ -789,7 +789,7 @@ class CfgWeapons
 				//"A_ODST", 
 				//"A_ShinArmorLeft", 
 				//"A_ShinArmorRight", 
-				//"A_TacPad", 
+				"A_TacPad", 
 				//"A_ThighArmorLeft", 
 				//"A_ThighArmorRight", 
 				//"AS_BaseLeft", 
@@ -813,15 +813,15 @@ class CfgWeapons
 				"AP_AR", 
 				"AP_BR", 
 				"AP_Pack", 
-				"AP_Pistol", 
+				//"AP_Pistol", 
 				"AP_Rounds", 
 				"AP_SG", 
 				"AP_SMG", 
 				"AP_Sniper", 
-				//"AP_Thigh", 
+				"AP_Thigh", 
 				//"AP_Frag", 
-				"AP_Smoke", 
-				//"APO_AR", 
+				//"AP_Smoke", 
+				"APO_AR", 
 				"APO_BR", 
 				"APO_Knife", 
 				"APO_SMG", 
