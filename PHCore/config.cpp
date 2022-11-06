@@ -49,3 +49,45 @@ class cfgFactionClasses
 		icon = "";
 	};
 };
+class RscPicture{};
+class RscActiveText{};
+class RscActivePicture: RscActiveText{};
+class RscText{};
+class RscStandardDisplay{};
+class RscDisplayMain: RscStandardDisplay
+{
+	class Controls
+	{
+		delete Spotlight1;
+		delete Spotlight2;
+		delete Spotlight3;
+		delete BackgroundSpotlightLeft;
+		delete BackgroundSpotlight;
+		delete BackgroundSpotlightRight;
+		class Logo: RscActivePicture
+		{
+			text = "\PHCore\textures\PHsymbol.paa";
+		};
+	};
+	enableDisplay = 0;
+	delete Spotlight;
+	class RscActiveText;
+	class RscActivePicture: RscActiveText
+	{
+		style = 48;
+		color[] = {1,1,1,0.5};
+		colorActive[] = {1,1,1,1};
+	};
+	class controlsBackground
+	{
+		class LoadingPic: RscPicture
+		{
+			idc = 1;
+			x = "SafeZoneX";
+			y = "SafeZoneY";
+			h = "SafeZoneH";
+			w = "SafeZoneW";
+			text = "\PHCore\textures\PHRP.jpg";
+		};
+	};
+};
