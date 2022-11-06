@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","angel","ansley","tepfer","carter","wrecker"};
+				values[] = {"recruit","reserve","collins","angel","ansley","tepfer","carter","wrecker","tinoco","carsten","mischa"};
 				class recruit
 				{
 					label = "Recruit";
@@ -65,6 +65,18 @@ class XtdGearModels
 				class wrecker
 				{
 					label = "Wrecker";
+				};
+				class tinoco
+				{
+					label = "Tinoco";
+				};
+				class carsten
+				{
+					label = "Carsten";
+				};
+				class mischa
+				{
+					label = "Mischa";
 				};
 			};
 		};
@@ -112,6 +124,21 @@ class XtdGearInfos
 		class PHRP_Wrecker_Commando_Helmet
 		{
 			role = "wrecker";
+			model = "reservist_helmets";
+		};
+		class PHRP_Tinoco_ODST_Helmet
+		{
+			role = "tinoco";
+			model = "reservist_helmets";
+		};
+		class PHRP_Carsten_ODST_Helmet
+		{
+			role = "carsten";
+			model = "reservist_helmets";
+		};
+		class PHRP_Mischa_ODST_Helmet
+		{
+			role = "mischa";
 			model = "reservist_helmets";
 		};
 	};
@@ -207,5 +234,38 @@ class CfgWeapons
 		displayName = "Mark V/K Helmet (Wrecker)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wrecker_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
+	};
+	class PHRP_Tinoco_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "CH252D Helmet (Tinoco)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tinoco_co.paa","PHHelmets\data\helmets\customvisor_tinoco_co.paa"};
+	};
+	class PHRP_Carsten_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Luna";
+		displayName = "CH252D Helmet (Carsten)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_carsten_co.paa","PHHelmets\data\helmets\customvisor_carsten_co.paa"};
+	};
+	class PHRP_Mischa_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Project Harvest Mod Team";
+		displayName = "CH252D Helmet (Mischa)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_mischa_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 };

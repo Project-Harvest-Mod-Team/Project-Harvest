@@ -26,14 +26,14 @@ class XtdGearModels
 	{
 		class olympus_helmets
 		{
-			label = "olympus Helmets";
+			label = "Olympus Helmets";
 			author = "Project Harvest Mod Team";
 			options[] = {"Role"};
 			class role
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","pjetrovic","carsten","raider"};
+				values[] = {"soldner","pjetrovic","raider"};
 				class soldner
 				{
 					label = "Soldner";
@@ -41,10 +41,6 @@ class XtdGearModels
 				class pjetrovic
 				{
 					label = "Pjetrovic";
-				};
-				class carsten
-				{
-					label = "Carsten";
 				};
 				class raider
 				{
@@ -66,11 +62,6 @@ class XtdGearInfos
 		class PHRP_Pjetrovic_ODST_Helmet
 		{
 			role = "pjetrovic";
-			model = "olympus_helmets";
-		};
-		class PHRP_Carsten_ODST_Helmet
-		{
-			role = "carsten";
 			model = "olympus_helmets";
 		};
 		class PHRP_Raider_Commando_Helmet
@@ -105,17 +96,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_pjetrovic_co.paa","PHHelmets\data\helmets\customvisor_pjetrovic_co.paa"};
-	};
-	class PHRP_Carsten_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Luna";
-		displayName = "CH252D Helmet (Carsten)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_carsten_co.paa","PHHelmets\data\helmets\customvisor_carsten_co.paa"};
 	};
 	class PHRP_Raider_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
