@@ -28,7 +28,7 @@ class CfgWeapons
 	};
 	class PHRP_Soldner_Armor : PHRP_Base_Armor
 	{
-		author = "Luna";
+		author = "Soldner";
 		displayName = "M52D Body Armor (Soldner)";
 		scope = 2;
 		scopeCurator = 2;
