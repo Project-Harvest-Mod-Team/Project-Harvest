@@ -26,7 +26,7 @@ class CfgWeapons
 	{
 		scope = 1;
 		scopeArsenal = 1;
-		author = "Project Harvest Mod Team";
+		author = "Soldner";
 		displayName = "CH252D Helmet - Bravo";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
@@ -36,7 +36,7 @@ class CfgWeapons
 	{
 		scope = 1;
 		scopeArsenal = 1;
-		author = "Project Harvest Mod Team";
+		author = "MrMicrobe";
 		displayName = "CH252D Helmet (Wolf)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
@@ -46,7 +46,7 @@ class CfgWeapons
 	{
 		scope = 1;
 		scopeArsenal = 1;
-		author = "Project Harvest Mod Team";
+		author = "Enreth";
 		displayName = "CH252D Helmet (Richter)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
@@ -56,7 +56,7 @@ class CfgWeapons
 	{
 		scope = 1;
 		scopeArsenal = 1;
-		author = "Project Harvest Mod Team";
+		author = "Soldner";
 		displayName = "CH252D Helmet (Stone)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};

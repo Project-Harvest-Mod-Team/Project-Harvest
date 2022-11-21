@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","angel","ansley","tepfer","carter","wrecker","tinoco","carsten","mischa"};
+				values[] = {"recruit","reserve","collins","angel","ansley","tepfer","carter","wrecker","tinoco","carsten","mischa","burtovski","raider"};
 				class recruit
 				{
 					label = "Recruit";
@@ -77,6 +77,14 @@ class XtdGearModels
 				class mischa
 				{
 					label = "Mischa";
+				};
+				class burtovski
+				{
+					label = "Burtovski";
+				};
+				class raider
+				{
+					label = "Raider";
 				};
 			};
 		};
@@ -141,6 +149,16 @@ class XtdGearInfos
 			role = "mischa";
 			model = "reservist_helmets";
 		};
+		class PHRP_Burtovski_ODST_Helmet
+		{
+			role = "burtovski";
+			model = "reservist_helmets";
+		};
+		class PHRP_Raider_Commando_Helmet
+		{
+			role = "raider";
+			model = "reservist_helmets";
+		};
 	};
 };
 class CfgWeapons
@@ -152,7 +170,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Project Harvest Mod Team";
+		author = "VibingVampire";
 		displayName = "CH252D Helmet - Recruit";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -163,7 +181,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Project Harvest Mod Team";
+		author = "VibingVampire";
 		displayName = "CH252D Helmet - Reserve";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -174,7 +192,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Project Harvest Mod Team";
+		author = "It is Luna";
 		displayName = "CH252D Helmet (Collins)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -207,7 +225,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Project Harvest Mod Team";
+		author = "Soldner";
 		displayName = "CH252D Helmet (Tepfer)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -267,5 +285,27 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_mischa_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
+	};
+	class PHRP_Burtovski_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "CH252D Helmet (Burtovski)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
+	};
+	class PHRP_Raider_Commando_Helmet : PHRP_Base_Commando_Helmet
+	{
+		dlc = "Project Harvest Armory";
+		author = "MrMicrobe";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "Mark V/K Helmet (Raider)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_raider_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
 	};
 };

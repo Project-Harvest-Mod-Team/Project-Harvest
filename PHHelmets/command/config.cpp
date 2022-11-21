@@ -33,18 +33,10 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"moon","burtovski","cassidy"};
+				values[] = {"moon"};
 				class moon
 				{
 					label = "Moon";
-				};
-				class burtovski
-				{
-					label = "Burtovski";
-				};
-				class cassidy
-				{
-					label = "Cassidy";
 				};
 			};
 		};
@@ -57,16 +49,6 @@ class XtdGearInfos
 		class PHRP_Moon_Commando_Helmet
 		{
 			role = "moon";
-			model = "command_helmets";
-		};
-		class PHRP_Burtovski_ODST_Helmet
-		{
-			role = "burtovski";
-			model = "command_helmets";
-		};
-		class PHRP_Cassidy_ODST_Helmet
-		{
-			role = "cassidy";
 			model = "command_helmets";
 		};
 	};
@@ -84,27 +66,5 @@ class CfgWeapons
 		displayName = "Mark V/K Helmet (Moon)";
 		hiddenSelections[] =  {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_moon_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
-	};
-	class PHRP_Burtovski_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "CH252D Helmet (Burtovski)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
-	class PHRP_Cassidy_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Holland";
-		displayName = "CH252D Helmet (Cassidy)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_cassidy_co.paa","PHHelmets\data\helmets\customvisor_cassidy_co.paa"};
 	};
 };

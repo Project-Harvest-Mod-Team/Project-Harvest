@@ -26,7 +26,7 @@ class CfgWeapons
 	{
 		scope = 1;
 		scopeArsenal = 1;
-		author = "Project Harvest Mod Team";
+		author = "Luna";
 		displayName = "Recon Helmet (Kaz)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_kaz_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
@@ -35,7 +35,7 @@ class CfgWeapons
 	{
 		scope = 1;
 		scopeArsenal = 1;
-		author = "Project Harvest Mod Team";
+		author = "MrMicrobe";
 		displayName = "Recon Helmet (Vanderclutch)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_vanderclutch_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};

@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","pjetrovic","raider"};
+				values[] = {"soldner","pjetrovic"};
 				class soldner
 				{
 					label = "Soldner";
@@ -41,10 +41,6 @@ class XtdGearModels
 				class pjetrovic
 				{
 					label = "Pjetrovic";
-				};
-				class raider
-				{
-					label = "Raider";
 				};
 			};
 		};
@@ -64,11 +60,6 @@ class XtdGearInfos
 			role = "pjetrovic";
 			model = "olympus_helmets";
 		};
-		class PHRP_Raider_Commando_Helmet
-		{
-			role = "raider";
-			model = "olympus_helmets";
-		};
 	};
 };
 class CfgWeapons
@@ -80,7 +71,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Luna & Soldner";
+		author = "Soldner";
 		displayName = "CH252D Helmet (Soldner)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -91,20 +82,10 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Luna";
+		author = "Soldner";
 		displayName = "CH252D Helmet (Pjetrovic)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_pjetrovic_co.paa","PHHelmets\data\helmets\customvisor_pjetrovic_co.paa"};
-	};
-	class PHRP_Raider_Commando_Helmet : PHRP_Base_Commando_Helmet
-	{
-		dlc = "Project Harvest Armory";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "Mark V/K Helmet (Raider)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_raider_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
 	};
 };
