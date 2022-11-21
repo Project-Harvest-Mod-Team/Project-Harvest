@@ -180,6 +180,13 @@ class IAintWorried
 	duration=269;
 	musicClass = "PHRPMusic";
 };
+class KlendathuDrop
+{
+	name = "Starship Troopers - Klendathu Drop";
+	sound[] = {"PHmusic\data\Tracks\KlendathuDrop.ogg",db+0,1};
+	duration=273;
+	musicClass = "PHRPMusic";
+};
 class PHRPslayer
 {
 	name = "Slayer";

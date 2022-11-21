@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Olympus Armors";
-				values[] = {"soldner","pjetrovic","raider"};
+				values[] = {"soldner","pjetrovic"};
 				class soldner
 				{
 					label = "Soldner";
@@ -42,11 +42,6 @@ class XtdGearModels
 				class pjetrovic
 				{
 					label = "Pjetrovic";
-					image = "";
-				};
-				class raider
-				{
-					label = "Raider";
 					image = "";
 				};
 			};
@@ -66,11 +61,6 @@ class XtdGearInfos
 		{
 			model = "PHRP_Olympus_vests";
 			role = "pjetrovic";
-		};
-		class PHRP_Raider_Armor
-		{
-			model = "PHRP_Olympus_vests";
-			role = "raider";
 		};
 	};
 };

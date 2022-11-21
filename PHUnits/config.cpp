@@ -52,9 +52,10 @@ class CfgVehicles
 		linkedItems[] = {"PHRP_Recruit_ODST_Helmet","PHRP_Recruit_Armor","ItemMap","ItemCompass","ACE_Altimeter","ItemRadio","OPTRE_Smartfinder","ItemGPS"};
 		respawnLinkedItems[] = {"Gladius_ODST_Helmet","Gladius_Armor_Rifleman","ItemMap","ItemCompass","ACE_Altimeter","ItemRadio","OPTRE_Smartfinder","ItemGPS"};
 	};
-	class Gladius_BR55: Gladius_Rifleman
+	class Gladius_Demolitionist: Gladius_Rifleman
 	{
-		displayName = "Gladius Rifleman (BR55)";
+		displayName = "Gladius Demolitionist";
+		canDeactivateMines = true;
 		Weapons[] = {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6C","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6C","Throw","Put"};
 		Magazines[] = {"OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_36Rnd_95x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","SmokeShell","SmokeShell","OPTRE_M2_Smoke_Red","OPTRE_M2_Smoke_Red","OPTRE_M2_Smoke_Green","OPTRE_M2_Smoke_Green"};
@@ -111,13 +112,13 @@ class CfgGroups
 						position[] = {0,0,0};
 						rank = "SERGEANT";
 						side = 1;
-						vehicle = "Gladius_BR55";
+						vehicle = "Gladius_Rifleman";
 					};
-					class Gladius_SIC: Gladius_Leader
+					class Gladius_Demo: Gladius_Leader
 					{
 						position[] = {5,-5,0};
 						rank = "CORPORAL";
-						vehicle = "Gladius_Rifleman";
+						vehicle = "Gladius_Demolitionist";
 					};
 					class Gladius_DMR: Gladius_Leader
 					{
