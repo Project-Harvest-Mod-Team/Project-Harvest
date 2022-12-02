@@ -73,7 +73,7 @@ class XtdGearInfos
 			role = "stone";
 			model = "bravo_helmets";
 		};
-		class PHRP_Wilson_Operator_Helmet
+		class PHRP_Wilson_CQC_Helmet
 		{
 			role = "wilson";
 			model = "bravo_helmets";
@@ -83,7 +83,7 @@ class XtdGearInfos
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
-	class PHRP_Base_Operator_Helmet;
+	class PHRP_Base_CQC_Helmet;
 	class PHRP_Bravo_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -117,13 +117,13 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\customvisor_stone_co.paa"};
 	};
-	class PHRP_Wilson_Operator_Helmet : PHRP_Base_Operator_Helmet
+	class PHRP_Wilson_CQC_Helmet : PHRP_Base_CQC_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "MrMicrobe";
-		displayName = "CH252D Helmet (Wilson)";
+		displayName = "Mark V/CQC Helmet (Wilson)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wilson_co.paa","PHHelmets\data\helmets\customvisor_wilson_co.paa"};
 	};
