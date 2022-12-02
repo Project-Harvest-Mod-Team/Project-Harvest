@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"kaz","vanderclutch"};
+				values[] = {"kaz","vanderclutch","wolf","richter"};
 				class kaz
 				{
 					label = "Kaz";
@@ -41,6 +41,14 @@ class XtdGearModels
 				class vanderclutch
 				{
 					label = "Vanderclutch";
+				};
+				class wolf
+				{
+					label = "Wolf";
+				};
+				class richter
+				{
+					label = "Richter";
 				};
 			};
 		};
@@ -58,6 +66,16 @@ class XtdGearInfos
 		class PHRP_Vanderclutch_Recon_Helmet
 		{
 			role = "vanderclutch";
+			model = "hades_helmets";
+		};
+		class PHRP_Wolf_Recon_Helmet
+		{
+			role = "wolf";
+			model = "hades_helmets";
+		};
+		class PHRP_Richter_Recon_Helmet
+		{
+			role = "richter";
 			model = "hades_helmets";
 		};
 	};
@@ -84,5 +102,25 @@ class CfgWeapons
 		displayName = "Recon Helmet (Vanderclutch)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_vanderclutch_co.paa","PHHelmets\data\helmets\customvisor_vanderclutch_co.paa"};
+	};	
+	class PHRP_Wolf_Recon_Helmet : PHRP_Base_Recon_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Recon Helmet (Wolf)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\customvisor_wolf_co.paa"};
+	};
+	class PHRP_Richter_Recon_Helmet : PHRP_Base_Recon_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Enreth";
+		displayName = "Recon Helmet (Richter)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_dusk_co.paa","PHHelmets\data\helmets\customvisor_dusk_co.paa"};
 	};
 };

@@ -28,17 +28,33 @@ class CfgFaces
 		{
 			disabled = 0;
 			displayname = "Soldner";
-			texture = "PHFace\Data\Soldner_co.paa";
+			texture = "PHFace\Data\soldner_co.paa";
 			head = "KerryHead_A3";
 			identityTypes[] = {};
 			author = "Soldner";
 			material = "\A3\Characters_F\Heads\Data\m_White_06.rvmat";
 			materialWounded1 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
 			materialWounded2 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
-			textureHL = "PHFace\Data\tattoo1_co.paa";
+			textureHL = "PHFace\Data\soldnertat_co.paa";
 			materialHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
-			textureHL2 = "PHFace\Data\tattoo1_co.paa";
+			textureHL2 = "PHFace\Data\soldnertat_co.paa";
 			materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
+		};
+		class KazHead : WhiteHead_01
+		{
+			disabled = 0;
+			displayname = "Kaz";
+			texture = "PHFace\Data\kaz_co.paa";
+			head = "KerryHead_A3";
+			identityTypes[] = {};
+			author = "Soldner";
+			material = "\A3\Characters_F\Heads\Data\m_White_06.rvmat";
+			materialWounded1 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
+			materialWounded2 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
+			textureHL = "PHFace\Data\kaztat_co.paa";
+			materialHL = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
+			textureHL2 = "PHFace\Data\kaztat_co.paa";
+			materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
 		};
 	};
 };

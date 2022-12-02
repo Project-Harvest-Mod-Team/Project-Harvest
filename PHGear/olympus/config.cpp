@@ -33,15 +33,30 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Olympus Armors";
-				values[] = {"soldner","pjetrovic"};
+				values[] = {"soldner","pjetrovic","burtovski","holland","raider"};
 				class soldner
 				{
 					label = "Soldner";
 					image = "";
 				};
+				class burtovski
+				{
+					label = "Burtovski";
+					image = "";
+				};
 				class pjetrovic
 				{
 					label = "Pjetrovic";
+					image = "";
+				};
+				class raider
+				{
+					label = "Raider";
+					image = "";
+				};
+				class holland
+				{
+					label = "Holland";
 					image = "";
 				};
 			};
@@ -57,10 +72,25 @@ class XtdGearInfos
 			model = "PHRP_Olympus_vests";
 			role = "soldner";
 		};
+		class PHRP_Burtovski_Armor
+		{
+			model = "PHRP_Olympus_vests";
+			role = "burtovski";
+		};
 		class PHRP_Pjetrovic_Armor
 		{
 			model = "PHRP_Olympus_vests";
 			role = "pjetrovic";
+		};
+		class PHRP_Holland_Armor
+		{
+			model = "PHRP_Olympus_vests";
+			role = "holland";
+		};
+		class PHRP_Raider_Armor
+		{
+			model = "PHRP_Olympus_vests";
+			role = "raider";
 		};
 	};
 };

@@ -28,7 +28,7 @@ class CfgWeapons
 	};
 	class PHRP_Moon_Armor : PHRP_Base_Armor
 	{
-		author = "Vale";
+		author = "Soldner";
 		displayName = "M52D Body Armor (Moon)";
 		scope = 2;
 		scopeCurator = 2;
@@ -51,7 +51,7 @@ class CfgWeapons
 			//"A_ODST", 
 			//"A_ShinArmorLeft", 
 			//"A_ShinArmorRight", 
-			"A_TacPad", 
+			//"A_TacPad", 
 			//"A_ThighArmorLeft", 
 			//"A_ThighArmorRight", 
 			//"AS_BaseLeft", 
@@ -119,7 +119,7 @@ class CfgWeapons
 				//"A_ODST", 
 				//"A_ShinArmorLeft", 
 				//"A_ShinArmorRight", 
-				"A_TacPad", 
+				//"A_TacPad", 
 				//"A_ThighArmorLeft", 
 				//"A_ThighArmorRight", 
 				//"AS_BaseLeft", 

@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Reserve Armors";
-				values[] = {"recruit","reserve","tepfer","collins","angel","ansley","carter","wrecker","tinoco","carsten","raider","burtovski"};
+				values[] = {"recruit","reserve","collins","angel","ansley","carter","wrecker","tinoco","carsten","kaker","tepfer"};
 				class recruit
 				{
 					label = "Recruit";
@@ -42,11 +42,6 @@ class XtdGearModels
 				class reserve
 				{
 					label = "Reserve";
-					image = "";
-				};
-				class tepfer
-				{
-					label = "Tepfer";
 					image = "";
 				};
 				class collins
@@ -84,14 +79,14 @@ class XtdGearModels
 					label = "Carsten";
 					image = "";
 				};
-				class raider
+				class kaker
 				{
-					label = "Raider";
+					label = "Kaker";
 					image = "";
 				};
-				class burtovski
+				class tepfer
 				{
-					label = "Burtovski";
+					label = "Tepfer";
 					image = "";
 				};
 			};
@@ -127,11 +122,6 @@ class XtdGearInfos
 			model = "PHRP_Reserve_vests";
 			role = "ansley";
 		};
-		class PHRP_Tepfer_Armor
-		{
-			model = "PHRP_Reserve_vests";
-			role = "tepfer";
-		};
 		class PHRP_Carter_Armor
 		{
 			model = "PHRP_Reserve_vests";
@@ -152,15 +142,15 @@ class XtdGearInfos
 			model = "PHRP_Reserve_vests";
 			role = "carsten";
 		};
-		class PHRP_Raider_Armor
+		class PHRP_Kaker_Armor
 		{
 			model = "PHRP_Reserve_vests";
-			role = "raider";
+			role = "kaker";
 		};
-		class PHRP_Burtovski_Armor
+		class PHRP_Tepfer_Armor
 		{
-			model = "PHRP_command_vests";
-			role = "burtovski";
+			model = "PHRP_Reserve_vests";
+			role = "tepfer";
 		};
 	};
 };

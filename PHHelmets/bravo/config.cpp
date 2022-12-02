@@ -33,22 +33,22 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","wolf","richter","stone"};
+				values[] = {"default","riot","stone","wilson"};
 				class default
 				{
 					label = "Default";
 				};
-				class wolf
+				class riot
 				{
-					label = "Wolf";
-				};
-				class richter
-				{
-					label = "Richter";
+					label = "Riot";
 				};
 				class stone
 				{
 					label = "Stone";
+				};
+				class wilson
+				{
+					label = "Wilson";
 				};
 			};
 		};
@@ -63,14 +63,9 @@ class XtdGearInfos
 			role = "default";
 			model = "bravo_helmets";
 		};
-		class PHRP_Wolf_ODST_Helmet
+		class PHRP_Riot_ODST_Helmet
 		{
-			role = "wolf";
-			model = "bravo_helmets";
-		};
-		class PHRP_Richter_ODST_Helmet
-		{
-			role = "richter";
+			role = "riot";
 			model = "bravo_helmets";
 		};
 		class PHRP_Stone_ODST_Helmet
@@ -78,11 +73,17 @@ class XtdGearInfos
 			role = "stone";
 			model = "bravo_helmets";
 		};
+		class PHRP_Wilson_Operator_Helmet
+		{
+			role = "wilson";
+			model = "bravo_helmets";
+		};
 	};
 };
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
+	class PHRP_Base_Operator_Helmet;
 	class PHRP_Bravo_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -94,27 +95,16 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_bravobase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
-	class PHRP_Wolf_ODST_Helmet : PHRP_Base_ODST_Helmet
+	class PHRP_Riot_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "CH252D Helmet (Wolf)";
+		author = "Soldner";
+		displayName = "CH252D Helmet (Riot)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\customvisor_wolf_co.paa"};
-	};
-	class PHRP_Richter_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Enreth";
-		displayName = "CH252D Helmet (Richter)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_dusk_co.paa","PHHelmets\data\helmets\customvisor_dusk_co.paa"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_riot_co.paa","PHHelmets\data\helmets\customvisor_riot_co.paa"};
 	};
 	class PHRP_Stone_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
@@ -126,5 +116,15 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\customvisor_stone_co.paa"};
+	};
+	class PHRP_Wilson_Operator_Helmet : PHRP_Base_Operator_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "CH252D Helmet (Wilson)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wilson_co.paa","PHHelmets\data\helmets\customvisor_wilson_co.paa"};
 	};
 };

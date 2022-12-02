@@ -22,6 +22,7 @@ class CfgPatches //class desc.
 class CfgWeapons
 {
     class PHRP_Base_Recon_Helmet_dp;
+	class PHRP_Base_ODST_Helmet;
 	class PHRP_Kaz_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
 		scope = 1;
@@ -39,5 +40,23 @@ class CfgWeapons
 		displayName = "Recon Helmet (Vanderclutch)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_vanderclutch_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
+	class PHRP_Wolf_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "MrMicrobe";
+		displayName = "Recon Helmet (Wolf)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_wolf_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
+	class PHRP_Richter_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "MrMicrobe";
+		displayName = "Recon Helmet (Richter)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_richter_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 };

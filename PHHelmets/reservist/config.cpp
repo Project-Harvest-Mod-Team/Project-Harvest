@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","angel","ansley","tepfer","carter","wrecker","tinoco","carsten","mischa","burtovski","raider"};
+				values[] = {"recruit","reserve","collins","angel","ansley","carter","wrecker","tinoco","carsten","mischa","kaker","tepfer"};
 				class recruit
 				{
 					label = "Recruit";
@@ -53,10 +53,6 @@ class XtdGearModels
 				class ansley
 				{
 					label = "Ansley";
-				};
-				class tepfer
-				{
-					label = "Tepfer";
 				};
 				class carter
 				{
@@ -78,13 +74,13 @@ class XtdGearModels
 				{
 					label = "Mischa";
 				};
-				class burtovski
+				class kaker
 				{
-					label = "Burtovski";
+					label = "Kaker";
 				};
-				class raider
+				class tepfer
 				{
-					label = "Raider";
+					label = "Tepfer";
 				};
 			};
 		};
@@ -119,11 +115,6 @@ class XtdGearInfos
 			role = "ansley";
 			model = "reservist_helmets";
 		};
-		class PHRP_Tepfer_ODST_Helmet
-		{
-			role = "tepfer";
-			model = "reservist_helmets";
-		};
 		class PHRP_Carter_Commando_Helmet
 		{
 			role = "carter";
@@ -149,14 +140,14 @@ class XtdGearInfos
 			role = "mischa";
 			model = "reservist_helmets";
 		};
-		class PHRP_Burtovski_ODST_Helmet
+		class PHRP_Kaker_HRPilot_Helmet
 		{
-			role = "burtovski";
+			role = "kaker";
 			model = "reservist_helmets";
 		};
-		class PHRP_Raider_Commando_Helmet
+		class PHRP_Tepfer_ODST_Helmet
 		{
-			role = "raider";
+			role = "tepfer";
 			model = "reservist_helmets";
 		};
 	};
@@ -165,6 +156,7 @@ class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_Commando_Helmet;
+	class PHRP_Base_HRPilot_Helmet;
 	class PHRP_Recruit_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -219,17 +211,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_ansley_co.paa","PHHelmets\data\helmets\customvisor_ansley_co.paa"};
-	};
-	class PHRP_Tepfer_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "CH252D Helmet (Tepfer)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tepfer_co.paa","PHHelmets\data\helmets\customvisor_tepfer_co.paa"};
 	};
 	class PHRP_Carter_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
@@ -286,26 +267,25 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_mischa_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
-	class PHRP_Burtovski_ODST_Helmet : PHRP_Base_ODST_Helmet
+	class PHRP_Kaker_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "MrMicrobe";
-		displayName = "CH252D Helmet (Burtovski)";
+		displayName = "CH252D Helmet (Kaker)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
+	};
+	class PHRP_Tepfer_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "CH252D Helmet (Tepfer)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
-	class PHRP_Raider_Commando_Helmet : PHRP_Base_Commando_Helmet
-	{
-		dlc = "Project Harvest Armory";
-		author = "MrMicrobe";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "Mark V/K Helmet (Raider)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_raider_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tepfer_co.paa","PHHelmets\data\helmets\customvisor_tepfer_co.paa"};
 	};
 };
