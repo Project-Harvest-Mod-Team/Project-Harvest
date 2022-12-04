@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Olympus Armors";
-				values[] = {"soldner","pjetrovic","burtovski","holland","raider"};
+				values[] = {"soldner","burtovski","pjetrovic","holland","raider"};
 				class soldner
 				{
 					label = "Soldner";

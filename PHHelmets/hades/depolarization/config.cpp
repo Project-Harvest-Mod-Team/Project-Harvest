@@ -57,6 +57,6 @@ class CfgWeapons
 		author = "MrMicrobe";
 		displayName = "Recon Helmet (Richter)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_richter_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_dusk_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 };
