@@ -62,4 +62,14 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wilson_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
 	};
+	class PHRP_Blackburn_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "VorpalHotdog";
+		displayName = "CH252D Helmet (Blackburn)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
 };

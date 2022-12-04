@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","riot","stone","wilson"};
+				values[] = {"default","riot","stone","wilson","blackburn"};
 				class default
 				{
 					label = "Default";
@@ -50,6 +50,10 @@ class XtdGearModels
 				{
 					label = "Wilson";
 				};
+				class blackburn
+				{
+					label = "Blackburn";
+				}
 			};
 		};
 	};
@@ -76,6 +80,11 @@ class XtdGearInfos
 		class PHRP_Wilson_CQC_Helmet
 		{
 			role = "wilson";
+			model = "bravo_helmets";
+		};
+		class PHRP_Blackburn_ODST_Helmet
+		{
+			role = "blackburn";
 			model = "bravo_helmets";
 		};
 	};
