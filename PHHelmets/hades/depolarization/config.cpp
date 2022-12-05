@@ -54,7 +54,7 @@ class CfgWeapons
 	{
 		scope = 1;
 		scopeArsenal = 1;
-		author = "MrMicrobe";
+		author = "Enreth";
 		displayName = "Recon Helmet (Richter)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_dusk_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};

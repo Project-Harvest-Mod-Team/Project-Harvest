@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","burtovski","pjetrovic","holland","raider"};
+				values[] = {"soldner","burtovski","pjetrovic","tepfer","holland","raider"};
 				class soldner
 				{
 					label = "Soldner";
@@ -45,6 +45,10 @@ class XtdGearModels
 				class pjetrovic
 				{
 					label = "Pjetrovic";
+				};
+				class tepfer
+				{
+					label = "Tepfer";
 				};
 				class holland
 				{
@@ -75,6 +79,11 @@ class XtdGearInfos
 		class PHRP_Pjetrovic_ODST_Helmet
 		{
 			role = "pjetrovic";
+			model = "olympus_helmets";
+		};
+		class PHRP_Tepfer_ODST_Helmet
+		{
+			role = "tepfer";
 			model = "olympus_helmets";
 		};
 		class PHRP_Holland_ODST_Helmet
@@ -109,7 +118,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "MrMicrobe";
+		author = "Soldner";
 		displayName = "CH252D Helmet (Burtovski)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -126,12 +135,23 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_pjetrovic_co.paa","PHHelmets\data\helmets\customvisor_pjetrovic_co.paa"};
 	};
+	class PHRP_Tepfer_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "CH252D Helmet (Tepfer)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tepfer_co.paa","PHHelmets\data\helmets\customvisor_tepfer_co.paa"};
+	};
 	class PHRP_Holland_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "MrMicrobe";
+		author = "VorpalHotdog";
 		displayName = "CH252D Helmet (Holland)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};

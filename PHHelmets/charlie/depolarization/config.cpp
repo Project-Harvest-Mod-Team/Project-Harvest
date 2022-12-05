@@ -24,6 +24,7 @@ class CfgWeapons
     class PHRP_Base_ODST_Helmet_dp;
 	class PHRP_Base_Commando_Helmet_dp;
 	class PHRP_Base_HRPilot_Helmet__dp;
+	class PHRP_Base_CQC_Helmet__dp;
 	class PHRP_Charlie_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
@@ -61,5 +62,14 @@ class CfgWeapons
 		displayName = "Hellbringer Helmet (Owessel)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
+	};
+	class PHRP_Wilson_CQC_Helmet_dp : PHRP_Base_CQC_Helmet__dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "MrMicrobe";
+		displayName = "Mark V/CQC Helmet (Wilson)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wilson_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
 	};
 };

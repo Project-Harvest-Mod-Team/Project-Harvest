@@ -28,7 +28,7 @@ class CfgWeapons
 	};
 	class PHRP_Alpha_Armor : PHRP_Base_Armor
 	{
-		author = "MrMicrobe";
+		author = "Soldner";
 		displayName = "M52D Body Armor - Alpha";
 		scope = 2;
 		scopeCurator = 2;
@@ -162,7 +162,7 @@ class CfgWeapons
 	};
 	class PHRP_Alpha_Medic_Armor : PHRP_Base_Armor
 	{
-		author = "MrMicrobe";
+		author = "Soldner";
 		displayName = "M52D Body Armor - Alpha Medic";
 		scope = 2;
 		scopeCurator = 2;

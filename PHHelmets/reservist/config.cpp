@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","angel","ansley","carter","wrecker","tinoco","carsten","mischa","kaker","tepfer"};
+				values[] = {"recruit","reserve","collins","angel","ansley","carter","wrecker","tinoco","carsten","kaker","mischa"};
 				class recruit
 				{
 					label = "Recruit";
@@ -77,10 +77,6 @@ class XtdGearModels
 				class kaker
 				{
 					label = "Kaker";
-				};
-				class tepfer
-				{
-					label = "Tepfer";
 				};
 			};
 		};
@@ -143,11 +139,6 @@ class XtdGearInfos
 		class PHRP_Kaker_HRPilot_Helmet
 		{
 			role = "kaker";
-			model = "reservist_helmets";
-		};
-		class PHRP_Tepfer_ODST_Helmet
-		{
-			role = "tepfer";
 			model = "reservist_helmets";
 		};
 	};
@@ -276,16 +267,5 @@ class CfgWeapons
 		displayName = "CH252D Helmet (Kaker)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
-	};
-	class PHRP_Tepfer_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "CH252D Helmet (Tepfer)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tepfer_co.paa","PHHelmets\data\helmets\customvisor_tepfer_co.paa"};
 	};
 };
