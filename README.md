@@ -1,0 +1,1 @@
+# Project-Harvest is a mod managed by the Project Harvest Mod team, this Github is managed by Soldner for the Project Harvest Arma 3 role play server. If you have any questions or concerns please contact Soldner or any of the Project Harvest Mod team members in Discord.
