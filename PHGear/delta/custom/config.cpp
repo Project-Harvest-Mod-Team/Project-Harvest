@@ -28,7 +28,7 @@ class CfgWeapons
 	};
 	class PHRP_Delta_Armor : PHRP_Base_Armor
 	{
-		author = "Project Harvest Mod Team";
+		author = "Soldner";
 		displayName = "M52D Body Armor - Delta";
 		scope = 2;
 		scopeCurator = 2;

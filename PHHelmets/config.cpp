@@ -29,7 +29,7 @@ class CfgWeapons
     class PHRP_Base_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "Project Harvest Armory";
-        author = "Project Harvest Mod Team";
+        author = "Soldner";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -76,7 +76,7 @@ class CfgWeapons
 	class PHRP_Base_ODST_Helmet_dp : VES_CH252D_dp
 	{
 		dlc = "Project Harvest Armory";
-		author = "Project Harvest Mod Team";
+		author = "Soldner";
         scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -124,7 +124,7 @@ class CfgWeapons
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
-        author = "Project Harvest Mod Team";
+        author = "Soldner";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -165,7 +165,7 @@ class CfgWeapons
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
-        author = "Project Harvest Mod Team";
+        author = "Soldner";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -206,7 +206,7 @@ class CfgWeapons
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
-        author = "Project Harvest Mod Team";
+        author = "Soldner";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -246,7 +246,7 @@ class CfgWeapons
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
-        author = "Project Harvest Mod Team";
+        author = "Soldner";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -286,7 +286,7 @@ class CfgWeapons
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
-        author = "Project Harvest Mod Team";
+        author = "Soldner";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -326,7 +326,7 @@ class CfgWeapons
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
-        author = "Project Harvest Mod Team";
+        author = "Soldner";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -366,7 +366,7 @@ class CfgWeapons
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
-        author = "Project Harvest Mod Team";
+        author = "Soldner";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -406,7 +406,7 @@ class CfgWeapons
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
-        author = "Project Harvest Mod Team";
+        author = "Soldner";
 		scope = 1;
 		scopeArsenal = 1;
 		scopeCurator = 1;
@@ -414,6 +414,86 @@ class CfgWeapons
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "AT Helmet - Base";
+		class ItemInfo: ItemInfo
+		{
+			mass = 30;
+			uniformModel = "\OPTRE_UNSC_Units\Army\Operator_Helmet.p3d";
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 25;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 25;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 25;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
+	class OPTRE_UNSC_CQC_Helmet;
+	class PHRP_Base_CQC_Helmet : OPTRE_UNSC_CQC_Helmet
+	{
+		class ItemInfo;
+		dlc = "Project Harvest Armory";
+        author = "Soldner";
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		weaponPoolAvailable = 1;
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "Mark V/CQC Helmet - Base";
+		class ItemInfo: ItemInfo
+		{
+			mass = 30;
+			uniformModel = "\OPTRE_UNSC_Units\Army\Operator_Helmet.p3d";
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 25;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 25;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 25;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
+	class OPTRE_UNSC_CQC_Helmet_dp;
+	class PHRP_Base_CQC_Helmet__dp : OPTRE_UNSC_CQC_Helmet_dp
+	{
+		class ItemInfo;
+		dlc = "Project Harvest Armory";
+        author = "Soldner";
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		weaponPoolAvailable = 1;
+		ace_hearing_protection = 5.0;
+		ace_hearing_lowerVolume = 0.25;
+		displayName = "Mark V/CQC Helmet - Base";
 		class ItemInfo: ItemInfo
 		{
 			mass = 30;
