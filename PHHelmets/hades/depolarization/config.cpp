@@ -30,7 +30,7 @@ class CfgWeapons
 		author = "Luna";
 		displayName = "Recon Helmet (Kaz)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_kaz_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaz_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Vanderclutch_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
@@ -39,7 +39,7 @@ class CfgWeapons
 		author = "MrMicrobe";
 		displayName = "Recon Helmet (Vanderclutch)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_vanderclutch_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_vanderclutch_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Wolf_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
@@ -48,7 +48,7 @@ class CfgWeapons
 		author = "MrMicrobe";
 		displayName = "Recon Helmet (Wolf)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customrecon_wolf_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Richter_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
