@@ -1,0 +1,58 @@
+#define _ARMA_
+
+class CfgPatches
+{
+	class PHVehicles
+	{
+		author = "Soldner";
+		hideName = 0;
+		units[] = {};
+		weapons[] = {};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"PHRP_Core"};
+	};
+};
+class CfgVehicles
+{
+	class B_Plane_Fighter_01_F;
+	class PHRP_Bayonet_Base: B_Plane_Fighter_01_F
+	{
+		scope = 0;
+		dlc = "Project Harvest Armory";
+		author = "Soldner";
+		editorCategory = "PHRP_EdCat_Gladius";
+		editorSubcategory = "PHRP_EdSubCat_Planes";
+		faction = "Gladius_Faction";
+		radarTargetSize = 0.4;
+		visualTargetSize = 0.6;
+		irTargetSize = 0.6;
+	}
+	class PHRP_Foulke_Bayonet_F: PHRP_Bayonet_Base
+	{
+		scope = 2;
+		displayName = "Foulke's Bayonet";
+		hiddenSelections[] = {"Camo1","Camo2","number_01","number_02","number_03"};
+		hiddenSelectionsTextures[] = {"PHVehicles\Data\Bayonet_Foulke_co.paa","PHVehicles\data\Bayonet_01_fuselage_02_co.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_01_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_00_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_01_ca.paa"};
+	};
+	class PHRP_102_Bayonet_F: PHRP_Bayonet_Base
+	{
+		scope = 2;
+		displayName = "102's Bayonet";
+		hiddenSelections[] = {"Camo1","Camo2","number_01","number_02","number_03"};
+		hiddenSelectionsTextures[] = {"PHVehicles\Data\Bayonet_01_fuselage_01_co.paa","PHVehicles\data\Bayonet_01_fuselage_02_co.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_01_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_00_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_02_ca.paa"};
+	};
+	class PHRP_103_Bayonet_F: PHRP_Bayonet_Base
+	{
+		scope = 2;
+		displayName = "103's Bayonet";
+		hiddenSelections[] = {"Camo1","Camo2","number_01","number_02","number_03"};
+		hiddenSelectionsTextures[] = {"PHVehicles\Data\Bayonet_01_fuselage_01_co.paa","PHVehicles\data\Bayonet_01_fuselage_02_co.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_01_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_00_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_03_ca.paa"};
+	};
+	class PHRP_104_Bayonet_F: PHRP_Bayonet_Base
+	{
+		scope = 2;
+		displayName = "104's Bayonet";
+		hiddenSelections[] = {"Camo1","Camo2","number_01","number_02","number_03"};
+		hiddenSelectionsTextures[] = {"PHVehicles\Data\Bayonet_01_fuselage_01_co.paa","PHVehicles\data\Bayonet_01_fuselage_02_co.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_01_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_00_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_04_ca.paa"};
+	};
+};

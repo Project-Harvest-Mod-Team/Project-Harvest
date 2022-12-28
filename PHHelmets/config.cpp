@@ -22,9 +22,50 @@ class CfgPatches //class desc.
 class CfgWeapons
 {
 	class OPTRE_UNSC_CH252D_Helmet_Base;
+	class H_PilotHelmetFighter_B;
+	class PHRP_Pilot_Helmet_Base: H_PilotHelmetFighter_B
+	{
+		class ItemInfo;
+	};
 	class OPTRE_UNSC_CH252D_Helmet: OPTRE_UNSC_CH252D_Helmet_Base
 	{
 		class ItemInfo;
+	};
+	class PHRP_Pilot_Helmet: PHRP_Pilot_Helmet_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		author = "$STR_A3_Bohemia_Interactive";
+		_generalMacro = "H_PilotHelmetFighter_O";
+		displayName = "$STR_A3_H_PilotHelmetFighter_OI0";
+		picture = "\A3\Characters_F\data\ui\icon_H_PilotHelmetFighter_OI_CA.paa";
+		hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\pilot_helmet_iran_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			modelSides[] = {0,3};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 15;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 15;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 15;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
 	};
     class PHRP_Base_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{

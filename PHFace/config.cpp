@@ -27,17 +27,18 @@ class CfgFaces
 		class SoldnerHead : WhiteHead_01
 		{
 			disabled = 0;
-			displayname = "Soldner";
-			texture = "PHFace\Data\soldner_co.paa";
+			displayname = "Foulke";
+			//texture = "\A3\Characters_F\Heads\Data\m_White_05_co.paa";
+			texture = "\A3\characters_f_contact\Heads\Data\m_Livonian_10_co.paa";
 			head = "KerryHead_A3";
 			identityTypes[] = {};
 			author = "Soldner";
-			material = "\A3\Characters_F\Heads\Data\m_White_06.rvmat";
+			material = "\A3\Characters_F\Heads\Data\m_White_05.rvmat";
 			materialWounded1 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
 			materialWounded2 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
-			textureHL = "PHFace\Data\soldnertat_co.paa";
+			textureHL = "PHFace\Data\foulke_co.paa";
 			materialHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
-			textureHL2 = "PHFace\Data\soldnertat_co.paa";
+			textureHL2 = "PHFace\Data\foulke_co.paa";
 			materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
 		};
 		class KazHead : WhiteHead_01

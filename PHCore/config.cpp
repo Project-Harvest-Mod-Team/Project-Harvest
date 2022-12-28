@@ -38,6 +38,14 @@ class CfgEditorSubcategories
 	{
 		displayName = "ODSTs";
 	};
+	class PHRP_Pilots
+	{
+		displayName = "Navy";
+	}
+	class PHRP_EdSubCat_Planes
+	{
+		displayName = "Planes";
+	};
 };
 class cfgFactionClasses
 {
