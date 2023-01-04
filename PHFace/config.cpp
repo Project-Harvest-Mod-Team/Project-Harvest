@@ -33,9 +33,9 @@ class CfgFaces
 			head = "KerryHead_A3";
 			identityTypes[] = {};
 			author = "Soldner";
-			material = "\A3\Characters_F\Heads\Data\m_White_05.rvmat";
-			materialWounded1 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
-			materialWounded2 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
+			material = "\A3\characters_f_contact\Heads\Data\m_Livonian_10.rvmat";
+			materialWounded1 = "A3\characters_f_contact\Heads\Data\m_Livonian_10_injury.rvmat";
+			materialWounded2 = "A3\characters_f_contact\Heads\Data\m_Livonian_10_injury.rvmat";
 			textureHL = "PHFace\Data\foulke_co.paa";
 			materialHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
 			textureHL2 = "PHFace\Data\foulke_co.paa";
@@ -56,6 +56,10 @@ class CfgFaces
 			materialHL = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
 			textureHL2 = "PHFace\Data\kaztat_co.paa";
 			materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
+		};
+		class BlackburnHead : WhiteHead_01
+		{
+			//They smell
 		};
 	};
 };

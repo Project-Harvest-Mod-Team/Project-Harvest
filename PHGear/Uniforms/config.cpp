@@ -199,7 +199,14 @@ class CfgVehicles
 			};
 			class HitRightArm: HitRightArm
 			{
+				armor = 6;
+				material = -1;
 				name = "hand_r";
+				passThrough = 1;
+				radius = 0.08;
+				explosionShielding = 0.1;
+				visual = "injury_hands";
+				minimalHit = 0.01;
 			};
 			class HitLeftLeg: HitRightArm
 			{
@@ -214,7 +221,14 @@ class CfgVehicles
 			};
 			class HitRightLeg: HitRightLeg
 			{
+				armor = 6;
+				material = -1;
 				name = "leg_r";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = 0.1;
+				visual = "injury_legs";
+				minimalHit = 0.01;
 			};
 			class ACE_HDBracket: ACE_HDBracket
 			{
@@ -230,9 +244,9 @@ class CfgVehicles
 			};
 		};
 		dlc = "Project Harvest Armory";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
+		scope = 1;
+		scopeCurator = 1;
+		scopeArsenal = 1;
 		vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
 		uniformClass = "Gladius_BDU";
 		model = "\OPTRE_UNSC_Units\Army\uniform.p3d";
@@ -249,8 +263,8 @@ class CfgVehicles
 	class Strigon_Soldier: PHRP_Soldier_WDL
 	{
 		dlc = "Project Harvest Armory";
-		scope = 2;
-		scopeCurator = 2;
+		scope = 1;
+		scopeCurator = 1;
 		scopeArsenal = 2;
 		author = "Soldner";
 		displayName = "Strigon Pilot";
@@ -469,8 +483,8 @@ class CfgVehicles
 	};
 	class BDU_V_Gladius: PHRP_Base_Uniform
 	{
-		scope = 2;
-		scopeCurator = 2;
+		
+		scopeArsenal = 2;
 		uniformclass = "Gladius_BDU";
 		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\H2A_CO.paa","PHGear\data\uniforms\H2A_CO.paa"};
@@ -520,7 +534,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "Strigon_Soldier";
-			containerClass = "Supply500";
+			containerClass = "Supply400";
 			mass = 80;
 			modelSides[] = {6};
 		};

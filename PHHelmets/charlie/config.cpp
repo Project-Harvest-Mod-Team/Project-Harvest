@@ -67,7 +67,7 @@ class XtdGearInfos
 			role = "default";
 			model = "charlie_helmets";
 		};
-		class PHRP_Chopper_Commando_Helmet
+		class PHRP_Chopper_ODST_Helmet
 		{
 			role = "chopper";
 			model = "charlie_helmets";
@@ -93,7 +93,6 @@ class CfgWeapons
 {
 	class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_HRPilot_Helmet;
-	class PHRP_Base_Commando_Helmet;
 	class PHRP_Base_CQC_Helmet;
 	class PHRP_Charlie_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
@@ -105,17 +104,17 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_charliebase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};	
-	class PHRP_Chopper_Commando_Helmet : PHRP_Base_Commando_Helmet
+	};
+	class PHRP_Chopper_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
-		dlc = "Project Harvest Armory";
-		author = "MrMicrobe";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "Mark V/K Helmet (Chopper)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
+		author = "Soldner";
+		displayName = "CH252D Helmet (Chopper)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","PHHelmets\data\helmets\customvisor_chopper_co.paa"};
 	};
 	class PHRP_Morgenstern_Helmet : PHRP_Base_ODST_Helmet
 	{
