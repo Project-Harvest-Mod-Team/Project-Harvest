@@ -33,10 +33,14 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default"};
+				values[] = {"default","Erikson"};
 				class default
 				{
 					label = "Default";
+				};
+				class erikson
+				{
+					label = "Erikson";
 				};
 			};
 		};
@@ -49,6 +53,11 @@ class XtdGearInfos
 		class PHRP_Alpha_ODST_Helmet
 		{
 			role = "default";
+			model = "alpha_helmets";
+		};
+		class PHRP_Erikson_ODST_Helmet
+		{
+			role = "erikson";
 			model = "alpha_helmets";
 		};
 	};
@@ -66,5 +75,16 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_alphabase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
+	};
+	class PHRP_Erikson_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VorpalHotdog";
+		displayName = "CH252D Helmet(Erikson))";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","PHHelmets\data\helmets\customvisor_erikson_co.paa"};
 	};
 };

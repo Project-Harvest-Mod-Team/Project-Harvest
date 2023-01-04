@@ -23,6 +23,7 @@ class CfgWeapons
 {
 	class OPTRE_UNSC_CH252D_Helmet_Base;
 	class H_PilotHelmetFighter_B;
+	class H_HelmetB;
 	class PHRP_Pilot_Helmet_Base: H_PilotHelmetFighter_B
 	{
 		class ItemInfo;
@@ -561,5 +562,80 @@ class CfgWeapons
 				};
 			};
 		};
+	};
+	class PHRP_Base_Beret: H_HelmetB
+    {
+        author = "VorpalHotdog";
+        scope = 1;
+        displayName = "PHRP Beret Base";
+        picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
+        model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusberet_co.paa"};
+        class ItemInfo: HeadgearItem
+        {
+            mass = 20;
+            uniformModel = "a3\characters_f_epb\BLUFOR\headgear_beret02";
+            hiddenSelections[] = {"Camo"};
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName = "HitHead";
+                    armor = 1;
+                    passThrough = 0.5;
+                };
+            };
+        };
+    };
+	class PHRP_Base_Boonie
+	{
+		author = "VorpalHotdog";
+        scope = 1;
+        displayName = "PHRP Beret Base";
+        picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
+        model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusberet_co.paa"};
+        class ItemInfo: HeadgearItem
+        {
+            mass = 20;
+            uniformModel = "a3\characters_f_epb\BLUFOR\headgear_beret02";
+            hiddenSelections[] = {"Camo"};
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName = "HitHead";
+                    armor = 1;
+                    passThrough = 0.5;
+                };
+            };
+        };
+	};
+	class PHRP_Base_Patrol
+	{
+		author = "VorpalHotdog";
+        scope = 1;
+        displayName = "PHRP Beret Base";
+        picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
+        model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
+        hiddenSelections[] = {"Camo"};
+        hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusberet_co.paa"};
+        class ItemInfo: HeadgearItem
+        {
+            mass = 20;
+            uniformModel = "a3\characters_f_epb\BLUFOR\headgear_beret02";
+            hiddenSelections[] = {"Camo"};
+            class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName = "HitHead";
+                    armor = 1;
+                    passThrough = 0.5;
+                };
+            };
+        };
 	};
 };
