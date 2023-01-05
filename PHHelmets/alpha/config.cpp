@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","Erikson"};
+				values[] = {"default","erikson"};
 				class default
 				{
 					label = "Default";

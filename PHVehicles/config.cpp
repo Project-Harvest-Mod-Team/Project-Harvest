@@ -33,7 +33,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayName = "Foulke's Bayonet";
 		hiddenSelections[] = {"Camo1","Camo2","number_01","number_02","number_03"};
-		hiddenSelectionsTextures[] = {"PHVehicles\Data\Bayonet_Foulke_co.paa","PHVehicles\data\Strigon_02_co.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_01_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_00_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_01_ca.paa"};
+		hiddenSelectionsTextures[] = {"PHVehicles\Data\Strigon_01_co.paa","PHVehicles\data\Strigon_02_co.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_01_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_00_ca.paa","a3\air_f_jets\plane_fighter_01\data\Numbers\Fighter_01_01_ca.paa"};
 	};
 	class PHRP_102_Bayonet_F: PHRP_Bayonet_Base
 	{
