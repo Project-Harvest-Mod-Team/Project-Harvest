@@ -32,7 +32,7 @@ class CfgWeapons
 	{
 		class ItemInfo;
 	};
-	class PHRP_Pilot_Helmet: PHRP_Pilot_Helmet_Base
+	class PHRP_JHMCS_Helmet: PHRP_Pilot_Helmet_Base
 	{
 		scope = 1;
 		scopeArsenal = 1;
@@ -42,7 +42,9 @@ class CfgWeapons
 		displayName = "$STR_A3_H_PilotHelmetFighter_OI0";
 		picture = "\A3\Characters_F\data\ui\icon_H_PilotHelmetFighter_OI_CA.paa";
 		hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\pilot_helmet_iran_co.paa"};
-		class ItemInfo: ItemInfo
+		optreVarietys[] = {"_dp","","_broken"};
+		optreHUDStyle = "ODST_1";
+		class ItemInfo : ItemInfo
 		{
 			modelSides[] = {0,3};
 			class HitpointsProtectionInfo

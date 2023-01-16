@@ -63,6 +63,15 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
 	};
+	class PHRP_Kaker_HRPilot_Helmet_dp : PHRP_Base_HRPilot_Helmet__dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "MrMicrobe";
+		displayName = "Hellbringer Helmet (Kaker)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
+	};
 	class PHRP_Wilson_CQC_Helmet_dp : PHRP_Base_CQC_Helmet__dp
 	{
 		scope = 1;

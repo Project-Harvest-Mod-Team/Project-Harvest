@@ -15,6 +15,139 @@ class CfgPatches
 		requiredAddons[] = {};
 	};
 };
+class XtdGearModels
+{
+	class CfgWeapons
+	{
+		class PHRP_Uniform
+		{
+			label = "Uniforms";
+			author = "Soldner";
+			options[] = {"type"};
+			class type
+			{
+				label = "Type";
+				values[] = {"normal","rolled","short"};
+				changeingame = 1;
+				changedelay = 0;
+				alwaysSelectable = 1;
+				class normal
+				{
+					label = "Normal";
+				};
+				class rolled
+				{
+					label = "Rolled";
+				};
+				class short
+				{
+					label = "Short";
+				};
+			};
+		};
+	};
+};
+class XtdGearInfos
+{
+	class CfgWeapons
+	{
+		class Gladius_BDU
+		{
+			model = "PHRP_Uniform";
+			type = "normal";
+		};
+		class Gladius_BDU_Rolled
+		{
+			model = "PHRP_Uniform";
+			type = "rolled";
+		};
+		class Gladius_BDU_Short
+		{
+			model = "PHRP_Uniform";
+			type = "short";
+		};
+	};
+};
+class CfgWeapons
+{
+	class Uniform_Base;
+	class U_B_PilotCoveralls;
+	class UniformItem;
+	class U_B_CombatUniform_mcam: Uniform_Base
+	{
+		class ItemInfo;
+	};
+	class PHRP_Base: U_B_CombatUniform_mcam
+	{
+		scope = 0;
+		scopeCurator = 0;
+		scopeArsenal = 0;
+		author = "Soldner";
+		ACE_GForceCoef = 0.9;
+		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
+		CBRN_protectionLevel = "4 + 8";
+		class ItemInfo: ItemInfo
+		{
+			containerClass = "Supply200";
+			uniformModel = "-";
+			uniformType = "Neopren";
+			mass = 40;
+		};
+	}
+	class Gladius_BDU: PHRP_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "Gladius Combat Uniform";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "BDU_V_Gladius";
+		};
+	};
+	class Gladius_BDU_Rolled: PHRP_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "Gladius Combat Uniform (Rolled)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "BDU_V_Gladius_Rolled";
+		};
+	};
+	class Gladius_BDU_Short: PHRP_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "Gladius Combat Uniform (Short)";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "BDU_V_Gladius_Short";
+		};
+	};
+	class Strigon_Uniform: U_B_PilotCoveralls
+	{
+		dlc = "Project Harvest Armory";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "Strigon Pilot Coveralls";
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\strigon_suit_co.paa"};
+		ACE_GForceCoef = 0.1;
+		class ItemInfo: UniformItem
+		{
+			uniformModel = "-";
+			uniformClass = "Strigon_V_Uniform";
+			containerClass = "Supply400";
+			mass = 80;
+			modelSides[] = {6};
+		};
+	};
+};
 class CfgVehicles
 {
 	class SoldierWB;
@@ -260,7 +393,7 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"OPTRE_UNSC_Units\Army\data\uniform_a_woodland_co.paa","OPTRE_UNSC_Units\Army\data\uniform_b_woodland_co.paa"};
 		editorSubcategory = "PHRP_EdSubCat_ODSTs";
 	};
-	class Strigon_Soldier: PHRP_Soldier_WDL
+	class Strigon_V_Uniform: PHRP_Soldier_WDL
 	{
 		dlc = "Project Harvest Armory";
 		scope = 1;
@@ -483,60 +616,25 @@ class CfgVehicles
 	};
 	class BDU_V_Gladius: PHRP_Base_Uniform
 	{
-		
 		scopeArsenal = 2;
 		uniformclass = "Gladius_BDU";
 		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\H2A_CO.paa","PHGear\data\uniforms\H2A_CO.paa"};
 	};
-};
-class CfgWeapons
-{
-	class Uniform_Base;
-	class U_B_PilotCoveralls;
-	class UniformItem;
-	class U_B_CombatUniform_mcam: Uniform_Base
+	class BDU_V_Gladius_Rolled: PHRP_Base_Uniform
 	{
-		class ItemInfo;
-	};
-	class Gladius_BDU: U_B_CombatUniform_mcam
-	{
-		dlc = "Project Harvest Armory";
-		scope = 2;
-		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "Gladius Combat Uniform";
-		picture = "\optre_unsc_units\army\icons\army_uniform_DES";
-		CBRN_protectionLevel = "4 + 8";
-		ACE_GForceCoef = 0.9;
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = "BDU_V_Gladius";
-			containerClass = "Supply200";
-			uniformModel = "-";
-			uniformType = "Neopren";
-			mass = 40;
-		};
+		model = "\OPTRE_UNSC_Units\Army\uniform_rolled";
+		uniformclass = "Gladius_BDU_Rolled";
+		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\H2A_CO.paa","PHGear\data\uniforms\H2A_CO.paa"};
 	};
-	class Strigon_Uniform: U_B_PilotCoveralls
+	class BDU_V_Gladius_Short: PHRP_Base_Uniform
 	{
-		dlc = "Project Harvest Armory";
-		scope = 2;
-		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "Strigon Pilot Coveralls";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\strigon_suit_co.paa"};
-		ACE_GForceCoef = 0.1;
-		class ItemInfo: UniformItem
-		{
-			uniformModel = "-";
-			uniformClass = "Strigon_Soldier";
-			containerClass = "Supply400";
-			mass = 80;
-			modelSides[] = {6};
-		};
+		model = "\OPTRE_UNSC_Units\Army\uniform_short";
+		uniformclass = "Gladius_BDU_Short";
+		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
+		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\H2A_CO.paa","PHGear\data\uniforms\H2A_CO.paa"};
 	};
 };

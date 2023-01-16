@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","angel","ansley","carter","wrecker","tinoco","carsten","kaker","mischa"};
+				values[] = {"recruit","reserve","collins","angel","ansley","carter","wrecker","tinoco","carsten","mischa"};
 				class recruit
 				{
 					label = "Recruit";
@@ -73,10 +73,6 @@ class XtdGearModels
 				class mischa
 				{
 					label = "Mischa";
-				};
-				class kaker
-				{
-					label = "Kaker";
 				};
 			};
 		};
@@ -134,11 +130,6 @@ class XtdGearInfos
 		class PHRP_Mischa_ODST_Helmet
 		{
 			role = "mischa";
-			model = "reservist_helmets";
-		};
-		class PHRP_Kaker_HRPilot_Helmet
-		{
-			role = "kaker";
 			model = "reservist_helmets";
 		};
 	};
@@ -257,15 +248,5 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_mischa_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
-	class PHRP_Kaker_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "CH252D Helmet (Kaker)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
 	};
 };

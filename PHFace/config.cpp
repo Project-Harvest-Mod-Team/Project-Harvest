@@ -24,24 +24,23 @@ class CfgFaces
 	class Man_A3
 	{
 		class WhiteHead_01;
-		class SoldnerHead : WhiteHead_01
+		class PHRP_FoulkeHead : WhiteHead_01
 		{
 			disabled = 0;
 			displayname = "Foulke";
-			//texture = "\A3\Characters_F\Heads\Data\m_White_05_co.paa";
-			texture = "\A3\characters_f_contact\Heads\Data\m_Livonian_10_co.paa";
-			head = "KerryHead_A3";
+			texture = "PHFace\Data\foulke_co.paa";
+			material = "PHFace\Data\foulke.rvmat";
+			head = "DefaultHead_A3";
 			identityTypes[] = {};
 			author = "Soldner";
-			material = "\A3\characters_f_contact\Heads\Data\m_Livonian_10.rvmat";
-			materialWounded1 = "A3\characters_f_contact\Heads\Data\m_Livonian_10_injury.rvmat";
-			materialWounded2 = "A3\characters_f_contact\Heads\Data\m_Livonian_10_injury.rvmat";
-			textureHL = "PHFace\Data\foulke_co.paa";
 			materialHL = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
-			textureHL2 = "PHFace\Data\foulke_co.paa";
 			materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_hairy_muscular.rvmat";
+			materialWounded1 = "A3\Characters_F\Heads\Data\m_Miller_injury.rvmat";
+			materialWounded2 = "A3\Characters_F\Heads\Data\m_Miller_injury.rvmat";
+			textureHL = "PHFace\Data\foulke_tat_co.paa";
+			textureHL2 = "PHFace\Data\foulke_tat_co.paa";
 		};
-		class KazHead : WhiteHead_01
+		class PHRP_KazHead : WhiteHead_01
 		{
 			disabled = 0;
 			displayname = "Kaz";
@@ -52,14 +51,51 @@ class CfgFaces
 			material = "\A3\Characters_F\Heads\Data\m_White_06.rvmat";
 			materialWounded1 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
 			materialWounded2 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
-			textureHL = "PHFace\Data\kaztat_co.paa";
+			textureHL = "PHFace\Data\kaz_tat_co.paa";
 			materialHL = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
-			textureHL2 = "PHFace\Data\kaztat_co.paa";
+			textureHL2 = "PHFace\Data\kaz_tat_co.paa";
 			materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
 		};
-		class BlackburnHead : WhiteHead_01
+		class PHRP_MoonHead : WhiteHead_01
+		{
+			disabled = 0;
+			displayname = "Moon";
+			texture = "A3\Characters_F_Enoch\Heads\Data\m_livonianHead_4_co.paa";
+			material = "\A3\Characters_F_Enoch\Heads\Data\m_livonianHead_4.rvmat";
+			head = "DefaultHead_A3";
+			identityTypes[] = {};
+			author = "Soldner";
+			materialHL = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
+			materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
+			materialWounded1 = "A3\Characters_F_Enoch\Heads\Data\m_livonianHead_4_injury.rvmat";
+			materialWounded2 = "A3\Characters_F_Enoch\Heads\Data\m_livonianHead_4_injury.rvmat";
+			textureHL = "PHFace\Data\moon_tat_co.paa";
+			textureHL2 = "PHFace\Data\moon_tat_co.paa";
+		};
+		class PHRP_VanderclutchHead : WhiteHead_01
+		{
+			disabled = 0;
+			displayname = "Vanderclutch";
+			texture = "PHFace\Data\vanderclutch_co.paa";
+			material = "\A3\Characters_F_Enoch\Heads\Data\m_russianHead_4.rvmat";
+			head = "DefaultHead_A3";
+			identityTypes[] = {};
+			author = "Soldner";
+			materialHL = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
+			materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
+			materialWounded1 = "A3\Characters_F_Enoch\Heads\Data\m_russianHead_4_injury.rvmat";
+			materialWounded2 = "A3\Characters_F_Enoch\Heads\Data\m_russianHead_4_injury.rvmat";
+			textureHL = "PHFace\Data\vanderclutch_tat_co.paa";
+			textureHL2 = "PHFace\Data\vanderclutch_tat_co.paa";
+		};
+		/*class PHRP_OwesselHead : WhiteHead_01
 		{
 			//They smell
 		};
+		/*class PHRP_BlackburnHead : WhiteHead_01
+		{
+			//They smell
+		};
+		/**/
 	};
 };
