@@ -570,7 +570,7 @@ class CfgWeapons
         author = "VorpalHotdog";
         scope = 1;
         displayName = "PHRP Beret Base";
-        picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
+        picture = "\A3\Characters_F_Bootcamp\Data\UI\icon_H_Beret_Colonel_ca.paa";
         model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusberet_co.paa"};
@@ -590,12 +590,12 @@ class CfgWeapons
             };
         };
     };
-	class PHRP_Base_Boonie
+	class H_Booniehat_khk;
+	class PHRP_Base_Boonie: H_Booniehat_khk
 	{
 		author = "VorpalHotdog";
         scope = 1;
         displayName = "PHRP Beret Base";
-        picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
         model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusberet_co.paa"};
@@ -615,13 +615,12 @@ class CfgWeapons
             };
         };
 	};
-	class PHRP_Base_Patrol
+	class OPTRE_UNSC_PatrolCap_Marines;
+	class PHRP_Base_Patrol: OPTRE_UNSC_PatrolCap_Marines
 	{
 		author = "VorpalHotdog";
         scope = 1;
         displayName = "PHRP Beret Base";
-        picture = "\A3\characters_f\Data\UI\icon_H_helmet_plain_ca.paa";
-        model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
         hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusberet_co.paa"};
         class ItemInfo: HeadgearItem

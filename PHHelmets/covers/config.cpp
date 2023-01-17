@@ -33,19 +33,19 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"beret","boonie","patrol"};
+				values[] = {"beret"};//,"boonie","patrol"};
 				class beret
 				{
 					label = "Beret";
 				};
-				class boonie
+				/*class boonie
 				{
 					label = "Boonie";
 				};
 				class patrol
 				{
 					label = "Patrol";
-				};
+				};*/
 			};
 		};
 	};
@@ -59,16 +59,16 @@ class XtdGearInfos
 			role = "beret";
 			model = "gladius_covers";
 		};
-		class PHRP_Gladius_Boonie
+		/*class PHRP_Gladius_Boonie
 		{
 			role = "boonie";
-			model = "strigon_helmets";
+			model = "gladius_covers";
 		};
 		class PHRP_Gladius_Patrol
 		{
 			role = "patrol";
-			model = "strigon_helmets";
-		};
+			model = "gladius_covers";
+		};*/
 	};
 };
 class CfgWeapons
