@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","chopper","morgenstern","owessel","wilson"};
+				values[] = {"default","chopper","morgenstern","owessel","kaker","wilson"};
 				class default
 				{
 					label = "Default";
@@ -49,6 +49,10 @@ class XtdGearModels
 				class owessel
 				{
 					label = "Owessel";
+				};
+				class kaker
+				{
+					label = "Kaker";
 				};
 				class wilson
 				{
@@ -80,6 +84,11 @@ class XtdGearInfos
 		class PHRP_Owessel_HRPilot_Helmet
 		{
 			role = "owessel";
+			model = "charlie_helmets";
+		};
+		class PHRP_Kaker_HRPilot_Helmet
+		{
+			role = "kaker";
 			model = "charlie_helmets";
 		};
 		class PHRP_Wilson_CQC_Helmet
@@ -136,6 +145,16 @@ class CfgWeapons
 		displayName = "CH252D Helmet (Owessel)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
+	};
+	class PHRP_Kaker_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "CH252D Helmet (Kaker)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
 	};
 	class PHRP_Wilson_CQC_Helmet : PHRP_Base_CQC_Helmet
 	{

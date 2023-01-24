@@ -49,6 +49,7 @@ class CfgWeapons
 {
 	class VestItem;
 	class OPTRE_UNSC_M52D_Armor;
+
 	class PHRP_Base_Armor : OPTRE_UNSC_M52D_Armor
 	{
 		scope = 1;
@@ -120,18 +121,5 @@ class CfgWeapons
 				};
 			};
 		};
-	};
-};
-class CfgVehicles
-{
-	class OPTRE_ONI_Researcher_Suitcase;
-	class PHRP_Base_Hardcase: OPTRE_ONI_Researcher_Suitcase
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		displayName = "PHRP Hardcase Base";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"\PHGear\data\armor\PHRP_Base_Hardcase.paa"};
-		maximumLoad = 400;
 	};
 };
