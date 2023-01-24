@@ -88,7 +88,7 @@ class CfgWeapons
 		CBRN_protectionLevel = "4 + 8";
 		class ItemInfo: ItemInfo
 		{
-			containerClass = "Supply200";
+			containerClass = "Supply100";
 			uniformModel = "-";
 			uniformType = "Neopren";
 			mass = 40;
@@ -142,7 +142,7 @@ class CfgWeapons
 		{
 			uniformModel = "-";
 			uniformClass = "Strigon_V_Uniform";
-			containerClass = "Supply400";
+			containerClass = "Supply200";
 			mass = 80;
 			modelSides[] = {6};
 		};
