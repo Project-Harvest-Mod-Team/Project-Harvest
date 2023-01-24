@@ -590,20 +590,17 @@ class CfgWeapons
             };
         };
     };
-	class H_Booniehat_khk;
-	class PHRP_Base_Boonie: H_Booniehat_khk
+	/*class H_Booniehat_eaf;
+	class PHRP_Base_Boonie: H_Booniehat_eaf
 	{
 		author = "VorpalHotdog";
         scope = 1;
-        displayName = "PHRP Beret Base";
-        model = "a3\characters_f_epb\BLUFOR\headgear_beret02";
-        hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusberet_co.paa"};
+        displayName = "PHRP Boonie Base";
+        hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusboonie_co.paa"};
         class ItemInfo: HeadgearItem
         {
             mass = 20;
-            uniformModel = "a3\characters_f_epb\BLUFOR\headgear_beret02";
-            hiddenSelections[] = {"Camo"};
+            uniformModel = "a3\characters_f\Common\booniehat.p3d";
             class HitpointsProtectionInfo
             {
                 class Head
@@ -614,29 +611,5 @@ class CfgWeapons
                 };
             };
         };
-	};
-	class OPTRE_UNSC_PatrolCap_Marines;
-	class PHRP_Base_Patrol: OPTRE_UNSC_PatrolCap_Marines
-	{
-		author = "VorpalHotdog";
-        scope = 1;
-        displayName = "PHRP Beret Base";
-        hiddenSelections[] = {"Camo"};
-        hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusberet_co.paa"};
-        class ItemInfo: HeadgearItem
-        {
-            mass = 20;
-            uniformModel = "a3\characters_f_epb\BLUFOR\headgear_beret02";
-            hiddenSelections[] = {"Camo"};
-            class HitpointsProtectionInfo
-            {
-                class Head
-                {
-                    hitPointName = "HitHead";
-                    armor = 1;
-                    passThrough = 0.5;
-                };
-            };
-        };
-	};
+	};*/
 };
