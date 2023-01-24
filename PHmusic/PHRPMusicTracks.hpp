@@ -215,3 +215,31 @@ class PHRPSocialCreditDeducted
 	duration=5;
 	musicClass = "PHRPClip";
 };
+class ShinobiVsDragonNinja
+{
+	name = "Shinobi Vs Dragon Ninja";
+	sound[] = {"PHmusic\data\Tracks\ShinobiVsDragonNinja.ogg",db+0,1};
+	duration=167;
+	musicClass = "PHRPMusic";
+};
+class TheOnly
+{
+	name = "Static X - The Only";
+	sound[] = {"PHmusic\data\Tracks\TheOnly.ogg",db+0,1};
+	duration=175;
+	musicClass = "PHRPMusic";
+};
+class Happy
+{
+	name = "Mudvayne - Happy?";
+	sound[] = {"PHmusic\data\Tracks\Happy.ogg",db+0,1};
+	duration=211;
+	musicClass = "PHRPMusic";
+};
+class WhenWorldsCollide
+{
+	name = "Powerman 5000 - When Worlds Collide";
+	sound[] = {"PHmusic\data\Tracks\WhenWorldsCollide.ogg",db+0,1};
+	duration=178;
+	musicClass = "PHRPMusic";
+};
