@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","chopper","morgenstern","owessel","wilson"};
+				values[] = {"default","chopper","morgenstern","owessel"};
 				class default
 				{
 					label = "Default";
@@ -49,10 +49,6 @@ class XtdGearModels
 				class owessel
 				{
 					label = "Owessel";
-				};
-				class wilson
-				{
-					label = "Wilson";
 				};
 			};
 		};
@@ -82,18 +78,12 @@ class XtdGearInfos
 			role = "owessel";
 			model = "charlie_helmets";
 		};
-		class PHRP_Wilson_CQC_Helmet
-		{
-			role = "wilson";
-			model = "charlie_helmets";
-		};
 	};
 };
 class CfgWeapons
 {
 	class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_HRPilot_Helmet;
-	class PHRP_Base_CQC_Helmet;
 	class PHRP_Charlie_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -136,15 +126,5 @@ class CfgWeapons
 		displayName = "CH252D Helmet (Owessel)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
-	};
-	class PHRP_Wilson_CQC_Helmet : PHRP_Base_CQC_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Mark V/CQC Helmet (Wilson)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wilson_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
 	};
 };

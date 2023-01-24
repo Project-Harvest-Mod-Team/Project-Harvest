@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","angel","ansley","carter","wrecker","tinoco","carsten","mischa"};
+				values[] = {"recruit","reserve","collins","angel","ansley","carter","wrecker","tinoco","carsten","mischa","wilson"};
 				class recruit
 				{
 					label = "Recruit";
@@ -73,6 +73,10 @@ class XtdGearModels
 				class mischa
 				{
 					label = "Mischa";
+				};
+				class wilson
+				{
+					label = "Wilson";
 				};
 			};
 		};
@@ -131,6 +135,11 @@ class XtdGearInfos
 		{
 			role = "mischa";
 			model = "reservist_helmets";
+		};		
+		class PHRP_Wilson_CQC_Helmet
+		{
+			role = "wilson";
+			model = "reservist_helmets";
 		};
 	};
 };
@@ -139,6 +148,7 @@ class CfgWeapons
     class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_Commando_Helmet;
 	class PHRP_Base_HRPilot_Helmet;
+	class PHRP_Base_CQC_Helmet;
 	class PHRP_Recruit_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -248,5 +258,15 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_mischa_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
+	};
+	class PHRP_Wilson_CQC_Helmet : PHRP_Base_CQC_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Mark V/CQC Helmet (Wilson)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wilson_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
 	};
 };

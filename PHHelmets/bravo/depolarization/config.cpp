@@ -58,8 +58,6 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "VorpalHotdog";
 		displayName = "CH252D Helmet (Blackburn)";
-		author = "MrMicrobe";
-		displayName = "CH252D Helmet (Wilson)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};

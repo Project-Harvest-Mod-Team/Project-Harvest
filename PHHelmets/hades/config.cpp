@@ -33,14 +33,18 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"kaz","vanderclutch","wolf","richter"};
+				values[] = {"Moon","kaz","vanderclutch","wolf","richter"};
+				class moon
+				{
+					label = "Moon";
+				};
 				class kaz
 				{
 					label = "Kaz";
 				};
 				class vanderclutch
 				{
-					label = "Vanderclutch";
+					label = "Vandy";
 				};
 				class wolf
 				{
@@ -58,6 +62,11 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
+		class PHRP_Moon_Commando_Helmet
+		{
+			role = "moon";
+			model = "hades_helmets";
+		};
 		class PHRP_Kaz_Recon_Helmet
 		{
 			role = "kaz";
@@ -83,6 +92,17 @@ class XtdGearInfos
 class CfgWeapons
 {
 	class PHRP_Base_Recon_Helmet;
+	class PHRP_Base_Commando_Helmet;
+	class PHRP_Moon_Commando_Helmet : PHRP_Base_Commando_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "Mark V/K Helmet (Moon)";
+		hiddenSelections[] =  {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_moon_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
+	};
 	class PHRP_Kaz_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
 		scope = 2;

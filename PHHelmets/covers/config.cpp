@@ -33,16 +33,16 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"beret"};//,"boonie","patrol"};
+				values[] = {"beret","boonie"};//,"patrol"};
 				class beret
 				{
 					label = "Beret";
 				};
-				/*class boonie
+				class boonie
 				{
 					label = "Boonie";
 				};
-				class patrol
+				/*class patrol
 				{
 					label = "Patrol";
 				};*/
@@ -59,12 +59,12 @@ class XtdGearInfos
 			role = "beret";
 			model = "gladius_covers";
 		};
-		/*class PHRP_Gladius_Boonie
+		class PHRP_Gladius_Boonie
 		{
 			role = "boonie";
 			model = "gladius_covers";
 		};
-		class PHRP_Gladius_Patrol
+		/*class PHRP_Gladius_Patrol
 		{
 			role = "patrol";
 			model = "gladius_covers";
@@ -74,6 +74,8 @@ class XtdGearInfos
 class CfgWeapons
 {
     class PHRP_Base_Beret;
+	class PHRP_Base_Boonie;
+
 	class PHRP_Gladius_Beret : PHRP_Base_Beret
 	{
 		scope = 2;
@@ -82,5 +84,14 @@ class CfgWeapons
 		author = "VorpalHotdog";
 		displayName = "Gladius Beret";
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusberet_co.paa"};
+	};
+	class PHRP_Gladius_Boonie : PHRP_Base_Boonie
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VorpalHotdog";
+		displayName = "Gladius Boonie";
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusboonie_co.paa"};
 	};
 };

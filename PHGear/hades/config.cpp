@@ -33,8 +33,12 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Hades Armors";
-				values[] = {"kaz","vanderclutch","wolf","richter"};
-				
+				values[] = {"moon","kaz","vanderclutch","wolf","richter"};
+				class moon
+				{
+					label = "Moon";
+					image = "";
+				};
 				class kaz
 				{
 					label = "Kaz";
@@ -42,7 +46,7 @@ class XtdGearModels
 				};
 				class vanderclutch
 				{
-					label = "Vanderclutch";
+					label = "Vandy";
 					image = "";
 				};
 				class wolf
@@ -63,6 +67,11 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
+		class PHRP_Moon_Armor
+		{
+			model = "PHRP_Hades_vests";
+			role = "moon";
+		};
 		class PHRP_Kaz_Armor
 		{
 			model = "PHRP_Hades_vests";

@@ -22,7 +22,16 @@ class CfgPatches //class desc.
 class CfgWeapons
 {
     class PHRP_Base_Recon_Helmet_dp;
-	class PHRP_Base_ODST_Helmet;
+	class PHRP_Base_Commando_Helmet_dp;
+	class PHRP_Moon_Commando_Helmet_dp : PHRP_Base_Commando_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "Soldner";
+		displayName = "Mark V/K Helmet (Moon)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_Moon_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
 	class PHRP_Kaz_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
 		scope = 1;

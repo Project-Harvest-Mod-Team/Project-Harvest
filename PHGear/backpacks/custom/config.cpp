@@ -24,21 +24,22 @@ class CfgVehicles
 	class OPTRE_ONI_Researcher_Suitcase;
     class PHRP_Base_Hardcase: OPTRE_ONI_Researcher_Suitcase
 	{
-		scope = 2;
-		scopeArsenal = 2;
+		scope = 1;
+		scopeCurator = 1;
+		scopeArsenal = 1;
 		displayName = "PHRP Hardcase Base";
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"\PHGear\data\armor\PHRP_Base_Hardcase.paa"};
-		maximumLoad = 400;
+		maximumLoad = 300;
 	};
 	class PHRP_Medic_Hardcase : PHRP_Base_Hardcase
 	{
 		author = "VorpalHotdog";
 		displayName = "Corpsman Hardcase";
 		scope = 2;
+		scopeCurator = 2;
 		scopeArsenal = 2;
         hiddenSelectionsTextures[] = {"\PHGear\data\armor\PHRP_Medic_Hardcase.paa"};
-        maximumLoad = 400;
-		
+        maximumLoad = 300;
 	};
 };

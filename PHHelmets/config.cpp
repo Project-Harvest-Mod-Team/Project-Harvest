@@ -21,9 +21,23 @@ class CfgPatches //class desc.
 };
 class CfgWeapons
 {
+	class HeadgearItem;
 	class OPTRE_UNSC_CH252D_Helmet_Base;
 	class H_PilotHelmetFighter_B;
 	class H_HelmetB;
+	class OPTRE_UNSC_Recon_Helmet;
+	class OPTRE_UNSC_Commando_Helmet;
+	class OPTRE_UNSC_HRPilot_Helmet;
+	class OPTRE_UNSC_Operator_Helmet;
+	class OPTRE_UNSC_CQC_Helmet;
+
+	class VES_CH252D_dp;
+	class OPTRE_UNSC_Recon_Helmet_dp;
+	class OPTRE_UNSC_Commando_Helmet_dp;
+	class OPTRE_UNSC_HRPilot_Helmet_dp;
+	class OPTRE_UNSC_Operator_Helmet_dp;
+	class OPTRE_UNSC_CQC_Helmet_dp;
+
 	class PHRP_Pilot_Helmet_Base: H_PilotHelmetFighter_B
 	{
 		class ItemInfo;
@@ -32,44 +46,8 @@ class CfgWeapons
 	{
 		class ItemInfo;
 	};
-	class PHRP_JHMCS_Helmet: PHRP_Pilot_Helmet_Base
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		scopeCurator = 1;
-		author = "$STR_A3_Bohemia_Interactive";
-		_generalMacro = "H_PilotHelmetFighter_O";
-		displayName = "$STR_A3_H_PilotHelmetFighter_OI0";
-		picture = "\A3\Characters_F\data\ui\icon_H_PilotHelmetFighter_OI_CA.paa";
-		hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\pilot_helmet_iran_co.paa"};
-		optreVarietys[] = {"_dp","","_broken"};
-		optreHUDStyle = "ODST_1";
-		class ItemInfo : ItemInfo
-		{
-			modelSides[] = {0,3};
-			class HitpointsProtectionInfo
-			{
-				class Face
-				{
-					armor = 15;
-					hitpointName = "HitFace";
-					passThrough = 0.1;
-				};
-				class Head
-				{
-					armor = 15;
-					hitPointName = "HitHead";
-					passThrough = 0.1;
-				};
-				class Neck
-				{
-					armor = 15;
-					hitpointName = "HitNeck";
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
+
+	//Infantry Helmets
     class PHRP_Base_ODST_Helmet : OPTRE_UNSC_CH252D_Helmet
 	{
 		dlc = "Project Harvest Armory";
@@ -115,8 +93,6 @@ class CfgWeapons
 			};
 		};
 	};
-    class VES_CH252D_dp;
-	class HeadgearItem;
 	class PHRP_Base_ODST_Helmet_dp : VES_CH252D_dp
 	{
 		dlc = "Project Harvest Armory";
@@ -163,7 +139,6 @@ class CfgWeapons
 		};
 		subItems[] = {"ItemcTabHCam"};
 	};
-	class OPTRE_UNSC_Recon_Helmet;
 	class PHRP_Base_Recon_Helmet : OPTRE_UNSC_Recon_Helmet
 	{
 		class ItemInfo;
@@ -204,7 +179,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class OPTRE_UNSC_Recon_Helmet_dp;
 	class PHRP_Base_Recon_Helmet_dp : OPTRE_UNSC_Recon_Helmet_dp
 	{
 		class ItemInfo;
@@ -245,7 +219,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class OPTRE_UNSC_Commando_Helmet;
 	class PHRP_Base_Commando_Helmet : OPTRE_UNSC_Commando_Helmet
 	{
 		class ItemInfo;
@@ -285,7 +258,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class OPTRE_UNSC_Commando_Helmet_dp;
 	class PHRP_Base_Commando_Helmet_dp : OPTRE_UNSC_Commando_Helmet_dp
 	{
 		class ItemInfo;
@@ -325,7 +297,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class OPTRE_UNSC_HRPilot_Helmet;
 	class PHRP_Base_HRPilot_Helmet : OPTRE_UNSC_HRPilot_Helmet
 	{
 		class ItemInfo;
@@ -365,7 +336,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class OPTRE_UNSC_HRPilot_Helmet_dp;
 	class PHRP_Base_HRPilot_Helmet__dp : OPTRE_UNSC_HRPilot_Helmet_dp
 	{
 		class ItemInfo;
@@ -405,7 +375,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class OPTRE_UNSC_Operator_Helmet;
 	class PHRP_Base_Operator_Helmet : OPTRE_UNSC_Operator_Helmet
 	{
 		class ItemInfo;
@@ -445,7 +414,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class OPTRE_UNSC_Operator_Helmet_dp;
 	class PHRP_Base_Operator_Helmet__dp : OPTRE_UNSC_Operator_Helmet_dp
 	{
 		class ItemInfo;
@@ -485,7 +453,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class OPTRE_UNSC_CQC_Helmet;
 	class PHRP_Base_CQC_Helmet : OPTRE_UNSC_CQC_Helmet
 	{
 		class ItemInfo;
@@ -525,7 +492,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class OPTRE_UNSC_CQC_Helmet_dp;
 	class PHRP_Base_CQC_Helmet__dp : OPTRE_UNSC_CQC_Helmet_dp
 	{
 		class ItemInfo;
@@ -565,6 +531,50 @@ class CfgWeapons
 			};
 		};
 	};
+
+	//Pilot Helmets
+
+	class PHRP_JHMCS_Helmet: PHRP_Pilot_Helmet_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		author = "$STR_A3_Bohemia_Interactive";
+		_generalMacro = "H_PilotHelmetFighter_O";
+		displayName = "$STR_A3_H_PilotHelmetFighter_OI0";
+		picture = "\A3\Characters_F\data\ui\icon_H_PilotHelmetFighter_OI_CA.paa";
+		hiddenSelectionsTextures[] = {"\A3\Characters_F\Common\Data\pilot_helmet_iran_co.paa"};
+		optreVarietys[] = {"_dp","","_broken"};
+		optreHUDStyle = "ODST_1";
+		class ItemInfo : ItemInfo
+		{
+			modelSides[] = {0,3};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 15;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 15;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 15;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
+
+	//Covers
+
 	class PHRP_Base_Beret: H_HelmetB
     {
         author = "VorpalHotdog";
@@ -590,17 +600,20 @@ class CfgWeapons
             };
         };
     };
-	/*class H_Booniehat_eaf;
-	class PHRP_Base_Boonie: H_Booniehat_eaf
+	class PHRP_Base_Boonie: H_HelmetB
 	{
 		author = "VorpalHotdog";
         scope = 1;
         displayName = "PHRP Boonie Base";
+		picture = "\A3\characters_f\Data\UI\icon_H_booniehat_desert_ca.paa";
+		model = "\A3\Characters_F\Common\booniehat";
+		hiddenSelections[] = {"Camo"};
         hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusboonie_co.paa"};
         class ItemInfo: HeadgearItem
         {
             mass = 20;
             uniformModel = "a3\characters_f\Common\booniehat.p3d";
+			hiddenSelections[] = {"Camo"};
             class HitpointsProtectionInfo
             {
                 class Head
@@ -611,5 +624,5 @@ class CfgWeapons
                 };
             };
         };
-	};*/
+	};
 };

@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","chopper","morgenstern","owessel","kaker","wilson"};
+				values[] = {"default","corpsman","chopper","morgenstern","owessel","kaker"};
 				class default
 				{
 					label = "Default";
@@ -63,11 +63,6 @@ class XtdGearModels
 				class kaker
 				{
 					label = "Kaker";
-					image = "";
-				};
-				class wilson
-				{
-					label = "Wilson";
 					image = "";
 				};
 			};
@@ -107,11 +102,6 @@ class XtdGearInfos
 		{
 			model = "PHRP_Charlie_vests";
 			role = "kaker";
-		};
-		class PHRP_Wilson_Armor
-		{
-			model = "PHRP_Charlie_vests";
-			role = "wilson";
 		};
 	};
 };
