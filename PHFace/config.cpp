@@ -88,13 +88,23 @@ class CfgFaces
 			textureHL = "PHFace\Data\vanderclutch_tat_co.paa";
 			textureHL2 = "PHFace\Data\vanderclutch_tat_co.paa";
 		};
-		/*class PHRP_OwesselHead : WhiteHead_01
+		class PHRP_OwesselHead : WhiteHead_01
 		{
-			//They smell
+			disabled = 0;
+			displayname = "Owessel";
+			head = "DefaultHead_A3";
+			identityTypes[] = {};
+			author = "Soldner";
+			texture = "a3\Characters_F_Enoch\Heads\data\m_stype_co.paa";
+			material = "a3\Characters_F_Enoch\Heads\data\m_stype.rvmat";
+			materialWounded1 = "a3\Characters_F_Enoch\Heads\data\m_stype_injury.rvmat";
+			materialWounded2 = "a3\Characters_F_Enoch\Heads\data\m_stype_injury.rvmat";
+			textureHL = "PHFace\Data\owessel_tat_co.paa";
+			textureHL2 = "PHFace\Data\owessel_tat_co.paa";
 		};
 		/*class PHRP_BlackburnHead : WhiteHead_01
 		{
-			//They smell
+			//start here
 		};
 		/**/
 	};
