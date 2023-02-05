@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","angel","ansley","carter","wrecker","tinoco","carsten","mischa","wilson"};
+				values[] = {"recruit","reserve","collins","angel","ansley","carter","wrecker","tinoco","carsten","mischa","wilson","morgenstern"};
 				class recruit
 				{
 					label = "Recruit";
@@ -78,6 +78,10 @@ class XtdGearModels
 				{
 					label = "Wilson";
 				};
+				class morgenstern
+				{
+					label = "Morgenstern";
+				}
 			};
 		};
 	};
@@ -139,6 +143,11 @@ class XtdGearInfos
 		class PHRP_Wilson_CQC_Helmet
 		{
 			role = "wilson";
+			model = "reservist_helmets";
+		};
+		class PHRP_Morgenstern_Helmet
+		{
+			role = "morgenstern";
 			model = "reservist_helmets";
 		};
 	};
@@ -268,5 +277,16 @@ class CfgWeapons
 		displayName = "Mark V/CQC Helmet (Wilson)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wilson_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
+	};
+	class PHRP_Morgenstern_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VibingVampire";
+		displayName = "CH252D Helmet (Morgenstern)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morgenstern_co.paa","PHHelmets\data\helmets\customvisor_morgenstern_co.paa"};
 	};
 };
