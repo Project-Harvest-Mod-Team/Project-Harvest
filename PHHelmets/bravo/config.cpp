@@ -33,23 +33,35 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","riot","stone","blackburn"};
+				values[] = {"default","chopper","owessel","kaker","riot","blackburn","stone"};
 				class default
 				{
 					label = "Default";
+				};
+				class chopper
+				{
+					label = "Chopper";
+				};
+				class owessel
+				{
+					label = "Owessel";
+				};
+				class kaker
+				{
+					label = "Kaker";
 				};
 				class riot
 				{
 					label = "Riot";
 				};
-				class stone
-				{
-					label = "Stone";
-				};
 				class blackburn
 				{
 					label = "Blackburn";
 				}
+				class stone
+				{
+					label = "Stone";
+				};
 			};
 		};
 	};
@@ -61,6 +73,21 @@ class XtdGearInfos
 		class PHRP_Bravo_ODST_Helmet
 		{
 			role = "default";
+			model = "bravo_helmets";
+		};
+		class PHRP_Chopper_ODST_Helmet
+		{
+			role = "chopper";
+			model = "bravo_helmets";
+		};
+		class PHRP_Owessel_HRPilot_Helmet
+		{
+			role = "owessel";
+			model = "bravo_helmets";
+		};
+		class PHRP_Kaker_HRPilot_Helmet
+		{
+			role = "kaker";
 			model = "bravo_helmets";
 		};
 		class PHRP_Riot_ODST_Helmet
@@ -84,6 +111,7 @@ class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_CQC_Helmet;
+	class PHRP_Base_HRPilot_Helmet;
 	class PHRP_Bravo_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -94,6 +122,37 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_bravobase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
+	};
+	class PHRP_Chopper_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "CH252D Helmet (Chopper)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","PHHelmets\data\helmets\customvisor_chopper_co.paa"};
+	};
+	class PHRP_Owessel_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "CH252D Helmet (Owessel)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
+	};
+	class PHRP_Kaker_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "CH252D Helmet (Kaker)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
 	};
 	class PHRP_Riot_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
