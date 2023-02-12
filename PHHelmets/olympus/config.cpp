@@ -33,7 +33,11 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"burtovski","pjetrovic","tepfer","holland"};
+				values[] = {"soldner","burtovski","pjetrovic","tepfer","holland"};
+				class soldner
+				{
+					label = "Soldner";
+				};
 				class burtovski
 				{
 					label = "Burtovski";
@@ -58,6 +62,11 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
+		class PHRP_Soldner_ODST_Helmet
+		{
+			role = "soldner";
+			model = "olympus_helmets";
+		};
 		class PHRP_Burtovski_ODST_Helmet
 		{
 			role = "burtovski";
@@ -83,6 +92,17 @@ class XtdGearInfos
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
+	class PHRP_Soldner_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "CH252D Helmet (Soldner)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_soldner_co.paa","PHHelmets\data\helmets\customvisor_soldner_co.paa"};
+	};
 	class PHRP_Burtovski_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;

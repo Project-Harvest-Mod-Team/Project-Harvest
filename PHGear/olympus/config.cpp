@@ -33,7 +33,12 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Olympus Armors";
-				values[] = {"burtovski","pjetrovic","tepfer","holland"};
+				values[] = {"soldner","burtovski","pjetrovic","tepfer","holland"};
+				class soldner
+				{
+					label = "Soldner";
+					image = "";
+				};
 				class burtovski
 				{
 					label = "Burtovski";
@@ -62,6 +67,11 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
+		class PHRP_Soldner_Armor
+		{
+			model = "PHRP_Olympus_vests";
+			role = "soldner";
+		};
 		class PHRP_Burtovski_Armor
 		{
 			model = "PHRP_Olympus_vests";

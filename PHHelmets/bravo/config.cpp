@@ -75,7 +75,7 @@ class XtdGearInfos
 			role = "default";
 			model = "bravo_helmets";
 		};
-		class PHRP_Chopper_ODST_Helmet
+		class PHRP_Chopper_EOD_Helmet
 		{
 			role = "chopper";
 			model = "bravo_helmets";
@@ -110,7 +110,7 @@ class XtdGearInfos
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
-	class PHRP_Base_CQC_Helmet;
+	class PHRP_Base_EOD_Helmet;
 	class PHRP_Base_HRPilot_Helmet;
 	class PHRP_Bravo_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
@@ -123,16 +123,15 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_bravobase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
-	class PHRP_Chopper_ODST_Helmet : PHRP_Base_ODST_Helmet
+	class PHRP_Chopper_EOD_Helmet : PHRP_Base_EOD_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "CH252D Helmet (Chopper)";
+		author = "MrMicrobe";
+		displayName = "Mark V/EOD Helmet (Chopper)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","PHHelmets\data\helmets\customvisor_chopper_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\EOD_Visor_co.paa"};
 	};
 	class PHRP_Owessel_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
 	{
@@ -140,7 +139,7 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "MrMicrobe";
-		displayName = "CH252D Helmet (Owessel)";
+		displayName = "Mark V/P Helmet (Owessel)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
 	};
@@ -150,7 +149,7 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "MrMicrobe";
-		displayName = "CH252D Helmet (Kaker)";
+		displayName = "Mark V/P Helmet (Kaker)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
 	};

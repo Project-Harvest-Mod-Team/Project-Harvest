@@ -22,6 +22,7 @@ class CfgPatches //class desc.
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet_dp;
+	class PHRP_Base_EOD_Helmet__dp;
 	class PHRP_Base_HRPilot_Helmet__dp;
 	class PHRP_Bravo_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
@@ -30,24 +31,23 @@ class CfgWeapons
 		author = "Soldner";
 		displayName = "CH252D Helmet - Bravo";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_bravobase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
-	class PHRP_Chopper_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
+	class PHRP_Chopper_EOD_Helmet_dp : PHRP_Base_EOD_Helmet__dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
 		author = "Soldner";
-		displayName = "CH252D Helmet (Chopper)";
+		displayName = "Mark V/EOD Helmet (Chopper)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\EOD_Visor_co.paa"};
 	};
 	class PHRP_Owessel_HRPilot_Helmet_dp : PHRP_Base_HRPilot_Helmet__dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
 		author = "MrMicrobe";
-		displayName = "Hellbringer Helmet (Owessel)";
+		displayName = "Mark V/P Helmet (Owessel)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
 	};
@@ -56,7 +56,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "MrMicrobe";
-		displayName = "Hellbringer Helmet (Kaker)";
+		displayName = "Mark V/P Helmet (Kaker)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
 	};
