@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","chopper","owessel","kaker","riot","blackburn","stone"};
+				values[] = {"default","chopper","owessel","kaker","riot","blackburn","stone","morgenstern"};
 				class default
 				{
 					label = "Default";
@@ -61,6 +61,10 @@ class XtdGearModels
 				class stone
 				{
 					label = "Stone";
+				};
+				class morgenstern
+				{
+					label = "Morgenstern";
 				};
 			};
 		};
@@ -103,6 +107,11 @@ class XtdGearInfos
 		class PHRP_Blackburn_ODST_Helmet
 		{
 			role = "blackburn";
+			model = "bravo_helmets";
+		};
+		class PHRP_Morgenstern_ODST_Helmet
+		{
+			role = "morgenstern";
 			model = "bravo_helmets";
 		};
 	};
@@ -185,5 +194,16 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\customvisor_blackburn_co.paa"};
+	};
+	class PHRP_Morgenstern_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VibingVampire";
+		displayName = "CH252D Helmet (Morgenstern)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morgenstern_co.paa","PHHelmets\data\helmets\customvisor_morgenstern_co.paa"};
 	};
 };

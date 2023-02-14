@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Bravo Armors";
-				values[] = {"default","corpsman","chopper","owessel","kaker","riot","blackburn","stone"};
+				values[] = {"default","corpsman","chopper","owessel","kaker","riot","blackburn","stone","morgenstern"};
 				class default
 				{
 					label = "Default";
@@ -74,7 +74,12 @@ class XtdGearModels
 				{
 					label = "Blackburn";
 					image = "";
-				}
+				};
+				class morgenstern
+				{
+					label = "Morgenstern";
+					image = "";
+				};
 			};
 		};
 	};
@@ -122,6 +127,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Bravo_vests";
 			role = "blackburn";
+		};
+		class PHRP_Morgenstern_Armor
+		{
+			model = "PHRP_Bravo_vests";
+			role = "morgenstern";
 		};
 	};
 };
