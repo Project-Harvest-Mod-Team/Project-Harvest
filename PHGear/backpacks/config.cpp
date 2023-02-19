@@ -26,7 +26,7 @@ class XtdGearModels
 	{
 		class PHRP_Backpacks
 		{
-			label = "Gladius Backpacks";
+			label = "Type of Backpack";
 			author = "Project Harvest Mod Team";
 			options[] = {"role","squad"};
 			class role
@@ -68,7 +68,7 @@ class XtdGearModels
 			class squad
 			{
 				alwaysSelectable = 1;
-				label = "squad";
+				label = "Squad";
 				values[] = {"default"};
 				class default
 				{
