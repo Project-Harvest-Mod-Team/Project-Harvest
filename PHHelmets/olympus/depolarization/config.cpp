@@ -24,7 +24,7 @@ class CfgWeapons
 	class HeadgearItem;
     class PHRP_Base_ODST_Helmet_dp;
 	class OPTRE_UNSC_CH252D_Helmet_dp;
-	class PHRP_Soldner_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
+	class PHRP_Soldner_Scout_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
