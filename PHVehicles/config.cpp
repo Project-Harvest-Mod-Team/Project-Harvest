@@ -55,7 +55,7 @@ class CfgVehicles
 		antiRollbarForceCoef = 10.0;
 		antiRollbarForceLimit = 8.0;
 		slowSpeedForwardCoef = 0.2;
-		enginePower = 600;
+		enginePower = 1000;
 		differentialType = "rear_limited";
 		side = 1;
 		idleRpm = 1000;

@@ -24,7 +24,7 @@ class XtdGearModels
 	class CamoBase;
 	class CfgWeapons
 	{
-		class olympus_helmets
+		class PHRP_olympus_helmets
 		{
 			label = "Olympus Helmets";
 			author = "Project Harvest Mod Team";
@@ -65,27 +65,27 @@ class XtdGearInfos
 		class PHRP_Soldner_ODST_Helmet
 		{
 			role = "soldner";
-			model = "olympus_helmets";
+			model = "PHRP_olympus_helmets";
 		};
 		class PHRP_Burtovski_ODST_Helmet
 		{
 			role = "burtovski";
-			model = "olympus_helmets";
+			model = "PHRP_olympus_helmets";
 		};
 		class PHRP_Pjetrovic_ODST_Helmet
 		{
 			role = "pjetrovic";
-			model = "olympus_helmets";
+			model = "PHRP_olympus_helmets";
 		};
 		class PHRP_Tepfer_ODST_Helmet
 		{
 			role = "tepfer";
-			model = "olympus_helmets";
+			model = "PHRP_olympus_helmets";
 		};
 		class PHRP_Holland_ODST_Helmet
 		{
 			role = "holland";
-			model = "olympus_helmets";
+			model = "PHRP_olympus_helmets";
 		};
 	};
 };
