@@ -24,7 +24,7 @@ class XtdGearModels
 	class CamoBase;
 	class CfgWeapons
 	{
-		class reservist_helmets
+		class PHRP_reservist_helmets
 		{
 			label = "Reservist Helmets";
 			author = "Project Harvest Mod Team";
@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","angel","ansley","carter","wrecker","tinoco","carsten","mischa","wilson"};
+				values[] = {"recruit","reserve","collins","ansley","carter","wrecker","tinoco","carsten","mischa","wilson"};
 				class recruit
 				{
 					label = "Recruit";
@@ -45,10 +45,6 @@ class XtdGearModels
 				class collins
 				{
 					label = "Collins";
-				};
-				class angel
-				{
-					label = "Angel";
 				};
 				class ansley
 				{
@@ -89,57 +85,52 @@ class XtdGearInfos
 		class PHRP_Recruit_ODST_Helmet
 		{
 			role = "recruit";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Reserve_ODST_Helmet
 		{
 			role = "reserve";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Collins_ODST_Helmet
 		{
 			role = "collins";
-			model = "reservist_helmets";
-		};
-		class PHRP_Angel_ODST_Helmet
-		{
-			role = "angel";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Ansley_ODST_Helmet
 		{
 			role = "ansley";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Carter_Commando_Helmet
 		{
 			role = "carter";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Wrecker_Commando_Helmet
 		{
 			role = "wrecker";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Tinoco_ODST_Helmet
 		{
 			role = "tinoco";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Carsten_ODST_Helmet
 		{
 			role = "carsten";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Mischa_ODST_Helmet
 		{
 			role = "mischa";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};		
 		class PHRP_Wilson_CQC_Helmet
 		{
 			role = "wilson";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 	};
 };
@@ -181,17 +172,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_collins_co.paa","PHHelmets\data\helmets\customvisor_collins_co.paa"};
-	};
-	class PHRP_Angel_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Project Harvest Mod Team";
-		displayName = "CH252D Helmet (Angel)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_angel_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 	class PHRP_Ansley_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{

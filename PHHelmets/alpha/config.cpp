@@ -24,7 +24,7 @@ class XtdGearModels
 	class CamoBase;
 	class CfgWeapons
 	{
-		class alpha_helmets
+		class PHRP_alpha_helmets
 		{
 			label = "Alpha Helmets";
 			author = "Project Harvest Mod Team";
@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","erikson"};
+				values[] = {"default","erikson","presscott"};
 				class default
 				{
 					label = "Default";
@@ -41,6 +41,10 @@ class XtdGearModels
 				class erikson
 				{
 					label = "Erikson";
+				};
+				class presscott
+				{
+					label = "Presscott";
 				};
 			};
 		};
@@ -53,12 +57,17 @@ class XtdGearInfos
 		class PHRP_Alpha_ODST_Helmet
 		{
 			role = "default";
-			model = "alpha_helmets";
+			model = "PHRP_alpha_helmets";
 		};
 		class PHRP_Erikson_ODST_Helmet
 		{
 			role = "erikson";
-			model = "alpha_helmets";
+			model = "PHRP_alpha_helmets";
+		};
+		class PHRP_Presscott_ODST_Helmet
+		{
+			role = "presscott";
+			model = "PHRP_alpha_helmets";
 		};
 	};
 };
@@ -86,5 +95,16 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","PHHelmets\data\helmets\customvisor_erikson_co.paa"};
+	};
+	class PHRP_Presscott_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "CH252D Helmet - Alpha";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 };

@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","erikson"};
+				values[] = {"default","corpsman","erikson","presscott"};
 				class default
 				{
 					label = "Default";
@@ -48,6 +48,11 @@ class XtdGearModels
 				class erikson
 				{
 					label = "Erikson";
+					image = "";
+				};
+				class presscott
+				{
+					label = "Presscott";
 					image = "";
 				};
 			};
@@ -72,6 +77,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Alpha_vests";
 			role = "erikson";
+		};
+		class PHRP_Presscott_Armor
+		{
+			model = "PHRP_Alpha_vests";
+			role = "presscott";
 		};
 	};
 };

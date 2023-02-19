@@ -33,10 +33,10 @@ class CfgFaces
 			head = "DefaultHead_A3";
 			identityTypes[] = {};
 			author = "Soldner";
-			materialHL = "PHFace\Data\soldner_handslegs.rvmat.rvmat";
-			materialHL2 = "PHFace\Data\soldner_handslegs.rvmat.rvmat";
-			materialWounded1 = "A3\characters_F_EPB\Heads\Data\m_IG_leader_injury.rvmat";
-			materialWounded2 = "A3\characters_F_EPB\Heads\Data\m_IG_leader_injury.rvmat";
+			materialHL = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
+			materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
+			materialWounded1 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
+			materialWounded2 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
 			textureHL = "PHFace\Data\soldner_tat_co.paa";
 			textureHL2 = "PHFace\Data\soldner_tat_co.paa";
 		};

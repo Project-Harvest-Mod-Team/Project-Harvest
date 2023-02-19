@@ -24,7 +24,7 @@ class XtdGearModels
 	class CamoBase;
 	class CfgWeapons
 	{
-		class hades_helmets
+		class PHRP_hades_helmets
 		{
 			label = "Hades Helmets";
 			author = "Project Harvest Mod Team";
@@ -65,27 +65,27 @@ class XtdGearInfos
 		class PHRP_Moon_Commando_Helmet
 		{
 			role = "moon";
-			model = "hades_helmets";
+			model = "PHRP_hades_helmets";
 		};
 		class PHRP_Kaz_Recon_Helmet
 		{
 			role = "kaz";
-			model = "hades_helmets";
+			model = "PHRP_hades_helmets";
 		};
 		class PHRP_Vanderclutch_Recon_Helmet
 		{
 			role = "vanderclutch";
-			model = "hades_helmets";
+			model = "PHRP_hades_helmets";
 		};
 		class PHRP_Wolf_Recon_Helmet
 		{
 			role = "wolf";
-			model = "hades_helmets";
+			model = "PHRP_hades_helmets";
 		};
 		class PHRP_Richter_Recon_Helmet
 		{
 			role = "richter";
-			model = "hades_helmets";
+			model = "PHRP_hades_helmets";
 		};
 	};
 };

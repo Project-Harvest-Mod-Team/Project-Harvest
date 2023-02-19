@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Bravo Armors";
-				values[] = {"default","corpsman","chopper","owessel","kaker","riot","blackburn","stone","morgenstern"};
+				values[] = {"default","corpsman","chopper","angel","blackburn"};
 				class default
 				{
 					label = "Default";
@@ -45,39 +45,19 @@ class XtdGearModels
 					label = "Corpsman";
 					image = "";
 				};
+				class angel
+				{
+					label = "Angel";
+					image = "";
+				};
 				class chopper
 				{
 					label = "Chopper";
 					image = "";
 				};
-				class owessel
-				{
-					label = "Owessel";
-					image = "";
-				};
-				class kaker
-				{
-					label = "Kaker";
-					image = "";
-				};
-				class riot
-				{
-					label = "Riot";
-					image = "";
-				};
-				class stone
-				{
-					label = "Stone";
-					image = "";
-				};
 				class blackburn
 				{
 					label = "Blackburn";
-					image = "";
-				};
-				class morgenstern
-				{
-					label = "Morgenstern";
 					image = "";
 				};
 			};
@@ -103,35 +83,15 @@ class XtdGearInfos
 			model = "PHRP_Bravo_vests";
 			role = "chopper";
 		};
-		class PHRP_Owessel_Armor
-		{
-			model = "PHRP_Bravo_vests";
-			role = "owessel";
-		};
-		class PHRP_Kaker_Armor
-		{
-			model = "PHRP_Bravo_vests";
-			role = "kaker";
-		};
-		class PHRP_Riot_Armor
-		{
-			model = "PHRP_Bravo_vests";
-			role = "riot";
-		};
-		class PHRP_Stone_Armor
-		{
-			model = "PHRP_Bravo_vests";
-			role = "stone";
-		};
 		class PHRP_Blackburn_Armor
 		{
 			model = "PHRP_Bravo_vests";
 			role = "blackburn";
 		};
-		class PHRP_Morgenstern_Armor
+		class PHRP_Angel_Armor
 		{
 			model = "PHRP_Bravo_vests";
-			role = "morgenstern";
+			role = "angel";
 		};
 	};
 };
