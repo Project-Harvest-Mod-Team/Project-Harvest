@@ -36,7 +36,7 @@ class CfgVehicles
 		acceleration = 20;
 		maxSpeed = 100;
 		enginePower = 100;
-		waterSpeedFactor = 0.5;
+		waterSpeedFactor = 0.1;
 	};
 
 	//Hatchback Sport
