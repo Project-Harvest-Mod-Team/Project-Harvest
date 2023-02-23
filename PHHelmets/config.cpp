@@ -922,6 +922,7 @@ class CfgWeapons
 	
 	//Covers
 
+	class H_MilCap_Blue;
 	class PHRP_Base_Beret: H_HelmetB
     {
         author = "VorpalHotdog";
@@ -972,4 +973,5 @@ class CfgWeapons
             };
         };
 	};
+	
 };
