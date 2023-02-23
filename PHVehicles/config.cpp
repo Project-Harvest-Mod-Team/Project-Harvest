@@ -6,7 +6,7 @@ class CfgPatches
 	{
 		author = "Soldner";
 		hideName = 0;
-		units[] = {};
+		units[] = {"PHRP_SDV_01","PHRP_Olympus_Hatchback"};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"PHRP_Core"};
@@ -25,10 +25,10 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		author = "Soldner";
+		faction = "Gladius_Faction";
 		displayname = "PHRP SDV - Engine Enhanced";
 		editorCategory = "PHRP_EdCat_Gladius";
 		editorSubcategory = "PHRP_EdSubCat_Water";
-		scope = 2;
 		class EventHandlers: EventHandlers
 		{
 			init = "(_this select 0) animateSource [""periscope"",3,true];(_this select 0) animateSource [""Antenna"",3,true];(_this select 0) animateSource [""HideScope"",3,true]; (_this select 0) animateSource [""display_on_R"",1,true];";
@@ -49,6 +49,7 @@ class CfgVehicles
 		displayname = "PHRP Olympus Hatchback";
 		editorCategory = "PHRP_EdCat_Gladius";
 		editorSubcategory = "PHRP_EdSubCat_Cars";
+		faction = "Gladius_Faction";
 		fuelCapacity = 16;
 		brakeIdleSpeed = 2.5;
 		maxSpeed = 500;
@@ -64,5 +65,6 @@ class CfgVehicles
 		maxOmega = 1033.038;
 		minOmega = 104.72;
 		engineMOI = 0.6;
+		textures[] = {"PHVehicles\Data\Hatchback_01_ext_SPORT04_CO.paa"};
 	}
 };

@@ -106,6 +106,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_soldner_co.paa","PHHelmets\data\helmets\customvisor_soldner_co.paa"};
 		class ItemInfo: HeadgearItem
 		{
+			mass = 0.1;
 			uniformmodel = "TCF_EQUIPMENT\Helmets\Scout\Reach_Scout_Helmet.p3d";
 			picture = "\OPTRE_UNSC_Units\Army\icons\odst_recon";
 			allowedSlots[] = {"BACKPACK_SLOT","VEST_SLOT","HEADGEAR_SLOT"};
@@ -115,19 +116,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};

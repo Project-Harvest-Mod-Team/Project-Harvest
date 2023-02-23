@@ -227,8 +227,8 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat","","LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"};
 		hiddenSelectionsTextures[] =
 		{
-			"PHGear\data\Army\data\vest_odst_co.paa",
-			"PHGear\data\army\data\armor_odst_co.paa",
+			"PHGear\data\armor\customvest_soldner_co.paa",
+			"PHGear\data\armor\customarmor_soldnerarmor_co.paa",
 			"PHGear\data\armor\legs_base_co.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
 			"PHGear\data\armor\customarmor_kaz_co.paa"

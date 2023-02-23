@@ -20,7 +20,7 @@ class CfgPatches //class desc.
 	};
 };
 
-/*class XtdGearModels
+class XtdGearModels
 {
 	class CamoBase;
 	class CfgWeapons
@@ -34,10 +34,20 @@ class CfgPatches //class desc.
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"148","g311"};
-				class 148
+				values[] = {"b192","o148","d236","g311"};
+				class b192
+				{
+					label = "B192";
+					image = "";
+				};
+				class o148
 				{
 					label = "148";
+					image = "";
+				};
+				class d236
+				{
+					label = "D236";
 					image = "";
 				};
 				class g311
@@ -53,16 +63,25 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
+		class PHRP_B192_Armor
+		{
+			model = "PHRP_Caliburn_vests";
+			role = "b192";
+		};
 		class PHRP_Oliver_My_Beloved
 		{
 			model = "PHRP_Caliburn_vests";
-			role = "148";
+			role = "o148";
+		};
+		class PHRP_D236_Armor
+		{
+			model = "PHRP_Caliburn_vests";
+			role = "d236";
 		};
 		class PHRP_G311_Armor
 		{
 			model = "PHRP_Caliburn_vests";
 			role = "g311";
 		};
-		
 	};
-};*/
+};

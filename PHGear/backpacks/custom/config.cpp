@@ -30,7 +30,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		maximumLoad = 300;
+		maximumLoad = 350;
 		mass = 50;
 		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_co.paa"};
@@ -42,7 +42,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		maximumLoad = 350;
+		maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo1","biofoam"};
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_co.paa"};
@@ -56,7 +56,7 @@ class CfgVehicles
 		scopeArsenal = 2;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_co.paa"};
-		maximumLoad = 350;
+		maximumLoad = 375;
 	};
 	class OPTRE_ANPRC_515;
 	class PHRP_ANPRC_515: OPTRE_ANPRC_515
@@ -74,7 +74,7 @@ class CfgVehicles
 		tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio = 1;
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\prc515_CO.paa"};
-		maximumLoad = 300;
+		maximumLoad = 350;
 	};
 	class OPTRE_ANPRC_521_green;
 	class PHRP_ANPRC_521: OPTRE_ANPRC_521_green
@@ -92,7 +92,7 @@ class CfgVehicles
 		tf_range = 120000;
 		tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio = 1;
-		maximumLoad = 350;
+		maximumLoad = 400;
 	};
 	class OPTRE_ONI_Researcher_Suitcase;
 	class PHRP_Medic_Hardcase : OPTRE_ONI_Researcher_Suitcase

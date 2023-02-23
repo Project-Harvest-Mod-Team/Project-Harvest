@@ -7,7 +7,7 @@ class CfgPatches
 		author = "PHRP Mod Team";
 		name = "Project Harvest Units";
 		url = "https://discord.gg/vSnh2zBTCu";
-		units[] = {"Gladius_Rifleman","Gladius_BR55","Gladius_Marksman","Gladius_Autorifleman","Gladius_Radio_Operator","Gladius_Medic"};
+		units[] = {"Gladius_Rifleman","Gladius_Officer","Gladius_Squad_Leader","Gladius_Radio_Operator","Gladius_Medic","Gladius_Demolitionist","Gladius_Grenadier","Gladius_AT_Specialist","Gladius_Breacher","Gladius_Autorifleman","Gladius_Marksman","Gladius_Sniper"};
 		weapons[] = {};
 		magazines[] = {};
 		ammo[] = {};
@@ -218,6 +218,7 @@ class CfgVehicles
 		scopeCurator = 2;
 		displayName = "Gladius ODST Rifleman";
 		uniformClass = "Gladius_BDU";
+		faction = "Gladius_Faction";
 		backpack = "OPTRE_ILCS_Rucksack_Black";
 		icon = "iconMan";
 		Weapons[] = {"OPTRE_MA5C","OPTRE_M6C","Throw","Put"};
@@ -229,38 +230,28 @@ class CfgVehicles
 	};
 	class Gladius_Officer: Gladius_Rifleman
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Gladius ODST Officer";
 		attendant = 1;
 		engineer = true;
 	};
 	class Gladius_Squad_Leader: Gladius_Rifleman
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Gladius ODST Squad Leader";
 		attendant = 1;
 	};
 	class Gladius_Radio_Operator: Gladius_Rifleman
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Gladius ODST Radio Operator";
 		backpack = "OPTRE_ANPRC_521_Black";
 	};
 	class Gladius_Medic: Gladius_Rifleman
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Gladius ODST Corpsman";
 		backpack = "OPTRE_ILCS_Rucksack_Medical";
 		attendant = 1;
 	};
 	class Gladius_Demolitionist: Gladius_Rifleman
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Gladius ODST Demolitionist";
 		canDeactivateMines = true;
 		Weapons[] = {"OPTRE_BR55HB_ScopedRifle","OPTRE_M6C","Throw","Put"};
@@ -270,8 +261,6 @@ class CfgVehicles
 	};
 	class Gladius_Grenadier: Gladius_Rifleman
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Gladius ODST Grenadier";
 		Weapons[] = {"OPTRE_MA5CGL","OPTRE_M6C","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_MA5CGL","OPTRE_M6C","Throw","Put"};
@@ -280,8 +269,6 @@ class CfgVehicles
 	};
 	class Gladius_AT_Specialist: Gladius_Rifleman
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Gladius ODST AT Specialist";
 		Weapons[] = {"OPTRE_MA5C","OPTRE_M6C","OPTRE_M41_SSR","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_MA5C","OPTRE_M6C","Throw","Put"};
@@ -291,8 +278,6 @@ class CfgVehicles
 	};
 	class Gladius_Breacher: Gladius_Rifleman
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Gladius ODST Breacher";
 		Weapons[] = {"OPTRE_M45TAC","OPTRE_M6C","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M45TAC","OPTRE_M6C","Throw","Put"};
@@ -301,8 +286,6 @@ class CfgVehicles
 	};
 	class Gladius_Autorifleman: Gladius_Rifleman
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Gladius ODST Autorifleman";
 		Weapons[] = {"OPTRE_M73","OPTRE_M6C","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M73","OPTRE_M6C","Throw","Put"};
@@ -311,8 +294,6 @@ class CfgVehicles
 	};
 	class Gladius_Marksman: Gladius_Rifleman
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Gladius ODST Designated Marksman";
 		Weapons[] = {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6C","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_M392_DMR_ScopedRifle","OPTRE_M6C","Throw","Put"};
@@ -321,8 +302,6 @@ class CfgVehicles
 	};
 	class Gladius_Sniper: Gladius_Rifleman
 	{
-		scope = 2;
-		scopeCurator = 2;
 		displayName = "Gladius ODST Sniper";
 		Weapons[] = {"MEU_OPTRE_SRS99D_AI","Throw","Put"};
 		respawnWeapons[] = {"MEU_OPTRE_SRS99D_AI","Throw","Put"};
@@ -341,12 +320,12 @@ class CfgGroups
 			class ODSTS
 			{
 				name = "ODSTs";
-				class Gladius_Fireteam
+				class Gladius_Squad
 				{
 					dlc = "Project Harvest Armory";
-					name = "Gladius Fireteam";
+					name = "Gladius Squad";
 					side = 1;
-					faction = "OPTRE_UNSC";
+					faction = "Gladius_Faction";
 					rarityGroup = 0.3;
 					class Gladius_Leader
 					{
