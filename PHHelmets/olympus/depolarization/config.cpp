@@ -28,6 +28,7 @@ class CfgWeapons
 	{
 		scope = 1;
 		scopeArsenal = 1;
+		mass = 10;
 		author = "Soldner";
 		displayName = "Experimental Assault Helmet/S (Soldner)";
 		model = "TCF_EQUIPMENT\Helmets\Scout\Reach_Scout_Helmet.p3d";
