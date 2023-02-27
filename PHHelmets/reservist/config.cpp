@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","ansley","carter","wrecker","tinoco","carsten","mischa","wilson"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson"};
 				class recruit
 				{
 					label = "Recruit";
@@ -53,10 +53,6 @@ class XtdGearModels
 				class carter
 				{
 					label = "Carter";
-				};
-				class wrecker
-				{
-					label = "Wrecker";
 				};
 				class tinoco
 				{
@@ -105,11 +101,6 @@ class XtdGearInfos
 		class PHRP_Carter_Commando_Helmet
 		{
 			role = "carter";
-			model = "PHRP_reservist_helmets";
-		};
-		class PHRP_Wrecker_Commando_Helmet
-		{
-			role = "wrecker";
 			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Tinoco_ODST_Helmet
