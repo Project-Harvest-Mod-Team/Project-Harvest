@@ -33,14 +33,10 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","chopper","blackburn","angel"};
+				values[] = {"default","blackburn","angel"};
 				class default
 				{
 					label = "Default";
-				};
-				class chopper
-				{
-					label = "Chopper";
 				};
 				class blackburn
 				{
@@ -63,11 +59,6 @@ class XtdGearInfos
 			role = "default";
 			model = "PHRP_bravo_helmets";
 		};
-		class PHRP_Chopper_EOD_Helmet
-		{
-			role = "chopper";
-			model = "PHRP_bravo_helmets";
-		};
 		class PHRP_Blackburn_ODST_Helmet
 		{
 			role = "blackburn";
@@ -83,7 +74,6 @@ class XtdGearInfos
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
-	class PHRP_Base_EOD_Helmet;
 	class PHRP_Bravo_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -94,16 +84,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_bravobase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
-	class PHRP_Chopper_EOD_Helmet : PHRP_Base_EOD_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Mark V/EOD Helmet (Chopper)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\EOD_Visor_co.paa"};
 	};
 	class PHRP_Blackburn_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{

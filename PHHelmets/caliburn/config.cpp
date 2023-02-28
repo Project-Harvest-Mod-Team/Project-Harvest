@@ -1,0 +1,179 @@
+class CfgPatches //class desc.
+{
+	class Gladius_UNSC_ODST
+	{
+		author = "Project Harvest Mod Team"; //name of author
+		units[] = //attached units (leave blank)
+		{
+			
+		};
+		weapons[] = //attached weapons (leave blank)
+		{
+			
+		};
+		requiredVersion = 0.1; //artefact of arma, no clue what it is but has to stay 0.1
+		requiredAddons[] =
+		{
+			"A3_Characters_F",
+			"OPTRE_Core"
+		};
+	};
+};
+class XtdGearModels
+{
+	class CamoBase;
+	class CfgWeapons
+	{
+		class PHRP_Caliburn_helmets
+		{
+			label = "Caliburn Helmets";
+			author = "Project Harvest Mod Team";
+			options[] = {"Role"};
+			class role
+			{
+				alwaysSelectable = 1;
+				label = "Role";
+				values[] = {"b192","o148","d236","g311"};
+				class b192
+				{
+					label = "B192";
+				};
+				class o148
+				{
+					label = "148";
+				};
+				class d236
+				{
+					label = "D236";
+				};
+				class g311
+				{
+					label = "G311";
+				};
+			};
+		};
+	};
+};
+class XtdGearInfos
+{
+	class CfgWeapons
+	{
+		class PHRP_B192_Helmet
+		{
+			model = "PHRP_Caliburn_helmets";
+			role = "b192";
+		};
+		class PHRP_Oliver_My_Beloved_Helmet
+		{
+			model = "PHRP_Caliburn_helmets";
+			role = "o148";
+		};
+		class PHRP_D236_Helmet
+		{
+			model = "PHRP_Caliburn_helmets";
+			role = "d236";
+		};
+		class PHRP_G311_Helmet
+		{
+			model = "PHRP_Caliburn_helmets";
+			role = "g311";
+		};
+	};
+};
+class CfgWeapons
+{
+	class ItemInfo;
+	class PHRP_Base_ODST_Helmet;
+	class PHRP_G311_Helmet: PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "Spartan Helmet G311";
+		model = "\OPTRE_UNSC_Units\Army\helmetmkvb_human.p3d";
+		hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_G311_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_Silver_CO.paa"};
+		hiddenSelectionsMaterials[] = {"OPTRE_MJOLNIR_Units\data\Helmet_MkVB.rvmat","OPTRE_MJOLNIR_Units\data\Visor_MkVB_Silver.rvmat"};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\helmetmkvb_human.p3d";
+			hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_G311_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_Silver_CO.paa"};
+			hiddenSelectionsMaterials[] = {"OPTRE_MJOLNIR_Units\data\Helmet_MkVB.rvmat","OPTRE_MJOLNIR_Units\data\Visor_MkVB_Silver.rvmat"};
+		};
+	};
+	class PHRP_G311_Helmet_dp: PHRP_G311_Helmet
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		class ItemInfo: ItemInfo{};
+	};
+	class OPTRE_MJOLNIR_Mk4Helmet;
+	class PHRP_Oliver_My_Beloved_Helmet: OPTRE_MJOLNIR_Mk4Helmet
+	{
+		author = "Soldner";
+		displayName = "Spartan Helmet 148";
+		model = "\OPTRE_MJOLNIR_Units\helmetmkvb.p3d";
+		
+		hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_148_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_CO.paa"};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_MJOLNIR_Units\helmetmkvb.p3d";
+			hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_148_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_CO.paa"};
+		};
+	};
+	class PHRP_Oliver_My_Beloved_Helmet_dp: PHRP_Oliver_My_Beloved_Helmet
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		class ItemInfo: ItemInfo{};
+	};
+	class PHRP_D236_Helmet: OPTRE_MJOLNIR_Mk4Helmet
+	{
+		author = "Soldner";
+		displayName = "Spartan Helmet D236";
+		model = "\OPTRE_MJOLNIR_Units\helmetmkvb.p3d";
+		
+		hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_D236_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_CO.paa"};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_MJOLNIR_Units\helmetmkvb.p3d";
+			hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_D236_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_CO.paa"};
+		};
+	};
+	class PHRP_D236_Helmet_dp: PHRP_D236_Helmet
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		class ItemInfo: ItemInfo{};
+	};
+	class PHRP_B192_Helmet: OPTRE_MJOLNIR_Mk4Helmet
+	{
+		author = "Soldner";
+		displayName = "Spartan Helmet B192";
+		model = "\OPTRE_MJOLNIR_Units\helmetmkvb.p3d";
+		
+		hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_B192_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_CO.paa"};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_MJOLNIR_Units\helmetmkvb.p3d";
+			hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_B192_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_CO.paa"};
+		};
+	};
+	class PHRP_B192_Helmet_dp: PHRP_B192_Helmet
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		class ItemInfo: ItemInfo{};
+	};
+};

@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Bravo Armors";
-				values[] = {"default","corpsman","chopper","angel","blackburn"};
+				values[] = {"default","chopper","angel","blackburn"};
 				class default
 				{
 					label = "Default";
@@ -48,11 +48,6 @@ class XtdGearModels
 				class angel
 				{
 					label = "Angel";
-					image = "";
-				};
-				class chopper
-				{
-					label = "Chopper";
 					image = "";
 				};
 				class blackburn
@@ -77,11 +72,6 @@ class XtdGearInfos
 		{
 			model = "PHRP_Bravo_vests";
 			role = "corpsman";
-		};
-		class PHRP_chopper_Armor
-		{
-			model = "PHRP_Bravo_vests";
-			role = "chopper";
 		};
 		class PHRP_Blackburn_Armor
 		{

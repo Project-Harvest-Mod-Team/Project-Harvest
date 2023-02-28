@@ -44,7 +44,7 @@ class XtdGearModels
 				};
 				class morgenstern
 				{
-					label = "Morgenstern";
+					label = "Morg";
 				};
 				class riot
 				{
