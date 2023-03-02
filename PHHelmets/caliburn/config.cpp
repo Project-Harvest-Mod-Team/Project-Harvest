@@ -117,12 +117,12 @@ class CfgWeapons
 		model = "\OPTRE_MJOLNIR_Units\helmetmkvb.p3d";
 		
 		hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_148_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_CO.paa"};
+		hiddenSelectionsTextures[] = {"OPTRE_MJOLNIR_Units\data\Helmet_MkVB_CO.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_CO.paa"};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_MJOLNIR_Units\helmetmkvb.p3d";
 			hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
-			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_148_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_CO.paa"};
+			hiddenSelectionsTextures[] = {"OPTRE_MJOLNIR_Units\data\Helmet_MkVB_CO.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_CO.paa"};
 		};
 	};
 	class PHRP_Oliver_My_Beloved_Helmet_dp: PHRP_Oliver_My_Beloved_Helmet
@@ -139,12 +139,14 @@ class CfgWeapons
 		model = "\OPTRE_MJOLNIR_Units\helmetmkvb.p3d";
 		
 		hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_D236_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_CO.paa"};
+		hiddenSelectionsTextures[] = {"OPTRE_MJOLNIR_Units\data\Helmet_MkVB_Red_CO.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_Blue_CO.paa"};
+		hiddenSelectionsMaterials[] = {"OPTRE_MJOLNIR_Units\data\Helmet_MkVB.rvmat","OPTRE_MJOLNIR_Units\data\Visor_MkVB_Blue.rvmat"};
 		class ItemInfo: ItemInfo
 		{
 			uniformModel = "\OPTRE_MJOLNIR_Units\helmetmkvb.p3d";
 			hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
-			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_D236_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_CO.paa"};
+			hiddenSelectionsTextures[] = {"OPTRE_MJOLNIR_Units\data\Helmet_MkVB_Red_CO.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_Blue_CO.paa"};
+			hiddenSelectionsMaterials[] = {"OPTRE_MJOLNIR_Units\data\Helmet_MkVB.rvmat","OPTRE_MJOLNIR_Units\data\Visor_MkVB_Blue.rvmat"};
 		};
 	};
 	class PHRP_D236_Helmet_dp: PHRP_D236_Helmet
