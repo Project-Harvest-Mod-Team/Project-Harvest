@@ -565,7 +565,7 @@ class CfgWeapons
 	class PHRP_Buckley_Armor : PHRP_Base_Armor
 	{
 		author = "PHRP Mod Team";
-		displayName = "M52D Body Armor(Buckley)";
+		displayName = "M52D Body Armor (Buckley)";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -605,9 +605,9 @@ class CfgWeapons
 			"AS_SmallLeft",  
 			"AS_SmallRight", 
 			//"AP_Canteen", 
-			//"AP_GL", 
-			"AP_Knife", 
-			"AP_MGThigh", 
+			"AP_GL", 
+			//"AP_Knife", 
+			//"AP_MGThigh", 
 			"AP_AR", 
 			"AP_BR", 
 			"AP_Pack", 
@@ -616,10 +616,10 @@ class CfgWeapons
 			"AP_SG", 
 			"AP_SMG", 
 			"AP_Sniper", 
-			"AP_Thigh", 
+			//"AP_Thigh", 
 			"AP_Frag", 
 			"AP_Smoke", 
-			"APO_AR", 
+			//"APO_AR", 
 			"APO_BR", 
 			//"APO_Knife", 
 			"APO_SMG", 
@@ -673,9 +673,9 @@ class CfgWeapons
 				"AS_SmallLeft",  
 				"AS_SmallRight", 
 				//"AP_Canteen", 
-				//"AP_GL", 
-				"AP_Knife", 
-				"AP_MGThigh", 
+				"AP_GL", 
+				//"AP_Knife", 
+				//"AP_MGThigh", 
 				"AP_AR", 
 				"AP_BR", 
 				"AP_Pack", 
@@ -684,10 +684,10 @@ class CfgWeapons
 				"AP_SG", 
 				"AP_SMG", 
 				"AP_Sniper", 
-				"AP_Thigh", 
+				//"AP_Thigh", 
 				"AP_Frag", 
 				"AP_Smoke", 
-				"APO_AR", 
+				//"APO_AR", 
 				"APO_BR", 
 				//"APO_Knife", 
 				"APO_SMG", 
@@ -699,7 +699,7 @@ class CfgWeapons
 	class PHRP_Jaeger_Armor : PHRP_Base_Armor
 	{
 		author = "Kaker";
-		displayName = "M52D Body Armor(Jaeger)";
+		displayName = "M52D Body Armor (Jaeger)";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -833,7 +833,7 @@ class CfgWeapons
 	class PHRP_Famous_Armor : PHRP_Base_Armor
 	{
 		author = "Blackburn";
-		displayName = "M52D Body Armor(Famous)";
+		displayName = "M52D Body Armor (Famous)";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;

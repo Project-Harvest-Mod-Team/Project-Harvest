@@ -39,7 +39,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "VorpalHotdog";
-		displayName = "CH252D Helmet(Erikson)";
+		displayName = "CH252D Helmet (Erikson)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
@@ -49,7 +49,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "VorpalHotdog";
-		displayName = "CH252D Helmet(Presscott)";
+		displayName = "CH252D Helmet (Presscott)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
@@ -59,7 +59,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "PHRP Mod Team";
-		displayName = "CH252D Helmet(Buckley)";
+		displayName = "CH252D Helmet (Buckley)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_buckley_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
@@ -69,7 +69,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "PHRP Mod Team";
-		displayName = "CH252D Helmet(Jaeger)";
+		displayName = "CH252D Helmet (Jaeger)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_jaeger_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
@@ -79,7 +79,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "PHRP Mod Team";
-		displayName = "CH252D Helmet(Famous)";
+		displayName = "CH252D Helmet (Famous)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_famous_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};

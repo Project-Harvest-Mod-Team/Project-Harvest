@@ -70,7 +70,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Squad";
-				values[] = {"ilcs","unsc","alpha","bravo","delta","Echo"};
+				values[] = {"ilcs","unsc","alpha","bravo","delta","echo"};
 				class ilcs
 				{
 					label = "ODST";
