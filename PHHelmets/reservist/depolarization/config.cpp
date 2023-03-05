@@ -124,4 +124,13 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\EOD_Visor_co.paa"};
 	};
+	class PHRP_Raider_Commando_Helmet_dp : PHRP_Base_Commando_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "Soldner";
+		displayName = "Mark V/K Helmet (Raider)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_Raider_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
 };
