@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","erikson","presscott"};
+				values[] = {"default","corpsman","erikson","presscott","buckley","jaeger","famous"};
 				class default
 				{
 					label = "Default";
@@ -53,6 +53,21 @@ class XtdGearModels
 				class presscott
 				{
 					label = "Presscott";
+					image = "";
+				};
+				class buckley
+				{
+					label = "Buckley";
+					image = "";
+				};
+				class jaeger
+				{
+					label = "Jaeger";
+					image = "";
+				};
+				class famous
+				{
+					label = "Famous";
 					image = "";
 				};
 			};
@@ -82,6 +97,21 @@ class XtdGearInfos
 		{
 			model = "PHRP_Alpha_vests";
 			role = "presscott";
+		};
+		class PHRP_Buckley_Armor
+		{
+			model = "PHRP_Alpha_vests";
+			role = "buckley";
+		}
+		class PHRP_Jaeger_Armor
+		{
+			model = "PHRP_Alpha_vests";
+			role = "jaeger";
+		};
+		class PHRP_Famous_Armor
+		{
+			model = "PHRP_Alpha_vests";
+			role = "famous";
 		};
 	};
 };

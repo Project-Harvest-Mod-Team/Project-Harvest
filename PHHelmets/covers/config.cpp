@@ -95,7 +95,8 @@ class CfgWeapons
 		displayName = "Gladius Boonie";
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusboonie_co.paa"};
 	};
-	class PHRP_Gladius_Patrol: H_MilCap_blue
+	//Commented out until texture is in data
+	/*class PHRP_Gladius_Patrol: H_MilCap_blue
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -103,5 +104,5 @@ class CfgWeapons
 		author = "VorpalHotdog";
 		displayName = "Patrol Cap (Gladius)";
 		hiddenselectionstextures[] = {"PHHelmets\data\helmets\headgear_gladiuscap_co.paa"};
-	};
+	};*/
 };

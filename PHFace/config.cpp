@@ -102,10 +102,20 @@ class CfgFaces
 			textureHL = "PHFace\Data\owessel_tat_co.paa";
 			textureHL2 = "PHFace\Data\owessel_tat_co.paa";
 		};
-		/*class PHRP_BlackburnHead : WhiteHead_01
+		class WhiteHead_10;
+		class PHRP_BlackburnHead : WhiteHead_10
 		{
-			//start here
+			disabled = 0;
+			displayname = "Blackburn";
+			head = "DefaultHead_A3";
+			identityTypes[] = {};
+			author = "Soldner";
+			texture = "A3\Characters_F\Heads\data\m_White_10.paa";
+			material = "A3\Characters_F\Heads\data\m_White_10.rvmat";
+			materialWounded1 = "A3\Characters_F\Heads\data\m_White_10_injury.rvmat";
+			materialWounded2 = "A3\Characters_F\Heads\data\m_White_10_injury.rvmat";
+			textureHL = "PHFace\Data\blackburn_tat_co.paa";
+			textureHL2 = "PHFace\Data\blackburn_tat_co.paa";
 		};
-		/**/
 	};
 };

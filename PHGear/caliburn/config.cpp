@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"b192","o148","d236","g311"};
+				values[] = {"b192","o148","d236","g311","b232"};
 				class b192
 				{
 					label = "B192";
@@ -53,6 +53,11 @@ class XtdGearModels
 				class g311
 				{
 					label = "G311";
+					image = "";
+				};
+				class b232
+				{
+					label = "B232";
 					image = "";
 				};
 			};
@@ -82,6 +87,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Caliburn_vests";
 			role = "g311";
+		};
+		class PHRP_B232_Armor
+		{
+			model = "PHRP_Caliburn_vests";
+			role = "b232";
 		};
 	};
 };
