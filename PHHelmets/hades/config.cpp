@@ -216,20 +216,21 @@ class CfgWeapons
 			};
 		};
 	};
-	class NVGoggles;
+	//This is waiting on HiddenSelections from TCF
+	/*class NVGoggles;
 	class PHRP_NVG_BlastShield: NVGoggles
 	{
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "EAA/D Gungnir Blastshield (Kaz)";
 		visionMode[] = {"Normal","NVG","TI"};
-		model = "\TCF_EQUIPMENT\Helmets\Gungnir\Battleshield.p3d";
+		model = "\TCF_EQUIPMENT\Helmets\Gungnir\BattleshieldBaseplate.p3d";
 		class ItemInfo
 		{
 			type = 616;
-			uniformModel = "\TCF_EQUIPMENT\Helmets\Gungnir\Battleshield.p3d";
-			modelOff = "\TCF_EQUIPMENT\Helmets\Gungnir\Battleshield.p3d";
+			uniformModel = "\TCF_EQUIPMENT\Helmets\Gungnir\BattleshieldBaseplate.p3d";
+			modelOff = "\TCF_EQUIPMENT\Helmets\Gungnir\BattleshieldBaseplate.p3d";
 			mass = 6;
 		};
-	};
+	};*/
 };

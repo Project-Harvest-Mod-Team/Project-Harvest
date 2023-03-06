@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","erikson","presscott"};
+				values[] = {"default","erikson","presscott","buckley","jaeger","famous"};
 				class default
 				{
 					label = "Default";
@@ -45,6 +45,18 @@ class XtdGearModels
 				class presscott
 				{
 					label = "Presscott";
+				};
+				class buckley
+				{
+					label = "Buckley";
+				};
+				class jaeger
+				{
+					label = "Jaeger";
+				};
+				class famous
+				{
+					label = "Famous";
 				};
 			};
 		};
@@ -69,11 +81,27 @@ class XtdGearInfos
 			role = "presscott";
 			model = "PHRP_alpha_helmets";
 		};
+		class PHRP_Buckley_ODST_Helmet
+		{
+			role = "buckley";
+			model = "PHRP_alpha_helmets";
+		}
+		class PHRP_Jaeger_ODST_Helmet
+		{
+			role = "jaeger";
+			model = "PHRP_alpha_helmets";
+		}
+		class PHRP_Famous_ODST_Helmet
+		{
+			role = "famous";
+			model = "PHRP_alpha_helmets";
+		}
 	};
 };
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
+	class PHRP_Base_CQC_Helmet;
 	class PHRP_Alpha_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -102,9 +130,42 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "Soldner";
-		displayName = "CH252D Helmet - Alpha";
+		displayName = "CH252D Helmet (Presscott)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
+	};
+	class PHRP_Buckley_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "PHRP Mod Team";
+		displayName = "CH252D Helmet (Presscott)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_buckley_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
+	};
+	class PHRP_Jaeger_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "PHRP Mod Team";
+		displayName = "CH252D Helmet (Jaeger)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_jaeger_co.paa","PHHelmets\data\helmets\customvisor_jaeger_co.paa"};
+	};
+	class PHRP_Famous_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "PHRP Mod Team";
+		displayName = "CH252D Helmet (Famous)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_famous_co.paa","PHHelmets\data\helmets\customvisor_famous_co.paa"};
 	};
 };
