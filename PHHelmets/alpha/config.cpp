@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","erikson","presscott","buckley","jaeger","famous"};
+				values[] = {"default","erikson","presscott","buckley","jaeger","famous","griffith"};
 				class default
 				{
 					label = "Default";
@@ -57,6 +57,10 @@ class XtdGearModels
 				class famous
 				{
 					label = "Famous";
+				};
+				class griffith
+				{
+					label = "Griffith";
 				};
 			};
 		};
@@ -94,6 +98,11 @@ class XtdGearInfos
 		class PHRP_Famous_ODST_Helmet
 		{
 			role = "famous";
+			model = "PHRP_alpha_helmets";
+		}
+		class PHRP_Griffith_ODST_Helmet
+		{
+			role = "griffith";
 			model = "PHRP_alpha_helmets";
 		}
 	};
@@ -167,5 +176,16 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_famous_co.paa","PHHelmets\data\helmets\customvisor_famous_co.paa"};
+	};
+	class PHRP_Griffith_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "PHRP Mod Team";
+		displayName = "CH252D Helmet (Griffith)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\customvisor_griffith_co.paa"};
 	};
 };

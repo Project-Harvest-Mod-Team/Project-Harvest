@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","erikson","presscott","buckley","jaeger","famous"};
+				values[] = {"default","corpsman","erikson","presscott","buckley","jaeger","famous","griffith"};
 				class default
 				{
 					label = "Default";
@@ -69,6 +69,10 @@ class XtdGearModels
 				{
 					label = "Famous";
 					image = "";
+				};
+				class griffith
+				{
+					label = "Griffith";
 				};
 			};
 		};
@@ -112,6 +116,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Alpha_vests";
 			role = "famous";
+		};
+		class PHRP_Griffith_Armor
+		{
+			model = "PHRP_Alpha_vests";
+			role = "griffith";
 		};
 	};
 };

@@ -967,7 +967,7 @@ class CfgWeapons
 	class PHRP_Wilson_Armor : PHRP_Base_Armor
 	{
 		author = "MrMicrobe";
-		displayName = "M52D Body Armor (wilson)";
+		displayName = "M52D Body Armor (Wilson)";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -1101,7 +1101,7 @@ class CfgWeapons
 	class PHRP_Chopper_Armor : PHRP_Base_Armor
 	{
 		author = "MrMicrobe";
-		displayName = "M52D Body Armor (chopper)";
+		displayName = "M52D Body Armor (Chopper)";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -1369,7 +1369,7 @@ class CfgWeapons
 	class PHRP_Drip_Armor : PHRP_Base_Armor
 	{
 		author = "VorpalHotdog";
-		displayName = "M52D Body Armor(Drip)";
+		displayName = "M52D Body Armor (Drip)";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;

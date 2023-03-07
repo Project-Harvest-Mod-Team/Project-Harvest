@@ -1,4 +1,4 @@
-class CfgPatches //class desc.
+ 	class CfgPatches //class desc.
 {
 	class Gladius_UNSC_ODST
 	{
