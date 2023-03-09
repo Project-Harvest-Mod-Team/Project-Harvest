@@ -21,16 +21,48 @@ class CfgPatches //class desc.
 };
 class CfgWeapons
 {
+	class HeadgearItem;
     class PHRP_Base_ODST_Helmet_dp;
-	class PHRP_Soldner_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
+	class OPTRE_UNSC_CH252D_Helmet_dp;
+	class PHRP_Soldner_Scout_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
+		mass = 10;
 		author = "Soldner";
-		displayName = "CH252D Helmet (Soldner)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_soldner_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		displayName = "Experimental Assault Helmet/S (Soldner)";
+		model = "TCF_EQUIPMENT\Helmets\Scout\Reach_Scout_Helmet.p3d";
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_soldner_co.paa","TCF_EQUIPMENT\Helmets\Scout\Data\DP_Visor_Co.paa"};
+		class ItemInfo: HeadgearItem
+		{
+			uniformmodel = "TCF_EQUIPMENT\Helmets\Scout\Reach_Scout_Helmet.p3d";
+			allowedSlots[] = {"BACKPACK_SLOT","VEST_SLOT","HEADGEAR_SLOT"};
+			modelSides[] = {6};
+			hiddenSelections[] = {"camo1","Visor"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_soldner_co.paa","TCF_EQUIPMENT\Helmets\Scout\Data\DP_Visor_Co.paa"};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 30;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 30;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 30;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
 	};
 	class PHRP_Burtovski_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{

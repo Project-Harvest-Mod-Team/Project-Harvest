@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Reserve Armors";
-				values[] = {"recruit","reserve","collins","angel","ansley","carter","wrecker","tinoco","carsten","wilson"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","wilson","chopper","raider","drip"};
 				class recruit
 				{
 					label = "Recruit";
@@ -49,11 +49,6 @@ class XtdGearModels
 					label = "Collins";
 					image = "";
 				};
-				class angel
-				{
-					label = "Angel";
-					image = "";
-				};
 				class ansley
 				{
 					label = "Ansley";
@@ -62,11 +57,6 @@ class XtdGearModels
 				class carter
 				{
 					label = "Carter";
-					image = "";
-				};
-				class wrecker
-				{
-					label = "Wrecker";
 					image = "";
 				};
 				class tinoco
@@ -82,6 +72,21 @@ class XtdGearModels
 				class wilson
 				{
 					label = "Wilson";
+					image = "";
+				};
+				class chopper
+				{
+					label = "Chopper";
+					image = "";
+				};
+				class raider
+				{
+					label = "Raider";
+					image = "";
+				};
+				class drip
+				{
+					label = "DripDST";
 					image = "";
 				};
 			};
@@ -107,11 +112,6 @@ class XtdGearInfos
 			model = "PHRP_Reserve_vests";
 			role = "collins";
 		};
-		class PHRP_Angel_Armor
-		{
-			model = "PHRP_Reserve_vests";
-			role = "angel";
-		};
 		class PHRP_Ansley_Armor
 		{
 			model = "PHRP_Reserve_vests";
@@ -121,11 +121,6 @@ class XtdGearInfos
 		{
 			model = "PHRP_Reserve_vests";
 			role = "carter";
-		};
-		class PHRP_Wrecker_Armor
-		{
-			model = "PHRP_Reserve_vests";
-			role = "wrecker";
 		};
 		class PHRP_Tinoco_Armor
 		{
@@ -141,6 +136,21 @@ class XtdGearInfos
 		{
 			model = "PHRP_Reserve_vests";
 			role = "wilson";
+		};
+		class PHRP_chopper_Armor
+		{
+			model = "PHRP_Reserve_vests";
+			role = "chopper";
+		};
+		class PHRP_raider_Armor
+		{
+			model = "PHRP_Reserve_vests";
+			role = "raider";
+		};
+		class PHRP_drip_Armor
+		{
+			model = "PHRP_Reserve_vests";
+			role = "drip";
 		};
 	};
 };

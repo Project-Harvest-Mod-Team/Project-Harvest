@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"beret","boonie"};//,"patrol"};
+				values[] = {"beret","boonie","patrol"};
 				class beret
 				{
 					label = "Beret";
@@ -42,10 +42,10 @@ class XtdGearModels
 				{
 					label = "Boonie";
 				};
-				/*class patrol
+				class patrol
 				{
 					label = "Patrol";
-				};*/
+				};
 			};
 		};
 	};
@@ -64,17 +64,18 @@ class XtdGearInfos
 			role = "boonie";
 			model = "gladius_covers";
 		};
-		/*class PHRP_Gladius_Patrol
+		class PHRP_Gladius_Patrol
 		{
 			role = "patrol";
 			model = "gladius_covers";
-		};*/
+		};
 	};
 };
 class CfgWeapons
 {
     class PHRP_Base_Beret;
 	class PHRP_Base_Boonie;
+	class H_MilCap_Blue;
 
 	class PHRP_Gladius_Beret : PHRP_Base_Beret
 	{
@@ -94,4 +95,14 @@ class CfgWeapons
 		displayName = "Gladius Boonie";
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusboonie_co.paa"};
 	};
+	//Commented out until texture is in data
+	/*class PHRP_Gladius_Patrol: H_MilCap_blue
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VorpalHotdog";
+		displayName = "Patrol Cap (Gladius)";
+		hiddenselectionstextures[] = {"PHHelmets\data\helmets\headgear_gladiuscap_co.paa"};
+	};*/
 };

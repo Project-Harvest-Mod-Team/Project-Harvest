@@ -24,7 +24,7 @@ class XtdGearModels
 	class CamoBase;
 	class CfgWeapons
 	{
-		class reservist_helmets
+		class PHRP_reservist_helmets
 		{
 			label = "Reservist Helmets";
 			author = "Project Harvest Mod Team";
@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","angel","ansley","carter","wrecker","tinoco","carsten","mischa","wilson"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","chopper","raider","drip"};
 				class recruit
 				{
 					label = "Recruit";
@@ -46,10 +46,6 @@ class XtdGearModels
 				{
 					label = "Collins";
 				};
-				class angel
-				{
-					label = "Angel";
-				};
 				class ansley
 				{
 					label = "Ansley";
@@ -57,10 +53,6 @@ class XtdGearModels
 				class carter
 				{
 					label = "Carter";
-				};
-				class wrecker
-				{
-					label = "Wrecker";
 				};
 				class tinoco
 				{
@@ -78,6 +70,18 @@ class XtdGearModels
 				{
 					label = "Wilson";
 				};
+				class chopper
+				{
+					label = "Chopper";
+				};
+				class raider
+				{
+					label = "Raider";
+				};
+				class drip
+				{
+					label = "DripDST";
+				};
 			};
 		};
 	};
@@ -89,57 +93,62 @@ class XtdGearInfos
 		class PHRP_Recruit_ODST_Helmet
 		{
 			role = "recruit";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Reserve_ODST_Helmet
 		{
 			role = "reserve";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Collins_ODST_Helmet
 		{
 			role = "collins";
-			model = "reservist_helmets";
-		};
-		class PHRP_Angel_ODST_Helmet
-		{
-			role = "angel";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Ansley_ODST_Helmet
 		{
 			role = "ansley";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Carter_Commando_Helmet
 		{
 			role = "carter";
-			model = "reservist_helmets";
-		};
-		class PHRP_Wrecker_Commando_Helmet
-		{
-			role = "wrecker";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Tinoco_ODST_Helmet
 		{
 			role = "tinoco";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Carsten_ODST_Helmet
 		{
 			role = "carsten";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Mischa_ODST_Helmet
 		{
 			role = "mischa";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
 		};		
 		class PHRP_Wilson_CQC_Helmet
 		{
 			role = "wilson";
-			model = "reservist_helmets";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Chopper_EOD_Helmet
+		{
+			role = "chopper";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Raider_Commando_Helmet
+		{
+			role = "raider";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Drip_ODST_Helmet
+		{
+			role = "drip";
+			model = "PHRP_reservist_helmets";
 		};
 	};
 };
@@ -149,6 +158,7 @@ class CfgWeapons
 	class PHRP_Base_Commando_Helmet;
 	class PHRP_Base_HRPilot_Helmet;
 	class PHRP_Base_CQC_Helmet;
+	class PHRP_Base_EOD_Helmet;
 	class PHRP_Recruit_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -182,17 +192,6 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_collins_co.paa","PHHelmets\data\helmets\customvisor_collins_co.paa"};
 	};
-	class PHRP_Angel_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Project Harvest Mod Team";
-		displayName = "CH252D Helmet (Angel)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_angel_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
 	class PHRP_Ansley_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -214,17 +213,6 @@ class CfgWeapons
 		displayName = "Mark V/K Helmet (Carter)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_carter_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
-	};
-	class PHRP_Wrecker_Commando_Helmet : PHRP_Base_Commando_Helmet
-	{
-		dlc = "PHHelmets";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Mark V/K Helmet (Wrecker)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wrecker_co.paa","OPTRE_UNSC_Units\Army\data\Commando_Visor_co.paa"};
 	};
 	class PHRP_Tinoco_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
@@ -268,5 +256,36 @@ class CfgWeapons
 		displayName = "Mark V/CQC Helmet (Wilson)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wilson_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
+	};
+	class PHRP_Chopper_EOD_Helmet : PHRP_Base_EOD_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Mark V/EOD Helmet (Chopper)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\EOD_Visor_co.paa"};
+	};
+	class PHRP_Raider_Commando_Helmet : PHRP_Base_Commando_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "Mark V/K Helmet (Raider)";
+		hiddenSelections[] =  {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_Raider_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
+	};
+	class PHRP_DRIP_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VorpalHotdog";
+		displayName = "CH252D Helmet (Drip)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_dripdst_co.paa","PHHelmets\data\helmets\customvisor_dripdst_co.paa"};
 	};
 };
