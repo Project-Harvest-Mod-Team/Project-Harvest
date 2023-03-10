@@ -1,4 +1,4 @@
-class CfgPatches //class desc.
+ 	class CfgPatches //class desc.
 {
 	class Gladius_UNSC_ODST
 	{
@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","blackburn","angel"};
+				values[] = {"default","blackburn","angel","riot","stone"};
 				class default
 				{
 					label = "Default";
@@ -45,6 +45,14 @@ class XtdGearModels
 				class angel
 				{
 					label = "Angel";
+				};
+				class riot
+				{
+					label = "Riot";
+				};
+				class stone
+				{
+					label = "Stone";
 				};
 			};
 		};
@@ -67,6 +75,16 @@ class XtdGearInfos
 		class PHRP_Angel_ODST_Helmet
 		{
 			role = "angel";
+			model = "PHRP_bravo_helmets";
+		};
+		class PHRP_Riot_ODST_Helmet
+		{
+			role = "riot";
+			model = "PHRP_bravo_helmets";
+		};
+		class PHRP_Stone_ODST_Helmet
+		{
+			role = "stone";
 			model = "PHRP_bravo_helmets";
 		};
 	};
@@ -106,5 +124,27 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_angel_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
+	};
+	class PHRP_Riot_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "CH252D Helmet (Riot)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_riot_co.paa","PHHelmets\data\helmets\customvisor_riot_co.paa"};
+	};
+	class PHRP_Stone_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "CH252D Helmet (Stone)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\customvisor_stone_co.paa"};
 	};
 };

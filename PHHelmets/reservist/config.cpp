@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","chopper"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","chopper","raider","drip"};
 				class recruit
 				{
 					label = "Recruit";
@@ -73,6 +73,14 @@ class XtdGearModels
 				class chopper
 				{
 					label = "Chopper";
+				};
+				class raider
+				{
+					label = "Raider";
+				};
+				class drip
+				{
+					label = "DripDST";
 				};
 			};
 		};
@@ -130,7 +138,17 @@ class XtdGearInfos
 		class PHRP_Chopper_EOD_Helmet
 		{
 			role = "chopper";
-			model = "PHRP_bravo_helmets";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Raider_Commando_Helmet
+		{
+			role = "raider";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Drip_ODST_Helmet
+		{
+			role = "drip";
+			model = "PHRP_reservist_helmets";
 		};
 	};
 };
@@ -248,5 +266,26 @@ class CfgWeapons
 		displayName = "Mark V/EOD Helmet (Chopper)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\EOD_Visor_co.paa"};
+	};
+	class PHRP_Raider_Commando_Helmet : PHRP_Base_Commando_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "Mark V/K Helmet (Raider)";
+		hiddenSelections[] =  {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_Raider_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
+	};
+	class PHRP_DRIP_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VorpalHotdog";
+		displayName = "CH252D Helmet (Drip)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_dripdst_co.paa","PHHelmets\data\helmets\customvisor_dripdst_co.paa"};
 	};
 };

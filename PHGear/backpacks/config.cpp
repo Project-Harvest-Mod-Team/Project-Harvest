@@ -70,7 +70,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Squad";
-				values[] = {"ilcs","unsc","alpha","bravo","delta","echo"};
+				values[] = {"ilcs","unsc","alpha","bravo","echo"};
 				class ilcs
 				{
 					label = "ODST";
@@ -86,10 +86,6 @@ class XtdGearModels
 				class bravo
 				{
 					label = "Bravo";
-				};
-				class delta
-				{
-					label = "Delta";
 				};
 				class echo
 				{
@@ -193,24 +189,6 @@ class XtdGearInfos
 			model = "PHRP_Backpacks";
 			role = "heavy";
 			squad = "bravo";
-		};
-		class PHRP_Delta_ILCS
-		{
-			model = "PHRP_Backpacks";
-			role = "basic";
-			squad = "delta";
-		};
-		class PHRP_Delta_ILCS_Corpsman
-		{
-			model = "PHRP_Backpacks";
-			role = "medic";
-			squad = "delta";
-		};
-		class PHRP_Delta_ILCS_Heavy
-		{
-			model = "PHRP_Backpacks";
-			role = "heavy";
-			squad = "delta";
 		};
 		class PHRP_Echo_ILCS
 		{
@@ -388,21 +366,6 @@ class CfgVehicles
 	{
 		displayName = "PHRP Bravo ILCS Corpsman Rucksack";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_bravo_co.paa"};
-	};
-	class PHRP_Delta_ILCS: PHRP_ILCS
-	{
-		displayName = "PHRP Delta ILCS Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_delta_co.paa"};
-	};
-	class PHRP_Delta_ILCS_Heavy: PHRP_ILCS_Heavy
-	{
-		displayName = "PHRP Delta ILCS Heavy Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_delta_co.paa"};
-	};
-	class PHRP_Delta_ILCS_Corpsman: PHRP_ILCS_Corpsman
-	{
-		displayName = "PHRP Delta ILCS Corpsman Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_delta_co.paa"};
 	};
 	class PHRP_Echo_ILCS: PHRP_ILCS
 	{
