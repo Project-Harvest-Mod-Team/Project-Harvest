@@ -158,7 +158,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "PHRP Mod Team";
+		author = "VorpalHotDog";
 		displayName = "CH252D Helmet (Presscott)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -169,7 +169,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "PHRP Mod Team";
+		author = "Jimbo";
 		displayName = "CH252D Helmet (Jaeger)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -180,7 +180,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "PHRP Mod Team";
+		author = "SirChungus";
 		displayName = "CH252D Helmet (Famous)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -191,7 +191,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "PHRP Mod Team";
+		author = "VibingVampire";
 		displayName = "CH252D Helmet (Griffith)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
@@ -202,7 +202,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "PHRP Mod Team";
+		author = "MrMicrobe";
 		displayName = "CH252D Helmet (Miller)";
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_miller_co.paa"};
 	};
