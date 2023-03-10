@@ -28,7 +28,7 @@ class CfgWeapons
 	};
 	class PHRP_Owessel_Armor : PHRP_Base_Armor
 	{
-		author = "VibingVampire";
+		author = "Jimbo";
 		displayName = "M52D Body Armor (Owessel)";
 		scope = 2;
 		scopeCurator = 2;
