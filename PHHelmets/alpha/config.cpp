@@ -204,6 +204,6 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "MrMicrobe";
 		displayName = "CH252D Helmet (Miller)";
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_miller_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_miller_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
 	};
 };

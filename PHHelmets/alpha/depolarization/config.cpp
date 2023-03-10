@@ -101,6 +101,6 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "PHRP Mod Team";
 		displayName = "Mark VI/S Helmet (Miller)";
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_miller_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_miller_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
 	};
 };
