@@ -36,7 +36,7 @@ class CfgWeapons
 	{
 		scope = 1;
 		scopeArsenal = 1;
-		author = "MrMicrobe";
+		author = "Jimbo";
 		displayName = "Mark V/P Helmet (Kaker)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
