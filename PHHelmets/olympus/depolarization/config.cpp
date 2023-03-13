@@ -39,6 +39,7 @@ class CfgWeapons
 			uniformmodel = "TCF_EQUIPMENT\Helmets\Scout\Reach_Scout_Helmet.p3d";
 			allowedSlots[] = {"BACKPACK_SLOT","VEST_SLOT","HEADGEAR_SLOT"};
 			modelSides[] = {6};
+			mass = 10;
 			hiddenSelections[] = {"camo1","Visor"};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_soldner_co.paa","TCF_EQUIPMENT\Helmets\Scout\Data\DP_Visor_Co.paa"};
 			class HitpointsProtectionInfo

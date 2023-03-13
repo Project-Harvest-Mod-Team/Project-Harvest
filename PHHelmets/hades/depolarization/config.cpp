@@ -59,4 +59,42 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_dusk_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
+	class HeadgearItem;
+	class TCF_Gungnir_Helmet_Bugeye_Baseplate_dp;
+	class PHRP_Kaz_Gungnir_Helmet_dp: TCF_Gungnir_Helmet_Bugeye_Baseplate_dp
+	{
+		author = "Soldner";
+		scope = 1;
+		scopeArsenal = 1;
+		displayName = "EAA/D Gungnir Helmet (Kaz)";
+		model = "TCF_EQUIPMENT\Helmets\Gungnir\Gungnir_Helmet_Bugeye.p3d";
+		hiddenSelections[] = {"camo1","Blastshield","Interior"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaz_co.paa"};
+		class ItemInfo: HeadgearItem
+		{
+			hiddenSelections[] = {"camo1","Blastshield","Interior"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaz_co.paa"};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 40;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 40;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 40;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
 };
