@@ -12,22 +12,34 @@ class CfgPatches
 		requiredAddons[] = {"PHRP_Core"};
 	};
 };
+
+//ace arsenal stuff
+
 class XtdGearModels
 {
-	class CamoBase;
-	class CfgWeapons;
-	class phrp_smg
+	class CfgWeapons
 	{
-		label = "SMG";
-		options[] = {"type"};
-		class type
+		class phrp_weapons
 		{
-			alwaysSelectable = 1;
-			label = "Type";
-			values[] = {"M7"};
-			class M7
+			label = "PHRP Weapons";
+			options[] = {"type"};
+			class type
 			{
-				label = "M7";
+				alwaysSelectable = 1;
+				label = "Type";
+				values[] = {"M7","AK12","SoldnerMA37"};
+				class M7
+				{
+					label = "Vulcan M7";
+				};
+				class AK12
+				{
+					label = "AK12";
+				};
+				class SoldnerMA37
+				{
+					label = "Soldner";
+				};
 			};
 		};
 	};
@@ -38,16 +50,28 @@ class XtdGearInfos
 	{
 		class Vulcan_M7
 		{
-			model = "phrp_smg";
-			name = "M7";
+			model = "phrp_weapons";
+			type = "M7";
+		};
+		class PHRP_AK12
+		{
+			model = "phrp_weapons";
+			type = "AK12";
+		};
+		class PHRP_Soldner_MA37B
+		{
+			model = "phrp_weapons";
+			type = "SoldnerMA37";
 		};
 	};
 };
+
+
 class WeaponSlotsInfo;
 class MuzzleSlot;
 class CowsSlot;
 class PointerSlot;
-class UnderBarrelSlot_rail;
+
 class CfgWeapons
 {
 	//Vulcan M7
@@ -64,6 +88,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo1"};
 		hiddenSelectionsTextures[] = {"PHWeapons\data\Vulcan_m7_co.paa","OPTRE_Weapons\smg\data\m7_magazine_co.paa"};
 	};
+	
 	//Soldner MA37
 	class InventoryOpticsItem_Base_F;
 	class OPTRE_MA37_Smartlink_Scope;
@@ -145,6 +170,7 @@ class CfgWeapons
 			};
 		};
 	};
-};
 
+	//Holland's AK12
 	
+};
