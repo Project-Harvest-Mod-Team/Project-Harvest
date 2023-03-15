@@ -153,7 +153,7 @@ class CfgWeapons
 		displayName = "Soldner's MA37B ICWS Assault Rifle";
 		baseWeapon = "PHRP_Soldner_MA37B";
 		hiddenSelections[] = {"camo","camo1","camo_reticle"};
-		hiddenSelectionsTextures[] = {"optre_weapons\ar\data\ma37b_co.paa","optre_weapons\ar\data\ammocounter37b_co.paa","optre_weapons\ar\data\r_ar_ca.paa"};
+		hiddenSelectionsTextures[] = {"PHWeapons\data\Soldner_MA37_CO.paa","PHWeapons\data\Soldner_ammocounterMA37_co.paa","optre_weapons\ar\data\r_ar_ca.paa"};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class MuzzleSlot: MuzzleSlot
