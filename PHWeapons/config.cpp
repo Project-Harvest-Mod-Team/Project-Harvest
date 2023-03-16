@@ -27,14 +27,14 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Type";
-				values[] = {"M7","AK12","SoldnerMA37"};
+				values[] = {"M7","HollandAK120","SoldnerMA37"};
 				class M7
 				{
 					label = "Vulcan M7";
 				};
-				class AK12
+				class HollandAK120
 				{
-					label = "AK12";
+					label = "Holland";
 				};
 				class SoldnerMA37
 				{
@@ -53,10 +53,10 @@ class XtdGearInfos
 			model = "phrp_weapons";
 			type = "M7";
 		};
-		class PHRP_AK12
+		class PHRP_Holland_AK120
 		{
 			model = "phrp_weapons";
-			type = "AK12";
+			type = "HollandAK120";
 		};
 		class PHRP_Soldner_MA37B
 		{
@@ -71,6 +71,7 @@ class WeaponSlotsInfo;
 class MuzzleSlot;
 class CowsSlot;
 class PointerSlot;
+class UnderBarrelSlot;
 
 class CfgWeapons
 {
@@ -171,6 +172,41 @@ class CfgWeapons
 		};
 	};
 
-	//Holland's AK12
+	//Holland AK
+	/*class Mode_SemiAuto;
+	class Mode_Burst;
+	class Mode_FullAuto;*/
+	class arifle_AK12_F;
+	class PHRP_Holland_AK120 : arifle_AK12_F
+	{
+		dlc = "Project Harvest Armory"
+		author = "VorpalHotdog";
+		baseWeapon = "PHRP_Holland_AK120";
+		scope = 2;
+		scopearsenal = 2;
+		displayName = "Holland's AK-120";
+		canShootInWater = 1;
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHWeapons\data\Holland_ak120_1.paa","PHWeapons\data\Holland_ak120_2.paa"};	
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[] = {"OPTRE_MA5Suppressor"};
+			}; 
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[] = {"optic_Nightstalker","optic_tws","optic_tws_mg","optic_NVS","optic_DMS","optic_LRPS","optic_ams","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_tan","optic_KHS_hex","optic_KHS_old","optic_SOS","optic_MRCO","optic_Arco","optic_aco","optic_ACO_grn","optic_aco_smg","optic_ACO_grn_smg","optic_hamr","optic_Holosight","optic_Holosight_smg","optic_Hamr_khk_F","optic_SOS_khk_F","optic_Arco_ghex_F","optic_Arco_blk_F","optic_DMS_ghex_F","optic_ERCO_blk_F","optic_ERCO_khk_F","optic_ERCO_snd_F","optic_LRPS_ghex_F","optic_LRPS_tna_F","optic_Holosight_blk_F","optic_Holosight_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_smg_khk_F","OPTRE_M392_Scope","OPTRE_BR55HB_Scope","OPTRE_M7_Sight","OPTRE_M393_Scope","OPTRE_M393_ACOG","OPTRE_M393_EOTECH","tcf_ma1b_ammocounter",};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] = {"acc_flashlight","acc_pointer_IR","OPTRE_BMR_Laser"};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				compatibleItems[] = {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};
+			};
+		};
+	};
 	
 };
