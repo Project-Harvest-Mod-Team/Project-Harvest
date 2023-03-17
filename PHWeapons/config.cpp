@@ -12,22 +12,34 @@ class CfgPatches
 		requiredAddons[] = {"PHRP_Core"};
 	};
 };
+
+//ace arsenal stuff
+
 class XtdGearModels
 {
-	class CamoBase;
-	class CfgWeapons;
-	class phrp_smg
+	class CfgWeapons
 	{
-		label = "SMG";
-		options[] = {"type"};
-		class type
+		class phrp_weapons
 		{
-			alwaysSelectable = 1;
-			label = "Type";
-			values[] = {"M7"};
-			class M7
+			label = "PHRP Weapons";
+			options[] = {"type"};
+			class type
 			{
-				label = "M7";
+				alwaysSelectable = 1;
+				label = "Type";
+				values[] = {"M7","HollandAK120","SoldnerMA37"};
+				class M7
+				{
+					label = "Vulcan M7";
+				};
+				class HollandAK120
+				{
+					label = "Holland";
+				};
+				class SoldnerMA37
+				{
+					label = "Soldner";
+				};
 			};
 		};
 	};
@@ -38,18 +50,32 @@ class XtdGearInfos
 	{
 		class Vulcan_M7
 		{
-			model = "phrp_smg";
-			name = "M7";
+			model = "phrp_weapons";
+			type = "M7";
+		};
+		class PHRP_Holland_AK120
+		{
+			model = "phrp_weapons";
+			type = "HollandAK120";
+		};
+		class PHRP_Soldner_MA37B
+		{
+			model = "phrp_weapons";
+			type = "SoldnerMA37";
 		};
 	};
 };
+
+
 class WeaponSlotsInfo;
 class MuzzleSlot;
 class CowsSlot;
 class PointerSlot;
-class UnderBarrelSlot_rail;
+class UnderBarrelSlot;
+
 class CfgWeapons
 {
+	//Vulcan M7
 	class OPTRE_M7;	
 	class Vulcan_M7 : OPTRE_M7
 	{
@@ -63,4 +89,124 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo1"};
 		hiddenSelectionsTextures[] = {"PHWeapons\data\Vulcan_m7_co.paa","OPTRE_Weapons\smg\data\m7_magazine_co.paa"};
 	};
+	
+	//Soldner MA37
+	class InventoryOpticsItem_Base_F;
+	class OPTRE_MA37_Smartlink_Scope;
+	class PHRP_MA37_Smartlink_Scope: OPTRE_MA37_Smartlink_Scope
+	{
+		dlc = "Project Harvest Armory";
+		author = "Soldner";
+		displayName = "4x Smart Link Scope";
+		descriptionShort = "4x Smart Linked Scope";
+		model = "OPTRE_Weapons\AR\MA37_2x_Scope.p3d";
+		inertia = 0.1;
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			mass = 4;
+			modelOptics = "\A3\Weapons_F\empty";
+			optics = 1;
+			class OpticsModes
+			{
+				class MA37_Irons
+				{
+					opticsID = 2;
+					useModelOptics = 0;
+					opticsPPEffects[] = {""};
+					opticsFlare = 0;
+					opticsDisablePeripherialVision = 0;
+					opticsZoomMin = 0.375;
+					opticsZoomMax = 1;
+					opticsZoomInit = 0.75;
+					memoryPointCamera = "eye";
+					visionMode[] = {};
+					distanceZoomMin = 400;
+					distanceZoomMax = 400;
+				};
+				class MA37_Sight
+				{
+					opticsID = 1;
+					useModelOptics = 1;
+					modelOptics[] = {"\OPTRE_Weapons\AR\MA37_2x_Scope.p3d","\OPTRE_Weapons\smg\M7_Optic_4x.p3d"};
+					opticsPPEffects[] = {"OpticsCHAbera2","OpticsBlur2"};
+					opticsFlare = 1;
+					opticsDisablePeripherialVision = 1;
+					opticsZoomMin = 0.125;
+					opticsZoomMax = 0.0525;
+					opticsZoomInit = 0.125;
+					discreteinitIndex = 1;
+					discreteDistanceInitIndex = 1;
+					discretefov[] = {0.125,0.04};
+					distanceZoomMin = 100;
+					distanceZoomMax = 1000;
+					discreteDistance[] = {100,300,400,500,600,700,800,900,1000};
+					memoryPointCamera = "opticView";
+					visionMode[] = {"Normal","NVG","TI"};
+				};
+			};
+		};
+	};
+	class OPTRE_MA37B;
+	class PHRP_Soldner_MA37B : OPTRE_MA37B
+	{
+		dlc = "Project Harvest Armory";
+		author = "Soldner";
+		displayName = "Soldner's MA37B ICWS Assault Rifle";
+		baseWeapon = "PHRP_Soldner_MA37B";
+		hiddenSelections[] = {"camo","camo1","camo_reticle"};
+		hiddenSelectionsTextures[] = {"PHWeapons\data\Soldner_MA37_CO.paa","PHWeapons\data\Soldner_ammocounterMA37_co.paa","optre_weapons\ar\data\r_ar_ca.paa"};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[] = {"optre_ma5suppressor","muzzle_snds_65_TI_blk_F"};
+			};
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[] = {"PHRP_MA37_Smartlink_Scope","OPTRE_MA37_Smartlink_Scope"};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleitems[] = {"OPTRE_M45_Flashlight"};
+			};
+		};
+	};
+
+	//Holland AK
+	/*class Mode_SemiAuto;
+	class Mode_Burst;
+	class Mode_FullAuto;*/
+	class arifle_AK12_F;
+	class PHRP_Holland_AK120 : arifle_AK12_F
+	{
+		dlc = "Project Harvest Armory"
+		author = "VorpalHotdog";
+		baseWeapon = "PHRP_Holland_AK120";
+		scope = 2;
+		scopearsenal = 2;
+		displayName = "Holland's AK-120";
+		canShootInWater = 1;
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHWeapons\data\Holland_ak120_1.paa","PHWeapons\data\Holland_ak120_2.paa"};	
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[] = {"OPTRE_MA5Suppressor"};
+			}; 
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[] = {"optic_Nightstalker","optic_tws","optic_tws_mg","optic_NVS","optic_DMS","optic_LRPS","optic_ams","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_tan","optic_KHS_hex","optic_KHS_old","optic_SOS","optic_MRCO","optic_Arco","optic_aco","optic_ACO_grn","optic_aco_smg","optic_ACO_grn_smg","optic_hamr","optic_Holosight","optic_Holosight_smg","optic_Hamr_khk_F","optic_SOS_khk_F","optic_Arco_ghex_F","optic_Arco_blk_F","optic_DMS_ghex_F","optic_ERCO_blk_F","optic_ERCO_khk_F","optic_ERCO_snd_F","optic_LRPS_ghex_F","optic_LRPS_tna_F","optic_Holosight_blk_F","optic_Holosight_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_smg_khk_F","OPTRE_M392_Scope","OPTRE_BR55HB_Scope","OPTRE_M7_Sight","OPTRE_M393_Scope","OPTRE_M393_ACOG","OPTRE_M393_EOTECH","tcf_ma1b_ammocounter",};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleItems[] = {"acc_flashlight","acc_pointer_IR","OPTRE_BMR_Laser"};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				compatibleItems[] = {"bipod_01_F_blk","bipod_02_F_blk","bipod_03_F_blk"};
+			};
+		};
+	};
+	
 };

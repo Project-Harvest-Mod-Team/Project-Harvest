@@ -415,7 +415,7 @@ class CfgVehicles
 	{
 		_generalMacro = "ace_gunbag_Tan";
 		displayName = "PHRP ILCS Gunbag";
-		maximumLoad = 120;
+		maximumLoad = 130;
 		ace_gunbag = 1;
 	};
 	class PHRP_Alpha_ILCS_Gunbag : PHRP_ILCS_Gunbag

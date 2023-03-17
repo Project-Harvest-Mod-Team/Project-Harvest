@@ -102,15 +102,14 @@ class CfgWeapons
 		author = "Soldner";
 		displayName = "Experimental Assault Armor/S (Soldner)";
 		model = "TCF_EQUIPMENT\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		mass = 10;
+		mass = 6;
 		hiddenSelections[] = {"camo1","Visor","Interior"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_soldner_co.paa","PHHelmets\data\helmets\customvisor_soldner_co.paa"};
 		class ItemInfo: HeadgearItem
 		{
-			mass = 10;
+			mass = 6;
 			uniformmodel = "TCF_EQUIPMENT\Helmets\Scout\Reach_Scout_Helmet.p3d";
 			picture = "\OPTRE_UNSC_Units\Army\icons\odst_recon";
-			allowedSlots[] = {"BACKPACK_SLOT","VEST_SLOT","HEADGEAR_SLOT"};
 			modelSides[] = {6};
 			hiddenSelections[] = {"camo1","Visor","Interior"};
 			class HitpointsProtectionInfo
