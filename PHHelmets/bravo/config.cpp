@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","blackburn","angel","riot","stone"};
+				values[] = {"default","blackburn","angel","riot","stone","craven"};
 				class default
 				{
 					label = "Default";
@@ -53,6 +53,10 @@ class XtdGearModels
 				class stone
 				{
 					label = "Stone";
+				};
+				class craven
+				{
+					label = "Craven";
 				};
 			};
 		};
@@ -87,11 +91,17 @@ class XtdGearInfos
 			role = "stone";
 			model = "PHRP_bravo_helmets";
 		};
+		class PHRP_Craven_Scout_Helmet
+		{
+			role = "craven";
+			model = "PHRP_bravo_helmets";
+		};
 	};
 };
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
+	class PHRP_Base_Scout_Helmet;
 	class PHRP_Bravo_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -147,4 +157,13 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\customvisor_stone_co.paa"};
 	};
+	/*class PHRP_Craven_Scout_Helmet : PHRP_Base_Scout_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "Mark VI/S Helmet (Craven)";
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_craven_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
+	};*/
 };

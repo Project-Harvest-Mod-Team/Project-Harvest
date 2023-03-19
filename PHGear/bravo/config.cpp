@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Bravo Armors";
-				values[] = {"default","corpsman","blackburn","angel","riot","stone"};
+				values[] = {"default","corpsman","blackburn","angel","riot","stone","craven"};
 				class default
 				{
 					label = "Default";
@@ -63,6 +63,11 @@ class XtdGearModels
 				class stone
 				{
 					label = "Stone";
+					image = "";
+				};
+				class craven
+				{
+					label = "Craven";
 					image = "";
 				};
 			};
@@ -103,5 +108,10 @@ class XtdGearInfos
 			model = "PHRP_Bravo_vests";
 			role = "stone";
 		};
+		/*class PHRP_Craven_Armor
+		{
+			model = "PHRP_Bravo_vests";
+			role = "stone";
+		};*/
 	};
 };
