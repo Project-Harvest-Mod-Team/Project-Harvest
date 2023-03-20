@@ -109,7 +109,7 @@ class XtdGearInfos
 			role = "griffith";
 			model = "PHRP_alpha_helmets";
 		};
-		class PHRP_Miller_ODST_Helmet
+		class PHRP_Miller_Scout_Helmet
 		{
 			role = "miller";
 			model = "PHRP_alpha_helmets";
@@ -197,13 +197,13 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\customvisor_griffith_co.paa"};
 	};
-	class PHRP_Miller_ODST_Helmet : PHRP_Base_Scout_Helmet
+	class PHRP_Miller_Scout_Helmet : PHRP_Base_Scout_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "MrMicrobe";
-		displayName = "CH252D Helmet (Miller)";
+		displayName = "Mark VI/S Helmet (Miller)";
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_miller_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
 	};
 };
