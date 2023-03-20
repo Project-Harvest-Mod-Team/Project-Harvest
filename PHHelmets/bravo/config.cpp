@@ -157,7 +157,7 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\customvisor_stone_co.paa"};
 	};
-	/*class PHRP_Craven_Scout_Helmet : PHRP_Base_Scout_Helmet
+	class PHRP_Craven_Scout_Helmet : PHRP_Base_Scout_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -165,5 +165,5 @@ class CfgWeapons
 		author = "Jimbo";
 		displayName = "Mark VI/S Helmet (Craven)";
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_craven_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
-	};*/
+	};
 };

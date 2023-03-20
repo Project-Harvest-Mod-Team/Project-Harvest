@@ -108,10 +108,10 @@ class XtdGearInfos
 			model = "PHRP_Bravo_vests";
 			role = "stone";
 		};
-		/*class PHRP_Craven_Armor
+		class PHRP_Craven_Armor
 		{
 			model = "PHRP_Bravo_vests";
-			role = "stone";
-		};*/
+			role = "craven";
+		};
 	};
 };

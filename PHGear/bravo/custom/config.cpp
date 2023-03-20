@@ -830,7 +830,7 @@ class CfgWeapons
 			};
 		};
 	};
-	/*class PHRP_Craven_Armor : PHRP_Base_Armor
+	class PHRP_Craven_Armor : PHRP_Base_Armor
 	{
 		author = "Jimbo";
 		displayName = "M52D Body Armor (Craven)";
@@ -963,5 +963,5 @@ class CfgWeapons
 				"CustomKit_Scorch"
 			};
 		};
-	};*/
+	};
 };
