@@ -67,7 +67,7 @@ class XtdGearInfos
 			role = "phrpmoon";
 			model = "PHRP_hades_helmets";
 		};
-		class PHRP_Kaz_Gungnir_Helmet
+		class PHRP_Kaz_Operator_Helmet
 		{
 			role = "phrpkazhelmet";
 			model = "PHRP_hades_helmets";
@@ -93,6 +93,7 @@ class CfgWeapons
 {
 	class PHRP_Base_Recon_Helmet;
 	class PHRP_Base_Commando_Helmet;
+	class PHRP_Base_Operator_Helmet;
 	class PHRP_Moon_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
 		scope = 2;
@@ -133,68 +134,13 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_dusk_co.paa","PHHelmets\data\helmets\customvisor_dusk_co.paa"};
 	};
-	class HeadgearItem;
-	class TCF_Gungnir_Helmet_Bugeye;
-	class PHRP_Kaz_Gungnir_Helmet: TCF_Gungnir_Helmet_Bugeye
+	class PHRP_Kaz_Operator_Helmet: PHRP_Base_Operator_Helmet
 	{
-		author = "Soldner";
+		author = "MrMicrobe";
 		scope = 2;
 		scopeArsenal = 2;
-		model = "TCF_EQUIPMENT\Helmets\Gungnir\Gungnir_Helmet_Bugeye.p3d";
-		displayName = "EAA/K Gungnir Helmet (Kaz)";
-		hiddenSelections[] = {"camo1","Blastshield","Interior"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaz_co.paa","PHHelmets\data\helmets\faceplate_kaz_co.paa"};
-		class ItemInfo: HeadgearItem
-		{
-			uniformModel = "TCF_EQUIPMENT\Helmets\Gungnir\Gungnir_Helmet_Bugeye.p3d";
-			picture = "\OPTRE_UNSC_Units\Army\icons\odst_recon";
-			allowedSlots[] = {"BACKPACK_SLOT","VEST_SLOT","HEADGEAR_SLOT"};
-			modelSides[] = {6};
-			hiddenSelections[] = {"camo1","Blastshield","Interior"};
-			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaz_co.paa","PHHelmets\data\helmets\faceplate_kaz_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Face
-				{
-					armor = 40;
-					hitpointName = "HitFace";
-					passThrough = 0.1;
-				};
-				class Head
-				{
-					armor = 40;
-					hitPointName = "HitHead";
-					passThrough = 0.1;
-				};
-				class Neck
-				{
-					armor = 40;
-					hitpointName = "HitNeck";
-					passThrough = 0.1;
-				};
-			};
-		};
+		displayName = "Mark V/O Helmet (Kaz)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaz_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
 	};
-	
-	//This is waiting on HiddenSelections from TCF
-	/*class NVGoggles;
-	class PHRP_NVG_BlastShield: NVGoggles
-	{
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "EAA/K Gungnir Blastshield (Kaz)";
-		visionMode[] = {"Normal","NVG","TI"};
-		model = "\TCF_EQUIPMENT\Helmets\Gungnir\BattleshieldBaseplate.p3d";	
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customnvg_kaz_co.paa"};
-		class ItemInfo
-		{
-			type = 616;
-			uniformModel = "\TCF_EQUIPMENT\Helmets\Gungnir\BattleshieldBaseplate.p3d";
-			modelOff = "\TCF_EQUIPMENT\Helmets\Gungnir\BattleshieldBaseplate.p3d";
-			mass = 6;	
-			hiddenSelections[] = {"camo1"};
-			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customnvg_kaz_co.paa"};
-		};
-	};*/
 };
