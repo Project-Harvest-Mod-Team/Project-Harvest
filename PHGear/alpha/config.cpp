@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","erikson","presscott","buckley","jaeger","famous","griffith","miller"};
+				values[] = {"default","corpsman","erikson","presscott","buckley","jaeger","famous","griffith","miller","Graves"};
 				class default
 				{
 					label = "Default";
@@ -77,6 +77,10 @@ class XtdGearModels
 				class miller
 				{
 					label = "Miller";
+				};
+				class graves
+				{
+					label = "Graves";
 				};
 			};
 		};
@@ -130,6 +134,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Alpha_vests";
 			role = "miller";
+		};
+		class PHRP_Graves_Armor
+		{
+			model = "PHRP_Alpha_vests";
+			role = "graves";
 		};
 	};
 };

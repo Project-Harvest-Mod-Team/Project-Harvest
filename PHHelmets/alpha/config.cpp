@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","erikson","presscott","buckley","jaeger","famous","griffith","miller"};
+				values[] = {"default","erikson","presscott","buckley","jaeger","famous","griffith","miller","graves"};
 				class default
 				{
 					label = "Default";
@@ -65,6 +65,10 @@ class XtdGearModels
 				class miller
 				{
 					label = "Miller";
+				};
+				class graves
+				{
+					label = "Graves";
 				};
 			};
 		};
@@ -112,6 +116,11 @@ class XtdGearInfos
 		class PHRP_Miller_Scout_Helmet
 		{
 			role = "miller";
+			model = "PHRP_alpha_helmets";
+		};
+		class PHRP_Graves_ODST_Helmet
+		{
+			role = "graves";
 			model = "PHRP_alpha_helmets";
 		};
 	};
@@ -205,5 +214,16 @@ class CfgWeapons
 		author = "MrMicrobe";
 		displayName = "Mark VI/S Helmet (Miller)";
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_miller_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
+	};
+	class PHRP_Graves_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "SirChungus";
+		displayName = "CH252D Helmet (Graves)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_graves_co.paa","PHHelmets\data\helmets\customvisor_graves_co.paa"};
 	};
 };
