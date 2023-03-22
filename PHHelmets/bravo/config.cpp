@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","blackburn","angel","riot","stone","craven"};
+				values[] = {"default","blackburn","riot","stone","craven"};
 				class default
 				{
 					label = "Default";
@@ -41,10 +41,6 @@ class XtdGearModels
 				class blackburn
 				{
 					label = "Blackburn";
-				};
-				class angel
-				{
-					label = "Angel";
 				};
 				class riot
 				{
@@ -74,11 +70,6 @@ class XtdGearInfos
 		class PHRP_Blackburn_ODST_Helmet
 		{
 			role = "blackburn";
-			model = "PHRP_bravo_helmets";
-		};
-		class PHRP_Angel_ODST_Helmet
-		{
-			role = "angel";
 			model = "PHRP_bravo_helmets";
 		};
 		class PHRP_Riot_ODST_Helmet
@@ -123,17 +114,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\customvisor_blackburn_co.paa"};
-	};
-	class PHRP_Angel_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Project Harvest Mod Team";
-		displayName = "CH252D Helmet (Angel)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_angel_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 	class PHRP_Riot_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
