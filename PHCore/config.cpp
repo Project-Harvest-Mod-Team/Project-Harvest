@@ -15,6 +15,16 @@ class CfgPatches
 		requiredAddons[] = {};
 	};
 };
+class CfgMods
+{
+	class Mod_Base;
+	class PHRP_Core: Mod_Base
+	{
+		logo = "PHCore\textures\logo.paa";
+		picture = "PHCore\textures\logo.paa";
+		name = "Project Harvest Armory";
+	};
+};
 class CfgAddons
 {
 	class PreloadAddons
@@ -74,7 +84,7 @@ class RscDisplayMain: RscStandardDisplay
 		delete BackgroundSpotlightRight;
 		class Logo: RscActivePicture
 		{
-			text = "\PHCore\textures\PHsymbol.paa";
+			text = "PHCore\textures\logo.paa";
 		};
 	};
 	enableDisplay = 0;

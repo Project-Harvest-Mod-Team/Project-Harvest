@@ -430,7 +430,7 @@ class CfgWeapons
 	};
 	class PHRP_Presscott_Armor : PHRP_Base_Armor
 	{
-		author = "Soldner";
+		author = "VorpalHotdog";
 		displayName = "M52D Body Armor (Presscott)";
 		scope = 2;
 		scopeCurator = 2;
@@ -497,7 +497,7 @@ class CfgWeapons
 		{
 			"PHGear\data\Army\data\vest_odst_co.paa",
 			"PHGear\data\army\data\armor_odst_co.paa",
-			"PHGear\data\armor\legs_base_co.paa",
+			"PHGear\data\armor\customlegs_presscott_co.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
 			"PHGear\data\armor\customarmor_presscott_CO.paa"
 		};
@@ -564,7 +564,7 @@ class CfgWeapons
 	};
 	class PHRP_Buckley_Armor : PHRP_Base_Armor
 	{
-		author = "PHRP Mod Team";
+		author = "VorpalHotdog";
 		displayName = "M52D Body Armor (Buckley)";
 		scope = 2;
 		scopeCurator = 2;
@@ -698,7 +698,7 @@ class CfgWeapons
 	};
 	class PHRP_Jaeger_Armor : PHRP_Base_Armor
 	{
-		author = "Kaker";
+		author = "Jimbo";
 		displayName = "M52D Body Armor (Jaeger)";
 		scope = 2;
 		scopeCurator = 2;
@@ -832,7 +832,7 @@ class CfgWeapons
 	};
 	class PHRP_Famous_Armor : PHRP_Base_Armor
 	{
-		author = "Blackburn";
+		author = "SirChungus";
 		displayName = "M52D Body Armor (Famous)";
 		scope = 2;
 		scopeCurator = 2;
@@ -966,7 +966,7 @@ class CfgWeapons
 	};
 	class PHRP_Griffith_Armor : PHRP_Base_Armor
 	{
-		author = "Blackburn";
+		author = "VibingVampire";
 		displayName = "M52D Body Armor (Griffith)";
 		scope = 2;
 		scopeCurator = 2;
@@ -1100,7 +1100,7 @@ class CfgWeapons
 	};
 	class PHRP_Miller_Armor : PHRP_Base_Armor
 	{
-		author = "Blackburn";
+		author = "MrMicrobe";
 		displayName = "M52D Body Armor (Miller)";
 		scope = 2;
 		scopeCurator = 2;

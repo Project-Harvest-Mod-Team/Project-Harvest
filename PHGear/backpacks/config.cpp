@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Type";
-				values[] = {"basic","medic","heavy","satchel","PRC515","PRC521"};
+				values[] = {"basic","medic","heavy","satchel","PRC515","PRC521","gunbagace"};
 				class basic
 				{
 					label = "Basic";
@@ -63,6 +63,11 @@ class XtdGearModels
 				class PRC521
 				{
 					label = "521";
+					image = "";
+				};
+				class gunbagace
+				{
+					label = "Gunbag";
 					image = "";
 				};
 			};
@@ -136,6 +141,12 @@ class XtdGearInfos
 			role = "PRC521";
 			squad = "ilcs";
 		};
+		class PHRP_ILCS_Gunbag
+		{
+			model = "PHRP_Backpacks";
+			role = "gunbagace";
+			squad = "ilcs";
+		};
 		class PHRP_Rucksack
 		{
 			model = "PHRP_Backpacks";
@@ -172,6 +183,12 @@ class XtdGearInfos
 			role = "heavy";
 			squad = "alpha";
 		};
+		class PHRP_Alpha_ILCS_Gunbag
+		{
+			model = "PHRP_Backpacks";
+			role = "gunbagace";
+			squad = "alpha";
+		};		
 		class PHRP_Bravo_ILCS
 		{
 			model = "PHRP_Backpacks";
@@ -190,6 +207,12 @@ class XtdGearInfos
 			role = "heavy";
 			squad = "bravo";
 		};
+		class PHRP_Bravo_ILCS_Gunbag
+		{
+			model = "PHRP_Backpacks";
+			role = "gunbagace";
+			squad = "bravo";
+		};	
 		class PHRP_Echo_ILCS
 		{
 			model = "PHRP_Backpacks";
@@ -208,6 +231,12 @@ class XtdGearInfos
 			role = "heavy";
 			squad = "echo";
 		};
+		class PHRP_Echo_ILCS_Gunbag
+		{
+			model = "PHRP_Backpacks";
+			role = "gunbagace";
+			squad = "echo";
+		};	
 	};
 };
 
@@ -380,6 +409,28 @@ class CfgVehicles
 	class PHRP_Echo_ILCS_Corpsman: PHRP_ILCS_Corpsman
 	{
 		displayName = "PHRP Echo ILCS Corpsman Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_echo_co.paa"};
+	};
+	class PHRP_ILCS_Gunbag : PHRP_ILCS
+	{
+		_generalMacro = "ace_gunbag_Tan";
+		displayName = "PHRP ILCS Gunbag";
+		maximumLoad = 130;
+		ace_gunbag = 1;
+	};
+	class PHRP_Alpha_ILCS_Gunbag : PHRP_ILCS_Gunbag
+	{
+		displayName = "PHRP ILCS Alpha Gunbag";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_alpha_co.paa"};
+	};
+	class PHRP_Bravo_ILCS_Gunbag : PHRP_ILCS_Gunbag
+	{
+		displayName = "PHRP ILCS Bravo Gunbag";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_bravo_co.paa"};
+	};
+	class PHRP_Echo_ILCS_Gunbag : PHRP_ILCS_Gunbag
+	{
+		displayName = "PHRP ILCS Echo Gunbag";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_echo_co.paa"};
 	};
 };

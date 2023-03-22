@@ -54,6 +54,20 @@ class MGRRAStrangerIRemain
 	duration=268;
 	musicClass = "PHRPMusic";
 };
+class MGRRImMyOwnMasterNow
+{
+	name = "MGRR - I'm My Own Master Now";
+	sound[] = {"PHmusic\data\Tracks\MGRRImMyOwnMasterNow.ogg",db+0,1};
+	duration=255;
+	musicClass = "PHRPMusic";
+};
+class MGRRTheOnlyThingIKnowForReal
+{
+	name = "MGRR - The Only Thing I Know For Real";
+	sound[] = {"PHmusic\data\Tracks\MGRRTheOnlyThingIKnowForReal.ogg",db+0,1};
+	duration=255;
+	musicClass = "PHRPMusic";
+};
 class BF3FireFromTheSky
 {
 	name = "BF3 - Fire From The Sky";
@@ -122,7 +136,7 @@ class BloodontheRisers
 	name = "WW2 - Blood on the Risers";
 	sound[] = {"PHmusic\data\Tracks\BloodontheRisers.ogg",db+0,1};
 	duration=351;
-	musicClass = "PHRPMusic";
+	musicClass = "PHRPGoofy";
 };
 class ZoneV
 {
@@ -171,14 +185,14 @@ class PlayingwiththeBoys
 	name = "Kenny Loggins - Playing With The Boys";
 	sound[] = {"PHmusic\data\Tracks\PlayingwiththeBoys.ogg",db+0,1};
 	duration=372;
-	musicClass = "PHRPMusic";
+	musicClass = "PHRPGoofy";
 };
 class IAintWorried
 {
 	name = "One Republic - I Ain't Worried";
 	sound[] = {"PHmusic\data\Tracks\IAintWorried.ogg",db+0,1};
 	duration=269;
-	musicClass = "PHRPMusic";
+	musicClass = "PHRPGoofy";
 };
 class KlendathuDrop
 {
@@ -242,4 +256,46 @@ class WhenWorldsCollide
 	sound[] = {"PHmusic\data\Tracks\WhenWorldsCollide.ogg",db+0,1};
 	duration=178;
 	musicClass = "PHRPMusic";
+};
+class 300ReturnsAKing
+{
+	name = "300 - Returns a King";
+	sound[] = {"PHmusic\data\Tracks\300ReturnsAKing.ogg",db+0,1};
+	duration=148;
+	musicClass = "PHRPMusic";
+};
+class GladiatorTheBattle
+{
+	name = "Gladiator - The Battle";
+	sound[] = {"PHmusic\data\Tracks\GladiatorTheBattle.ogg",db+0,1};
+	duration=617;
+	musicClass = "PHRPMusic";
+};
+class CPIReallyWantToStayAtYourHouse
+{
+	name = "Cyberpunk - I Really Want to Stay at Your House";
+	sound[] = {"PHmusic\data\Tracks\CPIReallyWantToStayAtYourHouse.ogg",db+0,1};
+	duration=253;
+	musicClass = "PHRPGoofy";
+};
+class PHRPEDF
+{
+	name = "EDF - Songs";
+	sound[] = {"PHmusic\data\Tracks\edf.ogg",db+0,1};
+	duration=132;
+	musicClass = "PHRPGoofy";
+};
+class ElectricCallboyWeGotTheMoves
+{
+	name = "Electric Callboy - We Got The Moves";
+	sound[] = {"PHmusic\data\Tracks\ElectricCallboyWeGotTheMoves.ogg",db+0,1};
+	duration=222;
+	musicClass = "PHRPGoofy";
+};
+class rdr2house
+{
+	name = "RDR 2 - House Song";
+	sound[] = {"PHmusic\data\Tracks\rdr2house.ogg",db+0,1};
+	duration=225;
+	musicClass = "PHRPGoofy";
 };

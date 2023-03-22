@@ -27,10 +27,14 @@ class CfgMusicClasses
 {
 	class PHRPMusic
 	{
-		displayName = "Project Harvest Music Pack";
+		displayName = "PHRP - Music Pack";
 	};
 	class PHRPClip
 	{
 		displayName = "PHRP - Short Audio Clips";
+	};
+	class PHRPGoofy
+	{
+		displayName = "PHRP - Goofy";
 	};
 };

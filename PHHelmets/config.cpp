@@ -85,19 +85,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 40;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 40;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 40;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};

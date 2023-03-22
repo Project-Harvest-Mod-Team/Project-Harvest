@@ -33,12 +33,12 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"Moon","kaz","vanderclutch","wolf","richter"};
-				class moon
+				values[] = {"phrpmoon","phrpkazhelmet","vanderclutch","wolf","richter"};
+				class phrpmoon
 				{
 					label = "Moon";
 				};
-				class kaz
+				class phrpkazhelmet
 				{
 					label = "Kaz";
 				};
@@ -64,12 +64,12 @@ class XtdGearInfos
 	{
 		class PHRP_Moon_Commando_Helmet
 		{
-			role = "moon";
+			role = "phrpmoon";
 			model = "PHRP_hades_helmets";
 		};
-		class PHRP_Kaz_Gungnir_Helmet
+		class PHRP_Kaz_Operator_Helmet
 		{
-			role = "kaz";
+			role = "phrpkazhelmet";
 			model = "PHRP_hades_helmets";
 		};
 		class PHRP_Vanderclutch_Recon_Helmet
@@ -93,6 +93,7 @@ class CfgWeapons
 {
 	class PHRP_Base_Recon_Helmet;
 	class PHRP_Base_Commando_Helmet;
+	class PHRP_Base_Operator_Helmet;
 	class PHRP_Moon_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
 		scope = 2;
@@ -133,104 +134,13 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_dusk_co.paa","PHHelmets\data\helmets\customvisor_dusk_co.paa"};
 	};
-	class HeadgearItem;
-	class OPTRE_UNSC_CH252D_Helmet;
-	class PHRP_Kaz_Gungnir_Helmet: OPTRE_UNSC_CH252D_Helmet
+	class PHRP_Kaz_Operator_Helmet: PHRP_Base_Operator_Helmet
 	{
-		author = "Soldner";
+		author = "MrMicrobe";
 		scope = 2;
-		scopeArsenal = 1;
-		mass = 10;
-		displayName = "EAA/C Gungnir Helmet (Kaz)";
-		model = "TCF_EQUIPMENT\Helmets\Gungnir\Gungnir_Helmet_Bugeye.p3d";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaz_co.paa"};
-		class ItemInfo: HeadgearItem
-		{
-			uniformModel = "TCF_EQUIPMENT\Helmets\Gungnir\Gungnir_Helmet_Bugeye.p3d";
-			picture = "\OPTRE_UNSC_Units\Army\icons\odst_recon";
-			allowedSlots[] = {"BACKPACK_SLOT","VEST_SLOT","HEADGEAR_SLOT"};
-			modelSides[] = {6};
-			hiddenSelections[] = {"camo1"};
-			class HitpointsProtectionInfo
-			{
-				class Face
-				{
-					armor = 35;
-					hitpointName = "HitFace";
-					passThrough = 0.1;
-				};
-				class Head
-				{
-					armor = 35;
-					hitPointName = "HitHead";
-					passThrough = 0.1;
-				};
-				class Neck
-				{
-					armor = 35;
-					hitpointName = "HitNeck";
-					passThrough = 0.1;
-				};
-			};
-		};
+		scopeArsenal = 2;
+		displayName = "Mark V/O Helmet (Kaz)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaz_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
 	};
-	class OPTRE_UNSC_CH252D_Helmet_dp;
-	class PHRP_Kaz_Gungnir_Helmet_dp: OPTRE_UNSC_CH252D_Helmet_dp
-	{
-		author = "Soldner";
-		scope = 1;
-		scopeArsenal = 1;
-		mass = 10;
-		displayName = "EAA/D Gungnir Helmet (Kaz)";
-		model = "TCF_EQUIPMENT\Helmets\Gungnir\Gungnir_Helmet_Bugeye.p3d";
-		hiddenSelections[] = {"camo1","Blastshield","Interior"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaz_co.paa","PHHelmets\data\helmets\customnvg_kaz_co.paa"};
-		class ItemInfo: HeadgearItem
-		{
-			uniformModel = "TCF_EQUIPMENT\Helmets\Gungnir\Gungnir_Helmet_Bugeye.p3d";
-			allowedSlots[] = {"BACKPACK_SLOT","VEST_SLOT","HEADGEAR_SLOT"};
-			modelSides[] = {6};
-			hiddenSelections[] = {"camo1","Blastshield","Interior"};
-			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaz_co.paa","PHHelmets\data\helmets\customnvg_kaz_co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Face
-				{
-					armor = 35;
-					hitpointName = "HitFace";
-					passThrough = 0.1;
-				};
-				class Head
-				{
-					armor = 35;
-					hitPointName = "HitHead";
-					passThrough = 0.1;
-				};
-				class Neck
-				{
-					armor = 35;
-					hitpointName = "HitNeck";
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	//This is waiting on HiddenSelections from TCF
-	/*class NVGoggles;
-	class PHRP_NVG_BlastShield: NVGoggles
-	{
-		scope = 2;
-		scopeCurator = 2;
-		displayName = "EAA/D Gungnir Blastshield (Kaz)";
-		visionMode[] = {"Normal","NVG","TI"};
-		model = "\TCF_EQUIPMENT\Helmets\Gungnir\BattleshieldBaseplate.p3d";
-		class ItemInfo
-		{
-			type = 616;
-			uniformModel = "\TCF_EQUIPMENT\Helmets\Gungnir\BattleshieldBaseplate.p3d";
-			modelOff = "\TCF_EQUIPMENT\Helmets\Gungnir\BattleshieldBaseplate.p3d";
-			mass = 6;
-		};
-	};*/
 };
