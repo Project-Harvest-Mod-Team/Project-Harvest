@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","blackburn","riot","stone","craven"};
+				values[] = {"default","blackburn","riot","craven","aturr"};
 				class default
 				{
 					label = "Default";
@@ -46,13 +46,13 @@ class XtdGearModels
 				{
 					label = "Riot";
 				};
-				class stone
-				{
-					label = "Stone";
-				};
 				class craven
 				{
 					label = "Craven";
+				};
+				class aturr
+				{
+					label = "Aturr";
 				};
 			};
 		};
@@ -77,14 +77,14 @@ class XtdGearInfos
 			role = "riot";
 			model = "PHRP_bravo_helmets";
 		};
-		class PHRP_Stone_ODST_Helmet
-		{
-			role = "stone";
-			model = "PHRP_bravo_helmets";
-		};
 		class PHRP_Craven_Scout_Helmet
 		{
 			role = "craven";
+			model = "PHRP_bravo_helmets";
+		};
+		class PHRP_Aturr_ODST_Helmet
+		{
+			role = "aturr";
 			model = "PHRP_bravo_helmets";
 		};
 	};
@@ -126,17 +126,6 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_riot_co.paa","PHHelmets\data\helmets\customvisor_riot_co.paa"};
 	};
-	class PHRP_Stone_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "CH252D Helmet (Stone)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\customvisor_stone_co.paa"};
-	};
 	class PHRP_Craven_Scout_Helmet : PHRP_Base_Scout_Helmet
 	{
 		scope = 2;
@@ -145,5 +134,16 @@ class CfgWeapons
 		author = "Jimbo";
 		displayName = "Mark VI/S Helmet (Craven)";
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_craven_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
+	};
+	class PHRP_Aturr_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Sir Chungus";
+		displayName = "CH252D Helmet (Aturr)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","PHHelmets\data\helmets\customvisor_aturr_co.paa"};
 	};
 };
