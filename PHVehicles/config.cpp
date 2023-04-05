@@ -44,6 +44,7 @@ class CfgVehicles
 	class PHRP_Olympus_Hatchback : C_Hatchback_01_sport_blue_F
 	{
 		scope = 2;
+		scopearsenal = 2;
 		scopeCurator = 2;
 		author = "Soldner";
 		displayname = "PHRP Olympus Hatchback";
