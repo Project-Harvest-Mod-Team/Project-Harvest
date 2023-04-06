@@ -698,7 +698,7 @@ class CfgWeapons
 	};
 	class PHRP_Aturr_Armor : PHRP_Base_Armor
 	{
-		author = "Sir Chungus";
+		author = "Soldner";
 		displayName = "M52D Body Armor (Aturr)";
 		scope = 2;
 		scopeCurator = 2;
@@ -721,7 +721,7 @@ class CfgWeapons
 			//"A_ODST", 
 			//"A_ShinArmorLeft", 
 			//"A_ShinArmorRight", 
-			"A_TacPad", 
+			//"A_TacPad", 
 			//"A_ThighArmorLeft", 
 			//"A_ThighArmorRight", 
 			//"AS_BaseLeft", 
@@ -789,7 +789,7 @@ class CfgWeapons
 				//"A_ODST", 
 				//"A_ShinArmorLeft", 
 				//"A_ShinArmorRight", 
-				"A_TacPad", 
+				//"A_TacPad", 
 				//"A_ThighArmorLeft", 
 				//"A_ThighArmorRight", 
 				//"AS_BaseLeft", 

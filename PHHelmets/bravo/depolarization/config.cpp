@@ -65,7 +65,7 @@ class CfgWeapons
 	{
 		scope = 1;
 		scopeArsenal = 1;
-		author = "Sir Chungus";
+		author = "Soldner";
 		displayName = "CH252D Helmet (Aturr)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};

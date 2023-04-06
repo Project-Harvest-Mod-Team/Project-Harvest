@@ -34,41 +34,34 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","erikson","presscott","buckley","jaeger","famous","griffith","miller","graves"};
+				values[] = {"default","corpsman","erikson","presscott","buckley","jaeger","famous","griffith","miller","graves","samson"};
 				class default
 				{
 					label = "Default";
-					image = "";
 				};
 				class corpsman
 				{
 					label = "Corpsman";
-					image = "";
 				};
 				class erikson
 				{
 					label = "Erikson";
-					image = "";
 				};
 				class presscott
 				{
 					label = "Presscott";
-					image = "";
 				};
 				class buckley
 				{
 					label = "Buckley";
-					image = "";
 				};
 				class jaeger
 				{
 					label = "Jaeger";
-					image = "";
 				};
 				class famous
 				{
 					label = "Famous";
-					image = "";
 				};
 				class griffith
 				{
@@ -81,6 +74,10 @@ class XtdGearModels
 				class graves
 				{
 					label = "Graves";
+				};
+				class samson
+				{
+					label = "Samson";
 				};
 			};
 		};
@@ -139,6 +136,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Alpha_vests";
 			role = "graves";
+		};
+		class PHRP_Samson_Armor
+		{
+			model = "PHRP_Alpha_vests";
+			role = "samson";
 		};
 	};
 };

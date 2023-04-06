@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","erikson","presscott","buckley","jaeger","famous","griffith","miller","graves"};
+				values[] = {"default","erikson","presscott","buckley","jaeger","famous","griffith","miller","graves","samson"};
 				class default
 				{
 					label = "Default";
@@ -69,6 +69,10 @@ class XtdGearModels
 				class graves
 				{
 					label = "Graves";
+				};
+				class samson
+				{
+					label = "Samson";
 				};
 			};
 		};
@@ -121,6 +125,11 @@ class XtdGearInfos
 		class PHRP_Graves_ODST_Helmet
 		{
 			role = "graves";
+			model = "PHRP_alpha_helmets";
+		};
+		class PHRP_Samson_ODST_Helmet
+		{
+			role = "samson";
 			model = "PHRP_alpha_helmets";
 		};
 	};
@@ -225,5 +234,16 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_graves_co.paa","PHHelmets\data\helmets\customvisor_graves_co.paa"};
+	};
+	class PHRP_Samson_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "CH252D Helmet (Samson)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
 	};
 };
