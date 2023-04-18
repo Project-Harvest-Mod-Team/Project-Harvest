@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Bravo Armors";
-				values[] = {"default","corpsman","blackburn","riot","craven","aturr"};
+				values[] = {"default","corpsman","blackburn","riot","craven","aturr","griffith"};
 				class default
 				{
 					label = "Default";
@@ -64,6 +64,10 @@ class XtdGearModels
 				{
 					label = "Aturr";
 					image = "";
+				};
+				class griffith
+				{
+					label = "Griffith";
 				};
 			};
 		};
@@ -102,6 +106,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Bravo_vests";
 			role = "aturr";
+		};
+		class PHRP_Griffith_Armor
+		{
+			model = "PHRP_Bravo_vests";
+			role = "griffith";
 		};
 	};
 };

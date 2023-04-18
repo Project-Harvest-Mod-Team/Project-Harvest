@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","erikson","presscott","buckley","jaeger","famous","griffith","miller","graves","samson"};
+				values[] = {"default","erikson","presscott","buckley","jaeger","famous","graves","samson"};
 				class default
 				{
 					label = "Default";
@@ -57,14 +57,6 @@ class XtdGearModels
 				class famous
 				{
 					label = "Famous";
-				};
-				class griffith
-				{
-					label = "Griffith";
-				};
-				class miller
-				{
-					label = "Miller";
 				};
 				class graves
 				{
@@ -110,16 +102,6 @@ class XtdGearInfos
 		class PHRP_Famous_ODST_Helmet
 		{
 			role = "famous";
-			model = "PHRP_alpha_helmets";
-		};
-		class PHRP_Griffith_ODST_Helmet
-		{
-			role = "griffith";
-			model = "PHRP_alpha_helmets";
-		};
-		class PHRP_Miller_Scout_Helmet
-		{
-			role = "miller";
 			model = "PHRP_alpha_helmets";
 		};
 		class PHRP_Graves_ODST_Helmet
@@ -203,26 +185,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_famous_co.paa","PHHelmets\data\helmets\customvisor_famous_co.paa"};
-	};
-	class PHRP_Griffith_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "VibingVampire";
-		displayName = "CH252D Helmet (Griffith)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\customvisor_griffith_co.paa"};
-	};
-	class PHRP_Miller_Scout_Helmet : PHRP_Base_Scout_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Mark VI/S Helmet (Miller)";
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_miller_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
 	};
 	class PHRP_Graves_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{

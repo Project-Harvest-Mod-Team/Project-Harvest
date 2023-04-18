@@ -299,3 +299,17 @@ class rdr2house
 	duration=225;
 	musicClass = "PHRPGoofy";
 };
+class RaceStart
+{
+	name = "Mario Kart - Race Start";
+	sound[] = {"PHmusic\data\Tracks\RaceStart.ogg",db+0,1};
+	duration=131;
+	musicClass = "PHRPGoofy";
+};
+class StarPowerMarioKart64
+{
+	name = "Mario Kart - Star Power";
+	sound[] = {"PHmusic\data\Tracks\StarPowerMarioKart64.ogg",db+0,1};
+	duration=92;
+	musicClass = "PHRPGoofy";
+};

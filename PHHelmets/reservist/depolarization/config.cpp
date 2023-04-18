@@ -163,4 +163,12 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
+	class PHRP_Miller_Scout_Helmet_dp : PHRP_Base_Scout_Helmet__dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "MrMicrobe";
+		displayName = "Mark VI/S Helmet (Miller)";
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_miller_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
+	};
 };

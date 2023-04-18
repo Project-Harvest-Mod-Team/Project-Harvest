@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","blackburn","riot","craven","aturr"};
+				values[] = {"default","blackburn","riot","craven","aturr","griffith"};
 				class default
 				{
 					label = "Default";
@@ -53,6 +53,10 @@ class XtdGearModels
 				class aturr
 				{
 					label = "Aturr";
+				};
+				class griffith
+				{
+					label = "Griffith";
 				};
 			};
 		};
@@ -85,6 +89,11 @@ class XtdGearInfos
 		class PHRP_Aturr_ODST_Helmet
 		{
 			role = "aturr";
+			model = "PHRP_bravo_helmets";
+		};
+		class PHRP_Griffith_ODST_Helmet
+		{
+			role = "griffith";
 			model = "PHRP_bravo_helmets";
 		};
 	};
@@ -144,6 +153,17 @@ class CfgWeapons
 		displayName = "CH252D Helmet (Aturr)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","PHHelmets\data\helmets\customvisor_aturr_co.paa"};
+	};
+	class PHRP_Griffith_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VibingVampire";
+		displayName = "CH252D Helmet (Griffith)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\customvisor_griffith_co.paa"};
 	};
 };

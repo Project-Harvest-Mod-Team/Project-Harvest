@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","chopper","raider","drip","tepfer","stone"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","chopper","raider","drip","tepfer","stone","miller"};
 				class recruit
 				{
 					label = "Recruit";
@@ -89,6 +89,10 @@ class XtdGearModels
 				class stone
 				{
 					label = "Stone";
+				};
+				class miller
+				{
+					label = "Miller";
 				};
 			};
 		};
@@ -166,6 +170,11 @@ class XtdGearInfos
 		class PHRP_Stone_ODST_Helmet
 		{
 			role = "stone";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Miller_Scout_Helmet
+		{
+			role = "miller";
 			model = "PHRP_reservist_helmets";
 		};
 	};
@@ -327,5 +336,14 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\customvisor_stone_co.paa"};
+	};
+	class PHRP_Miller_Scout_Helmet : PHRP_Base_Scout_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Mark VI/S Helmet (Miller)";
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_miller_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
 	};
 };
