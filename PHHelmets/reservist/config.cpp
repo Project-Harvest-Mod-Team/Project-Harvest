@@ -186,6 +186,7 @@ class CfgWeapons
 	class PHRP_Base_HRPilot_Helmet;
 	class PHRP_Base_CQC_Helmet;
 	class PHRP_Base_EOD_Helmet;
+	class PHRP_Base_Scout_Helmet;
 	class PHRP_Recruit_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
