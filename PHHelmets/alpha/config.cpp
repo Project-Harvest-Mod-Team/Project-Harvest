@@ -193,7 +193,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "SirChungus";
 		displayName = "CH252D Helmet (Graves)";
-		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_graves_co.paa","PHHelmets\data\helmets\customvisor_graves_co.paa"};
 	};
@@ -204,7 +204,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "MrMicrobe";
 		displayName = "CH252D Helmet (Samson)";
-		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
 	};
