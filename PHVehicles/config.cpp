@@ -38,34 +38,4 @@ class CfgVehicles
 		enginePower = 100;
 		waterSpeedFactor = 0.1;
 	};
-
-	//Hatchback Sport
-	class C_Hatchback_01_sport_blue_F;
-	class PHRP_Olympus_Hatchback : C_Hatchback_01_sport_blue_F
-	{
-		scope = 2;
-		scopearsenal = 2;
-		scopeCurator = 2;
-		author = "Soldner";
-		displayname = "PHRP Olympus Hatchback";
-		editorCategory = "PHRP_EdCat_Gladius";
-		editorSubcategory = "PHRP_EdSubCat_Cars";
-		faction = "Gladius_Faction";
-		fuelCapacity = 16;
-		brakeIdleSpeed = 2.5;
-		maxSpeed = 500;
-		antiRollbarForceCoef = 10.0;
-		antiRollbarForceLimit = 8.0;
-		slowSpeedForwardCoef = 0.2;
-		enginePower = 1000;
-		differentialType = "rear_limited";
-		side = 1;
-		idleRpm = 1000;
-		redRpm = 10000;
-		peakTorque = 650;
-		maxOmega = 1033.038;
-		minOmega = 104.72;
-		engineMOI = 0.6;
-		textures[] = {"PHVehicles\Data\Hatchback_01_ext_SPORT04_CO.paa"};
-	}
 };
