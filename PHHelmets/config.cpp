@@ -71,13 +71,13 @@ class CfgWeapons
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "CH252D Helmet - Base";
         picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelections[] = {"camo","camo2","camo3","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa","optre_unsc_units\army\data\odst_helmet_visor_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 		class ItemInfo: ItemInfo
 		{
 			mass = 30;
 			uniformModel = "OPTRE_UNSC_Units\Army\odst_helmet";
-			hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+			hiddenSelections[] = {"camo","camo2","camo3","H_Ghillie"};
 			hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa","optre_unsc_units\army\data\odst_helmet_visor_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 			class HitpointsProtectionInfo
 			{
@@ -113,17 +113,15 @@ class CfgWeapons
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "CH252D Helmet - Base";
-		hiddenSelections[] = {"camo","camo2"};
-        hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_H3.paa","LM_OPCAN3.0\BLU\UNSC\H\VISR_ODST_BLU.paa"};
+		hiddenSelections[] = {"camo","camo2","camo3","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa","optre_unsc_units\army\data\odst_helmet_visor_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
         class ItemInfo: HeadgearItem
 		{
 			mass = 30;
 			uniformModel = "OPTRE_UNSC_Units\Army\odst_helmet_dp";
 			picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet";
-			hiddenSelections[] = {"camo","camo2"};
-			hiddenSelectionsTextures[] = {"V_FZ_Armor\Data\Helmets\V_CH252D_DEF_CO","V_FZ_Armor\Data\Helmets\V_CH252D_CLR_V_CA"};
-			hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+			hiddenSelections[] = {"camo","camo2","camo3","H_Ghillie"};
+			hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa","optre_unsc_units\army\data\odst_helmet_visor_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 			class HitpointsProtectionInfo
 			{
 				class Face
