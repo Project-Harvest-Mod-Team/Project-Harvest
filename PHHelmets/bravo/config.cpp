@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","blackburn","riot","craven","aturr","griffith"};
+				values[] = {"default","blackburn","riot","craven","aturr","griffith","kincaid"};
 				class default
 				{
 					label = "Default";
@@ -57,6 +57,10 @@ class XtdGearModels
 				class griffith
 				{
 					label = "Griffith";
+				};
+				class kincaid
+				{
+					label = "Kincaid";
 				};
 			};
 		};
@@ -94,6 +98,11 @@ class XtdGearInfos
 		class PHRP_Griffith_ODST_Helmet
 		{
 			role = "griffith";
+			model = "PHRP_bravo_helmets";
+		};
+		class PHRP_Kincaid_Scout_Helmet
+		{
+			role = "kincaid";
 			model = "PHRP_bravo_helmets";
 		};
 	};
@@ -165,5 +174,14 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\customvisor_griffith_co.paa"};
+	};
+	class PHRP_Kincaid_Scout_Helmet : PHRP_Base_Scout_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VibingVampire";
+		displayName = "Mark VI/S Helmet (Kincaid)";
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kincaid_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
 	};
 };

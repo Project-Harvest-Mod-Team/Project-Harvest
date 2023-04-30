@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","burtovski","pjetrovic","holland"};
+				values[] = {"soldner","burtovski","pjetrovic","holland","chopper"};
 				class soldner
 				{
 					label = "Soldner";
@@ -49,6 +49,10 @@ class XtdGearModels
 				class holland
 				{
 					label = "Holland";
+				};
+				class chopper
+				{
+					label = "Chopper";
 				};
 			};
 		};
@@ -78,6 +82,11 @@ class XtdGearInfos
 			role = "holland";
 			model = "PHRP_olympus_helmets";
 		};
+		class PHRP_Chopper_EOD_Helmet
+		{
+			role = "chopper";
+			model = "PHRP_olympus_helmets";
+		};
 	};
 };
 class CfgWeapons
@@ -86,6 +95,7 @@ class CfgWeapons
     class PHRP_Base_ODST_Helmet;
 	class OPTRE_UNSC_CH252D_Helmet;
 	class PHRP_Base_Security_Helmet;
+	class PHRP_Base_EOD_Helmet;
 	class PHRP_Soldner_Scout_Helmet: OPTRE_UNSC_CH252D_Helmet
 	{
 		scope = 2;
@@ -158,5 +168,15 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_holland_co.paa","PHHelmets\data\helmets\customvisor_holland_co.paa"};
+	};
+	class PHRP_Chopper_EOD_Helmet : PHRP_Base_EOD_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Mark V/EOD Helmet (Chopper)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\EOD_Visor_co.paa"};
 	};
 };

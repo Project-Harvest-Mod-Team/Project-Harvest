@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","chopper","raider","drip","tepfer","stone","miller"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","tepfer","stone","miller"};
 				class recruit
 				{
 					label = "Recruit";
@@ -69,10 +69,6 @@ class XtdGearModels
 				class wilson
 				{
 					label = "Wilson";
-				};
-				class chopper
-				{
-					label = "Chopper";
 				};
 				class raider
 				{
@@ -147,11 +143,6 @@ class XtdGearInfos
 			role = "wilson";
 			model = "PHRP_reservist_helmets";
 		};
-		class PHRP_Chopper_EOD_Helmet
-		{
-			role = "chopper";
-			model = "PHRP_reservist_helmets";
-		};
 		class PHRP_Raider_Commando_Helmet
 		{
 			role = "raider";
@@ -185,7 +176,6 @@ class CfgWeapons
 	class PHRP_Base_Commando_Helmet;
 	class PHRP_Base_HRPilot_Helmet;
 	class PHRP_Base_CQC_Helmet;
-	class PHRP_Base_EOD_Helmet;
 	class PHRP_Base_Scout_Helmet;
 	class PHRP_Recruit_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
@@ -284,16 +274,6 @@ class CfgWeapons
 		displayName = "Mark V/CQC Helmet (Wilson)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wilson_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
-	};
-	class PHRP_Chopper_EOD_Helmet : PHRP_Base_EOD_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Mark V/EOD Helmet (Chopper)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\EOD_Visor_co.paa"};
 	};
 	class PHRP_Raider_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{

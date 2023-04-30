@@ -25,6 +25,7 @@ class CfgWeapons
     class PHRP_Base_ODST_Helmet_dp;
 	class OPTRE_UNSC_CH252D_Helmet_dp;
 	class PHRP_Base_Security_Helmet_dp;
+	class PHRP_Base_EOD_Helmet__dp;
 	class PHRP_Soldner_Scout_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		scope = 1;
@@ -94,5 +95,14 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_holland_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
+	class PHRP_Chopper_EOD_Helmet_dp : PHRP_Base_EOD_Helmet__dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "MrMicrobe";
+		displayName = "Mark V/EOD Helmet (Chopper)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\EOD_Visor_co.paa"};
 	};
 };

@@ -81,4 +81,13 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
+	class PHRP_Kincaid_Scout_Helmet_dp : PHRP_Base_Scout_Helmet_dp
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VibingVampire";
+		displayName = "Mark VI/S Helmet (Kincaid)";
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kincaid_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
+	};
 };
