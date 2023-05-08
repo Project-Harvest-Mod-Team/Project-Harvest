@@ -67,7 +67,7 @@ class XtdGearInfos
 			role = "soldner";
 			model = "PHRP_olympus_helmets";
 		};
-		class PHRP_Burtovski_ODST_Helmet
+		class PHRP_Burtovski_Commando_Helmet
 		{
 			role = "burtovski";
 			model = "PHRP_olympus_helmets";
@@ -96,6 +96,7 @@ class CfgWeapons
 	class OPTRE_UNSC_CH252D_Helmet;
 	class PHRP_Base_Security_Helmet;
 	class PHRP_Base_EOD_Helmet;
+	class PHRP_Base_Commando_Helmet;
 	class PHRP_Soldner_Scout_Helmet: OPTRE_UNSC_CH252D_Helmet
 	{
 		scope = 2;
@@ -137,16 +138,15 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Burtovski_ODST_Helmet : PHRP_Base_ODST_Helmet
+	class PHRP_Burtovski_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "Soldner";
-		displayName = "CH252D Helmet (Burtovski)";
+		displayName = "Mark V/K Helmet (Burtovski)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\customvisor_burtovski_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
 	};
 	class PHRP_Pjetrovic_Security_Helmet : PHRP_Base_Security_Helmet
 	{

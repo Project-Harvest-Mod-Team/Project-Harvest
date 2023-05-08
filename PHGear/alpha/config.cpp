@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","erikson","presscott","buckley","jaeger","famous","graves","samson"};
+				values[] = {"default","corpsman","erikson","presscott","buckley","jaeger","famous","graves","samson","stone"};
 				class default
 				{
 					label = "Default";
@@ -70,6 +70,11 @@ class XtdGearModels
 				class samson
 				{
 					label = "Samson";
+				};
+				class stone
+				{
+					label = "Stone";
+					image = "";
 				};
 			};
 		};
@@ -123,6 +128,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Alpha_vests";
 			role = "samson";
+		};
+		class PHRP_Stone_Armor
+		{
+			model = "PHRP_Alpha_vests";
+			role = "stone";
 		};
 	};
 };

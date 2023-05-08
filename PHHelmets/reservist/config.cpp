@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","tepfer","stone","miller"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","tepfer","miller"};
 				class recruit
 				{
 					label = "Recruit";
@@ -81,10 +81,6 @@ class XtdGearModels
 				class tepfer
 				{
 					label = "Tepfer";
-				};
-				class stone
-				{
-					label = "Stone";
 				};
 				class miller
 				{
@@ -156,11 +152,6 @@ class XtdGearInfos
 		class PHRP_Tepfer_ODST_Helmet
 		{
 			role = "tepfer";
-			model = "PHRP_reservist_helmets";
-		};
-		class PHRP_Stone_ODST_Helmet
-		{
-			role = "stone";
 			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Miller_Scout_Helmet
@@ -306,17 +297,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tepfer_co.paa","PHHelmets\data\helmets\customvisor_tepfer_co.paa"};
-	};
-	class PHRP_Stone_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "CH252D Helmet (Stone)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\customvisor_stone_co.paa"};
 	};
 	class PHRP_Miller_Scout_Helmet : PHRP_Base_Scout_Helmet
 	{

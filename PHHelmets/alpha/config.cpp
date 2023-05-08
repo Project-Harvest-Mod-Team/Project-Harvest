@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","erikson","presscott","buckley","jaeger","famous","graves","samson"};
+				values[] = {"default","erikson","presscott","buckley","jaeger","famous","graves","samson","stone"};
 				class default
 				{
 					label = "Default";
@@ -65,6 +65,10 @@ class XtdGearModels
 				class samson
 				{
 					label = "Samson";
+				};
+				class stone
+				{
+					label = "Stone";
 				};
 			};
 		};
@@ -112,6 +116,11 @@ class XtdGearInfos
 		class PHRP_Samson_ODST_Helmet
 		{
 			role = "samson";
+			model = "PHRP_alpha_helmets";
+		};
+		class PHRP_Stone_ODST_Helmet
+		{
+			role = "stone";
 			model = "PHRP_alpha_helmets";
 		};
 	};
@@ -207,5 +216,16 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
+	};
+	class PHRP_Stone_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "CH252D Helmet (Stone)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\customvisor_stone_co.paa"};
 	};
 };

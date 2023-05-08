@@ -26,6 +26,7 @@ class CfgWeapons
 	class OPTRE_UNSC_CH252D_Helmet_dp;
 	class PHRP_Base_Security_Helmet_dp;
 	class PHRP_Base_EOD_Helmet__dp;
+	class PHRP_Base_Commando_Helmet_dp;
 	class PHRP_Soldner_Scout_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
 	{
 		scope = 1;
@@ -66,14 +67,13 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Burtovski_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
+	class PHRP_Burtovski_Commando_Helmet_dp : PHRP_Base_Commando_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
 		author = "Soldner";
-		displayName = "CH252D Helmet (Burtovski)";
+		displayName = "Mark V/K Helmet (Burtovski)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Pjetrovic_Security_Helmet_dp : PHRP_Base_Security_Helmet_dp
