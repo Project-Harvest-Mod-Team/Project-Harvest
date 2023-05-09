@@ -228,7 +228,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] =
 		{
 			"PHGear\data\armor\customvest_soldner_CO.paa",
-			"PHGear\data\army\data\armor_odst_co.paa",
+			"PHGear\data\armor\customarmor_soldnerarmor_co.paa",
 			"PHGear\data\armor\customlegs_kaker_co.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
 			"PHGear\data\armor\customarmor_kaker_CO.paa"
