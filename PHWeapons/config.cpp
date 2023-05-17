@@ -22,7 +22,7 @@ class XtdGearModels
 		class phrp_weapons
 		{
 			label = "PHRP Weapons";
-			options[] = {"type"};
+			options[] = {"type","GL"};
 			class type
 			{
 				alwaysSelectable = 1;
@@ -45,6 +45,20 @@ class XtdGearModels
 					label = "Templar";
 				};
 			};
+			class GL
+			{
+				alwaysSelectable = 1;
+				label = "GL";
+				values[] = {"NoGL","GL"};
+				class NoGL
+				{
+					label = "No GL";
+				};
+				class GL
+				{
+					label = "GL";
+				};
+			};
 		};
 	};
 };
@@ -56,21 +70,31 @@ class XtdGearInfos
 		{
 			model = "phrp_weapons";
 			type = "M7";
+			GL = "NoGL";
 		};
 		class PHRP_Holland_AK120
 		{
 			model = "phrp_weapons";
 			type = "HollandAK120";
+			GL = "NoGL";
 		};
 		class PHRP_Soldner_MA37B
 		{
 			model = "phrp_weapons";
 			type = "SoldnerMA37";
+			GL = "NoGL";
 		};
 		class PHRP_Templar_MA5B
 		{
 			model = "phrp_weapons";
 			type = "TemplarMA5";
+			GL = "NoGL";
+		};
+		class PHRP_Templar_MA5BGL
+		{
+			model = "phrp_weapons";
+			type = "TemplarMA5";
+			GL = "GL";
 		};
 	};
 };
@@ -160,7 +184,7 @@ class CfgWeapons
 	{
 		dlc = "Project Harvest Armory";
 		author = "Soldner";
-		displayName = "Soldner's MA37B ICWS Assault Rifle";
+		displayName = "(PHRP) Soldner's MA37B ICWS Assault Rifle";
 		baseWeapon = "PHRP_Soldner_MA37B";
 		canShootInWater = 1;
 		hiddenSelections[] = {"camo","camo1","camo_reticle"};
@@ -191,7 +215,7 @@ class CfgWeapons
 		baseWeapon = "PHRP_Holland_AK120";
 		scope = 2;
 		scopearsenal = 2;
-		displayName = "Holland's AK-120";
+		displayName = "(PHRP) Holland's AK-120";
 		canShootInWater = 1;
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHWeapons\data\Holland_ak120_1.paa","PHWeapons\data\Holland_ak120_2.paa"};	
@@ -218,12 +242,14 @@ class CfgWeapons
 	
 	//Templar MA5B
 	class OPTRE_MA5B;
+	class OPTRE_MA5BGL;
+	class OPTRE_M301UGL;
 	class PHRP_Templar_MA5B: OPTRE_MA5B
 	{
 		dlc = "Project Harvest Armory";
 		author = "Soldner";
 		baseWeapon = "PHRP_Templar_MA5B";
-		displayName = "Templar's MA5B";
+		displayName = "(PHRP) Templar's MA5B";
 		canShootInWater = 1;
 		magazineWell[] = {"MEU_rifle_uw","MEU_60rnd_762_51"};
 		magazines[] = {};
@@ -242,6 +268,37 @@ class CfgWeapons
 			{
 				compatibleitems[] = {"OPTRE_M7_Flashlight","OPTRE_M7_Laser","acc_pointer_ir","acc_flashlight","OPTRE_BMR_Laser","optre_m12_laser","ace_acc_pointer_green","optre_m45_flashlight","optre_m45_flashlight_red","acc_pointer_vis_red","MEU_M12_Vis_Laser","MEU_BMR_Vis_Laser","MEU_M7_Vis_Laser","MEU_M6G_Laser"};
 			};
+		};
+	};
+	class PHRP_Templar_MA5BGL: OPTRE_MA5BGL
+	{
+		dlc = "Project Harvest Armory";
+		author = "Soldner";
+		baseWeapon = "PHRP_Templar_MA5BGL";
+		displayName = "(PHRP) Templar's MA5BGL";
+		canShootInWater = 1;
+		magazineWell[] = {"MEU_rifle_uw","MEU_60rnd_762_51"};
+		magazines[] = {};
+		hiddenSelectionsTextures[] = {"PHWeapons\data\templarWeapon_CO.paa","PHWeapons\data\templarSmartlink_co.paa","PHWeapons\data\templarCover_co.paa","optre_weapons\optics\data\reticles\ma5_reticle.paa"};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[] = {"muzzle_snds_h_mg_blk_f","muzzle_snds_l","optre_ma5suppressor","optre_m7_silencer","optre_m6_silencer","ace_muzzle_mzls_b","muzzle_snds_b","OPTRE_MA37KSuppressor","muzzle_snds_65_TI_blk_F","OPTRE_srs99d_suppressor"};
+			};
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[] = {"MEU_REC_HOLO","MEU_REC_HOLO_Red","MEU_REC_HOLO_Gre","optic_Yorris","optic_DMS","optic_DMS_ghex_F","optic_ERCO_blk_F","optic_ERCO_khk_F","optic_ERCO_snd_F","optic_MRCO","optic_Arco","optic_Arco_ghex_F","optic_Arco_blk_F","optic_aco","optic_ACO_grn","optic_aco_smg","optic_ACO_grn_smg","optic_hamr","optic_Hamr_khk_F","optic_Holosight","optic_Holosight_smg","optic_Holosight_blk_F","optic_Holosight_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_smg_khk_F","OPTRE_M392_Scope","OPTRE_BR55HB_Scope","OPTRE_M7_Sight","OPTRE_M393_Scope","OPTRE_M393_ACOG","OPTRE_M393_EOTECH","OPTRE_M73_SmartLink","OPTRE_MA5_SmartLink","OPTRE_MA5_SmartLink_v2","OPTRE_MA5C_SmartLink_v2","OPTRE_MA5_SmartLink_legacy","OPTRE_MA5C_SmartLink_legacy","OPTRE_M12_Optic","optic_ico_01_black_f","OPTRE_BR45_Scope"};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleitems[] = {"OPTRE_M7_Flashlight","OPTRE_M7_Laser","acc_pointer_ir","acc_flashlight","OPTRE_BMR_Laser","optre_m12_laser","ace_acc_pointer_green","optre_m45_flashlight","optre_m45_flashlight_red","acc_pointer_vis_red","MEU_M12_Vis_Laser","MEU_BMR_Vis_Laser","MEU_M7_Vis_Laser","MEU_M6G_Laser"};
+			};
+		};
+		class OPTRE_M301UGL: OPTRE_M301UGL
+		{
+			magazines[] = {};
+			magazineWell[] = {"MEU_GL_Explosive_Lethal","MEU_GL_Smokes","MEU_GL_Tactile","MEU_GL_Flares"};
 		};
 	};
 };
