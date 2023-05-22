@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"b192","o148","d236","g311","b232"};
+				values[] = {"b192","o148","d236","b232"};
 				class b192
 				{
 					label = "B192";
@@ -45,10 +45,6 @@ class XtdGearModels
 				class d236
 				{
 					label = "D236";
-				};
-				class g311
-				{
-					label = "G311";
 				};
 				class b232
 				{
@@ -77,11 +73,6 @@ class XtdGearInfos
 			model = "PHRP_Caliburn_helmets";
 			role = "d236";
 		};
-		class PHRP_G311_Helmet
-		{
-			model = "PHRP_Caliburn_helmets";
-			role = "g311";
-		};
 		class PHRP_B232_Helmet
 		{
 			model = "PHRP_Caliburn_helmets";
@@ -92,32 +83,6 @@ class XtdGearInfos
 class CfgWeapons
 {
 	class ItemInfo;
-	class PHRP_Base_ODST_Helmet;
-	class PHRP_G311_Helmet: PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "Spartan Helmet G311";
-		model = "\OPTRE_UNSC_Units\Army\helmetmkvb_human.p3d";
-		hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_G311_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_Silver_CO.paa"};
-		hiddenSelectionsMaterials[] = {"OPTRE_MJOLNIR_Units\data\Helmet_MkVB.rvmat","OPTRE_MJOLNIR_Units\data\Visor_MkVB_Silver.rvmat"};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\helmetmkvb_human.p3d";
-			hiddenSelections[] = {"camo1","camo2","attach_ua","attach_hul"};
-			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_G311_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_Silver_CO.paa"};
-			hiddenSelectionsMaterials[] = {"OPTRE_MJOLNIR_Units\data\Helmet_MkVB.rvmat","OPTRE_MJOLNIR_Units\data\Visor_MkVB_Silver.rvmat"};
-		};
-	};
-	class PHRP_G311_Helmet_dp: PHRP_G311_Helmet
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		scopeCurator = 1;
-		class ItemInfo: ItemInfo{};
-	};
 	class OPTRE_MJOLNIR_Mk4Helmet;
 	class PHRP_Oliver_My_Beloved_Helmet: OPTRE_MJOLNIR_Mk4Helmet
 	{
