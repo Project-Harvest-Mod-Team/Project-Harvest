@@ -75,7 +75,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Squad";
-				values[] = {"ilcs","unsc","alpha","bravo","echo"};
+				values[] = {"ilcs","unsc","alpha","bravo","vulcan"};
 				class ilcs
 				{
 					label = "ODST";
@@ -92,9 +92,9 @@ class XtdGearModels
 				{
 					label = "Bravo";
 				};
-				class echo
+				class vulcan
 				{
-					label = "Echo";
+					label = "Vulcan";
 				};
 			};
 		};
@@ -213,29 +213,29 @@ class XtdGearInfos
 			role = "gunbagace";
 			squad = "bravo";
 		};	
-		class PHRP_Echo_ILCS
+		class PHRP_Vulcan_ILCS
 		{
 			model = "PHRP_Backpacks";
 			role = "basic";
-			squad = "echo";
+			squad = "vulcan";
 		};
-		class PHRP_Echo_ILCS_Corpsman
+		class PHRP_Vulcan_ILCS_Corpsman
 		{
 			model = "PHRP_Backpacks";
 			role = "medic";
-			squad = "echo";
+			squad = "vulcan";
 		};
-		class PHRP_Echo_ILCS_Heavy
+		class PHRP_Vulcan_ILCS_Heavy
 		{
 			model = "PHRP_Backpacks";
 			role = "heavy";
-			squad = "echo";
+			squad = "vulcan";
 		};
-		class PHRP_Echo_ILCS_Gunbag
+		class PHRP_Vulcan_ILCS_Gunbag
 		{
 			model = "PHRP_Backpacks";
 			role = "gunbagace";
-			squad = "echo";
+			squad = "vulcan";
 		};	
 	};
 };
@@ -396,20 +396,20 @@ class CfgVehicles
 		displayName = "PHRP Bravo ILCS Corpsman Rucksack";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_bravo_co.paa"};
 	};
-	class PHRP_Echo_ILCS: PHRP_ILCS
+	class PHRP_Vulcan_ILCS: PHRP_ILCS
 	{
-		displayName = "PHRP Echo ILCS Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_echo_co.paa"};
+		displayName = "PHRP Vulcan ILCS Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\vulcan_rucksack_co.paa"};
 	};
-	class PHRP_Echo_ILCS_Heavy: PHRP_ILCS_Heavy
+	class PHRP_Vulcan_ILCS_Heavy: PHRP_ILCS_Heavy
 	{
-		displayName = "PHRP Echo ILCS Heavy Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_echo_co.paa"};
+		displayName = "PHRP Vulcan ILCS Heavy Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\vulcan_rucksack_co.paa"};
 	};
-	class PHRP_Echo_ILCS_Corpsman: PHRP_ILCS_Corpsman
+	class PHRP_Vulcan_ILCS_Corpsman: PHRP_ILCS_Corpsman
 	{
-		displayName = "PHRP Echo ILCS Corpsman Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_echo_co.paa"};
+		displayName = "PHRP Vulcan ILCS Corpsman Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\vulcan_rucksack_co.paa"};
 	};
 	class PHRP_ILCS_Gunbag : PHRP_ILCS
 	{
@@ -428,9 +428,9 @@ class CfgVehicles
 		displayName = "PHRP ILCS Bravo Gunbag";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_bravo_co.paa"};
 	};
-	class PHRP_Echo_ILCS_Gunbag : PHRP_ILCS_Gunbag
+	class PHRP_Vulcan_ILCS_Gunbag : PHRP_ILCS_Gunbag
 	{
-		displayName = "PHRP ILCS Echo Gunbag";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_echo_co.paa"};
+		displayName = "PHRP ILCS Vulcan Gunbag";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\vulcan_rucksack_co.paa"};
 	};
 };

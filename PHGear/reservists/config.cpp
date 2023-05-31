@@ -33,65 +33,62 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Reserve Armors";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","wilson","raider","drip","tepfer","miller"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","wilson","raider","drip","tepfer","miller","jaeger","craven"};
 				class recruit
 				{
 					label = "Recruit";
-					image = "";
 				};
 				class reserve
 				{
 					label = "Reserve";
-					image = "";
 				};
 				class collins
 				{
 					label = "Collins";
-					image = "";
 				};
 				class ansley
 				{
 					label = "Ansley";
-					image = "";
 				};
 				class carter
 				{
 					label = "Carter";
-					image = "";
 				};
 				class tinoco
 				{
 					label = "Tinoco";
-					image = "";
 				};
 				class carsten
 				{
 					label = "Carsten";
-					image = "";
 				};
 				class wilson
 				{
 					label = "Wilson";
-					image = "";
 				};
 				class raider
 				{
 					label = "Raider";
-					image = "";
 				};
 				class drip
 				{
 					label = "DripDST";
-					image = "";
 				};
 				class tepfer
 				{
 					label = "Tepfer";
-					image = "";
 				};
 				class miller
 				{
 					label = "Miller";
+				};
+				class jaeger
+				{
+					label = "Jaeger";
+				};
+				class craven
+				{
+					label = "Craven";
 				};
 			};
 		};
@@ -160,6 +157,16 @@ class XtdGearInfos
 		{
 			model = "PHRP_Reserve_vests";
 			role = "miller";
+		};
+		class PHRP_Jaeger_Armor
+		{
+			model = "PHRP_Reserve_vests";
+			role = "jaeger";
+		};
+		class PHRP_Craven_Armor
+		{
+			model = "PHRP_Reserve_vests";
+			role = "craven";
 		};
 	};
 };

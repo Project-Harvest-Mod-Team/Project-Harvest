@@ -876,7 +876,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Base_Scout_Helmet__dp : OPTRE_UNSC_Scout_Helmet_dp
+	class PHRP_Base_Scout_Helmet_dp : OPTRE_UNSC_Scout_Helmet_dp
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";

@@ -6,7 +6,7 @@ class CfgPatches
 	{
 		author = "Soldner";
 		hideName = 0;
-		units[] = {"PHRP_SDV_01","PHRP_Olympus_Hatchback"};
+		units[] = {"PHRP_SDV_01"};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"PHRP_Core"};

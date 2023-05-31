@@ -52,10 +52,6 @@ class CfgEditorSubcategories
 	{
 		displayName = "Boats";
 	};
-	class PHRP_EdSubCat_Cars
-	{
-		displayName = "Cars";
-	};
 };
 class cfgFactionClasses
 {

@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","tepfer","miller"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","tepfer","miller","craven","jaeger"};
 				class recruit
 				{
 					label = "Recruit";
@@ -85,6 +85,14 @@ class XtdGearModels
 				class miller
 				{
 					label = "Miller";
+				};
+				class craven
+				{
+					label = "Craven";
+				};
+				class jaeger
+				{
+					label = "Jaeger";
 				};
 			};
 		};
@@ -157,6 +165,16 @@ class XtdGearInfos
 		class PHRP_Miller_Scout_Helmet
 		{
 			role = "miller";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Craven_Scout_Helmet
+		{
+			role = "craven";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Jaeger_ODST_Helmet
+		{
+			role = "jaeger";
 			model = "PHRP_reservist_helmets";
 		};
 	};
@@ -306,5 +324,25 @@ class CfgWeapons
 		author = "MrMicrobe";
 		displayName = "Mark VI/S Helmet (Miller)";
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_miller_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
+	};
+	class PHRP_Craven_Scout_Helmet : PHRP_Base_Scout_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "Mark VI/S Helmet (Craven)";
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_craven_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
+	};
+	class PHRP_Jaeger_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "CH252D Helmet (Jaeger)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_jaeger_co.paa","PHHelmets\data\helmets\customvisor_jaeger_co.paa"};
 	};
 };
