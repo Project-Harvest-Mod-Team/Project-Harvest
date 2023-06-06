@@ -60,7 +60,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Owner";
-				values[] = {"SoldnerDMR","HollandAK120","KazMA37K","MoonMA37K","OwesselInquisition"};
+				values[] = {"SoldnerDMR","HollandAK120","KazMA37K","MoonMA37K"};
 				class SoldnerDMR
 				{
 					label = "Soldner";
@@ -76,10 +76,6 @@ class XtdGearModels
 				class MoonMA37K
 				{
 					label = "Moon";
-				};
-				class OwesselInquisition
-				{
-					label = "Owessel";
 				};
 			};
 		};
@@ -126,11 +122,6 @@ class XtdGearInfos
 		{
 			model = "phrp_personal_weapons";
 			type = "MoonMA37K";
-		};
-		class PHRP_Owessel_Inquisition_Rifle
-		{
-			model = "phrp_personal_weapons";
-			type = "OwesselInquisition";
 		};
 	};
 };
@@ -349,43 +340,6 @@ class CfgWeapons
 			{
 				compatibleitems[] = {};
 			};
-		};
-	};
-
-	//Owessel Inquisition
-	class TG_NOD_Inquisition_Rifle;
-	class PHRP_Owessel_Inquisition_Rifle : TG_NOD_Inquisition_Rifle
-	{
-		dlc = "Project Harvest Armory"
-		author = "Soldner";
-		baseWeapon = "PHRP_Owessel_Inquisition_Rifle";
-		scope = 2;
-		scopearsenal = 2;
-		displayName = "[PHRP] Owessel's FW-42 Inquisition";
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"PHWeapons\data\owessel_inquisition_CO.paa"};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class CowsSlot: CowsSlot
-			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-				compatibleItems[] = {};
-				iconPicture = "";
-				iconPosition[] = {0.5,0.3};
-				iconPinpoint = "Bottom";
-				iconScale = 0.2;
-			};
-			class MuzzleSlot: MuzzleSlot
-			{
-				linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-				compatibleItems[] = {};
-				iconPosition[] = {0,0.45};
-				iconScale = 0.2;
-			};
-			class PointerSlot{};
-			class UnderBarrelSlot{};
-			mass = 125;
-			allowedSlots[] = {801,701,901};
 		};
 	};
 };
