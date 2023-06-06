@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","presscott","kincaid","griffith"};
+				values[] = {"default","presscott","griffith"};
 				class default
 				{
 					label = "Default";
@@ -41,10 +41,6 @@ class XtdGearModels
 				class presscott
 				{
 					label = "Presscott";
-				};
-				class kincaid
-				{
-					label = "Kincaid";
 				};
 				class griffith
 				{
@@ -66,11 +62,6 @@ class XtdGearInfos
 		class PHRP_Presscott_ODST_Helmet
 		{
 			role = "presscott";
-			model = "PHRP_twotwo_helmets";
-		};
-		class PHRP_Kincaid_Scout_Helmet
-		{
-			role = "kincaid";
 			model = "PHRP_onefour_helmets";
 		};
 		class PHRP_Griffith_ODST_Helmet

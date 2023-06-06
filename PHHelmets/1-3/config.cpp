@@ -74,6 +74,7 @@ class XtdGearInfos
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
+	class PHRP_Base_CQC_Helmet;
 	class PHRP_onethree_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -96,15 +97,14 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
 	};
-	class PHRP_Coleson_ODST_Helmet : PHRP_Base_ODST_Helmet
+	class PHRP_Coleson_CQC_Helmet : PHRP_Base_CQC_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "MrMicrobe";
-		displayName = "CH252D Helmet (Coleson)";
+		displayName = "Mark V/CQC Helmet (Coleson)";
 		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","PHHelmets\data\helmets\customvisor_coleson_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa"};
 	};
 };
