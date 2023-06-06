@@ -64,7 +64,7 @@ class XtdGearInfos
 			role = "samson";
 			model = "PHRP_onethree_helmets";
 		};
-		class PHRP_Coleson_ODST_Helmet
+		class PHRP_Coleson_CQB_Helmet
 		{
 			role = "coleson";
 			model = "PHRP_onethree_helmets";
@@ -74,7 +74,7 @@ class XtdGearInfos
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
-	class PHRP_Base_CQC_Helmet;
+	class PHRP_Base_CQB_Helmet;
 	class PHRP_onethree_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -97,14 +97,14 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
 	};
-	class PHRP_Coleson_CQC_Helmet : PHRP_Base_CQC_Helmet
+	class PHRP_Coleson_CQB_Helmet : PHRP_Base_CQB_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "MrMicrobe";
-		displayName = "Mark V/CQC Helmet (Coleson)";
+		displayName = "Mark V/C Helmet (Coleson)";
 		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 };
