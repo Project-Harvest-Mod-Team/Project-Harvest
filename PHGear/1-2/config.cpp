@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","blackburn","graves"};
+				values[] = {"default","corpsman","blackburn","graves","morningstar"};
 				class default
 				{
 					label = "Default";
@@ -50,6 +50,10 @@ class XtdGearModels
 				class graves
 				{
 					label = "Graves";
+				};
+				class morningstar
+				{
+					label = "Morningstar";
 				};
 			};
 		};
@@ -78,6 +82,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_onetwo_vests";
 			role = "graves";
+		};
+		class PHRP_Morningstar_Armor
+		{
+			model = "PHRP_onetwo_vests";
+			role = "morningstar";
 		};
 	};
 };

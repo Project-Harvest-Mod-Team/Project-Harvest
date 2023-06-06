@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"burtovski","chopper","aturr"};
+				values[] = {"burtovski","chopper","aturr","buckley"};
 				class burtovski
 				{
 					label = "Burtovski";
@@ -45,6 +45,10 @@ class XtdGearModels
 				class aturr
 				{
 					label = "Aturr";
+				};
+				class buckley
+				{
+					label = "Buckley";
 				};
 			};
 		};
@@ -68,6 +72,11 @@ class XtdGearInfos
 		class PHRP_Aturr_ODST_Helmet
 		{
 			role = "aturr";
+			model = "PHRP_oneA_helmets";
+		};
+		class PHRP_Buckley_ODST_Helmet
+		{
+			role = "buckley";
 			model = "PHRP_oneA_helmets";
 		};
 	};
@@ -107,5 +116,16 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","PHHelmets\data\helmets\customvisor_aturr_co.paa"};
+	};
+	class PHRP_Buckley_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VorpalHotDog";
+		displayName = "CH252D Helmet (Buckley)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_buckley_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
 	};
 };
