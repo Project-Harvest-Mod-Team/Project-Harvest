@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","owessel","kaker","wolf","richter"};
+				values[] = {"default","corpsman","kaker","wolf","kincaid"};
 				class default
 				{
 					label = "Default";
@@ -42,10 +42,6 @@ class XtdGearModels
 				class corpsman
 				{
 					label = "Corpsman";
-				};
-				class owessel
-				{
-					label = "Owessel";
 				};
 				class kaker
 				{
@@ -55,9 +51,9 @@ class XtdGearModels
 				{
 					label = "Wolf";
 				};
-				class richter
+				class kincaid
 				{
-					label = "Richter";
+					label = "Kincaid";
 				};
 			};
 		};
@@ -76,12 +72,7 @@ class XtdGearInfos
 		{
 			model = "PHRP_twoone_vests";
 			role = "corpsman";
-		};
-		class PHRP_Owessel_Armor
-		{
-			model = "PHRP_twoone_vests";
-			role = "owessel";
-		};
+		}; 
 		class PHRP_Kaker_Armor
 		{
 			model = "PHRP_twoone_vests";
@@ -92,10 +83,10 @@ class XtdGearInfos
 			model = "PHRP_twoone_vests";
 			role = "wolf";
 		};
-		class PHRP_Richter_Armor
+		class PHRP_Kincaid_Armor
 		{
 			model = "PHRP_twoone_vests";
-			role = "richter";
+			role = "kincaid";
 		};
 	};
 };

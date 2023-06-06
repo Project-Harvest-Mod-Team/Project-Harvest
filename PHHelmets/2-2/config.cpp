@@ -33,14 +33,10 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","presscott"};
+				values[] = {"default"};
 				class default
 				{
 					label = "Default";
-				};
-				class presscott
-				{
-					label = "Presscott";
 				};
 			};
 		};
@@ -53,11 +49,6 @@ class XtdGearInfos
 		class PHRP_twotwo_ODST_Helmet
 		{
 			role = "default";
-			model = "PHRP_twotwo_helmets";
-		};
-		class PHRP_Presscott_ODST_Helmet
-		{
-			role = "presscott";
 			model = "PHRP_twotwo_helmets";
 		};
 	};
@@ -75,16 +66,5 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_twotwobase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
-	class PHRP_Presscott_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "VorpalHotdog";
-		displayName = "CH252D Helmet (Presscott)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
 	};
 };

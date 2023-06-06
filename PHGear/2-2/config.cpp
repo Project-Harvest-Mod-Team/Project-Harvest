@@ -27,14 +27,14 @@ class XtdGearModels
 	{
 		class PHRP_twotwo_vests
 		{
-			label = "2-1 Vests";
+			label = "2-2 Vests";
 			author = "Project Harvest Mod Team";
 			options[] = {"role"};
 			class role
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","presscott"};
+				values[] = {"default","corpsman"};
 				class default
 				{
 					label = "Default";
@@ -42,10 +42,6 @@ class XtdGearModels
 				class corpsman
 				{
 					label = "Corpsman";
-				};
-				class presscott
-				{
-					label = "Presscott";
 				};
 			};
 		};
@@ -64,11 +60,6 @@ class XtdGearInfos
 		{
 			model = "PHRP_twotwo_vests";
 			role = "corpsman";
-		};
-		class PHRP_Presscott_Armor
-		{
-			model = "PHRP_twotwo_vests";
-			role = "presscott";
 		};
 	};
 };

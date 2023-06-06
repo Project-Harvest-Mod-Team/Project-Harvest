@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","vanderclutch","samson","kincaid"};
+				values[] = {"default","corpsman","presscott","griffith"};
 				class default
 				{
 					label = "Default";
@@ -43,17 +43,13 @@ class XtdGearModels
 				{
 					label = "Corpsman";
 				};
-				class vanderclutch
+				class presscott
 				{
-					label = "Vandy";
+					label = "Presscott";
 				};
-				class samson
+				class griffith
 				{
-					label = "Samson";
-				};
-				class kincaid
-				{
-					label = "Kincaid";
+					label = "Griffith";
 				};
 			};
 		};
@@ -73,20 +69,15 @@ class XtdGearInfos
 			model = "PHRP_onefour_vests";
 			role = "corpsman";
 		};
-		class PHRP_Vanderclutch_Armor
+		class PHRP_Presscott_Armor
 		{
 			model = "PHRP_onefour_vests";
-			role = "vanderclutch";
+			role = "presscott";
 		};
-		class PHRP_Samson_Armor
+		class PHRP_Griffith_Armor
 		{
 			model = "PHRP_onefour_vests";
-			role = "samson";
-		};
-		class PHRP_Kincaid_Armor
-		{
-			model = "PHRP_onefour_vests";
-			role = "kincaid";
+			role = "griffith";
 		};
 	};
 };

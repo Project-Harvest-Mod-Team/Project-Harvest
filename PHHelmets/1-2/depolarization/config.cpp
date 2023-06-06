@@ -23,6 +23,7 @@ class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet_dp;
 	class PHRP_Base_Scout_Helmet_dp;
+	class PHRP_Base_Operator_Helmet__dp;
 	class PHRP_onetwo_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
@@ -51,5 +52,14 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_graves_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
+	class PHRP_Morningstar_Operator_Helmet_dp : PHRP_Base_Operator_Helmet__dp
+	{
+		author = "";
+		scope = 1;
+		scopeArsenal = 1;
+		displayName = "Mark V/O Helmet (Morningstar)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
 	};
 };
