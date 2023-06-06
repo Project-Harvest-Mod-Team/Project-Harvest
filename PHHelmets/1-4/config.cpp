@@ -33,22 +33,22 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","vanderclutch","samson","kincaid"};
+				values[] = {"default","presscott","kincaid","griffith"};
 				class default
 				{
 					label = "Default";
 				};
-				class vanderclutch
+				class presscott
 				{
-					label = "Vandy";
-				};
-				class samson
-				{
-					label = "Samson";
+					label = "Presscott";
 				};
 				class kincaid
 				{
 					label = "Kincaid";
+				};
+				class griffith
+				{
+					label = "Griffith";
 				};
 			};
 		};
@@ -63,19 +63,19 @@ class XtdGearInfos
 			role = "default";
 			model = "PHRP_onefour_helmets";
 		};
-		class PHRP_Vanderclutch_Recon_Helmet
+		class PHRP_Presscott_ODST_Helmet
 		{
-			role = "vanderclutch";
-			model = "PHRP_onefour_helmets";
-		};
-		class PHRP_Samson_ODST_Helmet
-		{
-			role = "samson";
-			model = "PHRP_onefour_helmets";
+			role = "presscott";
+			model = "PHRP_twotwo_helmets";
 		};
 		class PHRP_Kincaid_Scout_Helmet
 		{
 			role = "kincaid";
+			model = "PHRP_onefour_helmets";
+		};
+		class PHRP_Griffith_ODST_Helmet
+		{
+			role = "griffith";
 			model = "PHRP_onefour_helmets";
 		};
 	};
@@ -96,34 +96,26 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onefourbase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
-	class PHRP_Vanderclutch_Recon_Helmet : PHRP_Base_Recon_Helmet
+	class PHRP_Presscott_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Recon Helmet (Vanderclutch)";
+		author = "VorpalHotdog";
+		displayName = "CH252D Helmet (Presscott)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_vanderclutch_co.paa","PHHelmets\data\helmets\customvisor_vanderclutch_co.paa"};
-	};
-	class PHRP_Samson_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "CH252D Helmet (Samson)";
-		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
 	};
-	class PHRP_Kincaid_Scout_Helmet : PHRP_Base_Scout_Helmet
+	class PHRP_Griffith_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "VibingVampire";
-		displayName = "Mark VI/S Helmet (Kincaid)";
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kincaid_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
+		displayName = "CH252D Helmet (Griffith)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\customvisor_griffith_co.paa"};
 	};
 };

@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","tepfer","miller","craven","jaeger"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","tepfer","miller","craven","jaeger","owessel"};
 				class recruit
 				{
 					label = "Recruit";
@@ -93,6 +93,10 @@ class XtdGearModels
 				class jaeger
 				{
 					label = "Jaeger";
+				};
+				class owessel
+				{
+					label = "Owessel";
 				};
 			};
 		};
@@ -175,6 +179,11 @@ class XtdGearInfos
 		class PHRP_Jaeger_ODST_Helmet
 		{
 			role = "jaeger";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Owessel_HRPilot_Helmet
+		{
+			role = "owessel";
 			model = "PHRP_reservist_helmets";
 		};
 	};
@@ -344,5 +353,15 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_jaeger_co.paa","PHHelmets\data\helmets\customvisor_jaeger_co.paa"};
+	};
+	class PHRP_Owessel_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Mark V/P Helmet (Owessel)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
 	};
 };

@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"burtovski","chopper","aturr"};
+				values[] = {"burtovski","chopper","aturr","buckley"};
 				class burtovski
 				{
 					label = "Burtovski";
@@ -45,6 +45,10 @@ class XtdGearModels
 				class aturr
 				{
 					label = "Aturr";
+				};
+				class buckley
+				{
+					label = "Buckley";
 				};
 			};
 		};
@@ -68,6 +72,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_oneA_vests";
 			role = "aturr";
+		};
+		class PHRP_Buckley_Armor
+		{
+			model = "PHRP_oneA_vests";
+			role = "buckley";
 		};
 	};
 };

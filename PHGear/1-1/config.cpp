@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","erikson","stone"};
+				values[] = {"default","corpsman","erikson","stone","riot"};
 				class default
 				{
 					label = "Default";
@@ -50,6 +50,10 @@ class XtdGearModels
 				class stone
 				{
 					label = "Stone";
+				};
+				class riot
+				{
+					label = "Riot";
 				};
 			};
 		};
@@ -78,6 +82,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_oneone_vests";
 			role = "stone";
+		};
+		class PHRP_Riot_Armor
+		{
+			model = "PHRP_oneone_vests";
+			role = "riot";
 		};
 	};
 };

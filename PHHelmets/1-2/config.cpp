@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","blackburn","graves"};
+				values[] = {"default","blackburn","graves","morningstar"};
 				class default
 				{
 					label = "Default";
@@ -45,6 +45,10 @@ class XtdGearModels
 				class graves
 				{
 					label = "Graves";
+				};
+				class morningstar
+				{
+					label = "Morningstar";
 				};
 			};
 		};
@@ -69,11 +73,17 @@ class XtdGearInfos
 			role = "graves";
 			model = "PHRP_onetwo_helmets";
 		};
+		class PHRP_Morningstar_Operator_Helmet
+		{
+			role = "morningstar";
+			model = "PHRP_onetwo_helmets";
+		};
 	};
 };
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
+	class PHRP_Base_Operator_Helmet;
 	class PHRP_onetwo_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -106,5 +116,15 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_graves_co.paa","PHHelmets\data\helmets\customvisor_graves_co.paa"};
+	};
+	class PHRP_Morningstar_Operator_Helmet : PHRP_Base_Operator_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "";
+		displayName = "Mark V/O Helmet (Morningstar)";
+		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
 	};
 };
