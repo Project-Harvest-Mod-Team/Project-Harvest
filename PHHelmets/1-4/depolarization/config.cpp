@@ -24,6 +24,7 @@ class CfgWeapons
     class PHRP_Base_ODST_Helmet_dp;
 	class PHRP_Base_Recon_Helmet_dp;
 	class PHRP_Base_Scout_Helmet_dp;
+	class PHRP_Base_CQB_Helmet__dp;
 	class PHRP_onefour_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
@@ -31,6 +32,7 @@ class CfgWeapons
 		author = "Soldner";
 		displayName = "CH252D Helmet 1-4";
 		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onefourbase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Presscott_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
@@ -52,5 +54,14 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
+	class PHRP_Lark_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "Enreth";
+		displayName = "CH252D Helmet (Lark)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lark_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 };
