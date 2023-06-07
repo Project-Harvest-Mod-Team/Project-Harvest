@@ -83,7 +83,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "Soldner";
 		displayName = "CH252D Helmet 1-4";
-		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onefourbase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
@@ -94,7 +94,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "VorpalHotdog";
 		displayName = "CH252D Helmet (Presscott)";
-		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
 	};
@@ -105,7 +105,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "VibingVampire";
 		displayName = "CH252D Helmet (Griffith)";
-		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\customvisor_griffith_co.paa"};
 	};
