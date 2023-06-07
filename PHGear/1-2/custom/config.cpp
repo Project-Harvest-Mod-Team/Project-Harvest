@@ -363,8 +363,8 @@ class CfgWeapons
 		{
 			"PHGear\data\Army\data\vest_odst_co.paa",
 			"PHGear\data\army\data\armor_odst_co.paa",
-			"PHGear\data\armor\legs_base_co.paa",
-			"PHGear\data\army\data\ghillie_snow_co.paa",
+			"PHGear\data\armor\customlegs_blackburn_co.paa",
+			"PHGear\data\army\data\ghillie_woodland_co.paa",
 			"PHGear\data\armor\customarmor_blackburn_co.paa"
 		};
 		class ItemInfo :ItemInfo
