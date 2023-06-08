@@ -60,7 +60,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Owner";
-				values[] = {"SoldnerDMR","HollandAK120","KazMA37K","MoonMA37K"};
+				values[] = {"SoldnerDMR","HollandAK120","KazMA37K","MoonMA37K","ColesonM90"};
 				class SoldnerDMR
 				{
 					label = "Soldner";
@@ -76,6 +76,10 @@ class XtdGearModels
 				class MoonMA37K
 				{
 					label = "Moon";
+				};
+				class ColesonM90
+				{
+					label = "Coleson";
 				};
 			};
 		};
@@ -122,6 +126,11 @@ class XtdGearInfos
 		{
 			model = "phrp_personal_weapons";
 			type = "MoonMA37K";
+		};
+		class PHRP_Coleson_M90
+		{
+			model = "phrp_personal_weapons";
+			type = "ColesonM90";
 		};
 	};
 };
@@ -341,5 +350,33 @@ class CfgWeapons
 				compatibleitems[] = {};
 			};
 		};
+	};
+
+	//Coleson's M90
+	class OPTRE_M90A;
+	class PHRP_Coleson_M90 : OPTRE_M90A
+	{
+		baseWeapon = "PHRP_Coleson_M90";
+		displayName = "Coleson's M90";
+		canShootInWater = 1;
+		magazines[] = {"Meu_6Rnd_8Gauge_Super_Incendiary"};
+		magazineWell[] = {"MEU_shotgun_uw","MEU_Shotgun_Mags"};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[] = {};
+			};
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[] = {};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleitems[] = {"acc_pointer_ir","ace_acc_pointer_green","optre_m45_flashlight","optre_m45_flashlight_red"};
+			};
+		};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {"PHWeapons\data\coleson_M90_CO.paa"};
 	};
 };
