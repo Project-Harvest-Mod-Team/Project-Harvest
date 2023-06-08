@@ -75,7 +75,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Squad";
-				values[] = {"ilcs","unsc","alpha","bravo","vulcan"};
+				values[] = {"ilcs","unsc","oneone","onetwo","onethree","onefour","twoone"};
 				class ilcs
 				{
 					label = "ODST";
@@ -84,17 +84,25 @@ class XtdGearModels
 				{
 					label = "Marine";
 				};
-				class alpha
+				class oneone
 				{
-					label = "Alpha";
+					label = "1-1";
 				};
-				class bravo
+				class onetwo
 				{
-					label = "Bravo";
+					label = "1-2";
 				};
-				class vulcan
+				class onethree
 				{
-					label = "Vulcan";
+					label = "1-3";
+				};
+				class onefour
+				{
+					label = "1-4";
+				};
+				class twoone
+				{
+					label = "2-1";
 				};
 			};
 		};
@@ -165,77 +173,125 @@ class XtdGearInfos
 			role = "heavy";
 			squad = "unsc";
 		};
-		class PHRP_Alpha_ILCS
+		class PHRP_oneone_ILCS
 		{
 			model = "PHRP_Backpacks";
 			role = "basic";
-			squad = "alpha";
+			squad = "oneone";
 		};
-		class PHRP_Alpha_ILCS_Corpsman
+		class PHRP_oneone_ILCS_Corpsman
 		{
 			model = "PHRP_Backpacks";
 			role = "medic";
-			squad = "alpha";
+			squad = "oneone";
 		};
-		class PHRP_Alpha_ILCS_Heavy
+		class PHRP_oneone_ILCS_Heavy
 		{
 			model = "PHRP_Backpacks";
 			role = "heavy";
-			squad = "alpha";
+			squad = "oneone";
 		};
-		class PHRP_Alpha_ILCS_Gunbag
+		class PHRP_oneone_ILCS_Gunbag
 		{
 			model = "PHRP_Backpacks";
 			role = "gunbagace";
-			squad = "alpha";
-		};		
-		class PHRP_Bravo_ILCS
+			squad = "oneone";
+		};
+		class PHRP_onetwo_ILCS
 		{
 			model = "PHRP_Backpacks";
 			role = "basic";
-			squad = "bravo";
+			squad = "onetwo";
 		};
-		class PHRP_Bravo_ILCS_Corpsman
+		class PHRP_onetwo_ILCS_Corpsman
 		{
 			model = "PHRP_Backpacks";
 			role = "medic";
-			squad = "bravo";
+			squad = "onetwo";
 		};
-		class PHRP_Bravo_ILCS_Heavy
+		class PHRP_onetwo_ILCS_Heavy
 		{
 			model = "PHRP_Backpacks";
 			role = "heavy";
-			squad = "bravo";
+			squad = "onetwo";
 		};
-		class PHRP_Bravo_ILCS_Gunbag
+		class PHRP_onetwo_ILCS_Gunbag
 		{
 			model = "PHRP_Backpacks";
 			role = "gunbagace";
-			squad = "bravo";
-		};	
-		class PHRP_Vulcan_ILCS
+			squad = "onetwo";
+		};
+		class PHRP_onethree_ILCS
 		{
 			model = "PHRP_Backpacks";
 			role = "basic";
-			squad = "vulcan";
+			squad = "onethree";
 		};
-		class PHRP_Vulcan_ILCS_Corpsman
+		class PHRP_onethree_ILCS_Corpsman
 		{
 			model = "PHRP_Backpacks";
 			role = "medic";
-			squad = "vulcan";
+			squad = "onethree";
 		};
-		class PHRP_Vulcan_ILCS_Heavy
+		class PHRP_onethree_ILCS_Heavy
 		{
 			model = "PHRP_Backpacks";
 			role = "heavy";
-			squad = "vulcan";
+			squad = "onethree";
 		};
-		class PHRP_Vulcan_ILCS_Gunbag
+		class PHRP_onethree_ILCS_Gunbag
 		{
 			model = "PHRP_Backpacks";
 			role = "gunbagace";
-			squad = "vulcan";
+			squad = "onethree";
+		};
+		class PHRP_onefour_ILCS
+		{
+			model = "PHRP_Backpacks";
+			role = "basic";
+			squad = "onefour";
+		};
+		class PHRP_onefour_ILCS_Corpsman
+		{
+			model = "PHRP_Backpacks";
+			role = "medic";
+			squad = "onefour";
+		};
+		class PHRP_onefour_ILCS_Heavy
+		{
+			model = "PHRP_Backpacks";
+			role = "heavy";
+			squad = "onefour";
+		};
+		class PHRP_onefour_ILCS_Gunbag
+		{
+			model = "PHRP_Backpacks";
+			role = "gunbagace";
+			squad = "onefour";
+		};
+		class PHRP_twoone_ILCS
+		{
+			model = "PHRP_Backpacks";
+			role = "basic";
+			squad = "twoone";
+		};
+		class PHRP_twoone_ILCS_Corpsman
+		{
+			model = "PHRP_Backpacks";
+			role = "medic";
+			squad = "twoone";
+		};
+		class PHRP_twoone_ILCS_Heavy
+		{
+			model = "PHRP_Backpacks";
+			role = "heavy";
+			squad = "twoone";
+		};
+		class PHRP_twoone_ILCS_Gunbag
+		{
+			model = "PHRP_Backpacks";
+			role = "gunbagace";
+			squad = "twoone";
 		};	
 	};
 };
@@ -278,6 +334,13 @@ class CfgVehicles
 		mass = 50;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_co.paa"};
+	};
+	class PHRP_ILCS_Gunbag : PHRP_ILCS
+	{
+		_generalMacro = "ace_gunbag_Tan";
+		displayName = "PHRP ILCS Gunbag";
+		maximumLoad = 130;
+		ace_gunbag = 1;
 	};
 	class OPTRE_ANPRC_515;
 	class PHRP_ANPRC_515: OPTRE_ANPRC_515
@@ -366,71 +429,104 @@ class CfgVehicles
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\soft_backpack_co.paa"};
 	};
-	class PHRP_Alpha_ILCS: PHRP_ILCS
+	class PHRP_oneone_ILCS: PHRP_ILCS
 	{
-		displayName = "PHRP Alpha ILCS Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_alpha_co.paa"};
+		displayName = "PHRP 1-1 ILCS Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_oneone_co.paa"};
 	};
-	class PHRP_Alpha_ILCS_Heavy: PHRP_ILCS_Heavy
+	class PHRP_oneone_ILCS_Heavy: PHRP_ILCS_Heavy
 	{
-		displayName = "PHRP Alpha ILCS Heavy Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_alpha_co.paa"};
+		displayName = "PHRP 1-1 ILCS Heavy Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_oneone_co.paa"};
 	};
-	class PHRP_Alpha_ILCS_Corpsman: PHRP_ILCS_Corpsman
+	class PHRP_oneone_ILCS_Corpsman: PHRP_ILCS_Corpsman
 	{
-		displayName = "PHRP Alpha ILCS Corpsman Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_alpha_co.paa"};
+		displayName = "PHRP 1-1 ILCS Corpsman Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_oneone_co.paa"};
 	};
-	class PHRP_Bravo_ILCS: PHRP_ILCS
+	class PHRP_oneone_ILCS_Gunbag : PHRP_ILCS_Gunbag
 	{
-		displayName = "PHRP Bravo ILCS Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_bravo_co.paa"};
+		displayName = "PHRP ILCS 1-1 Gunbag";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_oneone_co.paa"};
 	};
-	class PHRP_Bravo_ILCS_Heavy: PHRP_ILCS_Heavy
+	class PHRP_onetwo_ILCS: PHRP_ILCS
 	{
-		displayName = "PHRP Bravo ILCS Heavy Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_bravo_co.paa"};
+		displayName = "PHRP 1-2 ILCS Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_onetwo_co.paa"};
 	};
-	class PHRP_Bravo_ILCS_Corpsman: PHRP_ILCS_Corpsman
+	class PHRP_onetwo_ILCS_Heavy: PHRP_ILCS_Heavy
 	{
-		displayName = "PHRP Bravo ILCS Corpsman Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_bravo_co.paa"};
+		displayName = "PHRP 1-2 ILCS Heavy Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_onetwo_co.paa"};
 	};
-	class PHRP_Vulcan_ILCS: PHRP_ILCS
+	class PHRP_onetwo_ILCS_Corpsman: PHRP_ILCS_Corpsman
 	{
-		displayName = "PHRP Vulcan ILCS Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\vulcan_rucksack_co.paa"};
+		displayName = "PHRP 1-2 ILCS Corpsman Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_onetwo_co.paa"};
 	};
-	class PHRP_Vulcan_ILCS_Heavy: PHRP_ILCS_Heavy
+	class PHRP_onetwo_ILCS_Gunbag : PHRP_ILCS_Gunbag
 	{
-		displayName = "PHRP Vulcan ILCS Heavy Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\vulcan_rucksack_co.paa"};
+		displayName = "PHRP ILCS 1-2 Gunbag";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_onetwo_co.paa"};
 	};
-	class PHRP_Vulcan_ILCS_Corpsman: PHRP_ILCS_Corpsman
+	class PHRP_onethree_ILCS: PHRP_ILCS
 	{
-		displayName = "PHRP Vulcan ILCS Corpsman Rucksack";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\vulcan_rucksack_co.paa"};
+		displayName = "PHRP 1-3 ILCS Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_onethree_co.paa"};
 	};
-	class PHRP_ILCS_Gunbag : PHRP_ILCS
+	class PHRP_onethree_ILCS_Heavy: PHRP_ILCS_Heavy
 	{
-		_generalMacro = "ace_gunbag_Tan";
-		displayName = "PHRP ILCS Gunbag";
-		maximumLoad = 130;
-		ace_gunbag = 1;
+		displayName = "PHRP 1-3 ILCS Heavy Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_onethree_co.paa"};
 	};
-	class PHRP_Alpha_ILCS_Gunbag : PHRP_ILCS_Gunbag
+	class PHRP_onethree_ILCS_Corpsman: PHRP_ILCS_Corpsman
 	{
-		displayName = "PHRP ILCS Alpha Gunbag";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_alpha_co.paa"};
+		displayName = "PHRP 1-3 ILCS Corpsman Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_onethree_co.paa"};
 	};
-	class PHRP_Bravo_ILCS_Gunbag : PHRP_ILCS_Gunbag
+	class PHRP_onethree_ILCS_Gunbag : PHRP_ILCS_Gunbag
 	{
-		displayName = "PHRP ILCS Bravo Gunbag";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_bravo_co.paa"};
+		displayName = "PHRP ILCS 1-3 Gunbag";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_onethree_co.paa"};
 	};
-	class PHRP_Vulcan_ILCS_Gunbag : PHRP_ILCS_Gunbag
+	class PHRP_onefour_ILCS: PHRP_ILCS
 	{
-		displayName = "PHRP ILCS Vulcan Gunbag";
-		hiddenSelectionsTextures[] = {"PHGear\data\packs\vulcan_rucksack_co.paa"};
+		displayName = "PHRP 1-4 ILCS Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_onefour_co.paa"};
+	};
+	class PHRP_onefour_ILCS_Heavy: PHRP_ILCS_Heavy
+	{
+		displayName = "PHRP 1-4 ILCS Heavy Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_onefour_co.paa"};
+	};
+	class PHRP_onefour_ILCS_Corpsman: PHRP_ILCS_Corpsman
+	{
+		displayName = "PHRP 1-4 ILCS Corpsman Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_onefour_co.paa"};
+	};
+	class PHRP_onefour_ILCS_Gunbag : PHRP_ILCS_Gunbag
+	{
+		displayName = "PHRP ILCS 1-4 Gunbag";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_onefour_co.paa"};
+	};
+	class PHRP_twoone_ILCS: PHRP_ILCS
+	{
+		displayName = "PHRP 2-1 ILCS Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_twoone_co.paa"};
+	};
+	class PHRP_twoone_ILCS_Heavy: PHRP_ILCS_Heavy
+	{
+		displayName = "PHRP 2-1 ILCS Heavy Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_twoone_co.paa"};
+	};
+	class PHRP_twoone_ILCS_Corpsman: PHRP_ILCS_Corpsman
+	{
+		displayName = "PHRP 2-1 ILCS Corpsman Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_twoone_co.paa"};
+	};
+	class PHRP_twoone_ILCS_Gunbag : PHRP_ILCS_Gunbag
+	{
+		displayName = "PHRP ILCS 2-1 Gunbag";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_twoone_co.paa"};
 	};
 };
