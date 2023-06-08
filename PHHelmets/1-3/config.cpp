@@ -95,7 +95,7 @@ class CfgWeapons
 		displayName = "CH252D Helmet (Samson)";
 		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\customvisor_samson_co.paa"};
 	};
 	class PHRP_Coleson_CQB_Helmet : PHRP_Base_CQB_Helmet
 	{
