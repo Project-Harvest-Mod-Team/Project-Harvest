@@ -91,8 +91,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "Soldner";
 		displayName = "CH252D Helmet 1-2";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onetwobase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 	class PHRP_Blackburn_ODST_Helmet : PHRP_Base_ODST_Helmet
@@ -102,8 +101,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "VorpalHotdog";
 		displayName = "CH252D Helmet (Blackburn)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\customvisor_blackburn_co.paa"};
 	};
 	class PHRP_Graves_ODST_Helmet : PHRP_Base_ODST_Helmet
@@ -113,8 +111,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "SirChungus";
 		displayName = "CH252D Helmet (Graves)";
-		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_graves_co.paa","PHHelmets\data\helmets\customvisor_graves_co.paa"};
 	};
 	class PHRP_Morningstar_Operator_Helmet : PHRP_Base_Operator_Helmet

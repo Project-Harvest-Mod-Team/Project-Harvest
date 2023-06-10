@@ -22,7 +22,6 @@ class CfgPatches //class desc.
 class CfgWeapons
 {
 	class HeadgearItem;
-	class OPTRE_UNSC_CH252D_Helmet_Base;
 	class H_PilotHelmetFighter_B;
 	class H_HelmetB;
 	class OPTRE_UNSC_Recon_Helmet;
@@ -37,7 +36,6 @@ class CfgWeapons
 	class OPTRE_UNSC_Scout_Helmet;
 
 
-	class VES_CH252D_dp;
 	class OPTRE_UNSC_Recon_Helmet_dp;
 	class OPTRE_UNSC_CQC_Helmet_dp;
 	class OPTRE_UNSC_CQB_Helmet_dp;
@@ -49,13 +47,28 @@ class CfgWeapons
 	class OPTRE_UNSC_HRPilot_Helmet_dp;
 	class OPTRE_UNSC_Scout_Helmet_dp;
 
-	class PHRP_Pilot_Helmet_Base: H_PilotHelmetFighter_B
+	class OPTRE_UNSC_CH252_Helmet_Base: H_HelmetB
 	{
 		class ItemInfo;
 	};
+	class OPTRE_UNSC_CH252D_Helmet_Base: OPTRE_UNSC_CH252_Helmet_Base
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo;
+		};
+	};
 	class OPTRE_UNSC_CH252D_Helmet: OPTRE_UNSC_CH252D_Helmet_Base
 	{
-		class ItemInfo;
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo: HitpointsProtectionInfo
+			{
+				class Face;
+				class Head;
+				class Neck;
+			};
+		};
 	};
 
 	//Infantry Helmets
@@ -71,13 +84,15 @@ class CfgWeapons
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "CH252D Helmet - Base";
         picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet";
-		hiddenSelections[] = {"camo","camo2","camo3","H_Ghillie"};
+		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
+		hiddenSelectionsMaterials[] = {"\1st_meu_helmets\_textures\data\ODSTH3"};
 		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa","optre_unsc_units\army\data\odst_helmet_visor_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 		class ItemInfo: ItemInfo
 		{
 			mass = 30;
 			uniformModel = "OPTRE_UNSC_Units\Army\odst_helmet";
-			hiddenSelections[] = {"camo","camo2","camo3","H_Ghillie"};
+			hiddenSelections[] = {"camo","camo2","H_Ghillie"};
+			hiddenSelectionsMaterials[] = {"\1st_meu_helmets\_textures\data\ODSTH3"};
 			hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa","optre_unsc_units\army\data\odst_helmet_visor_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 			class HitpointsProtectionInfo
 			{
@@ -102,7 +117,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Base_ODST_Helmet_dp : VES_CH252D_dp
+	class PHRP_Base_ODST_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_Base
 	{
 		dlc = "Project Harvest Armory";
 		author = "Soldner";
@@ -113,14 +128,14 @@ class CfgWeapons
 		ace_hearing_protection = 5.0;
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "CH252D Helmet - Base";
-		hiddenSelections[] = {"camo","camo2","camo3","H_Ghillie"};
+		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa","optre_unsc_units\army\data\odst_helmet_visor_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
         class ItemInfo: HeadgearItem
 		{
 			mass = 30;
 			uniformModel = "OPTRE_UNSC_Units\Army\odst_helmet_dp";
 			picture = "\OPTRE_UNSC_Units\Army\icons\odst_helmet";
-			hiddenSelections[] = {"camo","camo2","camo3","H_Ghillie"};
+			hiddenSelections[] = {"camo","camo2","H_Ghillie"};
 			hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\odst_helmet_co.paa","optre_unsc_units\army\data\odst_helmet_visor_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 			class HitpointsProtectionInfo
 			{
@@ -146,6 +161,8 @@ class CfgWeapons
 		};
 		subItems[] = {"ItemcTabHCam"};
 	};
+
+	//Recon Helmet
 	class PHRP_Base_Recon_Helmet : OPTRE_UNSC_Recon_Helmet
 	{
 		class ItemInfo;
@@ -226,6 +243,8 @@ class CfgWeapons
 			};
 		};
 	};
+
+	//CQC Helmet
 	class PHRP_Base_CQC_Helmet : OPTRE_UNSC_CQC_Helmet
 	{
 		class ItemInfo;
@@ -304,6 +323,8 @@ class CfgWeapons
 			};
 		};
 	};
+
+	//CQB Helmet
 	class PHRP_Base_CQB_Helmet : OPTRE_UNSC_CQB_Helmet
 	{
 		class ItemInfo;
@@ -380,6 +401,8 @@ class CfgWeapons
 			};
 		};
 	};
+
+	//EOD Helmet
 	class PHRP_Base_EOD_Helmet : OPTRE_UNSC_EOD_Helmet
 	{
 		class ItemInfo;
@@ -456,6 +479,8 @@ class CfgWeapons
 			};
 		};
 	};
+
+	//JFO Helmet
 	class PHRP_Base_JFO_Helmet : OPTRE_UNSC_JFO_Helmet
 	{
 		class ItemInfo;
@@ -532,6 +557,8 @@ class CfgWeapons
 			};
 		};
 	};
+
+	//Commando Helmet
 	class PHRP_Base_Commando_Helmet : OPTRE_UNSC_Commando_Helmet
 	{
 		class ItemInfo;
@@ -608,6 +635,8 @@ class CfgWeapons
 			};
 		};
 	};
+
+	//Security Helmet
 	class PHRP_Base_Security_Helmet : OPTRE_UNSC_Security_Helmet
 	{
 		class ItemInfo;
@@ -684,6 +713,8 @@ class CfgWeapons
 			};
 		};
 	};
+
+	//Operator Helmet
 	class PHRP_Base_Operator_Helmet : OPTRE_UNSC_Operator_Helmet
 	{
 		class ItemInfo;
@@ -761,6 +792,8 @@ class CfgWeapons
 			};
 		};
 	};
+
+	//Hellbringer Helmet
 	class PHRP_Base_HRPilot_Helmet : OPTRE_UNSC_HRPilot_Helmet
 	{
 		class ItemInfo;
@@ -838,6 +871,8 @@ class CfgWeapons
 			};
 		};
 	};
+
+	//Scout Helmet
 	class PHRP_Base_Scout_Helmet : OPTRE_UNSC_Scout_Helmet
 	{
 		class ItemInfo;

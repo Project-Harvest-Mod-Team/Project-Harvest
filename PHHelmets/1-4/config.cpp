@@ -73,7 +73,7 @@ class XtdGearInfos
 			role = "griffith";
 			model = "PHRP_onefour_helmets";
 		};
-		class PHRP_Lark_CQB_Helmet
+		class PHRP_Lark_ODST_Helmet
 		{
 			role = "lark";
 			model = "PHRP_onefour_helmets";
@@ -84,8 +84,6 @@ class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_Recon_Helmet;
-	class PHRP_Base_Scout_Helmet;
-	class PHRP_Base_CQB_Helmet;
 	class PHRP_onefour_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -93,8 +91,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "Soldner";
 		displayName = "CH252D Helmet 1-4";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onefourbase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 	class PHRP_Presscott_ODST_Helmet : PHRP_Base_ODST_Helmet
@@ -104,8 +101,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "VorpalHotdog";
 		displayName = "CH252D Helmet (Presscott)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 	class PHRP_Griffith_ODST_Helmet : PHRP_Base_ODST_Helmet
@@ -115,18 +111,17 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "VibingVampire";
 		displayName = "CH252D Helmet (Griffith)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\customvisor_griffith_co.paa"};
 	};
-	class PHRP_Lark_CQB_Helmet : PHRP_Base_CQB_Helmet
+	class PHRP_Lark_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "Enreth";
-		displayName = "Mark V/C Helmet (Coleson)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lark_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
+		displayName = "CH252D Helmet (Lark)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lark_co.paa","PHHelmets\data\helmets\customvisor_lark_co.paa"};
 	};
 };

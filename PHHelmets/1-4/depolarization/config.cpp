@@ -31,8 +31,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "Soldner";
 		displayName = "CH252D Helmet 1-4";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onefourbase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Presscott_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
@@ -41,8 +40,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "VorpalHotdog";
 		displayName = "CH252D Helmet (Presscott)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Griffith_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
@@ -51,8 +49,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "VibingVampire";
 		displayName = "CH252D Helmet (Griffith)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Lark_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
@@ -61,7 +58,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "Enreth";
 		displayName = "CH252D Helmet (Lark)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lark_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lark_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 };

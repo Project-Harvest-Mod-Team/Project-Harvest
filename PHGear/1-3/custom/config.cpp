@@ -363,7 +363,7 @@ class CfgWeapons
 		{
 			"PHGear\data\Army\data\vest_odst_co.paa",
 			"PHGear\data\army\data\armor_odst_co.paa",
-			"PHGear\data\armor\customlegs_presscott_co.paa",
+			"PHGear\data\armor\customlegs_samson_co.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
 			"PHGear\data\armor\customarmor_samson_co.paa"
 		};
@@ -428,10 +428,10 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Coleson_Armor : PHRP_Base_Armor
+	class PHRP_Hazard_Armor : PHRP_Base_Armor
 	{
 		author = "MrMicrobe";
-		displayName = "M52D Body Armor (Coleson)";
+		displayName = "M52D Body Armor (Hazard)";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -462,24 +462,24 @@ class CfgWeapons
 			"AS_LargeRight", 
 			"AS_MediumLeft", 
 			"AS_MediumRight", 
-			//"AS_ODSTCQBLeft", 
+			"AS_ODSTCQBLeft", 
 			"AS_ODSTCQBRight", 
-			"AS_ODSTLeft", 
+			//"AS_ODSTLeft", 
 			//"AS_ODSTRight", 
 			"AS_ODSTSniperLeft", 
 			"AS_ODSTSniperRight", 
 			"AS_SmallLeft",  
 			"AS_SmallRight", 
-			"AP_Canteen", 
-			"AP_GL", 
-			"AP_Knife", 
-			"AP_MGThigh", 
+			//"AP_Canteen", 
+			//"AP_GL", 
+			//"AP_Knife", 
+			//"AP_MGThigh", 
 			"AP_AR", 
 			"AP_BR", 
 			"AP_Pack", 
 			"AP_Pistol", 
 			"AP_Rounds", 
-			//"AP_SG", 
+			"AP_SG", 
 			"AP_SMG", 
 			"AP_Sniper", 
 			"AP_Thigh", 
@@ -499,7 +499,7 @@ class CfgWeapons
 			"PHGear\data\army\data\armor_odst_co.paa",
 			"PHGear\data\armor\legs_base_co.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
-			"PHGear\data\armor\customarmor_coleson_co.paa"
+			"PHGear\data\armor\customarmor_hazard_CO.paa"
 		};
 		class ItemInfo :ItemInfo
 		{
@@ -530,24 +530,24 @@ class CfgWeapons
 				"AS_LargeRight", 
 				"AS_MediumLeft", 
 				"AS_MediumRight", 
-				//"AS_ODSTCQBLeft", 
+				"AS_ODSTCQBLeft", 
 				"AS_ODSTCQBRight", 
-				"AS_ODSTLeft", 
+				//"AS_ODSTLeft", 
 				//"AS_ODSTRight", 
 				"AS_ODSTSniperLeft", 
 				"AS_ODSTSniperRight", 
 				"AS_SmallLeft",  
 				"AS_SmallRight", 
-				"AP_Canteen", 
-				"AP_GL", 
-				"AP_Knife", 
-				"AP_MGThigh", 
+				//"AP_Canteen", 
+				//"AP_GL", 
+				//"AP_Knife", 
+				//"AP_MGThigh", 
 				"AP_AR", 
 				"AP_BR", 
 				"AP_Pack", 
 				"AP_Pistol", 
 				"AP_Rounds", 
-				//"AP_SG", 
+				"AP_SG", 
 				"AP_SMG", 
 				"AP_Sniper", 
 				"AP_Thigh", 

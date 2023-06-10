@@ -31,8 +31,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "Soldner";
 		displayName = "CH252D Helmet 1-1";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_oneonebase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Erikson_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
@@ -41,8 +40,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "VorpalHotdog";
 		displayName = "CH252D Helmet (Erikson)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Stone_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
@@ -51,8 +49,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "Soldner";
 		displayName = "CH252D Helmet (Stone)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Riot_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
@@ -61,8 +58,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "Soldner";
 		displayName = "CH252D Helmet (Riot)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_riot_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 };

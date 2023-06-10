@@ -222,6 +222,49 @@ class CfgWeapons
 	};
 	
 	//Soldner M392X
+	class OPTRE_M392_Scope;
+	class InventoryOpticsItem_Base_F;
+	class ItemInfo;
+	class PHRP_M392_Scope: OPTRE_M392_Scope
+	{
+		author = "Soldner";
+		displayName = "Soldner's M392X Scope";
+		picture = "\OPTRE_weapons\br\icons\scope.paa";
+		model = "\OPTRE_Weapons\DMR\M392_Scope.p3d";
+		class ItemInfo: InventoryOpticsItem_Base_F
+		{
+			mass = 2;
+			opticType = 1;
+			optics = 1;
+			modelOptics = "\OPTRE_Weapons\DMR\M392_Scope.p3d";
+			class OpticsModes
+			{
+				class PHRP_Scope
+				{
+					opticsID = 1;
+					useModelOptics = 1;
+					opticsZoomMin = 0.01;
+					opticsZoomMax = 0.25;
+					opticsZoomInit = 0.25;
+					discretefov[] = {0.25,0.05,0.025,0.01,0.001};
+					discreteinitIndex = 0;
+					opticsPPEffects[] = {""};
+					opticsFlare = 0;
+					opticsDisablePeripherialVision = 0;
+					memoryPointCamera = "opticView";
+					modelOptics[] = {"\OPTRE_Weapons\DMR\M395_optic10.p3d"};
+					visionMode[] = {"Normal","NVG","TI"};
+					thermalMode[] = {0,1};
+					discreteDistance[] = {100,300,400,500,600,700,800,900,1000};
+					discreteDistanceInitIndex = 1;
+					distanceZoomMin = 100;
+					distanceZoomMax = 1000;
+					cameraDir = "";
+				};
+			};
+		};
+		inertia = 0.1;
+	};
 	class OPTRE_M392_DMR;
 	class PHRP_Soldner_M392_DMR: OPTRE_M392_DMR
 	{
@@ -236,15 +279,15 @@ class CfgWeapons
 		{
 			class MuzzleSlot: MuzzleSlot
 			{
-				compatibleitems[] = {"muzzle_snds_h_mg_blk_f","muzzle_snds_l","optre_ma5suppressor","optre_m7_silencer","optre_m6_silencer","ace_muzzle_mzls_b","muzzle_snds_b","OPTRE_MA37KSuppressor","muzzle_snds_65_TI_blk_F","OPTRE_srs99d_suppressor"};
+				compatibleitems[] = {"muzzle_snds_65_TI_blk_F"};
 			};
 			class CowsSlot: CowsSlot
 			{
-				compatibleitems[] = {"MEU_REC_HOLO","MEU_REC_HOLO_Red","MEU_REC_HOLO_Gre","optic_Yorris","optic_DMS","optic_DMS_ghex_F","optic_ERCO_blk_F","optic_ERCO_khk_F","optic_ERCO_snd_F","optic_MRCO","optic_Arco","optic_Arco_ghex_F","optic_Arco_blk_F","optic_aco","optic_ACO_grn","optic_aco_smg","optic_ACO_grn_smg","optic_hamr","optic_Hamr_khk_F","optic_Holosight","optic_Holosight_smg","optic_Holosight_blk_F","optic_Holosight_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_smg_khk_F","OPTRE_M392_Scope","OPTRE_BR55HB_Scope","OPTRE_M7_Sight","OPTRE_M393_Scope","OPTRE_M393_ACOG","OPTRE_M393_EOTECH","OPTRE_M73_SmartLink","OPTRE_MA5_SmartLink","OPTRE_MA5_SmartLink_v2","OPTRE_MA5C_SmartLink_v2","OPTRE_MA5_SmartLink_legacy","OPTRE_MA5C_SmartLink_legacy","OPTRE_M12_Optic","optic_ico_01_black_f","OPTRE_BR45_Scope","optic_NVS","optic_LRPS","optic_LRPS_ghex_F","optic_LRPS_tna_F","optic_ams","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_tan","optic_KHS_hex","optic_KHS_old","optic_SOS","optic_SOS_khk_F","OPTRE_M392_Scope_v2","OPTRE_M393_ACOG_v2","OPTRE_M393_EOTECH_v2","OPTRE_BMR_Scope_v2","MEU_REC_HOLO_DMR","MEU_REC_HOLO_Red_DMR","MEU_REC_HOLO_Gre_DMR"};
+				compatibleitems[] = {"PHRP_M392_Scope"};
 			};
 			class PointerSlot: PointerSlot
 			{
-				compatibleitems[] = {"OPTRE_M7_Flashlight","OPTRE_M7_Laser","acc_pointer_ir","acc_flashlight","OPTRE_BMR_Laser","optre_m12_laser","ace_acc_pointer_green","optre_m45_flashlight","optre_m45_flashlight_red","acc_pointer_vis_red","MEU_M12_Vis_Laser","MEU_BMR_Vis_Laser","MEU_M7_Vis_Laser","MEU_M6G_Laser"};
+				compatibleitems[] = {"acc_pointer_ir","acc_flashlight","ace_acc_pointer_green"};
 			};
 		};
 	};

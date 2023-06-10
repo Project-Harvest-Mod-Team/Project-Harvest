@@ -497,7 +497,7 @@ class CfgWeapons
 		{
 			"PHGear\data\Army\data\vest_odst_co.paa",
 			"PHGear\data\army\data\armor_odst_co.paa",
-			"PHGear\data\armor\legs_base_co.paa",
+			"PHGear\data\armor\customlegs_onetwobase_CO.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
 			"PHGear\data\armor\customarmor_graves_co.paa"
 		};
@@ -631,7 +631,7 @@ class CfgWeapons
 		{
 			"PHGear\data\Army\data\vest_odst_co.paa",
 			"PHGear\data\army\data\armor_odst_co.paa",
-			"PHGear\data\armor\legs_base_co.paa",
+			"PHGear\data\armor\customlegs_onetwobase_CO.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
 			"PHGear\data\armor\customarmor_morningstar_co.paa"
 		};

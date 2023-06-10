@@ -24,14 +24,14 @@ class CfgWeapons
     class PHRP_Base_ODST_Helmet_dp;
 	class PHRP_Base_HRPilot_Helmet__dp;
 	class PHRP_Base_Recon_Helmet_dp;
+	class PHRP_Base_EOD_Helmet__dp;
 	class PHRP_twoone_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
 		author = "Soldner";
 		displayName = "CH252D Helmet 2-1";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_twoonebase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Kaker_HRPilot_Helmet_dp : PHRP_Base_HRPilot_Helmet__dp
@@ -60,5 +60,14 @@ class CfgWeapons
 		displayName = "Mark V/P Helmet (Kincaid)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kincaid_co.paa","PHHelmets\data\helmets\customvisor_kincaid_co.paa"};
+	};
+	class PHRP_Coleson_EOD_Helmet_dp : PHRP_Base_EOD_Helmet__dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "MrMicrobe";
+		displayName = "Mark V/C Helmet (Coleson)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 };
