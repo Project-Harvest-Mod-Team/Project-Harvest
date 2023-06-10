@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","kaker","wolf","kincaid"};
+				values[] = {"default","kaker","wolf","kincaid","coleson"};
 				class default
 				{
 					label = "Default";
@@ -49,6 +49,10 @@ class XtdGearModels
 				class kincaid
 				{
 					label = "Kincaid";
+				};
+				class coleson
+				{
+					label = "Coleson";
 				};
 			};
 		};
@@ -78,6 +82,11 @@ class XtdGearInfos
 			role = "kincaid";
 			model = "PHRP_twoone_helmets";
 		};
+		class PHRP_Coleson_EOD_Helmet
+		{
+			role = "coleson";
+			model = "PHRP_twoone_helmets";
+		};
 	};
 };
 class CfgWeapons
@@ -85,6 +94,7 @@ class CfgWeapons
     class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_HRPilot_Helmet;
 	class PHRP_Base_Recon_Helmet;
+	class PHRP_Base_EOD_Helmet;
 	class PHRP_twoone_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -125,5 +135,15 @@ class CfgWeapons
 		displayName = "Mark V/P Helmet (Kincaid)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kincaid_co.paa","PHHelmets\data\helmets\customvisor_kincaid_co.paa"};
+	};
+	class PHRP_Coleson_EOD_Helmet : PHRP_Base_EOD_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Mark V/C Helmet (Coleson)";
+		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 };

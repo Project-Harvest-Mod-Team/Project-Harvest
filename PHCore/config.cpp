@@ -52,6 +52,10 @@ class CfgEditorSubcategories
 	{
 		displayName = "Boats";
 	};
+	class PHRP_EdSubCat_AWGS
+	{
+		displayName = "AWGS";
+	};
 };
 class cfgFactionClasses
 {
@@ -61,6 +65,13 @@ class cfgFactionClasses
 		priority = 3;
 		side = 1;
 		icon = "";
+	};
+};
+class cfgVehicleClasses
+{
+	class PHRP_AWGS
+	{
+		displayName = "AWGS";
 	};
 };
 class RscPicture{};

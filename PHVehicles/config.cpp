@@ -6,10 +6,17 @@ class CfgPatches
 	{
 		author = "Soldner";
 		hideName = 0;
-		units[] = {"PHRP_SDV_01"};
+		units[] = {"PHRP_SDV_01","PHRP_HMCS"};
 		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"PHRP_Core"};
+	};
+};
+class cfgVehicleClasses
+{
+	class AWGS
+	{
+		displayName = "AWGS";
 	};
 };
 class CfgVehicles
@@ -37,5 +44,13 @@ class CfgVehicles
 		maxSpeed = 100;
 		enginePower = 100;
 		waterSpeedFactor = 0.1;
+	};
+	class HMCS;
+	class PHRP_HMCS : HMCS
+	{
+		editorCategory = "PHRP_EdCat_Gladius";
+		editorSubcategory = "PHRP_EdSubCat_AWGS";
+		displayName = "Thurgood's HMCS";
+		hiddenselectionstextures[] = {"PHVehicles\Textures\hm_01_co.paa","PHVehicles\Textures\hm_02_co.paa","PHVehicles\Textures\hm_03_co.paa","PHVehicles\Textures\hm_glass_ca.paa","PHVehicles\Textures\hmguns_01_501_co.paa","","","","","PHVehicles\Textures\hm_insignias_01_ca.paa"};
 	};
 };

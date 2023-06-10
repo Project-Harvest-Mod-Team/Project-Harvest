@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","samson","coleson"};
+				values[] = {"default","samson","hazard"};
 				class default
 				{
 					label = "Default";
@@ -42,9 +42,9 @@ class XtdGearModels
 				{
 					label = "Samson";
 				};
-				class coleson
+				class hazard
 				{
-					label = "Coleson";
+					label = "Hazard";
 				};
 			};
 		};
@@ -64,9 +64,9 @@ class XtdGearInfos
 			role = "samson";
 			model = "PHRP_onethree_helmets";
 		};
-		class PHRP_Coleson_CQB_Helmet
+		class PHRP_Hazard_EOD_Helmet
 		{
-			role = "coleson";
+			role = "hazard";
 			model = "PHRP_onethree_helmets";
 		};
 	};
@@ -75,6 +75,7 @@ class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_CQB_Helmet;
+	class PHRP_Base_EOD_Helmet;
 	class PHRP_onethree_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -97,14 +98,14 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\customvisor_samson_co.paa"};
 	};
-	class PHRP_Coleson_CQB_Helmet : PHRP_Base_CQB_Helmet
+	class PHRP_Hazard_EOD_Helmet : PHRP_Base_EOD_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "MrMicrobe";
-		displayName = "Mark V/C Helmet (Coleson)";
-		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
+		displayName = "Mark V/EOD Helmet (Hazard)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_hazard_co.paa","PHHelmets\data\helmets\customvisor_hazard_co.paa"};
 	};
 };
