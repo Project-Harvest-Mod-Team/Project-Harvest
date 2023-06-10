@@ -83,8 +83,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "Soldner";
 		displayName = "CH252D Helmet 1-3";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onethreebase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 	class PHRP_Samson_ODST_Helmet : PHRP_Base_ODST_Helmet
@@ -94,8 +93,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "MrMicrobe";
 		displayName = "CH252D Helmet (Samson)";
-		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\customvisor_samson_co.paa"};
 	};
 	class PHRP_Hazard_EOD_Helmet : PHRP_Base_EOD_Helmet

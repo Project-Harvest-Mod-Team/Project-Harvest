@@ -24,9 +24,9 @@ class XtdGearModels
 	class CamoBase;
 	class CfgWeapons
 	{
-		class PHRP_erebus_helmets
+		class PHRP_olympus_helmets
 		{
-			label = "Erebus Helmets";
+			label = "Olympus Helmets";
 			author = "Project Harvest Mod Team";
 			options[] = {"Role"};
 			class role
@@ -65,27 +65,27 @@ class XtdGearInfos
 		class PHRP_Soldner_Scout_Helmet
 		{
 			role = "soldner";
-			model = "PHRP_erebus_helmets";
+			model = "PHRP_olympus_helmets";
 		};
 		class PHRP_Kaz_Operator_Helmet
 		{
 			role = "kaz";
-			model = "PHRP_erebus_helmets";
+			model = "PHRP_olympus_helmets";
 		};
 		class PHRP_Holland_ODST_Helmet
 		{
 			role = "holland";
-			model = "PHRP_erebus_helmets";
+			model = "PHRP_olympus_helmets";
 		};
 		class PHRP_Moon_Commando_Helmet
 		{
 			role = "moon";
-			model = "PHRP_erebus_helmets";
+			model = "PHRP_olympus_helmets";
 		};
 		class PHRP_Pjetrovic_Security_Helmet
 		{
 			role = "pjetrovic";
-			model = "PHRP_erebus_helmets";
+			model = "PHRP_olympus_helmets";
 		};
 	};
 };
@@ -154,8 +154,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "VorpalHotdog";
 		displayName = "CH252D Helmet (Holland)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_holland_co.paa","PHHelmets\data\helmets\customvisor_holland_co.paa"};
 	};
 	class PHRP_Moon_Commando_Helmet : PHRP_Base_Commando_Helmet

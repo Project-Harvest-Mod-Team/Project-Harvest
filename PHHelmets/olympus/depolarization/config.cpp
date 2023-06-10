@@ -82,8 +82,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "VorpalHotdog";
 		displayName = "CH252D Helmet (Holland)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_holland_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Moon_Commando_Helmet_dp : PHRP_Base_Commando_Helmet_dp
