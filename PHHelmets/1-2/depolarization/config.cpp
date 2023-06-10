@@ -57,7 +57,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		displayName = "Mark V/O Helmet (Morningstar)";
-		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
 	};
 };

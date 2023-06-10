@@ -91,7 +91,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "Soldner";
 		displayName = "Mark V/K Helmet (Moon)";
-		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelections[] =  {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_Moon_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Pjetrovic_Security_Helmet_dp : PHRP_Base_Security_Helmet_dp
@@ -101,7 +101,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "MrMicrobe";
 		displayName = "Mark V/M Helmet (Pjetrovic)";
-		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_pjetrovic_co.paa","OPTRE_UNSC_Units\Army\data\Security_Visor_co.paa"};
 	};
 };

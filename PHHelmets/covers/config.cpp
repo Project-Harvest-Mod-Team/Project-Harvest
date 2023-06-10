@@ -82,7 +82,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		mass = 2;
+		mass = 1;
 		author = "VorpalHotdog";
 		displayName = "Gladius Beret";
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusberet_co.paa"};
@@ -92,7 +92,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		mass = 2;
+		mass = 1;
 		author = "VorpalHotdog";
 		displayName = "Gladius Boonie";
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\headgear_gladiusboonie_co.paa"};

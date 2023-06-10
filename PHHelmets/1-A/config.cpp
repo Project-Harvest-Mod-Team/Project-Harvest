@@ -93,7 +93,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "Soldner";
 		displayName = "Mark V/K Helmet (Burtovski)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelections[] =  {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
 	};
 	class PHRP_Chopper_EOD_Helmet : PHRP_Base_EOD_Helmet
@@ -103,7 +103,7 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "MrMicrobe";
 		displayName = "Mark V/EOD Helmet (Chopper)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\EOD_Visor_co.paa"};
 	};
 	class PHRP_Aturr_ODST_Helmet : PHRP_Base_ODST_Helmet

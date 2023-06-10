@@ -40,7 +40,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "Jimbo";
 		displayName = "Mark V/P Helmet (Kaker)";
-		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
 	};
 	class PHRP_Wolf_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
@@ -49,7 +49,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "MrMicrobe";
 		displayName = "Recon Helmet (Wolf)";
-		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 	class PHRP_Kincaid_HRPilot_Helmet_dp : PHRP_Base_HRPilot_Helmet__dp
@@ -58,7 +58,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "Jimbo";
 		displayName = "Mark V/P Helmet (Kincaid)";
-		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kincaid_co.paa","PHHelmets\data\helmets\customvisor_kincaid_co.paa"};
 	};
 	class PHRP_Coleson_EOD_Helmet_dp : PHRP_Base_EOD_Helmet__dp
@@ -67,7 +67,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "MrMicrobe";
 		displayName = "Mark V/C Helmet (Coleson)";
-		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 };
