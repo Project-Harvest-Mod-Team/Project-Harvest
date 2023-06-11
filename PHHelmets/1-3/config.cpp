@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","samson","hazard"};
+				values[] = {"default","samson","hazard","griffith"};
 				class default
 				{
 					label = "Default";
@@ -45,6 +45,10 @@ class XtdGearModels
 				class hazard
 				{
 					label = "Hazard";
+				};
+				class griffith
+				{
+					label = "Griffith";
 				};
 			};
 		};
@@ -67,6 +71,11 @@ class XtdGearInfos
 		class PHRP_Hazard_EOD_Helmet
 		{
 			role = "hazard";
+			model = "PHRP_onethree_helmets";
+		};
+		class PHRP_Griffith_ODST_Helmet
+		{
+			role = "griffith";
 			model = "PHRP_onethree_helmets";
 		};
 	};
@@ -105,5 +114,15 @@ class CfgWeapons
 		displayName = "Mark V/EOD Helmet (Hazard)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_hazard_co.paa","PHHelmets\data\helmets\customvisor_hazard_co.paa"};
+	};
+	class PHRP_Griffith_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VibingVampire";
+		displayName = "CH252D Helmet (Griffith)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\customvisor_griffith_co.paa"};
 	};
 };
