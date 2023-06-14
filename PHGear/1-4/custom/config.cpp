@@ -422,7 +422,7 @@ class CfgWeapons
 				//"APO_AR", 
 				"APO_BR", 
 				//"APO_Knife", 
-				//"APO_SMG", 
+				"APO_SMG", 
 				"APO_Sniper", 
 				"CustomKit_Scorch"
 			};
