@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","kaker","wolf","kincaid","coleson"};
+				values[] = {"default","kaker","wolf","kincaid","coleson","payne"};
 				class default
 				{
 					label = "Default";
@@ -53,6 +53,10 @@ class XtdGearModels
 				class coleson
 				{
 					label = "Coleson";
+				};
+				class payne
+				{
+					label = "Payne";
 				};
 			};
 		};
@@ -85,6 +89,11 @@ class XtdGearInfos
 		class PHRP_Coleson_EOD_Helmet
 		{
 			role = "coleson";
+			model = "PHRP_twoone_helmets";
+		};
+		class PHRP_Payne_HRPilot_Helmet
+		{
+			role = "payne";
 			model = "PHRP_twoone_helmets";
 		};
 	};

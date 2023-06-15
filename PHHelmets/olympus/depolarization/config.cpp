@@ -96,9 +96,8 @@ class CfgWeapons
 	};
 	class PHRP_Pjetrovic_Security_Helmet_dp : PHRP_Base_Security_Helmet_dp
 	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
+		scope = 1;
+		scopeArsenal = 1;
 		author = "MrMicrobe";
 		displayName = "Mark V/M Helmet (Pjetrovic)";
 		hiddenSelections[] = {"camo1","camo2"};
