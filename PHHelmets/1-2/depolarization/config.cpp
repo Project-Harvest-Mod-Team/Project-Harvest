@@ -23,7 +23,7 @@ class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet_dp;
 	class PHRP_Base_Scout_Helmet_dp;
-	class PHRP_Base_Operator_Helmet__dp;
+	class PHRP_Base_Operator_Helmet_dp;
 	class PHRP_onetwo_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
@@ -51,7 +51,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_graves_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
-	class PHRP_Morningstar_Operator_Helmet_dp : PHRP_Base_Operator_Helmet__dp
+	class PHRP_Morningstar_Operator_Helmet_dp : PHRP_Base_Operator_Helmet_dp
 	{
 		author = "";
 		scope = 1;

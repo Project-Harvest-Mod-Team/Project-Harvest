@@ -25,7 +25,7 @@ class CfgPatches
 class cfgWeapons
 {
 	class HeadgearItem;
-	class ItemCore;
+	class ItemCore;/*
 	class PHRP_hair_ash_helmet: ItemCore
 	{
 		scope=2;
@@ -183,7 +183,7 @@ class cfgWeapons
 				};
 			};
 		};
-	};
+	};*/
 	class PHRP_hair_shep_helmet: ItemCore
 	{
 		scope=2;
@@ -209,7 +209,7 @@ class cfgWeapons
 				};
 			};
 		};
-	};
+	};/*
 	class PHRP_hair_ff_helmet: ItemCore
 	{
 		scope=2;
@@ -235,7 +235,7 @@ class cfgWeapons
 				};
 			};
 		};
-	};
+	};*/
 };
 /*
 class CfgFaces
@@ -342,7 +342,7 @@ class CfgFaces
 			materialHL2 = "\MEOP_asari\data\hl_asa_nkd.rvmat";
 		};
 	};
-};*/
+};
 class CfgHeads
 {
 	class Default_A3;

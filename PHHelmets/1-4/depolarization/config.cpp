@@ -24,7 +24,7 @@ class CfgWeapons
     class PHRP_Base_ODST_Helmet_dp;
 	class PHRP_Base_Recon_Helmet_dp;
 	class PHRP_Base_Scout_Helmet_dp;
-	class PHRP_Base_CQB_Helmet__dp;
+	class PHRP_Base_CQB_Helmet_dp;
 	class PHRP_onefour_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;

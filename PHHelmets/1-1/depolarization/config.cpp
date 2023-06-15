@@ -22,9 +22,9 @@ class CfgPatches //class desc.
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet_dp;
-	class PHRP_Base_Operator_Helmet__dp;
+	class PHRP_Base_Operator_Helmet_dp;
 	class PHRP_Base_CQC_Helmet_dp;
-	class PHRP_Base_Scout_Helmet__dp;
+	class PHRP_Base_Scout_Helmet_dp;
 	class PHRP_oneone_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
