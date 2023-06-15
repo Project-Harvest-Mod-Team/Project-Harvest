@@ -111,7 +111,7 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "Jimbo";
-		displayName = "Mark V/P Helmet (Kaker)";
+		displayName = "Mark V/P Helmet 2-1 (Kaker)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
 	};
@@ -121,7 +121,7 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "MrMicrobe";
-		displayName = "Recon Helmet (Wolf)";
+		displayName = "Recon Helmet 2-1 (Wolf)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\customvisor_wolf_co.paa"};
 	};
@@ -131,7 +131,7 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "Jimbo";
-		displayName = "Mark V/P Helmet (Kincaid)";
+		displayName = "Mark V/P Helmet 2-1 (Kincaid)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kincaid_co.paa","PHHelmets\data\helmets\customvisor_kincaid_co.paa"};
 	};
@@ -141,8 +141,18 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "MrMicrobe";
-		displayName = "Mark V/C Helmet (Coleson)";
+		displayName = "Mark V/C Helmet 2-1 (Coleson)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
+	};
+	class PHRP_Payne_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "Mark V/P Helmet 2-1 (Payne)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_payne_co.paa"};
 	};
 };

@@ -22,8 +22,8 @@ class CfgPatches //class desc.
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet_dp;
-	class PHRP_Base_CQB_Helmet__dp;
-	class PHRP_Base_EOD_Helmet__dp;
+	class PHRP_Base_CQB_Helmet_dp;
+	class PHRP_Base_EOD_Helmet_dp;
 	class PHRP_onethree_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
@@ -42,7 +42,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
-	class PHRP_Hazard_EOD_Helmet_dp : PHRP_Base_EOD_Helmet__dp
+	class PHRP_Hazard_EOD_Helmet_dp : PHRP_Base_EOD_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;

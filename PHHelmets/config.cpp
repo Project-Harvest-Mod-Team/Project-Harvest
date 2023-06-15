@@ -284,7 +284,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Base_CQC_Helmet__dp : OPTRE_UNSC_CQC_Helmet_dp
+	class PHRP_Base_CQC_Helmet_dp : OPTRE_UNSC_CQC_Helmet_dp
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
@@ -363,7 +363,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Base_CQB_Helmet__dp : OPTRE_UNSC_CQB_Helmet_dp
+	class PHRP_Base_CQB_Helmet_dp : OPTRE_UNSC_CQB_Helmet_dp
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
@@ -441,7 +441,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Base_EOD_Helmet__dp : OPTRE_UNSC_EOD_Helmet_dp
+	class PHRP_Base_EOD_Helmet_dp : OPTRE_UNSC_EOD_Helmet_dp
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
@@ -519,7 +519,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Base_JFO_Helmet__dp : OPTRE_UNSC_JFO_Helmet_dp
+	class PHRP_Base_JFO_Helmet_dp : OPTRE_UNSC_JFO_Helmet_dp
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
@@ -675,7 +675,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Base_Security_Helmet__dp : OPTRE_UNSC_Security_Helmet_dp
+	class PHRP_Base_Security_Helmet_dp : OPTRE_UNSC_Security_Helmet_dp
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
@@ -754,7 +754,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Base_Operator_Helmet__dp : OPTRE_UNSC_Operator_Helmet_dp
+	class PHRP_Base_Operator_Helmet_dp : OPTRE_UNSC_Operator_Helmet_dp
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
@@ -833,7 +833,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Base_HRPilot_Helmet__dp : OPTRE_UNSC_HRPilot_Helmet_dp
+	class PHRP_Base_HRPilot_Helmet_dp : OPTRE_UNSC_HRPilot_Helmet_dp
 	{
 		class ItemInfo;
 		dlc = "Project Harvest Armory";
