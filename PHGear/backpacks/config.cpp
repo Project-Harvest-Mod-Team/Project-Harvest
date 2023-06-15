@@ -75,7 +75,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Squad";
-				values[] = {"ilcs","unsc","oneone","onetwo","onethree","onefour","twoone"};
+				values[] = {"ilcs","unsc","oneone","onetwo","onethree","onefour","twoone","platoon"};
 				class ilcs
 				{
 					label = "ODST";
@@ -104,6 +104,10 @@ class XtdGearModels
 				{
 					label = "2-1";
 				};
+				class platoon
+				{
+					label = "Platoon"
+				}
 			};
 		};
 	};
@@ -293,6 +297,12 @@ class XtdGearInfos
 			role = "gunbagace";
 			squad = "twoone";
 		};	
+		class PHRP_ANPRC_521_Holland
+		{
+			model = "PHRP_Backpacks";
+			role = "PRC521";
+			squad = "platoon";
+		};
 	};
 };
 
@@ -339,7 +349,7 @@ class CfgVehicles
 	{
 		_generalMacro = "ace_gunbag_Tan";
 		displayName = "PHRP ILCS Gunbag";
-		maximumLoad = 130;
+		maximumLoad = 185;
 		ace_gunbag = 1;
 	};
 	class OPTRE_ANPRC_515;
@@ -369,6 +379,23 @@ class CfgVehicles
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\soft_backpack_co.paa","PHGear\data\packs\prc521_co.paa"};
+		tf_isolatedAmount = 0.65;
+		tf_encryptionCode = "tf_west_radio_code";
+		tf_dialog = "anarc210_radio_dialog";
+		tf_subtype = "digital_lr";
+		tf_range = 120000;
+		tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio = 1;
+		maximumLoad = 400;
+	};
+	class PHRP_ANPRC_521_Holland: OPTRE_ANPRC_521_green
+	{
+		author = "Soldner";
+		displayName = "PHRP ILCS AN/PRC-521";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\soft_backpack_co.paa","PHGear\data\packs\holland_prc521_co.paa"};
 		tf_isolatedAmount = 0.65;
 		tf_encryptionCode = "tf_west_radio_code";
 		tf_dialog = "anarc210_radio_dialog";

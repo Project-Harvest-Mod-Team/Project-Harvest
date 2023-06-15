@@ -103,7 +103,7 @@ class CfgWeapons
 		author = "Soldner";
 		displayName = "CH252D Helmet 2-1";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_twoonebase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_twoonebase_co.paa","PHHelmets\data\helmets\customvisor_twoonebase_co.paa"};
 	};
 	class PHRP_Kaker_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
 	{

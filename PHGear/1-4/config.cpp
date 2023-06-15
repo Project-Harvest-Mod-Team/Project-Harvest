@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","presscott","griffith","lark"};
+				values[] = {"default","corpsman","presscott","lark"};
 				class default
 				{
 					label = "Default";
@@ -46,10 +46,6 @@ class XtdGearModels
 				class presscott
 				{
 					label = "Presscott";
-				};
-				class griffith
-				{
-					label = "Griffith";
 				};
 				class lark
 				{
@@ -77,11 +73,6 @@ class XtdGearInfos
 		{
 			model = "PHRP_onefour_vests";
 			role = "presscott";
-		};
-		class PHRP_Griffith_Armor
-		{
-			model = "PHRP_onefour_vests";
-			role = "griffith";
 		};
 		class PHRP_Lark_Armor
 		{

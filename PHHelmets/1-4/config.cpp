@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","presscott","griffith","lark"};
+				values[] = {"default","presscott","lark"};
 				class default
 				{
 					label = "Default";
@@ -41,10 +41,6 @@ class XtdGearModels
 				class presscott
 				{
 					label = "Presscott";
-				};
-				class griffith
-				{
-					label = "Griffith";
 				};
 				class lark
 				{
@@ -66,11 +62,6 @@ class XtdGearInfos
 		class PHRP_Presscott_ODST_Helmet
 		{
 			role = "presscott";
-			model = "PHRP_onefour_helmets";
-		};
-		class PHRP_Griffith_ODST_Helmet
-		{
-			role = "griffith";
 			model = "PHRP_onefour_helmets";
 		};
 		class PHRP_Lark_ODST_Helmet
@@ -102,17 +93,7 @@ class CfgWeapons
 		author = "VorpalHotdog";
 		displayName = "CH252D Helmet (Presscott)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
-	class PHRP_Griffith_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "VibingVampire";
-		displayName = "CH252D Helmet (Griffith)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\customvisor_griffith_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\customvisor_presscott_co.paa"};
 	};
 	class PHRP_Lark_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
