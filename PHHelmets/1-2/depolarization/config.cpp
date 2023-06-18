@@ -24,6 +24,7 @@ class CfgWeapons
     class PHRP_Base_ODST_Helmet_dp;
 	class PHRP_Base_Scout_Helmet_dp;
 	class PHRP_Base_Operator_Helmet_dp;
+	class PHRP_Base_Recon_Helmet_dp;
 	class PHRP_onetwo_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
@@ -33,21 +34,21 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onetwobase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
-	class PHRP_Blackburn_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
+	class PHRP_Blackburn_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
 		author = "VorpalHotdog";
-		displayName = "CH252D Helmet (Blackburn)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		displayName = "Recon Helmet 1-2 (Blackburn)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa"};
 	};
 	class PHRP_Graves_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
 		author = "SirChungus";
-		displayName = "CH252D Helmet (Graves)";
+		displayName = "CH252D Helmet 1-2 (Graves)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_graves_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
@@ -56,7 +57,7 @@ class CfgWeapons
 		author = "";
 		scope = 1;
 		scopeArsenal = 1;
-		displayName = "Mark V/O Helmet (Morningstar)";
+		displayName = "Mark V/O Helmet 1-2 (Morningstar)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
 	};

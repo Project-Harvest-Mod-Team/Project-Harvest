@@ -39,7 +39,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "VorpalHotdog";
-		displayName = "CH252D Helmet (Presscott)";
+		displayName = "CH252D Helmet 1-4 (Presscott)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
@@ -48,7 +48,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "Enreth";
-		displayName = "CH252D Helmet (Lark)";
+		displayName = "CH252D Helmet 1-4 (Lark)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lark_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};

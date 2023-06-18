@@ -87,7 +87,7 @@ class CfgWeapons
 			"APO_BR", 
 			//"APO_Knife", 
 			"APO_SMG", 
-			//"APO_Sniper", 
+			"APO_Sniper", 
 			"CustomKit_Scorch"
 		};
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat","","LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"};
@@ -155,7 +155,7 @@ class CfgWeapons
 				"APO_BR", 
 				//"APO_Knife", 
 				"APO_SMG", 
-				//"APO_Sniper", 
+				"APO_Sniper", 
 				"CustomKit_Scorch"
 			};
 		};

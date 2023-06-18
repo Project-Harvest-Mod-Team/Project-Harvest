@@ -63,7 +63,7 @@ class XtdGearInfos
 			role = "default";
 			model = "PHRP_onetwo_helmets";
 		};
-		class PHRP_Blackburn_ODST_Helmet
+		class PHRP_Blackburn_Recon_Helmet
 		{
 			role = "blackburn";
 			model = "PHRP_onetwo_helmets";
@@ -84,6 +84,7 @@ class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_Operator_Helmet;
+	class PHRP_Base_Recon_Helmet;
 	class PHRP_onetwo_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -94,15 +95,15 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onetwobase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
-	class PHRP_Blackburn_ODST_Helmet : PHRP_Base_ODST_Helmet
+	class PHRP_Blackburn_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "VorpalHotdog";
-		displayName = "CH252D Helmet (Blackburn)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\customvisor_blackburn_co.paa"};
+		displayName = "Recon Helmet 1-2 (Blackburn)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","optre_unsc_units\army\data\recon_visor_co.paa"};
 	};
 	class PHRP_Graves_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
@@ -110,7 +111,7 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "SirChungus";
-		displayName = "CH252D Helmet (Graves)";
+		displayName = "CH252D Helmet 1-2 (Graves)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_graves_co.paa","PHHelmets\data\helmets\customvisor_graves_co.paa"};
 	};
@@ -120,7 +121,7 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "";
-		displayName = "Mark V/O Helmet (Morningstar)";
+		displayName = "Mark V/O Helmet 1-2 (Morningstar)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
 	};

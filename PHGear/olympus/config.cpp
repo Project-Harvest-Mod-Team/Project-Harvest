@@ -24,9 +24,9 @@ class XtdGearModels
 	class CamoBase;
 	class CfgWeapons
 	{
-		class PHRP_Erebus_vests
+		class PHRP_Olympus_vests
 		{
-			label = "Erebus Vests";
+			label = "Olympus Vests";
 			author = "Project Harvest Mod Team";
 			options[] = {"role"};
 			class role
@@ -64,27 +64,27 @@ class XtdGearInfos
 	{
 		class PHRP_Soldner_Armor
 		{
-			model = "PHRP_Erebus_vests";
+			model = "PHRP_Olympus_vests";
 			role = "soldner";
 		};
 		class PHRP_Kaz_Armor
 		{
-			model = "PHRP_Erebus_vests";
+			model = "PHRP_Olympus_vests";
 			role = "kaz";
 		};
 		class PHRP_Holland_Armor
 		{
-			model = "PHRP_Erebus_vests";
+			model = "PHRP_Olympus_vests";
 			role = "holland";
 		};
 		class PHRP_Moon_Armor
 		{
-			model = "PHRP_Erebus_vests";
+			model = "PHRP_Olympus_vests";
 			role = "moon";
 		};
 		class PHRP_Pjetrovic_Armor
 		{
-			model = "PHRP_Erebus_vests";
+			model = "PHRP_Olympus_vests";
 			role = "pjetrovic";
 		};
 	};
