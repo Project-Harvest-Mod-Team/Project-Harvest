@@ -38,7 +38,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "MrMicrobe";
-		displayName = "CH252D Helmet (Samson)";
+		displayName = "CH252D Helmet 1-3 (Samson)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
@@ -47,7 +47,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "MrMicrobe";
-		displayName = "Mark V/EOD Helmet (Hazard)";
+		displayName = "Mark V/EOD Helmet 1-3 (Hazard)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_hazard_co.paa","PHHelmets\data\helmets\customvisor_hazard_co.paa"};
 	};
@@ -56,7 +56,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "VibingVampire";
-		displayName = "CH252D Helmet (Griffith)";
+		displayName = "CH252D Helmet 1-3 (Griffith)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};

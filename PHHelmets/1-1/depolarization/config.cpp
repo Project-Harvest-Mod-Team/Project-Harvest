@@ -39,7 +39,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "VorpalHotdog";
-		displayName = "CH252D Helmet (Erikson)";
+		displayName = "CH252D Helmet 1-1 (Erikson)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
@@ -48,7 +48,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "Soldner";
-		displayName = "CH252D Helmet (Stone)";
+		displayName = "CH252D Helmet 1-1 (Stone)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
@@ -57,7 +57,7 @@ class CfgWeapons
 		scope = 1;
 		scopeArsenal = 1;
 		author = "Soldner";
-		displayName = "CH252D Helmet (Riot)";
+		displayName = "CH252D Helmet 1-1 (Riot)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_riot_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
