@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","samson","hazard","griffith"};
+				values[] = {"default","samson","hazard","griffith","payne"};
 				class default
 				{
 					label = "Default";
@@ -49,6 +49,10 @@ class XtdGearModels
 				class griffith
 				{
 					label = "Griffith";
+				};
+				class payne
+				{
+					label = "Payne";
 				};
 			};
 		};
@@ -76,6 +80,11 @@ class XtdGearInfos
 		class PHRP_Griffith_ODST_Helmet
 		{
 			role = "griffith";
+			model = "PHRP_onethree_helmets";
+		};
+		class PHRP_Payne_ODST_Helmet
+		{
+			role = "payne";
 			model = "PHRP_onethree_helmets";
 		};
 	};
@@ -124,5 +133,15 @@ class CfgWeapons
 		displayName = "CH252D Helmet 1-3 (Griffith)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\customvisor_griffith_co.paa"};
+	};
+	class PHRP_Payne_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "CH252D Helmet 1-3 (Payne)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 };

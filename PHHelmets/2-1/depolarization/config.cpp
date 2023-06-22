@@ -70,13 +70,4 @@ class CfgWeapons
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
-	class PHRP_Payne_HRPilot_Helmet_dp : PHRP_Base_HRPilot_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "Jimbo";
-		displayName = "Mark V/P Helmet 2-1 (Payne)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_payne_co.paa"};
-	};
 };

@@ -63,7 +63,7 @@ class XtdGearInfos
 			role = "default";
 			model = "PHRP_oneone_helmets";
 		};
-		class PHRP_Erikson_ODST_Helmet
+		class PHRP_Erikson_Recon_Helmet
 		{
 			role = "erikson";
 			model = "PHRP_oneone_helmets";
@@ -84,6 +84,7 @@ class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_Scout_Helmet;
+	class PHRP_Base_Recon_Helmet;
 	class PHRP_oneone_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -94,14 +95,14 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_oneonebase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
-	class PHRP_Erikson_ODST_Helmet : PHRP_Base_ODST_Helmet
+	class PHRP_Erikson_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "VorpalHotdog";
-		displayName = "CH252D Helmet 1-1 (Erikson)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		displayName = "Recon Helmet 1-1 (Erikson)";
+		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","PHHelmets\data\helmets\customvisor_erikson_co.paa"};
 	};
 	class PHRP_Stone_ODST_Helmet : PHRP_Base_ODST_Helmet
