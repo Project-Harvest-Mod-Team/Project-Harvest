@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","kaker","wolf","kincaid","coleson","payne"};
+				values[] = {"default","corpsman","kaker","wolf","kincaid","coleson"};
 				class default
 				{
 					label = "Default";
@@ -58,10 +58,6 @@ class XtdGearModels
 				class coleson
 				{
 					label = "Coleson";
-				};
-				class payne
-				{
-					label = "Payne";
 				};
 			};
 		};
@@ -100,11 +96,6 @@ class XtdGearInfos
 		{
 			model = "PHRP_twoone_vests";
 			role = "coleson";
-		};
-		class PHRP_Payne_Armor
-		{
-			model = "PHRP_twoone_vests";
-			role = "payne";
 		};
 	};
 };

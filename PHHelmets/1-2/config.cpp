@@ -100,7 +100,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "VorpalHotdog";
+		author = "Jimbo";
 		displayName = "Recon Helmet 1-2 (Blackburn)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","optre_unsc_units\army\data\recon_visor_co.paa"};

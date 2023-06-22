@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","kaker","wolf","kincaid","coleson","payne"};
+				values[] = {"default","kaker","wolf","kincaid","coleson"};
 				class default
 				{
 					label = "Default";
@@ -53,10 +53,6 @@ class XtdGearModels
 				class coleson
 				{
 					label = "Coleson";
-				};
-				class payne
-				{
-					label = "Payne";
 				};
 			};
 		};
@@ -89,11 +85,6 @@ class XtdGearInfos
 		class PHRP_Coleson_EOD_Helmet
 		{
 			role = "coleson";
-			model = "PHRP_twoone_helmets";
-		};
-		class PHRP_Payne_HRPilot_Helmet
-		{
-			role = "payne";
 			model = "PHRP_twoone_helmets";
 		};
 	};
@@ -153,15 +144,5 @@ class CfgWeapons
 		displayName = "Mark V/C Helmet 2-1 (Coleson)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
-	};
-	class PHRP_Payne_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Jimbo";
-		displayName = "Mark V/P Helmet 2-1 (Payne)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_payne_co.paa"};
 	};
 };

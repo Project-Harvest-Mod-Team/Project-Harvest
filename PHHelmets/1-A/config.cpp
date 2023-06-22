@@ -74,7 +74,7 @@ class XtdGearInfos
 			role = "aturr";
 			model = "PHRP_oneA_helmets";
 		};
-		class PHRP_Buckley_ODST_Helmet
+		class PHRP_Buckley_Recon_Helmet
 		{
 			role = "buckley";
 			model = "PHRP_oneA_helmets";
@@ -83,6 +83,7 @@ class XtdGearInfos
 };
 class CfgWeapons
 {
+	class PHRP_Base_Recon_Helmet;
 	class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_CQB_Helmet;
 	class PHRP_Base_Commando_Helmet;
@@ -106,24 +107,34 @@ class CfgWeapons
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
-	class PHRP_Aturr_ODST_Helmet : PHRP_Base_ODST_Helmet
+	/*class PHRP_Aturr_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "Soldner";
-		displayName = "CH252D Helmet 1-A (Aturr)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		displayName = "Recon Helmet 1-A (Aturr)";
+		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","PHHelmets\data\helmets\customvisor_aturr_co.paa"};
-	};
-	class PHRP_Buckley_ODST_Helmet : PHRP_Base_ODST_Helmet
+	};*/
+	class PHRP_Aturr_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "VorpalHotDog";
-		displayName = "CH252D Helmet 1-A (Buckley)";
+		author = "SirChungus";
+		displayName = "CH252D Helmet 1-A (Aturr)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","PHHelmets\data\helmets\customvisor_aturr_co.paa"};
+	};
+	class PHRP_Buckley_Recon_Helmet : PHRP_Base_Recon_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VibingVampire";
+		displayName = "Recon Helmet 1-A (Buckley)";
+		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_buckley_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa"};
 	};
 };
