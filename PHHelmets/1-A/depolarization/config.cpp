@@ -43,16 +43,16 @@ class CfgWeapons
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
-	/*class PHRP_Aturr_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
+	class PHRP_Aturr_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
-		author = "VibingVampire";
+		author = "Soldner";
 		displayName = "Recon Helmet 1-A (Aturr)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_buckley_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa"};
-	};*/
-	class PHRP_Aturr_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa"};
+	};/*
+	class PhRP_Aturr_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
@@ -60,7 +60,7 @@ class CfgWeapons
 		displayName = "CH252D Helmet 1-A (Aturr)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
-	};
+	};*/
 	class PHRP_Buckley_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
 		scope = 1;

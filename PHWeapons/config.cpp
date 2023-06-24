@@ -60,8 +60,8 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Owner";
-				values[] = {"SoldnerDMR","HollandAK120","KazMA37K","MoonMA37K","ColesonM90"};
-				class SoldnerDMR
+				values[] = {"Soldner","HollandAK120","KazMA37K","MoonMA37K","ColesonM90"};
+				class Soldner
 				{
 					label = "Soldner";
 				};
@@ -112,10 +112,10 @@ class XtdGearInfos
 			model = "phrp_personal_weapons";
 			type = "HollandAK120";
 		};
-		class PHRP_Soldner_M392_DMR
+		class PHRP_Soldner_SRS99C
 		{
 			model = "phrp_personal_weapons";
-			type = "SoldnerDMR";
+			type = "Soldner";
 		};
 		class PHRP_Kaz_MA37K
 		{
@@ -221,73 +221,36 @@ class CfgWeapons
 		};
 	};
 	
-	//Soldner M392X
-	class OPTRE_M392_Scope;
-	class InventoryOpticsItem_Base_F;
-	class ItemInfo;
-	class PHRP_M392_Scope: OPTRE_M392_Scope
+	//Soldner SRS
+	class OPTRE_SRS99C;
+	class PHRP_Soldner_SRS99C : OPTRE_SRS99C
 	{
 		author = "Soldner";
-		displayName = "Soldner's M392X Scope";
-		picture = "\OPTRE_weapons\br\icons\scope.paa";
-		model = "\OPTRE_Weapons\DMR\M392_Scope.p3d";
-		class ItemInfo: InventoryOpticsItem_Base_F
-		{
-			mass = 2;
-			opticType = 1;
-			optics = 1;
-			modelOptics = "\OPTRE_Weapons\DMR\M392_Scope.p3d";
-			class OpticsModes
-			{
-				class PHRP_Scope
-				{
-					opticsID = 1;
-					useModelOptics = 1;
-					opticsZoomMin = 0.01;
-					opticsZoomMax = 0.25;
-					opticsZoomInit = 0.25;
-					discretefov[] = {0.25,0.05,0.025,0.01,0.001};
-					discreteinitIndex = 0;
-					opticsPPEffects[] = {""};
-					opticsFlare = 0;
-					opticsDisablePeripherialVision = 0;
-					memoryPointCamera = "opticView";
-					modelOptics[] = {"\OPTRE_Weapons\DMR\M395_optic10.p3d"};
-					visionMode[] = {"Normal","NVG","TI"};
-					thermalMode[] = {0,1};
-					discreteDistance[] = {100,300,400,500,600,700,800,900,1000};
-					discreteDistanceInitIndex = 1;
-					distanceZoomMin = 100;
-					distanceZoomMax = 1000;
-					cameraDir = "";
-				};
-			};
-		};
-		inertia = 0.1;
-	};
-	class OPTRE_M392_DMR;
-	class PHRP_Soldner_M392_DMR: OPTRE_M392_DMR
-	{
-		baseWeapon = "PHRP_Soldner_M392_DMR";
-		displayName = "[PHRP] Soldner's M392X DMR";
-		canShootInWater = 1;
-		magazineWell[] += {"MEU_marksmen_uw"};
-		magazines[] = {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag_Tracer","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_AP","OPTRE_15Rnd_762x51_Mag_APT","OPTRE_15Rnd_762x51_Mag_JHP","OPTRE_15Rnd_762x51_Mag_JHPT","OPTRE_15Rnd_762x51_Mag_SS","OPTRE_15Rnd_762x51_Mag_SST","OPTRE_15Rnd_762x51_Mag_FS","OPTRE_15Rnd_762x51_Mag_FST","OPTRE_15Rnd_DMR_762x51_Mag_AP","OPTRE_15Rnd_DMR_762x51_Mag_APT","OPTRE_15Rnd_DMR_762x51_Mag_JHP","OPTRE_15Rnd_DMR_762x51_Mag_JHPT","OPTRE_15Rnd_DMR_762x51_Mag_SS","OPTRE_15Rnd_DMR_762x51_Mag_SST","OPTRE_15Rnd_DMR_762x51_Mag_FS","OPTRE_15Rnd_DMR_762x51_Mag_FST"};
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"PHWeapons\data\Soldner_dmr_co.paa"};
+		model = "\OPTRE_Weapons\Sniper\SRS99C.p3d";
+		displayName = "Soldner's SRS99C-S2 AM Sniper Rifle";
+		picture = "\OPTRE_weapons\sniper\icons\sniper2.paa";
+		reloadAction = "WBK_SRS99C_Reload";
+		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\Sniper\data\anim\srs99c_handpos.rtm","Spartan_ManSkeleton","\OPTRE_MJOLNIR\data\anims\OPTRE_anims\Weapons\srs99C_Spartan_handpos.rtm"};
+		baseWeapon = "PHRP_Soldner_SRS99C";
+		hiddenSelections[] = {"camo","camo1","camo_bipod"};
+		hiddenSelectionsTextures[] = {"PHWeapons\data\soldner_mainbody_co.paa","OPTRE_Weapons\Sniper\data\mag_co.paa","PHWeapons\data\soldner_bipod_co.paa"};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			class MuzzleSlot: MuzzleSlot
 			{
-				compatibleitems[] = {"muzzle_snds_65_TI_blk_F"};
+				compatibleitems[] = {};
 			};
 			class CowsSlot: CowsSlot
 			{
-				compatibleitems[] = {"PHRP_M392_Scope"};
+				compatibleitems[] = {"OPTRE_SRS99C_Scope"};
 			};
 			class PointerSlot: PointerSlot
 			{
-				compatibleitems[] = {"acc_pointer_ir","acc_flashlight","ace_acc_pointer_green"};
+				compatibleitems[] = {};
+			};
+			class UnderBarrelSlot: UnderBarrelSlot
+			{
+				compatibleitems[] = {};
 			};
 		};
 	};
