@@ -75,7 +75,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Squad";
-				values[] = {"ilcs","unsc","oneone","onetwo","onethree","onefour","twoone","platoon"};
+				values[] = {"ilcs","unsc","oneone","onetwo","onethree","onefour","twoone","company"};
 				class ilcs
 				{
 					label = "ODST";
@@ -104,9 +104,9 @@ class XtdGearModels
 				{
 					label = "2-1";
 				};
-				class platoon
+				class company
 				{
-					label = "Platoon"
+					label = "Company"
 				}
 			};
 		};
@@ -296,12 +296,36 @@ class XtdGearInfos
 			model = "PHRP_Backpacks";
 			role = "gunbagace";
 			squad = "twoone";
-		};	
+		};
 		class PHRP_ANPRC_521_Holland
 		{
 			model = "PHRP_Backpacks";
 			role = "PRC521";
-			squad = "platoon";
+			squad = "company";
+		};
+		class PHRP_Company_ILCS
+		{
+			model = "PHRP_Backpacks";
+			role = "basic";
+			squad = "company";
+		};
+		class PHRP_Company_ILCS_Corpsman
+		{
+			model = "PHRP_Backpacks";
+			role = "medic";
+			squad = "company";
+		};
+		class PHRP_Company_ILCS_Heavy
+		{
+			model = "PHRP_Backpacks";
+			role = "heavy";
+			squad = "company";
+		};
+		class PHRP_Company_ILCS_Gunbag
+		{
+			model = "PHRP_Backpacks";
+			role = "gunbagace";
+			squad = "company";
 		};
 	};
 };
@@ -390,7 +414,7 @@ class CfgVehicles
 	};
 	class PHRP_ANPRC_521_Holland: OPTRE_ANPRC_521_green
 	{
-		author = "Soldner";
+		author = "Holland";
 		displayName = "PHRP ILCS AN/PRC-521";
 		scope = 2;
 		scopeCurator = 2;
@@ -555,5 +579,25 @@ class CfgVehicles
 	{
 		displayName = "PHRP ILCS 2-1 Gunbag";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_twoone_co.paa"};
+	};
+	class PHRP_Company_ILCS: PHRP_ILCS
+	{
+		displayName = "PHRP 2-1 ILCS Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_company_co.paa"};
+	};
+	class PHRP_Company_ILCS_Heavy: PHRP_ILCS_Heavy
+	{
+		displayName = "PHRP 2-1 ILCS Heavy Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_company_co.paa"};
+	};
+	class PHRP_Company_ILCS_Corpsman: PHRP_ILCS_Corpsman
+	{
+		displayName = "PHRP 2-1 ILCS Corpsman Rucksack";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_company_co.paa"};
+	};
+	class PHRP_Company_ILCS_Gunbag : PHRP_ILCS_Gunbag
+	{
+		displayName = "PHRP ILCS Company Gunbag";
+		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_company_co.paa"};
 	};
 };

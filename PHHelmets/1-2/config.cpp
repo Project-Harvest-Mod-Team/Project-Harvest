@@ -103,7 +103,7 @@ class CfgWeapons
 		author = "Jimbo";
 		displayName = "Recon Helmet 1-2 (Blackburn)";
 		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","optre_unsc_units\army\data\recon_visor_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\customvisor_blackburn_co.paa"};
 	};
 	class PHRP_Graves_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
@@ -123,6 +123,6 @@ class CfgWeapons
 		author = "";
 		displayName = "Mark V/O Helmet 1-2 (Morningstar)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
 	};
 };
