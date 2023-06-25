@@ -49,8 +49,8 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "Soldner";
 		displayName = "Recon Helmet 1-A (Aturr)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa"};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 	class PHRP_Buckley_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
@@ -58,7 +58,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "VibingVampire";
 		displayName = "Recon Helmet 1-A (Buckley)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_buckley_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa"};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_buckley_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 };

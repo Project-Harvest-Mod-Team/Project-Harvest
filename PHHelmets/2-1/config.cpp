@@ -122,8 +122,8 @@ class CfgWeapons
 		scopeArsenal = 2;
 		author = "MrMicrobe";
 		displayName = "Recon Helmet 2-1 (Wolf)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\customvisor_wolf_co.paa"};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\customvisor_wolf_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 	class PHRP_Kincaid_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
 	{
