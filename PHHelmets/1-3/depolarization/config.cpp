@@ -24,6 +24,7 @@ class CfgWeapons
     class PHRP_Base_ODST_Helmet_dp;
 	class PHRP_Base_CQB_Helmet_dp;
 	class PHRP_Base_EOD_Helmet_dp;
+	class PHRP_Base_Operator_Helmet_dp;
 	class PHRP_onethree_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
@@ -60,13 +61,13 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
-	class PHRP_Payne_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
+	class PHRP_Payne_Operator_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
-		author = "Jimbo";
+		author = "Soldner";
 		displayName = "CH252D Helmet 1-3 (Payne)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_payne_co.paa"};
 	};
 };

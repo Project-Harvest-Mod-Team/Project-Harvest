@@ -41,8 +41,8 @@ class CfgWeapons
 		scopeArsenal = 1;
 		author = "VorpalHotdog";
 		displayName = "Recon Helmet 1-1 (Erikson)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa"};
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 	class PHRP_Stone_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{

@@ -176,10 +176,14 @@ class CfgWeapons
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "Recon Helmet - Base";
         picture = "\OPTRE_UNSC_Units\Army\icons\odst_recon";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\recon_co.paa","optre_unsc_units\army\data\recon_visor_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 		class ItemInfo: ItemInfo
 		{
 			mass = 30;
 			uniformModel = "OPTRE_UNSC_Units\Army\recon_helmet";
+			hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+			hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\recon_co.paa","optre_unsc_units\army\data\recon_visor_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 			class HitpointsProtectionInfo
 			{
 				class Face
@@ -216,10 +220,14 @@ class CfgWeapons
 		ace_hearing_lowerVolume = 0.25;
 		displayName = "Recon Helmet - Base";
         picture = "\OPTRE_UNSC_Units\Army\icons\odst_recon";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\recon_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 		class ItemInfo: ItemInfo
 		{
 			mass = 30;
 			uniformModel = "OPTRE_UNSC_Units\Army\recon_helmet";
+			hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+			hiddenSelectionsTextures[] = {"optre_unsc_units\army\data\recon_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 			class HitpointsProtectionInfo
 			{
 				class Face

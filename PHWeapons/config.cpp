@@ -227,7 +227,7 @@ class CfgWeapons
 	{
 		author = "Soldner";
 		model = "\OPTRE_Weapons\Sniper\SRS99C.p3d";
-		displayName = "Soldner's SRS99C-S2 AM Sniper Rifle";
+		displayName = "[PHRP] Soldner's SRS99C-S2 AM Sniper Rifle";
 		picture = "\OPTRE_weapons\sniper\icons\sniper2.paa";
 		reloadAction = "WBK_SRS99C_Reload";
 		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\Sniper\data\anim\srs99c_handpos.rtm","Spartan_ManSkeleton","\OPTRE_MJOLNIR\data\anims\OPTRE_anims\Weapons\srs99C_Spartan_handpos.rtm"};
@@ -246,7 +246,7 @@ class CfgWeapons
 			};
 			class PointerSlot: PointerSlot
 			{
-				compatibleitems[] = {};
+				compatibleitems[] = {"acc_pointer_ir"};
 			};
 			class UnderBarrelSlot: UnderBarrelSlot
 			{

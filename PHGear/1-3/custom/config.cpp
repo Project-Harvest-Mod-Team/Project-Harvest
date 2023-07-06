@@ -765,7 +765,7 @@ class CfgWeapons
 		{
 			"PHGear\data\Army\data\vest_odst_co.paa",
 			"PHGear\data\army\data\armor_odst_co.paa",
-			"PHGear\data\armor\legs_base_co.paa",
+			"PHGear\data\armor\customlegs_payne_co.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
 			"PHGear\data\armor\customarmor_payne_co.paa"
 		};
