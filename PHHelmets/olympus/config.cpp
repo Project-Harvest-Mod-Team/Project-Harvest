@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","moon","kaz","pjetrovic","holland"};
+				values[] = {"soldner","moon","tepfer","kaz","pjetrovic","holland"};
 				class soldner
 				{
 					label = "Soldner";
@@ -41,6 +41,10 @@ class XtdGearModels
 				class kaz
 				{
 					label = "Kaz";
+				};
+				class tepfer
+				{
+					label = "Tepfer";
 				};
 				class holland
 				{
@@ -70,6 +74,11 @@ class XtdGearInfos
 		class PHRP_Kaz_Operator_Helmet
 		{
 			role = "kaz";
+			model = "PHRP_olympus_helmets";
+		};
+		class PHRP_Tepfer_ODST_Helmet
+		{
+			role = "tepfer";
 			model = "PHRP_olympus_helmets";
 		};
 		class PHRP_Holland_ODST_Helmet
@@ -146,6 +155,17 @@ class CfgWeapons
 		displayName = "Mark V/O Helmet (Kaz)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaz_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
+	};
+	class PHRP_Tepfer_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "CH252D Helmet (Tepfer)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tepfer_co.paa","PHHelmets\data\helmets\customvisor_tepfer_co.paa"};
 	};
 	class PHRP_Holland_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{

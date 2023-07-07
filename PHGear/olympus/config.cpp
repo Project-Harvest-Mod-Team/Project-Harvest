@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","kaz","holland","moon","pjetrovic"};
+				values[] = {"soldner","kaz","tepfer","holland","moon","pjetrovic"};
 				class soldner
 				{
 					label = "Soldner";
@@ -41,6 +41,10 @@ class XtdGearModels
 				class kaz
 				{
 					label = "Kaz";
+				};
+				class tepfer
+				{
+					label = "Tepfer";
 				};
 				class holland
 				{
@@ -71,6 +75,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Olympus_vests";
 			role = "kaz";
+		};
+		class PHRP_Tepfer_Armor
+		{
+			model = "PHRP_Olympus_vests";
+			role = "tepfer";
 		};
 		class PHRP_Holland_Armor
 		{
