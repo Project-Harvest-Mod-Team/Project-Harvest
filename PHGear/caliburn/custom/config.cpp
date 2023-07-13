@@ -19,6 +19,14 @@ class CfgPatches //class desc.
 		};
 	};
 };
+class cfgVehicles
+{
+	class ContainerSupply;
+	class Supply2000: ContainerSupply		// The class name does not really matter, but for clarity, it should be SupplyXX, where XX is the desired capacity value.
+	{
+		maximumLoad = 2000;				// Replace XX with the desired capacity value.
+	};
+};
 class CfgWeapons
 {
 	class OPTRE_MJOLNIR_Mk4Armor;
@@ -47,12 +55,71 @@ class CfgWeapons
 		scopeArsenal = 2;
 		hiddenSelections[] = {"camo1","camo2","attach_security1","attach_security2","attach_fjpara1","attach_fjpara2","attach_commando1","attach_commando2","attach_mkv1","attach_mkv2","attach_grenadier1","attach_grenadier2","attach_cqc1","attach_cqc2","attach_gren_ua","attach_knees_fjpara"};
 		hiddenSelectionsTextures[] = {"PHGear\data\armor\chest_G017_co.paa","PHGear\data\armor\legs_G017_co.paa"};
-		containerClass = "Supply400";
 		class ItemInfo: ItemInfo
 		{
+			containerClass = "Supply2000";
 			uniformModel = "\OPTRE_UNSC_Units\Army\MKVB_Armor_Human.p3d";
 			hiddenSelections[] = {"camo1","camo2","attach_security1","attach_security2","attach_fjpara1","attach_fjpara2","attach_commando1","attach_commando2","attach_mkv1","attach_mkv2","attach_grenadier1","attach_grenadier2","attach_cqc1","attach_cqc2","attach_gren_ua","attach_knees_fjpara"};
 			hiddenSelectionsTextures[] = {"PHGear\data\armor\chest_G017_co.paa","PHGear\data\armor\legs_G017_co.paa"};
+			mass = 20;
+			passThrough = 0.1;
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 45;
+					passThrough = 0.1;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 45;
+					passThrough = 0.1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 45;
+					passThrough = 0.1;
+				};
+				class Hands
+				{
+					hitpointName = "HitHands";
+					armor = 45;
+					passThrough = 0.1;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 45;
+					passThrough = 0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 45;
+					passThrough = 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 45;
+					passThrough = 0.1;
+				};
+				class Pelvis
+				{
+					hitpointName = "HitPelvis";
+					armor = 45;
+					passThrough = 0.1;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					armor = 45;
+					passThrough = 0.1;
+				};
+			};
 		};
 	};
 	class PHRP_Oliver_My_Beloved: PHRP_Base_Spartan_Armor

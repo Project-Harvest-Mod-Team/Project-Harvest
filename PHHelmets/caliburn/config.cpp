@@ -129,6 +129,13 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Helmet_G017_co.paa","OPTRE_MJOLNIR_Units\data\Visor_MkVB_Black_CO.paa"};
 		};
 	};
+	class PHRP_G017_Helmet_dp: PHRP_G017_Helmet
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		scopeCurator = 1;
+		class ItemInfo: ItemInfo{};
+	};
 	class PHRP_Oliver_My_Beloved_Helmet: OPTRE_MJOLNIR_Mk4Helmet
 	{
 		author = "Soldner";
