@@ -401,7 +401,7 @@ class CfgVehicles
 	{
 		_generalMacro = "ace_gunbag_Tan";
 		displayName = "PHRP ILCS Gunbag";
-		maximumLoad = 185;
+		maximumLoad = 250;
 		ace_gunbag = 1;
 	};
 	class OPTRE_ANPRC_515;
@@ -527,7 +527,6 @@ class CfgVehicles
 	{
 		displayName = "PHRP ILCS Olympus Gunbag";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_company_co.paa"};
-		maximumLoad = 250;
 	};
 	class PHRP_oneA_ILCS: PHRP_ILCS
 	{
