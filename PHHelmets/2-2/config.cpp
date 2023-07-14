@@ -19,33 +19,24 @@ class CfgPatches //class desc.
 		};
 	};
 };
-
 class XtdGearModels
 {
 	class CamoBase;
 	class CfgWeapons
 	{
-		class PHRP_twoone_vests
+		class PHRP_twotwo_helmets
 		{
-			label = "2-1 Vests";
+			label = "2-2 Helmets";
 			author = "Project Harvest Mod Team";
-			options[] = {"role"};
+			options[] = {"Role"};
 			class role
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","coleson"};
+				values[] = {"default"};
 				class default
 				{
 					label = "Default";
-				};
-				class corpsman
-				{
-					label = "Corpsman";
-				};
-				class coleson
-				{
-					label = "Coleson";
 				};
 			};
 		};
@@ -55,20 +46,27 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_twoone_Armor
+		class PHRP_twotwo_ODST_Helmet
 		{
-			model = "PHRP_twoone_vests";
 			role = "default";
+			model = "PHRP_twotwo_helmets";
 		};
-		class PHRP_twoonemedic_Armor
-		{
-			model = "PHRP_twoone_vests";
-			role = "corpsman";
-		}; 
-		class PHRP_Coleson_Armor
-		{
-			model = "PHRP_twoone_vests";
-			role = "coleson";
-		};
+	};
+};
+class CfgWeapons
+{
+    class PHRP_Base_ODST_Helmet;
+	class PHRP_Base_HRPilot_Helmet;
+	class PHRP_Base_Recon_Helmet;
+	class PHRP_Base_EOD_Helmet;
+	class PHRP_twotwo_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "CH252D Helmet 2-2";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_twotwobase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_co.paa"};
 	};
 };

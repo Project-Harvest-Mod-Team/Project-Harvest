@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","miller","craven","jaeger","owessel"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","miller","craven","jaeger","owessel","kaker","wolf","kincaid"};
 				class recruit
 				{
 					label = "Recruit";
@@ -93,6 +93,18 @@ class XtdGearModels
 				class owessel
 				{
 					label = "Owessel";
+				};
+				class kaker
+				{
+					label = "Kaker";
+				};
+				class wolf
+				{
+					label = "Wolf";
+				};
+				class kincaid
+				{
+					label = "Kincaid";
 				};
 			};
 		};
@@ -177,6 +189,21 @@ class XtdGearInfos
 			role = "owessel";
 			model = "PHRP_reservist_helmets";
 		};
+		class PHRP_Kaker_HRPilot_Helmet
+		{
+			role = "kaker";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Wolf_Recon_Helmet
+		{
+			role = "wolf";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Kincaid_HRPilot_Helmet
+		{
+			role = "kincaid";
+			model = "PHRP_reservist_helmets";
+		};
 	};
 };
 class CfgWeapons
@@ -186,6 +213,7 @@ class CfgWeapons
 	class PHRP_Base_HRPilot_Helmet;
 	class PHRP_Base_CQC_Helmet;
 	class PHRP_Base_Scout_Helmet;
+	class PHRP_Base_Recon_Helmet;
 	class PHRP_Recruit_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
@@ -343,5 +371,35 @@ class CfgWeapons
 		displayName = "Mark V/P Helmet (Owessel)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
+	};
+	class PHRP_Kaker_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "Mark V/P Helmet (Kaker)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
+	};
+	class PHRP_Wolf_Recon_Helmet : PHRP_Base_Recon_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Recon Helmet (Wolf)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\customvisor_wolf_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+	};
+	class PHRP_Kincaid_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "Mark V/P Helmet (Kincaid)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kincaid_co.paa","PHHelmets\data\helmets\customvisor_kincaid_co.paa"};
 	};
 };

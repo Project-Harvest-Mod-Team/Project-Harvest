@@ -33,22 +33,10 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","kaker","wolf","kincaid","coleson"};
+				values[] = {"default","coleson"};
 				class default
 				{
 					label = "Default";
-				};
-				class kaker
-				{
-					label = "Kaker";
-				};
-				class wolf
-				{
-					label = "Wolf";
-				};
-				class kincaid
-				{
-					label = "Kincaid";
 				};
 				class coleson
 				{
@@ -65,21 +53,6 @@ class XtdGearInfos
 		class PHRP_twoone_ODST_Helmet
 		{
 			role = "default";
-			model = "PHRP_twoone_helmets";
-		};
-		class PHRP_Kaker_HRPilot_Helmet
-		{
-			role = "kaker";
-			model = "PHRP_twoone_helmets";
-		};
-		class PHRP_Wolf_Recon_Helmet
-		{
-			role = "wolf";
-			model = "PHRP_twoone_helmets";
-		};
-		class PHRP_Kincaid_HRPilot_Helmet
-		{
-			role = "kincaid";
 			model = "PHRP_twoone_helmets";
 		};
 		class PHRP_Coleson_EOD_Helmet
@@ -104,36 +77,6 @@ class CfgWeapons
 		displayName = "CH252D Helmet 2-1";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_twoonebase_co.paa","PHHelmets\data\helmets\customvisor_twoonebase_co.paa"};
-	};
-	class PHRP_Kaker_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Jimbo";
-		displayName = "Mark V/P Helmet 2-1 (Kaker)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
-	};
-	class PHRP_Wolf_Recon_Helmet : PHRP_Base_Recon_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Recon Helmet 2-1 (Wolf)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\customvisor_wolf_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
-	};
-	class PHRP_Kincaid_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Jimbo";
-		displayName = "Mark V/P Helmet 2-1 (Kincaid)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kincaid_co.paa","PHHelmets\data\helmets\customvisor_kincaid_co.paa"};
 	};
 	class PHRP_Coleson_EOD_Helmet : PHRP_Base_EOD_Helmet
 	{

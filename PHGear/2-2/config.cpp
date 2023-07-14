@@ -25,16 +25,16 @@ class XtdGearModels
 	class CamoBase;
 	class CfgWeapons
 	{
-		class PHRP_twoone_vests
+		class PHRP_twotwo_vests
 		{
-			label = "2-1 Vests";
+			label = "2-2 Vests";
 			author = "Project Harvest Mod Team";
 			options[] = {"role"};
 			class role
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","coleson"};
+				values[] = {"default","corpsman"};
 				class default
 				{
 					label = "Default";
@@ -42,10 +42,6 @@ class XtdGearModels
 				class corpsman
 				{
 					label = "Corpsman";
-				};
-				class coleson
-				{
-					label = "Coleson";
 				};
 			};
 		};
@@ -55,20 +51,15 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_twoone_Armor
+		class PHRP_twotwo_Armor
 		{
-			model = "PHRP_twoone_vests";
+			model = "PHRP_twotwo_vests";
 			role = "default";
 		};
-		class PHRP_twoonemedic_Armor
+		class PHRP_twotwomedic_Armor
 		{
-			model = "PHRP_twoone_vests";
+			model = "PHRP_twotwo_vests";
 			role = "corpsman";
 		}; 
-		class PHRP_Coleson_Armor
-		{
-			model = "PHRP_twoone_vests";
-			role = "coleson";
-		};
 	};
 };
