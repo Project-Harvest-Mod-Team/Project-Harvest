@@ -34,34 +34,10 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"g017","b192","o148","d236","b232","g129","b170"};
+				values[] = {"g017"};
 				class g017
 				{
 					label = "G017";
-				};
-				class b192
-				{
-					label = "B192";
-				};
-				class o148
-				{
-					label = "148";
-				};
-				class d236
-				{
-					label = "D236";
-				};
-				class b232
-				{
-					label = "B232";
-				};
-				class g129
-				{
-					label = "G129"
-				};
-				class b170
-				{
-					label = "B170"
 				};
 			};
 		};

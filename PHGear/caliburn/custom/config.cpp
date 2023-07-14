@@ -122,6 +122,68 @@ class CfgWeapons
 			};
 		};
 	};
+	class PHRP_B192_Armor: PHRP_Base_Spartan_Armor
+	{
+		dlc = "Project Harvest Armory";
+		author = "Soldner";
+		displayName = "Spartan Armor B232";
+		model = "\OPTRE_MJOLNIR_Units\armormkvb.p3d";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2",
+			"attach_security1",
+			"attach_security2",
+			"attach_fjpara1",
+			"attach_fjpara2",
+			"attach_commando1",
+			"attach_commando2",
+			"attach_mkv1",
+			"attach_mkv2",
+			"attach_grenadier1",
+			"attach_grenadier2",
+			"attach_cqc1",
+			"attach_cqc2",
+			"attach_gren_ua",
+			"attach_knees_fjpara"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"PHGear\data\armor\armor_B192_co.paa",
+			"PHGear\data\armor\legs_B192_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "\OPTRE_MJOLNIR_Units\armormkvb.p3d";
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2",
+				"attach_security1",
+				"attach_security2",
+				"attach_fjpara1",
+				"attach_fjpara2",
+				"attach_commando1",
+				"attach_commando2",
+				"attach_mkv1",
+				"attach_mkv2",
+				"attach_grenadier1",
+				"attach_grenadier2",
+				"attach_cqc1",
+				"attach_cqc2",
+				"attach_gren_ua",
+				"attach_knees_fjpara"
+			};
+			hiddenSelectionsTextures[] = 
+			{
+				"PHGear\data\armor\armor_B192_co.paa",
+				"PHGear\data\armor\legs_B192_co.paa"
+			};
+		};
+	};
 	class PHRP_Oliver_My_Beloved: PHRP_Base_Spartan_Armor
 	{
 		dlc = "Project Harvest Armory";
@@ -270,68 +332,6 @@ class CfgWeapons
 			{
 				"PHGear\data\armor\armor_D236_co.paa",
 				"OPTRE_MJOLNIR_Units\data\Legs_MkVB_Red_CO.paa"
-			};
-		};
-	};
-	class PHRP_B192_Armor: PHRP_Base_Spartan_Armor
-	{
-		dlc = "Project Harvest Armory";
-		author = "Soldner";
-		displayName = "Spartan Armor B232";
-		model = "\OPTRE_MJOLNIR_Units\armormkvb.p3d";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2",
-			"attach_security1",
-			"attach_security2",
-			"attach_fjpara1",
-			"attach_fjpara2",
-			"attach_commando1",
-			"attach_commando2",
-			"attach_mkv1",
-			"attach_mkv2",
-			"attach_grenadier1",
-			"attach_grenadier2",
-			"attach_cqc1",
-			"attach_cqc2",
-			"attach_gren_ua",
-			"attach_knees_fjpara"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"PHGear\data\armor\armor_B192_co.paa",
-			"PHGear\data\armor\legs_B192_co.paa"
-		};
-		class ItemInfo: ItemInfo
-		{
-			uniformModel = "\OPTRE_MJOLNIR_Units\armormkvb.p3d";
-			hiddenSelections[] = 
-			{
-				"camo1",
-				"camo2",
-				"attach_security1",
-				"attach_security2",
-				"attach_fjpara1",
-				"attach_fjpara2",
-				"attach_commando1",
-				"attach_commando2",
-				"attach_mkv1",
-				"attach_mkv2",
-				"attach_grenadier1",
-				"attach_grenadier2",
-				"attach_cqc1",
-				"attach_cqc2",
-				"attach_gren_ua",
-				"attach_knees_fjpara"
-			};
-			hiddenSelectionsTextures[] = 
-			{
-				"PHGear\data\armor\armor_B192_co.paa",
-				"PHGear\data\armor\legs_B192_co.paa"
 			};
 		};
 	};
