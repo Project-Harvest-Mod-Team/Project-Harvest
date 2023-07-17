@@ -52,7 +52,7 @@ class XtdGearInfos
 			model = "PHRP_Caliburn_Vests";
 			role = "g017";
 		};
-		class PHRP_B192_Armor
+		/*class PHRP_B192_Armor
 		{
 			model = "PHRP_Caliburn_vests";
 			role = "b192";
@@ -81,6 +81,6 @@ class XtdGearInfos
 		{
 			model = "PHRP_Caliburn_vests";
 			role = "b170";
-		};
+		};*/
 	};
 };

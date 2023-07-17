@@ -2,14 +2,13 @@
 
 class CfgPatches
 {
-	class PHVehicles
+	class PHRP_patch_vehicle
 	{
 		author = "Soldner";
-		hideName = 0;
-		units[] = {"PHRP_SDV_01","PHRP_HMCS"};
-		weapons[] = {};
-		requiredVersion = 0.1;
 		requiredAddons[] = {"PHRP_Core"};
+		requiredVersion = 0.1;
+		units[] = {"PHRP_SDV_01","HMCS_Thurgood"};
+		weapons[] = {};
 	};
 };
 class cfgVehicleClasses
@@ -29,11 +28,14 @@ class CfgVehicles
 	};
 	class PHRP_SDV_01: B_SDV_01_F
 	{
+		dlc = "Project Harvest Armory";
+		author = "Soldner";
 		scope = 2;
 		scopeCurator = 2;
-		author = "Soldner";
-		faction = "Gladius_Faction";
+		scopeArsenal = 2;
 		displayname = "PHRP SDV - Engine Enhanced";
+		faction = "Gladius_Faction";
+		side = 1;
 		editorCategory = "PHRP_EdCat_Gladius";
 		editorSubcategory = "PHRP_EdSubCat_Water";
 		class EventHandlers: EventHandlers
@@ -44,10 +46,12 @@ class CfgVehicles
 		maxSpeed = 100;
 		enginePower = 100;
 		waterSpeedFactor = 0.1;
+		enableRadio = 1;
 	};
 	class HMCS;
-	class PHRP_HMCS : HMCS
+	class HMCS_Thurgood : HMCS
 	{
+		side = 1;
 		editorCategory = "PHRP_EdCat_Gladius";
 		editorSubcategory = "PHRP_EdSubCat_AWGS";
 		displayName = "Thurgood's HMCS";

@@ -29,12 +29,8 @@ class cfgVehicles
 };
 class CfgWeapons
 {
-	class OPTRE_MJOLNIR_Mk4Armor;
 	class VestItem;
-	class OPTRE_UNSC_M52D_Armor
-	{
-		class ItemInfo;
-	};
+	class OPTRE_MJOLNIR_Mk4Armor;
 	class PHRP_Base_Spartan_Armor : OPTRE_MJOLNIR_Mk4Armor
 	{
 		class ItemInfo;
@@ -42,6 +38,9 @@ class CfgWeapons
 	class OPTRE_MJOLNIR_MkVBArmor_Human;
 	class PHRP_Base_Human_Spartan : OPTRE_MJOLNIR_MkVBArmor_Human
 	{
+		scope = 0;
+		scopeCurator = 0;
+		scopeArsenal = 0;
 		class ItemInfo;
 	};
 	class PHRP_G017_Armor : PHRP_Base_Human_Spartan
@@ -54,13 +53,13 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		hiddenSelections[] = {"camo1","camo2","attach_security1","attach_security2","attach_fjpara1","attach_fjpara2","attach_commando1","attach_commando2","attach_mkv1","attach_mkv2","attach_grenadier1","attach_grenadier2","attach_cqc1","attach_cqc2","attach_gren_ua","attach_knees_fjpara"};
-		hiddenSelectionsTextures[] = {"PHGear\data\armor\chest_G017_co.paa","PHGear\data\armor\legs_G017_co.paa"};
+		hiddenSelectionsTextures[] = {"PHGear\data\armor\Armor_G017_co.paa","PHGear\data\armor\legs_G017_co.paa"};
 		class ItemInfo: ItemInfo
 		{
 			containerClass = "Supply2000";
 			uniformModel = "\OPTRE_UNSC_Units\Army\MKVB_Armor_Human.p3d";
 			hiddenSelections[] = {"camo1","camo2","attach_security1","attach_security2","attach_fjpara1","attach_fjpara2","attach_commando1","attach_commando2","attach_mkv1","attach_mkv2","attach_grenadier1","attach_grenadier2","attach_cqc1","attach_cqc2","attach_gren_ua","attach_knees_fjpara"};
-			hiddenSelectionsTextures[] = {"PHGear\data\armor\chest_G017_co.paa","PHGear\data\armor\legs_G017_co.paa"};
+			hiddenSelectionsTextures[] = {"PHGear\data\armor\Armor_G017_co.paa","PHGear\data\armor\legs_G017_co.paa"};
 			mass = 20;
 			passThrough = 0.1;
 			class HitpointsProtectionInfo
@@ -68,128 +67,119 @@ class CfgWeapons
 				class Neck
 				{
 					hitpointName = "HitNeck";
-					armor = 45;
-					passThrough = 0.1;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 45;
+					armor = 50;
 					passThrough = 0.1;
 				};
 				class Arms
 				{
 					hitpointName = "HitArms";
-					armor = 45;
-					passThrough = 0.1;
-				};
-				class Hands
-				{
-					hitpointName = "HitHands";
-					armor = 45;
+					armor = 50;
 					passThrough = 0.1;
 				};
 				class Chest
 				{
 					hitpointName = "HitChest";
-					armor = 45;
+					armor = 55;
 					passThrough = 0.1;
 				};
 				class Diaphragm
 				{
 					hitpointName = "HitDiaphragm";
-					armor = 45;
+					armor = 55;
 					passThrough = 0.1;
 				};
 				class Abdomen
 				{
 					hitpointName = "HitAbdomen";
-					armor = 45;
-					passThrough = 0.1;
-				};
-				class Pelvis
-				{
-					hitpointName = "HitPelvis";
-					armor = 45;
+					armor = 55;
 					passThrough = 0.1;
 				};
 				class Body
 				{
 					hitpointName = "HitBody";
-					armor = 45;
+					passThrough = 0.1;
+					armor = 50;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 50;
 					passThrough = 0.1;
 				};
 			};
 		};
 	};
-	class PHRP_B192_Armor: PHRP_Base_Spartan_Armor
+	class test_B192_Armor: PHRP_Base_Spartan_Armor
 	{
 		dlc = "Project Harvest Armory";
 		author = "Soldner";
 		displayName = "Spartan Armor B232";
-		model = "\OPTRE_MJOLNIR_Units\armormkvb.p3d";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2",
-			"attach_security1",
-			"attach_security2",
-			"attach_fjpara1",
-			"attach_fjpara2",
-			"attach_commando1",
-			"attach_commando2",
-			"attach_mkv1",
-			"attach_mkv2",
-			"attach_grenadier1",
-			"attach_grenadier2",
-			"attach_cqc1",
-			"attach_cqc2",
-			"attach_gren_ua",
-			"attach_knees_fjpara"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"PHGear\data\armor\armor_B192_co.paa",
-			"PHGear\data\armor\legs_B192_co.paa"
-		};
+		model = "\OPTRE_MJOLNIR_Units\armormkvb.p3d";
+		hiddenSelections[] = {"camo1","attach_security1","attach_security2","attach_fjpara1","attach_fjpara2","attach_commando1","attach_commando2","attach_mkv1","attach_mkv2","attach_grenadier1","attach_grenadier2","attach_cqc1","attach_cqc2","attach_gren_ua","attach_knees_fjpara"};
+		hiddenSelectionsTextures[] = {"PHGear\data\armor\armor_B192_co.paa","PHGear\data\armor\legs_B192_co.paa"};
 		class ItemInfo: ItemInfo
 		{
+			containerClass = "Supply2000";
 			uniformModel = "\OPTRE_MJOLNIR_Units\armormkvb.p3d";
-			hiddenSelections[] = 
+			hiddenSelections[] = {"camo1","camo2","attach_security1","attach_security2","attach_fjpara1","attach_fjpara2","attach_commando1","attach_commando2","attach_mkv1","attach_mkv2","attach_grenadier1","attach_grenadier2","attach_cqc1","attach_cqc2","attach_gren_ua","attach_knees_fjpara"};
+			hiddenSelectionsTextures[] = {"PHGear\data\armor\armor_B192_co.paa","PHGear\data\armor\legs_B192_co.paa"};
+			mass = 20;
+			passThrough = 0.1;
+			class HitpointsProtectionInfo
 			{
-				"camo1",
-				"camo2",
-				"attach_security1",
-				"attach_security2",
-				"attach_fjpara1",
-				"attach_fjpara2",
-				"attach_commando1",
-				"attach_commando2",
-				"attach_mkv1",
-				"attach_mkv2",
-				"attach_grenadier1",
-				"attach_grenadier2",
-				"attach_cqc1",
-				"attach_cqc2",
-				"attach_gren_ua",
-				"attach_knees_fjpara"
-			};
-			hiddenSelectionsTextures[] = 
-			{
-				"PHGear\data\armor\armor_B192_co.paa",
-				"PHGear\data\armor\legs_B192_co.paa"
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 50;
+					passThrough = 0.1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 50;
+					passThrough = 0.1;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 55;
+					passThrough = 0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 55;
+					passThrough = 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 55;
+					passThrough = 0.1;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.1;
+					armor = 50;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 50;
+					passThrough = 0.1;
+				};
 			};
 		};
 	};
-	class PHRP_Oliver_My_Beloved: PHRP_Base_Spartan_Armor
+	/*class PHRP_Oliver_My_Beloved: PHRP_Base_Spartan_Armor
 	{
 		dlc = "Project Harvest Armory";
 		author = "Soldner";
 		displayName = "Spartan Armor 148";
-		model = "\OPTRE_MJOLNIR_Units\armormkvb.p3d";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -520,5 +510,5 @@ class CfgWeapons
 				"PHGear\data\armor\legs_B170_co.paa"
 			};
 		};
-	};
+	};*/
 };

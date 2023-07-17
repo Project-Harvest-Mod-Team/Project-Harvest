@@ -67,6 +67,6 @@ class CfgWeapons
 		author = "Soldner";
 		displayName = "CH252D Helmet 2-2";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_twotwobase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_twotwobase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 };

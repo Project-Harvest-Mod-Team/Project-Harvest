@@ -29,7 +29,7 @@ class CfgWeapons
 	class PHRP_twotwo_Armor : PHRP_Base_Armor
 	{
 		author = "Soldner";
-		displayName = "M52D Body Armor 2-1";
+		displayName = "M52D Body Armor 2-2";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -95,7 +95,7 @@ class CfgWeapons
 		{
 			"PHGear\data\Army\data\vest_odst_co.paa",
 			"PHGear\data\army\data\armor_odst_co.paa",
-			"PHGear\data\armor\customlegs_twotwobase_CO.paa",
+			"PHGear\data\armor\legs_base_co.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
 			"PHGear\data\armor\customarmor_twotwobase_CO.paa"
 		};
@@ -229,7 +229,7 @@ class CfgWeapons
 		{
 			"PHGear\data\Army\data\vest_odst_co.paa",
 			"PHGear\data\army\data\armor_odst_co.paa",
-			"PHGear\data\armor\customlegs_twotwobase_CO.paa",
+			"PHGear\data\armor\legs_base_co.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
 			"PHGear\data\armor\customarmor_twotwomedic_CO.paa"
 		};
