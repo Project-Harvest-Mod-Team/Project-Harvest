@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","miller","craven","jaeger","owessel","kaker","wolf","kincaid"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","miller","craven","jaeger","owessel","kaker","wolf","kincaid","stone","lark"};
 				class recruit
 				{
 					label = "Recruit";
@@ -105,6 +105,14 @@ class XtdGearModels
 				class kincaid
 				{
 					label = "Kincaid";
+				};
+				class stone
+				{
+					label = "Stone";
+				};
+				class lark
+				{
+					label = "Lark";
 				};
 			};
 		};
@@ -202,6 +210,16 @@ class XtdGearInfos
 		class PHRP_Kincaid_HRPilot_Helmet
 		{
 			role = "kincaid";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Stone_ODST_Helmet
+		{
+			role = "stone";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Lark_ODST_Helmet
+		{
+			role = "lark";
 			model = "PHRP_reservist_helmets";
 		};
 	};
@@ -401,5 +419,25 @@ class CfgWeapons
 		displayName = "Mark V/P Helmet (Kincaid)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kincaid_co.paa","PHHelmets\data\helmets\customvisor_kincaid_co.paa"};
+	};
+	class PHRP_Stone_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "CH252D Helmet (Stone)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\customvisor_stone_co.paa"};
+	};
+	class PHRP_Lark_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Enreth";
+		displayName = "CH252D Helmet (Lark)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lark_co.paa","PHHelmets\data\helmets\customvisor_lark_co.paa"};
 	};
 };

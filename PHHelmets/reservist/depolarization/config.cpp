@@ -199,4 +199,22 @@ class CfgWeapons
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kincaid_co.paa","PHHelmets\data\helmets\customvisor_kincaid_co.paa"};
 	};
+	class PHRP_Stone_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "Soldner";
+		displayName = "CH252D Helmet (Stone)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
+	class PHRP_Lark_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "Enreth";
+		displayName = "CH252D Helmet (Lark)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lark_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
 };

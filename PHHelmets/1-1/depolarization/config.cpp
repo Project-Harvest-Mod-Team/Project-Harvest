@@ -44,15 +44,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
-	class PHRP_Stone_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "Soldner";
-		displayName = "CH252D Helmet 1-1 (Stone)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stone_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
-	};
 	class PHRP_Riot_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;

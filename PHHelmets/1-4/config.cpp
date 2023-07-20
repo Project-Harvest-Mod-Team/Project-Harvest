@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","presscott","lark"};
+				values[] = {"default","presscott"};
 				class default
 				{
 					label = "Default";
@@ -41,10 +41,6 @@ class XtdGearModels
 				class presscott
 				{
 					label = "Presscott";
-				};
-				class lark
-				{
-					label = "Lark";
 				};
 			};
 		};
@@ -62,11 +58,6 @@ class XtdGearInfos
 		class PHRP_Presscott_ODST_Helmet
 		{
 			role = "presscott";
-			model = "PHRP_onefour_helmets";
-		};
-		class PHRP_Lark_ODST_Helmet
-		{
-			role = "lark";
 			model = "PHRP_onefour_helmets";
 		};
 	};
@@ -94,15 +85,5 @@ class CfgWeapons
 		displayName = "CH252D Helmet 1-4 (Presscott)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\customvisor_presscott_co.paa"};
-	};
-	class PHRP_Lark_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Enreth";
-		displayName = "CH252D Helmet 1-4 (Lark)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lark_co.paa","PHHelmets\data\helmets\customvisor_lark_co.paa"};
 	};
 };

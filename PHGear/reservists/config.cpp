@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Reserve Armors";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","wilson","raider","drip","miller","jaeger","craven","owessel","kaker","wolf","kincaid"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","wilson","raider","drip","miller","jaeger","craven","owessel","kaker","wolf","kincaid","stone","lark"};
 				class recruit
 				{
 					label = "Recruit";
@@ -101,6 +101,14 @@ class XtdGearModels
 				class kincaid
 				{
 					label = "Kincaid";
+				};
+				class stone
+				{
+					label = "Stone";
+				};
+				class lark
+				{
+					label = "Lark";
 				};
 			};
 		};
@@ -194,6 +202,16 @@ class XtdGearInfos
 		{
 			model = "PHRP_Reserve_vests";
 			role = "kincaid";
+		};
+		class PHRP_Stone_Armor
+		{
+			model = "PHRP_Reserve_vests";
+			role = "stone";
+		};
+		class PHRP_Lark_Armor
+		{
+			model = "PHRP_Reserve_vests";
+			role = "lark";
 		};
 	};
 };
