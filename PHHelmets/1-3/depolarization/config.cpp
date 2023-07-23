@@ -34,14 +34,14 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onethreebase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
-	class PHRP_Samson_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
+	class PHRP_Morningstar_Operator_Helmet_dp : PHRP_Base_Operator_Helmet_dp
 	{
+		author = "";
 		scope = 1;
 		scopeArsenal = 1;
-		author = "MrMicrobe";
-		displayName = "CH252D Helmet 1-3 (Samson)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		displayName = "Mark V/O Helmet 1-3 (Morningstar)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
 	};
 	class PHRP_Hazard_EOD_Helmet_dp : PHRP_Base_EOD_Helmet_dp
 	{

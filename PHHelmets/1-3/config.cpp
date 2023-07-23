@@ -33,14 +33,10 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","samson","hazard","griffith","payne"};
+				values[] = {"default","morningstar","hazard","griffith","payne"};
 				class default
 				{
 					label = "Default";
-				};
-				class samson
-				{
-					label = "Samson";
 				};
 				class hazard
 				{
@@ -53,6 +49,10 @@ class XtdGearModels
 				class payne
 				{
 					label = "Payne";
+				};
+				class morningstar
+				{
+					label = "Morningstar";
 				};
 			};
 		};
@@ -67,9 +67,9 @@ class XtdGearInfos
 			role = "default";
 			model = "PHRP_onethree_helmets";
 		};
-		class PHRP_Samson_ODST_Helmet
+		class PHRP_Morningstar_Operator_Helmet
 		{
-			role = "samson";
+			role = "morningstar";
 			model = "PHRP_onethree_helmets";
 		};
 		class PHRP_Hazard_EOD_Helmet
@@ -105,15 +105,15 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onethreebase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
-	class PHRP_Samson_ODST_Helmet : PHRP_Base_ODST_Helmet
+	class PHRP_Morningstar_Operator_Helmet : PHRP_Base_Operator_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "CH252D Helmet 1-3 (Samson)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\customvisor_samson_co.paa"};
+		author = "";
+		displayName = "Mark V/O Helmet 1-3 (Morningstar)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
 	};
 	class PHRP_Hazard_EOD_Helmet : PHRP_Base_EOD_Helmet
 	{

@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","blackburn","graves","morningstar"};
+				values[] = {"default","blackburn","graves"};
 				class default
 				{
 					label = "Default";
@@ -45,10 +45,6 @@ class XtdGearModels
 				class graves
 				{
 					label = "Graves";
-				};
-				class morningstar
-				{
-					label = "Morningstar";
 				};
 			};
 		};
@@ -71,11 +67,6 @@ class XtdGearInfos
 		class PHRP_Graves_ODST_Helmet
 		{
 			role = "graves";
-			model = "PHRP_onetwo_helmets";
-		};
-		class PHRP_Morningstar_Operator_Helmet
-		{
-			role = "morningstar";
 			model = "PHRP_onetwo_helmets";
 		};
 	};
@@ -114,15 +105,5 @@ class CfgWeapons
 		displayName = "CH252D Helmet 1-2 (Graves)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_graves_co.paa","PHHelmets\data\helmets\customvisor_graves_co.paa"};
-	};
-	class PHRP_Morningstar_Operator_Helmet : PHRP_Base_Operator_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "";
-		displayName = "Mark V/O Helmet 1-2 (Morningstar)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
 	};
 };

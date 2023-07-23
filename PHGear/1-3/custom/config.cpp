@@ -5,11 +5,9 @@ class CfgPatches //class desc.
 		author = "Project Harvest Mod Team"; //name of author
 		units[] = //attached units (leave blank)
 		{
-			
 		};
 		weapons[] = //attached weapons (leave blank)
 		{
-			
 		};
 		requiredVersion = 0.1; //artefact of arma, no clue what it is but has to stay 0.1
 		requiredAddons[] =
@@ -294,10 +292,10 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Samson_Armor : PHRP_Base_Armor
+	class PHRP_Morningstar_Armor : PHRP_Base_Armor
 	{
-		author = "MrMicrobe";
-		displayName = "M52D Body Armor (Samson)";
+		author = "";
+		displayName = "M52D Body Armor (Morningstar)";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -328,10 +326,10 @@ class CfgWeapons
 			"AS_LargeRight", 
 			"AS_MediumLeft", 
 			"AS_MediumRight", 
-			//"AS_ODSTCQBLeft", 
-			//"AS_ODSTCQBRight", 
-			"AS_ODSTLeft", 
-			"AS_ODSTRight", 
+			"AS_ODSTCQBLeft", 
+			"AS_ODSTCQBRight", 
+			//"AS_ODSTLeft", 
+			//"AS_ODSTRight", 
 			"AS_ODSTSniperLeft", 
 			"AS_ODSTSniperRight", 
 			"AS_SmallLeft",  
@@ -340,7 +338,7 @@ class CfgWeapons
 			"AP_GL", 
 			"AP_Knife", 
 			"AP_MGThigh", 
-			//"AP_AR", 
+			"AP_AR", 
 			"AP_BR", 
 			"AP_Pack", 
 			"AP_Pistol", 
@@ -363,9 +361,9 @@ class CfgWeapons
 		{
 			"PHGear\data\Army\data\vest_odst_co.paa",
 			"PHGear\data\army\data\armor_odst_co.paa",
-			"PHGear\data\armor\customlegs_samson_co.paa",
+			"PHGear\data\armor\legs_base_co.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
-			"PHGear\data\armor\customarmor_samson_co.paa"
+			"PHGear\data\armor\customarmor_morningstar_co.paa"
 		};
 		class ItemInfo :ItemInfo
 		{
@@ -396,10 +394,10 @@ class CfgWeapons
 				"AS_LargeRight", 
 				"AS_MediumLeft", 
 				"AS_MediumRight", 
-				//"AS_ODSTCQBLeft", 
-				//"AS_ODSTCQBRight", 
-				"AS_ODSTLeft", 
-				"AS_ODSTRight", 
+				"AS_ODSTCQBLeft", 
+				"AS_ODSTCQBRight", 
+				//"AS_ODSTLeft", 
+				//"AS_ODSTRight", 
 				"AS_ODSTSniperLeft", 
 				"AS_ODSTSniperRight", 
 				"AS_SmallLeft",  
@@ -408,7 +406,7 @@ class CfgWeapons
 				"AP_GL", 
 				"AP_Knife", 
 				"AP_MGThigh", 
-				//"AP_AR", 
+				"AP_AR", 
 				"AP_BR", 
 				"AP_Pack", 
 				"AP_Pistol", 

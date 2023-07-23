@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","miller","craven","jaeger","owessel","kaker","wolf","kincaid","stone","lark"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","miller","craven","jaeger","owessel","kaker","wolf","kincaid","stone","lark","samson"};
 				class recruit
 				{
 					label = "Recruit";
@@ -113,6 +113,10 @@ class XtdGearModels
 				class lark
 				{
 					label = "Lark";
+				};
+				class samson
+				{
+					label = "Samson";
 				};
 			};
 		};
@@ -220,6 +224,11 @@ class XtdGearInfos
 		class PHRP_Lark_ODST_Helmet
 		{
 			role = "lark";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Samson_ODST_Helmet
+		{
+			role = "samson";
 			model = "PHRP_reservist_helmets";
 		};
 	};
@@ -439,5 +448,15 @@ class CfgWeapons
 		displayName = "CH252D Helmet (Lark)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lark_co.paa","PHHelmets\data\helmets\customvisor_lark_co.paa"};
+	};
+	class PHRP_Samson_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "CH252D Helmet (Samson)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\customvisor_samson_co.paa"};
 	};
 };
