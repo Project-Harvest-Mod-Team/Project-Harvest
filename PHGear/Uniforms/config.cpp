@@ -45,6 +45,24 @@ class XtdGearModels
 				};
 			};
 		};
+		class PHRP_ONI
+		{
+			label = "ONI Attire";
+			author = "Soldner";
+			options[] = {"name"};
+			class name
+			{
+				label = "Name";
+				values[] = {"burt"};
+				changeingame = 1;
+				changedelay = 0;
+				alwaysSelectable = 1;
+				class burt
+				{
+					label = "Burt";
+				};
+			}
+		}
 	};
 };
 class XtdGearInfos
@@ -66,6 +84,11 @@ class XtdGearInfos
 			model = "PHRP_Uniform";
 			type = "short";
 		};
+		class BDU_Burt_ONI_BDU
+		{
+			model = "PHRP_ONI";
+			name = "burt";
+		};
 	};
 };
 class CfgWeapons
@@ -73,6 +96,7 @@ class CfgWeapons
 	class Uniform_Base;
 	class U_B_PilotCoveralls;
 	class UniformItem;
+	class ItemInfo;
 	class U_B_CombatUniform_mcam: Uniform_Base
 	{
 		class ItemInfo;
@@ -99,7 +123,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "Gladius Combat Uniform";
+		displayName = "[PHRP] Gladius Combat Uniform";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass = "BDU_V_Gladius";
@@ -110,7 +134,7 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "Gladius Combat Uniform (Rolled)";
+		displayName = "[PHRP] Gladius Combat Uniform (Rolled)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass = "BDU_V_Gladius_Rolled";
@@ -121,10 +145,31 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "Gladius Combat Uniform (Short)";
+		displayName = "[PHRP] Gladius Combat Uniform (Short)";
 		class ItemInfo: ItemInfo
 		{
 			uniformClass = "BDU_V_Gladius_Short";
+		};
+	};
+
+	class VES_BDU_ONI_B;
+	class PHRP_ONI_Base : VES_BDU_ONI_B
+	{
+		scope = 0;
+		scopeCurator = 0;
+		scopeArsenal = 0;
+		class ItemInfo;
+		author = "Soldner";
+	};
+	class PHRP_Burt_ONI: PHRP_ONI_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "[PHRP] Burt's Naval Intelligence Formal Attire";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "BDU_Burt_ONI_BDU";
 		};
 	};
 };
@@ -396,5 +441,16 @@ class CfgVehicles
 		uniformclass = "Gladius_BDU_Short";
 		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
 		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\H2A_CO.paa","PHGear\data\uniforms\H2A_CO.paa"};
+	};
+
+	//ONI outfit
+	class VES_BDU_V_ONI;
+	class BDU_Burt_ONI_BDU : VES_BDU_V_ONI
+	{
+		scopeArsenal = 2;
+		model = "\a3\Characters_F\Civil\Scientist_01_formal_F";
+		uniformclass = "PHRP_Burt_ONI";
+		hiddenSelections[] = {"camo1","badge","id"};
+		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\Burt_ONI_CO.paa","PHGear\data\uniforms\Burt_ONI_CO.paa"};
 	};
 };

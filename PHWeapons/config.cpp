@@ -60,10 +60,14 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Owner";
-				values[] = {"Soldner","HollandAK120","KazMA37K","MoonMA37K","ColesonM90"};
-				class Soldner
+				values[] = {"SoldnerSRS","SoldnerM7","HollandAK120","KazMA37K","MoonMA37K","ColesonM90"};
+				class SoldnerSRS
 				{
-					label = "Soldner";
+					label = "Soldner's SRS";
+				};
+				class SoldnerM7
+				{
+					label = "Soldner's M7";
 				};
 				class HollandAK120
 				{
@@ -115,7 +119,12 @@ class XtdGearInfos
 		class PHRP_Soldner_SRS99C
 		{
 			model = "phrp_personal_weapons";
-			type = "Soldner";
+			type = "SoldnerSRS";
+		};
+		class PHRP_Soldner_M7
+		{
+			model = "phrp_personal_weapons";
+			type = "SoldnerM7";
 		};
 		class PHRP_Kaz_MA37K
 		{
@@ -253,6 +262,20 @@ class CfgWeapons
 				compatibleitems[] = {};
 			};
 		};
+	};
+
+	//Soldner M7
+	class PHRP_Soldner_M7 : OPTRE_M7
+	{
+		dlc = "Project Harvest Armory"
+		author = "Soldner";
+		baseWeapon = "PHRP_Soldner_M7";
+		scope = 2;
+		scopearsenal = 2;
+		displayName = "[PHRP] Soldner's M7X Caseless SMG";
+		canShootInWater = 1;
+		hiddenSelections[] = {"camo","camo1"};
+		hiddenSelectionsTextures[] = {"PHWeapons\data\Soldner_m7_co.paa","PHWeapons\data\Soldner_magazine_co.paa"};
 	};
 
 	//Holland AK
