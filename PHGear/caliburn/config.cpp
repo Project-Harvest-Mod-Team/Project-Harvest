@@ -46,7 +46,7 @@ class CfgWeapons
 		scopeArsenal = 0;
 		class ItemInfo;
 	};
-	class PHRP_G017_Armor : PHRP_Base_Human_Spartan
+	/*class PHRP_G017_Armor : PHRP_Base_Human_Spartan
 	{
 		dlc = "Project Harvest Armory";
 		author = "Soldner";
@@ -111,7 +111,7 @@ class CfgWeapons
 				};
 			};
 		};
-	};
+	};*/
 	class PHRP_Cyrus_Armor : PHRP_Base_Spartan_Armor
 	{
 		dlc = "Project Harvest Armory";

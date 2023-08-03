@@ -63,11 +63,13 @@ class XtdGearModels
 				values[] = {"SoldnerSRS","SoldnerM7","HollandAK120","KazMA37K","MoonMA37K","ColesonM90"};
 				class SoldnerSRS
 				{
-					label = "Soldner's SRS";
+					label = "Soldner";
+					image = "PHWeapons\data\Icon\SRS.paa";
 				};
 				class SoldnerM7
 				{
-					label = "Soldner's M7";
+					label = "Soldner";
+					image = "PHWeapons\data\Icon\m7.paa";
 				};
 				class HollandAK120
 				{
@@ -166,6 +168,10 @@ class CfgWeapons
 		canShootInWater = 1;
 		hiddenSelections[] = {"camo","camo1"};
 		hiddenSelectionsTextures[] = {"PHWeapons\data\Vulcan_m7_co.paa","OPTRE_Weapons\smg\data\m7_magazine_co.paa"};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 30;
+		};
 	};
 	
 	//Templar MA5B
@@ -184,9 +190,10 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"PHWeapons\data\templarWeapon_CO.paa","PHWeapons\data\templarSmartlink_co.paa","PHWeapons\data\templarCover_co.paa","optre_weapons\optics\data\reticles\ma5_reticle.paa"};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass = 80;
 			class MuzzleSlot: MuzzleSlot
 			{
-				compatibleitems[] = {"muzzle_snds_h_mg_blk_f","muzzle_snds_l","optre_ma5suppressor","optre_m7_silencer","optre_m6_silencer","ace_muzzle_mzls_b","muzzle_snds_b","OPTRE_MA37KSuppressor","muzzle_snds_65_TI_blk_F","OPTRE_srs99d_suppressor"};
+				compatibleitems[] = {"muzzle_snds_h_mg_blk_f","muzzle_snds_l","optre_ma5suppressor","ace_muzzle_mzls_b","muzzle_snds_b","OPTRE_MA37KSuppressor","muzzle_snds_65_TI_blk_F"};
 			};
 			class CowsSlot: CowsSlot
 			{
@@ -210,9 +217,10 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"PHWeapons\data\templarWeapon_CO.paa","PHWeapons\data\templarSmartlink_co.paa","PHWeapons\data\templarCover_co.paa","optre_weapons\optics\data\reticles\ma5_reticle.paa"};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass = 80;
 			class MuzzleSlot: MuzzleSlot
 			{
-				compatibleitems[] = {"muzzle_snds_h_mg_blk_f","muzzle_snds_l","optre_ma5suppressor","optre_m7_silencer","optre_m6_silencer","ace_muzzle_mzls_b","muzzle_snds_b","OPTRE_MA37KSuppressor","muzzle_snds_65_TI_blk_F","OPTRE_srs99d_suppressor"};
+				compatibleitems[] = {"muzzle_snds_h_mg_blk_f","muzzle_snds_l","optre_ma5suppressor","ace_muzzle_mzls_b","muzzle_snds_b","OPTRE_MA37KSuppressor","muzzle_snds_65_TI_blk_F"};
 			};
 			class CowsSlot: CowsSlot
 			{
@@ -245,6 +253,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"PHWeapons\data\soldner_mainbody_co.paa","OPTRE_Weapons\Sniper\data\mag_co.paa","PHWeapons\data\soldner_bipod_co.paa"};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass = 100;
 			class MuzzleSlot: MuzzleSlot
 			{
 				compatibleitems[] = {};
@@ -276,6 +285,22 @@ class CfgWeapons
 		canShootInWater = 1;
 		hiddenSelections[] = {"camo","camo1"};
 		hiddenSelectionsTextures[] = {"PHWeapons\data\Soldner_m7_co.paa","PHWeapons\data\Soldner_magazine_co.paa"};
+		class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass = 30;
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[] = {"optre_m7_silencer"};
+			};
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[] = {"MEU_REC_HOLO","OPTRE_M7_Sight"};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleitems[] = {"OPTRE_M7_Flashlight","OPTRE_M7_Laser","ace_acc_pointer_green","MEU_M7_Vis_Laser"};
+			};
+		};
 	};
 
 	//Holland AK
@@ -293,6 +318,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"PHWeapons\data\Holland_ak120_1.paa","PHWeapons\data\Holland_ak120_2.paa"};	
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass = 60;
 			class MuzzleSlot: MuzzleSlot
 			{
 				compatibleitems[] = {"OPTRE_MA5Suppressor"};
@@ -392,6 +418,7 @@ class CfgWeapons
 		magazineWell[] = {"MEU_shotgun_uw","MEU_Shotgun_Mags"};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
+			mass = 100;
 			class MuzzleSlot: MuzzleSlot
 			{
 				compatibleitems[] = {};

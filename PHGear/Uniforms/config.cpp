@@ -45,15 +45,15 @@ class XtdGearModels
 				};
 			};
 		};
-		class PHRP_ONI
+		class PHRP_ONI_Uniform
 		{
-			label = "ONI Attire";
+			label = "Non-Combat Attire";
 			author = "Soldner";
-			options[] = {"name"};
-			class name
+			options[] = {"type"};
+			class type
 			{
 				label = "Name";
-				values[] = {"burt"};
+				values[] = {"burt","pj"};
 				changeingame = 1;
 				changedelay = 0;
 				alwaysSelectable = 1;
@@ -61,8 +61,54 @@ class XtdGearModels
 				{
 					label = "Burt";
 				};
-			}
-		}
+				class pj
+				{
+					label = "PJ";
+				};
+			};
+		};
+		/*class PHRP_Dress_Uniform
+		{
+			label = "Dress Uniforms";
+			author = "Soldner";
+			options[] = {"type"};
+			class type
+			{
+				label = "Name";
+				values[] = {"soldner","moon","kaz","tepfer","holland","pj","burt"};
+				changeingame = 1;
+				changedelay = 0;
+				alwaysSelectable = 1;
+				class soldner
+				{
+					label = "Soldner";
+				};
+				class moon
+				{
+					label = "Moon";
+				};
+				class kaz
+				{
+					label = "Kaz";
+				};
+				class tepfer
+				{
+					label = "Tepfer";
+				};
+				class holland
+				{
+					label = "Holland";
+				};
+				class pj
+				{
+					label = "PJ";
+				};
+				class burt
+				{
+					label = "Burt";
+				};
+			};
+		};*/
 	};
 };
 class XtdGearInfos
@@ -84,11 +130,21 @@ class XtdGearInfos
 			model = "PHRP_Uniform";
 			type = "short";
 		};
-		class BDU_Burt_ONI_BDU
+		class PHRP_Burt_ONI
 		{
-			model = "PHRP_ONI";
-			name = "burt";
+			model = "PHRP_ONI_Uniform";
+			type = "burt";
 		};
+		class PHRP_PJ_UNSC
+		{
+			model = "PHRP_ONI_Uniform";
+			type = "pj";
+		};
+		/*class PHRP_Dress_Uni_Soldner
+		{
+			model = "PHRP_Dress_Uniform";
+			type = "soldner";
+		};*/
 	};
 };
 class CfgWeapons
@@ -151,17 +207,7 @@ class CfgWeapons
 			uniformClass = "BDU_V_Gladius_Short";
 		};
 	};
-
-	class VES_BDU_ONI_B;
-	class PHRP_ONI_Base : VES_BDU_ONI_B
-	{
-		scope = 0;
-		scopeCurator = 0;
-		scopeArsenal = 0;
-		class ItemInfo;
-		author = "Soldner";
-	};
-	class PHRP_Burt_ONI: PHRP_ONI_Base
+	class PHRP_Burt_ONI: PHRP_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -172,6 +218,28 @@ class CfgWeapons
 			uniformClass = "BDU_Burt_ONI_BDU";
 		};
 	};
+	class PHRP_PJ_UNSC: PHRP_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "[PHRP] PJ's Formal Attire";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "BDU_PJ_UNSC_BDU";
+		};
+	};
+	/*class PHRP_Dress_Uni_Soldner: PHRP_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "[PHRP] Soldner's Dress Uniform ";
+		class ItemInfo: ItemInfo
+		{
+			uniformClass = "PHRP_Dress_Soldner";
+		};
+	};*/
 };
 class CfgVehicles
 {
@@ -418,7 +486,8 @@ class CfgVehicles
 		hiddenSelectionsTextures[] = {"OPTRE_UNSC_Units\Army\data\uniform_a_woodland_co.paa","OPTRE_UNSC_Units\Army\data\uniform_b_woodland_co.paa"};
 		editorSubcategory = "PHRP_EdSubCat_ODSTs";
 	};
-	
+
+	//Gladius Unis
 	class BDU_V_Gladius: PHRP_Base_Uniform
 	{
 		scopeArsenal = 2;
@@ -444,8 +513,7 @@ class CfgVehicles
 	};
 
 	//ONI outfit
-	class VES_BDU_V_ONI;
-	class BDU_Burt_ONI_BDU : VES_BDU_V_ONI
+	class BDU_Burt_ONI_BDU : PHRP_Base_Uniform
 	{
 		scopeArsenal = 2;
 		model = "\a3\Characters_F\Civil\Scientist_01_formal_F";
@@ -453,4 +521,19 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","badge","id"};
 		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\Burt_ONI_CO.paa","PHGear\data\uniforms\Burt_ONI_CO.paa"};
 	};
+	class BDU_PJ_UNSC_BDU : PHRP_Base_Uniform
+	{
+		scopeArsenal = 2;
+		model = "\a3\Characters_F\Civil\Scientist_01_formal_F";
+		uniformclass = "PHRP_PJ_UNSC";
+		hiddenSelections[] = {"camo1","badge","id"};
+		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\PJ_UNSC_CO.paa","PHGear\data\uniforms\PJ_UNSC_CO.paa"};
+	};
+	/*class PHRP_Dress_Soldner : PHRP_Base_Uniform
+	{
+		model = "\OPTRE_UNSC_Units\Army\officer.p3d";
+		uniformClass = "PHRP_Dress_Uni_Soldner";
+		hiddenSelections[] = {"camo1","insignia","clan","name"};
+		hiddenSelectionsTextures[] = {"OPTRE_UNSC_Units\Army\data\dress_uniform_odst_co.paa","PHGear\data\uniforms\Soldner_rank_co.paa","PHGear\data\uniforms\Soldner_rank_co.paa","PHGear\data\uniforms\Soldner_rank_co.paa"};
+	};*/
 };
