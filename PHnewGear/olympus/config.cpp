@@ -163,3 +163,11 @@ class CfgWeapons
 		};
 	}
 };
+class CfgGlasses
+{
+	class VSM_FaceMask_black;
+	class VSM_FaceMask_black : VSM_FaceMask_black
+	{
+		_generalMacro = "G_B_Diving";
+	}
+};

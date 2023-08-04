@@ -283,6 +283,8 @@ class CfgWeapons
 		scopearsenal = 2;
 		displayName = "[PHRP] Soldner's M7X Caseless SMG";
 		canShootInWater = 1;
+		magazineWell[] += {"MEU_smg_uw"};
+		magazines[] = {"OPTRE_60Rnd_5x23mm_Mag_JHP","OPTRE_60Rnd_5x23mm_Mag_NARQ"};
 		hiddenSelections[] = {"camo","camo1"};
 		hiddenSelectionsTextures[] = {"PHWeapons\data\Soldner_m7_co.paa","PHWeapons\data\Soldner_magazine_co.paa"};
 		class WeaponSlotsInfo: WeaponSlotsInfo
@@ -315,7 +317,7 @@ class CfgWeapons
 		displayName = "[PHRP] Holland's AK-120";
 		canShootInWater = 1;
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHWeapons\data\Holland_ak120_1.paa","PHWeapons\data\Holland_ak120_2.paa"};	
+		hiddenSelectionsTextures[] = {"PHWeapons\data\Holland_ak120_1.paa","PHWeapons\data\Holland_ak120_2.paa"};
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 60;
