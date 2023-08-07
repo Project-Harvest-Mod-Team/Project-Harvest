@@ -24,27 +24,31 @@ class XtdGearModels
 	class CamoBase;
 	class CfgWeapons
 	{
-		class PHRP_oneA_helmets
+		class PHRP_fleet_helmets
 		{
-			label = "1-A Helmets";
+			label = "Fleet Helmets";
 			author = "Project Harvest Mod Team";
 			options[] = {"Role"};
 			class role
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"burtovski","chopper","aturr","buckley"};
+				values[] = {"moon","burtovski","pjetrovic","chopper","buckley"};
 				class burtovski
 				{
 					label = "Burtovski";
 				};
+				class moon
+				{
+					label = "Moon";
+				};
+				class pjetrovic
+				{
+					label = "Pjetrovic";
+				};
 				class chopper
 				{
 					label = "Chopper";
-				};
-				class aturr
-				{
-					label = "Aturr";
 				};
 				class buckley
 				{
@@ -58,20 +62,24 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		
+		class PHRP_Moon_Commando_Helmet
+		{
+			role = "moon";
+			model = "PHRP_fleet_helmets";
+		};
+		class PHRP_Pjetrovic_Security_Helmet
+		{
+			role = "pjetrovic";
+			model = "PHRP_fleet_helmets";
+		};
 		class PHRP_Burtovski_Commando_Helmet
 		{
 			role = "burtovski";
-			model = "PHRP_oneA_helmets";
+			model = "PHRP_fleet_helmets";
 		};
 		class PHRP_Chopper_CQB_Helmet
 		{
 			role = "chopper";
-			model = "PHRP_oneA_helmets";
-		};
-		class PHRP_Aturr_Recon_Helmet
-		{
-			role = "aturr";
 			model = "PHRP_oneA_helmets";
 		};
 		class PHRP_Buckley_Recon_Helmet
@@ -84,16 +92,16 @@ class XtdGearInfos
 class CfgWeapons
 {
 	class PHRP_Base_Recon_Helmet;
-	class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_CQB_Helmet;
 	class PHRP_Base_Commando_Helmet;
+	class PHRP_Base_Security_Helmet;
 	class PHRP_Burtovski_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "Soldner";
-		displayName = "Mark V/K Helmet 1-A (Burtovski)";
+		displayName = "Mark V/K Helmet (Burtovski)";
 		hiddenSelections[] =  {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
 	};
@@ -103,19 +111,9 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "MrMicrobe";
-		displayName = "Mark V/C Helmet  1-A (Chopper)";
+		displayName = "Mark V/C Helmet (Chopper)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
-	};
-	class PHRP_Aturr_Recon_Helmet : PHRP_Base_Recon_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "Recon Helmet 1-A (Aturr)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","PHHelmets\data\helmets\customvisor_aturr_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 	class PHRP_Buckley_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
@@ -126,5 +124,25 @@ class CfgWeapons
 		displayName = "Recon Helmet 1-A (Buckley)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_buckley_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+	};
+	class PHRP_Moon_Commando_Helmet : PHRP_Base_Commando_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "Mark V/K Helmet (Moon)";
+		hiddenSelections[] =  {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_moon_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
+	};
+	class PHRP_Pjetrovic_Security_Helmet : PHRP_Base_Security_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Mark V/M Helmet (Pjetrovic)";
+		hiddenSelections[] = {"camo","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_pjetrovic_co.paa","OPTRE_UNSC_Units\Army\data\Security_Visor_co.paa"};
 	};
 };

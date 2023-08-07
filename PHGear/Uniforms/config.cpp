@@ -140,11 +140,6 @@ class XtdGearInfos
 			model = "PHRP_ONI_Uniform";
 			type = "pj";
 		};
-		/*class PHRP_Dress_Uni_Soldner
-		{
-			model = "PHRP_Dress_Uniform";
-			type = "soldner";
-		};*/
 	};
 };
 class CfgWeapons
@@ -240,6 +235,23 @@ class CfgWeapons
 			uniformClass = "PHRP_Dress_Soldner";
 		};
 	};*/
+
+	//M56
+	class MA_M56S_BDU;
+	class PHRP_M56S_BDU : MA_M56S_BDU
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		displayName = "[PHRP] M56S BDU";
+		CBRN_protectionLevel = "4 + 8";
+		ACE_GForceCoef = 0.9;
+		class ItemInfo: ItemInfo
+		{	
+			uniformClass = "PHRP_M56S_BDU";	
+			uniformType = "Neopren";
+		};
+	};
 };
 class CfgVehicles
 {
@@ -529,11 +541,209 @@ class CfgVehicles
 		hiddenSelections[] = {"camo1","badge","id"};
 		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\PJ_UNSC_CO.paa","PHGear\data\uniforms\PJ_UNSC_CO.paa"};
 	};
-	/*class PHRP_Dress_Soldner : PHRP_Base_Uniform
+
+	//M56 BDU
+	class PHRP_M56S_BDU_Base: PHRP_Soldier_WDL
 	{
-		model = "\OPTRE_UNSC_Units\Army\officer.p3d";
-		uniformClass = "PHRP_Dress_Uni_Soldner";
-		hiddenSelections[] = {"camo1","insignia","clan","name"};
-		hiddenSelectionsTextures[] = {"OPTRE_UNSC_Units\Army\data\dress_uniform_odst_co.paa","PHGear\data\uniforms\Soldner_rank_co.paa","PHGear\data\uniforms\Soldner_rank_co.paa","PHGear\data\uniforms\Soldner_rank_co.paa"};
-	};*/
+		class HitPoints: HitPoints
+		{
+			class HitFace: HitFace
+			{
+				armor = 5;
+				material = -1;
+				name = "face_hub";
+				passThrough = 0.8;
+				radius = 0.08;
+				explosionShielding = 0.1;
+				minimalHit = 0.01;
+			};
+			class HitNeck: HitNeck
+			{
+				armor = 5;
+				material = -1;
+				name = "neck";
+				passThrough = 0.8;
+				radius = 0.1;
+				explosionShielding = 0.5;
+				minimalHit = 0.01;
+			};
+			class HitHead: HitHead
+			{
+				armor = 5;
+				material = -1;
+				name = "head";
+				passThrough = 0.8;
+				radius = 0.2;
+				explosionShielding = 0.5;
+				minimalHit = 0.01;
+				depends = "HitFace max HitNeck";
+			};
+			class HitPelvis: HitPelvis
+			{
+				armor = 6;
+				material = -1;
+				name = "pelvis";
+				passThrough = 0.8;
+				radius = 0.24;
+				explosionShielding = 0.1;
+				visual = "injury_body";
+				minimalHit = 0.01;
+				depends = "0";
+			};
+			class HitAbdomen: HitAbdomen
+			{
+				armor = 6;
+				material = -1;
+				name = "spine1";
+				passThrough = 0.8;
+				radius = 0.16;
+				explosionShielding = 0.1;
+				visual = "injury_body";
+				minimalHit = 0.01;
+			};
+			class HitDiaphragm: HitDiaphragm
+			{
+				armor = 6;
+				material = -1;
+				name = "spine2";
+				passThrough = 0.8;
+				radius = 0.18;
+				explosionShielding = 0.25;
+				visual = "injury_body";
+				minimalHit = 0.01;
+			};
+			class HitChest: HitChest
+			{
+				armor = 6;
+				material = -1;
+				name = "spine3";
+				passThrough = 0.8;
+				radius = 0.18;
+				explosionShielding = 0.25;
+				visual = "injury_body";
+				minimalHit = 0.01;
+			};
+			class HitBody: HitBody
+			{
+				armor = 1000;
+				material = -1;
+				name = "body";
+				passThrough = 1;
+				radius = 0;
+				explosionShielding = 0.25;
+				visual = "injury_body";
+				minimalHit = 0.01;
+				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
+			};
+			class HitArms: HitArms
+			{
+				armor = 6;
+				material = -1;
+				name = "arms";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = 0.3;
+				visual = "injury_hands";
+				minimalHit = 0.01;
+				depends = "0";
+			};
+			class HitHands: HitHands
+			{
+				armor = 6;
+				material = -1;
+				name = "hands";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = 0.3;
+				visual = "injury_hands";
+				minimalHit = 0.01;
+				depends = "HitArms";
+			};
+			class HitLegs: HitLegs
+			{
+				armor = 6;
+				material = -1;
+				name = "legs";
+				passThrough = 1;
+				radius = 0.14;
+				explosionShielding = 0.3;
+				visual = "injury_legs";
+				minimalHit = 0.01;
+				depends = "0";
+			};
+			class Incapacitated: Incapacitated
+			{
+				armor = 1000;
+				material = -1;
+				name = "body";
+				passThrough = 1;
+				radius = 0;
+				explosionShielding = 0.1;
+				visual = "";
+				minimalHit = 0;
+				depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
+			};
+			class HitLeftArm: HitLeftArm
+			{
+				armor = 6;
+				material = -1;
+				name = "hand_l";
+				passThrough = 1;
+				radius = 0.08;
+				explosionShielding = 0.1;
+				visual = "injury_hands";
+				minimalHit = 0.01;
+			};
+			class HitRightArm: HitRightArm
+			{
+				armor = 6;
+				material = -1;
+				name = "hand_r";
+				passThrough = 1;
+				radius = 0.08;
+				explosionShielding = 0.1;
+				visual = "injury_hands";
+				minimalHit = 0.01;
+			};
+			class HitLeftLeg: HitRightArm
+			{
+				armor = 6;
+				material = -1;
+				name = "leg_l";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = 0.1;
+				visual = "injury_legs";
+				minimalHit = 0.01;
+			};
+			class HitRightLeg: HitRightLeg
+			{
+				armor = 6;
+				material = -1;
+				name = "leg_r";
+				passThrough = 1;
+				radius = 0.1;
+				explosionShielding = 0.1;
+				visual = "injury_legs";
+				minimalHit = 0.01;
+			};
+			class ACE_HDBracket: ACE_HDBracket
+			{
+				armor = 1;
+				material = -1;
+				name = "head";
+				passThrough = 0;
+				radius = 1;
+				explosionShielding = 0.1;
+				visual = "";
+				minimalHit = 0;
+				depends = "HitHead";
+			};
+		};
+		dlc = "Project Harvest Armory";
+		scopeArsenal = 2;
+		UniformClass = "PHRP_M56S_BDU";
+		model = "MA_Armor\data\Uniforms\H3_ODST\H3_ODST_Uniform.p3d";
+		hiddenSelectionsTextures[] = {"MA_Armor\data\Uniforms\H3_ODST\H3_Undersuit_co.paa"};
+	};
 };

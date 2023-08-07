@@ -24,7 +24,7 @@ class XtdGearModels
 	class CamoBase;
 	class CfgWeapons
 	{
-		class PHRP_oneA_vests
+		class PHRP_fleet_vests
 		{
 			label = "1-A Vests";
 			author = "Project Harvest Mod Team";
@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"burtovski","chopper","aturr","buckley"};
+				values[] = {"moon","pjetrovic","burtovski","chopper","buckley"};
 				class burtovski
 				{
 					label = "Burtovski";
@@ -42,13 +42,17 @@ class XtdGearModels
 				{
 					label = "Chopper";
 				};
-				class aturr
-				{
-					label = "Aturr";
-				};
 				class buckley
 				{
 					label = "Buckley";
+				};
+				class moon
+				{
+					label = "Moon";
+				};
+				class pjetrovic
+				{
+					label = "Pjetrovic";
 				};
 			};
 		};
@@ -60,18 +64,23 @@ class XtdGearInfos
 	{
 		class PHRP_Burtovski_Armor
 		{
-			model = "PHRP_oneA_vests";
+			model = "PHRP_fleet_vests";
 			role = "burtovski";
+		};
+		class PHRP_Moon_Armor
+		{
+			model = "PHRP_fleet_vests";
+			role = "moon";
+		};
+		class PHRP_Pjetrovic_Armor
+		{
+			model = "PHRP_fleet_vests";
+			role = "pjetrovic";
 		};
 		class PHRP_chopper_Armor
 		{
 			model = "PHRP_oneA_vests";
 			role = "chopper";
-		};
-		class PHRP_Aturr_Armor
-		{
-			model = "PHRP_oneA_vests";
-			role = "aturr";
 		};
 		class PHRP_Buckley_Armor
 		{

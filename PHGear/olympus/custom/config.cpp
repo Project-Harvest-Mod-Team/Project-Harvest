@@ -26,137 +26,113 @@ class CfgWeapons
 	{
 		class ItemInfo;
 	};
-	class PHRP_Soldner_Armor : PHRP_Base_Armor
+	class PHRP_Base_M56R_Armor;
+	class PHRP_Soldner_M56R_Armor: PHRP_Base_M56R_Armor
 	{
-		author = "Soldner";
-		displayName = "M52D Body Armor (Soldner)";
 		scope = 2;
-		scopeCurator = 2;
 		scopeArsenal = 2;
-		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
-		hiddenSelections[] =
+		author = "Soldner";
+		displayName = "[PHRP] M56R Combat Armor (Soldner)";
+		hiddenSelections[] = 
 		{
-			"camo",
+			"camo1",
 			"camo2",
 			"camo3",
 			"camo4",
 			"camo5",
-			//"A_Base",
-			"A_Ghillie",
-			//"A_ChestArmor", 
-			//"A_KneesLeft", 
-			//"A_KneesRight", 
-			"A_KneesMarLeft", 
-			"A_KneesMarRight", 
-			//"A_ODST", 
-			//"A_ShinArmorLeft", 
-			//"A_ShinArmorRight", 
-			//"A_TacPad", 
-			//"A_ThighArmorLeft", 
-			//"A_ThighArmorRight", 
-			//"AS_BaseLeft", 
-			//"AS_BaseRight", 
-			"AS_LargeLeft", 
-			"AS_LargeRight", 
-			"AS_MediumLeft", 
-			"AS_MediumRight", 
-			"AS_ODSTCQBLeft", 
-			//"AS_ODSTCQBRight", 
-			//"AS_ODSTLeft", 
-			"AS_ODSTRight", 
-			"AS_ODSTSniperLeft", 
-			"AS_ODSTSniperRight", 
-			"AS_SmallLeft",  
-			"AS_SmallRight", 
-			"AP_Canteen", 
-			"AP_GL", 
-			"AP_Knife", 
-			"AP_MGThigh", 
-			"AP_AR", 
-			"AP_BR", 
-			"AP_Pack", 
-			"AP_Pistol", 
-			"AP_Rounds", 
-			"AP_SG", 
-			"AP_SMG", 
-			"AP_Sniper", 
-			"AP_Thigh", 
-			//"AP_Frag", 
-			//"AP_Smoke", 
-			"APO_AR", 
-			"APO_BR", 
-			//"APO_Knife", 
-			"APO_SMG", 
-			"APO_Sniper", 
-			"CustomKit_Scorch"
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			//"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			//"Thigh_Pouch",
+			//"Reach_Armor_Upper",
+			//"Reach_Armor_Lower",
+			"H3_Armor_Upper",
+			"H3_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
 		};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat","","LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"};
-		hiddenSelectionsTextures[] =
+		hiddenSelectionsTextures[] = 
 		{
-			"PHGear\data\armor\customvest_soldner_co.paa",
-			"PHGear\data\armor\customarmor_soldnerarmor_co.paa",
-			"PHGear\data\armor\customlegs_soldner_co.paa",
-			"PHGear\data\army\data\ghillie_woodland_co.paa",
-			"PHGear\data\armor\customarmor_soldner_co.paa"
+			"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+			"PHnewGear\data\armor\Soldner_Reach_Upper_Armor_co.paa",
+			"PHnewGear\data\armor\Soldner_Reach_Lower_Armor_co.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+			"PHnewGear\data\armor\Soldner_Forearm_Vents_co.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Addons\CQB_Shoulders\CQB_co.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Addons\Reach_Shoulder_Radio\Shoulder_Radio_ODST_co.paa"
 		};
-		class ItemInfo :ItemInfo
+		class ItemInfo: ItemInfo
 		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			hiddenSelections[] =
+			vestType = "Rebreather";
+			uniformModel = "MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass = "Supply200";
+			hiddenSelections[] = 
 			{
-				"camo",
+				"camo1",
 				"camo2",
 				"camo3",
 				"camo4",
 				"camo5",
-				//"A_Base",
-				"A_Ghillie",
-				//"A_ChestArmor", 
-				//"A_KneesLeft", 
-				//"A_KneesRight", 
-				"A_KneesMarLeft", 
-				"A_KneesMarRight", 
-				//"A_ODST", 
-				//"A_ShinArmorLeft", 
-				//"A_ShinArmorRight", 
-				//"A_TacPad", 
-				//"A_ThighArmorLeft", 
-				//"A_ThighArmorRight", 
-				//"AS_BaseLeft", 
-				//"AS_BaseRight", 
-				"AS_LargeLeft", 
-				"AS_LargeRight", 
-				"AS_MediumLeft", 
-				"AS_MediumRight", 
-				"AS_ODSTCQBLeft", 
-				//"AS_ODSTCQBRight", 
-				//"AS_ODSTLeft", 
-				"AS_ODSTRight", 
-				"AS_ODSTSniperLeft", 
-				"AS_ODSTSniperRight", 
-				"AS_SmallLeft",  
-				"AS_SmallRight", 
-				"AP_Canteen", 
-				"AP_GL", 
-				"AP_Knife", 
-				"AP_MGThigh", 
-				"AP_AR", 
-				"AP_BR", 
-				"AP_Pack", 
-				"AP_Pistol", 
-				"AP_Rounds", 
-				"AP_SG", 
-				"AP_SMG", 
-				"AP_Sniper", 
-				"AP_Thigh", 
-				//"AP_Frag", 
-				//"AP_Smoke", 
-				"APO_AR", 
-				"APO_BR", 
-				//"APO_Knife", 
-				"APO_SMG", 
-				"APO_Sniper", 
-				"CustomKit_Scorch"
+				"camo6",
+				"camo7",
+				"camo8",
+				"camo9",
+				"camo10",
+				//"Reach_Forearm_Left",
+				//"Reach_Forearm_Right",
+				"H3_Forearm_Left",
+				"H3_Forearm_Right",
+				"H3_Pauldron_Left",
+				"H3_Pauldron_Right",
+				//"Reach_Pauldron_Left",
+				//"Reach_Pauldron_Right",
+				"Reach_Shoulder_Radio_Left",
+				//"Reach_Shoulder_Radio_Right",
+				"Reach_Sniper_Pauldron_Left",
+				"Reach_Sniper_Pauldron_Right",
+				"Reach_CQB_Pauldron_Left",
+				"Reach_CQB_Pauldron_Right",
+				"Thigh_Pouch",
+				//"Reach_Armor_Upper",
+				//"Reach_Armor_Lower",
+				"H3_Armor_Upper",
+				"H3_Armor_Lower",
+				//"Forearm_Vent_Left",
+				//"Forearm_Vent_Right",
+				//"Canisters"
+			};
+			hiddenSelectionsTextures[] = 
+			{
+				"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+				"PHnewGear\data\armor\Soldner_Reach_Upper_Armor_co.paa",
+				"PHnewGear\data\armor\Soldner_Reach_Lower_Armor_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+				"PHnewGear\data\armor\Soldner_Forearm_Vents_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Addons\CQB_Shoulders\CQB_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Addons\Reach_Shoulder_Radio\Shoulder_Radio_ODST_co.paa"
 			};
 		};
 	};
@@ -562,10 +538,10 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Moon_Armor : PHRP_Base_Armor
+	class PHRP_Aturr_Armor : PHRP_Base_Armor
 	{
 		author = "Soldner";
-		displayName = "M52D Body Armor (Moon)";
+		displayName = "M52D Body Armor (Aturr)";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -597,31 +573,31 @@ class CfgWeapons
 			"AS_MediumLeft", 
 			"AS_MediumRight", 
 			"AS_ODSTCQBLeft", 
-			"AS_ODSTCQBRight", 
+			//"AS_ODSTCQBRight", 
 			"AS_ODSTLeft", 
-			//"AS_ODSTRight", 
+			"AS_ODSTRight", 
 			//"AS_ODSTSniperLeft", 
 			"AS_ODSTSniperRight", 
 			"AS_SmallLeft",  
 			"AS_SmallRight", 
-			"AP_Canteen", 
-			//"AP_GL", 
-			//"AP_Knife", 
-			"AP_MGThigh", 
+			//"AP_Canteen", 
+			"AP_GL", 
+			"AP_Knife", 
+			//"AP_MGThigh", 
 			"AP_AR", 
 			"AP_BR", 
 			"AP_Pack", 
-			"AP_Pistol", 
+			//"AP_Pistol", 
 			"AP_Rounds", 
 			"AP_SG", 
-			"AP_SMG", 
+			//"AP_SMG", 
 			"AP_Sniper", 
-			"AP_Thigh", 
-			//"AP_Frag", 
+			//"AP_Thigh", 
+			"AP_Frag", 
 			"AP_Smoke", 
 			"APO_AR", 
-			//"APO_BR", 
-			"APO_Knife", 
+			"APO_BR", 
+			//"APO_Knife", 
 			//"APO_SMG", 
 			"APO_Sniper", 
 			"CustomKit_Scorch"
@@ -629,11 +605,11 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat","","LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"};
 		hiddenSelectionsTextures[] =
 		{
-			"PHGear\data\Army\data\vest_odst_co.paa",
-			"PHGear\data\army\data\armor_odst_co.paa",
-			"PHGear\data\armor\customlegs_moon_co.paa",
+			"PHGear\data\armor\customvest_soldner_co.paa",
+			"PHGear\data\armor\customarmor_soldnerarmor_co.paa",
+			"PHGear\data\armor\customlegs_aturr_co.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
-			"PHGear\data\armor\customarmor_moon_co.paa"
+			"PHGear\data\armor\customarmor_aturr_co.paa"
 		};
 		class ItemInfo :ItemInfo
 		{
@@ -665,166 +641,32 @@ class CfgWeapons
 				"AS_MediumLeft", 
 				"AS_MediumRight", 
 				"AS_ODSTCQBLeft", 
-				"AS_ODSTCQBRight", 
+				//"AS_ODSTCQBRight", 
 				"AS_ODSTLeft", 
-				//"AS_ODSTRight", 
+				"AS_ODSTRight", 
 				//"AS_ODSTSniperLeft", 
 				"AS_ODSTSniperRight", 
 				"AS_SmallLeft",  
 				"AS_SmallRight", 
-				"AP_Canteen", 
-				//"AP_GL", 
-				//"AP_Knife", 
-				"AP_MGThigh", 
+				//"AP_Canteen", 
+				"AP_GL", 
+				"AP_Knife", 
+				//"AP_MGThigh", 
 				"AP_AR", 
 				"AP_BR", 
 				"AP_Pack", 
-				"AP_Pistol", 
+				//"AP_Pistol", 
 				"AP_Rounds", 
 				"AP_SG", 
-				"AP_SMG", 
+				//"AP_SMG", 
 				"AP_Sniper", 
-				"AP_Thigh", 
-				//"AP_Frag", 
-				"AP_Smoke", 
-				"APO_AR", 
-				//"APO_BR", 
-				"APO_Knife", 
-				//"APO_SMG", 
-				"APO_Sniper", 
-				"CustomKit_Scorch"
-			};
-		};
-	};
-    class PHRP_Pjetrovic_Armor : PHRP_Base_Armor
-	{
-		author = "Soldner";
-		displayName = "M52D Body Armor (Pjetrovic)";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		model = "\OPTRE_UNSC_Units\Army\armor.p3d";
-		hiddenSelections[] =
-		{
-			"camo",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			//"A_Base",
-			"A_Ghillie",
-			//"A_ChestArmor", 
-			//"A_KneesLeft", 
-			//"A_KneesRight", 
-			"A_KneesMarLeft", 
-			"A_KneesMarRight", 
-			//"A_ODST", 
-			//"A_ShinArmorLeft", 
-			//"A_ShinArmorRight", 
-			//"A_TacPad", 
-			//"A_ThighArmorLeft", 
-			//"A_ThighArmorRight", 
-			//"AS_BaseLeft", 
-			//"AS_BaseRight", 
-			"AS_LargeLeft", 
-			"AS_LargeRight", 
-			"AS_MediumLeft", 
-			"AS_MediumRight", 
-			"AS_ODSTCQBLeft", 
-			"AS_ODSTCQBRight", 
-			"AS_ODSTLeft", 
-			//"AS_ODSTRight", 
-			//"AS_ODSTSniperLeft", 
-			"AS_ODSTSniperRight", 
-			"AS_SmallLeft",  
-			"AS_SmallRight", 
-			"AP_Canteen", 
-			"AP_GL", 
-			"AP_Knife", 
-			"AP_MGThigh", 
-			//"AP_AR", 
-			"AP_BR", 
-			"AP_Pack", 
-			"AP_Pistol", 
-			"AP_Rounds", 
-			"AP_SG", 
-			"AP_SMG", 
-			"AP_Sniper", 
-			"AP_Thigh", 
-			"AP_Frag", 
-			"AP_Smoke", 
-			"APO_AR", 
-			"APO_BR", 
-			//"APO_Knife", 
-			"APO_SMG", 
-			"APO_Sniper", 
-			"CustomKit_Scorch"
-		};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat","","LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"};
-		hiddenSelectionsTextures[] =
-		{
-			"PHGear\data\Army\data\vest_odst_co.paa",
-			"PHGear\data\army\data\armor_odst_co.paa",
-			"PHGear\data\armor\customlegs_pjetrovic_co.paa",
-			"PHGear\data\army\data\ghillie_woodland_co.paa",
-			"PHGear\data\armor\customarmor_pjetrovic_co.paa"
-		};
-		class ItemInfo :ItemInfo
-		{
-			uniformModel = "\OPTRE_UNSC_Units\Army\armor.p3d";
-			hiddenSelections[] =
-			{
-				"camo",
-				"camo2",
-				"camo3",
-				"camo4",
-				"camo5",
-				//"A_Base",
-				"A_Ghillie",
-				//"A_ChestArmor", 
-				//"A_KneesLeft", 
-				//"A_KneesRight", 
-				"A_KneesMarLeft", 
-				"A_KneesMarRight", 
-				//"A_ODST", 
-				//"A_ShinArmorLeft", 
-				//"A_ShinArmorRight", 
-				//"A_TacPad", 
-				//"A_ThighArmorLeft", 
-				//"A_ThighArmorRight", 
-				//"AS_BaseLeft", 
-				//"AS_BaseRight", 
-				"AS_LargeLeft", 
-				"AS_LargeRight", 
-				"AS_MediumLeft", 
-				"AS_MediumRight", 
-				"AS_ODSTCQBLeft", 
-				"AS_ODSTCQBRight", 
-				"AS_ODSTLeft", 
-				//"AS_ODSTRight", 
-				//"AS_ODSTSniperLeft", 
-				"AS_ODSTSniperRight", 
-				"AS_SmallLeft",  
-				"AS_SmallRight", 
-				"AP_Canteen", 
-				"AP_GL", 
-				"AP_Knife", 
-				"AP_MGThigh", 
-				//"AP_AR", 
-				"AP_BR", 
-				"AP_Pack", 
-				"AP_Pistol", 
-				"AP_Rounds", 
-				"AP_SG", 
-				"AP_SMG", 
-				"AP_Sniper", 
-				"AP_Thigh", 
+				//"AP_Thigh", 
 				"AP_Frag", 
 				"AP_Smoke", 
 				"APO_AR", 
 				"APO_BR", 
 				//"APO_Knife", 
-				"APO_SMG", 
+				//"APO_SMG", 
 				"APO_Sniper", 
 				"CustomKit_Scorch"
 			};
