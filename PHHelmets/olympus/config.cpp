@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","moon","tepfer","kaz","pjetrovic","holland"};
+				values[] = {"soldner","kaz","tepfer","aturr","holland"};
 				class soldner
 				{
 					label = "Soldner";
@@ -46,17 +46,13 @@ class XtdGearModels
 				{
 					label = "Tepfer";
 				};
+				class aturr
+				{
+					label = "Aturr";
+				};
 				class holland
 				{
 					label = "Holland";
-				};
-				class moon
-				{
-					label = "Moon";
-				};
-				class pjetrovic
-				{
-					label = "Pjetrovic";
 				};
 			};
 		};
@@ -81,19 +77,14 @@ class XtdGearInfos
 			role = "tepfer";
 			model = "PHRP_olympus_helmets";
 		};
+		class PHRP_Aturr_Recon_Helmet
+		{
+			role = "aturr";
+			model = "PHRP_olympus_helmets";
+		};
 		class PHRP_Holland_ODST_Helmet
 		{
 			role = "holland";
-			model = "PHRP_olympus_helmets";
-		};
-		class PHRP_Moon_Commando_Helmet
-		{
-			role = "moon";
-			model = "PHRP_olympus_helmets";
-		};
-		class PHRP_Pjetrovic_Security_Helmet
-		{
-			role = "pjetrovic";
 			model = "PHRP_olympus_helmets";
 		};
 	};
@@ -101,60 +92,71 @@ class XtdGearInfos
 class CfgWeapons
 {
 	class HeadgearItem;
-	class OPTRE_UNSC_CH252D_Helmet;
 	class PHRP_Base_Operator_Helmet;
+	class PHRP_Base_Recon_Helmet;
 	class PHRP_Base_ODST_Helmet;
-	class PHRP_Base_Commando_Helmet;
-	class PHRP_Base_Security_Helmet;
-	class PHRP_Soldner_Scout_Helmet: OPTRE_UNSC_CH252D_Helmet
+	class PHRP_M56SR_Helmet_Base;
+	class PHRP_M56G_Helmet_Base;
+
+	class Soldner_M56SR : PHRP_M56SR_Helmet_Base
 	{
 		scope = 2;
-		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "Soldner";
-		displayName = "Experimental Assault Armor/S (Soldner)";
-		model = "TCF_EQUIPMENT\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		mass = 6;
-		hiddenSelections[] = {"camo1","Visor","Interior"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_soldner_co.paa","PHHelmets\data\helmets\customvisor_soldner_co.paa"};
-		class ItemInfo: HeadgearItem
+		displayName = "[PHRP] M56S-R Helmet (Soldner)";
+		hiddenSelections[] = 
 		{
-			mass = 6;
-			uniformmodel = "TCF_EQUIPMENT\Helmets\Scout\Reach_Scout_Helmet.p3d";
-			picture = "\OPTRE_UNSC_Units\Army\icons\odst_recon";
-			modelSides[] = {6};
-			hiddenSelections[] = {"camo1","Visor","Interior"};
-			class HitpointsProtectionInfo
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"PHHelmets\data\helmets\Soldner_HR_ODST_Helmet_CO.paa",
+			"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
 			{
-				class Face
-				{
-					armor = 40;
-					hitpointName = "HitFace";
-					passThrough = 0.1;
-				};
-				class Head
-				{
-					armor = 40;
-					hitPointName = "HitHead";
-					passThrough = 0.1;
-				};
-				class Neck
-				{
-					armor = 40;
-					hitpointName = "HitNeck";
-					passThrough = 0.1;
-				};
+				"camo1",
+				"camo2"
+			};
+			hiddenSelectionsTextures[] = 
+			{
+				"PHHelmets\data\helmets\Soldner_HR_ODST_Helmet_CO.paa",
+				"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"
 			};
 		};
 	};
-	class PHRP_Kaz_Operator_Helmet: PHRP_Base_Operator_Helmet
+	class PHRP_Kaz_M56G : PHRP_M56G_Helmet_Base
 	{
-		author = "MrMicrobe";
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "Mark V/O Helmet (Kaz)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaz_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
+		author = "Soldner";
+		displayName = "[PHRP] M56G Helmet (Kaz)";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"PHHelmets\data\helmets\Kaz_Gungnir_Helmet_CO.paa",
+			"MA_Armor\data\Helmets\Gungnir\Gungnir_Visor_Blue_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2"
+			};
+			hiddenSelectionsTextures[] = 
+			{
+				"PHHelmets\data\helmets\Kaz_Gungnir_Helmet_CO.paa",
+				"MA_Armor\data\Helmets\Gungnir\Gungnir_Visor_Blue_co.paa"
+			};
+		};	
 	};
 	class PHRP_Tepfer_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
@@ -177,24 +179,27 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_holland_co.paa","PHHelmets\data\helmets\customvisor_holland_co.paa"};
 	};
-	class PHRP_Moon_Commando_Helmet : PHRP_Base_Commando_Helmet
+	class PHRP_Aturr_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "Soldner";
-		displayName = "Mark V/K Helmet (Moon)";
-		hiddenSelections[] =  {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_moon_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
+		displayName = "Recon Helmet 1-A (Aturr)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","PHHelmets\data\helmets\customvisor_aturr_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
-	class PHRP_Pjetrovic_Security_Helmet : PHRP_Base_Security_Helmet
+};
+class CfgGlasses
+{
+	class MA_M56G_Faceplate;
+	class PHRP_Kaz_M56G_Faceplate: MA_M56G_Faceplate
 	{
 		scope = 2;
-		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Mark V/M Helmet (Pjetrovic)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_pjetrovic_co.paa","OPTRE_UNSC_Units\Army\data\Security_Visor_co.paa"};
+		displayName = "[PHRP] Kaz's M56G Faceplate";
+		identitytypes[] = {};
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Kaz_Gungnir_Faceplate_CO.paa"};
 	};
 };

@@ -48,6 +48,8 @@ class CfgMods
 class CfgWeapons
 {
 	class VestItem;
+	
+	//M52D Armor
 	class OPTRE_UNSC_M52D_Armor;
 	class PHRP_Base_Armor : OPTRE_UNSC_M52D_Armor
 	{
@@ -74,6 +76,71 @@ class CfgWeapons
 			hiddenSelections[] = {"camo","camo2","camo3","camo4","camo5","A_Base","A_Ghillie","A_ChestArmor","A_KneesLeft","A_KneesRight","A_KneesMarLeft","A_KneesMarRight","A_ODST","A_ShinArmorLeft","A_ShinArmorRight","A_TacPad","A_ThighArmorLeft","A_ThighArmorRight","AS_BaseLeft","AS_BaseRight","AS_LargeLeft","AS_LargeRight","AS_MediumLeft","AS_MediumRight","AS_ODSTCQBLeft","AS_ODSTCQBRight","AS_ODSTLeft","AS_ODSTRight","AS_ODSTSniperLeft","AS_ODSTSniperRight","AS_SmallLeft","AS_SmallRight","AP_Canteen","AP_GL","AP_Knife","AP_MGThigh","AP_AR","AP_BR","AP_Pack","AP_Pistol","AP_Rounds","AP_SG","AP_SMG","AP_Sniper","AP_Thigh","AP_Frag","AP_Smoke","APO_AR","APO_BR","APO_Knife","APO_SMG","APO_Sniper","CustomKit_Scorch"};
 			hiddenSelectionsTextures[] = {"PHarmor\data\Army\data\vest_odst_co.paa","PHarmor\data\army\data\armor_odst_co.paa","PHarmor\data\armor\legs_base_co.paa","PHarmor\data\army\data\ghillie_woodland_co.paa","PHarmor\data\armor\customarmor_alphabase_CO.paa"};
 			hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\V\Vest_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\armor_OP.rvmat","LM_OPCAN3.0\BLU\UNSC\V\legs_OP.rvmat","","LM_OPCAN3.0\BLU\UNSC\V\ODST_OP.rvmat"};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName = "HitNeck";
+					armor = 50;
+					passThrough = 0.1;
+				};
+				class Arms
+				{
+					hitpointName = "HitArms";
+					armor = 50;
+					passThrough = 0.1;
+				};
+				class Chest
+				{
+					hitpointName = "HitChest";
+					armor = 55;
+					passThrough = 0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName = "HitDiaphragm";
+					armor = 55;
+					passThrough = 0.1;
+				};
+				class Abdomen
+				{
+					hitpointName = "HitAbdomen";
+					armor = 55;
+					passThrough = 0.1;
+				};
+				class Body
+				{
+					hitpointName = "HitBody";
+					passThrough = 0.1;
+					armor = 50;
+				};
+				class Legs
+				{
+					hitpointName = "HitLegs";
+					armor = 50;
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
+	
+	//M56 Armor
+	class MA_Vest_Base;
+	class PHRP_Base_M56R_Armor : MA_Vest_Base
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		displayName = "PHRP M56R Body Armor - BASE";
+		vestType = "Rebreather";
+		model = "MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture = "MA_Armor\data\Icons\H3ODST_Vest.paa";
+		class ItemInfo: ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass = "Supply200";
+			hiddenSelections[] = {"camo1","camo2","camo3","camo4","camo5","camo6","camo7","camo8","camo9","camo10","H3_Forearm_Left","H3_Forearm_Right","H3_Pauldron_Left","H3_Pauldron_Right","Reach_Shoulder_Radio_Left","Reach_Shoulder_Radio_Right","Reach_Sniper_Pauldron_Left","Reach_Sniper_Pauldron_Right","Reach_CQB_Pauldron_Left","Reach_CQB_Pauldron_Right","Thigh_Pouch","H3_Armor_Upper","H3_Armor_Lower"};
+			hiddenSelectionsTextures[] = {"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa","MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa","MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa","MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Upper_co.paa","MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Lower_co.paa","MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa","MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa","MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa","MA_Armor\data\Vests\Reach_ODST\Addons\CQB_Shoulders\CQB_co.paa","MA_Armor\data\Vests\Reach_ODST\Addons\Reach_Shoulder_Radio\Shoulder_Radio_Green_co.paa"};
 			class HitpointsProtectionInfo
 			{
 				class Neck

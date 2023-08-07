@@ -22,60 +22,8 @@ class CfgPatches //class desc.
 class CfgWeapons
 {
 	class HeadgearItem;
-	class OPTRE_UNSC_CH252D_Helmet_dp;
-	class PHRP_Base_Operator_Helmet__dp;
 	class PHRP_Base_ODST_Helmet_dp;
 	class PHRP_Base_Commando_Helmet_dp;
-	class PHRP_Base_Security_Helmet_dp;
-	class PHRP_Soldner_Scout_Helmet_dp : OPTRE_UNSC_CH252D_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		mass = 6;
-		author = "Soldner";
-		displayName = "Experimental Assault Helmet/S (Soldner)";
-		model = "TCF_EQUIPMENT\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelections[] = {"camo1"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_soldner_co.paa","TCF_EQUIPMENT\Helmets\Scout\Data\DP_Visor_Co.paa"};
-		class ItemInfo: HeadgearItem
-		{
-			uniformmodel = "TCF_EQUIPMENT\Helmets\Scout\Reach_Scout_Helmet.p3d";
-			modelSides[] = {6};
-			mass = 6;
-			hiddenSelections[] = {"camo1","Visor"};
-			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_soldner_co.paa","TCF_EQUIPMENT\Helmets\Scout\Data\DP_Visor_Co.paa"};
-			class HitpointsProtectionInfo
-			{
-				class Face
-				{
-					armor = 30;
-					hitpointName = "HitFace";
-					passThrough = 0.1;
-				};
-				class Head
-				{
-					armor = 30;
-					hitPointName = "HitHead";
-					passThrough = 0.1;
-				};
-				class Neck
-				{
-					armor = 30;
-					hitpointName = "HitNeck";
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
-	class PHRP_Kaz_Operator_Helmet_dp : PHRP_Base_Operator_Helmet__dp
-	{
-		author = "MrMicrobe";
-		scope = 1;
-		scopeArsenal = 1;
-		displayName = "Mark V/O Helmet (Kaz)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaz_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
-	};
 	class PHRP_Holland_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
@@ -95,22 +43,13 @@ class CfgWeapons
 		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat",""};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tepfer_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
-	class PHRP_Moon_Commando_Helmet_dp : PHRP_Base_Commando_Helmet_dp
+	class PHRP_Aturr_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
 		author = "Soldner";
-		displayName = "Mark V/K Helmet (Moon)";
-		hiddenSelections[] =  {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_Moon_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
-	};
-	class PHRP_Pjetrovic_Security_Helmet_dp : PHRP_Base_Security_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "MrMicrobe";
-		displayName = "Mark V/M Helmet (Pjetrovic)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_pjetrovic_co.paa","OPTRE_UNSC_Units\Army\data\Security_Visor_co.paa"};
+		displayName = "Recon Helmet 1-A (Aturr)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 };

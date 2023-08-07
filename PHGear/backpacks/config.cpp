@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Type";
-				values[] = {"basic","medic","heavy","satchel","PRC515","PRC521","gunbagace"};
+				values[] = {"basic","medic","heavy","satchel","PRC515","PRC521","gunbagace","m56"};
 				class basic
 				{
 					label = "Basic";
@@ -368,7 +368,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		maximumLoad = 350;
+		maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo1","AP_Heavy","biofoam"};
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_co.paa"};
@@ -392,7 +392,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		maximumLoad = 375;
+		maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_co.paa"};
@@ -420,7 +420,7 @@ class CfgVehicles
 		tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio = 1;
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\prc515_CO.paa"};
-		maximumLoad = 350;
+		maximumLoad = 400;
 	};
 	class OPTRE_ANPRC_521_green;
 	class PHRP_ANPRC_521: OPTRE_ANPRC_521_green
@@ -477,7 +477,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		maximumLoad = 350;
+		maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo","camo2","B_Addons","B_Medic","B_Radio"};
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\soft_backpack_co.paa"};
@@ -503,7 +503,7 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		maximumLoad = 375;
+		maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo","B_Addons","B_Radio"};
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\soft_backpack_co.paa"};
@@ -647,5 +647,39 @@ class CfgVehicles
 	{
 		displayName = "PHRP ILCS 2-1 Gunbag";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\rucksack_twoone_co.paa"};
+	};
+
+	//m56
+	class MA_M56S_Rucksack;
+	class PHRP_M56_ILCS: MA_M56S_Rucksack
+	{
+		author = "Soldner";
+		displayName = "[PHRP] M56 ILCS Rucksack";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		maximumLoad = 400;
+		mass = 50;
+		hiddenSelections[] = {"camo1","camo2","Radio"};
+		hiddenSelectionsTextures[] = {"MA_Armor\data\Backpacks\ODST_Rucksack\ODST_Ruck_co.paa","MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa"};
+	};
+	class PHRP_M56_ILCS_Radio: MA_M56S_Rucksack
+	{
+		author = "Soldner";
+		displayName = "[PHRP] M56 ILCS Radio Rucksack";
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		maximumLoad = 400;
+		mass = 50;
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"MA_Armor\data\Backpacks\ODST_Rucksack\ODST_Ruck_co.paa","MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa"};
+	};
+	class PHRP_M56_ILCS_Gunbag : PHRP_M56_ILCS
+	{
+		_generalMacro = "ace_gunbag_Tan";
+		displayName = "[PHRP] M56 ILCS Gunbag";
+		maximumLoad = 250;
+		ace_gunbag = 1;
 	};
 };
