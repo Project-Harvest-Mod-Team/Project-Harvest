@@ -960,8 +960,32 @@ class CfgWeapons
 	};
 
 	//M56SR
+
 	class MA_Helmet_Base;
-	class PHRP_M56SR_Helmet_Base : MA_Helmet_Base
+	class MA_Helmet_Base_o : MA_Helmet_Base
+	{
+		class ItemInfo;
+	};
+	class MA_Helmet_Base_on: MA_Helmet_Base_o
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo;
+		};
+	};
+	class MA_Helmet_Base_one: MA_Helmet_Base_on
+	{
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo: HitpointsProtectionInfo
+			{
+				class Face;
+				class Head;
+				class Neck;
+			};
+		};
+	};
+	class PHRP_M56SR_Helmet_Base : MA_Helmet_Base_one
 	{
 		scope = 1;
 		scopeCurator = 1;
@@ -1004,12 +1028,11 @@ class CfgWeapons
 	};
 
 	//M56G
-	class PHRP_M56G_Helmet_Base : MA_Helmet_Base
+	class PHRP_M56G_Helmet_Base : MA_Helmet_Base_one
 	{
 		scope = 1;
 		scopeCurator = 1;
 		scopeArsenal = 1;
-		author = "Misriah Armory & aclarke064";
 		displayName = "[PHRP] M56-G Helmet - Base";
 		model = "MA_Armor\data\Helmets\Gungnir\Gungnir_Helmet.p3d";
 		picture = "MA_Armor\data\Icons\Gungnir_Helmet.paa";

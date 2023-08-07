@@ -125,6 +125,7 @@ class CfgWeapons
 	};
 	
 	//M56 Armor
+	class ItemInfo;
 	class MA_Vest_Base;
 	class PHRP_Base_M56R_Armor : MA_Vest_Base
 	{

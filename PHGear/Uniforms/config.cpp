@@ -485,23 +485,24 @@ class CfgVehicles
 		scope = 1;
 		scopeCurator = 1;
 		scopeArsenal = 1;
-		vehicleClass = "OPTRE_UNSC_Man_Army_W_class";
-		uniformClass = "Gladius_BDU";
-		model = "\OPTRE_UNSC_Units\Army\uniform.p3d";
+		vehicleClass = "";
+		uniformClass = "";
+		model = "";
 		weapons[] = {"Throw","Put"};
 		respawnWeapons[] = {"Throw","Put"};
 		Items[] = {};
 		RespawnItems[] = {};
 		magazines[] = {};
 		respawnMagazines[] = {};
-		hiddenSelections[] = {"camo","camo2","insignia","clan","A_SlimLeg"};
-		hiddenSelectionsTextures[] = {"OPTRE_UNSC_Units\Army\data\uniform_a_woodland_co.paa","OPTRE_UNSC_Units\Army\data\uniform_b_woodland_co.paa"};
+		hiddenSelections[] = {"camo"};
+		hiddenSelectionsTextures[] = {};
 		editorSubcategory = "PHRP_EdSubCat_ODSTs";
 	};
 
 	//Gladius Unis
 	class BDU_V_Gladius: PHRP_Base_Uniform
 	{
+		model = "\OPTRE_UNSC_Units\Army\uniform.p3d";
 		scopeArsenal = 2;
 		uniformclass = "Gladius_BDU";
 		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
@@ -509,6 +510,7 @@ class CfgVehicles
 	};
 	class BDU_V_Gladius_Rolled: PHRP_Base_Uniform
 	{
+		model = "\OPTRE_UNSC_Units\Army\uniform.p3d";
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\uniform_rolled";
 		uniformclass = "Gladius_BDU_Rolled";
@@ -517,6 +519,7 @@ class CfgVehicles
 	};
 	class BDU_V_Gladius_Short: PHRP_Base_Uniform
 	{
+		model = "\OPTRE_UNSC_Units\Army\uniform.p3d";
 		scopeArsenal = 2;
 		model = "\OPTRE_UNSC_Units\Army\uniform_short";
 		uniformclass = "Gladius_BDU_Short";
@@ -543,207 +546,14 @@ class CfgVehicles
 	};
 
 	//M56 BDU
-	class PHRP_M56S_BDU_Base: PHRP_Soldier_WDL
+	//class MA_M56S_BDU;
+	class PHRP_M56S_BDU: PHRP_Base_Uniform
 	{
-		class HitPoints: HitPoints
-		{
-			class HitFace: HitFace
-			{
-				armor = 5;
-				material = -1;
-				name = "face_hub";
-				passThrough = 0.8;
-				radius = 0.08;
-				explosionShielding = 0.1;
-				minimalHit = 0.01;
-			};
-			class HitNeck: HitNeck
-			{
-				armor = 5;
-				material = -1;
-				name = "neck";
-				passThrough = 0.8;
-				radius = 0.1;
-				explosionShielding = 0.5;
-				minimalHit = 0.01;
-			};
-			class HitHead: HitHead
-			{
-				armor = 5;
-				material = -1;
-				name = "head";
-				passThrough = 0.8;
-				radius = 0.2;
-				explosionShielding = 0.5;
-				minimalHit = 0.01;
-				depends = "HitFace max HitNeck";
-			};
-			class HitPelvis: HitPelvis
-			{
-				armor = 6;
-				material = -1;
-				name = "pelvis";
-				passThrough = 0.8;
-				radius = 0.24;
-				explosionShielding = 0.1;
-				visual = "injury_body";
-				minimalHit = 0.01;
-				depends = "0";
-			};
-			class HitAbdomen: HitAbdomen
-			{
-				armor = 6;
-				material = -1;
-				name = "spine1";
-				passThrough = 0.8;
-				radius = 0.16;
-				explosionShielding = 0.1;
-				visual = "injury_body";
-				minimalHit = 0.01;
-			};
-			class HitDiaphragm: HitDiaphragm
-			{
-				armor = 6;
-				material = -1;
-				name = "spine2";
-				passThrough = 0.8;
-				radius = 0.18;
-				explosionShielding = 0.25;
-				visual = "injury_body";
-				minimalHit = 0.01;
-			};
-			class HitChest: HitChest
-			{
-				armor = 6;
-				material = -1;
-				name = "spine3";
-				passThrough = 0.8;
-				radius = 0.18;
-				explosionShielding = 0.25;
-				visual = "injury_body";
-				minimalHit = 0.01;
-			};
-			class HitBody: HitBody
-			{
-				armor = 1000;
-				material = -1;
-				name = "body";
-				passThrough = 1;
-				radius = 0;
-				explosionShielding = 0.25;
-				visual = "injury_body";
-				minimalHit = 0.01;
-				depends = "HitPelvis max HitAbdomen max HitDiaphragm max HitChest";
-			};
-			class HitArms: HitArms
-			{
-				armor = 6;
-				material = -1;
-				name = "arms";
-				passThrough = 1;
-				radius = 0.1;
-				explosionShielding = 0.3;
-				visual = "injury_hands";
-				minimalHit = 0.01;
-				depends = "0";
-			};
-			class HitHands: HitHands
-			{
-				armor = 6;
-				material = -1;
-				name = "hands";
-				passThrough = 1;
-				radius = 0.1;
-				explosionShielding = 0.3;
-				visual = "injury_hands";
-				minimalHit = 0.01;
-				depends = "HitArms";
-			};
-			class HitLegs: HitLegs
-			{
-				armor = 6;
-				material = -1;
-				name = "legs";
-				passThrough = 1;
-				radius = 0.14;
-				explosionShielding = 0.3;
-				visual = "injury_legs";
-				minimalHit = 0.01;
-				depends = "0";
-			};
-			class Incapacitated: Incapacitated
-			{
-				armor = 1000;
-				material = -1;
-				name = "body";
-				passThrough = 1;
-				radius = 0;
-				explosionShielding = 0.1;
-				visual = "";
-				minimalHit = 0;
-				depends = "(((Total - 0.25) max 0) + ((HitHead - 0.25) max 0) + ((HitBody - 0.25) max 0)) * 2";
-			};
-			class HitLeftArm: HitLeftArm
-			{
-				armor = 6;
-				material = -1;
-				name = "hand_l";
-				passThrough = 1;
-				radius = 0.08;
-				explosionShielding = 0.1;
-				visual = "injury_hands";
-				minimalHit = 0.01;
-			};
-			class HitRightArm: HitRightArm
-			{
-				armor = 6;
-				material = -1;
-				name = "hand_r";
-				passThrough = 1;
-				radius = 0.08;
-				explosionShielding = 0.1;
-				visual = "injury_hands";
-				minimalHit = 0.01;
-			};
-			class HitLeftLeg: HitRightArm
-			{
-				armor = 6;
-				material = -1;
-				name = "leg_l";
-				passThrough = 1;
-				radius = 0.1;
-				explosionShielding = 0.1;
-				visual = "injury_legs";
-				minimalHit = 0.01;
-			};
-			class HitRightLeg: HitRightLeg
-			{
-				armor = 6;
-				material = -1;
-				name = "leg_r";
-				passThrough = 1;
-				radius = 0.1;
-				explosionShielding = 0.1;
-				visual = "injury_legs";
-				minimalHit = 0.01;
-			};
-			class ACE_HDBracket: ACE_HDBracket
-			{
-				armor = 1;
-				material = -1;
-				name = "head";
-				passThrough = 0;
-				radius = 1;
-				explosionShielding = 0.1;
-				visual = "";
-				minimalHit = 0;
-				depends = "HitHead";
-			};
-		};
 		dlc = "Project Harvest Armory";
 		scopeArsenal = 2;
 		UniformClass = "PHRP_M56S_BDU";
 		model = "MA_Armor\data\Uniforms\H3_ODST\H3_ODST_Uniform.p3d";
+		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"MA_Armor\data\Uniforms\H3_ODST\H3_Undersuit_co.paa"};
 	};
 };

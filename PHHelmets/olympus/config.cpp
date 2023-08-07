@@ -91,6 +91,7 @@ class XtdGearInfos
 };
 class CfgWeapons
 {
+	class ItemInfo;
 	class HeadgearItem;
 	class PHRP_Base_Operator_Helmet;
 	class PHRP_Base_Recon_Helmet;

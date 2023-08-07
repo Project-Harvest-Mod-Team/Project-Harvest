@@ -26,6 +26,7 @@ class CfgWeapons
 	{
 		class ItemInfo;
 	};
+	class ItemInfo;
 	class PHRP_Base_M56R_Armor;
 	class PHRP_Soldner_M56R_Armor: PHRP_Base_M56R_Armor
 	{
@@ -73,10 +74,10 @@ class CfgWeapons
 			"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa",
 			"MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",
 			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
-			"PHnewGear\data\armor\Soldner_Reach_Upper_Armor_co.paa",
-			"PHnewGear\data\armor\Soldner_Reach_Lower_Armor_co.paa",
+			"PHGear\data\armor\Soldner_Reach_Upper_Armor_co.paa",
+			"PHGear\data\armor\Soldner_Reach_Lower_Armor_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
-			"PHnewGear\data\armor\Soldner_Forearm_Vents_co.paa",
+			"PHGear\data\armor\Soldner_Forearm_Vents_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Addons\CQB_Shoulders\CQB_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Addons\Reach_Shoulder_Radio\Shoulder_Radio_ODST_co.paa"
@@ -126,10 +127,10 @@ class CfgWeapons
 				"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa",
 				"MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",
 				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
-				"PHnewGear\data\armor\Soldner_Reach_Upper_Armor_co.paa",
-				"PHnewGear\data\armor\Soldner_Reach_Lower_Armor_co.paa",
+				"PHGear\data\armor\Soldner_Reach_Upper_Armor_co.paa",
+				"PHGear\data\armor\Soldner_Reach_Lower_Armor_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
-				"PHnewGear\data\armor\Soldner_Forearm_Vents_co.paa",
+				"PHGear\data\armor\Soldner_Forearm_Vents_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Addons\CQB_Shoulders\CQB_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Addons\Reach_Shoulder_Radio\Shoulder_Radio_ODST_co.paa"
