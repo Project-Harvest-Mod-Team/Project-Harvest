@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","blackburn","graves"};
+				values[] = {"default","corpsman","payne","graves"};
 				class default
 				{
 					label = "Default";
@@ -43,9 +43,9 @@ class XtdGearModels
 				{
 					label = "Corpsman";
 				};
-				class blackburn
+				class payne
 				{
-					label = "Blackburn";
+					label = "Payne";
 				};
 				class graves
 				{
@@ -69,10 +69,10 @@ class XtdGearInfos
 			model = "PHRP_onetwo_vests";
 			role = "corpsman";
 		};
-		class PHRP_Blackburn_Armor
+		class PHRP_Payne_Armor
 		{
 			model = "PHRP_onetwo_vests";
-			role = "blackburn";
+			role = "payne";
 		};
 		class PHRP_Graves_Armor
 		{

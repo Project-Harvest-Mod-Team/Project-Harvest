@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","miller","craven","jaeger","owessel","kaker","wolf","kincaid","stone","lark","samson"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","miller","craven","jaeger","owessel","wolf","kincaid","stone","lark","samson","presscott","blackburn"};
 				class recruit
 				{
 					label = "Recruit";
@@ -94,10 +94,6 @@ class XtdGearModels
 				{
 					label = "Owessel";
 				};
-				class kaker
-				{
-					label = "Kaker";
-				};
 				class wolf
 				{
 					label = "Wolf";
@@ -117,6 +113,14 @@ class XtdGearModels
 				class samson
 				{
 					label = "Samson";
+				};
+				class presscott
+				{
+					label = "Presscott";
+				};
+				class blackburn
+				{
+					label = "Blackburn";
 				};
 			};
 		};
@@ -201,11 +205,6 @@ class XtdGearInfos
 			role = "owessel";
 			model = "PHRP_reservist_helmets";
 		};
-		class PHRP_Kaker_HRPilot_Helmet
-		{
-			role = "kaker";
-			model = "PHRP_reservist_helmets";
-		};
 		class PHRP_Wolf_Recon_Helmet
 		{
 			role = "wolf";
@@ -229,6 +228,16 @@ class XtdGearInfos
 		class PHRP_Samson_ODST_Helmet
 		{
 			role = "samson";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Presscott_ODST_Helmet
+		{
+			role = "presscott";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Blackburn_Recon_Helmet
+		{
+			role = "blackburn";
 			model = "PHRP_reservist_helmets";
 		};
 	};
@@ -399,16 +408,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
 	};
-	class PHRP_Kaker_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Jimbo";
-		displayName = "Mark V/P Helmet (Kaker)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
-	};
 	class PHRP_Wolf_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
 		scope = 2;
@@ -458,5 +457,25 @@ class CfgWeapons
 		displayName = "CH252D Helmet (Samson)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_samson_co.paa","PHHelmets\data\helmets\customvisor_samson_co.paa"};
+	};
+	class PHRP_Presscott_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VorpalHotdog";
+		displayName = "CH252D Helmet (Presscott)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\customvisor_presscott_co.paa"};
+	};
+	class PHRP_Blackburn_Recon_Helmet : PHRP_Base_Recon_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "Recon Helmet (Blackburn)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\customvisor_blackburn_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 };

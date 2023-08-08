@@ -27,14 +27,14 @@ class XtdGearModels
 	{
 		class PHRP_onefour_vests
 		{
-			label = "1-4 Vests";
+			label = "2-1 Vests";
 			author = "Project Harvest Mod Team";
 			options[] = {"role"};
 			class role
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","presscott"};
+				values[] = {"default","corpsman","chopper","coleson","kaker"};
 				class default
 				{
 					label = "Default";
@@ -43,9 +43,17 @@ class XtdGearModels
 				{
 					label = "Corpsman";
 				};
-				class presscott
+				class chopper
 				{
-					label = "Presscott";
+					label = "Chopper";
+				};
+				class coleson
+				{
+					label = "Coleson";
+				};
+				class kaker
+				{
+					label = "Kaker";
 				};
 			};
 		};
@@ -55,20 +63,30 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_onefour_Armor
+		class PHRP_twoone_Armor
 		{
 			model = "PHRP_onefour_vests";
 			role = "default";
 		};
-		class PHRP_onefourmedic_Armor
+		class PHRP_twoonemedic_Armor
 		{
 			model = "PHRP_onefour_vests";
 			role = "corpsman";
-		};
-		class PHRP_Presscott_Armor
+		}; 
+		class PHRP_chopper_Armor
 		{
 			model = "PHRP_onefour_vests";
-			role = "presscott";
+			role = "chopper";
+		};
+		class PHRP_Coleson_Armor
+		{
+			model = "PHRP_onefour_vests";
+			role = "coleson";
+		};
+		class PHRP_Kaker_Armor
+		{
+			model = "PHRP_onefour_vests";
+			role = "kaker";
 		};
 	};
 };

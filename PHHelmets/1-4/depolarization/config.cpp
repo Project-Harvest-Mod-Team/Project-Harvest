@@ -22,25 +22,43 @@ class CfgPatches //class desc.
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet_dp;
-	class PHRP_Base_Recon_Helmet_dp;
-	class PHRP_Base_Scout_Helmet_dp;
+	class PHRP_Base_HRPilot_Helmet_dp;
 	class PHRP_Base_CQB_Helmet_dp;
-	class PHRP_onefour_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
+	class PHRP_Base_EOD_Helmet_dp;
+	class PHRP_twoone_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
-		author = "Soldner";
-		displayName = "CH252D Helmet 1-4";
+		author = "Jimbo";
+		displayName = "CH252D Helmet 2-1";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onefourbase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_twoonebase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
-	class PHRP_Presscott_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
+	class PHRP_Chopper_CQB_Helmet_dp : PHRP_Base_CQB_Helmet_dp
 	{
 		scope = 1;
 		scopeArsenal = 1;
-		author = "VorpalHotdog";
-		displayName = "CH252D Helmet 1-4 (Presscott)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+		author = "MrMicrobe";
+		displayName = "Mark V/C Helmet 1-A (Chopper)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
+	};
+	class PHRP_Coleson_EOD_Helmet_dp : PHRP_Base_EOD_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "MrMicrobe";
+		displayName = "Mark V/C Helmet 2-1 (Coleson)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
+	};
+	class PHRP_Kaker_HRPilot_Helmet_dp : PHRP_Base_HRPilot_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "Jimbo";
+		displayName = "Mark V/P Helmet (Kaker)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
 	};
 };

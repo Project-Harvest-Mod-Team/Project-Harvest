@@ -19,33 +19,32 @@ class CfgPatches //class desc.
 		};
 	};
 };
-
 class XtdGearModels
 {
 	class CamoBase;
 	class CfgWeapons
 	{
-		class PHRP_twoone_vests
+		class PHRP_fleet_vests
 		{
-			label = "2-1 Vests";
+			label = "1-A Vests";
 			author = "Project Harvest Mod Team";
 			options[] = {"role"};
 			class role
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","coleson"};
-				class default
+				values[] = {"moon","pjetrovic","burtovski"};
+				class burtovski
 				{
-					label = "Default";
+					label = "Burtovski";
 				};
-				class corpsman
+				class moon
 				{
-					label = "Corpsman";
+					label = "Moon";
 				};
-				class coleson
+				class pjetrovic
 				{
-					label = "Coleson";
+					label = "Pjetrovic";
 				};
 			};
 		};
@@ -55,20 +54,20 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_twoone_Armor
+		class PHRP_Burtovski_Armor
 		{
-			model = "PHRP_twoone_vests";
-			role = "default";
+			model = "PHRP_fleet_vests";
+			role = "burtovski";
 		};
-		class PHRP_twoonemedic_Armor
+		class PHRP_Moon_Armor
 		{
-			model = "PHRP_twoone_vests";
-			role = "corpsman";
-		}; 
-		class PHRP_Coleson_Armor
+			model = "PHRP_fleet_vests";
+			role = "moon";
+		};
+		class PHRP_Pjetrovic_Armor
 		{
-			model = "PHRP_twoone_vests";
-			role = "coleson";
+			model = "PHRP_fleet_vests";
+			role = "pjetrovic";
 		};
 	};
 };

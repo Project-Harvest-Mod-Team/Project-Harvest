@@ -62,12 +62,12 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_Soldner_Scout_Helmet
+		class PHRP_Soldner_M56SR
 		{
 			role = "soldner";
 			model = "PHRP_olympus_helmets";
 		};
-		class PHRP_Kaz_Operator_Helmet
+		class PHRP_Kaz_M56G
 		{
 			role = "kaz";
 			model = "PHRP_olympus_helmets";
@@ -99,7 +99,7 @@ class CfgWeapons
 	class PHRP_M56SR_Helmet_Base;
 	class PHRP_M56G_Helmet_Base;
 
-	class Soldner_M56SR : PHRP_M56SR_Helmet_Base
+	class PHRP_Soldner_M56SR : PHRP_M56SR_Helmet_Base
 	{
 		scope = 2;
 		scopeArsenal = 2;

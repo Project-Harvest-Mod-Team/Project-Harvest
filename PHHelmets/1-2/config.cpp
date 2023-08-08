@@ -33,14 +33,14 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","blackburn","graves"};
+				values[] = {"default","payne","graves"};
 				class default
 				{
 					label = "Default";
 				};
-				class blackburn
+				class payne
 				{
-					label = "Blackburn";
+					label = "Payne";
 				};
 				class graves
 				{
@@ -59,9 +59,9 @@ class XtdGearInfos
 			role = "default";
 			model = "PHRP_onetwo_helmets";
 		};
-		class PHRP_Blackburn_Recon_Helmet
+		class PHRP_Payne_Operator_Helmet
 		{
-			role = "blackburn";
+			role = "payne";
 			model = "PHRP_onetwo_helmets";
 		};
 		class PHRP_Graves_ODST_Helmet
@@ -86,15 +86,15 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onetwobase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
-	class PHRP_Blackburn_Recon_Helmet : PHRP_Base_Recon_Helmet
+	class PHRP_Payne_Operator_Helmet : PHRP_Base_Operator_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Jimbo";
-		displayName = "Recon Helmet 1-2 (Blackburn)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\customvisor_blackburn_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+		author = "Soldner";
+		displayName = "Mark V/O Helmet 1-2 (Payne)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_payne_co.paa"};
 	};
 	class PHRP_Graves_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{

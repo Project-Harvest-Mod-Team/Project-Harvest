@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","morningstar","hazard","griffith","payne"};
+				values[] = {"default","corpsman","buckley","morningstar","hazard","griffith"};
 				class default
 				{
 					label = "Default";
@@ -42,6 +42,10 @@ class XtdGearModels
 				class corpsman
 				{
 					label = "Corpsman";
+				};
+				class buckley
+				{
+					label = "Buckley";
 				};
 				class morningstar
 				{
@@ -54,10 +58,6 @@ class XtdGearModels
 				class griffith
 				{
 					label = "Griffith";
-				};
-				class payne
-				{
-					label = "Payne";
 				};
 			};
 		};
@@ -77,6 +77,11 @@ class XtdGearInfos
 			model = "PHRP_onethree_vests";
 			role = "corpsman";
 		};
+		class PHRP_Buckley_Armor
+		{
+			model = "PHRP_onethree_vests";
+			role = "buckley";
+		};
 		class PHRP_Morningstar_Armor
 		{
 			model = "PHRP_onethree_vests";
@@ -91,11 +96,6 @@ class XtdGearInfos
 		{
 			model = "PHRP_onethree_vests";
 			role = "griffith";
-		};
-		class PHRP_Payne_Armor
-		{
-			model = "PHRP_onethree_vests";
-			role = "payne";
 		};
 	};
 };

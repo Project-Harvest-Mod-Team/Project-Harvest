@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"moon","burtovski","pjetrovic","chopper","buckley"};
+				values[] = {"moon","burtovski","pjetrovic"};
 				class burtovski
 				{
 					label = "Burtovski";
@@ -45,14 +45,6 @@ class XtdGearModels
 				class pjetrovic
 				{
 					label = "Pjetrovic";
-				};
-				class chopper
-				{
-					label = "Chopper";
-				};
-				class buckley
-				{
-					label = "Buckley";
 				};
 			};
 		};
@@ -77,16 +69,6 @@ class XtdGearInfos
 			role = "burtovski";
 			model = "PHRP_fleet_helmets";
 		};
-		class PHRP_Chopper_CQB_Helmet
-		{
-			role = "chopper";
-			model = "PHRP_oneA_helmets";
-		};
-		class PHRP_Buckley_Recon_Helmet
-		{
-			role = "buckley";
-			model = "PHRP_oneA_helmets";
-		};
 	};
 };
 class CfgWeapons
@@ -104,26 +86,6 @@ class CfgWeapons
 		displayName = "Mark V/K Helmet (Burtovski)";
 		hiddenSelections[] =  {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
-	};
-	class PHRP_Chopper_CQB_Helmet : PHRP_Base_CQB_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Mark V/C Helmet (Chopper)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
-	};
-	class PHRP_Buckley_Recon_Helmet : PHRP_Base_Recon_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "VibingVampire";
-		displayName = "Recon Helmet 1-A (Buckley)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_buckley_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 	class PHRP_Moon_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{

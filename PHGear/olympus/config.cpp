@@ -62,7 +62,7 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_Soldner_Armor
+		class PHRP_Soldner_M56R_Armor
 		{
 			model = "PHRP_Olympus_vests";
 			role = "soldner";

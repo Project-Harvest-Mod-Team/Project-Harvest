@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Reserve Armors";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","wilson","raider","drip","miller","jaeger","craven","owessel","kaker","wolf","kincaid","stone","lark","samson"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","wilson","raider","drip","miller","jaeger","craven","owessel","wolf","kincaid","stone","lark","samson","presscott","blackburn"};
 				class recruit
 				{
 					label = "Recruit";
@@ -90,10 +90,6 @@ class XtdGearModels
 				{
 					label = "Owessel";
 				};
-				class kaker
-				{
-					label = "Kaker";
-				};
 				class wolf
 				{
 					label = "Wolf";
@@ -113,6 +109,14 @@ class XtdGearModels
 				class samson
 				{
 					label = "Samson";
+				};
+				class presscott
+				{
+					label = "Presscott";
+				};
+				class blackburn
+				{
+					label = "Blackburn";
 				};
 			};
 		};
@@ -192,11 +196,6 @@ class XtdGearInfos
 			model = "PHRP_Reserve_vests";
 			role = "owessel";
 		};
-		class PHRP_Kaker_Armor
-		{
-			model = "PHRP_Reserve_vests";
-			role = "kaker";
-		};
 		class PHRP_Wolf_Armor
 		{
 			model = "PHRP_Reserve_vests";
@@ -221,6 +220,16 @@ class XtdGearInfos
 		{
 			model = "PHRP_Reserve_vests";
 			role = "samson";
+		};
+		class PHRP_Presscott_Armor
+		{
+			model = "PHRP_Reserve_vests";
+			role = "presscott";
+		};
+		class PHRP_Blackburn_Armor
+		{
+			model = "PHRP_Reserve_vests";
+			role = "blackburn";
 		};
 	};
 };
