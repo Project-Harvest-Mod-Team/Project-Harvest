@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","payne","graves"};
+				values[] = {"M56SH","M56SR","payne","graves","blackburn"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -49,6 +49,10 @@ class XtdGearModels
 				class graves
 				{
 					label = "Graves";
+				};
+				class blackburn
+				{
+					label = "Blackburn";
 				};
 			};
 		};
@@ -76,6 +80,11 @@ class XtdGearInfos
 		class PHRP_Graves_ODST_Helmet
 		{
 			role = "graves";
+			model = "PHRP_onetwo_helmets";
+		};
+		class PHRP_Blackburn_Recon_Helmet
+		{
+			role = "blackburn";
 			model = "PHRP_onetwo_helmets";
 		};
 	};
@@ -134,5 +143,15 @@ class CfgWeapons
 		displayName = "CH252D Helmet 1-2 (Graves)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_graves_co.paa","PHHelmets\data\helmets\customvisor_graves_co.paa"};
+	};
+	class PHRP_Blackburn_Recon_Helmet : PHRP_Base_Recon_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "Recon Helmet (Blackburn)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\customvisor_blackburn_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 };
