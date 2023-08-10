@@ -108,11 +108,11 @@ class CfgWeapons
 		scopeArsenal = 2;
 		displayName = "[PHRP] M56S-R Helmet 1-4";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onefour_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onefour_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Blue_co.paa"};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onefour_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onefour_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Blue_co.paa"};
 		};
 	};
 	class PHRP_Chopper_CQB_Helmet : PHRP_Base_CQB_Helmet
