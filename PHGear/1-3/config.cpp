@@ -34,14 +34,22 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","buckley","morningstar","hazard","griffith"};
-				class default
+				values[] = {"M56S","M56S_corpsman","M56R","M56R_corpsman","buckley","morningstar","hazard","griffith"};
+				class M56S
 				{
-					label = "Default";
+					label = "M56S";
 				};
-				class corpsman
+				class M56S_corpsman
 				{
-					label = "Corpsman";
+					label = "M56S-C";
+				};
+				class M56R
+				{
+					label = "M56R";
+				};
+				class M56R_corpsman
+				{
+					label = "M56R-C";
 				};
 				class buckley
 				{
@@ -67,15 +75,25 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_onethree_Armor
+		class PHRP_onethreeM56S_Armor
 		{
 			model = "PHRP_onethree_vests";
-			role = "default";
+			role = "M56S";
 		};
-		class PHRP_onethreemedic_Armor
+		class PHRP_onethreeM56Smedic_Armor
 		{
 			model = "PHRP_onethree_vests";
-			role = "corpsman";
+			role = "M56S_corpsman";
+		};
+		class PHRP_onethreeM56R_Armor
+		{
+			model = "PHRP_onethree_vests";
+			role = "M56R";
+		};
+		class PHRP_onethreeM56Rmedic_Armor
+		{
+			model = "PHRP_onethree_vests";
+			role = "M56R_corpsman";
 		};
 		class PHRP_Buckley_Armor
 		{

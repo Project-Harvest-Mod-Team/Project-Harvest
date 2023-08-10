@@ -27,29 +27,33 @@ class XtdGearModels
 	{
 		class PHRP_onefour_vests
 		{
-			label = "2-1 Vests";
+			label = "1-4 Vests";
 			author = "Project Harvest Mod Team";
 			options[] = {"role"};
 			class role
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","chopper","coleson","kaker"};
-				class default
+				values[] = {"M56S","M56S_corpsman","M56R","M56R_corpsman","chopper","kaker"};
+				class M56S
 				{
-					label = "Default";
+					label = "M56S";
 				};
-				class corpsman
+				class M56S_corpsman
 				{
-					label = "Corpsman";
+					label = "M56S-C";
+				};
+				class M56R
+				{
+					label = "M56R";
+				};
+				class M56R_corpsman
+				{
+					label = "M56R-C";
 				};
 				class chopper
 				{
 					label = "Chopper";
-				};
-				class coleson
-				{
-					label = "Coleson";
 				};
 				class kaker
 				{
@@ -63,25 +67,30 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_twoone_Armor
+		class PHRP_onefourM56S_Armor
 		{
 			model = "PHRP_onefour_vests";
-			role = "default";
+			role = "M56S";
 		};
-		class PHRP_twoonemedic_Armor
+		class PHRP_onefourM56Smedic_Armor
 		{
 			model = "PHRP_onefour_vests";
-			role = "corpsman";
-		}; 
+			role = "M56S_corpsman";
+		};
+		class PHRP_onefourM56R_Armor
+		{
+			model = "PHRP_onefour_vests";
+			role = "M56R";
+		};
+		class PHRP_onefourM56Rmedic_Armor
+		{
+			model = "PHRP_onefour_vests";
+			role = "M56R_corpsman";
+		};
 		class PHRP_chopper_Armor
 		{
 			model = "PHRP_onefour_vests";
 			role = "chopper";
-		};
-		class PHRP_Coleson_Armor
-		{
-			model = "PHRP_onefour_vests";
-			role = "coleson";
 		};
 		class PHRP_Kaker_Armor
 		{

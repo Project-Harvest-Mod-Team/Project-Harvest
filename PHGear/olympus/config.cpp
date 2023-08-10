@@ -67,7 +67,7 @@ class XtdGearInfos
 			model = "PHRP_Olympus_vests";
 			role = "soldner";
 		};
-		class PHRP_Kaz_Armor
+		class PHRP_Kaz_M56R_Armor
 		{
 			model = "PHRP_Olympus_vests";
 			role = "kaz";

@@ -959,7 +959,7 @@ class CfgWeapons
 		};
 	};
 
-	//M56SR
+	//MA Base
 
 	class MA_Helmet_Base;
 	class MA_Helmet_Base_o : MA_Helmet_Base
@@ -985,6 +985,9 @@ class CfgWeapons
 			};
 		};
 	};
+
+	//M56SR
+
 	class PHRP_M56SR_Helmet_Base : MA_Helmet_Base_one
 	{
 		scope = 1;
@@ -994,7 +997,11 @@ class CfgWeapons
 		model = "MA_Armor\data\Helmets\HR_ODST\HR_ODST.p3d";
 		picture = "MA_Armor\data\Icons\Halo_Reach_ODST_Helmet.paa";
 		displayName = "[PHRP] M56S-R Helmet - Base";
-		hiddenSelectionsTextures[] = {"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"};
+		hiddenSelectionsTextures[] = 
+		{
+			"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Helmet_CO.paa",
+			"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"
+		};
 		class ItemInfo: HeadgearItem
 		{
 			uniformModel = "MA_Armor\data\Helmets\HR_ODST\HR_ODST.p3d";
@@ -1003,6 +1010,45 @@ class CfgWeapons
 				"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Helmet_CO.paa",
 				"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"
 			};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 40;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 40;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 40;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
+
+	//M56SH
+	class PHRP_M56SH_Helmet_Base: MA_Helmet_Base_one
+	{
+		scope = 1;
+		scopeCurator = 1;
+		scopeArsenal = 1;
+		author = "Soldner";
+		displayName = "[PHRP] M56S-H Helmet - Base";
+		model = "MA_Armor\data\Helmets\H3_ODST\H3_ODST_Helmet.p3d";
+		picture = "MA_Armor\data\Icons\H3_ODST_Helmet.paa";
+		hiddenSelectionsTextures[] = {"MA_Armor\data\Helmets\H3_ODST\H3_Helmet_co.paa","MA_Armor\data\Helmets\H3_ODST\H3_Visor_Blue_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "MA_Armor\data\Helmets\H3_ODST\H3_ODST_Helmet.p3d";
+			hiddenSelectionsTextures[] = {"MA_Armor\data\Helmets\H3_ODST\H3_Helmet_co.paa","MA_Armor\data\Helmets\H3_ODST\H3_Visor_Blue_co.paa"};
 			class HitpointsProtectionInfo
 			{
 				class Face
