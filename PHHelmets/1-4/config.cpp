@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","coleson","chopper","kaker"};
+				values[] = {"M56SH","M56SR","chopper","kaker"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -45,10 +45,6 @@ class XtdGearModels
 				class chopper
 				{
 					label = "Chopper";
-				};
-				class coleson
-				{
-					label = "Coleson";
 				};
 				class kaker
 				{
@@ -75,11 +71,6 @@ class XtdGearInfos
 		class PHRP_Chopper_CQB_Helmet
 		{
 			role = "chopper";
-			model = "PHRP_onefour_helmets";
-		};
-		class PHRP_Coleson_EOD_Helmet
-		{
-			role = "coleson";
 			model = "PHRP_onefour_helmets";
 		};
 		class PHRP_Kaker_HRPilot_Helmet
@@ -133,16 +124,6 @@ class CfgWeapons
 		displayName = "Mark V/C Helmet 1-4 (Chopper)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
-	};
-	class PHRP_Coleson_EOD_Helmet : PHRP_Base_EOD_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Mark V/C Helmet 1-4 (Coleson)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 	class PHRP_Kaker_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
 	{

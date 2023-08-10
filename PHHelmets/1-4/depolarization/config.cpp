@@ -23,7 +23,6 @@ class CfgWeapons
 {
 	class PHRP_Base_HRPilot_Helmet_dp;
 	class PHRP_Base_CQB_Helmet_dp;
-	class PHRP_Base_EOD_Helmet_dp;
 	class PHRP_Chopper_CQB_Helmet_dp : PHRP_Base_CQB_Helmet_dp
 	{
 		scope = 1;
@@ -32,15 +31,6 @@ class CfgWeapons
 		displayName = "Mark V/C Helmet 1-A (Chopper)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
-	};
-	class PHRP_Coleson_EOD_Helmet_dp : PHRP_Base_EOD_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "MrMicrobe";
-		displayName = "Mark V/C Helmet 2-1 (Coleson)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 	class PHRP_Kaker_HRPilot_Helmet_dp : PHRP_Base_HRPilot_Helmet_dp
 	{

@@ -134,16 +134,6 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onethree_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"};
 		};
 	};
-	class PHRP_onethree_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "CH252D Helmet 1-3";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onethreebase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
-	};
 	class PHRP_Buckley_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
 		scope = 2;
