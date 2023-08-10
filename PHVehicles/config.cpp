@@ -68,11 +68,11 @@ class CfgVehicles
 		editorCategory = "PHRP_EdCat_Gladius";
 		editorSubcategory = "PHRP_EdSubCat_AWGS";
 		faction = "Gladius_Faction";
-		maxSpeed = 600;
+		maxSpeed = 800;
 		fuelCapacity = 1500;
 		peakTorque = 20210;
 		enginePower = 100000;
-		maxOmega = 7330.038;
+		maxOmega = 10330.038;
 		minOmega = 104.72;
 		dampingRateFullThrottle = 0.15;
 		dampingRateZeroThrottleClutchEngaged = 0.2;

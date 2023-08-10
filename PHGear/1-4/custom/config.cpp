@@ -177,10 +177,10 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
 		{
 			"PHGear\data\armor\onefourcorpsman_H3_Upper_Armor_co.paa",
-			"PHGear\data\armor\onefourcorpsman_H3_Lower_Armor_co.paa",
+			"PHGear\data\armor\onefour_H3_Lower_Armor_co.paa",
 			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
 			"PHGear\data\armor\onefourcorpsman_Reach_Armor_Upper_co.paa",
-			"PHGear\data\armor\onefourcorpsman_Reach_Armor_Lower_co.paa",
+			"PHGear\data\armor\onefour_Reach_Armor_Lower_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa",
@@ -230,10 +230,10 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = 
 			{
 				"PHGear\data\armor\onefourcorpsman_H3_Upper_Armor_co.paa",
-				"PHGear\data\armor\onefourcorpsman_H3_Lower_Armor_co.paa",
+				"PHGear\data\armor\onefour_H3_Lower_Armor_co.paa",
 				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
 				"PHGear\data\armor\onefourcorpsman_Armor_Upper_co.paa",
-				"PHGear\data\armor\onefourcorpsman_Armor_Lower_co.paa",
+				"PHGear\data\armor\onefour_Armor_Lower_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa",
@@ -395,10 +395,10 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
 		{
 			"PHGear\data\armor\onefourcorpsman_H3_Upper_Armor_co.paa",
-			"PHGear\data\armor\onefourcorpsman_H3_Lower_Armor_co.paa",
+			"PHGear\data\armor\onefour_H3_Lower_Armor_co.paa",
 			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
 			"PHGear\data\armor\onefourcorpsman_Reach_Armor_Upper_co.paa",
-			"PHGear\data\armor\onefourcorpsman_Reach_Armor_Lower_co.paa",
+			"PHGear\data\armor\onefour_Reach_Armor_Lower_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa",
