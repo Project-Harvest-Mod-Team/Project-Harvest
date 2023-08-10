@@ -34,14 +34,22 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","erikson","riot"};
-				class default
+				values[] = {"M56S","M56S_corpsman","M56R","M56R_corpsman","erikson","riot","coleson"};
+				class M56S
 				{
-					label = "Default";
+					label = "M56S";
 				};
-				class corpsman
+				class M56S_corpsman
 				{
-					label = "Corpsman";
+					label = "M56S-C";
+				};
+				class M56R
+				{
+					label = "M56R";
+				};
+				class M56R_corpsman
+				{
+					label = "M56R-C";
 				};
 				class erikson
 				{
@@ -51,6 +59,10 @@ class XtdGearModels
 				{
 					label = "Riot";
 				};
+				class coleson
+				{
+					label = "Coleson";
+				};
 			};
 		};
 	};
@@ -59,15 +71,25 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_oneone_Armor
+		class PHRP_oneoneM56S_Armor
 		{
 			model = "PHRP_oneone_vests";
-			role = "default";
+			role = "M56S";
 		};
-		class PHRP_oneonemedic_Armor
+		class PHRP_oneoneM56Smedic_Armor
 		{
 			model = "PHRP_oneone_vests";
-			role = "corpsman";
+			role = "M56S_corpsman";
+		};
+		class PHRP_oneoneM56R_Armor
+		{
+			model = "PHRP_oneone_vests";
+			role = "M56R";
+		};
+		class PHRP_oneoneM56Rmedic_Armor
+		{
+			model = "PHRP_oneone_vests";
+			role = "M56R_corpsman";
 		};
 		class PHRP_Erikson_Armor
 		{
@@ -78,6 +100,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_oneone_vests";
 			role = "riot";
+		};
+		class PHRP_Coleson_Armor
+		{
+			model = "PHRP_oneone_vests";
+			role = "coleson";
 		};
 	};
 };

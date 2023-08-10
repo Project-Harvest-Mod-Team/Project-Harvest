@@ -34,14 +34,22 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","corpsman","payne","graves"};
-				class default
+				values[] = {"M56S","M56S_corpsman","M56R","M56R_corpsman","payne","graves"};
+				class M56S
 				{
-					label = "Default";
+					label = "M56S";
 				};
-				class corpsman
+				class M56S_corpsman
 				{
-					label = "Corpsman";
+					label = "M56S-C";
+				};
+				class M56R
+				{
+					label = "M56R";
+				};
+				class M56R_corpsman
+				{
+					label = "M56R-C";
 				};
 				class payne
 				{
@@ -59,15 +67,25 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_onetwo_Armor
+		class PHRP_onetwoM56S_Armor
 		{
 			model = "PHRP_onetwo_vests";
-			role = "default";
+			role = "M56S";
 		};
-		class PHRP_onetwomedic_Armor
+		class PHRP_onetwoM56Smedic_Armor
 		{
 			model = "PHRP_onetwo_vests";
-			role = "corpsman";
+			role = "M56S_corpsman";
+		};
+		class PHRP_onetwoM56R_Armor
+		{
+			model = "PHRP_onetwo_vests";
+			role = "M56R";
+		};
+		class PHRP_onetwoM56Rmedic_Armor
+		{
+			model = "PHRP_onetwo_vests";
+			role = "M56R_corpsman";
 		};
 		class PHRP_Payne_Armor
 		{

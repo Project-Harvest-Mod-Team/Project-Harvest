@@ -59,7 +59,7 @@ class XtdGearInfos
 			model = "PHRP_fleet_vests";
 			role = "burtovski";
 		};
-		class PHRP_Moon_Armor
+		class PHRP_Moon_M56R_Armor
 		{
 			model = "PHRP_fleet_vests";
 			role = "moon";

@@ -33,7 +33,15 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"default","coleson","chopper","kaker"};
+				values[] = {"M56SH","M56SR","default","coleson","chopper","kaker"};
+				class M56SH
+				{
+					label = "M56S-H";
+				};
+				class M56SR
+				{
+					label = "M56S-R";
+				};
 				class default
 				{
 					label = "Default";
@@ -58,6 +66,16 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
+		class PHRP_onefour_M56SH_Helmet
+		{
+			role = "M56SH";
+			model = "PHRP_onefour_helmets";
+		};
+		class PHRP_onefour_M56SR_Helmet
+		{
+			role = "M56SR";
+			model = "PHRP_onefour_helmets";
+		};
 		class PHRP_twoone_ODST_Helmet
 		{
 			role = "default";
@@ -82,10 +100,40 @@ class XtdGearInfos
 };
 class CfgWeapons
 {
+	class ItemInfo;
     class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_HRPilot_Helmet;
 	class PHRP_Base_CQB_Helmet;
 	class PHRP_Base_EOD_Helmet;
+	class PHRP_M56SH_Helmet_Base;
+	class PHRP_M56SR_Helmet_Base;
+
+	class PHRP_onefour_M56SH_Helmet: PHRP_M56SH_Helmet_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[PHRP] M56S-H Helmet 1-4";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onefour_H3_Helmet_co.paa","MA_Armor\data\Helmets\H3_ODST\H3_Visor_Blue_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onefour_H3_Helmet_co.paa","MA_Armor\data\Helmets\H3_ODST\H3_Visor_Blue_co.paa"};
+		};
+	};
+	class PHRP_onefour_M56SR_Helmet: PHRP_M56SR_Helmet_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[PHRP] M56S-R Helmet 1-4";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onefour_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onefour_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"};
+		};
+	};
 	class PHRP_twoone_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
 		scope = 2;
