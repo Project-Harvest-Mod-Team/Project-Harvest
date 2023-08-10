@@ -21,19 +21,9 @@ class CfgPatches //class desc.
 };
 class CfgWeapons
 {
-    class PHRP_Base_ODST_Helmet_dp;
 	class PHRP_Base_HRPilot_Helmet_dp;
 	class PHRP_Base_CQB_Helmet_dp;
 	class PHRP_Base_EOD_Helmet_dp;
-	class PHRP_twoone_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "Jimbo";
-		displayName = "CH252D Helmet 2-1";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_twoonebase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
-	};
 	class PHRP_Chopper_CQB_Helmet_dp : PHRP_Base_CQB_Helmet_dp
 	{
 		scope = 1;

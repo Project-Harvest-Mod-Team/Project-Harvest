@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","default","buckley","morningstar","hazard","griffith"};
+				values[] = {"M56SH","M56SR","buckley","morningstar","hazard","griffith"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -41,10 +41,6 @@ class XtdGearModels
 				class M56SR
 				{
 					label = "M56S-R";
-				};
-				class default
-				{
-					label = "Default";
 				};
 				class buckley
 				{
@@ -78,11 +74,6 @@ class XtdGearInfos
 		class PHRP_onethree_M56SR_Helmet
 		{
 			role = "M56SR";
-			model = "PHRP_onethree_helmets";
-		};
-		class PHRP_onethree_ODST_Helmet
-		{
-			role = "default";
 			model = "PHRP_onethree_helmets";
 		};
 		class PHRP_Buckley_Recon_Helmet

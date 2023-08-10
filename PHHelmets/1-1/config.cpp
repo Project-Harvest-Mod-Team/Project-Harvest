@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","default","erikson","riot"};
+				values[] = {"M56SH","M56SR","erikson","riot"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -41,10 +41,6 @@ class XtdGearModels
 				class M56SR
 				{
 					label = "M56S-R";
-				};
-				class default
-				{
-					label = "Default";
 				};
 				class erikson
 				{
@@ -72,11 +68,6 @@ class XtdGearInfos
 			role = "M56SR";
 			model = "PHRP_oneone_helmets";
 		};
-		class PHRP_oneone_ODST_Helmet
-		{
-			role = "default";
-			model = "PHRP_oneone_helmets";
-		};
 		class PHRP_Erikson_Recon_Helmet
 		{
 			role = "erikson";
@@ -93,7 +84,6 @@ class CfgWeapons
 {
 	class ItemInfo;
     class PHRP_Base_ODST_Helmet;
-	class PHRP_Base_Scout_Helmet;
 	class PHRP_Base_Recon_Helmet;
 	class PHRP_M56SH_Helmet_Base;
 	class PHRP_M56SR_Helmet_Base;
@@ -127,16 +117,6 @@ class CfgWeapons
 			hiddenSelections[] = {"camo1","camo2"};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\oneone_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"};
 		};
-	};
-	class PHRP_oneone_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "CH252D Helmet 1-1";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_oneonebase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 	class PHRP_Erikson_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{

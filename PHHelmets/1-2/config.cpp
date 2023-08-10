@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","default","payne","graves"};
+				values[] = {"M56SH","M56SR","payne","graves"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -41,10 +41,6 @@ class XtdGearModels
 				class M56SR
 				{
 					label = "M56S-R";
-				};
-				class default
-				{
-					label = "Default";
 				};
 				class payne
 				{
@@ -70,11 +66,6 @@ class XtdGearInfos
 		class PHRP_onetwo_M56SR_Helmet
 		{
 			role = "M56SR";
-			model = "PHRP_onetwo_helmets";
-		};
-		class PHRP_onetwo_ODST_Helmet
-		{
-			role = "default";
 			model = "PHRP_onetwo_helmets";
 		};
 		class PHRP_Payne_Operator_Helmet
@@ -123,16 +114,6 @@ class CfgWeapons
 			hiddenSelections[] = {"camo1","camo2"};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onetwo_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"};
 		};
-	};
-	class PHRP_onetwo_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "CH252D Helmet 1-2";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onetwobase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 	class PHRP_Payne_Operator_Helmet : PHRP_Base_Operator_Helmet
 	{
