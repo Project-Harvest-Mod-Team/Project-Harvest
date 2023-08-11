@@ -77,7 +77,7 @@ class XtdGearInfos
 			model = "PHRP_Olympus_vests";
 			role = "tepfer";
 		};
-		class PHRP_Aturr_Armor
+		class PHRP_Aturr_M56R_Armor
 		{
 			model = "PHRP_Olympus_vests";
 			role = "aturr";

@@ -22,15 +22,7 @@ class CfgPatches //class desc.
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet_dp;
-	class PHRP_onetwo_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "Soldner";
-		displayName = "CH252D Helmet 1-2";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onetwobase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
-	};
+	class PHRP_Base_Recon_Helmet_dp;
 	class PHRP_Payne_Operator_Helmet_dp : PHRP_Base_ODST_Helmet_dp
 	{
 		scope = 1;
@@ -48,5 +40,14 @@ class CfgWeapons
 		displayName = "CH252D Helmet 1-2 (Graves)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_graves_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
+	class PHRP_Blackburn_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "Jimbo";
+		displayName = "Recon Helmet (Blackburn)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 };

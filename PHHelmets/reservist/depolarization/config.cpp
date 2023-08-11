@@ -226,13 +226,4 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
-	class PHRP_Blackburn_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "Jimbo";
-		displayName = "Recon Helmet (Blackburn)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
-	};
 };

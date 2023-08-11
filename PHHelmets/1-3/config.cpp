@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","default","buckley","morningstar","hazard","griffith"};
+				values[] = {"M56SH","M56SR","buckley","morningstar","hazard","griffith"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -41,10 +41,6 @@ class XtdGearModels
 				class M56SR
 				{
 					label = "M56S-R";
-				};
-				class default
-				{
-					label = "Default";
 				};
 				class buckley
 				{
@@ -78,11 +74,6 @@ class XtdGearInfos
 		class PHRP_onethree_M56SR_Helmet
 		{
 			role = "M56SR";
-			model = "PHRP_onethree_helmets";
-		};
-		class PHRP_onethree_ODST_Helmet
-		{
-			role = "default";
 			model = "PHRP_onethree_helmets";
 		};
 		class PHRP_Buckley_Recon_Helmet
@@ -136,22 +127,12 @@ class CfgWeapons
 		scopeArsenal = 2;
 		displayName = "[PHRP] M56S-R Helmet 1-3";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onethree_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onethree_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Blue_co.paa"};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onethree_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onethree_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Blue_co.paa"};
 		};
-	};
-	class PHRP_onethree_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "CH252D Helmet 1-3";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_onethreebase_co.paa","PHHelmets\data\helmets\customvisor_base_co.paa"};
 	};
 	class PHRP_Buckley_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{

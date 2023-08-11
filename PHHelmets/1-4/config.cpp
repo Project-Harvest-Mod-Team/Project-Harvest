@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","default","coleson","chopper","kaker"};
+				values[] = {"M56SH","M56SR","chopper","kaker"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -42,17 +42,9 @@ class XtdGearModels
 				{
 					label = "M56S-R";
 				};
-				class default
-				{
-					label = "Default";
-				};
 				class chopper
 				{
 					label = "Chopper";
-				};
-				class coleson
-				{
-					label = "Coleson";
 				};
 				class kaker
 				{
@@ -76,19 +68,9 @@ class XtdGearInfos
 			role = "M56SR";
 			model = "PHRP_onefour_helmets";
 		};
-		class PHRP_twoone_ODST_Helmet
-		{
-			role = "default";
-			model = "PHRP_onefour_helmets";
-		};
 		class PHRP_Chopper_CQB_Helmet
 		{
 			role = "chopper";
-			model = "PHRP_onefour_helmets";
-		};
-		class PHRP_Coleson_EOD_Helmet
-		{
-			role = "coleson";
 			model = "PHRP_onefour_helmets";
 		};
 		class PHRP_Kaker_HRPilot_Helmet
@@ -101,7 +83,6 @@ class XtdGearInfos
 class CfgWeapons
 {
 	class ItemInfo;
-    class PHRP_Base_ODST_Helmet;
 	class PHRP_Base_HRPilot_Helmet;
 	class PHRP_Base_CQB_Helmet;
 	class PHRP_Base_EOD_Helmet;
@@ -127,22 +108,12 @@ class CfgWeapons
 		scopeArsenal = 2;
 		displayName = "[PHRP] M56S-R Helmet 1-4";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onefour_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onefour_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Blue_co.paa"};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onefour_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onefour_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Blue_co.paa"};
 		};
-	};
-	class PHRP_twoone_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "CH252D Helmet 1-4";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_twoonebase_co.paa","PHHelmets\data\helmets\customvisor_twoonebase_co.paa"};
 	};
 	class PHRP_Chopper_CQB_Helmet : PHRP_Base_CQB_Helmet
 	{
@@ -153,16 +124,6 @@ class CfgWeapons
 		displayName = "Mark V/C Helmet 1-4 (Chopper)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
-	};
-	class PHRP_Coleson_EOD_Helmet : PHRP_Base_EOD_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Mark V/C Helmet 1-4 (Coleson)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 	class PHRP_Kaker_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
 	{

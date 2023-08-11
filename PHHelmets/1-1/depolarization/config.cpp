@@ -22,19 +22,8 @@ class CfgPatches //class desc.
 class CfgWeapons
 {
     class PHRP_Base_ODST_Helmet_dp;
-	class PHRP_Base_Operator_Helmet_dp;
-	class PHRP_Base_CQC_Helmet_dp;
-	class PHRP_Base_Scout_Helmet_dp;
 	class PHRP_Base_Recon_Helmet_dp;
-	class PHRP_oneone_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "Soldner";
-		displayName = "CH252D Helmet 1-1";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_oneonebase_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
-	};
+	class PHRP_Base_CQB_Helmet_dp;
 	class PHRP_Erikson_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
 		scope = 1;
@@ -52,5 +41,14 @@ class CfgWeapons
 		displayName = "CH252D Helmet 1-1 (Riot)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_riot_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
+	};
+	class PHRP_Coleson_CQB_Helmet_dp : PHRP_Base_CQB_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "MrMicrobe";
+		displayName = "Mark V/C Helmet 1-1 (Coleson)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 };
