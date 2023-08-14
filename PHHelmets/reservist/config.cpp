@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","miller","craven","jaeger","owessel","wolf","kincaid","stone","lark","samson","presscott"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","mischa","wilson","raider","drip","miller","craven","jaeger","owessel","wolf","kincaid","stone","lark","samson","presscott","tepfer"};
 				class recruit
 				{
 					label = "Recruit";
@@ -117,6 +117,10 @@ class XtdGearModels
 				class presscott
 				{
 					label = "Presscott";
+				};
+				class tepfer
+				{
+					label = "Tepfer";
 				};
 			};
 		};
@@ -229,6 +233,11 @@ class XtdGearInfos
 		class PHRP_Presscott_ODST_Helmet
 		{
 			role = "presscott";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Tepfer_ODST_Helmet
+		{
+			role = "tepfer";
 			model = "PHRP_reservist_helmets";
 		};
 	};
@@ -458,5 +467,16 @@ class CfgWeapons
 		displayName = "CH252D Helmet (Presscott)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_presscott_co.paa","PHHelmets\data\helmets\customvisor_presscott_co.paa"};
+	};
+	class PHRP_Tepfer_ODST_Helmet : PHRP_Base_ODST_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "CH252D Helmet (Tepfer)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tepfer_co.paa","PHHelmets\data\helmets\customvisor_tepfer_co.paa"};
 	};
 };

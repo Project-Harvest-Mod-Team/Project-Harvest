@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","kaz","tepfer","aturr","holland"};
+				values[] = {"soldner","kaz","aturr","holland"};
 				class soldner
 				{
 					label = "Soldner";
@@ -41,10 +41,6 @@ class XtdGearModels
 				class kaz
 				{
 					label = "Kaz";
-				};
-				class tepfer
-				{
-					label = "Tepfer";
 				};
 				class aturr
 				{
@@ -70,11 +66,6 @@ class XtdGearInfos
 		class PHRP_Kaz_M56G
 		{
 			role = "kaz";
-			model = "PHRP_olympus_helmets";
-		};
-		class PHRP_Tepfer_ODST_Helmet
-		{
-			role = "tepfer";
 			model = "PHRP_olympus_helmets";
 		};
 		class PHRP_Aturr_Recon_Helmet
@@ -158,17 +149,6 @@ class CfgWeapons
 				"MA_Armor\data\Helmets\Gungnir\Gungnir_Visor_Blue_co.paa"
 			};
 		};	
-	};
-	class PHRP_Tepfer_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "CH252D Helmet (Tepfer)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsMaterials[] = {"LM_OPCAN3.0\BLU\UNSC\H\ODST_HALO3.rvmat"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_tepfer_co.paa","PHHelmets\data\helmets\customvisor_tepfer_co.paa"};
 	};
 	class PHRP_Holland_ODST_Helmet : PHRP_Base_ODST_Helmet
 	{
