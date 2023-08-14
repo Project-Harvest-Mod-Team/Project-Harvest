@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Reserve Armors";
-				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","wilson","raider","drip","miller","jaeger","craven","owessel","wolf","kincaid","stone","lark","samson","presscott"};
+				values[] = {"recruit","reserve","collins","ansley","carter","tinoco","carsten","wilson","raider","drip","miller","jaeger","craven","owessel","wolf","kincaid","stone","lark","samson","presscott","tepfer"};
 				class recruit
 				{
 					label = "Recruit";
@@ -113,6 +113,10 @@ class XtdGearModels
 				class presscott
 				{
 					label = "Presscott";
+				};
+				class tepfer
+				{
+					label = "Tepfer";
 				};
 			};
 		};
@@ -221,6 +225,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_Reserve_vests";
 			role = "presscott";
+		};
+		class PHRP_Tepfer_Armor
+		{
+			model = "PHRP_Reserve_vests";
+			role = "tepfer";
 		};
 	};
 };

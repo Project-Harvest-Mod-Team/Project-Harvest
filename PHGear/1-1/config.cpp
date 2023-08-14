@@ -101,7 +101,7 @@ class XtdGearInfos
 			model = "PHRP_oneone_vests";
 			role = "riot";
 		};
-		class PHRP_Coleson_Armor
+		class PHRP_Coleson_M56R_Armor
 		{
 			model = "PHRP_oneone_vests";
 			role = "coleson";
