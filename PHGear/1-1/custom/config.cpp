@@ -779,7 +779,7 @@ class CfgWeapons
 			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa",
-			"PHGear\data\armor\coleson_CQB_Shoulders\CQB_co.paa",
+			"PHGear\data\armor\coleson_CQB_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Addons\Reach_Shoulder_Radio\Shoulder_Radio_Green_co.paa"
 		};
 		class ItemInfo: ItemInfo
@@ -832,7 +832,7 @@ class CfgWeapons
 				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa",
-				"PHGear\data\armor\coleson_CQB_Shoulders\CQB_co.paa",
+				"PHGear\data\armor\coleson_CQB_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Addons\Reach_Shoulder_Radio\Shoulder_Radio_Green_co.paa"
 			};
 		};

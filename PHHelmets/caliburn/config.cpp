@@ -23,7 +23,7 @@ class CfgWeapons
 {
 	class ItemInfo;
 	class OPTRE_MJOLNIR_MkVBHelmet_Human;
-	/*class PHRP_G017_Helmet : OPTRE_MJOLNIR_MkVBHelmet_Human
+	class PHRP_G017_Helmet : OPTRE_MJOLNIR_MkVBHelmet_Human
 	{
 		author = "Soldner";
 		displayName = "Spartan Helmet G017";
@@ -48,7 +48,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		scopeCurator = 1;
 		class ItemInfo: ItemInfo{};
-	};*/
+	};
 	class PHRP_Oliver_Helmet : OPTRE_MJOLNIR_MkVBHelmet_Human
 	{
 		author = "Soldner";
