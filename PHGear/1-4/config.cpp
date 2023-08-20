@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56S","M56S_corpsman","M56R","M56R_corpsman","chopper","kaker"};
+				values[] = {"M56S","M56S_corpsman","M56R","M56R_corpsman","chopper","kaker","weiss","stoll"};
 				class M56S
 				{
 					label = "M56S";
@@ -58,6 +58,14 @@ class XtdGearModels
 				class kaker
 				{
 					label = "Kaker";
+				};
+				class weiss
+				{
+					label = "Weiss";
+				};
+				class stoll
+				{
+					label = "Stoll";
 				};
 			};
 		};
@@ -87,15 +95,25 @@ class XtdGearInfos
 			model = "PHRP_onefour_vests";
 			role = "M56R_corpsman";
 		};
-		class PHRP_chopper_Armor
+		class PHRP_chopper_M56R_Armor
 		{
 			model = "PHRP_onefour_vests";
 			role = "chopper";
 		};
-		class PHRP_Kaker_Armor
+		class PHRP_Kaker_M56R_Armor
 		{
 			model = "PHRP_onefour_vests";
 			role = "kaker";
+		};
+		class PHRP_Weiss_M56R_Armor
+		{
+			model = "PHRP_onefour_vests";
+			role = "weiss";
+		};
+		class PHRP_Stoll_M56R_Armor
+		{
+			model = "PHRP_onefour_vests";
+			role = "stoll";
 		};
 	};
 };
