@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","chopper","kaker"};
+				values[] = {"M56SH","M56SR","chopper","kaker","weiss","stoll"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -49,6 +49,14 @@ class XtdGearModels
 				class kaker
 				{
 					label = "Kaker";
+				};
+				class weiss
+				{
+					label = "Weiss";
+				};
+				class stoll
+				{
+					label = "Stoll";
 				};
 			};
 		};
@@ -76,6 +84,16 @@ class XtdGearInfos
 		class PHRP_Kaker_HRPilot_Helmet
 		{
 			role = "kaker";
+			model = "PHRP_onefour_helmets";
+		};
+		class PHRP_Weiss_HRPilot_Helmet
+		{
+			role = "weiss";
+			model = "PHRP_onefour_helmets";
+		};
+		class PHRP_Stoll_HRPilot_Helmet
+		{
+			role = "stoll";
 			model = "PHRP_onefour_helmets";
 		};
 	};
@@ -134,5 +152,25 @@ class CfgWeapons
 		displayName = "Mark V/P Helmet 1-4 (Kaker)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kaker_co.paa","PHHelmets\data\helmets\customvisor_kaker_co.paa"};
+	};
+	class PHRP_Weiss_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "Mark V/P Helmet 1-4 (Weiss)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_weiss_co.paa","PHHelmets\data\helmets\customvisor_weiss_co.paa"};
+	};
+	class PHRP_Stoll_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "Mark V/P Helmet 1-4 (Stoll)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_stoll_co.paa","PHHelmets\data\helmets\customvisor_stoll_co.paa"};
 	};
 };

@@ -166,7 +166,7 @@ class XtdGearInfos
 			model = "PHRP_Reserve_vests";
 			role = "wilson";
 		};
-		class PHRP_raider_Armor
+		class PHRP_raider_M56_Armor
 		{
 			model = "PHRP_Reserve_vests";
 			role = "raider";
