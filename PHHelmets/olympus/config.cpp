@@ -104,7 +104,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
 		{
 			"PHHelmets\data\helmets\Soldner_HR_ODST_Helmet_CO.paa",
-			"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"
+			"PHHelmets\data\helmets\Soldner_HR_ODST_Visor_co.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -116,7 +116,7 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = 
 			{
 				"PHHelmets\data\helmets\Soldner_HR_ODST_Helmet_CO.paa",
-				"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"
+				"PHHelmets\data\helmets\Soldner_HR_ODST_Visor_co.paa"
 			};
 		};
 	};
@@ -170,17 +170,18 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","PHHelmets\data\helmets\customvisor_aturr_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
-};
-class CfgGlasses
-{
-	class MA_M56G_Faceplate;
-	class PHRP_Kaz_M56G_Faceplate: MA_M56G_Faceplate
+	class MA_M56G_Faceplate_NVG;
+	class PHRP_Kaz_M56G_Faceplate: MA_M56G_Faceplate_NVG
 	{
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[PHRP] Kaz's M56G Faceplate";
-		identitytypes[] = {};
-		hiddenSelections[] = {"camo1"};
+		displayName = "[PHRP] Kaz's M56G Faceplate (NVG)";
+		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Kaz_Gungnir_Faceplate_CO.paa"};
+		class ItemInfo
+		{
+			hiddenSelections[] = {"Camo1"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Kaz_Gungnir_Faceplate_CO.paa"};
+		};
 	};
 };

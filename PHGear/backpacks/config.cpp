@@ -438,7 +438,7 @@ class CfgVehicles
 		maximumLoad = 400;
 		mass = 50;
 		hiddenSelections[] = {"camo1","camo2","Radio"};
-		hiddenSelectionsTextures[] = {"MA_Armor\data\Backpacks\ODST_Rucksack\Medical_ODST_Ruck_co.paa.paa","MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa"};
+		hiddenSelectionsTextures[] = {"MA_Armor\data\Backpacks\ODST_Rucksack\Medical_ODST_Ruck_co.paa","MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa"};
 	};
 	class PHRP_M56_ILCS_Radio: MA_M56S_Rucksack
 	{

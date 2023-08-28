@@ -171,6 +171,18 @@ class CfgWeapons
 		class WeaponSlotsInfo: WeaponSlotsInfo
 		{
 			mass = 30;
+			class MuzzleSlot: MuzzleSlot
+			{
+				compatibleitems[] = {"optre_m7_silencer","optre_ma5suppressor"};
+			};
+			class CowsSlot: CowsSlot
+			{
+				compatibleitems[] = {"MEU_REC_HOLO","MEU_REC_HOLO_Red","MEU_REC_HOLO_Gre""optic_hamr","OPTRE_M7_Sight"};
+			};
+			class PointerSlot: PointerSlot
+			{
+				compatibleitems[] = {"OPTRE_M7_Flashlight","OPTRE_M7_Laser","ace_acc_pointer_green","MEU_M7_Vis_Laser","OPTRE_BMR_Laser"};
+			};
 		};
 	};
 	

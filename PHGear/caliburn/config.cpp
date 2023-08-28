@@ -448,7 +448,7 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Luka_Armor : PHRP_Base_Spartan_Armor
+	/*class PHRP_Luka_Armor : PHRP_Base_Spartan_Armor
 	{
 		dlc = "Project Harvest Armory";
 		author = "Soldner";
@@ -513,5 +513,5 @@ class CfgWeapons
 				};
 			};
 		};
-	};
+	};*/
 };

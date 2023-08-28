@@ -463,7 +463,7 @@ class CfgWeapons
 	class PHRP_Payne_Armor : PHRP_Base_Armor
 	{
 		author = "Jimbo";
-		displayName = "M52D Body Armor 1-3 (Payne)";
+		displayName = "M52D Body Armor (Payne)";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -597,7 +597,7 @@ class CfgWeapons
 	class PHRP_Blackburn_Armor : PHRP_Base_Armor
 	{
 		author = "VorpalHotdog";
-		displayName = "M52D Body Armor 1-2 (Blackburn)";
+		displayName = "M52D Body Armor (Blackburn)";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -728,10 +728,10 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Graves_Armor : PHRP_Base_Armor
+	class PHRP_Hazard_Armor : PHRP_Base_Armor
 	{
-		author = "SirChungus";
-		displayName = "M52D Body Armor (Graves)";
+		author = "MrMicrobe";
+		displayName = "M52D Body Armor (Hazard)";
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
@@ -753,7 +753,7 @@ class CfgWeapons
 			//"A_ODST", 
 			//"A_ShinArmorLeft", 
 			//"A_ShinArmorRight", 
-			//"A_TacPad", 
+			"A_TacPad", 
 			//"A_ThighArmorLeft", 
 			//"A_ThighArmorRight", 
 			//"AS_BaseLeft", 
@@ -770,21 +770,21 @@ class CfgWeapons
 			"AS_ODSTSniperRight", 
 			"AS_SmallLeft",  
 			"AS_SmallRight", 
-			"AP_Canteen", 
-			"AP_GL", 
-			"AP_Knife", 
-			"AP_MGThigh", 
+			//"AP_Canteen", 
+			//"AP_GL", 
+			//"AP_Knife", 
+			//"AP_MGThigh", 
 			"AP_AR", 
-			//"AP_BR", 
+			"AP_BR", 
 			"AP_Pack", 
 			"AP_Pistol", 
 			"AP_Rounds", 
-			//"AP_SG", 
+			"AP_SG", 
 			"AP_SMG", 
 			"AP_Sniper", 
 			"AP_Thigh", 
-			//"AP_Frag", 
-			//"AP_Smoke", 
+			"AP_Frag", 
+			"AP_Smoke", 
 			"APO_AR", 
 			"APO_BR", 
 			"APO_Knife", 
@@ -797,9 +797,9 @@ class CfgWeapons
 		{
 			"PHGear\data\Army\data\vest_odst_co.paa",
 			"PHGear\data\army\data\armor_odst_co.paa",
-			"PHGear\data\armor\customlegs_onetwobase_CO.paa",
+			"PHGear\data\armor\legs_base_co.paa",
 			"PHGear\data\army\data\ghillie_woodland_co.paa",
-			"PHGear\data\armor\customarmor_graves_co.paa"
+			"PHGear\data\armor\customarmor_hazard_CO.paa"
 		};
 		class ItemInfo :ItemInfo
 		{
@@ -821,7 +821,7 @@ class CfgWeapons
 				//"A_ODST", 
 				//"A_ShinArmorLeft", 
 				//"A_ShinArmorRight", 
-				//"A_TacPad", 
+				"A_TacPad", 
 				//"A_ThighArmorLeft", 
 				//"A_ThighArmorRight", 
 				//"AS_BaseLeft", 
@@ -838,21 +838,21 @@ class CfgWeapons
 				"AS_ODSTSniperRight", 
 				"AS_SmallLeft",  
 				"AS_SmallRight", 
-				"AP_Canteen", 
-				"AP_GL", 
-				"AP_Knife", 
-				"AP_MGThigh", 
+				//"AP_Canteen", 
+				//"AP_GL", 
+				//"AP_Knife", 
+				//"AP_MGThigh", 
 				"AP_AR", 
-				//"AP_BR", 
+				"AP_BR", 
 				"AP_Pack", 
 				"AP_Pistol", 
 				"AP_Rounds", 
-				//"AP_SG", 
+				"AP_SG", 
 				"AP_SMG", 
 				"AP_Sniper", 
 				"AP_Thigh", 
-				//"AP_Frag", 
-				//"AP_Smoke", 
+				"AP_Frag", 
+				"AP_Smoke", 
 				"APO_AR", 
 				"APO_BR", 
 				"APO_Knife", 

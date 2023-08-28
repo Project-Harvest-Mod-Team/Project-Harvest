@@ -26,7 +26,7 @@ class XtdGearModels
 	{
 		class PHRP_fleet_vests
 		{
-			label = "1-A Vests";
+			label = "Fleet Vests";
 			author = "Project Harvest Mod Team";
 			options[] = {"role"};
 			class role

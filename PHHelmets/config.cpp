@@ -188,19 +188,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -232,19 +232,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -273,19 +273,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -312,19 +312,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -352,19 +352,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -390,19 +390,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -430,19 +430,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -468,19 +468,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -508,19 +508,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -546,19 +546,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -586,19 +586,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -624,19 +624,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -664,19 +664,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -702,19 +702,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -743,19 +743,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -781,19 +781,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -822,19 +822,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -860,19 +860,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -900,19 +900,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -939,19 +939,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 30;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 30;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -1000,7 +1000,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
 		{
 			"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Helmet_CO.paa",
-			"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"
+			"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Blue_co.paa"
 		};
 		class ItemInfo: HeadgearItem
 		{
@@ -1008,25 +1008,25 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = 
 			{
 				"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Helmet_CO.paa",
-				"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Red_co.paa"
+				"MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Blue_co.paa"
 			};
 			class HitpointsProtectionInfo
 			{
 				class Face
 				{
-					armor = 40;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 40;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 40;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -1053,19 +1053,19 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 40;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 40;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 40;
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -1091,19 +1091,57 @@ class CfgWeapons
 			{
 				class Face
 				{
-					armor = 40;
+					armor = 35;
 					hitpointName = "HitFace";
 					passThrough = 0.1;
 				};
 				class Head
 				{
-					armor = 40;
+					armor = 35;
 					hitPointName = "HitHead";
 					passThrough = 0.1;
 				};
 				class Neck
 				{
-					armor = 40;
+					armor = 35;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
+
+	//M56A
+	class PHRP_M56S_Helmet_Base : MA_Helmet_Base_one
+	{
+		scope = 1;
+		scopeCurator = 1;
+		scopeArsenal = 1;
+		displayName = "[PHRP] M65-S Helmet";
+		model = "MA_Armor\data\Helmets\H4_Scout\H4_Scout_Helmet.p3d";
+		picture = "MA_Armor\data\Icons\H4_Scout_Helmet.paa";
+		hiddenSelectionsTextures[] = {"MA_Armor\data\Helmets\H4_Scout\Scout_Helm_co.paa","MA_Armor\data\Helmets\H4_Scout\Scout_Visor_Blue_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "MA_Armor\data\Helmets\H4_Scout\H4_Scout_Helmet.p3d";
+			hiddenSelectionsTextures[] = {"MA_Armor\data\Helmets\H4_Scout\Scout_Helm_co.paa","MA_Armor\data\Helmets\H4_Scout\Scout_Visor_Blue_co.paa"};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 35;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 35;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 35;
 					hitpointName = "HitNeck";
 					passThrough = 0.1;
 				};
@@ -1112,7 +1150,6 @@ class CfgWeapons
 	};
 
 	//Covers
-
 	class H_MilCap_Blue;
 	class PHRP_Base_Beret: H_HelmetB
     {

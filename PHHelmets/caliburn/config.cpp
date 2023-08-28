@@ -149,7 +149,7 @@ class CfgWeapons
 		scopeCurator = 1;
 		class ItemInfo: ItemInfo{};
 	};
-	class PHRP_Luka_Helmet : OPTRE_MJOLNIR_MkVBHelmet_Human
+	/*class PHRP_Luka_Helmet : OPTRE_MJOLNIR_MkVBHelmet_Human
 	{
 		author = "Soldner";
 		displayName = "Spartan Helmet B170";
@@ -174,5 +174,5 @@ class CfgWeapons
 		scopeArsenal = 1;
 		scopeCurator = 1;
 		class ItemInfo: ItemInfo{};
-	};
+	};*/
 };
