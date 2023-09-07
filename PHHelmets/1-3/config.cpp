@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","buckley","morningstar","lancer"};
+				values[] = {"M56SH","M56SR","buckley","morningstar","lancer","griffith"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -53,6 +53,10 @@ class XtdGearModels
 				class lancer
 				{
 					label = "Lancer";
+				};
+				class griffith
+				{
+					label = "Grtiffith";
 				};
 			};
 		};
@@ -85,6 +89,11 @@ class XtdGearInfos
 		class PHRP_Lancer_M56S_Helmet
 		{
 			role = "lancer";
+			model = "PHRP_onethree_helmets";
+		};
+		class PHRP_Griffith_M56SR_Helmet
+		{
+			role = "griffith";
 			model = "PHRP_onethree_helmets";
 		};
 	};
@@ -157,6 +166,19 @@ class CfgWeapons
 		{
 			hiddenSelections[] = {"camo1","camo2"};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\lancer_Scout_Helm_co.paa","PHHelmets\data\helmets\lancer_Scout_Visor_Black_co.paa"};
+		};
+	};
+	class PHRP_Griffith_M56SR_Helmet: PHRP_M56SR_Helmet_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[PHRP] M56S-R Helmet (Griffith)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\griffith_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\griffith_HR_ODST_Visor_Blue_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\griffith_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\griffith_HR_ODST_Visor_Blue_co.paa"};
 		};
 	};
 };

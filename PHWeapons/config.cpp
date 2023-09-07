@@ -177,7 +177,7 @@ class CfgWeapons
 			};
 			class CowsSlot: CowsSlot
 			{
-				compatibleitems[] = {"MEU_REC_HOLO","MEU_REC_HOLO_Red","MEU_REC_HOLO_Gre""optic_hamr","OPTRE_M7_Sight"};
+				compatibleitems[] = {"MEU_REC_HOLO_Red","optic_hamr","OPTRE_M7_Sight"};
 			};
 			class PointerSlot: PointerSlot
 			{
