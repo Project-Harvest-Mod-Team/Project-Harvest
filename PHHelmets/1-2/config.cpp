@@ -92,12 +92,11 @@ class XtdGearInfos
 class CfgWeapons
 {
 	class ItemInfo;
-    class PHRP_Base_ODST_Helmet;
+	class PHRP_M56SH_Helmet_Base;
+	class PHRP_M56SR_Helmet_Base;
 	class PHRP_Base_Operator_Helmet;
 	class PHRP_Base_Recon_Helmet;
 	class PHRP_Base_EOD_Helmet;
-	class PHRP_M56SH_Helmet_Base;
-	class PHRP_M56SR_Helmet_Base;
 
 	class PHRP_onetwo_M56SH_Helmet: PHRP_M56SH_Helmet_Base
 	{

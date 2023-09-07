@@ -23,7 +23,6 @@ class CfgWeapons
 {
 	class ItemInfo;
 	class PHRP_Base_M56R_Armor;
-	class PHRP_Base_Armor;
 	class PHRP_onefourM56S_Armor : PHRP_Base_M56R_Armor
 	{
 		scope = 2;

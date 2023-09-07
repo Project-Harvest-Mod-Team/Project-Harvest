@@ -33,14 +33,18 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"moon","burtovski","pjetrovic"};
-				class burtovski
+				values[] = {"soldner","moon","burtovski","pjetrovic"};
+				class soldner
 				{
-					label = "Burtovski";
+					label = "Soldner";
 				};
 				class moon
 				{
 					label = "Moon";
+				};
+				class burtovski
+				{
+					label = "Burtovski";
 				};
 				class pjetrovic
 				{
@@ -54,14 +58,14 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
+		class PHRP_Soldner_M56SR
+		{
+			role = "soldner";
+			model = "PHRP_fleet_helmets";
+		};
 		class PHRP_Moon_Commando_Helmet
 		{
 			role = "moon";
-			model = "PHRP_fleet_helmets";
-		};
-		class PHRP_Pjetrovic_Security_Helmet
-		{
-			role = "pjetrovic";
 			model = "PHRP_fleet_helmets";
 		};
 		class PHRP_Burtovski_Commando_Helmet
@@ -69,14 +73,51 @@ class XtdGearInfos
 			role = "burtovski";
 			model = "PHRP_fleet_helmets";
 		};
+		class PHRP_Pjetrovic_Security_Helmet
+		{
+			role = "pjetrovic";
+			model = "PHRP_fleet_helmets";
+		};
 	};
 };
 class CfgWeapons
 {
-	class PHRP_Base_Recon_Helmet;
-	class PHRP_Base_CQB_Helmet;
+	class ItemInfo;
+	class HeadgearItem;
+	class PHRP_M56SR_Helmet_Base;
 	class PHRP_Base_Commando_Helmet;
 	class PHRP_Base_Security_Helmet;
+
+	class PHRP_Soldner_M56SR : PHRP_M56SR_Helmet_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "[PHRP] M56S-R Helmet (Soldner)";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"PHHelmets\data\helmets\Soldner_HR_ODST_Helmet_CO.paa",
+			"PHHelmets\data\helmets\Soldner_HR_ODST_Visor_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2"
+			};
+			hiddenSelectionsTextures[] = 
+			{
+				"PHHelmets\data\helmets\Soldner_HR_ODST_Helmet_CO.paa",
+				"PHHelmets\data\helmets\Soldner_HR_ODST_Visor_co.paa"
+			};
+		};
+	};
 	class PHRP_Burtovski_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
 		scope = 2;

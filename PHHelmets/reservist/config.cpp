@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","wilson","raider","miller","craven","owessel","wolf","kincaid"};
+				values[] = {"recruit","wilson","miller","craven","owessel","wolf"};
 				class recruit
 				{
 					label = "Recruit";
@@ -41,10 +41,6 @@ class XtdGearModels
 				class wilson
 				{
 					label = "Wilson";
-				};
-				class raider
-				{
-					label = "Raider";
 				};
 				class drip
 				{
@@ -66,10 +62,6 @@ class XtdGearModels
 				{
 					label = "Wolf";
 				};
-				class kincaid
-				{
-					label = "Kincaid";
-				};
 			};
 		};
 	};
@@ -86,11 +78,6 @@ class XtdGearInfos
 		class PHRP_Wilson_CQC_Helmet
 		{
 			role = "wilson";
-			model = "PHRP_reservist_helmets";
-		};
-		class PHRP_Raider_M56SR_Helmet
-		{
-			role = "raider";
 			model = "PHRP_reservist_helmets";
 		};
 		class PHRP_Miller_Scout_Helmet
@@ -111,11 +98,6 @@ class XtdGearInfos
 		class PHRP_Wolf_Recon_Helmet
 		{
 			role = "wolf";
-			model = "PHRP_reservist_helmets";
-		};
-		class PHRP_Kincaid_HRPilot_Helmet
-		{
-			role = "kincaid";
 			model = "PHRP_reservist_helmets";
 		};
 	};
@@ -189,28 +171,5 @@ class CfgWeapons
 		displayName = "Recon Helmet (Wolf)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\customvisor_wolf_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
-	};
-	class PHRP_Kincaid_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Jimbo";
-		displayName = "Mark V/P Helmet (Kincaid)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_kincaid_co.paa","PHHelmets\data\helmets\customvisor_kincaid_co.paa"};
-	};
-	class PHRP_Raider_M56SR_Helmet: PHRP_M56SR_Helmet_Base
-	{
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[PHRP] M56S-R Helmet (Raider)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\raider_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\raider_HR_ODST_Visor_Blue_co.paa"};
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\raider_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\raider_HR_ODST_Visor_Blue_co.paa"};
-		};
 	};
 };

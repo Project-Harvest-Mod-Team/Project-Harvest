@@ -33,14 +33,10 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Reserve Armors";
-				values[] = {"recruit","raider","owessel"};
+				values[] = {"recruit","owessel"};
 				class recruit
 				{
 					label = "Recruit";
-				};
-				class raider
-				{
-					label = "Raider";
 				};
 				class owessel
 				{
@@ -58,11 +54,6 @@ class XtdGearInfos
 		{
 			model = "PHRP_Reserve_vests";
 			role = "recruit";
-		};
-		class PHRP_raider_M56_Armor
-		{
-			model = "PHRP_Reserve_vests";
-			role = "raider";
 		};
 		class PHRP_Owessel_M56_Armor
 		{

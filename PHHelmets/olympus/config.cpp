@@ -33,10 +33,10 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","kaz","aturr","holland"};
-				class soldner
+				values[] = {"raider","kaz","aturr","holland"};
+				class raider
 				{
-					label = "Soldner";
+					label = "Raider";
 				};
 				class kaz
 				{
@@ -58,9 +58,9 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_Soldner_M56SR
+		class PHRP_Raider_M56SR_Helmet
 		{
-			role = "soldner";
+			role = "raider";
 			model = "PHRP_olympus_helmets";
 		};
 		class PHRP_Kaz_M56G
@@ -84,40 +84,22 @@ class CfgWeapons
 {
 	class ItemInfo;
 	class HeadgearItem;
-	class PHRP_Base_Operator_Helmet;
 	class PHRP_Base_Recon_Helmet;
-	class PHRP_Base_ODST_Helmet;
 	class PHRP_M56SR_Helmet_Base;
 	class PHRP_M56G_Helmet_Base;
+	class MA_M56G_Faceplate_NVG;
 
-	class PHRP_Soldner_M56SR : PHRP_M56SR_Helmet_Base
+	class PHRP_Raider_M56SR_Helmet: PHRP_M56SR_Helmet_Base
 	{
 		scope = 2;
 		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "[PHRP] M56S-R Helmet (Soldner)";
-		hiddenSelections[] = 
-		{
-			"camo1",
-			"camo2"
-		};
-		hiddenSelectionsTextures[] = 
-		{
-			"PHHelmets\data\helmets\Soldner_HR_ODST_Helmet_CO.paa",
-			"PHHelmets\data\helmets\Soldner_HR_ODST_Visor_co.paa"
-		};
+		displayName = "[PHRP] M56S-R Helmet (Raider)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\raider_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\raider_HR_ODST_Visor_Blue_co.paa"};
 		class ItemInfo: ItemInfo
 		{
-			hiddenSelections[] = 
-			{
-				"camo1",
-				"camo2"
-			};
-			hiddenSelectionsTextures[] = 
-			{
-				"PHHelmets\data\helmets\Soldner_HR_ODST_Helmet_CO.paa",
-				"PHHelmets\data\helmets\Soldner_HR_ODST_Visor_co.paa"
-			};
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\raider_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\raider_HR_ODST_Visor_Blue_co.paa"};
 		};
 	};
 	class PHRP_Kaz_M56G : PHRP_M56G_Helmet_Base
@@ -150,16 +132,6 @@ class CfgWeapons
 			};
 		};	
 	};
-	class PHRP_Holland_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "VorpalHotdog";
-		displayName = "CH252D Helmet (Holland)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_holland_co.paa","PHHelmets\data\helmets\customvisor_holland_co.paa"};
-	};
 	class PHRP_Aturr_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
 		scope = 2;
@@ -170,7 +142,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_aturr_co.paa","PHHelmets\data\helmets\customvisor_aturr_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
-	class MA_M56G_Faceplate_NVG;
 	class PHRP_Kaz_M56G_Faceplate: MA_M56G_Faceplate_NVG
 	{
 		scope = 2;

@@ -21,9 +21,7 @@ class CfgPatches //class desc.
 };
 class CfgWeapons
 {
-    class PHRP_Base_ODST_Helmet_dp;
 	class PHRP_Base_Recon_Helmet_dp;
-	class PHRP_Base_EOD_Helmet_dp;
 	class PHRP_Base_Operator_Helmet_dp;
 	class PHRP_Buckley_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
