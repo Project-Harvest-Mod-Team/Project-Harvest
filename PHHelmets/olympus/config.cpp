@@ -73,7 +73,7 @@ class XtdGearInfos
 			role = "aturr";
 			model = "PHRP_olympus_helmets";
 		};
-		class PHRP_Holland_ODST_Helmet
+		class PHRP_Holland_M56SR_Helmet
 		{
 			role = "holland";
 			model = "PHRP_olympus_helmets";
@@ -153,6 +153,19 @@ class CfgWeapons
 		{
 			hiddenSelections[] = {"Camo1"};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Kaz_Gungnir_Faceplate_CO.paa"};
+		};
+	};
+	class PHRP_Holland_M56SR_Helmet: PHRP_M56SR_Helmet_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[PHRP] M56S-R Helmet (Holland)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\holland_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\holland_HR_ODST_Visor_Blue_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\raider_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\raider_HR_ODST_Visor_Blue_co.paa"};
 		};
 	};
 };

@@ -318,8 +318,8 @@ class CfgWeapons
 	};
 
 	//Holland AK
-	class arifle_AK12_F;
-	class PHRP_Holland_AK120 : arifle_AK12_F
+	class arifle_AK12_GL_F;
+	class PHRP_Holland_AK120 : arifle_AK12_GL_F
 	{
 		dlc = "Project Harvest Armory"
 		author = "VorpalHotdog";
