@@ -217,15 +217,15 @@ class CfgVehicles
 		scope = 2;
 		scopeCurator = 2;
 		displayName = "Gladius ODST Rifleman";
-		uniformClass = "Gladius_BDU";
+		uniformClass = "PHRP_M56S_BDU";
 		faction = "Gladius_Faction";
-		backpack = "OPTRE_ILCS_Rucksack_Black";
+		backpack = "PHRP_M56_ILCS";
 		icon = "iconMan";
 		Weapons[] = {"OPTRE_MA5C","OPTRE_M6C","Throw","Put"};
 		respawnWeapons[] = {"OPTRE_MA5C","OPTRE_M6C","Throw","Put"};
 		Magazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","SmokeShell","SmokeShell","OPTRE_M2_Smoke_Red","OPTRE_M2_Smoke_Red","OPTRE_M2_Smoke_Green","OPTRE_M2_Smoke_Green"};
 		respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","SmokeShell","SmokeShell","OPTRE_M2_Smoke_Red","OPTRE_M2_Smoke_Red","OPTRE_M2_Smoke_Green","OPTRE_M2_Smoke_Green"};
-		linkedItems[] = {"PHRP_Recruit_ODST_Helmet","PHRP_Recruit_Armor","ItemMap","ItemCompass","ACE_Altimeter","ItemRadio","OPTRE_Smartfinder","ItemGPS"};
+		linkedItems[] = {"PHRP_Recruit_M56SR_Helmet","PHRP_Recruit_M56_Armor","ItemMap","ItemCompass","ACE_Altimeter","ItemRadio","OPTRE_Smartfinder","ItemGPS"};
 		respawnLinkedItems[] = {"Gladius_ODST_Helmet","Gladius_Armor_Rifleman","ItemMap","ItemCompass","ACE_Altimeter","ItemRadio","OPTRE_Smartfinder","ItemGPS"};
 	};
 	class Gladius_Officer: Gladius_Rifleman
@@ -247,7 +247,7 @@ class CfgVehicles
 	class Gladius_Medic: Gladius_Rifleman
 	{
 		displayName = "Gladius ODST Corpsman";
-		backpack = "OPTRE_ILCS_Rucksack_Medical";
+		backpack = "PHRP_M56_ILCS_Corpsman";
 		attendant = 1;
 	};
 	class Gladius_Demolitionist: Gladius_Rifleman
@@ -274,7 +274,6 @@ class CfgVehicles
 		respawnWeapons[] = {"OPTRE_MA5C","OPTRE_M6C","Throw","Put"};
 		Magazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","SmokeShell","SmokeShell","OPTRE_M2_Smoke_Red","OPTRE_M2_Smoke_Red","OPTRE_M2_Smoke_Green","OPTRE_M2_Smoke_Green","OPTRE_M41_Twin_HEAT_Thermal","OPTRE_M41_Twin_HEAT_Thermal","OPTRE_M41_Twin_HEAT_Thermal"};
 		respawnMagazines[] = {"OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_32Rnd_762x51_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_16Rnd_127x40_Mag","OPTRE_M9_Frag","OPTRE_M9_Frag","SmokeShell","SmokeShell","OPTRE_M2_Smoke_Red","OPTRE_M2_Smoke_Red","OPTRE_M2_Smoke_Green","OPTRE_M2_Smoke_Green","OPTRE_M41_Twin_HEAT_Thermal","OPTRE_M41_Twin_HEAT_Thermal","OPTRE_M41_Twin_HEAT_Thermal"};
-		backpack = "OPTRE_ILCS_Rucksack_Heavy";
 	};
 	class Gladius_Breacher: Gladius_Rifleman
 	{

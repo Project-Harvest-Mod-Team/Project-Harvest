@@ -21,9 +21,7 @@ class CfgPatches //class desc.
 };
 class CfgWeapons
 {
-    class PHRP_Base_ODST_Helmet_dp;
 	class PHRP_Base_Recon_Helmet_dp;
-	class PHRP_Base_EOD_Helmet_dp;
 	class PHRP_Base_Operator_Helmet_dp;
 	class PHRP_Buckley_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
@@ -42,23 +40,5 @@ class CfgWeapons
 		displayName = "Mark V/O Helmet 1-3 (Morningstar)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
-	};
-	class PHRP_Hazard_EOD_Helmet_dp : PHRP_Base_EOD_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "MrMicrobe";
-		displayName = "Mark V/EOD Helmet 1-3 (Hazard)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_hazard_co.paa","PHHelmets\data\helmets\customvisor_hazard_co.paa"};
-	};
-	class PHRP_Griffith_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "VibingVampire";
-		displayName = "CH252D Helmet 1-3 (Griffith)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 };

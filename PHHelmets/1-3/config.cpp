@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","buckley","morningstar","hazard","griffith"};
+				values[] = {"M56SH","M56SR","buckley","morningstar","lancer","griffith"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -46,17 +46,17 @@ class XtdGearModels
 				{
 					label = "Buckley";
 				};
-				class hazard
+				class morningstar
 				{
-					label = "Hazard";
+					label = "Morningstar";
+				};
+				class lancer
+				{
+					label = "Lancer";
 				};
 				class griffith
 				{
 					label = "Griffith";
-				};
-				class morningstar
-				{
-					label = "Morningstar";
 				};
 			};
 		};
@@ -86,12 +86,12 @@ class XtdGearInfos
 			role = "morningstar";
 			model = "PHRP_onethree_helmets";
 		};
-		class PHRP_Hazard_EOD_Helmet
+		class PHRP_Lancer_M56S_Helmet
 		{
-			role = "hazard";
+			role = "lancer";
 			model = "PHRP_onethree_helmets";
 		};
-		class PHRP_Griffith_ODST_Helmet
+		class PHRP_Griffith_M56SR_Helmet
 		{
 			role = "griffith";
 			model = "PHRP_onethree_helmets";
@@ -101,12 +101,11 @@ class XtdGearInfos
 class CfgWeapons
 {
 	class ItemInfo;
-    class PHRP_Base_ODST_Helmet;
-	class PHRP_Base_Recon_Helmet;
-	class PHRP_Base_EOD_Helmet;
-	class PHRP_Base_Operator_Helmet;
 	class PHRP_M56SH_Helmet_Base;
 	class PHRP_M56SR_Helmet_Base;
+	class PHRP_Base_Recon_Helmet;
+	class PHRP_Base_Operator_Helmet;
+	class PHRP_M56S_Helmet_Base;
 
 	class PHRP_onethree_M56SH_Helmet: PHRP_M56SH_Helmet_Base
 	{
@@ -140,7 +139,7 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "VibingVampire";
-		displayName = "Recon Helmet 1-3 (Buckley)";
+		displayName = "Recon Helmet (Buckley)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_buckley_co.paa","PHHelmets\data\helmets\customvisor_buckley_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
@@ -150,28 +149,34 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "";
-		displayName = "Mark V/O Helmet 1-3 (Morningstar)";
+		displayName = "Mark V/O Helmet (Morningstar)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
 	};
-	class PHRP_Hazard_EOD_Helmet : PHRP_Base_EOD_Helmet
+	class PHRP_Lancer_M56S_Helmet: PHRP_M56S_Helmet_Base
 	{
 		scope = 2;
-		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Mark V/EOD Helmet 1-3 (Hazard)";
+		displayName = "[PHRP] M56-S Helmet (Lancer)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_hazard_co.paa","PHHelmets\data\helmets\customvisor_hazard_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\lancer_Scout_Helm_co.paa","PHHelmets\data\helmets\lancer_Scout_Visor_Black_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\lancer_Scout_Helm_co.paa","PHHelmets\data\helmets\lancer_Scout_Visor_Black_co.paa"};
+		};
 	};
-	class PHRP_Griffith_ODST_Helmet : PHRP_Base_ODST_Helmet
+	class PHRP_Griffith_M56SR_Helmet: PHRP_M56SR_Helmet_Base
 	{
 		scope = 2;
-		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "VibingVampire";
-		displayName = "CH252D Helmet 1-3 (Griffith)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_griffith_co.paa","PHHelmets\data\helmets\customvisor_griffith_co.paa"};
+		displayName = "[PHRP] M56S-R Helmet (Griffith)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\griffith_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\griffith_HR_ODST_Visor_Blue_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\griffith_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\griffith_HR_ODST_Visor_Blue_co.paa"};
+		};
 	};
 };

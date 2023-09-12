@@ -26,25 +26,21 @@ class XtdGearModels
 	{
 		class PHRP_fleet_vests
 		{
-			label = "1-A Vests";
+			label = "Fleet Vests";
 			author = "Project Harvest Mod Team";
 			options[] = {"role"};
 			class role
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"moon","pjetrovic","burtovski"};
-				class burtovski
+				values[] = {"soldner","moon"};
+				class soldner
 				{
-					label = "Burtovski";
+					label = "Soldner";
 				};
 				class moon
 				{
 					label = "Moon";
-				};
-				class pjetrovic
-				{
-					label = "Pjetrovic";
 				};
 			};
 		};
@@ -54,20 +50,15 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_Burtovski_Armor
+		class PHRP_Soldner_M56R_Armor
 		{
 			model = "PHRP_fleet_vests";
-			role = "burtovski";
+			role = "soldner";
 		};
 		class PHRP_Moon_M56R_Armor
 		{
 			model = "PHRP_fleet_vests";
 			role = "moon";
-		};
-		class PHRP_Pjetrovic_Armor
-		{
-			model = "PHRP_fleet_vests";
-			role = "pjetrovic";
 		};
 	};
 };

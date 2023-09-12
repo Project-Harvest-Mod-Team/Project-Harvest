@@ -91,7 +91,7 @@ class XtdGearInfos
 			model = "PHRP_oneone_vests";
 			role = "M56R_corpsman";
 		};
-		class PHRP_Erikson_Armor
+		class PHRP_Erikson_M56R_Armor
 		{
 			model = "PHRP_oneone_vests";
 			role = "erikson";

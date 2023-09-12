@@ -33,10 +33,10 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","kaz","aturr","holland"};
-				class soldner
+				values[] = {"raider","kaz","aturr","holland"};
+				class raider
 				{
-					label = "Soldner";
+					label = "Raider";
 				};
 				class kaz
 				{
@@ -58,10 +58,10 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_Soldner_M56R_Armor
+		class PHRP_raider_M56_Armor
 		{
 			model = "PHRP_Olympus_vests";
-			role = "soldner";
+			role = "raider";
 		};
 		class PHRP_Kaz_M56R_Armor
 		{
@@ -73,7 +73,7 @@ class XtdGearInfos
 			model = "PHRP_Olympus_vests";
 			role = "aturr";
 		};
-		class PHRP_Holland_Armor
+		class PHRP_Holland_M56R_Armor
 		{
 			model = "PHRP_Olympus_vests";
 			role = "holland";

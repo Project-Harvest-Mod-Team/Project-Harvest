@@ -23,17 +23,6 @@ class CfgWeapons
 {
 	class HeadgearItem;
 	class PHRP_Base_Recon_Helmet_dp;
-	class PHRP_Base_ODST_Helmet_dp;
-	class PHRP_Base_Commando_Helmet_dp;
-	class PHRP_Holland_ODST_Helmet_dp : PHRP_Base_ODST_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "VorpalHotdog";
-		displayName = "CH252D Helmet (Holland)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_holland_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
-	};
 	class PHRP_Aturr_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
 		scope = 1;

@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","payne","graves","blackburn"};
+				values[] = {"M56SH","M56SR","payne","blackburn","hazard"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -46,13 +46,13 @@ class XtdGearModels
 				{
 					label = "Payne";
 				};
-				class graves
-				{
-					label = "Graves";
-				};
 				class blackburn
 				{
 					label = "Blackburn";
+				};
+				class hazard
+				{
+					label = "Hazard";
 				};
 			};
 		};
@@ -77,14 +77,14 @@ class XtdGearInfos
 			role = "payne";
 			model = "PHRP_onetwo_helmets";
 		};
-		class PHRP_Graves_ODST_Helmet
-		{
-			role = "graves";
-			model = "PHRP_onetwo_helmets";
-		};
 		class PHRP_Blackburn_Recon_Helmet
 		{
 			role = "blackburn";
+			model = "PHRP_onetwo_helmets";
+		};
+		class PHRP_Hazard_EOD_Helmet
+		{
+			role = "hazard";
 			model = "PHRP_onetwo_helmets";
 		};
 	};
@@ -92,11 +92,11 @@ class XtdGearInfos
 class CfgWeapons
 {
 	class ItemInfo;
-    class PHRP_Base_ODST_Helmet;
-	class PHRP_Base_Operator_Helmet;
-	class PHRP_Base_Recon_Helmet;
 	class PHRP_M56SH_Helmet_Base;
 	class PHRP_M56SR_Helmet_Base;
+	class PHRP_Base_Operator_Helmet;
+	class PHRP_Base_Recon_Helmet;
+	class PHRP_Base_EOD_Helmet;
 
 	class PHRP_onetwo_M56SH_Helmet: PHRP_M56SH_Helmet_Base
 	{
@@ -130,19 +130,9 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		author = "Soldner";
-		displayName = "Mark V/O Helmet 1-2 (Payne)";
+		displayName = "Mark V/O Helmet (Payne)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_payne_co.paa"};
-	};
-	class PHRP_Graves_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "SirChungus";
-		displayName = "CH252D Helmet 1-2 (Graves)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_graves_co.paa","PHHelmets\data\helmets\customvisor_graves_co.paa"};
 	};
 	class PHRP_Blackburn_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
@@ -153,5 +143,15 @@ class CfgWeapons
 		displayName = "Recon Helmet (Blackburn)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\customvisor_blackburn_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+	};
+	class PHRP_Hazard_EOD_Helmet : PHRP_Base_EOD_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Mark V/EOD Helmet (Hazard)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_hazard_co.paa","PHHelmets\data\helmets\customvisor_hazard_co.paa"};
 	};
 };

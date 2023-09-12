@@ -92,11 +92,10 @@ class XtdGearInfos
 class CfgWeapons
 {
 	class ItemInfo;
-    class PHRP_Base_ODST_Helmet;
-	class PHRP_Base_Recon_Helmet;
-	class PHRP_Base_CQB_Helmet;
 	class PHRP_M56SH_Helmet_Base;
 	class PHRP_M56SR_Helmet_Base;
+	class PHRP_Base_Recon_Helmet;
+	class PHRP_Base_CQB_Helmet;
 
 	class PHRP_oneone_M56SH_Helmet: PHRP_M56SH_Helmet_Base
 	{
@@ -137,16 +136,6 @@ class CfgWeapons
 		displayName = "Recon Helmet 1-1 (Erikson)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","PHHelmets\data\helmets\customvisor_erikson_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
-	};
-	class PHRP_Riot_ODST_Helmet : PHRP_Base_ODST_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "CH252D Helmet 1-1 (Riot)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_riot_co.paa","PHHelmets\data\helmets\customvisor_riot_co.paa"};
 	};
 	class PHRP_Coleson_CQB_Helmet : PHRP_Base_CQB_Helmet
 	{
