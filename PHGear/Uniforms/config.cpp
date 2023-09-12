@@ -19,32 +19,6 @@ class XtdGearModels
 {
 	class CfgWeapons
 	{
-		class PHRP_Uniform
-		{
-			label = "Uniforms";
-			author = "Soldner";
-			options[] = {"type"};
-			class type
-			{
-				label = "Type";
-				values[] = {"normal","rolled","short"};
-				changeingame = 1;
-				changedelay = 0;
-				alwaysSelectable = 1;
-				class normal
-				{
-					label = "Normal";
-				};
-				class rolled
-				{
-					label = "Rolled";
-				};
-				class short
-				{
-					label = "Short";
-				};
-			};
-		};
 		class PHRP_ONI_Uniform
 		{
 			label = "Non-Combat Attire";
@@ -115,21 +89,6 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class Gladius_BDU
-		{
-			model = "PHRP_Uniform";
-			type = "normal";
-		};
-		class Gladius_BDU_Rolled
-		{
-			model = "PHRP_Uniform";
-			type = "rolled";
-		};
-		class Gladius_BDU_Short
-		{
-			model = "PHRP_Uniform";
-			type = "short";
-		};
 		class PHRP_Burt_ONI
 		{
 			model = "PHRP_ONI_Uniform";
@@ -169,39 +128,6 @@ class CfgWeapons
 			mass = 40;
 		};
 	}
-	class Gladius_BDU: PHRP_Base
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[PHRP] Gladius Combat Uniform";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = "BDU_V_Gladius";
-		};
-	};
-	class Gladius_BDU_Rolled: PHRP_Base
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[PHRP] Gladius Combat Uniform (Rolled)";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = "BDU_V_Gladius_Rolled";
-		};
-	};
-	class Gladius_BDU_Short: PHRP_Base
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		displayName = "[PHRP] Gladius Combat Uniform (Short)";
-		class ItemInfo: ItemInfo
-		{
-			uniformClass = "BDU_V_Gladius_Short";
-		};
-	};
 	class PHRP_Burt_ONI: PHRP_Base
 	{
 		scope = 2;
@@ -497,34 +423,6 @@ class CfgVehicles
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {};
 		editorSubcategory = "PHRP_EdSubCat_ODSTs";
-	};
-
-	//Gladius Unis
-	class BDU_V_Gladius: PHRP_Base_Uniform
-	{
-		model = "\OPTRE_UNSC_Units\Army\uniform.p3d";
-		scopeArsenal = 2;
-		uniformclass = "Gladius_BDU";
-		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\H2A_CO.paa","PHGear\data\uniforms\H2A_CO.paa"};
-	};
-	class BDU_V_Gladius_Rolled: PHRP_Base_Uniform
-	{
-		model = "\OPTRE_UNSC_Units\Army\uniform.p3d";
-		scopeArsenal = 2;
-		model = "\OPTRE_UNSC_Units\Army\uniform_rolled";
-		uniformclass = "Gladius_BDU_Rolled";
-		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\H2A_CO.paa","PHGear\data\uniforms\H2A_CO.paa"};
-	};
-	class BDU_V_Gladius_Short: PHRP_Base_Uniform
-	{
-		model = "\OPTRE_UNSC_Units\Army\uniform.p3d";
-		scopeArsenal = 2;
-		model = "\OPTRE_UNSC_Units\Army\uniform_short";
-		uniformclass = "Gladius_BDU_Short";
-		hiddenSelections[] = {"camo","camo2","insignia","clan","A_BaseLeg"};
-		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\H2A_CO.paa","PHGear\data\uniforms\H2A_CO.paa"};
 	};
 
 	//ONI outfit
