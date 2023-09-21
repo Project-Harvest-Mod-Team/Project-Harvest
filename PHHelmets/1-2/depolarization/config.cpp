@@ -23,6 +23,7 @@ class CfgWeapons
 {
 	class PHRP_Base_Recon_Helmet_dp;
 	class PHRP_Base_EOD_Helmet_dp;
+	class PHRP_Base_Commando_Helmet_dp;
 	class PHRP_Blackburn_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
 		scope = 1;
@@ -40,5 +41,14 @@ class CfgWeapons
 		displayName = "Mark V/EOD Helmet 1-3 (Hazard)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_hazard_co.paa","PHHelmets\data\helmets\customvisor_hazard_co.paa"};
+	};
+	class PHRP_Payne_Commando_Helmet_dp : PHRP_Base_Commando_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "MrMicrobe";
+		displayName = "Mark V/K Helmet (Payne)";
+		hiddenSelections[] =  {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa"};
 	};
 };

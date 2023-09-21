@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","payne","blackburn","hazard"};
+				values[] = {"M56SH","M56SR","payne","blackburn","hazard","graves"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -54,6 +54,10 @@ class XtdGearModels
 				{
 					label = "Hazard";
 				};
+				class graves
+				{
+					label = "Graves";
+				};
 			};
 		};
 	};
@@ -72,7 +76,7 @@ class XtdGearInfos
 			role = "M56SR";
 			model = "PHRP_onetwo_helmets";
 		};
-		class PHRP_Payne_Operator_Helmet
+		class PHRP_Payne_Commando_Helmet
 		{
 			role = "payne";
 			model = "PHRP_onetwo_helmets";
@@ -87,6 +91,11 @@ class XtdGearInfos
 			role = "hazard";
 			model = "PHRP_onetwo_helmets";
 		};
+		class PHRP_Graves_M56E_Helmet
+		{
+			role = "graves";
+			model = "PHRP_onetwo_helmets";
+		};
 	};
 };
 class CfgWeapons
@@ -94,9 +103,11 @@ class CfgWeapons
 	class ItemInfo;
 	class PHRP_M56SH_Helmet_Base;
 	class PHRP_M56SR_Helmet_Base;
+	class PHRP_Base_Commando_Helmet;
 	class PHRP_Base_Operator_Helmet;
 	class PHRP_Base_Recon_Helmet;
 	class PHRP_Base_EOD_Helmet;
+	class PHRP_M56E_Helmet_Base;
 
 	class PHRP_onetwo_M56SH_Helmet: PHRP_M56SH_Helmet_Base
 	{
@@ -124,15 +135,15 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onetwo_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Blue_co.paa"};
 		};
 	};
-	class PHRP_Payne_Operator_Helmet : PHRP_Base_Operator_Helmet
+	class PHRP_Payne_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "Mark V/O Helmet (Payne)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_payne_co.paa"};
+		author = "MrMicrobe";
+		displayName = "Mark V/K Helmet (Payne)";
+		hiddenSelections[] =  {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
 	};
 	class PHRP_Blackburn_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
@@ -154,4 +165,17 @@ class CfgWeapons
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_hazard_co.paa","PHHelmets\data\helmets\customvisor_hazard_co.paa"};
 	};
+	/*class PHRP_Graves_M56E_Helmet: PHRP_M56E_Helmet_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[PHRP] M56E Helmet (Graves)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\graves_EOD_Helmet_co.paa","MA_Armor\data\Helmets\EOD\EOD_Visor_Black_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\graves_EOD_Helmet_co.paa","MA_Armor\data\Helmets\EOD\EOD_Visor_Black_co.paa"};
+		};
+	};*/
 };

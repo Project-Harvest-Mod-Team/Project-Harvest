@@ -86,7 +86,7 @@ class XtdGearInfos
 			role = "morningstar";
 			model = "PHRP_onethree_helmets";
 		};
-		class PHRP_Lancer_M56S_Helmet
+		class PHRP_Lancer_CQB_Helmet
 		{
 			role = "lancer";
 			model = "PHRP_onethree_helmets";
@@ -106,11 +106,14 @@ class CfgWeapons
 	class PHRP_Base_Recon_Helmet;
 	class PHRP_Base_Operator_Helmet;
 	class PHRP_M56S_Helmet_Base;
+	class PHRP_Base_CQB_Helmet;
 
 	class PHRP_onethree_M56SH_Helmet: PHRP_M56SH_Helmet_Base
 	{
 		scope = 2;
+		scopeCurator = 2;
 		scopeArsenal = 2;
+		author = "MrMicrobe";
 		displayName = "[PHRP] M56S-H Helmet 1-3";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onethree_H3_Helmet_co.paa","MA_Armor\data\Helmets\H3_ODST\H3_Visor_Blue_co.paa"};
@@ -123,7 +126,9 @@ class CfgWeapons
 	class PHRP_onethree_M56SR_Helmet: PHRP_M56SR_Helmet_Base
 	{
 		scope = 2;
+		scopeCurator = 2;
 		scopeArsenal = 2;
+		author = "MrMicrobe";
 		displayName = "[PHRP] M56S-R Helmet 1-3";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\onethree_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Blue_co.paa"};
@@ -148,28 +153,27 @@ class CfgWeapons
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "";
+		author = "MrMicrobe";
 		displayName = "Mark V/O Helmet (Morningstar)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
 	};
-	class PHRP_Lancer_M56S_Helmet: PHRP_M56S_Helmet_Base
+	class PHRP_Lancer_CQB_Helmet: PHRP_Base_CQB_Helmet
 	{
 		scope = 2;
+		scopeCurator = 2;
 		scopeArsenal = 2;
-		displayName = "[PHRP] M56-S Helmet (Lancer)";
+		author = "";
+		displayName = "Mark V/C Helmet (Lancer)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\lancer_Scout_Helm_co.paa","PHHelmets\data\helmets\lancer_Scout_Visor_Black_co.paa"};
-		class ItemInfo: ItemInfo
-		{
-			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\lancer_Scout_Helm_co.paa","PHHelmets\data\helmets\lancer_Scout_Visor_Black_co.paa"};
-		};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lancer_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 	class PHRP_Griffith_M56SR_Helmet: PHRP_M56SR_Helmet_Base
 	{
 		scope = 2;
+		scopeCurator = 2;
 		scopeArsenal = 2;
+		author = "VibingVampire";
 		displayName = "[PHRP] M56S-R Helmet (Griffith)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\griffith_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\griffith_HR_ODST_Visor_Blue_co.paa"};

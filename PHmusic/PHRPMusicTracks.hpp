@@ -313,3 +313,24 @@ class StarPowerMarioKart64
 	duration=92;
 	musicClass = "PHRPGoofy";
 };
+class H2ScarabMix
+{
+	name = "Halo 2 - Scarab Mix";
+	sound[] = {"PHmusic\data\Tracks\Halo2ScarabMix.ogg",db+0,1};
+	duration=180;
+	musicClass = "PHRPMusic";
+};
+class Jojopillarmen
+{
+	name = "Jojo - Pillarmen Theme";
+	sound[] = {"PHmusic\data\Tracks\Jojopillarmen.ogg",db+0,1};
+	duration=198;
+	musicClass = "PHRPGoofy";
+};
+class DBZGinyu
+{
+	name = "Vulcan Theme Song";
+	sound[] = {"PHmusic\data\Tracks\DBZGinyu.ogg",db+0,1};
+	duration=115;
+	musicClass = "PHRPGoofy";
+};
