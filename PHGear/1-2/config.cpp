@@ -100,7 +100,7 @@ class XtdGearInfos
 			model = "PHRP_onetwo_vests";
 			role = "payne";
 		};
-		class PHRP_Blackburn_Armor
+		class PHRP_Blackburn_M56R_Armor
 		{
 			model = "PHRP_onetwo_vests";
 			role = "blackburn";
