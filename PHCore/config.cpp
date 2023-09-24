@@ -12,7 +12,10 @@ class CfgPatches
 		magazines[] = {};
 		ammo[] = {};
 		requiredVersion = 0.1;
-		requiredAddons[] = {};
+		requiredAddons[] = {
+			"1st_MEU_patch_main_loadingScreens"
+			// we dont actually extend anything from 1MEU, this is just to ensure our loading screen overwrites theirs
+		};
 	};
 };
 class CfgMods
@@ -86,33 +89,173 @@ class RscDisplayMain: RscStandardDisplay
 		delete Spotlight1;
 		delete Spotlight2;
 		delete Spotlight3;
+		delete BackgroundSpotlightRight;
 		delete BackgroundSpotlightLeft;
 		delete BackgroundSpotlight;
-		delete BackgroundSpotlightRight;
 		class Logo: RscActivePicture
 		{
-			text = "PHCore\textures\logo.paa";
+			text="\PHCore\textures\logo.paa";
 		};
 	};
-	enableDisplay = 0;
+	enableDisplay=0;
 	delete Spotlight;
 	class RscActiveText;
 	class RscActivePicture: RscActiveText
 	{
-		style = 48;
-		color[] = {1,1,1,0.5};
-		colorActive[] = {1,1,1,1};
+		style=48;
+		color[]={1,1,1,0.5};
+		colorActive[]={1,1,1,1};
 	};
 	class controlsBackground
 	{
 		class LoadingPic: RscPicture
 		{
-			idc = 1;
-			x = "SafeZoneX";
-			y = "SafeZoneY";
-			h = "SafeZoneH";
-			w = "SafeZoneW";
-			text = "\PHCore\textures\PHRP.jpg";
+			idc=1;
+			x="SafeZoneX";
+			y="SafeZoneY";
+			h="SafeZoneH";
+			w="SafeZoneW";
+			text="\PHCore\textures\PHRP.jpg";
+		};
+	};
+};
+class RscDisplayLoading
+{
+	class Variants
+	{
+		class LoadingOne
+		{
+			idd=250;
+			class controls
+			{
+				class LoadingPic: RscPicture
+				{
+					idc=1;
+					x="SafeZoneX";
+					y="SafeZoneY";
+					h="SafeZoneH";
+					w="SafeZoneW";
+					text="\PHCore\textures\phrpbg.jpg";
+				};
+			};
+		};
+		class Loading_West1: LoadingOne
+		{
+			class controls
+			{
+				class LoadingPic
+				{
+					idc=1;
+					x="SafeZoneX";
+					y="SafeZoneY";
+					h="SafeZoneH";
+					w="SafeZoneW";
+					text="\PHCore\textures\PHRP.jpg";
+				};
+			};
+		};
+		class Loading_West2: LoadingOne
+		{
+			class controls
+			{
+				class LoadingPic
+				{
+					idc=1;
+					x="SafeZoneX";
+					y="SafeZoneY";
+					h="SafeZoneH";
+					w="SafeZoneW";
+					text="\PHCore\textures\PHRP.jpg";
+				};
+			};
+		};
+		class Loading_East1: LoadingOne
+		{
+			class controls
+			{
+				class LoadingPic
+				{
+					idc=1;
+					x="SafeZoneX";
+					y="SafeZoneY";
+					h="SafeZoneH";
+					w="SafeZoneW";
+					text="\PHCore\textures\PHRP.jpg";
+				};
+			};
+		};
+		class Loading_East2: LoadingOne
+		{
+			class controls
+			{
+				class LoadingPic
+				{
+					idc=1;
+					x="SafeZoneX";
+					y="SafeZoneY";
+					h="SafeZoneH";
+					w="SafeZoneW";
+					text="\PHCore\textures\PHRP.jpg";
+				};
+			};
+		};
+	};
+};
+class RscDisplayLoadMission: RscStandardDisplay
+{
+	class controlsBackground
+	{
+		class LoadingPic: RscPicture
+		{
+			idc=1;
+			x="SafeZoneX";
+			y="SafeZoneY";
+			h="SafeZoneH";
+			w="SafeZoneW";
+			text="\PHCore\textures\PHRP.jpg";
+		};
+	};
+};
+class RscDisplayStart: RscStandardDisplay
+{
+	class controls
+	{
+		class LoadingPic: RscPicture
+		{
+			idc=1;
+			x="SafeZoneX";
+			y="SafeZoneY";
+			h="SafeZoneH";
+			w="SafeZoneW";
+			text="\PHCore\textures\phrpbg.jpg";
+		};
+	};
+};
+class RscDisplayMPPlayers;
+class RscDisplayClientWait: RscDisplayMPPlayers
+{
+	class LoadingPic: RscPicture
+	{
+		idc=1;
+		x="SafeZoneX";
+		y="SafeZoneY";
+		h="SafeZoneH";
+		w="SafeZoneW";
+		text="\PHCore\textures\PHRP.jpg";
+	};
+};
+class RscDisplayClient: RscStandardDisplay
+{
+	class controlsBackground
+	{
+		class LoadingPic: RscPicture
+		{
+			idc=1;
+			x="SafeZoneX";
+			y="SafeZoneY";
+			h="SafeZoneH";
+			w="SafeZoneW";
+			text="\PHCore\textures\PHRP.jpg";
 		};
 	};
 };
