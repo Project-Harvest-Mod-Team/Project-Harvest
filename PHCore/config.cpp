@@ -115,7 +115,7 @@ class RscDisplayMain: RscStandardDisplay
 			y="SafeZoneY";
 			h="SafeZoneH";
 			w="SafeZoneW";
-			text="\PHCore\textures\PHRP.jpg";
+			text="\PHCore\textures\PHRP.paa";
 		};
 	};
 };
@@ -135,7 +135,7 @@ class RscDisplayLoading
 					y="SafeZoneY";
 					h="SafeZoneH";
 					w="SafeZoneW";
-					text="\PHCore\textures\phrpbg.jpg";
+					text="\PHCore\textures\phrpbg.paa";
 				};
 			};
 		};
@@ -150,7 +150,7 @@ class RscDisplayLoading
 					y="SafeZoneY";
 					h="SafeZoneH";
 					w="SafeZoneW";
-					text="\PHCore\textures\PHRP.jpg";
+					text="\PHCore\textures\PHRP.paa";
 				};
 			};
 		};
@@ -165,7 +165,7 @@ class RscDisplayLoading
 					y="SafeZoneY";
 					h="SafeZoneH";
 					w="SafeZoneW";
-					text="\PHCore\textures\PHRP.jpg";
+					text="\PHCore\textures\PHRP.paa";
 				};
 			};
 		};
@@ -180,7 +180,7 @@ class RscDisplayLoading
 					y="SafeZoneY";
 					h="SafeZoneH";
 					w="SafeZoneW";
-					text="\PHCore\textures\PHRP.jpg";
+					text="\PHCore\textures\PHRP.paa";
 				};
 			};
 		};
@@ -195,7 +195,7 @@ class RscDisplayLoading
 					y="SafeZoneY";
 					h="SafeZoneH";
 					w="SafeZoneW";
-					text="\PHCore\textures\PHRP.jpg";
+					text="\PHCore\textures\PHRP.paa";
 				};
 			};
 		};
@@ -212,7 +212,7 @@ class RscDisplayLoadMission: RscStandardDisplay
 			y="SafeZoneY";
 			h="SafeZoneH";
 			w="SafeZoneW";
-			text="\PHCore\textures\PHRP.jpg";
+			text="\PHCore\textures\PHRP.paa";
 		};
 	};
 };
@@ -227,7 +227,7 @@ class RscDisplayStart: RscStandardDisplay
 			y="SafeZoneY";
 			h="SafeZoneH";
 			w="SafeZoneW";
-			text="\PHCore\textures\phrpbg.jpg";
+			text="\PHCore\textures\phrpbg.paa";
 		};
 	};
 };
@@ -241,7 +241,7 @@ class RscDisplayClientWait: RscDisplayMPPlayers
 		y="SafeZoneY";
 		h="SafeZoneH";
 		w="SafeZoneW";
-		text="\PHCore\textures\PHRP.jpg";
+		text="\PHCore\textures\PHRP.paa";
 	};
 };
 class RscDisplayClient: RscStandardDisplay
@@ -255,7 +255,7 @@ class RscDisplayClient: RscStandardDisplay
 			y="SafeZoneY";
 			h="SafeZoneH";
 			w="SafeZoneW";
-			text="\PHCore\textures\PHRP.jpg";
+			text="\PHCore\textures\PHRP.paa";
 		};
 	};
 };

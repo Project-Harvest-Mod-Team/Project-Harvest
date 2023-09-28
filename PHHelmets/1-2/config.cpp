@@ -165,7 +165,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_hazard_co.paa","PHHelmets\data\helmets\customvisor_hazard_co.paa"};
 	};
-	/*class PHRP_Graves_M56E_Helmet: PHRP_M56E_Helmet_Base
+	class PHRP_Graves_M56E_Helmet: PHRP_M56E_Helmet_Base
 	{
 		scope = 2;
 		scopeArsenal = 2;
@@ -177,5 +177,5 @@ class CfgWeapons
 			hiddenSelections[] = {"camo1","camo2"};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\graves_EOD_Helmet_co.paa","MA_Armor\data\Helmets\EOD\EOD_Visor_Black_co.paa"};
 		};
-	};*/
+	};
 };
