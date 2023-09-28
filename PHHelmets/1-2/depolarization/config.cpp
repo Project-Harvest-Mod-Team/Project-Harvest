@@ -33,15 +33,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
-	class PHRP_Hazard_EOD_Helmet_dp : PHRP_Base_EOD_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "MrMicrobe";
-		displayName = "Mark V/EOD Helmet 1-3 (Hazard)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_hazard_co.paa","PHHelmets\data\helmets\customvisor_hazard_co.paa"};
-	};
 	class PHRP_Payne_Commando_Helmet_dp : PHRP_Base_Commando_Helmet_dp
 	{
 		scope = 1;
