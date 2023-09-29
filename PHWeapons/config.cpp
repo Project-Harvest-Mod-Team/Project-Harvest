@@ -8,8 +8,27 @@ class CfgPatches
 		hideName = 0;
 		units[] = {};
 		weapons[] = {};
+		magazines[]=
+		{
+			"PHRP_200Rnd_95x40_Box_JHP",
+			"PHRP_200Rnd_95x40_Box_JHPT",
+			"PHRP_200Rnd_95x40_Box_HPSAP",
+			"PHRP_200Rnd_95x40_Box_HPSAPT",
+			"PHRP_200Rnd_95x40_Box_SS",
+			"PHRP_200Rnd_95x40_Box_SST",
+			"PHRP_100Rnd_95x40_Box_JHP",
+			"PHRP_100Rnd_95x40_Box_JHPT",
+			"PHRP_100Rnd_95x40_Box_HPSAP",
+			"PHRP_100Rnd_95x40_Box_HPSAPT",
+			"PHRP_100Rnd_95x40_Box_SS",
+			"PHRP_100Rnd_95x40_Box_SST"
+		};
 		requiredVersion = 0.1;
-		requiredAddons[] = {"PHRP_Core"};
+		requiredAddons[] = {
+			"PHRP_Core",
+			"TCF_MUNITIONS",
+			"OPTRE_Weapons"
+		};
 	};
 };
 
@@ -472,6 +491,7 @@ class CfgWeapons
 		canShootInWater = 1;
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"PHWeapons\data\sabbath_M392_CO.paa"};
+		magazines[] += {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag_Tracer","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_AP","OPTRE_15Rnd_762x51_Mag_APT","OPTRE_15Rnd_762x51_Mag_JHP","OPTRE_15Rnd_762x51_Mag_JHPT","OPTRE_15Rnd_762x51_Mag_SS","OPTRE_15Rnd_762x51_Mag_SST","OPTRE_15Rnd_762x51_Mag_FS","OPTRE_15Rnd_762x51_Mag_FST","OPTRE_15Rnd_DMR_762x51_Mag_AP","OPTRE_15Rnd_DMR_762x51_Mag_APT","OPTRE_15Rnd_DMR_762x51_Mag_JHP","OPTRE_15Rnd_DMR_762x51_Mag_JHPT","OPTRE_15Rnd_DMR_762x51_Mag_SS","OPTRE_15Rnd_DMR_762x51_Mag_SST","OPTRE_15Rnd_DMR_762x51_Mag_FS","OPTRE_15Rnd_DMR_762x51_Mag_FST"};	
 		class WeaponSlotsInfo
 		{
 			mass = 40;
@@ -493,4 +513,118 @@ class CfgWeapons
 			};
 		};
 	};
+};
+
+class CfgMagazineWells
+{
+	class MEU_AR_95x40
+	{
+		rnd200_mags_reskin[]=
+		{
+			"PHRP_200Rnd_95x40_Box_JHP",
+			"PHRP_200Rnd_95x40_Box_JHPT",
+			"PHRP_200Rnd_95x40_Box_HPSAP",
+			"PHRP_200Rnd_95x40_Box_HPSAPT",
+			"PHRP_200Rnd_95x40_Box_SS",
+			"PHRP_200Rnd_95x40_Box_SST"
+		};
+		rnd100_mags_reskin[]=
+		{
+			"PHRP_100Rnd_95x40_Box_JHP",
+			"PHRP_100Rnd_95x40_Box_JHPT",
+			"PHRP_100Rnd_95x40_Box_HPSAP",
+			"PHRP_100Rnd_95x40_Box_HPSAPT",
+			"PHRP_100Rnd_95x40_Box_SS",
+			"PHRP_100Rnd_95x40_Box_SST"
+		};
+	};
+};
+
+class CfgMagazines
+{
+
+	class OPTRE_200Rnd_95x40_Box_Tracer;
+	class PHRP_200Rnd_95x40_Box_HPSAPT: OPTRE_200Rnd_95x40_Box_Tracer{
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\IconAmmo\icon_95x40_200_hpsapt_ca.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_hpsapt_co.paa"};
+	};
+
+	class OPTRE_200Rnd_95x40_Box;
+	class PHRP_200Rnd_95x40_Box_HPSAP: OPTRE_200Rnd_95x40_Box{
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\IconAmmo\icon_95x40_200_hpsap_ca.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_hpsap_co.paa"};
+	};
+
+	class OPTRE_100Rnd_95x40_Box_Tracer;
+	class PHRP_100Rnd_95x40_Box_HPSAPT: OPTRE_100Rnd_95x40_Box_Tracer{
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\IconAmmo\icon_95x40_100_hpsapt_ca.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_hpsapt_co.paa"};
+	};
+
+	class OPTRE_100Rnd_95x40_Box;
+	class PHRP_100Rnd_95x40_Box_HPSAP: OPTRE_100Rnd_95x40_Box{
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\IconAmmo\icon_95x40_100_hpsap_ca.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_hpsap_co.paa"};
+	};
+
+	class TCF_200Rnd_95x40_Box_JHPT;
+	class PHRP_200Rnd_95x40_Box_JHPT: TCF_200Rnd_95x40_Box_JHPT{
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\IconAmmo\icon_95x40_200_jhpt_ca.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_jhpt_co.paa"};
+	};
+
+	class TCF_200Rnd_95x40_Box_JHP;
+	class PHRP_200Rnd_95x40_Box_JHP: TCF_200Rnd_95x40_Box_JHP{
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\IconAmmo\icon_95x40_200_jhp_ca.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_jhp_co.paa"};
+	};
+
+	class TCF_100Rnd_95x40_Box_JHPT;
+	class PHRP_100Rnd_95x40_Box_JHPT: TCF_100Rnd_95x40_Box_JHPT{
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\IconAmmo\icon_95x40_100_jhpt_ca.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_jhpt_co.paa"};
+	};
+
+	class TCF_100Rnd_95x40_Box_JHP;
+	class PHRP_100Rnd_95x40_Box_JHP: TCF_100Rnd_95x40_Box_JHP{
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\IconAmmo\icon_95x40_100_jhp_ca.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_jhp_co.paa"};
+	};
+
+	class TCF_200Rnd_95x40_Box_SST;
+	class PHRP_200Rnd_95x40_Box_SST: TCF_200Rnd_95x40_Box_SST{
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\IconAmmo\icon_95x40_200_sst_ca.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_sst_co.paa"};
+	};
+
+	class TCF_200Rnd_95x40_Box_SS;
+	class PHRP_200Rnd_95x40_Box_SS: TCF_200Rnd_95x40_Box_SS{
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\IconAmmo\icon_95x40_200_ss_ca.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_ss_co.paa"};
+	};
+
+	class TCF_100Rnd_95x40_Box_SST;
+	class PHRP_100Rnd_95x40_Box_SST: TCF_100Rnd_95x40_Box_SST{
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\IconAmmo\icon_95x40_100_sst_ca.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_sst_co.paa"};
+	};
+
+	class TCF_100Rnd_95x40_Box_SS;
+	class PHRP_100Rnd_95x40_Box_SS: TCF_100Rnd_95x40_Box_SS{
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\IconAmmo\icon_95x40_100_ss_ca.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_ss_co.paa"};
+	};
+
 };

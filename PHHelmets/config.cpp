@@ -995,6 +995,44 @@ class CfgWeapons
 		};
 	};
 
+	//M56E
+	class PHRP_M56E_Helmet_Base : MA_Helmet_Base_one
+	{
+		scope = 1;
+		scopeCurator = 1;
+		scopeArsenal = 1;
+		displayName = "[PHRP] M56-E Helmet - Base";
+		model = "MA_Armor\data\Helmets\EOD\EOD_Helmet.p3d";
+		picture = "MA_Armor\data\Icons\EOD_Helm.paa";
+		hiddenSelectionsTextures[] = {"MA_Armor\data\Helmets\EOD\EOD_Helmet_co.paa","MA_Armor\data\Helmets\EOD\EOD_Visor_Blue_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			uniformModel = "MA_Armor\data\Helmets\EOD\EOD_Helmet.p3d";
+			hiddenSelectionsTextures[] = {"MA_Armor\data\Helmets\EOD\EOD_Helmet_co.paa","MA_Armor\data\Helmets\EOD\EOD_Visor_Blue_co.paa"};
+			class HitpointsProtectionInfo
+			{
+				class Face
+				{
+					armor = 35;
+					hitpointName = "HitFace";
+					passThrough = 0.1;
+				};
+				class Head
+				{
+					armor = 35;
+					hitPointName = "HitHead";
+					passThrough = 0.1;
+				};
+				class Neck
+				{
+					armor = 35;
+					hitpointName = "HitNeck";
+					passThrough = 0.1;
+				};
+			};
+		};
+	};
+
 	//M56A
 	class PHRP_M56S_Helmet_Base : MA_Helmet_Base_one
 	{

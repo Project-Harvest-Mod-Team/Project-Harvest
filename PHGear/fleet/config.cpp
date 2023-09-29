@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","moon"};
+				values[] = {"soldner","moon","burtovski"};
 				class soldner
 				{
 					label = "Soldner";
@@ -41,6 +41,10 @@ class XtdGearModels
 				class moon
 				{
 					label = "Moon";
+				};
+				class burtovski
+				{
+					label = "Burtovski";
 				};
 			};
 		};
@@ -59,6 +63,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_fleet_vests";
 			role = "moon";
+		};
+		class PHRP_Burtovski_M56R_Armor
+		{
+			model = "PHRP_fleet_vests";
+			role = "burtovski";
 		};
 	};
 };

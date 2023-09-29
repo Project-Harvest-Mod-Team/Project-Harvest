@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","erikson","riot","coleson"};
+				values[] = {"M56SH","M56SR","riot","coleson"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -41,10 +41,6 @@ class XtdGearModels
 				class M56SR
 				{
 					label = "M56S-R";
-				};
-				class erikson
-				{
-					label = "Erikson";
 				};
 				class riot
 				{
@@ -70,11 +66,6 @@ class XtdGearInfos
 		class PHRP_oneone_M56SR_Helmet
 		{
 			role = "M56SR";
-			model = "PHRP_oneone_helmets";
-		};
-		class PHRP_Erikson_Recon_Helmet
-		{
-			role = "erikson";
 			model = "PHRP_oneone_helmets";
 		};
 		class PHRP_Riot_ODST_Helmet
@@ -126,16 +117,6 @@ class CfgWeapons
 			hiddenSelections[] = {"camo1","camo2"};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\oneone_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Blue_co.paa"};
 		};
-	};
-	class PHRP_Erikson_Recon_Helmet : PHRP_Base_Recon_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "VorpalHotdog";
-		displayName = "Recon Helmet 1-1 (Erikson)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","PHHelmets\data\helmets\customvisor_erikson_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 	class PHRP_Coleson_CQB_Helmet : PHRP_Base_CQB_Helmet
 	{

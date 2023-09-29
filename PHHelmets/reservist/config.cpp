@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","wilson","miller","craven","owessel","wolf"};
+				values[] = {"recruit","wilson","miller","craven","owessel","wolf","erikson"};
 				class recruit
 				{
 					label = "Recruit";
@@ -61,6 +61,10 @@ class XtdGearModels
 				class wolf
 				{
 					label = "Wolf";
+				};
+				class erikson
+				{
+					label = "Erikson";
 				};
 			};
 		};
@@ -98,6 +102,11 @@ class XtdGearInfos
 		class PHRP_Wolf_Recon_Helmet
 		{
 			role = "wolf";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Erikson_Recon_Helmet
+		{
+			role = "erikson";
 			model = "PHRP_reservist_helmets";
 		};
 	};
@@ -171,5 +180,15 @@ class CfgWeapons
 		displayName = "Recon Helmet (Wolf)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\customvisor_wolf_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+	};
+	class PHRP_Erikson_Recon_Helmet : PHRP_Base_Recon_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VorpalHotdog";
+		displayName = "Recon Helmet (Erikson)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","PHHelmets\data\helmets\customvisor_erikson_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 };
