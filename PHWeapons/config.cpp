@@ -538,6 +538,28 @@ class CfgMagazineWells
 			"PHRP_100Rnd_95x40_Box_SST"
 		};
 	};
+	
+	class OPTRE_Magwell_M73
+	{
+		rnd200_mags_reskin[]=
+		{
+			"PHRP_200Rnd_95x40_Box_JHP",
+			"PHRP_200Rnd_95x40_Box_JHPT",
+			"PHRP_200Rnd_95x40_Box_HPSAP",
+			"PHRP_200Rnd_95x40_Box_HPSAPT",
+			"PHRP_200Rnd_95x40_Box_SS",
+			"PHRP_200Rnd_95x40_Box_SST"
+		};
+		rnd100_mags_reskin[]=
+		{
+			"PHRP_100Rnd_95x40_Box_JHP",
+			"PHRP_100Rnd_95x40_Box_JHPT",
+			"PHRP_100Rnd_95x40_Box_HPSAP",
+			"PHRP_100Rnd_95x40_Box_HPSAPT",
+			"PHRP_100Rnd_95x40_Box_SS",
+			"PHRP_100Rnd_95x40_Box_SST"
+		};
+	}
 };
 
 class CfgMagazines
