@@ -76,6 +76,6 @@ class CfgWeapons
 		author = "Jimbo";
 		displayName = "Mark V/M Helmet (Ksiazek)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_ksiazek_co.paa","OPTRE_UNSC_Units\Army\data\Security_Visor_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_ksiazek_co.paa","PHHelmets\data\helmets\ksiazek_Security_Visor_co.paa"};
 	};
 };
