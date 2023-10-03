@@ -1123,4 +1123,16 @@ class CfgWeapons
             };
         };
 	};
+	
+	class OPTRE_NVG_UL_CNM;
+	class PHRP_NVG_UL_CNM : OPTRE_NVG_UL_CNM {
+		displayName="UNSC UL/CNM (Modernized)";
+		visionMode[]=
+		{
+			"Normal",
+			"NVG",
+			"TI"
+		};
+		thermalMode[]={"0","1","7"};
+	}
 };
