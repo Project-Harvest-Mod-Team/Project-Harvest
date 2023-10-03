@@ -4,7 +4,10 @@
 $addonBuilder = "I:\SteamLibrary\steamapps\common\Arma 3 Tools\AddonBuilder\AddonBuilder.exe";
 
 # the directory you want your .pbo and .bisign files to go
-$destination = "H:\Projects\arma3\project-harvest-dev\dist\addons";
+$destination = "C:\Program Files (x86)\Steam\steamapps\common\Arma 3\@ProjectHarvestArmory\addons";
+
+# alternate directory for PHmusic
+$destinationMusic = "C:\Program Files (x86)\Steam\steamapps\common\Arma 3\@ProjectHarvestMusicPack\addons";
 
 # path to your .biprivatekey file for pbo signing
 $privKey = "H:\Projects\arma3\tool_dscreatekey_10_bohemia_interactive\MSFIT.biprivatekey";

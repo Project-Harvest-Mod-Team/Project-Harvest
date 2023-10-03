@@ -5,5 +5,9 @@ Get-ChildItem -Directory "PH*" | Foreach-Object {
 	$signArg = "-sign=" + $privKey;
 	$whitelistArg = "-include=" + $( Get-Location ) + "\addonBuilderWhitelist.txt";
 	
-	& $addonBuilder $fn $destination $signArg $whitelistArg -binarizeFullLogs -binarizeAllTextures;
+	if ($_.Name -ne "PHmusic") {
+		& $addonBuilder $fn $destination $signArg $whitelistArg -binarizeFullLogs -binarizeAllTextures;
+	} else {
+		& $addonBuilder $fn $destinationMusic $signArg $whitelistArg -binarizeFullLogs -binarizeAllTextures;
+	}
 }
