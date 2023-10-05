@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","payne","blackburn","hazard","graves"};
+				values[] = {"M56SH","M56SR","payne","blackburn","hazard","graves","sabbath"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -57,6 +57,10 @@ class XtdGearModels
 				class graves
 				{
 					label = "Graves";
+				};
+				class sabbath
+				{
+					label = "Sabbath";
 				};
 			};
 		};
@@ -94,6 +98,11 @@ class XtdGearInfos
 		class PHRP_Graves_M56E_Helmet
 		{
 			role = "graves";
+			model = "PHRP_onetwo_helmets";
+		};
+		class PHRP_Sabbath_M56SR_Helmet
+		{
+			role = "sabbath";
 			model = "PHRP_onetwo_helmets";
 		};
 	};
@@ -166,6 +175,19 @@ class CfgWeapons
 		{
 			hiddenSelections[] = {"camo1","camo2"};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\graves_EOD_Helmet_co.paa","MA_Armor\data\Helmets\EOD\EOD_Visor_Black_co.paa"};
+		};
+	};
+	class PHRP_Sabbath_M56SR_Helmet: PHRP_M56SR_Helmet_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[PHRP] M56S-R Helmet (Sabbath)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\sabbath_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\sabbath_HR_ODST_Visor_Blue_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\sabbath_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\sabbath_HR_ODST_Visor_Blue_co.paa"};
 		};
 	};
 };
