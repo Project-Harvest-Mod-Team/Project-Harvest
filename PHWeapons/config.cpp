@@ -27,7 +27,10 @@ class CfgPatches
 			"PHRP_100Rnd_95x40_Box_HPSAPT8",
 			"PHRP_100Rnd_95x40_Box_SS",
 			"PHRP_100Rnd_95x40_Box_SST",
-			"PHRP_100Rnd_95x40_Box_SST8"
+			"PHRP_100Rnd_95x40_Box_SST8",
+			
+			"PHRP_4Rnd_145x114_HVAP_Mag",
+			"PHRP_4Rnd_145x114_APFSDS_Mag"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {
@@ -578,11 +581,19 @@ class CfgMagazineWells
 			"PHRP_100Rnd_95x40_Box_SST8"
 		};
 	}
+	
+	class OPTRE_Magwell_SRS99D {
+		sniper_no_tracers[]=
+		{
+			"PHRP_4Rnd_145x114_HVAP_Mag",
+			"PHRP_4Rnd_145x114_APFSDS_Mag"
+		};
+	};
 };
 
 class CfgMagazines
 {
-
+	// BEGIN autogen
 
 	class OPTRE_200Rnd_95x40_Box_Tracer;
 	class PHRP_200Rnd_95x40_Box_HPSAPT: OPTRE_200Rnd_95x40_Box_Tracer {
@@ -757,6 +768,23 @@ class CfgMagazines
 		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
 		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_ss_co.paa"};
 	};
-
-
+	
+	// END autogen
+	
+	
+	// sniper ammo
+	class OPTRE_4Rnd_145x114_APFSDS_Mag;
+	class OPTRE_4Rnd_145x114_HVAP_Mag;
+	
+	class PHRP_4Rnd_145x114_HVAP_Mag : OPTRE_4Rnd_145x114_APFSDS_Mag {
+		displayname="4Rnd 14.5x114mm HVAP Magazine (C/No Tracers)";
+		tracersEvery=0;
+		lastRoundsTracer=0;
+	};
+	
+	class PHRP_4Rnd_145x114_APFSDS_Mag : OPTRE_4Rnd_145x114_APFSDS_Mag {
+		displayname="4Rnd 14.5x114mm APFSDS Magazine (C/No Tracers)";
+		tracersEvery=0;
+		lastRoundsTracer=0;
+	};
 };
