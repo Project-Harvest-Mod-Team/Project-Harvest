@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","riot","coleson"};
+				values[] = {"M56SH","M56SR","riot","coleson","ishra"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -49,6 +49,10 @@ class XtdGearModels
 				class coleson
 				{
 					label = "Coleson";
+				};
+				class ishra
+				{
+					label = "Ishra";
 				};
 			};
 		};
@@ -76,6 +80,11 @@ class XtdGearInfos
 		class PHRP_Coleson_CQB_Helmet
 		{
 			role = "coleson";
+			model = "PHRP_oneone_helmets";
+		};
+		class PHRP_Ishra_M56SH_Helmet
+		{
+			role = "ishra";
 			model = "PHRP_oneone_helmets";
 		};
 	};
@@ -127,5 +136,22 @@ class CfgWeapons
 		displayName = "Mark V/C Helmet 1-1 (Coleson)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
+	};
+	class PHRP_Ishra_M56SH_Helmet: PHRP_M56SH_Helmet_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[PHRP] M56S-H Helmet 1-1 (Ishra)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Ishra_H3_Helmet_co.paa","MA_Armor\data\Helmets\H3_ODST\H3_Visor_Gold_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2"
+			};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\oneone_H3_Helmet_co.paa","MA_Armor\data\Helmets\H3_ODST\H3_Visor_Blue_co.paa"};
+		};
 	};
 };

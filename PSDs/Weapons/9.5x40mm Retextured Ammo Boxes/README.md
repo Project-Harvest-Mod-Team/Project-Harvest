@@ -1,1 +1,0 @@
-**Note** The texture.xcf files need to be rotated 90 degrees clockwise after saving. Also, since GIMP was being a shithead, I noticed I had to remove the alpha channel with optipng, ymmv.

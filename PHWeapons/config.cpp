@@ -12,16 +12,25 @@ class CfgPatches
 		{
 			"PHRP_200Rnd_95x40_Box_JHP",
 			"PHRP_200Rnd_95x40_Box_JHPT",
+			"PHRP_200Rnd_95x40_Box_JHPT8",
 			"PHRP_200Rnd_95x40_Box_HPSAP",
 			"PHRP_200Rnd_95x40_Box_HPSAPT",
+			"PHRP_200Rnd_95x40_Box_HPSAPT8",
 			"PHRP_200Rnd_95x40_Box_SS",
 			"PHRP_200Rnd_95x40_Box_SST",
+			"PHRP_200Rnd_95x40_Box_SST8",
 			"PHRP_100Rnd_95x40_Box_JHP",
 			"PHRP_100Rnd_95x40_Box_JHPT",
+			"PHRP_100Rnd_95x40_Box_JHPT8",
 			"PHRP_100Rnd_95x40_Box_HPSAP",
 			"PHRP_100Rnd_95x40_Box_HPSAPT",
+			"PHRP_100Rnd_95x40_Box_HPSAPT8",
 			"PHRP_100Rnd_95x40_Box_SS",
-			"PHRP_100Rnd_95x40_Box_SST"
+			"PHRP_100Rnd_95x40_Box_SST",
+			"PHRP_100Rnd_95x40_Box_SST8",
+			
+			"PHRP_4Rnd_145x114_HVAP_Mag",
+			"PHRP_4Rnd_145x114_APFSDS_Mag"
 		};
 		requiredVersion = 0.1;
 		requiredAddons[] = {
@@ -523,19 +532,25 @@ class CfgMagazineWells
 		{
 			"PHRP_200Rnd_95x40_Box_JHP",
 			"PHRP_200Rnd_95x40_Box_JHPT",
+			"PHRP_200Rnd_95x40_Box_JHPT8",
 			"PHRP_200Rnd_95x40_Box_HPSAP",
 			"PHRP_200Rnd_95x40_Box_HPSAPT",
+			"PHRP_200Rnd_95x40_Box_HPSAPT8",
 			"PHRP_200Rnd_95x40_Box_SS",
-			"PHRP_200Rnd_95x40_Box_SST"
+			"PHRP_200Rnd_95x40_Box_SST",
+			"PHRP_200Rnd_95x40_Box_SST8"
 		};
 		rnd100_mags_reskin[]=
 		{
 			"PHRP_100Rnd_95x40_Box_JHP",
 			"PHRP_100Rnd_95x40_Box_JHPT",
+			"PHRP_100Rnd_95x40_Box_JHPT8",
 			"PHRP_100Rnd_95x40_Box_HPSAP",
 			"PHRP_100Rnd_95x40_Box_HPSAPT",
+			"PHRP_100Rnd_95x40_Box_HPSAPT8",
 			"PHRP_100Rnd_95x40_Box_SS",
-			"PHRP_100Rnd_95x40_Box_SST"
+			"PHRP_100Rnd_95x40_Box_SST",
+			"PHRP_100Rnd_95x40_Box_SST8"
 		};
 	};
 	
@@ -545,108 +560,231 @@ class CfgMagazineWells
 		{
 			"PHRP_200Rnd_95x40_Box_JHP",
 			"PHRP_200Rnd_95x40_Box_JHPT",
+			"PHRP_200Rnd_95x40_Box_JHPT8",
 			"PHRP_200Rnd_95x40_Box_HPSAP",
 			"PHRP_200Rnd_95x40_Box_HPSAPT",
+			"PHRP_200Rnd_95x40_Box_HPSAPT8",
 			"PHRP_200Rnd_95x40_Box_SS",
-			"PHRP_200Rnd_95x40_Box_SST"
+			"PHRP_200Rnd_95x40_Box_SST",
+			"PHRP_200Rnd_95x40_Box_SST8"
 		};
 		rnd100_mags_reskin[]=
 		{
 			"PHRP_100Rnd_95x40_Box_JHP",
 			"PHRP_100Rnd_95x40_Box_JHPT",
+			"PHRP_100Rnd_95x40_Box_JHPT8",
 			"PHRP_100Rnd_95x40_Box_HPSAP",
 			"PHRP_100Rnd_95x40_Box_HPSAPT",
+			"PHRP_100Rnd_95x40_Box_HPSAPT8",
 			"PHRP_100Rnd_95x40_Box_SS",
-			"PHRP_100Rnd_95x40_Box_SST"
+			"PHRP_100Rnd_95x40_Box_SST",
+			"PHRP_100Rnd_95x40_Box_SST8"
 		};
 	}
+	
+	class OPTRE_Magwell_SRS99D {
+		sniper_no_tracers[]=
+		{
+			"PHRP_4Rnd_145x114_HVAP_Mag",
+			"PHRP_4Rnd_145x114_APFSDS_Mag"
+		};
+	};
 };
 
 class CfgMagazines
 {
+	// BEGIN autogen
 
 	class OPTRE_200Rnd_95x40_Box_Tracer;
-	class PHRP_200Rnd_95x40_Box_HPSAPT: OPTRE_200Rnd_95x40_Box_Tracer{
+	class PHRP_200Rnd_95x40_Box_HPSAPT: OPTRE_200Rnd_95x40_Box_Tracer {
+		displayname="200rd 9.5x40mm HP-SAP Box Magazine (Tracers/*)";
+		descriptionShort="200rd 9.5x40mm HP-SAP Box Magazine (Tracers/*)";
 		author="Project Harvest Mod Team";
-		picture="PHWeapons\data\IconAmmo\icon_95x40_200_hpsapt_ca.paa";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
 		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_hpsapt_co.paa"};
 	};
 
-	class OPTRE_200Rnd_95x40_Box;
-	class PHRP_200Rnd_95x40_Box_HPSAP: OPTRE_200Rnd_95x40_Box{
+	class OPTRE_200Rnd_95x40_Box_Tracer;
+	class PHRP_200Rnd_95x40_Box_HPSAPT8: OPTRE_200Rnd_95x40_Box_Tracer {
+		displayname="200rd 9.5x40mm HP-SAP Box Magazine (Tracers/8)";
+		descriptionShort="200rd 9.5x40mm HP-SAP Box Magazine (Tracers/8)";
 		author="Project Harvest Mod Team";
-		picture="PHWeapons\data\IconAmmo\icon_95x40_200_hpsap_ca.paa";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_hpsapt8_co.paa"};
+		tracersEvery=8;
+		lastRoundsTracer=10;
+	};
+
+	class OPTRE_200Rnd_95x40_Box;
+	class PHRP_200Rnd_95x40_Box_HPSAP: OPTRE_200Rnd_95x40_Box {
+		displayname="200rd 9.5x40mm HP-SAP Box Magazine";
+		descriptionShort="200rd 9.5x40mm HP-SAP Box Magazine";
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
 		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_hpsap_co.paa"};
 	};
 
 	class OPTRE_100Rnd_95x40_Box_Tracer;
-	class PHRP_100Rnd_95x40_Box_HPSAPT: OPTRE_100Rnd_95x40_Box_Tracer{
+	class PHRP_100Rnd_95x40_Box_HPSAPT: OPTRE_100Rnd_95x40_Box_Tracer {
+		displayname="100rd 9.5x40mm HP-SAP Box Magazine (Tracers/*)";
+		descriptionShort="100rd 9.5x40mm HP-SAP Box Magazine (Tracers/*)";
 		author="Project Harvest Mod Team";
-		picture="PHWeapons\data\IconAmmo\icon_95x40_100_hpsapt_ca.paa";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
 		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_hpsapt_co.paa"};
 	};
 
-	class OPTRE_100Rnd_95x40_Box;
-	class PHRP_100Rnd_95x40_Box_HPSAP: OPTRE_100Rnd_95x40_Box{
+	class OPTRE_100Rnd_95x40_Box_Tracer;
+	class PHRP_100Rnd_95x40_Box_HPSAPT8: OPTRE_100Rnd_95x40_Box_Tracer {
+		displayname="100rd 9.5x40mm HP-SAP Box Magazine (Tracers/8)";
+		descriptionShort="100rd 9.5x40mm HP-SAP Box Magazine (Tracers/8)";
 		author="Project Harvest Mod Team";
-		picture="PHWeapons\data\IconAmmo\icon_95x40_100_hpsap_ca.paa";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_hpsapt8_co.paa"};
+		tracersEvery=8;
+		lastRoundsTracer=10;
+	};
+
+	class OPTRE_100Rnd_95x40_Box;
+	class PHRP_100Rnd_95x40_Box_HPSAP: OPTRE_100Rnd_95x40_Box {
+		displayname="100rd 9.5x40mm HP-SAP Box Magazine";
+		descriptionShort="100rd 9.5x40mm HP-SAP Box Magazine";
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
 		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_hpsap_co.paa"};
 	};
 
 	class TCF_200Rnd_95x40_Box_JHPT;
-	class PHRP_200Rnd_95x40_Box_JHPT: TCF_200Rnd_95x40_Box_JHPT{
+	class PHRP_200Rnd_95x40_Box_JHPT: TCF_200Rnd_95x40_Box_JHPT {
+		displayname="200rd 9.5x40mm JHP Box Magazine (Tracers/*)";
+		descriptionShort="200rd 9.5x40mm JHP Box Magazine (Tracers/*)";
 		author="Project Harvest Mod Team";
-		picture="PHWeapons\data\IconAmmo\icon_95x40_200_jhpt_ca.paa";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
 		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_jhpt_co.paa"};
 	};
 
-	class TCF_200Rnd_95x40_Box_JHP;
-	class PHRP_200Rnd_95x40_Box_JHP: TCF_200Rnd_95x40_Box_JHP{
+	class TCF_200Rnd_95x40_Box_JHPT;
+	class PHRP_200Rnd_95x40_Box_JHPT8: TCF_200Rnd_95x40_Box_JHPT {
+		displayname="200rd 9.5x40mm JHP Box Magazine (Tracers/8)";
+		descriptionShort="200rd 9.5x40mm JHP Box Magazine (Tracers/8)";
 		author="Project Harvest Mod Team";
-		picture="PHWeapons\data\IconAmmo\icon_95x40_200_jhp_ca.paa";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_jhpt8_co.paa"};
+		tracersEvery=8;
+		lastRoundsTracer=10;
+	};
+
+	class TCF_200Rnd_95x40_Box_JHP;
+	class PHRP_200Rnd_95x40_Box_JHP: TCF_200Rnd_95x40_Box_JHP {
+		displayname="200rd 9.5x40mm JHP Box Magazine";
+		descriptionShort="200rd 9.5x40mm JHP Box Magazine";
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
 		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_jhp_co.paa"};
 	};
 
 	class TCF_100Rnd_95x40_Box_JHPT;
-	class PHRP_100Rnd_95x40_Box_JHPT: TCF_100Rnd_95x40_Box_JHPT{
+	class PHRP_100Rnd_95x40_Box_JHPT: TCF_100Rnd_95x40_Box_JHPT {
+		displayname="100rd 9.5x40mm JHP Box Magazine (Tracers/*)";
+		descriptionShort="100rd 9.5x40mm JHP Box Magazine (Tracers/*)";
 		author="Project Harvest Mod Team";
-		picture="PHWeapons\data\IconAmmo\icon_95x40_100_jhpt_ca.paa";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
 		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_jhpt_co.paa"};
 	};
 
-	class TCF_100Rnd_95x40_Box_JHP;
-	class PHRP_100Rnd_95x40_Box_JHP: TCF_100Rnd_95x40_Box_JHP{
+	class TCF_100Rnd_95x40_Box_JHPT;
+	class PHRP_100Rnd_95x40_Box_JHPT8: TCF_100Rnd_95x40_Box_JHPT {
+		displayname="100rd 9.5x40mm JHP Box Magazine (Tracers/8)";
+		descriptionShort="100rd 9.5x40mm JHP Box Magazine (Tracers/8)";
 		author="Project Harvest Mod Team";
-		picture="PHWeapons\data\IconAmmo\icon_95x40_100_jhp_ca.paa";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_jhpt8_co.paa"};
+		tracersEvery=8;
+		lastRoundsTracer=10;
+	};
+
+	class TCF_100Rnd_95x40_Box_JHP;
+	class PHRP_100Rnd_95x40_Box_JHP: TCF_100Rnd_95x40_Box_JHP {
+		displayname="100rd 9.5x40mm JHP Box Magazine";
+		descriptionShort="100rd 9.5x40mm JHP Box Magazine";
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
 		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_jhp_co.paa"};
 	};
 
 	class TCF_200Rnd_95x40_Box_SST;
-	class PHRP_200Rnd_95x40_Box_SST: TCF_200Rnd_95x40_Box_SST{
+	class PHRP_200Rnd_95x40_Box_SST: TCF_200Rnd_95x40_Box_SST {
+		displayname="200rd 9.5x40mm SS Box Magazine (Tracers/*)";
+		descriptionShort="200rd 9.5x40mm SS Box Magazine (Tracers/*)";
 		author="Project Harvest Mod Team";
-		picture="PHWeapons\data\IconAmmo\icon_95x40_200_sst_ca.paa";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
 		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_sst_co.paa"};
 	};
 
-	class TCF_200Rnd_95x40_Box_SS;
-	class PHRP_200Rnd_95x40_Box_SS: TCF_200Rnd_95x40_Box_SS{
+	class TCF_200Rnd_95x40_Box_SST;
+	class PHRP_200Rnd_95x40_Box_SST8: TCF_200Rnd_95x40_Box_SST {
+		displayname="200rd 9.5x40mm SS Box Magazine (Tracers/8)";
+		descriptionShort="200rd 9.5x40mm SS Box Magazine (Tracers/8)";
 		author="Project Harvest Mod Team";
-		picture="PHWeapons\data\IconAmmo\icon_95x40_200_ss_ca.paa";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_sst8_co.paa"};
+		tracersEvery=8;
+		lastRoundsTracer=10;
+	};
+
+	class TCF_200Rnd_95x40_Box_SS;
+	class PHRP_200Rnd_95x40_Box_SS: TCF_200Rnd_95x40_Box_SS {
+		displayname="200rd 9.5x40mm SS Box Magazine";
+		descriptionShort="200rd 9.5x40mm SS Box Magazine";
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
 		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_200_ss_co.paa"};
 	};
 
 	class TCF_100Rnd_95x40_Box_SST;
-	class PHRP_100Rnd_95x40_Box_SST: TCF_100Rnd_95x40_Box_SST{
+	class PHRP_100Rnd_95x40_Box_SST: TCF_100Rnd_95x40_Box_SST {
+		displayname="100rd 9.5x40mm SS Box Magazine (Tracers/*)";
+		descriptionShort="100rd 9.5x40mm SS Box Magazine (Tracers/*)";
 		author="Project Harvest Mod Team";
-		picture="PHWeapons\data\IconAmmo\icon_95x40_100_sst_ca.paa";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
 		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_sst_co.paa"};
 	};
 
-	class TCF_100Rnd_95x40_Box_SS;
-	class PHRP_100Rnd_95x40_Box_SS: TCF_100Rnd_95x40_Box_SS{
+	class TCF_100Rnd_95x40_Box_SST;
+	class PHRP_100Rnd_95x40_Box_SST8: TCF_100Rnd_95x40_Box_SST {
+		displayname="100rd 9.5x40mm SS Box Magazine (Tracers/8)";
+		descriptionShort="100rd 9.5x40mm SS Box Magazine (Tracers/8)";
 		author="Project Harvest Mod Team";
-		picture="PHWeapons\data\IconAmmo\icon_95x40_100_ss_ca.paa";
-		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_ss_co.paa"};
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_sst8_co.paa"};
+		tracersEvery=8;
+		lastRoundsTracer=10;
 	};
 
+	class TCF_100Rnd_95x40_Box_SS;
+	class PHRP_100Rnd_95x40_Box_SS: TCF_100Rnd_95x40_Box_SS {
+		displayname="100rd 9.5x40mm SS Box Magazine";
+		descriptionShort="100rd 9.5x40mm SS Box Magazine";
+		author="Project Harvest Mod Team";
+		picture="PHWeapons\data\Icon\95x40AmmoCan.paa";
+		hiddenSelectionsTextures[]= {"PHWeapons\data\Ammo\95x40_100_ss_co.paa"};
+	};
+	
+	// END autogen
+	
+	
+	// sniper ammo
+	class OPTRE_4Rnd_145x114_APFSDS_Mag;
+	class OPTRE_4Rnd_145x114_HVAP_Mag;
+	
+	class PHRP_4Rnd_145x114_HVAP_Mag : OPTRE_4Rnd_145x114_APFSDS_Mag {
+		displayname="4Rnd 14.5x114mm HVAP Magazine (C/No Tracers)";
+		tracersEvery=0;
+		lastRoundsTracer=0;
+	};
+	
+	class PHRP_4Rnd_145x114_APFSDS_Mag : OPTRE_4Rnd_145x114_APFSDS_Mag {
+		displayname="4Rnd 14.5x114mm APFSDS Magazine (C/No Tracers)";
+		tracersEvery=0;
+		lastRoundsTracer=0;
+	};
 };
