@@ -126,7 +126,7 @@ class CfgWeapons
 		author = "Soldner";
 		displayName = "Mark V/K Helmet (Burtovski)";
 		hiddenSelections[] =  {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\customvisor_burt_co.paa"};
 	};
 	class PHRP_Moon_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
