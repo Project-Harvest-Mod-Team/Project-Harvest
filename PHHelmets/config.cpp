@@ -1124,11 +1124,10 @@ class CfgWeapons
         };
 	};
 	
-
-	//Extra NVGs
-	class OPTRE_NVG_UL_CNM;
-	class PHRP_NVG_UL_CNM : OPTRE_NVG_UL_CNM {
-		displayName="UNSC UL/CNM (Modernized)";
+	class OPTRE_NVG;
+	class PHRP_NVG : OPTRE_NVG
+	{
+		displayName="[PHRP] UNSC Neural Integrated Helmet Modules";
 		visionMode[]=
 		{
 			"Normal",
@@ -1136,5 +1135,110 @@ class CfgWeapons
 			"TI"
 		};
 		thermalMode[]={"0","1","7"};
+
+	};
+};
+
+class XtdGearModels
+{
+	class CfgWeapons
+	{
+		class OPTRE_NVG;
+		class PHRP_NVG : OPTRE_NVG
+		{
+			displayName="[PHRP] UNSC Neural Integrated Helmet Modules";
+			visionMode[]=
+			{
+				"Normal",
+				"NVG",
+				"TI"
+			};
+			thermalMode[]={"0","1","7"};
+			options[]=
+			{
+				"cnm",
+				"hul",
+				"ul",
+				"hurs",
+				"mvi"
+			};
+			class cnm {
+				label = "Command Network Module";
+				alwaysSelectable = 1;
+				values[] = {"Off","On"};
+				class Off
+				{
+					label="Off";
+				};
+				class On
+				{
+					label="On";
+				};
+			};
+			class hul {
+				label = "Hardened Uplink Module";
+				alwaysSelectable = 1;
+				values[] = {"Off","On"};
+				class Off
+				{
+					label="Off";
+				};
+				class On
+				{
+					label="On";
+				};
+			};
+			class ul {
+				label = "Communications Uplink Module";
+				alwaysSelectable = 1;
+				values[] = {"Off","On"};
+				class Off
+				{
+					label="Off";
+				};
+				class On
+				{
+					label="On";
+				};
+			};
+			class hurs {
+				label = "Hardened Uplink/Remote Sensor";
+				alwaysSelectable = 1;
+				values[] = {"Off","On"};
+				class Off
+				{
+					label="Off";
+				};
+				class On
+				{
+					label="On";
+				};
+			};
+			class mvi {
+				label = "Marksman's Visual Interface";
+				alwaysSelectable = 1;
+				values[] = {"Off","On"};
+				class Off
+				{
+					label="Off";
+				};
+				class On
+				{
+					label="On";
+				};
+			};
+		};
+	};
+};
+
+class XtdGearInfos
+{
+	class CfgWeapons
+	{
+		class OPTRE_NVG_CNM
+		{
+			role = "cnm";
+			model = "PHRP_NVG";
+		};
 	};
 };
