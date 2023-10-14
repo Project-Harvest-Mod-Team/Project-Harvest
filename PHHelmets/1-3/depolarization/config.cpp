@@ -24,6 +24,7 @@ class CfgWeapons
 	class PHRP_Base_Recon_Helmet_dp;
 	class PHRP_Base_Operator_Helmet_dp;
 	class PHRP_Base_CQB_Helmet_dp;
+	class PHRP_Base_CQC_Helmet_dp;
 	class PHRP_Buckley_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
 		scope = 1;
@@ -50,5 +51,14 @@ class CfgWeapons
 		displayName = "Mark V/C Helmet (Lancer)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lancer_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
+	};
+	class PHRP_Fitz_CQC_Helmet_dp : PHRP_Base_CQC_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "MisfitMaid";
+		displayName = "[PHRP] Mark V/CQC Helmet (Fitzsimmons)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_fitzsimmons_co.paa","PHHelmets\data\helmets\customvisor_fitzsimmons_co.paa"};
 	};
 };
