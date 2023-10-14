@@ -137,6 +137,7 @@ class CfgWeapons
 		displayName = "Mark V/K Helmet (Moon)";
 		hiddenSelections[] =  {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_moon_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
+		hiddenSelectionsMaterials[] = {"", "MA_Armor\data\Helmets\hr_odst\hr_odst_visor.rvmat"};
 	};
 	class PHRP_Pjetrovic_Security_Helmet : PHRP_Base_Security_Helmet
 	{
