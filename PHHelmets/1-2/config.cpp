@@ -152,7 +152,8 @@ class CfgWeapons
 		author = "MrMicrobe";
 		displayName = "Mark V/K Helmet (Payne)";
 		hiddenSelections[] =  {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_payne_co.paa"};
+		hiddenSelectionsMaterials[] = {"", "MA_Armor\data\Helmets\hr_odst\hr_odst_visor.rvmat"};
 	};
 	class PHRP_Blackburn_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
