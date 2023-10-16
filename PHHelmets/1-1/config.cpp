@@ -54,6 +54,10 @@ class XtdGearModels
 				{
 					label = "Ishra";
 				};
+				class lancer
+				{
+					label = "Lancer";
+				};
 			};
 		};
 	};
@@ -85,6 +89,11 @@ class XtdGearInfos
 		class PHRP_Ishra_M56SH_Helmet
 		{
 			role = "ishra";
+			model = "PHRP_oneone_helmets";
+		};
+		class PHRP_Lancer_CQB_Helmet
+		{
+			role = "lancer";
 			model = "PHRP_oneone_helmets";
 		};
 	};
@@ -153,5 +162,15 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\oneone_H3_Helmet_co.paa","MA_Armor\data\Helmets\H3_ODST\H3_Visor_Blue_co.paa"};
 		};
+	};
+	class PHRP_Lancer_CQB_Helmet: PHRP_Base_CQB_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "";
+		displayName = "Mark V/C Helmet (Lancer)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lancer_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 };
