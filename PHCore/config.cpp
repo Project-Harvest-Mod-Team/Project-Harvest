@@ -59,6 +59,14 @@ class CfgEditorSubcategories
 	{
 		displayName = "AWGS";
 	};
+	class PHRP_EdSubCat_Cars
+	{
+		displayName = "Cars";
+	};
+	class PHRP_EdSubCat_Tanks
+	{
+		displayName = "Tanks";
+	};
 };
 class cfgFactionClasses
 {

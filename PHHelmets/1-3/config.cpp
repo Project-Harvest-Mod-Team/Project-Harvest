@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","buckley","morningstar","lancer","griffith"};
+				values[] = {"M56SH","M56SR","buckley","morningstar","lancer","griffith", "fitz"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -57,6 +57,10 @@ class XtdGearModels
 				class griffith
 				{
 					label = "Griffith";
+				};
+				class fitz
+				{
+					label = "Fitzsimmons";
 				};
 			};
 		};
@@ -96,6 +100,11 @@ class XtdGearInfos
 			role = "griffith";
 			model = "PHRP_onethree_helmets";
 		};
+		class PHRP_Fitz_CQC_Helmet
+		{
+			role = "fitz";
+			model = "PHRP_onethree_helmets";
+		};
 	};
 };
 class CfgWeapons
@@ -107,6 +116,7 @@ class CfgWeapons
 	class PHRP_Base_Operator_Helmet;
 	class PHRP_M56S_Helmet_Base;
 	class PHRP_Base_CQB_Helmet;
+	class PHRP_Base_CQC_Helmet;
 
 	class PHRP_onethree_M56SH_Helmet: PHRP_M56SH_Helmet_Base
 	{
@@ -181,6 +191,23 @@ class CfgWeapons
 		{
 			hiddenSelections[] = {"camo1","camo2"};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\griffith_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\griffith_HR_ODST_Visor_Blue_co.paa"};
+		};
+	};
+	class PHRP_Fitz_CQC_Helmet: PHRP_Base_CQC_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MisfitMaid";
+		displayName = "[PHRP] Mark V/CQC Helmet (Fitzsimmons)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_fitzsimmons_co.paa","PHHelmets\data\helmets\customvisor_fitzsimmons_co.paa"};
+		hiddenSelectionsMaterials[] = {"", "MA_Armor\data\Helmets\hr_odst\hr_odst_visor.rvmat"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_fitzsimmons_co.paa","PHHelmets\data\helmets\customvisor_fitzsimmons_co.paa"};
+			hiddenSelectionsMaterials[] = {"", "MA_Armor\data\Helmets\hr_odst\hr_odst_visor.rvmat"};
 		};
 	};
 };

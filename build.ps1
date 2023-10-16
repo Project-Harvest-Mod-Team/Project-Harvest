@@ -1,6 +1,12 @@
 . ./vars.ps1
 
-Get-ChildItem -Directory "PH*" | Foreach-Object {
+if ($args.count -gt 0) {
+	$dirs = $args[0];
+} else {
+	$dirs = "PH*";
+}
+
+Get-ChildItem . -Directory $dirs | Foreach-Object {
 	$fn = $_.FullName;
 	$signArg = "-sign=" + $privKey;
 	$whitelistArg = "-include=" + $( Get-Location ) + "\addonBuilderWhitelist.txt";
