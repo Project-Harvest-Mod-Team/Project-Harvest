@@ -50,17 +50,13 @@ class XtdGearModels
 				{
 					label = "Morningstar";
 				};
-				class lancer
-				{
-					label = "Lancer";
-				};
 				class griffith
 				{
 					label = "Griffith";
 				};
 				class fitz
 				{
-					label = "Fitzsimmons";
+					label = "Fitz";
 				};
 			};
 		};
@@ -90,11 +86,6 @@ class XtdGearInfos
 			role = "morningstar";
 			model = "PHRP_onethree_helmets";
 		};
-		class PHRP_Lancer_CQB_Helmet
-		{
-			role = "lancer";
-			model = "PHRP_onethree_helmets";
-		};
 		class PHRP_Griffith_M56SR_Helmet
 		{
 			role = "griffith";
@@ -115,7 +106,6 @@ class CfgWeapons
 	class PHRP_Base_Recon_Helmet;
 	class PHRP_Base_Operator_Helmet;
 	class PHRP_M56S_Helmet_Base;
-	class PHRP_Base_CQB_Helmet;
 	class PHRP_Base_CQC_Helmet;
 
 	class PHRP_onethree_M56SH_Helmet: PHRP_M56SH_Helmet_Base
@@ -167,16 +157,6 @@ class CfgWeapons
 		displayName = "Mark V/O Helmet (Morningstar)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
-	};
-	class PHRP_Lancer_CQB_Helmet: PHRP_Base_CQB_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "";
-		displayName = "Mark V/C Helmet (Lancer)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lancer_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 	class PHRP_Griffith_M56SR_Helmet: PHRP_M56SR_Helmet_Base
 	{

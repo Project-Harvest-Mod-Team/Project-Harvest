@@ -218,8 +218,8 @@ class CfgVehicles
 				gunnerOutOpticsModel = "";
 				gunnerOutOpticsEffect[] = {};
 				gunnerOpticsEffect[] = {};
-				weapons[] = {"OPTRE_90mm_M512","OPTRE_M247T_Coax","SmokeLauncher","TG_NOD_Flamethrower_Weapon"};
-				magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","OPTRE_500Rnd_762x51_Box_Tracer","OPTRE_500Rnd_762x51_Box_Tracer","SmokeLauncherMag","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_Dummy_Magazine"};
+				weapons[] = {"OPTRE_90mm_M512","SmokeLauncher","TG_NOD_Flamethrower_Weapon"};
+				magazines[] = {"OPTRE_30Rnd_90mm_APBC","OPTRE_30Rnd_90mm_SAPHE","OPTRE_10Rnd_90mm_S1","SmokeLauncherMag","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_Dummy_Magazine"};
 				class OpticsIn
 				{
 					class Wide: ViewOptics
@@ -305,8 +305,8 @@ class CfgVehicles
 				maxHorizontalRotSpeed = "90/45";
 				gunBeg = "usti hlavne3";
 				gunEnd = "konec hlavne3";
-				weapons[] = {"OPTRE_M247H_RCWS","Laserdesignator_mounted","TG_NOD_Flamethrower_Weapon"};
-				magazines[] = {"OPTRE_200Rnd_127x99_M247H","OPTRE_200Rnd_127x99_M247H","OPTRE_200Rnd_127x99_M247H","OPTRE_200Rnd_127x99_M247H","Laserbatteries","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_Dummy_Magazine"};
+				weapons[] = {"TG_NOD_Flamethrower_Weapon","Laserdesignator_mounted"};
+				magazines[] = {"Laserbatteries","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_NOD_Flamethrower_Magazine","TG_Dummy_Magazine"};
 				minElev = -12;
 				maxElev = 45;
 				initElev = 0;
