@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","payne","blackburn","hazard","graves","sabbath"};
+				values[] = {"M56SH","M56SR","payne","blackburn","hazard","graves","sabbath","fitz_temp"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -61,6 +61,10 @@ class XtdGearModels
 				class sabbath
 				{
 					label = "Sabbath";
+				};
+				class fitz_temp
+				{
+					label = "Fitz";
 				};
 			};
 		};
@@ -105,6 +109,11 @@ class XtdGearInfos
 			role = "sabbath";
 			model = "PHRP_onetwo_helmets";
 		};
+		class PHRP_Fitz_Temp_CQC_Helmet
+		{
+			role = "fitz_temp";
+			model = "PHRP_onetwo_helmets";
+		};
 	};
 };
 class CfgWeapons
@@ -117,6 +126,7 @@ class CfgWeapons
 	class PHRP_Base_Recon_Helmet;
 	class PHRP_Base_EOD_Helmet;
 	class PHRP_M56E_Helmet_Base;
+	class PHRP_Base_CQC_Helmet;
 
 	class PHRP_onetwo_M56SH_Helmet: PHRP_M56SH_Helmet_Base
 	{
@@ -189,6 +199,23 @@ class CfgWeapons
 		{
 			hiddenSelections[] = {"camo1","camo2"};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\sabbath_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\sabbath_HR_ODST_Visor_Blue_co.paa"};
+		};
+	};
+	class PHRP_Fitz_Temp_CQC_Helmet: PHRP_Base_CQC_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MisfitMaid";
+		displayName = "[PHRP] Mark V/CQC Helmet (Fitzsimmons/Nyx)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_fitzsimmons_temp_co.paa","PHHelmets\data\helmets\customvisor_fitzsimmons_co.paa"};
+		hiddenSelectionsMaterials[] = {"", "MA_Armor\data\Helmets\hr_odst\hr_odst_visor.rvmat"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_fitzsimmons_temp_co.paa","PHHelmets\data\helmets\customvisor_fitzsimmons_co.paa"};
+			hiddenSelectionsMaterials[] = {"", "MA_Armor\data\Helmets\hr_odst\hr_odst_visor.rvmat"};
 		};
 	};
 };
