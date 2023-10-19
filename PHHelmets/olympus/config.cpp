@@ -147,10 +147,16 @@ class CfgWeapons
 		scope = 2;
 		scopeArsenal = 2;
 		displayName = "[PHRP] Kaz's M56G Faceplate (NVG)";
+		model = "MA_Armor\data\Attachments\Gungnir_Faceplate\Gungnir_Faceplate.p3d";
 		hiddenSelections[] = {"Camo1"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Kaz_Gungnir_Faceplate_CO.paa"};
 		class ItemInfo
 		{
+			type = 616;
+			hmdType = 0;
+			uniformModel = "MA_Armor\data\Attachments\Gungnir_Faceplate\Gungnir_Faceplate.p3d";
+			modelOff = "MA_Armor\data\Attachments\Gungnir_Faceplate\Gungnir_Faceplate.p3d";
+			mass = 1;
 			hiddenSelections[] = {"Camo1"};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\Kaz_Gungnir_Faceplate_CO.paa"};
 		};

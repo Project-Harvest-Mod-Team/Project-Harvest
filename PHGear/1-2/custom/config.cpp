@@ -896,12 +896,12 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Fitz_Temp_M56R_Armor : PHRP_Base_M56R_Armor
+	class PHRP_Fitzsimmons_M56R_Armor : PHRP_Base_M56R_Armor
 	{
 		scope = 2;
 		scopeArsenal = 2;
 		author = "MisfitMaid";
-		displayName = "[PHRP] M56R Combat Armor (Fitzsimmons/Nyx)";
+		displayName = "[PHRP] M56R Combat Armor (Fitzsimmons)";
 		hiddenSelections[] = 
 		{
 			"camo1",
@@ -939,11 +939,11 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"PHGear\data\armor\fitzsimmons_H3_Armor_Upper_temp_co.paa", // shoulders
+			"PHGear\data\armor\fitzsimmons_H3_Armor_Uppe_co.paa", // shoulders
 			"", // unused
 			"", // unused
-			"PHGear\data\armor\fitzsimmons_Reach_Armor_Upper_temp_co.paa", // upper
-			"PHGear\data\armor\fitzsimmons_Reach_Armor_Lower_temp_co.paa", // lower
+			"PHGear\data\armor\fitzsimmons_Reach_Armor_Upper_co.paa", // upper
+			"PHGear\data\armor\fitzsimmons_Reach_Armor_Lower_co.paa", // lower
 			"" // unused
 		};
 		class ItemInfo: ItemInfo
@@ -988,11 +988,11 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[] = 
 			{
-				"PHGear\data\armor\fitzsimmons_H3_Armor_Upper_temp_co.paa", // shoulders
+				"PHGear\data\armor\fitzsimmons_H3_Armor_Upper_co.paa", // shoulders
 				"", // unused
 				"", // unused
-				"PHGear\data\armor\fitzsimmons_Reach_Armor_Upper_temp_co.paa", // upper
-				"PHGear\data\armor\fitzsimmons_Reach_Armor_Lower_temp_co.paa", // lower
+				"PHGear\data\armor\fitzsimmons_Reach_Armor_Upper_co.paa", // upper
+				"PHGear\data\armor\fitzsimmons_Reach_Armor_Lower_co.paa", // lower
 				"" // unused
 			};
 		};
