@@ -721,10 +721,10 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = 
 		{
 			"PHGear\data\armor\lancer_H3_Upper_Armor_co.paa",
-			"PHGear\data\armor\onethree_H3_Lower_Armor_co.paa",
+			"PHGear\data\armor\oneone_H3_Lower_Armor_co.paa",
 			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
-			"PHGear\data\armor\onethree_Reach_Armor_Upper_co.paa",
-			"PHGear\data\armor\onethree_Reach_Armor_Lower_co.paa",
+			"PHGear\data\armor\oneone_Reach_Armor_Upper_co.paa",
+			"PHGear\data\armor\oneone_Reach_Armor_Lower_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
 			"PHGear\data\armor\lancer_Sniper_co.paa",
@@ -774,10 +774,10 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = 
 			{
 				"PHGear\data\armor\lancer_H3_Upper_Armor_co.paa",
-				"PHGear\data\armor\onethree_H3_Lower_Armor_co.paa",
+				"PHGear\data\armor\oneone_H3_Lower_Armor_co.paa",
 				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
-				"PHGear\data\armor\onethree_Reach_Armor_Upper_co.paa",
-				"PHGear\data\armor\onethree_Reach_Armor_Lower_co.paa",
+				"PHGear\data\armor\oneone_Reach_Armor_Upper_co.paa",
+				"PHGear\data\armor\oneone_Reach_Armor_Lower_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
 				"PHGear\data\armor\lancer_Sniper_co.paa",
