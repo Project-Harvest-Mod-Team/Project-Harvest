@@ -939,7 +939,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"PHGear\data\armor\fitzsimmons_H3_Armor_Uppe_co.paa", // shoulders
+			"PHGear\data\armor\fitzsimmons_H3_Armor_Upper_co.paa", // shoulders
 			"", // unused
 			"", // unused
 			"PHGear\data\armor\fitzsimmons_Reach_Armor_Upper_co.paa", // upper
