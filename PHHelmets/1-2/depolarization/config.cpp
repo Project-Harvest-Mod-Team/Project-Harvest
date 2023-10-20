@@ -44,14 +44,4 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_payne_co.paa"};
 		hiddenSelectionsMaterials[] = {"", "MA_Armor\data\Helmets\hr_odst\hr_odst_visor.rvmat"};
 	};
-	class PHRP_Fitz_Temp_CQC_Helmet_dp : PHRP_Base_CQC_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "MisfitMaid";
-		displayName = "[PHRP] Mark V/CQC Helmet (Fitzsimmons/Nyx)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_temp_fitzsimmons_co.paa","PHHelmets\data\helmets\customvisor_fitzsimmons_co.paa"};
-		hiddenSelectionsMaterials[] = {"", "MA_Armor\data\Helmets\hr_odst\hr_odst_visor.rvmat"};
-	};
 };
