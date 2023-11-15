@@ -24,6 +24,7 @@ class CfgWeapons
 	class PHRP_Base_Recon_Helmet_dp;
 	class PHRP_Base_EOD_Helmet_dp;
 	class PHRP_Base_Commando_Helmet_dp;
+	class PHRP_Base_CQC_Helmet_dp;
 	class PHRP_Blackburn_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
 	{
 		scope = 1;

@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","riot","coleson","ishra"};
+				values[] = {"M56SH","M56SR","riot","coleson","ishra","lancer"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -146,7 +146,7 @@ class CfgWeapons
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
-	class PHRP_Ishra_M56SH_Helmet: PHRP_M56SH_Helmet_Base
+	class PHRP_Ishra_M56SH_Helmet : PHRP_M56SH_Helmet_Base
 	{
 		scope = 2;
 		scopeArsenal = 2;
@@ -163,7 +163,7 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\oneone_H3_Helmet_co.paa","MA_Armor\data\Helmets\H3_ODST\H3_Visor_Blue_co.paa"};
 		};
 	};
-	class PHRP_Lancer_CQB_Helmet: PHRP_Base_CQB_Helmet
+	class PHRP_Lancer_CQB_Helmet : PHRP_Base_CQB_Helmet 
 	{
 		scope = 2;
 		scopeCurator = 2;

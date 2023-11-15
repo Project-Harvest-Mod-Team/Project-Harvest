@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56S","M56S_corpsman","M56R","M56R_corpsman","buckley","morningstar","griffith","fitz"};
+				values[] = {"M56S","M56S_corpsman","M56R","M56R_corpsman","buckley","morningstar","griffith"};
 				class M56S
 				{
 					label = "M56S";
@@ -62,10 +62,6 @@ class XtdGearModels
 				class griffith
 				{
 					label = "Griffith";
-				};
-				class fitz
-				{
-					label = "Fitz";
 				};
 			};
 		};
@@ -109,11 +105,6 @@ class XtdGearInfos
 		{
 			model = "PHRP_onethree_vests";
 			role = "griffith";
-		};
-		class PHRP_Fitz_M56R_Armor
-		{
-			model = "PHRP_onethree_vests";
-			role = "fitz";
 		};
 	};
 };

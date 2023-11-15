@@ -117,6 +117,7 @@ class CfgWeapons
 	class PHRP_Base_Recon_Helmet;
 	class PHRP_Base_EOD_Helmet;
 	class PHRP_M56E_Helmet_Base;
+	class PHRP_Base_CQC_Helmet;
 
 	class PHRP_onetwo_M56SH_Helmet: PHRP_M56SH_Helmet_Base
 	{
