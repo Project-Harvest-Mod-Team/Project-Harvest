@@ -334,3 +334,10 @@ class DBZGinyu
 	duration=115;
 	musicClass = "PHRPGoofy";
 };
+class PHRPFloodAmbience
+{
+	name = "Flood Ambience";
+	sound[] = {"PHmusic\data\Tracks\PHRPFloodAmbeience.ogg",db+0,1};
+	duration=600;
+	musicClass = "PHRPMusic";
+};
