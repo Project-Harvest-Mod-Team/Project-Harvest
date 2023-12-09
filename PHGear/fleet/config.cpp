@@ -33,18 +33,10 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","moon","burtovski"};
-				class soldner
-				{
-					label = "Soldner";
-				};
+				values[] = {"moon",};
 				class moon
 				{
 					label = "Moon";
-				};
-				class burtovski
-				{
-					label = "Burtovski";
 				};
 			};
 		};
@@ -54,20 +46,10 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_Soldner_M56R_Armor
-		{
-			model = "PHRP_fleet_vests";
-			role = "soldner";
-		};
 		class PHRP_Moon_M56R_Armor
 		{
 			model = "PHRP_fleet_vests";
 			role = "moon";
-		};
-		class PHRP_Burtovski_M56R_Armor
-		{
-			model = "PHRP_fleet_vests";
-			role = "burtovski";
 		};
 	};
 };

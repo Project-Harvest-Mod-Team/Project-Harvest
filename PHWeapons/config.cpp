@@ -88,8 +88,8 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Owner";
-				values[] = {"SoldnerSRS","SoldnerM7","HollandAK120","KazMA37K","MoonMA37K","ColesonM90","SabbathM392"};
-				class SoldnerSRS
+				values[] = {/*"SoldnerSRS","SoldnerM7",*/"HollandAK120","KazMA37K","MoonMA37K","ColesonM90","SabbathM392"};
+				/*class SoldnerSRS
 				{
 					label = "Soldner";
 					image = "PHWeapons\data\Icon\SRS.paa";
@@ -98,7 +98,7 @@ class XtdGearModels
 				{
 					label = "Soldner";
 					image = "PHWeapons\data\Icon\m7.paa";
-				};
+				};*/
 				class HollandAK120
 				{
 					label = "Holland";
@@ -150,7 +150,7 @@ class XtdGearInfos
 			model = "phrp_personal_weapons";
 			type = "HollandAK120";
 		};
-		class PHRP_Soldner_SRS99C
+		/*class PHRP_Soldner_SRS99C
 		{
 			model = "phrp_personal_weapons";
 			type = "SoldnerSRS";
@@ -159,7 +159,7 @@ class XtdGearInfos
 		{
 			model = "phrp_personal_weapons";
 			type = "SoldnerM7";
-		};
+		};*/
 		class PHRP_Kaz_MA37K
 		{
 			model = "phrp_personal_weapons";
@@ -287,7 +287,7 @@ class CfgWeapons
 		};
 	};
 	
-	//Soldner SRS
+/*	//Soldner SRS
 	class OPTRE_SRS99C;
 	class PHRP_Soldner_SRS99C : OPTRE_SRS99C
 	{
@@ -353,7 +353,7 @@ class CfgWeapons
 			};
 		};
 	};
-
+*/
 	//Holland AK
 	class arifle_AK12_GL_F;
 	class PHRP_Holland_AK120 : arifle_AK12_GL_F

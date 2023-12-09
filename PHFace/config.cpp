@@ -24,22 +24,6 @@ class CfgFaces
 	class Man_A3
 	{
 		class WhiteHead_01;
-		class PHRP_SoldnerHead : WhiteHead_01
-		{
-			disabled = 0;
-			displayname = "Soldner";
-			texture = "PHFace\Data\Soldner_co.paa";
-			material = "PHFace\Data\Soldner.rvmat";
-			head = "DefaultHead_A3";
-			identityTypes[] = {};
-			author = "Soldner";
-			materialHL = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
-			materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
-			materialWounded1 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
-			materialWounded2 = "A3\Characters_F\Heads\Data\m_White_05_injury.rvmat";
-			textureHL = "PHFace\Data\soldner_tat_co.paa";
-			textureHL2 = "PHFace\Data\soldner_tat_co.paa";
-		};
 		class PHRP_KazHead : WhiteHead_01
 		{
 			disabled = 0;

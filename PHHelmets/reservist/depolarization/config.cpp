@@ -28,32 +28,6 @@ class CfgWeapons
 	class PHRP_Base_Scout_Helmet_dp;
 	class PHRP_Base_HRPilot_Helmet_dp;
 	class PHRP_Base_Recon_Helmet_dp;
-	class PHRP_Wilson_CQC_Helmet_dp : PHRP_Base_CQC_Helmet__dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "MrMicrobe";
-		displayName = "Mark V/CQC Helmet (Wilson)";
-		hiddenSelections[] = {"camo","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wilson_co.paa","OPTRE_UNSC_Units\Army\data\CQC_Visor_co.paa"};
-	};
-	class PHRP_Miller_Scout_Helmet_dp : PHRP_Base_Scout_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "MrMicrobe";
-		displayName = "Mark VI/S Helmet (Miller)";
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_miller_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
-	};
-	class PHRP_Craven_Scout_Helmet_dp : PHRP_Base_Scout_Helmet_dp
-	{
-		scope = 1;
-		scopeCurator = 1;
-		scopeArsenal = 1;
-		author = "Jimbo";
-		displayName = "Mark VI/S Helmet (Craven)";
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_craven_co.paa","OPTRE_UNSC_Units\Army\data\Scout_Visor_co.paa"};
-	};
 	class PHRP_Owessel_HRPilot_Helmet_dp : PHRP_Base_HRPilot_Helmet_dp
 	{
 		scope = 1;
@@ -80,5 +54,14 @@ class CfgWeapons
 		displayName = "Recon Helmet 1-1 (Erikson)";
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+	};
+	class PHRP_Weiss_HRPilot_Helmet_dp : PHRP_Base_HRPilot_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "Jimbo";
+		displayName = "Mark V/P Helmet (Weiss)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_weiss_co.paa","PHHelmets\data\helmets\customvisor_weiss_co.paa"};
 	};
 };

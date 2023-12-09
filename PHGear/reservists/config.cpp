@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Reserve Armors";
-				values[] = {"recruit","owessel","erikson"};
+				values[] = {"recruit","owessel","erikson","weiss","burtovski"};
 				class recruit
 				{
 					label = "Recruit";
@@ -45,6 +45,14 @@ class XtdGearModels
 				class erikson
 				{
 					label = "Erikson";
+				};
+				class weiss
+				{
+					label = "Weiss";
+				};
+				class burtovski
+				{
+					label = "Burtovski";
 				};
 			};
 		};
@@ -68,6 +76,16 @@ class XtdGearInfos
 		{
 			model = "PHRP_Reserve_vests";
 			role = "erikson";
+		};
+		class PHRP_Weiss_M56R_Armor
+		{
+			model = "PHRP_Reserve_vests";
+			role = "weiss";
+		};
+		class PHRP_Burtovski_M56R_Armor
+		{
+			model = "PHRP_Reserve_vests";
+			role = "burtovski";
 		};
 	};
 };

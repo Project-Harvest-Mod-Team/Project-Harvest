@@ -125,7 +125,7 @@ class CfgWeapons
 		scopeArsenal = 0;
 		class ItemInfo;
 	};
-	class PHRP_G017_Armor : PHRP_Base_Human_Spartan
+	/*class PHRP_G017_Armor : PHRP_Base_Human_Spartan
 	{
 		dlc = "Project Harvest Armory";
 		author = "Soldner";
@@ -190,7 +190,7 @@ class CfgWeapons
 				};
 			};
 		};
-	};
+	};*/
 	class PHRP_Cyrus_Armor : PHRP_Base_Spartan_Armor
 	{
 		dlc = "Project Harvest Armory";
@@ -536,7 +536,7 @@ class CfgWeapons
 		scopeCurator = 2;
 		scopeArsenal = 2;
 		model = "\OPTRE_MJOLNIR_Units\armormkvb.p3d";
-		hiddenSelections[] = {"camo1","camo2","attach_security1","attach_security2","attach_fjpara1","attach_fjpara2","attach_commando2","attach_mkv1","attach_grenadier1","attach_grenadier2","attach_cqc1","attach_cqc2","attach_gren_ua","attach_knees_default"};
+		hiddenSelections[] = {"camo1","camo2","attach_security1","attach_security2","attach_fjpara1","attach_fjpara2",/*"attach_commando1",*/"attach_commando2","attach_mkv1",/*"attach_mkv2",*/"attach_grenadier1","attach_grenadier2","attach_cqc1","attach_cqc2","attach_gren_ua","attach_knees_default"};
 		hiddenSelectionsTextures[] = {"PHGear\data\armor\armor_A062_co.paa","OPTRE_MJOLNIR_Units\data\Legs_MkVB_CO.paa"};
 		class ItemInfo: VestItem
 		{

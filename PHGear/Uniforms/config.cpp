@@ -128,7 +128,7 @@ class CfgWeapons
 			mass = 40;
 		};
 	}
-	class PHRP_Burt_ONI: PHRP_Base
+	/*class PHRP_Burt_ONI: PHRP_Base
 	{
 		scope = 2;
 		scopeCurator = 2;
@@ -138,7 +138,7 @@ class CfgWeapons
 		{
 			uniformClass = "BDU_Burt_ONI_BDU";
 		};
-	};
+	};*/
 	class PHRP_PJ_UNSC: PHRP_Base
 	{
 		scope = 2;
@@ -426,7 +426,7 @@ class CfgVehicles
 	};
 
 	//ONI outfit
-	class BDU_Burt_ONI_BDU : PHRP_Base_Uniform
+	/*class BDU_Burt_ONI_BDU : PHRP_Base_Uniform
 	{
 		scopeArsenal = 2;
 		model = "\a3\Characters_F\Civil\Scientist_01_formal_F";
@@ -441,7 +441,7 @@ class CfgVehicles
 		uniformclass = "PHRP_PJ_UNSC";
 		hiddenSelections[] = {"camo1","badge","id"};
 		hiddenSelectionsTextures[] = {"PHGear\data\uniforms\PJ_UNSC_CO.paa","PHGear\data\uniforms\PJ_UNSC_CO.paa"};
-	};
+	};*/
 
 	//M56 BDU
 	//class MA_M56S_BDU;
