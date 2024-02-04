@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","riot","coleson","ishra","lancer"};
+				values[] = {"M56SH","M56SR","ishra","kruber","blackburn","morningstar","riot","kincaid","lancer"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -42,17 +42,29 @@ class XtdGearModels
 				{
 					label = "M56S-R";
 				};
+				class ishra
+				{
+					label = "Ishra";
+				};
+				class kruber
+				{
+					label = "Kruber";
+				};
+				class blackburn
+				{
+					label = "Blackburn";
+				};
+				class morningstar
+				{
+					label = "Morningstar";
+				};
 				class riot
 				{
 					label = "Riot";
 				};
-				class coleson
+				class kincaid
 				{
-					label = "Coleson";
-				};
-				class ishra
-				{
-					label = "Ishra";
+					label = "Kincaid";
 				};
 				class lancer
 				{
@@ -76,19 +88,39 @@ class XtdGearInfos
 			role = "M56SR";
 			model = "PHRP_oneone_helmets";
 		};
+		class PHRP_Ishra_M56SH_Helmet
+		{
+			role = "ishra";
+			model = "PHRP_oneone_helmets";
+		};
+		class PHRP_Kruber_M56SH_Helmet
+		{
+			role = "kruber";
+			model = "PHRP_oneone_helmets";
+		};
+		class PHRP_Blackburn_Recon_Helmet
+		{
+			role = "blackburn";
+			model = "PHRP_oneone_helmets";
+		};
+		class PHRP_Morningstar_Operator_Helmet
+		{
+			role = "morningstar";
+			model = "PHRP_oneone_helmets";
+		};
 		class PHRP_Riot_ODST_Helmet
 		{
 			role = "riot";
 			model = "PHRP_oneone_helmets";
 		};
+		class PHRP_Kincaid_M56S_Helmet
+		{
+			role = "kincaid";
+			model = "PHRP_oneone_helmets";
+		};
 		class PHRP_Coleson_CQB_Helmet
 		{
 			role = "coleson";
-			model = "PHRP_oneone_helmets";
-		};
-		class PHRP_Ishra_M56SH_Helmet
-		{
-			role = "ishra";
 			model = "PHRP_oneone_helmets";
 		};
 		class PHRP_Lancer_CQB_Helmet
@@ -103,9 +135,11 @@ class CfgWeapons
 	class ItemInfo;
 	class PHRP_M56SH_Helmet_Base;
 	class PHRP_M56SR_Helmet_Base;
+	class PHRP_M56S_Helmet_Base;
 	class PHRP_Base_Recon_Helmet;
 	class PHRP_Base_CQB_Helmet;
-
+	class PHRP_Base_Scout_Helmet;
+	class PHRP_Base_Operator_Helmet;
 	class PHRP_oneone_M56SH_Helmet: PHRP_M56SH_Helmet_Base
 	{
 		scope = 2;
@@ -136,16 +170,6 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\oneone_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Blue_co.paa"};
 		};
 	};
-	class PHRP_Coleson_CQB_Helmet : PHRP_Base_CQB_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Mark V/C Helmet 1-1 (Coleson)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
-	};
 	class PHRP_Ishra_M56SH_Helmet : PHRP_M56SH_Helmet_Base
 	{
 		scope = 2;
@@ -162,6 +186,36 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\oneone_H3_Helmet_co.paa","MA_Armor\data\Helmets\H3_ODST\H3_Visor_Blue_co.paa"};
 		};
+	};
+	class PHRP_Blackburn_Recon_Helmet : PHRP_Base_Recon_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "Recon Helmet (Blackburn)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\customvisor_blackburn_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
+	};
+	class PHRP_Morningstar_Operator_Helmet : PHRP_Base_Operator_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Mark V/O Helmet (Morningstar)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
+	};
+	class PHRP_Kincaid_M56S_Helmet : PHRP_M56S_Helmet_Base
+	{
+       	scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		author = "Kaker";
+		displayName = "Mark VI/S Helmet (Kincaid)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_Kincaid_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 	class PHRP_Lancer_CQB_Helmet : PHRP_Base_CQB_Helmet 
 	{

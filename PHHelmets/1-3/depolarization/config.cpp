@@ -25,22 +25,4 @@ class CfgWeapons
 	class PHRP_Base_Operator_Helmet_dp;
 	class PHRP_Base_CQB_Helmet_dp;
 	class PHRP_Base_CQC_Helmet_dp;
-	class PHRP_Buckley_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "VibingVampire";
-		displayName = "Recon Helmet (Buckley)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_buckley_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
-	};
-	class PHRP_Morningstar_Operator_Helmet_dp : PHRP_Base_Operator_Helmet_dp
-	{
-		author = "";
-		scope = 1;
-		scopeArsenal = 1;
-		displayName = "Mark V/O Helmet (Morningstar)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
-	};
 };

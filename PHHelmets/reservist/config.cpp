@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","owessel","wolf","erikson","weiss","burtovski","pjetrovic"};
+				values[] = {"recruit","owessel","wolf","erikson","weiss","burtovski","pjetrovic","griffith"};
 				class recruit
 				{
 					label = "Recruit";
@@ -45,10 +45,6 @@ class XtdGearModels
 				class wolf
 				{
 					label = "Wolf";
-				};
-				class erikson
-				{
-					label = "Erikson";
 				};
 				class weiss
 				{
@@ -85,11 +81,6 @@ class XtdGearInfos
 			role = "wolf";
 			model = "PHRP_reservist_helmets";
 		};
-		class PHRP_Erikson_Recon_Helmet
-		{
-			role = "erikson";
-			model = "PHRP_reservist_helmets";
-		};
 		class PHRP_Weiss_HRPilot_Helmet
 		{
 			role = "weiss";
@@ -103,7 +94,12 @@ class XtdGearInfos
 		class PHRP_Pjetrovic_Security_Helmet
 		{
 			role = "pjetrovic";
-			model = "PHRP_fleet_helmets";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Griffith_M56SR_Helmet
+		{
+			role = "griffith";
+			model = "PHRP_reservist_helmets";
 		};
 	};
 };
@@ -151,26 +147,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\customvisor_wolf_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
-	class PHRP_Erikson_Recon_Helmet : PHRP_Base_Recon_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "VorpalHotdog";
-		displayName = "Recon Helmet (Erikson)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","PHHelmets\data\helmets\customvisor_erikson_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
-	};
-	class PHRP_Weiss_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Jimbo";
-		displayName = "Mark V/P Helmet (Weiss)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_weiss_co.paa","PHHelmets\data\helmets\customvisor_weiss_co.paa"};
-	};
 	class PHRP_Burtovski_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
 		scope = 2;
@@ -190,5 +166,20 @@ class CfgWeapons
 		displayName = "Mark V/M Helmet (Pjetrovic)";
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_pjetrovic_co.paa","OPTRE_UNSC_Units\Army\data\Security_Visor_co.paa"};
+	};
+	class PHRP_Griffith_M56SR_Helmet: PHRP_M56SR_Helmet_Base
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "VibingVampire";
+		displayName = "[PHRP] M56S-R Helmet (Griffith)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\griffith_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\griffith_HR_ODST_Visor_Blue_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\griffith_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\griffith_HR_ODST_Visor_Blue_co.paa"};
+		};
 	};
 };

@@ -356,7 +356,7 @@ class CfgVehicles
 		tf_range = 120000;
 		tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
 		tf_hasLRradio = 1;
-		maximumLoad = 400;
+		maximumLoad = 500;
 	};
 
 	//Medic Hardcase
@@ -370,7 +370,7 @@ class CfgVehicles
 		scopeArsenal = 2;
 		hiddenSelections[] = {"camo"};
         hiddenSelectionsTextures[] = {"PHGear\data\packs\PHRP_Medic_Hardcase.paa"};
-        maximumLoad = 300;
+        maximumLoad = 400;
 	};
 
 	//Marine Rucksack	
