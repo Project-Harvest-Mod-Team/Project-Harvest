@@ -121,7 +121,7 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = 
 			{
 				"PHGear\data\armor\onetwo_H3_Armor_Upper_co.paa",
-				"PHGear\data\armor\onetwo_H3_Upper_Armor_co.paa"
+				"PHGear\data\armor\onetwo_H3_Upper_Armor_co.paa",
 				"PHGear\data\armor\onetwo_H3_Armor_Lower_co.paa",
 				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
 				"PHGear\data\armor\onetwo_Reach_Armor_Upper_co.paa",
