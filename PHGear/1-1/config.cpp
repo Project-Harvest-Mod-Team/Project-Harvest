@@ -34,7 +34,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56S","M56S_corpsman","M56R","M56R_corpsman","riot","coleson","ishra","lancer"};
+				values[] = {"M56S","M56S_corpsman","M56R","M56R_corpsman","ishra","blackburn","morningstar","riot","kincaid","lancer"};
 				class M56S
 				{
 					label = "M56S";
@@ -51,17 +51,25 @@ class XtdGearModels
 				{
 					label = "M56R-C";
 				};
+				class ishra
+				{
+					label = "Ishra";
+				};
+				class blackburn
+				{
+					label = "Blackburn";
+				};
+				class morningstar
+				{
+					label = "Morningstar";
+				};
 				class riot
 				{
 					label = "Riot";
 				};
-				class coleson
+				class kincaid
 				{
-					label = "Coleson";
-				};
-				class ishra
-				{
-					label = "Ishra";
+					label = "Kincaid";
 				};
 				class lancer
 				{
@@ -95,6 +103,11 @@ class XtdGearInfos
 			model = "PHRP_oneone_vests";
 			role = "M56R_corpsman";
 		};
+		class PHRP_Ishra_M56s_Armor
+		{
+			model = "PHRP_oneone_vests";
+			role = "ishra";
+		};
 		class PHRP_Riot_Armor
 		{
 			model = "PHRP_oneone_vests";
@@ -105,15 +118,20 @@ class XtdGearInfos
 			model = "PHRP_oneone_vests";
 			role = "coleson";
 		};
-		class PHRP_Ishra_M56s_Armor
+		class PHRP_Kincaid_M56R_Armor
 		{
 			model = "PHRP_oneone_vests";
-			role = "ishra";
+			role = "kincaid";
 		};
 		class PHRP_Lancer_M56R_Armor
 		{
 			model = "PHRP_oneone_vests";
 			role = "lancer";
+		};
+		class PHRP_Morningstar_M56S_Armor
+		{
+			model = "PHRP_oneone_vests";
+			role = "morningstar";
 		};
 	};
 };

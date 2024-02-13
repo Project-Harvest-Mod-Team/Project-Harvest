@@ -69,4 +69,13 @@ class CfgWeapons
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_ksiazek_co.paa","PHHelmets\data\helmets\ksiazek_Security_Visor_co.paa"};
 	};
+	class PHRP_Weiss_HRPilot_Helmet_dp : PHRP_Base_HRPilot_Helmet_dp
+	{
+		scope = 1;
+		scopeArsenal = 1;
+		author = "Jimbo";
+		displayName = "Mark V/P Helmet (Weiss)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_weiss_co.paa","PHHelmets\data\helmets\customvisor_weiss_co.paa"};
+	};
 };

@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"soldner","moon","burtovski","pjetrovic"};
+				values[] = {"moon","kaz"};
 				class moon
 				{
 					label = "Moon";
@@ -51,6 +51,11 @@ class XtdGearInfos
 			role = "moon";
 			model = "PHRP_fleet_helmets";
 		};
+		class PHRP_Kaz_M56G
+		{
+			role = "kaz";
+			model = "PHRP_fleet_helmets";
+		}
 	};
 };
 class CfgWeapons
@@ -60,6 +65,7 @@ class CfgWeapons
 	class PHRP_M56SR_Helmet_Base;
 	class PHRP_Base_Commando_Helmet;
 	class PHRP_Base_Security_Helmet;
+	class PHRP_M56G_Helmet_Base;
 
 	class PHRP_Moon_Commando_Helmet : PHRP_Base_Commando_Helmet
 	{
@@ -71,5 +77,35 @@ class CfgWeapons
 		hiddenSelections[] =  {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_moon_co.paa","PHHelmets\data\helmets\customvisor_moon_co.paa"};
 		hiddenSelectionsMaterials[] = {"", "MA_Armor\data\Helmets\hr_odst\hr_odst_visor.rvmat"};
+	};
+	class PHRP_Kaz_M56G : PHRP_M56G_Helmet_Base
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		author = "Soldner";
+		displayName = "[PHRP] M56G Helmet (Kaz)";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"PHHelmets\data\helmets\Kaz_Gungnir_Helmet_CO.paa",
+			"MA_Armor\data\Helmets\Gungnir\Gungnir_Visor_Blue_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2"
+			};
+			hiddenSelectionsTextures[] = 
+			{
+				"PHHelmets\data\helmets\Kaz_Gungnir_Helmet_CO.paa",
+				"MA_Armor\data\Helmets\Gungnir\Gungnir_Visor_Blue_co.paa"
+			};
+		};	
 	};
 };

@@ -67,8 +67,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"PHGear\data\armor\onetwo_H3_Upper_Armor_co.paa",
-			"PHGear\data\armor\onetwo_H3_Lower_Armor_co.paa",
+			"PHGear\data\armor\onetwo_H3_Armor_Upper_co.paa",
+			"PHGear\data\armor\onetwo_H3_Armor_Lower_co.paa",
 			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
 			"PHGear\data\armor\onetwo_Reach_Armor_Upper_co.paa",
 			"PHGear\data\armor\onetwo_Reach_Armor_Lower_co.paa",
@@ -120,8 +120,9 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[] = 
 			{
+				"PHGear\data\armor\onetwo_H3_Armor_Upper_co.paa",
 				"PHGear\data\armor\onetwo_H3_Upper_Armor_co.paa",
-				"PHGear\data\armor\onetwo_H3_Lower_Armor_co.paa",
+				"PHGear\data\armor\onetwo_H3_Armor_Lower_co.paa",
 				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
 				"PHGear\data\armor\onetwo_Reach_Armor_Upper_co.paa",
 				"PHGear\data\armor\onetwo_Reach_Armor_Lower_co.paa",
@@ -176,8 +177,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"PHGear\data\armor\onetwocorpsman_H3_Upper_Armor_co.paa",
-			"PHGear\data\armor\onetwoc_H3_Lower_Armor_co.paa",
+			"PHGear\data\armor\onetwocorpsman_H3_Armor_Upper_co.paa",
+			"PHGear\data\armor\onetwo_H3_Armor_Lower_co.paa",
 			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
 			"PHGear\data\armor\onetwocorpsman_Reach_Armor_Upper_co.paa",
 			"PHGear\data\armor\onetwo_Reach_Armor_Lower_co.paa",
@@ -229,11 +230,11 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[] = 
 			{
-				"PHGear\data\armor\onetwocorpsman_H3_Upper_Armor_co.paa",
-				"PHGear\data\armor\onetwo_H3_Lower_Armor_co.paa",
+				"PHGear\data\armor\onetwocorpsman_H3_Armor_Upper_co.paa",
+				"PHGear\data\armor\onetwo_H3_Armor_Lower_co.paa",
 				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
-				"PHGear\data\armor\onetwocorpsman_Armor_Upper_co.paa",
-				"PHGear\data\armor\onetwo_Armor_Lower_co.paa",
+				"PHGear\data\armor\onetwocorpsman_Reach_Armor_Upper_co.paa",
+				"PHGear\data\armor\onetwo_Reach_Armor_Lower_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa",
@@ -285,8 +286,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[] = 
 		{
-			"PHGear\data\armor\onetwo_H3_Upper_Armor_co.paa",
-			"PHGear\data\armor\onetwo_H3_Lower_Armor_co.paa",
+			"PHGear\data\armor\onetwo_H3_Armor_Upper_co.paa",
+			"PHGear\data\armor\onetwo_H3_Armor_Lower_co.paa",
 			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
 			"PHGear\data\armor\onetwo_Reach_Armor_Upper_co.paa",
 			"PHGear\data\armor\onetwo_Reach_Armor_Lower_co.paa",
@@ -338,8 +339,8 @@ class CfgWeapons
 			};
 			hiddenSelectionsTextures[] = 
 			{
-				"PHGear\data\armor\onetwo_H3_Upper_Armor_co.paa",
-				"PHGear\data\armor\onetwo_H3_Lower_Armor_co.paa",
+				"PHGear\data\armor\onetwo_H3_Armor_Upper_co.paa",
+				"PHGear\data\armor\onetwo_H3_Armor_Lower_co.paa",
 				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
 				"PHGear\data\armor\onetwo_Reach_Armor_Upper_co.paa",
 				"PHGear\data\armor\onetwo_Reach_Armor_Lower_co.paa",
@@ -707,9 +708,9 @@ class CfgWeapons
 			"Reach_Shoulder_Radio_Left",
 			"Reach_Shoulder_Radio_Right",
 			"Reach_Sniper_Pauldron_Left",
-			//"Reach_Sniper_Pauldron_Right",
+			"Reach_Sniper_Pauldron_Right",
 			//"Reach_CQB_Pauldron_Left",
-			"Reach_CQB_Pauldron_Right",
+			//"Reach_CQB_Pauldron_Right",
 			"Thigh_Pouch",
 			//"Reach_Armor_Upper",
 			//"Reach_Armor_Lower",
@@ -727,7 +728,7 @@ class CfgWeapons
 			"PHGear\data\armor\payne_Reach_Armor_Upper_co.paa",
 			"PHGear\data\armor\payne_Reach_Armor_Lower_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
-			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
+			"PHGear\data\armor\payne_Forearm_Vents_co.paa",
 			"PHGear\data\armor\payne_Sniper_co.paa",
 			"PHGear\data\armor\payne_CQB_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Addons\Reach_Shoulder_Radio\Shoulder_Radio_Green_co.paa"
@@ -760,9 +761,9 @@ class CfgWeapons
 				"Reach_Shoulder_Radio_Left",
 				"Reach_Shoulder_Radio_Right",
 				"Reach_Sniper_Pauldron_Left",
-				//"Reach_Sniper_Pauldron_Right",
+				"Reach_Sniper_Pauldron_Right",
 				//"Reach_CQB_Pauldron_Left",
-				"Reach_CQB_Pauldron_Right",
+				//"Reach_CQB_Pauldron_Right",
 				"Thigh_Pouch",
 				//"Reach_Armor_Upper",
 				//"Reach_Armor_Lower",
@@ -780,7 +781,7 @@ class CfgWeapons
 				"PHGear\data\armor\payne_Reach_Armor_Upper_co.paa",
 				"PHGear\data\armor\payne_Reach_Armor_Lower_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
-				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
+				"PHGear\data\armor\payne_Forearm_Vents_co.paa",
 				"PHGear\data\armor\payne_Sniper_co.paa",
 				"PHGear\data\armor\payne_CQB_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Addons\Reach_Shoulder_Radio\Shoulder_Radio_Green_co.paa"
@@ -811,12 +812,12 @@ class CfgWeapons
 			"H3_Forearm_Right",
 			"H3_Pauldron_Left",
 			"H3_Pauldron_Right",
-			//"Reach_Pauldron_Left",
-			"Reach_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
 			"Reach_Shoulder_Radio_Left",
-			"Reach_Shoulder_Radio_Right",
-			"Reach_Sniper_Pauldron_Left",
-			//"Reach_Sniper_Pauldron_Right",
+			//"Reach_Shoulder_Radio_Right",
+			//"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
 			"Reach_CQB_Pauldron_Left",
 			"Reach_CQB_Pauldron_Right",
 			"Thigh_Pouch",
@@ -839,6 +840,115 @@ class CfgWeapons
 			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
 			"PHGear\data\armor\sabbath_Sniper_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Addons\CQB_Shoulders\CQB_co.paa",
+			"PHGear\data\armor\sabbath_Shoulder_Radio_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			vestType = "Rebreather";
+			uniformModel = "MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass = "Supply200";
+			hiddenSelections[] = 
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"camo6",
+				"camo7",
+				"camo8",
+				"camo9",
+				"camo10",
+				//"Reach_Forearm_Left",
+				//"Reach_Forearm_Right",
+				"H3_Forearm_Left",
+				"H3_Forearm_Right",
+				"H3_Pauldron_Left",
+				"H3_Pauldron_Right",
+				"Reach_Pauldron_Left",
+				//"Reach_Pauldron_Right",
+				"Reach_Shoulder_Radio_Left",
+				//"Reach_Shoulder_Radio_Right",
+				//"Reach_Sniper_Pauldron_Left",
+				"Reach_Sniper_Pauldron_Right",
+				"Reach_CQB_Pauldron_Left",
+				"Reach_CQB_Pauldron_Right",
+				"Thigh_Pouch",
+				//"Reach_Armor_Upper",
+				//"Reach_Armor_Lower",
+				"H3_Armor_Upper",
+				"H3_Armor_Lower",
+				//"Forearm_Vent_Left",
+				//"Forearm_Vent_Right",
+				//"Canisters"
+			};
+			hiddenSelectionsTextures[] = 
+			{
+				"PHGear\data\armor\onetwo_H3_Upper_Armor_co.paa",
+				"PHGear\data\armor\onetwo_H3_Lower_Armor_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+				"PHGear\data\armor\sabbath_Reach_Armor_Upper_co.paa",
+				"PHGear\data\armor\sabbath_Reach_Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
+				"PHGear\data\armor\sabbath_Sniper_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Addons\CQB_Shoulders\CQB_co.paa",
+				"PHGear\data\armor\sabbath_Shoulder_Radio_co.paa"
+			};
+		};
+	};
+	class PHRP_Coleson_M56R_Armor : PHRP_Base_M56R_Armor
+	{
+		scope = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "[PHRP] M56 Body Armor (Coleson)";
+		hiddenSelections[] = 
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			//"Reach_CQB_Pauldron_Left",
+			//"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			"Canisters"
+		};
+		hiddenSelectionsTextures[] = 
+		{
+			"PHGear\data\armor\coleson_H3_Upper_Armor_co.paa",
+			"PHGear\data\armor\coleson_H3_Lower_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+			"PHGear\data\armor\coleson_Reach_Armor_Upper_co.paa",
+			"PHGear\data\armor\coleson_Reach_Armor_Lower_co.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa",
+			"PHGear\data\armor\coleson_CQB_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Addons\Reach_Shoulder_Radio\Shoulder_Radio_Green_co.paa"
 		};
 		class ItemInfo: ItemInfo
@@ -864,34 +974,34 @@ class CfgWeapons
 				"H3_Forearm_Right",
 				"H3_Pauldron_Left",
 				"H3_Pauldron_Right",
-				//"Reach_Pauldron_Left",
+				"Reach_Pauldron_Left",
 				"Reach_Pauldron_Right",
 				"Reach_Shoulder_Radio_Left",
 				"Reach_Shoulder_Radio_Right",
 				"Reach_Sniper_Pauldron_Left",
-				//"Reach_Sniper_Pauldron_Right",
-				"Reach_CQB_Pauldron_Left",
-				"Reach_CQB_Pauldron_Right",
+				"Reach_Sniper_Pauldron_Right",
+				//"Reach_CQB_Pauldron_Left",
+				//"Reach_CQB_Pauldron_Right",
 				"Thigh_Pouch",
 				//"Reach_Armor_Upper",
-				//"Reach_Armor_Lower",
+				"Reach_Armor_Lower",
 				"H3_Armor_Upper",
-				"H3_Armor_Lower",
+				//"H3_Armor_Lower",
 				//"Forearm_Vent_Left",
 				//"Forearm_Vent_Right",
-				//"Canisters"
+				"Canisters"
 			};
 			hiddenSelectionsTextures[] = 
 			{
-				"PHGear\data\armor\onetwo_H3_Upper_Armor_co.paa",
-				"PHGear\data\armor\onetwo_H3_Lower_Armor_co.paa",
+				"PHGear\data\armor\coleson_H3_Upper_Armor_co.paa",
+				"PHGear\data\armor\coleson_H3_Lower_Armor_co.paa",
 				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
-				"PHGear\data\armor\sabbath_Reach_Armor_Upper_co.paa",
-				"PHGear\data\armor\sabbath_Reach_Armor_Lower_co.paa",
+				"PHGear\data\armor\coleson_Reach_Armor_Upper_co.paa",
+				"PHGear\data\armor\coleson_Reach_Armor_Lower_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
-				"PHGear\data\armor\sabbath_Sniper_co.paa",
-				"MA_Armor\data\Vests\Reach_ODST\Addons\CQB_Shoulders\CQB_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa",
+				"PHGear\data\armor\coleson_CQB_co.paa",
 				"MA_Armor\data\Vests\Reach_ODST\Addons\Reach_Shoulder_Radio\Shoulder_Radio_Green_co.paa"
 			};
 		};

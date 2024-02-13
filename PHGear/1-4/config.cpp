@@ -59,6 +59,10 @@ class XtdGearModels
 				{
 					label = "Kaker";
 				};
+				class weiss
+				{
+					label = "Weiss";
+				};
 				class stoll
 				{
 					label = "Stoll";
@@ -108,6 +112,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_onefour_vests";
 			role = "kaker";
+		};
+		class PHRP_Weiss_M56R_Armor
+		{
+			model = "PHRP_onefour_vests";
+			role = "weiss";
 		};
 		class PHRP_Stoll_M56R_Armor
 		{

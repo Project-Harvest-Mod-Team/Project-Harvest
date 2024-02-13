@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56SH","M56SR","payne","blackburn","hazard","graves","sabbath"};
+				values[] = {"M56SH","M56SR","payne","sabbath","graves","coleson","craith","riley"};
 				class M56SH
 				{
 					label = "M56S-H";
@@ -46,21 +46,25 @@ class XtdGearModels
 				{
 					label = "Payne";
 				};
-				class blackburn
+				class sabbath
 				{
-					label = "Blackburn";
-				};
-				class hazard
-				{
-					label = "Hazard";
+					label = "Sabbath";
 				};
 				class graves
 				{
 					label = "Graves";
 				};
-				class sabbath
+				class coleson
 				{
-					label = "Sabbath";
+					label = "Coleson";
+				};
+				class craith
+				{
+					label = "Craith";
+				};
+				class riley
+				{
+					label = "Riley";
 				};
 			};
 		};
@@ -85,14 +89,9 @@ class XtdGearInfos
 			role = "payne";
 			model = "PHRP_onetwo_helmets";
 		};
-		class PHRP_Blackburn_Recon_Helmet
+		class PHRP_Sabbath_M56SR_Helmet
 		{
-			role = "blackburn";
-			model = "PHRP_onetwo_helmets";
-		};
-		class PHRP_Hazard_EOD_Helmet
-		{
-			role = "hazard";
+			role = "sabbath";
 			model = "PHRP_onetwo_helmets";
 		};
 		class PHRP_Graves_M56E_Helmet
@@ -100,11 +99,16 @@ class XtdGearInfos
 			role = "graves";
 			model = "PHRP_onetwo_helmets";
 		};
-		class PHRP_Sabbath_M56SR_Helmet
+		class PHRP_Hazard_EOD_Helmet
 		{
-			role = "sabbath";
+			role = "hazard";
 			model = "PHRP_onetwo_helmets";
 		};
+		class PHRP_Coleson_CQB_Helmet
+		{
+			role = "coleson";
+			model = "PHRP_onetwo_helmets";
+		}
 	};
 };
 class CfgWeapons
@@ -118,7 +122,7 @@ class CfgWeapons
 	class PHRP_Base_EOD_Helmet;
 	class PHRP_M56E_Helmet_Base;
 	class PHRP_Base_CQC_Helmet;
-
+	class PHRP_Base_CQB_Helmet;
 	class PHRP_onetwo_M56SH_Helmet: PHRP_M56SH_Helmet_Base
 	{
 		scope = 2;
@@ -156,16 +160,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_payne_co.paa"};
 		hiddenSelectionsMaterials[] = {"", "MA_Armor\data\Helmets\hr_odst\hr_odst_visor.rvmat"};
 	};
-	class PHRP_Blackburn_Recon_Helmet : PHRP_Base_Recon_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Jimbo";
-		displayName = "Recon Helmet (Blackburn)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_blackburn_co.paa","PHHelmets\data\helmets\customvisor_blackburn_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
-	};
 	class PHRP_Graves_M56E_Helmet: PHRP_M56E_Helmet_Base
 	{
 		scope = 2;
@@ -185,11 +179,21 @@ class CfgWeapons
 		scopeArsenal = 2;
 		displayName = "[PHRP] M56S-R Helmet (Sabbath)";
 		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\sabbath_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\sabbath_HR_ODST_Visor_Blue_co.paa"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\sabbath_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\sabbath_HR_ODST_Visor_co.paa"};
 		class ItemInfo: ItemInfo
 		{
 			hiddenSelections[] = {"camo1","camo2"};
-			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\sabbath_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\sabbath_HR_ODST_Visor_Blue_co.paa"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\sabbath_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\sabbath_HR_ODST_Visor_co.paa"};
 		};
+	};
+	class PHRP_Coleson_CQB_Helmet : PHRP_Base_CQB_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "MrMicrobe";
+		displayName = "Mark V/C Helmet (Coleson)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_coleson_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
 	};
 };

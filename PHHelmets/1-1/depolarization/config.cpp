@@ -22,6 +22,8 @@ class CfgPatches //class desc.
 class CfgWeapons
 {
 	class PHRP_Base_CQB_Helmet_dp;
+	class PHRP_Base_Operator_Helmet_dp;
+	class PHRP_Base_Scout_Helmet_dp;
 	class PHRP_Coleson_CQB_Helmet_dp : PHRP_Base_CQB_Helmet_dp
 	{
 		scope = 1;
@@ -39,5 +41,24 @@ class CfgWeapons
 		displayName = "Mark V/C Helmet (Lancer)";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_lancer_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
+	};
+	class PHRP_Morningstar_Operator_Helmet_dp : PHRP_Base_Operator_Helmet_dp
+	{
+		author = "";
+		scope = 1;
+		scopeArsenal = 1;
+		displayName = "Mark V/O Helmet (Morningstar)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_morningstar_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
+	};
+	class PHRP_Kincaid_Scout_Helmet_dp : PHRP_Base_Scout_Helmet_dp
+	{
+		class ItemInfo;
+        author = "Kaker";
+		scope = 1;
+		scopeArsenal = 1;
+		displayName = "Mark VI/S Helmet (Kincaid)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_customvisor_co.paa","OPTRE_UNSC_Units\Army\data\Operator_Visor_co.paa"};
 	};
 };

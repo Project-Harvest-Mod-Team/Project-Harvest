@@ -46,22 +46,4 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\ODST_Helmet_Visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
-	class PHRP_Erikson_Recon_Helmet_dp : PHRP_Base_Recon_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "VorpalHotdog";
-		displayName = "Recon Helmet 1-1 (Erikson)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_erikson_co.paa","optre_unsc_units\army\data\recon_visor_ca.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
-	};
-	class PHRP_Weiss_HRPilot_Helmet_dp : PHRP_Base_HRPilot_Helmet_dp
-	{
-		scope = 1;
-		scopeArsenal = 1;
-		author = "Jimbo";
-		displayName = "Mark V/P Helmet (Weiss)";
-		hiddenSelections[] = {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_weiss_co.paa","PHHelmets\data\helmets\customvisor_weiss_co.paa"};
-	};
 };

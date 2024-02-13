@@ -33,10 +33,14 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"moon",};
+				values[] = {"moon","kaz"};
 				class moon
 				{
 					label = "Moon";
+				};
+				class kaz
+				{
+					label = "Kaz";
 				};
 			};
 		};
@@ -50,6 +54,11 @@ class XtdGearInfos
 		{
 			model = "PHRP_fleet_vests";
 			role = "moon";
+		};
+		class PHRP_Kaz_M56R_Armor
+		{
+			model = "PHRP_fleet_vests";
+			role = "kaz";
 		};
 	};
 };

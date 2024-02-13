@@ -20,7 +20,7 @@ class CfgPatches //class desc.
 	};
 };
 
-class XtdGearModels
+/*class XtdGearModels
 {
 	class CamoBase;
 	class CfgWeapons
@@ -55,10 +55,7 @@ class XtdGearModels
 				{
 					label = "Buckley";
 				};
-				class morningstar
-				{
-					label = "Morningstar";
-				};
+				
 				class griffith
 				{
 					label = "Griffith";
@@ -107,4 +104,4 @@ class XtdGearInfos
 			role = "griffith";
 		};
 	};
-};
+};*/
