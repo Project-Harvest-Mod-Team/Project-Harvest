@@ -33,30 +33,18 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"raider","kaz","aturr","holland","erikson","buckley"};
+				values[] = {"raider","burtovski","holland"};
 				class raider
 				{
 					label = "Raider";
 				};
-				class kaz
+				class burtovski
 				{
-					label = "Kaz";
-				};
-				class aturr
-				{
-					label = "Aturr";
+					label = "Burtovski";
 				};
 				class holland
 				{
 					label = "Holland";
-				};
-				class erikson
-				{
-					label = "Erikson";
-				};
-				class buckley
-				{
-					label = "Buckley";
 				};
 			};
 		};
@@ -71,30 +59,15 @@ class XtdGearInfos
 			model = "PHRP_Olympus_vests";
 			role = "raider";
 		};
-		class PHRP_Kaz_M56R_Armor
+		class PHRP_Burtovski_M56R_Armor
 		{
-			model = "PHRP_Olympus_vests";
-			role = "kaz";
-		};
-		class PHRP_Aturr_M56R_Armor
-		{
-			model = "PHRP_Olympus_vests";
-			role = "aturr";
+			model = "PHRP_Reserve_vests";
+			role = "burtovski";
 		};
 		class PHRP_Holland_M56R_Armor
 		{
 			model = "PHRP_Olympus_vests";
 			role = "holland";
-		};
-		class PHRP_Erikson_M56R_Armor
-		{
-			model = "PHRP_Olympus_vests";
-			role = "erikson";
-		};
-		class PHRP_Buckley_M56R_Armor
-		{
-			model = "PHRP_Olympus_vests";
-			role = "buckley";
 		};
 	};
 };

@@ -88,7 +88,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Owner";
-				values[] = {/*"SoldnerSRS","SoldnerM7",*/"HollandAK120","KazMA37K","MoonMA37K","ColesonM90","SabbathM392"};
+				values[] = {/*"SoldnerSRS","SoldnerM7",*/"HollandAK120","KazMA37K","MoonMA37K","ColesonM90"};
 				/*class SoldnerSRS
 				{
 					label = "Soldner";
@@ -114,10 +114,6 @@ class XtdGearModels
 				class ColesonM90
 				{
 					label = "Coleson";
-				};
-				class SabbathM392
-				{
-					label = "Sabbath";
 				};
 			};
 		};
@@ -174,11 +170,6 @@ class XtdGearInfos
 		{
 			model = "phrp_personal_weapons";
 			type = "ColesonM90";
-		};
-		class PHRP_Sabbath_M392_DMR
-		{
-			model = "phrp_personal_weapons";
-			type = "SabbathM392";
 		};
 	};
 };
@@ -485,42 +476,6 @@ class CfgWeapons
 		};
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"PHWeapons\data\coleson_M90_CO.paa"};
-	};
-
-	//Sabbath M392 DMR
-	class OPTRE_M392_DMR;
-	class PHRP_Sabbath_M392_DMR : OPTRE_M392_DMR
-	{
-		dlc = "Project Harvest Armory"
-		author = "Soldner";
-		baseWeapon = "PHRP_Sabbath_M392_DMR";
-		scope = 2;
-		scopearsenal = 2;
-		displayName = "[PHRP] Sabbath's M392 DMR";
-		canShootInWater = 1;
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"PHWeapons\data\sabbath_M392_CO.paa"};
-		magazines[] += {"OPTRE_15Rnd_762x51_Mag","OPTRE_15Rnd_762x51_Mag_Tracer","OPTRE_15Rnd_762x51_Mag_Tracer_Yellow","OPTRE_15Rnd_762x51_Mag_AP","OPTRE_15Rnd_762x51_Mag_APT","OPTRE_15Rnd_762x51_Mag_JHP","OPTRE_15Rnd_762x51_Mag_JHPT","OPTRE_15Rnd_762x51_Mag_SS","OPTRE_15Rnd_762x51_Mag_SST","OPTRE_15Rnd_762x51_Mag_FS","OPTRE_15Rnd_762x51_Mag_FST","OPTRE_15Rnd_DMR_762x51_Mag_AP","OPTRE_15Rnd_DMR_762x51_Mag_APT","OPTRE_15Rnd_DMR_762x51_Mag_JHP","OPTRE_15Rnd_DMR_762x51_Mag_JHPT","OPTRE_15Rnd_DMR_762x51_Mag_SS","OPTRE_15Rnd_DMR_762x51_Mag_SST","OPTRE_15Rnd_DMR_762x51_Mag_FS","OPTRE_15Rnd_DMR_762x51_Mag_FST"};	
-		class WeaponSlotsInfo
-		{
-			mass = 40;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[] = {"muzzle_snds_65_TI_blk_F","OPTRE_MA5Suppressor","OPTRE_MA37KSuppressor"};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[] = {"optic_Nightstalker","optic_tws","optic_tws_mg","optic_NVS","optic_DMS","optic_LRPS","optic_ams","optic_AMS_snd","optic_AMS_khk","optic_KHS_blk","optic_KHS_tan","optic_KHS_hex","optic_KHS_old","optic_SOS","optic_MRCO","optic_Arco","optic_aco","optic_ACO_grn","optic_aco_smg","optic_ACO_grn_smg","optic_hamr","optic_Holosight","optic_Holosight_smg","optic_Hamr_khk_F","optic_SOS_khk_F","optic_Arco_ghex_F","optic_Arco_blk_F","optic_DMS_ghex_F","optic_ERCO_blk_F","optic_ERCO_khk_F","optic_ERCO_snd_F","optic_LRPS_ghex_F","optic_LRPS_tna_F","optic_Holosight_blk_F","optic_Holosight_khk_F","optic_Holosight_smg_blk_F","optic_Holosight_smg_khk_F","OPTRE_M392_Scope","OPTRE_BR55HB_Scope","OPTRE_M7_Sight","OPTRE_M12_Optic","OPTRE_M393_Scope","OPTRE_M393_ACOG","OPTRE_M393_EOTECH","OPTRE_BR45_Scope"};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[] = {"acc_pointer_IR","optre_m45_flashlight_red","optre_bmr_laser"};
-			};
-			class UnderBarrelSlot: UnderBarrelSlot
-			{
-				compatibleitems[] = {};
-			};
-		};
 	};
 };
 

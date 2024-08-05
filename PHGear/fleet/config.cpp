@@ -24,16 +24,16 @@ class XtdGearModels
 	class CamoBase;
 	class CfgWeapons
 	{
-		class PHRP_fleet_vests
+		class PHRP_hades_vests
 		{
-			label = "Fleet Vests";
+			label = "Hades Vests";
 			author = "Project Harvest Mod Team";
 			options[] = {"role"};
 			class role
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"moon","kaz"};
+				values[] = {"moon","kaz","buckley","payne"};
 				class moon
 				{
 					label = "Moon";
@@ -41,6 +41,14 @@ class XtdGearModels
 				class kaz
 				{
 					label = "Kaz";
+				};
+				class buckley
+				{
+					label = "Buckley";
+				};
+				class payne
+				{
+					label = "Payne";
 				};
 			};
 		};
@@ -52,13 +60,23 @@ class XtdGearInfos
 	{
 		class PHRP_Moon_M56R_Armor
 		{
-			model = "PHRP_fleet_vests";
+			model = "PHRP_hades_vests";
 			role = "moon";
 		};
 		class PHRP_Kaz_M56R_Armor
 		{
-			model = "PHRP_fleet_vests";
+			model = "PHRP_hades_vests";
 			role = "kaz";
+		};
+		class PHRP_Buckley_M56R_Armor
+		{
+			model = "PHRP_hades_vests";
+			role = "buckley";
+		};
+		class PHRP_Payne_M56R_Armor
+		{
+			model = "PHRP_hades_vests";
+			role = "payne";
 		};
 	};
 };

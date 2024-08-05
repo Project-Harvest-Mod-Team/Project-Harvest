@@ -56,22 +56,6 @@ class CfgFaces
 			textureHL = "PHFace\Data\moon_tat_co.paa";
 			textureHL2 = "PHFace\Data\moon_tat_co.paa";
 		};
-		class PHRP_ColesonHead : WhiteHead_01
-		{
-			disabled = 0;
-			displayname = "Coleson";
-			texture = "\A3\Characters_F_Enoch\Heads\Data\m_russianHead_3_co.paa";
-			material = "\A3\Characters_F_Enoch\Heads\Data\m_russianHead_3.rvmat";
-			head = "DefaultHead_A3";
-			identityTypes[] = {};
-			author = "Soldner";
-			materialHL = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
-			materialHL2 = "\A3\Characters_F\Heads\Data\hl_White_bald_muscular.rvmat";
-			materialWounded1 = "A3\Characters_F_Enoch\Heads\Data\m_russianHead_3_injury.rvmat";
-			materialWounded2 = "A3\Characters_F_Enoch\Heads\Data\m_russianHead_3_injury.rvmat";
-			textureHL = "PHFace\Data\Coleson_tat_co.paa";
-			textureHL2 = "PHFace\Data\Coleson_tat_co.paa";
-		};
 		class PHRP_OwesselHead : WhiteHead_01
 		{
 			disabled = 0;

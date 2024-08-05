@@ -25,16 +25,16 @@ class XtdGearModels
 	class CamoBase;
 	class CfgWeapons
 	{
-		class PHRP_oneone_vests
+		class PHRP_hoplite_vests
 		{
-			label = "1-1 Vests";
+			label = "Hoplite Vests";
 			author = "Project Harvest Mod Team";
 			options[] = {"role"};
 			class role
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"M56S","M56S_corpsman","M56R","M56R_corpsman","ishra","blackburn","morningstar","riot","kincaid","lancer"};
+				values[] = {"M56S","M56S_corpsman","M56R","M56R_corpsman","morningstar"};
 				class M56S
 				{
 					label = "M56S";
@@ -51,29 +51,9 @@ class XtdGearModels
 				{
 					label = "M56R-C";
 				};
-				class ishra
-				{
-					label = "Ishra";
-				};
-				class blackburn
-				{
-					label = "Blackburn";
-				};
 				class morningstar
 				{
 					label = "Morningstar";
-				};
-				class riot
-				{
-					label = "Riot";
-				};
-				class kincaid
-				{
-					label = "Kincaid";
-				};
-				class lancer
-				{
-					label = "Lancer";
 				};
 			};
 		};
@@ -83,54 +63,29 @@ class XtdGearInfos
 {
 	class CfgWeapons
 	{
-		class PHRP_oneoneM56S_Armor
+		class PHRP_hopliteM56S_Armor
 		{
-			model = "PHRP_oneone_vests";
+			model = "PHRP_hoplite_vests";
 			role = "M56S";
 		};
-		class PHRP_oneoneM56Smedic_Armor
+		class PHRP_hopliteM56Smedic_Armor
 		{
-			model = "PHRP_oneone_vests";
+			model = "PHRP_hoplite_vests";
 			role = "M56S_corpsman";
 		};
-		class PHRP_oneoneM56R_Armor
+		class PHRP_hopliteM56R_Armor
 		{
-			model = "PHRP_oneone_vests";
+			model = "PHRP_hoplite_vests";
 			role = "M56R";
 		};
-		class PHRP_oneoneM56Rmedic_Armor
+		class PHRP_hopliteM56Rmedic_Armor
 		{
-			model = "PHRP_oneone_vests";
+			model = "PHRP_hoplite_vests";
 			role = "M56R_corpsman";
-		};
-		class PHRP_Ishra_M56s_Armor
-		{
-			model = "PHRP_oneone_vests";
-			role = "ishra";
-		};
-		class PHRP_Riot_Armor
-		{
-			model = "PHRP_oneone_vests";
-			role = "riot";
-		};
-		class PHRP_Coleson_M56R_Armor
-		{
-			model = "PHRP_oneone_vests";
-			role = "coleson";
-		};
-		class PHRP_Kincaid_M56R_Armor
-		{
-			model = "PHRP_oneone_vests";
-			role = "kincaid";
-		};
-		class PHRP_Lancer_M56R_Armor
-		{
-			model = "PHRP_oneone_vests";
-			role = "lancer";
 		};
 		class PHRP_Morningstar_M56S_Armor
 		{
-			model = "PHRP_oneone_vests";
+			model = "PHRP_hoplite_vests";
 			role = "morningstar";
 		};
 	};
