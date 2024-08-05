@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"recruit","owessel","wolf","erikson","weiss","burtovski","pjetrovic","griffith"};
+				values[] = {"recruit","owessel","pjetrovic","griffith","kincaid","vasilev","chopper"};
 				class recruit
 				{
 					label = "Recruit";
@@ -42,21 +42,25 @@ class XtdGearModels
 				{
 					label = "Owessel";
 				};
-				class wolf
-				{
-					label = "Wolf";
-				};
-				class weiss
-				{
-					label = "Weiss";
-				};
-				class burtovski
-				{
-					label = "Burtovski";
-				};
 				class pjetrovic
 				{
 					label = "Pjetrovic";
+				};
+				class griffith
+				{
+					label = "Griffith";
+				};
+				class kincaid
+				{
+					label = "Kincaid";
+				};
+				class vasilev
+				{
+					label = "Vasilev";
+				};
+				class chopper
+				{
+					label = "Chopper";
 				};
 			};
 		};
@@ -76,21 +80,6 @@ class XtdGearInfos
 			role = "owessel";
 			model = "PHRP_reservist_helmets";
 		};
-		class PHRP_Wolf_Recon_Helmet
-		{
-			role = "wolf";
-			model = "PHRP_reservist_helmets";
-		};
-		class PHRP_Weiss_HRPilot_Helmet
-		{
-			role = "weiss";
-			model = "PHRP_reservist_helmets";
-		};
-		class PHRP_Burtovski_Commando_Helmet
-		{
-			role = "burtovski";
-			model = "PHRP_fleet_helmets";
-		};
 		class PHRP_Pjetrovic_Security_Helmet
 		{
 			role = "pjetrovic";
@@ -99,6 +88,21 @@ class XtdGearInfos
 		class PHRP_Griffith_M56SR_Helmet
 		{
 			role = "griffith";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Kincaid_M56S_Helmet
+		{
+			role = "kincaid";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Vasilev_HRPilot_Helmet
+		{
+			role = "vasilev";
+			model = "PHRP_reservist_helmets";
+		};
+		class PHRP_Chopper_CQB_Helmet
+		{
+			role = "chopper";
 			model = "PHRP_reservist_helmets";
 		};
 	};
@@ -137,26 +141,6 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_owessel_co.paa","PHHelmets\data\helmets\customvisor_owessel_co.paa"};
 	};
-	class PHRP_Wolf_Recon_Helmet : PHRP_Base_Recon_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Recon Helmet (Wolf)";
-		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\customvisor_wolf_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
-	};
-	class PHRP_Burtovski_Commando_Helmet : PHRP_Base_Commando_Helmet
-	{
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "Mark V/K Helmet (Burtovski)";
-		hiddenSelections[] =  {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\customvisor_burt_co.paa"};
-	};
 	class PHRP_Pjetrovic_Security_Helmet : PHRP_Base_Security_Helmet
 	{
 		scope = 2;
@@ -181,5 +165,35 @@ class CfgWeapons
 			hiddenSelections[] = {"camo1","camo2"};
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\griffith_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\griffith_HR_ODST_Visor_Blue_co.paa"};
 		};
+	};
+	class PHRP_Kincaid_M56S_Helmet : PHRP_M56S_Helmet_Base
+	{
+       	scope = 2;
+		scopeArsenal = 2;
+		scopeCurator = 2;
+		author = "Kaker";
+		displayName = "Mark VI/S Helmet (Kincaid)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_Kincaid_co.paa","OPTRE_UNSC_Units\Army\data\CQB_Visor_co.paa"};
+	};
+	class PHRP_Vasilev_HRPilot_Helmet : PHRP_Base_HRPilot_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "Mark V/P Helmet (Vasilev)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_vasilev_co.paa","PHHelmets\data\helmets\customvisor_vasilev_co.paa"};
+	};
+	class PHRP_Chopper_CQB_Helmet : PHRP_Base_CQB_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "Jimbo";
+		displayName = "Mark V/C Helmet (Chopper)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_chopper_co.paa","PHHelmets\data\helmets\chopper_CQB_Visor_co.paa"};
 	};
 };
