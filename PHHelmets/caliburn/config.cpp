@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"G017","B192","o148","B232","G129"};
+				values[] = {"G017","B192","o148","B232"};
 				class G017
 				{
 					label = "G017";
@@ -49,10 +49,6 @@ class XtdGearModels
 				class B232
 				{
 					label = "B232";
-				};
-				class G129
-				{
-					label = "G129";
 				};
 			};
 		};
@@ -82,18 +78,13 @@ class XtdGearInfos
 			role = "B232";
 			model = "PHRP_caliburn_helmets";
 		};
-		class PHRP_Kass_Helmet
-		{
-			role = "G129";
-			model = "PHRP_caliburn_helmets";
-		};
 	};
 };
 class CfgWeapons
 {
 	class ItemInfo;
 	class OPTRE_MJOLNIR_MkVBHelmet_Human;
-	class PHRP_G017_Helmet : OPTRE_MJOLNIR_MkVBHelmet_Human
+	/*class PHRP_G017_Helmet : OPTRE_MJOLNIR_MkVBHelmet_Human
 	{
 		author = "Soldner";
 		displayName = "Spartan Helmet G017";
@@ -118,7 +109,7 @@ class CfgWeapons
 		scopeArsenal = 1;
 		scopeCurator = 1;
 		class ItemInfo: ItemInfo{};
-	};
+	};*/
 	class PHRP_Oliver_Helmet : OPTRE_MJOLNIR_MkVBHelmet_Human
 	{
 		author = "Soldner";

@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"G017","B192","o148","B232","G129","A062"};
+				values[] = {"G017","B192","o148","B232","A062"};
 				class G017
 				{
 					label = "G017";
@@ -49,10 +49,6 @@ class XtdGearModels
 				class B232
 				{
 					label = "B232";
-				};
-				class G129
-				{
-					label = "G129";
 				};
 				class A062
 				{
@@ -85,11 +81,6 @@ class XtdGearInfos
 		{
 			model = "PHRP_caliburn_vests";
 			role = "B232";
-		};
-		class PHRP_Kass_Armor
-		{
-			model = "PHRP_caliburn_vests";
-			role = "G129";
 		};
 		class PHRP_Orlan_Armor
 		{
@@ -461,72 +452,6 @@ class CfgWeapons
 			};
 		};
 	};
-	class PHRP_Kass_Armor : PHRP_Base_Spartan_Armor
-	{
-		dlc = "Project Harvest Armory";
-		author = "Soldner";
-		displayName = "Spartan Armor G129";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		model = "\OPTRE_MJOLNIR_Units\armormkvb.p3d";
-		hiddenSelections[] = {"camo1","attach_security1","attach_security2","attach_fjpara1","attach_fjpara2","attach_commando1","attach_commando2","attach_mkv1","attach_mkv2","attach_grenadier1","attach_grenadier2","attach_cqc1","attach_cqc2","attach_gren_ua","attach_knees_fjpara"};
-		hiddenSelectionsTextures[] = {"PHGear\data\armor\armor_G129_co.paa","PHGear\data\armor\legs_G129_co.paa"};
-		class ItemInfo: VestItem
-		{
-			containerClass = "Supply2000";
-			uniformModel = "\OPTRE_MJOLNIR_Units\armormkvb.p3d";
-			hiddenSelections[] = {"camo1","camo2","attach_security1","attach_security2","attach_fjpara1","attach_fjpara2","attach_commando1","attach_commando2","attach_mkv1","attach_mkv2","attach_grenadier1","attach_grenadier2","attach_cqc1","attach_cqc2","attach_gren_ua","attach_knees_fjpara"};
-			hiddenSelectionsTextures[] = {"PHGear\data\armor\armor_G129_co.paa","PHGear\data\armor\legs_G129_co.paa"};
-			mass = 20;
-			passThrough = 0.1;
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 55;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 55;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 55;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.1;
-					armor = 50;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 50;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};
 	class PHRP_Orlan_Armor : PHRP_Base_Spartan_Armor
 	{
 		dlc = "Project Harvest Armory";
@@ -593,70 +518,4 @@ class CfgWeapons
 			};
 		};
 	};
-	/*class PHRP_Luka_Armor : PHRP_Base_Spartan_Armor
-	{
-		dlc = "Project Harvest Armory";
-		author = "Soldner";
-		displayName = "Spartan Armor B170";
-		scope = 2;
-		scopeCurator = 2;
-		scopeArsenal = 2;
-		model = "\OPTRE_MJOLNIR_Units\armormkvb.p3d";
-		hiddenSelections[] = {"camo1","attach_security1","attach_security2","attach_fjpara1","attach_fjpara2","attach_commando1","attach_commando2","attach_mkv1","attach_mkv2","attach_grenadier1","attach_grenadier2","attach_cqc1","attach_cqc2","attach_gren_ua","attach_knees_fjpara"};
-		hiddenSelectionsTextures[] = {"PHGear\data\armor\armor_B170_co.paa","PHGear\data\armor\legs_B170_co.paa"};
-		class ItemInfo: VestItem
-		{
-			containerClass = "Supply2000";
-			uniformModel = "\OPTRE_MJOLNIR_Units\armormkvb.p3d";
-			hiddenSelections[] = {"camo1","camo2","attach_security1","attach_security2","attach_fjpara1","attach_fjpara2","attach_commando1","attach_commando2","attach_mkv1","attach_mkv2","attach_grenadier1","attach_grenadier2","attach_cqc1","attach_cqc2","attach_gren_ua","attach_knees_fjpara"};
-			hiddenSelectionsTextures[] = {"PHGear\data\armor\armor_B170_co.paa","PHGear\data\armor\legs_B170_co.paa"};
-			mass = 20;
-			passThrough = 0.1;
-			class HitpointsProtectionInfo
-			{
-				class Neck
-				{
-					hitpointName = "HitNeck";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Arms
-				{
-					hitpointName = "HitArms";
-					armor = 50;
-					passThrough = 0.1;
-				};
-				class Chest
-				{
-					hitpointName = "HitChest";
-					armor = 55;
-					passThrough = 0.1;
-				};
-				class Diaphragm
-				{
-					hitpointName = "HitDiaphragm";
-					armor = 55;
-					passThrough = 0.1;
-				};
-				class Abdomen
-				{
-					hitpointName = "HitAbdomen";
-					armor = 55;
-					passThrough = 0.1;
-				};
-				class Body
-				{
-					hitpointName = "HitBody";
-					passThrough = 0.1;
-					armor = 50;
-				};
-				class Legs
-				{
-					hitpointName = "HitLegs";
-					armor = 50;
-					passThrough = 0.1;
-				};
-			};
-		};
-	};*/
 };
