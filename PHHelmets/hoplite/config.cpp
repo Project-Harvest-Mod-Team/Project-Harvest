@@ -85,7 +85,7 @@ class CfgWeapons
 	{
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[PHRP] M56S-H Helmet 1-1";
+		displayName = "[PHRP] M56S-H Hoplite Helmet";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\hoplite_H3_Helmet_co.paa","MA_Armor\data\Helmets\H3_ODST\H3_Visor_Blue_co.paa"};
 		class ItemInfo: ItemInfo
@@ -102,7 +102,7 @@ class CfgWeapons
 	{
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[PHRP] M56S-R Helmet 1-1";
+		displayName = "[PHRP] M56S-R Hoplite Helmet";
 		hiddenSelections[] = {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\hoplite_HR_ODST_Helmet_CO.paa","MA_Armor\data\Helmets\HR_ODST\HR_ODST_Visor_Blue_co.paa"};
 		class ItemInfo: ItemInfo

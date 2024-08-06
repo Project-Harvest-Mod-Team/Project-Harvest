@@ -88,17 +88,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Owner";
-				values[] = {/*"SoldnerSRS","SoldnerM7",*/"HollandAK120","KazMA37K","MoonMA37K","ColesonM90"};
-				/*class SoldnerSRS
-				{
-					label = "Soldner";
-					image = "PHWeapons\data\Icon\SRS.paa";
-				};
-				class SoldnerM7
-				{
-					label = "Soldner";
-					image = "PHWeapons\data\Icon\m7.paa";
-				};*/
+				values[] = {"HollandAK120","KazMA37K","MoonMA37K"};
 				class HollandAK120
 				{
 					label = "Holland";
@@ -110,10 +100,6 @@ class XtdGearModels
 				class MoonMA37K
 				{
 					label = "Moon";
-				};
-				class ColesonM90
-				{
-					label = "Coleson";
 				};
 			};
 		};
@@ -146,16 +132,6 @@ class XtdGearInfos
 			model = "phrp_personal_weapons";
 			type = "HollandAK120";
 		};
-		/*class PHRP_Soldner_SRS99C
-		{
-			model = "phrp_personal_weapons";
-			type = "SoldnerSRS";
-		};
-		class PHRP_Soldner_M7
-		{
-			model = "phrp_personal_weapons";
-			type = "SoldnerM7";
-		};*/
 		class PHRP_Kaz_MA37K
 		{
 			model = "phrp_personal_weapons";
@@ -165,11 +141,6 @@ class XtdGearInfos
 		{
 			model = "phrp_personal_weapons";
 			type = "MoonMA37K";
-		};
-		class PHRP_Coleson_M90
-		{
-			model = "phrp_personal_weapons";
-			type = "ColesonM90";
 		};
 	};
 };
@@ -278,73 +249,6 @@ class CfgWeapons
 		};
 	};
 	
-/*	//Soldner SRS
-	class OPTRE_SRS99C;
-	class PHRP_Soldner_SRS99C : OPTRE_SRS99C
-	{
-		author = "Soldner";
-		model = "\OPTRE_Weapons\Sniper\SRS99C.p3d";
-		displayName = "[PHRP] Soldner's SRS99C-S2 AM Sniper Rifle";
-		picture = "\OPTRE_weapons\sniper\icons\sniper2.paa";
-		reloadAction = "WBK_SRS99C_Reload";
-		handAnim[] = {"OFP2_ManSkeleton","\OPTRE_Weapons\Sniper\data\anim\srs99c_handpos.rtm","Spartan_ManSkeleton","\OPTRE_MJOLNIR\data\anims\OPTRE_anims\Weapons\srs99C_Spartan_handpos.rtm"};
-		baseWeapon = "PHRP_Soldner_SRS99C";
-		hiddenSelections[] = {"camo","camo1","camo_bipod"};
-		hiddenSelectionsTextures[] = {"PHWeapons\data\soldner_mainbody_co.paa","OPTRE_Weapons\Sniper\data\mag_co.paa","PHWeapons\data\soldner_bipod_co.paa"};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass = 100;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[] = {};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[] = {"OPTRE_SRS99C_Scope"};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[] = {"acc_pointer_ir"};
-			};
-			class UnderBarrelSlot: UnderBarrelSlot
-			{
-				compatibleitems[] = {};
-			};
-		};
-	};
-
-	//Soldner M7
-	class PHRP_Soldner_M7 : OPTRE_M7
-	{
-		dlc = "Project Harvest Armory"
-		author = "Soldner";
-		baseWeapon = "PHRP_Soldner_M7";
-		scope = 2;
-		scopearsenal = 2;
-		displayName = "[PHRP] Soldner's M7X Caseless SMG";
-		canShootInWater = 1;
-		magazineWell[] += {"MEU_smg_uw"};
-		magazines[] = {"OPTRE_60Rnd_5x23mm_Mag_JHP","OPTRE_60Rnd_5x23mm_Mag_NARQ"};
-		hiddenSelections[] = {"camo","camo1"};
-		hiddenSelectionsTextures[] = {"PHWeapons\data\Soldner_m7_co.paa","PHWeapons\data\Soldner_magazine_co.paa"};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass = 30;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[] = {"optre_m7_silencer"};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[] = {"MEU_REC_HOLO","OPTRE_M7_Sight"};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[] = {"OPTRE_M7_Flashlight","OPTRE_M7_Laser","ace_acc_pointer_green","MEU_M7_Vis_Laser"};
-			};
-		};
-	};
-*/
 	//Holland AK
 	class arifle_AK12_GL_F;
 	class PHRP_Holland_AK120 : arifle_AK12_GL_F
@@ -447,35 +351,6 @@ class CfgWeapons
 				compatibleitems[] = {};
 			};
 		};
-	};
-
-	//Coleson's M90
-	class OPTRE_M90A;
-	class PHRP_Coleson_M90 : OPTRE_M90A
-	{
-		baseWeapon = "PHRP_Coleson_M90";
-		displayName = "Coleson's M90";
-		canShootInWater = 1;
-		magazines[] = {"Meu_6Rnd_8Gauge_Super_Incendiary"};
-		magazineWell[] = {"MEU_shotgun_uw","MEU_Shotgun_Mags"};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass = 100;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[] = {};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[] = {};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[] = {"acc_pointer_ir","ace_acc_pointer_green","optre_m45_flashlight","optre_m45_flashlight_red"};
-			};
-		};
-		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"PHWeapons\data\coleson_M90_CO.paa"};
 	};
 };
 

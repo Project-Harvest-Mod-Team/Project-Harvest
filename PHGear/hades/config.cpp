@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"moon","kaz","buckley","payne"};
+				values[] = {"moon","kaz","buckley","payne","wolf","ramirez"};
 				class moon
 				{
 					label = "Moon";
@@ -49,6 +49,14 @@ class XtdGearModels
 				class payne
 				{
 					label = "Payne";
+				};
+				class wolf
+				{
+					label = "Wolf";
+				};
+				class ramirez
+				{
+					label = "Ramirez";
 				};
 			};
 		};
@@ -77,6 +85,16 @@ class XtdGearInfos
 		{
 			model = "PHRP_hades_vests";
 			role = "payne";
+		};
+		class PHRP_Wolf_M56R_Armor
+		{
+			model = "PHRP_hades_vests";
+			role = "wolf";
+		};
+		class PHRP_Ramirez_M56R_Armor
+		{
+			model = "PHRP_hades_vests";
+			role = "ramirez";
 		};
 	};
 };

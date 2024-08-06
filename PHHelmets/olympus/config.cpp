@@ -59,7 +59,7 @@ class XtdGearInfos
 			role = "raider";
 			model = "PHRP_olympus_helmets";
 		};
-		class PHRP_Burtovski_Commando_Helmet
+		class PHRP_Burtovski_M56SR_Helmet
 		{
 			role = "burtovski";
 			model = "PHRP_olympus_helmets";
@@ -76,7 +76,6 @@ class CfgWeapons
 	class ItemInfo;
 	class HeadgearItem;
 	class PHRP_M56SR_Helmet_Base;
-	class PHRP_Base_Commando_Helmet;
 
 	class PHRP_Raider_M56SR_Helmet: PHRP_M56SR_Helmet_Base
 	{
@@ -91,15 +90,19 @@ class CfgWeapons
 			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\raider_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\raider_HR_ODST_Visor_Blue_co.paa"};
 		};
 	};
-	class PHRP_Burtovski_Commando_Helmet : PHRP_Base_Commando_Helmet
+	class PHRP_Burtovski_M56SR_Helmet : PHRP_M56SR_Helmet_Base
 	{
 		scope = 2;
-		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "Soldner";
-		displayName = "Mark V/K Helmet (Burtovski)";
-		hiddenSelections[] =  {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_burtovski_co.paa","PHHelmets\data\helmets\customvisor_burt_co.paa"};
+		author = "vibingvampire";
+		displayName = "[PHRP] M56S-R Helmet (Burtovski)";
+		hiddenSelections[] = {"camo1","camo2"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\burtovski_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\burtovski_HR_ODST_Visor_Blue_co.paa"};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[] = {"camo1","camo2"};
+			hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\burtovski_HR_ODST_Helmet_CO.paa","PHHelmets\data\helmets\burtovski_HR_ODST_Visor_Blue_co.paa"};
+		};
 	};
 	class PHRP_Holland_M56SR_Helmet: PHRP_M56SR_Helmet_Base
 	{

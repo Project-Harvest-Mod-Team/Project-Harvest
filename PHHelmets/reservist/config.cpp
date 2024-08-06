@@ -117,6 +117,8 @@ class CfgWeapons
 	class PHRP_Base_Recon_Helmet;
 	class PHRP_Base_Commando_Helmet;
 	class PHRP_Base_Security_Helmet;
+	class PHRP_M56S_Helmet_Base;
+	class PHRP_Base_CQB_Helmet;
 
 	class PHRP_Recruit_M56SR_Helmet: PHRP_M56SR_Helmet_Base
 	{

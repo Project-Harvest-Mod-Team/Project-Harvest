@@ -94,7 +94,7 @@ class XtdGearModels
 				};
 				class hades
 				{
-					label = "hades";
+					label = "Hades";
 				};
 			};
 		};
@@ -425,42 +425,42 @@ class CfgVehicles
 	};
 	class PHRP_hoplite_ILCS: PHRP_M56_ILCS
 	{
-		displayName = "[PHRP] M56 1-1 ILCS Rucksack";
+		displayName = "[PHRP] M56 Hoplite ILCS Rucksack";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\hoplite_ODST_Ruck_co.paa","MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa"};
 	};
 	class PHRP_hoplite_ILCS_Radio: PHRP_M56_ILCS_Radio
 	{
-		displayName = "[PHRP] M56 1-1 ILCS Radio Rucksack";
+		displayName = "[PHRP] M56 Hoplite ILCS Radio Rucksack";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\hoplite_ODST_Ruck_co.paa","MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa"};
 	};
 	class PHRP_hoplite_ILCS_Corpsman: PHRP_M56_ILCS_Corpsman
 	{
-		displayName = "[PHRP] M56 1-1 ILCS Corpsman Rucksack";
+		displayName = "[PHRP] M56 Hoplite ILCS Corpsman Rucksack";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\hoplitecorpsman_ODST_Ruck_co.paa","MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa"};
 	};
 	class PHRP_hoplite_ILCS_Gunbag : PHRP_M56_ILCS_Gunbag
 	{
-		displayName = "[PHRP] M56 ILCS 1-1 Gunbag";
+		displayName = "[PHRP] M56 ILCS Hoplite Gunbag";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\hoplite_ODST_Ruck_co.paa","MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa"};
 	};
 	class PHRP_hades_ILCS: PHRP_M56_ILCS
 	{
-		displayName = "[PHRP] M56 1-2 ILCS Rucksack";
+		displayName = "[PHRP] M56 Hades ILCS Rucksack";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\hades_ODST_Ruck_co.paa","MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa"};
 	};
 	class PHRP_hades_ILCS_Radio: PHRP_M56_ILCS_Radio
 	{
-		displayName = "[PHRP] M56 1-2 ILCS Radio Rucksack";
+		displayName = "[PHRP] M56 Hades ILCS Radio Rucksack";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\hades_ODST_Ruck_co.paa","MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa"};
 	};
 	class PHRP_hades_ILCS_Corpsman: PHRP_M56_ILCS_Corpsman
 	{
-		displayName = "[PHRP] M56 1-2 ILCS Corpsman Rucksack";
+		displayName = "[PHRP] M56 Hades ILCS Corpsman Rucksack";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\hadescorpsman_ODST_Ruck_co.paa","MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa"};
 	};
 	class PHRP_hades_ILCS_Gunbag : PHRP_M56_ILCS_Gunbag
 	{
-		displayName = "[PHRP] M56 ILCS 1-2 Gunbag";
+		displayName = "[PHRP] M56 ILCS Hades Gunbag";
 		hiddenSelectionsTextures[] = {"PHGear\data\packs\hades_ODST_Ruck_co.paa","MA_Armor\data\Backpacks\ODST_Rucksack\Attachments\Backpack_Radio_ODST_co.paa"};
 	};
 };

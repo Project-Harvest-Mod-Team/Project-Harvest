@@ -61,7 +61,7 @@ class XtdGearInfos
 		};
 		class PHRP_Burtovski_M56R_Armor
 		{
-			model = "PHRP_Reserve_vests";
+			model = "PHRP_Olympus_vests";
 			role = "burtovski";
 		};
 		class PHRP_Holland_M56R_Armor

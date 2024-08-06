@@ -28,6 +28,8 @@ class CfgWeapons
 	class PHRP_Base_Scout_Helmet_dp;
 	class PHRP_Base_HRPilot_Helmet_dp;
 	class PHRP_Base_Recon_Helmet_dp;
+	class PHRP_Base_Security_Helmet_dp;
+	class PHRP_Base_CQB_Helmet_dp;
 
 	class PHRP_Owessel_HRPilot_Helmet_dp : PHRP_Base_HRPilot_Helmet_dp
 	{

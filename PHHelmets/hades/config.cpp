@@ -33,7 +33,7 @@ class XtdGearModels
 			{
 				alwaysSelectable = 1;
 				label = "Role";
-				values[] = {"moon","kaz","buckley","wolf","payne"};
+				values[] = {"moon","kaz","buckley","wolf","payne","ramirez"};
 				class moon
 				{
 					label = "Moon";
@@ -53,6 +53,10 @@ class XtdGearModels
 				class payne
 				{
 					label = "Payne";
+				};
+				class ramirez
+				{
+					label = "Ramirez";
 				};
 			};
 		};
@@ -85,6 +89,11 @@ class XtdGearInfos
 		class PHRP_Payne_Commando_Helmet
 		{
 			role = "payne";
+			model = "PHRP_hades_helmets";
+		};
+		class PHRP_Ramirez_Recon_Helmet
+		{
+			role = "ramirez";
 			model = "PHRP_hades_helmets";
 		};
 	};
@@ -170,5 +179,15 @@ class CfgWeapons
 		hiddenSelections[] =  {"camo1","camo2"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_payne_co.paa"};
 		hiddenSelectionsMaterials[] = {"", "MA_Armor\data\Helmets\hr_odst\hr_odst_visor.rvmat"};
+	};
+	class PHRP_Ramirez_Recon_Helmet : PHRP_Base_Recon_Helmet
+	{
+		scope = 2;
+		scopeCurator = 2;
+		scopeArsenal = 2;
+		author = "SirChungus";
+		displayName = "Recon Helmet (Ramirez)";
+		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_ramirez_co.paa","PHHelmets\data\helmets\customvisor_ramirez_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
 };
