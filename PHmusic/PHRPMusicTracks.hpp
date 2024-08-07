@@ -341,3 +341,66 @@ class PHRPFloodAmbience
 	duration=600;
 	musicClass = "PHRPMusic";
 };
+class H2HereticHeroZelousChampion
+{
+	name = "Halo 2 - Heretic Hero Zelous Champion";
+	sound[] = { "PHmusic\data\Tracks\H2HereticHeroZelousChampion.ogg",db + 0,1 };
+	duration = 317;
+	musicClass = "PHRPMusic";
+};
+class H2Impart
+{
+	name = "Halo 2 - Impart";
+	sound[] = { "PHmusic\data\Tracks\H2Impart.ogg",db + 0,1 };
+	duration = 281;
+	musicClass = "PHRPMusic";
+};
+class H2InAmberClad
+{
+	name = "Halo 2 - In Amber Clad";
+	sound[] = { "PHmusic\data\Tracks\H2InAmberClad.ogg",db + 0,1 };
+	duration = 293;
+	musicClass = "PHRPMusic";
+};
+class H3AnotherWalk
+{
+	name = "Halo 3 - Another Walk";
+	sound[] = { "PHmusic\data\Tracks\H3AnotherWalk.ogg",db + 0,1 };
+	duration = 363;
+	musicClass = "PHRPMusic";
+};
+class H3LoveatLongRange
+{
+	name = "Halo 3 - Love At Long Range";
+	sound[] = { "PHmusic\data\Tracks\H3LoveatLongRange.ogg",db + 0,1 };
+	duration = 275;
+	musicClass = "PHRPMusic";
+};
+class H3ODSTMoreThanHisShare
+{
+	name = "Halo 3 ODST - More Than His Share";
+	sound[] = { "PHmusic\data\Tracks\H3ODSTMoreThanHisShare.ogg",db + 0,1 };
+	duration = 436;
+	musicClass = "PHRPMusic";
+};
+class H3ODSTPostpartum
+{
+	name = "Halo 3 ODST - Postpartum";
+	sound[] = { "PHmusic\data\Tracks\H3ODSTPostpartum.ogg",db + 0,1 };
+	duration = 370;
+	musicClass = "PHRPMusic";
+};
+class H3ODSTWereTheDesperateMeasures
+{
+	name = "Halo 3 ODST - We're The Desperate Measures";
+	sound[] = { "PHmusic\data\Tracks\H3ODSTWereTheDesperateMeasures.ogg",db + 0,1 };
+	duration = 489;
+	musicClass = "PHRPMusic";
+};
+class H3ToTurnATide
+{
+	name = "Halo 3 - To Turn A tide";
+	sound[] = { "PHmusic\data\Tracks\H3ToTurnATide.ogg",db + 0,1 };
+	duration = 335;
+	musicClass = "PHRPMusic";
+};

@@ -86,7 +86,7 @@ class XtdGearInfos
 			role = "wolf";
 			model = "PHRP_hades_helmets";
 		};
-		class PHRP_Payne_Commando_Helmet
+		class PHRP_Payne_Recon_Helmet
 		{
 			role = "payne";
 			model = "PHRP_hades_helmets";
@@ -169,16 +169,15 @@ class CfgWeapons
 		hiddenSelections[] = {"camo","camo2","camo3","camo4","H_Ghillie"};
 		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_wolf_co.paa","PHHelmets\data\helmets\customvisor_wolf_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa"};
 	};
-	class PHRP_Payne_Commando_Helmet : PHRP_Base_Commando_Helmet
+	class PHRP_Payne_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
 		scope = 2;
 		scopeCurator = 2;
 		scopeArsenal = 2;
-		author = "MrMicrobe";
-		displayName = "Mark V/K Helmet (Payne)";
-		hiddenSelections[] =  {"camo1","camo2"};
-		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_payne_co.paa"};
-		hiddenSelectionsMaterials[] = {"", "MA_Armor\data\Helmets\hr_odst\hr_odst_visor.rvmat"};
+		author = "Soldner";
+		displayName = "Recon Helmet (Payne)";
+		hiddenSelections[] = { "camo","camo2","camo3","camo4","H_Ghillie" };
+		hiddenSelectionsTextures[] = {"PHHelmets\data\helmets\customhelmet_payne_co.paa","PHHelmets\data\helmets\customvisor_payne_co.paa","optre_unsc_units\army\data\ghillie_woodland_co.paa","optre_unsc_units\army\data\soft_packs_co.paa" };
 	};
 	class PHRP_Ramirez_Recon_Helmet : PHRP_Base_Recon_Helmet
 	{
